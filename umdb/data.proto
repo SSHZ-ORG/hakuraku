@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package hakuraku;
+
+message UMDatabase {
+  optional string version = 1;
+
+  repeated Chara chara = 2;
+  repeated SuccessionRelation succession_relation = 3;
+  repeated RaceInstance race_instance = 4;
+  repeated WinsSaddle wins_saddle = 5;
+}
+
+message Chara {
+  optional int32 id = 1;
+  optional string name = 2;
+}
+
+message SuccessionRelation {
+  optional int32 relation_type = 1;
+  optional int32 relation_point = 2;
+  repeated int32 member_chara_id = 3;
+}
+
+message RaceInstance {
+  optional int32 id = 1;
+  optional string name = 2;
+}
+
+message WinsSaddle {
+  optional int32 id = 1;
+  optional string name = 2;
+  repeated int32 race_instance_id = 3;
+}
