@@ -2,6 +2,7 @@ import React from 'react';
 import {Form} from 'react-bootstrap';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {Typeahead} from "react-bootstrap-typeahead";
+import KanaTypeaheadMatcher from "../utils/KanaTypeaheadMatcher";
 
 
 class CharaSelector extends React.Component {
@@ -28,6 +29,7 @@ class CharaSelector extends React.Component {
             <Typeahead labelKey={(chara) => `${chara.getId()} - ${chara.getName()}`}
                        options={this.props.umdb.umdb.getCharaList()}
                        onChange={(selection) => this.onSelectionChange(selection[0])}
+                       filterBy={KanaTypeaheadMatcher}
                        isInvalid={!this.state.valid}/>
         </Form.Group>
     }

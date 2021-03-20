@@ -1,6 +1,7 @@
 import React from "react";
 import {Badge, Card, Form} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
+import KanaTypeaheadMatcher from "../utils/KanaTypeaheadMatcher";
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent {
     constructor(props) {
@@ -71,6 +72,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
                            multiple
                            options={this.interestingRaceInstances}
                            selected={selected}
+                           filterBy={KanaTypeaheadMatcher}
                            onChange={callback}/>
             </Form.Group>
         </div>;

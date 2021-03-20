@@ -5,8 +5,6 @@ import SuccessionRelationsPresenter from "../components/SuccessionRelationsPrese
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
 
-const ALL_KEYS = ['selectedChara', 'parent1', 'grandparent11', 'grandparent12', 'parent2', 'grandparent21', 'grandparent22'];
-
 const RELATIONSHIP_PAIRS = [
     ['selectedChara', 'parent1'],
     ['selectedChara', 'parent2'],
