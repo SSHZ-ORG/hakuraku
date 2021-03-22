@@ -27,7 +27,7 @@ class CharaSelector extends React.Component {
     render() {
         return <Form.Group>
             <Form.Label>{this.props.label}</Form.Label>
-            <Typeahead labelKey={(chara) => `${chara.getId()} - ${chara.getName()}`}
+            <Typeahead labelKey={(chara) => `${chara.getId()} - ${chara.getName()} (${chara.getCastName()})`}
                        options={UMDatabaseWrapper.umdb.getCharaList()}
                        onChange={(selection) => this.onSelectionChange(selection[0])}
                        filterBy={KanaTypeaheadMatcher}

@@ -11,12 +11,15 @@ def open_db(path: str) -> sqlite3.Cursor:
 
 
 def populate_charas(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
-    cursor.execute("SELECT `index`, text FROM text_data WHERE category=170;")
+    cursor.execute("""SELECT t1."index", t1.text, t2.text FROM text_data AS t1
+                      LEFT JOIN text_data AS t2 on t1."index"=t2."index"
+                      WHERE t1.category=170 AND t2.category=7;""")
     rows = cursor.fetchall()
     for row in rows:
         c = data_pb2.Chara()
         c.id = row[0]
         c.name = row[1]
+        c.cast_name = row[2]
         pb.chara.append(c)
 
 

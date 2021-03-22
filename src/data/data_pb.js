@@ -600,7 +600,8 @@ proto.hakuraku.Chara.prototype.toObject = function(opt_includeInstance) {
 proto.hakuraku.Chara.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = jspb.Message.getField(msg, 1)) == null ? undefined : f,
-    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f
+    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f,
+    castName: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -645,6 +646,10 @@ proto.hakuraku.Chara.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCastName(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -685,6 +690,13 @@ proto.hakuraku.Chara.serializeBinaryToWriter = function(message, writer) {
   if (f != null) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = /** @type {string} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeString(
+      3,
       f
     );
   }
@@ -760,6 +772,42 @@ proto.hakuraku.Chara.prototype.clearName = function() {
  */
 proto.hakuraku.Chara.prototype.hasName = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional string cast_name = 3;
+ * @return {string}
+ */
+proto.hakuraku.Chara.prototype.getCastName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.hakuraku.Chara} returns this
+ */
+proto.hakuraku.Chara.prototype.setCastName = function(value) {
+  return jspb.Message.setField(this, 3, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.Chara} returns this
+ */
+proto.hakuraku.Chara.prototype.clearCastName = function() {
+  return jspb.Message.setField(this, 3, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.Chara.prototype.hasCastName = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 

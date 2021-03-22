@@ -16,6 +16,7 @@ message UMDatabase {
 message Chara {
   optional int32 id = 1;
   optional string name = 2;
+  optional string cast_name = 3;
 }
 
 message SuccessionRelation {

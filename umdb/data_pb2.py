@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\x88\x02\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\"!\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\"(\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"@\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05'
+  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\x88\x02\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\"4\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tcast_name\x18\x03 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\"(\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"@\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05'
 )
 
 
@@ -64,8 +64,8 @@ _SPECIALCASERACE_RACEPERMISSION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=683,
-  serialized_end=811,
+  serialized_start=702,
+  serialized_end=830,
 )
 _sym_db.RegisterEnumDescriptor(_SPECIALCASERACE_RACEPERMISSION)
 
@@ -159,6 +159,13 @@ _CHARA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='cast_name', full_name='hakuraku.Chara.cast_name', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -172,7 +179,7 @@ _CHARA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=291,
-  serialized_end=324,
+  serialized_end=343,
 )
 
 
@@ -217,8 +224,8 @@ _SUCCESSIONRELATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=326,
-  serialized_end=418,
+  serialized_start=345,
+  serialized_end=437,
 )
 
 
@@ -256,8 +263,8 @@ _RACEINSTANCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=420,
-  serialized_end=460,
+  serialized_start=439,
+  serialized_end=479,
 )
 
 
@@ -302,8 +309,8 @@ _WINSSADDLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=462,
-  serialized_end=526,
+  serialized_start=481,
+  serialized_end=545,
 )
 
 
@@ -356,8 +363,8 @@ _SPECIALCASERACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=529,
-  serialized_end=811,
+  serialized_start=548,
+  serialized_end=830,
 )
 
 _UMDATABASE.fields_by_name['chara'].message_type = _CHARA
