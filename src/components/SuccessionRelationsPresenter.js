@@ -1,6 +1,7 @@
 import React from "react";
 import {Badge, Card, OverlayTrigger, Popover} from "react-bootstrap";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 class SuccessionRelationsPresenter extends React.Component {
     formatRelation(relation) {
@@ -9,7 +10,7 @@ class SuccessionRelationsPresenter extends React.Component {
                 Group {relation.getRelationType()} - {relation.getRelationPoint()} pts
             </Popover.Title>
             <Popover.Content>
-                {relation.getMemberCharaIdList().map(charaId => this.props.umdb.charas[charaId].getName()).join(', ')}
+                {relation.getMemberCharaIdList().map(charaId => UMDatabaseWrapper.charas[charaId].getName()).join(', ')}
             </Popover.Content>
         </Popover>;
 

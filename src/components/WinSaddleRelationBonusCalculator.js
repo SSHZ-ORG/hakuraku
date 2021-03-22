@@ -1,7 +1,7 @@
 import React from "react";
 import {Badge, Card, Form} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
-import KanaTypeaheadMatcher from "../utils/KanaTypeaheadMatcher";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent {
     constructor(props) {
@@ -13,16 +13,6 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
             grandparent1RaceInstances: [],
             grandparent2RaceInstances: [],
         };
-
-        const interestingRaceInstanceIds = Array.from(this.props.umdb.umdb.getWinsSaddleList().reduce(
-            (s, ws) => {
-                ws.getRaceInstanceIdList().forEach(raceInstanceId => s.add(raceInstanceId));
-                return s;
-            },
-            new Set()));
-        interestingRaceInstanceIds.sort();
-
-        this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.props.umdb.raceInstances[id]);
     }
 
     onToggle() {
@@ -48,9 +38,9 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         const intersectionRaceIds1 = new Set(this.state.grandparent1RaceInstances.map(i => i.getId()).filter(i => raceInstanceIds.has(i)));
         const intersectionRaceIds2 = new Set(this.state.grandparent2RaceInstances.map(i => i.getId()).filter(i => raceInstanceIds.has(i)));
 
-        const winsSaddles1 = this.props.umdb.umdb.getWinsSaddleList()
+        const winsSaddles1 = UMDatabaseWrapper.umdb.getWinsSaddleList()
             .filter(ws => ws.getRaceInstanceIdList().every(race => intersectionRaceIds1.has(race)));
-        const winsSaddles2 = this.props.umdb.umdb.getWinsSaddleList()
+        const winsSaddles2 = UMDatabaseWrapper.umdb.getWinsSaddleList()
             .filter(ws => ws.getRaceInstanceIdList().every(race => intersectionRaceIds2.has(race)));
 
         return <div>
@@ -62,7 +52,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
 
     raceSelection(label, selected, callback) {
         const raceInstanceIds = new Set(selected.map(i => i.getId()));
-        const winsSaddles = this.props.umdb.umdb.getWinsSaddleList()
+        const winsSaddles = UMDatabaseWrapper.umdb.getWinsSaddleList()
             .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)));
 
         return <div>
@@ -70,9 +60,8 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
                 <Form.Label>{label} {this.renderWinSaddles(winsSaddles)}</Form.Label>
                 <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
                            multiple
-                           options={this.interestingRaceInstances}
+                           options={UMDatabaseWrapper.interestingRaceInstances}
                            selected={selected}
-                           filterBy={KanaTypeaheadMatcher}
                            onChange={callback}/>
             </Form.Group>
         </div>;

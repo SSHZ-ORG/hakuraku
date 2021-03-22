@@ -4,6 +4,7 @@ import {Alert, Card, Form, Table} from "react-bootstrap";
 import SuccessionRelationsPresenter from "../components/SuccessionRelationsPresenter";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 const RELATIONSHIP_PAIRS = [
     ['selectedChara', 'parent1'],
@@ -69,8 +70,7 @@ export default class SuccessionPage extends React.Component {
 
         return <SuccessionRelationsPresenter
             title={`${keys.join(', ')} - ${charas.map(c => c.getName()).join(', ')}`}
-            relations={this.props.umdb.findSuccessionRelation(charas)}
-            umdb={this.props.umdb}/>;
+            relations={UMDatabaseWrapper.findSuccessionRelation(charas)}/>;
     }
 
     totalPoints() {
@@ -81,7 +81,7 @@ export default class SuccessionPage extends React.Component {
             pairs.push(charas);
         }
 
-        const relations = pairs.map(pair => this.props.umdb.findSuccessionRelation(pair));
+        const relations = pairs.map(pair => UMDatabaseWrapper.findSuccessionRelation(pair));
         const totalPoints =
             relations.map(r => UMDatabaseUtils.calculateTotalPoint(r)).reduce((a, b) => a + b, 0)
             + this.state.parent1WinSaddleBonus + this.state.parent2WinSaddleBonus;
@@ -109,41 +109,41 @@ export default class SuccessionPage extends React.Component {
         return (
             <div>
                 <Form>
-                    <CharaSelector umdb={this.props.umdb} label="Chara"
+                    <CharaSelector label="Chara"
                                    onSelectedCharaChange={(chara) => this.setChara('selectedChara', chara)}/>
                     <Table>
                         <tbody>
                         <tr>
                             <td rowSpan="2">
-                                <CharaSelector umdb={this.props.umdb} label="Parent1"
+                                <CharaSelector label="Parent1"
                                                onSelectedCharaChange={(chara) => this.setChara('parent1', chara)}/>
                                 {this.winSaddleRelationBonusInput((event) => this.setState({parent1WinSaddleBonus: parseInt(event.target.value) || 0}))}
                             </td>
                             <td>
-                                <CharaSelector umdb={this.props.umdb} label="Grandparent11"
+                                <CharaSelector label="Grandparent11"
                                                onSelectedCharaChange={(chara) => this.setChara('grandparent11', chara)}/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <CharaSelector umdb={this.props.umdb} label="Grandparent12"
+                                <CharaSelector label="Grandparent12"
                                                onSelectedCharaChange={(chara) => this.setChara('grandparent12', chara)}/>
                             </td>
                         </tr>
                         <tr>
                             <td rowSpan="2">
-                                <CharaSelector umdb={this.props.umdb} label="Parent2"
+                                <CharaSelector label="Parent2"
                                                onSelectedCharaChange={(chara) => this.setChara('parent2', chara)}/>
                                 {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}))}
                             </td>
                             <td>
-                                <CharaSelector umdb={this.props.umdb} label="Grandparent21"
+                                <CharaSelector label="Grandparent21"
                                                onSelectedCharaChange={(chara) => this.setChara('grandparent21', chara)}/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <CharaSelector umdb={this.props.umdb} label="Grandparent22"
+                                <CharaSelector label="Grandparent22"
                                                onSelectedCharaChange={(chara) => this.setChara('grandparent22', chara)}/>
                             </td>
                         </tr>
@@ -151,7 +151,7 @@ export default class SuccessionPage extends React.Component {
                     </Table>
                 </Form>
                 {this.state.validatorMessages.map(message => <Alert variant="danger">{message}</Alert>)}
-                <WinSaddleRelationBonusCalculator umdb={this.props.umdb}/>
+                <WinSaddleRelationBonusCalculator/>
                 {this.totalPoints()}
                 {RELATIONSHIP_PAIRS.map(pair => this.generateRelationsPresenter(pair))}
             </div>

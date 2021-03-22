@@ -1,22 +1,36 @@
 import {UMDatabase} from './data_pb';
 
-class UMDatabaseWrapper {
-    static fromBinary(bytes) {
-        return new UMDatabaseWrapper(UMDatabase.deserializeBinary(bytes));
-    }
+class _UMDatabaseWrapper {
+    /**
+     * @return {!Promise}
+     */
+    initialize() {
+        return fetch(process.env.PUBLIC_URL + '/data/umdb.binaryproto')
+            .then(response => response.arrayBuffer())
+            .then(response => {
+                const umdb = UMDatabase.deserializeBinary(response);
+                this.umdb = umdb;
 
-    constructor(/** @type UMDatabase */umdb) {
-        this.umdb = umdb;
+                this.charas = umdb.getCharaList().reduce((map, chara) => {
+                    map[chara.getId()] = chara;
+                    return map;
+                }, {});
 
-        this.charas = umdb.getCharaList().reduce((map, chara) => {
-            map[chara.getId()] = chara;
-            return map;
-        }, {});
+                this.raceInstances = umdb.getRaceInstanceList().reduce((map, race) => {
+                    map[race.getId()] = race;
+                    return map;
+                }, {});
 
-        this.raceInstances = umdb.getRaceInstanceList().reduce((map, race) => {
-            map[race.getId()] = race;
-            return map;
-        }, {});
+
+                const interestingRaceInstanceIds = Array.from(umdb.getWinsSaddleList().reduce(
+                    (s, ws) => {
+                        ws.getRaceInstanceIdList().forEach(raceInstanceId => s.add(raceInstanceId));
+                        return s;
+                    },
+                    new Set()));
+                interestingRaceInstanceIds.sort();
+                this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
+            });
     }
 
     /**
@@ -33,4 +47,5 @@ class UMDatabaseWrapper {
     }
 }
 
+const UMDatabaseWrapper = new _UMDatabaseWrapper();
 export default UMDatabaseWrapper;

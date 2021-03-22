@@ -9,21 +9,16 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            /** @type {UMDatabaseWrapper|undefined}*/
-            umdb: undefined,
+            umdbLoaded: false,
         }
     }
 
     componentDidMount() {
-        fetch(process.env.PUBLIC_URL + '/data/umdb.binaryproto')
-            .then(response => response.arrayBuffer())
-            .then(response => this.setState({
-                umdb: UMDatabaseWrapper.fromBinary(response),
-            }));
+        UMDatabaseWrapper.initialize().then(() => this.setState({umdbLoaded: true}));
     }
 
     render() {
-        if (this.state.umdb === undefined) {
+        if (this.state.umdbLoaded === false) {
             return <div><Spinner animation="border"/> Loading UMDatabase...</div>
         }
 
@@ -44,7 +39,7 @@ class App extends React.Component {
                 <Container>
                     <Switch>
                         <Route path="/succession">
-                            <SuccessionPage umdb={this.state.umdb}/>
+                            <SuccessionPage/>
                         </Route>
                         <Route path="/">
                             <Home/>
