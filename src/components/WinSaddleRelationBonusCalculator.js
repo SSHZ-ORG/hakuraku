@@ -1,7 +1,8 @@
 import React from "react";
-import {Badge, Card, Form} from "react-bootstrap";
+import {Badge, Button, Card, Form, OverlayTrigger, Popover} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent {
     constructor(props) {
@@ -67,11 +68,42 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         </div>;
     }
 
+    specialCaseRacePresenter() {
+        const popover = (
+            <Popover>
+                <Popover.Title as="h3">Special Case Races</Popover.Title>
+                <Popover.Content>
+                    {UMDatabaseWrapper.umdb.getSpecialCaseRaceList().map(specialCaseRace =>
+                        <div>
+                            {specialCaseRace.getRaceInstanceId()}
+                            &nbsp;-&nbsp;
+                            {UMDatabaseWrapper.raceInstances[specialCaseRace.getRaceInstanceId()].getName()}
+                            <br/>
+                            ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()]})
+                            <br/>
+                            {specialCaseRace.getCharaIdList().map(i => UMDatabaseWrapper.charas[i].getName()).join(', ')}
+                            <br/>
+                            <br/>
+                        </div>
+                    )}
+                    <div>All other races should use the default instance.</div>
+                </Popover.Content>
+            </Popover>
+        );
+
+        return <OverlayTrigger placement="right" overlay={popover}>
+            <Button variant="warning" size="sm">Special Case Races</Button>
+        </OverlayTrigger>
+    }
+
     render() {
         return <Card>
-            <Card.Header onClick={() => this.onToggle()} style={{cursor: "pointer"}}>勝鞍ボーナス Calculator</Card.Header>
+            <Card.Header onClick={() => this.onToggle()} style={{cursor: "pointer"}}>
+                勝鞍ボーナス Calculator
+            </Card.Header>
             {this.state.extended &&
             <Card.Body>
+                {this.specialCaseRacePresenter()}
                 {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
                 {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
                 {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}

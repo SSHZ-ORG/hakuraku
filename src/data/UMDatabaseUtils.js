@@ -1,3 +1,6 @@
+import {SpecialCaseRace} from './data_pb';
+
+
 class UMDatabaseUtils {
     static calculateTotalPoint(relations) {
         return relations.reduce((points, relation) => {
@@ -14,6 +17,11 @@ class UMDatabaseUtils {
         }
         return '△';
     }
+
+    static racePermissionEnumNames = Object.keys(SpecialCaseRace.RacePermission).reduce((ret, key) => {
+        ret[SpecialCaseRace.RacePermission[key]] = key;
+        return ret;
+    }, {});
 }
 
 export default UMDatabaseUtils;
