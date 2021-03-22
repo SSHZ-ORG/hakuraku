@@ -11,16 +11,11 @@ class _UMDatabaseWrapper {
                 const umdb = UMDatabase.deserializeBinary(response);
                 this.umdb = umdb;
 
-                this.charas = umdb.getCharaList().reduce((map, chara) => {
-                    map[chara.getId()] = chara;
-                    return map;
-                }, {});
+                this.charas = {};
+                umdb.getCharaList().forEach((chara) => this.charas[chara.getId()] = chara);
 
-                this.raceInstances = umdb.getRaceInstanceList().reduce((map, race) => {
-                    map[race.getId()] = race;
-                    return map;
-                }, {});
-
+                this.raceInstances = {};
+                umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()] = race);
 
                 const interestingRaceInstanceIds = Array.from(umdb.getWinsSaddleList().reduce(
                     (s, ws) => {
