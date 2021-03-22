@@ -9,6 +9,8 @@ message UMDatabase {
   repeated SuccessionRelation succession_relation = 3;
   repeated RaceInstance race_instance = 4;
   repeated WinsSaddle wins_saddle = 5;
+
+  repeated SpecialCaseRace special_case_race = 6;
 }
 
 message Chara {
@@ -31,4 +33,22 @@ message WinsSaddle {
   optional int32 id = 1;
   optional string name = 2;
   repeated int32 race_instance_id = 3;
+}
+
+message SpecialCaseRace {
+  optional int32 race_instance_id = 1;
+  optional int32 program_group = 2;
+
+  enum RacePermission {
+    UNKNOWN_RACE_PERMISSION = 0;
+    FIRST_YEAR = 1;
+    SECOND_YEAR = 2;
+    SECOND_OR_THIRD_YEAR = 3;
+    THIRD_YEAR = 4;
+    EX = 5;
+  }
+  optional RacePermission race_permission = 3;
+
+  // This shouldn't belong here. But it's anyway temporary.
+  repeated int32 chara_id = 4;
 }

@@ -1,5 +1,6 @@
 import argparse
 import sqlite3
+from collections import defaultdict
 
 import data_pb2
 
@@ -53,7 +54,7 @@ def populate_wins_saddle(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
     cursor.execute('''SELECT single_mode_wins_saddle.id, t.text, %s
                       FROM single_mode_wins_saddle
                       JOIN text_data AS t
-                      ON t.category=111 AND single_mode_wins_saddle.id = t."index"''' % instance_id_columns)
+                      ON t.category=111 AND single_mode_wins_saddle.id = t."index";''' % instance_id_columns)
     rows = cursor.fetchall()
     for row in rows:
         w = data_pb2.WinsSaddle()
@@ -61,6 +62,36 @@ def populate_wins_saddle(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         w.name = row[1]
         w.race_instance_id.extend([i for i in row[2:] if i > 0])
         pb.wins_saddle.append(w)
+
+
+def populate_special_case_race(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute('''SELECT p1.race_instance_id, p1.program_group, p1.race_permission
+                      FROM single_mode_program AS p1
+                      INNER JOIN single_mode_program AS p2
+                      ON p1.base_program_id != 0 AND p2.base_program_id = 0
+                         AND p1.base_program_id = p2.id
+                         AND p1.race_instance_id != p2.race_instance_id;''')
+    rows = cursor.fetchall()
+    races = []
+    groups_to_query = set()
+    for row in rows:
+        race = data_pb2.SpecialCaseRace()
+        race.race_instance_id = row[0]
+        race.program_group = row[1]
+        race.race_permission = row[2]
+        races.append(race)
+        groups_to_query.add(str(race.program_group))
+
+    cursor.execute('''SELECT chara_id, program_group FROM single_mode_chara_program
+                      WHERE program_group IN (%s);''' % ', '.join(groups_to_query))
+    rows = cursor.fetchall()
+    groups = defaultdict(list)
+    for row in rows:
+        groups[row[1]].append(row[0])
+
+    for race in races:
+        race.chara_id.extend(groups[race.program_group])
+        pb.special_case_race.append(race)
 
 
 def main():
@@ -78,6 +109,7 @@ def main():
     populate_succession_relation(pb, cursor)
     populate_race_instance(pb, cursor)
     populate_wins_saddle(pb, cursor)
+    populate_special_case_race(pb, cursor)
 
     print(pb)
 
