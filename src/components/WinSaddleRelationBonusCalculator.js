@@ -1,5 +1,5 @@
 import React from "react";
-import {Badge, Button, Card, Form, OverlayTrigger, Popover} from "react-bootstrap";
+import {Badge, Button, Card, Form, Modal, OverlayTrigger, Popover} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -13,6 +13,8 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
             parentRaceInstances: [],
             grandparent1RaceInstances: [],
             grandparent2RaceInstances: [],
+
+            showUsage: false,
         };
     }
 
@@ -68,6 +70,43 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         </div>;
     }
 
+    usagePresenter() {
+        return <>
+            <Button variant="secondary" size="sm" onClick={() => this.setState({showUsage: true})}>
+                Usage
+            </Button>
+
+            <Modal show={this.state.showUsage} onHide={() => this.setState({showUsage: false})}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Usage</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>Just fill in all races where the 3 characters won (as 一着).</p>
+                    <p>This is different than 因子 (because winning a race does not always generate 因子).</p>
+                    <p>It is difficult to see the grand parents' won races in the UI, and you unfortunately have to find
+                        them manually.</p>
+                    <p>Note that there are some special races. (Hover the button to see them.) They only apply to
+                        specific characters, for specific years. Other than that list, you should choose the normal one.
+                        This is important because these special races are calculated separately.
+                        Examples for メジロマックイーン - she has special 102501 - 宝塚記念 in the third year:</p>
+                    <ul>
+                        <li>If she won 宝塚記念 in the second year only, add only the normal one (101201 - 宝塚記念).</li>
+                        <li>If she won 宝塚記念 in the third year only, add only the special one (102501 - 宝塚記念).</li>
+                        <li>If she won 宝塚記念 in both years, add both 101201 - 宝塚記念 and 102501 - 宝塚記念.</li>
+                    </ul>
+                    <p>
+                        If you know how to decrypt the responses, it's suggested that you just&nbsp;
+                        <code>
+                            sum(1 for i in c['succession_chara_array'][:2] for s in i['win_saddle_id_array'] if s in
+                            c['win_saddle_id_array'])
+                        </code>
+                        &nbsp;to avoid human errors.
+                    </p>
+                </Modal.Body>
+            </Modal>
+        </>
+    }
+
     specialCaseRacePresenter() {
         const popover = (
             <Popover>
@@ -103,7 +142,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
             </Card.Header>
             {this.state.extended &&
             <Card.Body>
-                {this.specialCaseRacePresenter()}
+                {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}
                 {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
                 {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
                 {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}

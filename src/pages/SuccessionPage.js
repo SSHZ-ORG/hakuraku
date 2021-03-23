@@ -152,7 +152,9 @@ export default class SuccessionPage extends React.Component {
                 </Form>
                 {this.state.validatorMessages.map(message => <Alert variant="danger">{message}</Alert>)}
                 <WinSaddleRelationBonusCalculator/>
+                <hr/>
                 {this.totalPoints()}
+                <hr/>
                 {RELATIONSHIP_PAIRS.map(pair => this.generateRelationsPresenter(pair))}
             </div>
         );
