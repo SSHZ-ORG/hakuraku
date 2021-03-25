@@ -63,6 +63,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
                 <Form.Label>{label} {this.renderWinSaddles(winsSaddles)}</Form.Label>
                 <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
                            multiple
+                           clearButton
                            options={UMDatabaseWrapper.interestingRaceInstances}
                            selected={selected}
                            onChange={callback}/>

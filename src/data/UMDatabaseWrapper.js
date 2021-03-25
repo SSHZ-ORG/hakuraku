@@ -32,7 +32,7 @@ class _UMDatabaseWrapper {
      * @return {!Array<!proto.hakuraku.SuccessionRelation>}
      */
     findSuccessionRelation(/** @type {Array<Chara>}*/ charas) {
-        if (charas.includes(null)) return [];
+        if (charas.includes(null) || charas.includes(undefined)) return [];
 
         const charaIds = charas.map(c => c.getId());
         if (new Set(charaIds).size !== charaIds.length) return [];
