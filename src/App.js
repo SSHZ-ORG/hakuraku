@@ -33,6 +33,9 @@ class App extends React.Component {
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
                         </Nav>
+                        <Nav>
+                            <Nav.Link href="https://github.com/SSHZ-ORG/hakuraku">Source Code</Nav.Link>
+                        </Nav>
                     </Navbar.Collapse>
                 </Navbar>
 
