@@ -121,9 +121,10 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
                             <br/>
                             ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()]})
                             <br/>
-                            {specialCaseRace.getCharaIdList().map(i => UMDatabaseWrapper.charas[i].getName()).join(', ')}
-                            <br/>
-                            <br/>
+                            {specialCaseRace.getCharaIdList().map(i => <>
+                                {UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/>
+                            </>)}
+                            <hr/>
                         </div>
                     )}
                     <div>All other races should use the default instance.</div>

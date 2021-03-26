@@ -10,15 +10,17 @@ class SuccessionRelationsPresenter extends React.Component {
                 Group {relation.getRelationType()} - {relation.getRelationPoint()} pts
             </Popover.Title>
             <Popover.Content>
-                {relation.getMemberCharaIdList().map(charaId => UMDatabaseWrapper.charas[charaId].getName()).join(', ')}
+                {relation.getMemberCharaIdList().map(i => <>{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/></>)}
             </Popover.Content>
         </Popover>;
 
-        return <OverlayTrigger overlay={renderTooltip}>
-            <Badge variant="secondary">
-                Grp {relation.getRelationType()} - {relation.getRelationPoint()} pts
-            </Badge>
-        </OverlayTrigger>
+        return <>
+            <OverlayTrigger overlay={renderTooltip}>
+                <Badge variant="secondary">
+                    Grp {relation.getRelationType()} - {relation.getRelationPoint()} pts
+                </Badge>
+            </OverlayTrigger>{" "}
+        </>
     }
 
     render() {

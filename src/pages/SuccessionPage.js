@@ -71,7 +71,7 @@ export default class SuccessionPage extends React.Component {
         if (charas.includes(undefined)) return <div/>;
 
         return <SuccessionRelationsPresenter
-            title={`${keys.join(', ')} - ${charas.map(c => c.getName()).join(', ')}`}
+            title={`${keys.join(', ')} - ${charas.map(UMDatabaseUtils.charaNameWithIdAndCast).join(', ')}`}
             relations={UMDatabaseWrapper.findSuccessionRelation(charas)}/>;
     }
 

@@ -22,6 +22,14 @@ class UMDatabaseUtils {
         ret[SpecialCaseRace.RacePermission[key]] = key;
         return ret;
     }, {});
+
+    static charaNameWithIdAndCast(chara) {
+        return `${chara.getId()} - ${UMDatabaseUtils.charaNameWithCast(chara)}`;
+    }
+
+    static charaNameWithCast(chara) {
+        return `${chara.getName()} (${chara.getCastName()})`;
+    }
 }
 
 export default UMDatabaseUtils;

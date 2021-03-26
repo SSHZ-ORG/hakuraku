@@ -44,10 +44,6 @@ class CharaSelector extends React.Component {
         return l;
     }
 
-    charaBasicRenderingName(chara) {
-        return `${chara.getId()} - ${chara.getName()} (${chara.getCastName()})`
-    }
-
     charaRenderingName(chara) {
         let suggestionPtsString = '';
         if (this.props.constraintGroups) {
@@ -58,11 +54,11 @@ class CharaSelector extends React.Component {
                 suggestionPtsString = ` (${points.map(p => p.toString()).join(' + ')} = ${points.reduce((a, b) => a + b, 0)} pts)`;
             }
         }
-        return this.charaBasicRenderingName(chara) + suggestionPtsString;
+        return UMDatabaseUtils.charaNameWithIdAndCast(chara) + suggestionPtsString;
     }
 
     typeaheadMatcher(option, props) {
-        const labelKey = this.charaBasicRenderingName(option);
+        const labelKey = UMDatabaseUtils.charaNameWithIdAndCast(option);
         return normalizeRomaji(labelKey).indexOf(normalizeRomaji(props.text)) !== -1 ||
             normalizeKatakana(labelKey).indexOf(normalizeKatakana(props.text)) !== -1;
     }
