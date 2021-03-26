@@ -136,6 +136,14 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         </OverlayTrigger>
     }
 
+    clearAll() {
+        this.setState({
+            parentRaceInstances: [],
+            grandparent1RaceInstances: [],
+            grandparent2RaceInstances: [],
+        });
+    }
+
     render() {
         return <Card>
             <Card.Header onClick={() => this.onToggle()} style={{cursor: "pointer"}}>
@@ -143,7 +151,8 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
             </Card.Header>
             {this.state.extended &&
             <Card.Body>
-                {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}
+                {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}{" "}
+                <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
                 {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
                 {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
                 {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}

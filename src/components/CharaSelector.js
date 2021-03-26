@@ -14,14 +14,10 @@ const normalizeKatakana = (s) => toKatakana(s).toLowerCase(); // To support ãƒ­ã
 class CharaSelector extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            selectedChara: undefined,
-        };
     }
 
 
     onSelectionChange(selectedChara) {
-        this.setState({selectedChara: selectedChara});
         this.props.onSelectedCharaChange(selectedChara);
     }
 
@@ -78,10 +74,10 @@ class CharaSelector extends React.Component {
                 clearButton
                 labelKey={chara => this.charaRenderingName(chara)}
                 options={this.charaList()}
-                selected={this.state.selectedChara ? [this.state.selectedChara] : []}
+                selected={this.props.selectedChara ? [this.props.selectedChara] : []}
                 onChange={(selection) => this.onSelectionChange(selection[0])}
                 filterBy={(option, props) => this.typeaheadMatcher(option, props)}
-                isInvalid={!this.state.selectedChara}/>
+                isInvalid={!this.props.selectedChara}/>
         </Form.Group>
     }
 }
