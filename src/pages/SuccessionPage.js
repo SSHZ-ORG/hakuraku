@@ -129,7 +129,7 @@ export default class SuccessionPage extends React.Component {
                             </td>
                             <td>
                                 <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 11 (suggesting based on Chara + Parent 1)" : "Grandparent 11"}
+                                    label={this.state.suggestionEnabled ? "Grandparent 11 (suggesting based on Chara & Parent 1)" : "Grandparent 11"}
                                     onSelectedCharaChange={(chara) => this.setChara('grandparent11', chara)}
                                     constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
                             </td>
@@ -137,7 +137,7 @@ export default class SuccessionPage extends React.Component {
                         <tr>
                             <td>
                                 <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 12 (suggesting based on Chara + Parent 1)" : "Grandparent 12"}
+                                    label={this.state.suggestionEnabled ? "Grandparent 12 (suggesting based on Chara & Parent 1)" : "Grandparent 12"}
                                     onSelectedCharaChange={(chara) => this.setChara('grandparent12', chara)}
                                     constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
                             </td>
@@ -145,14 +145,14 @@ export default class SuccessionPage extends React.Component {
                         <tr>
                             <td rowSpan="2">
                                 <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Parent 2 (suggesting based on Chara & Parent 1)" : "Parent 2"}
+                                    label={this.state.suggestionEnabled ? "Parent 2 (suggesting based on Chara + Parent 1)" : "Parent 2"}
                                     onSelectedCharaChange={(chara) => this.setChara('parent2', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.parent1], [this.state.selectedChara]] : undefined}/>
+                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara], [this.state.parent1]] : undefined}/>
                                 {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}))}
                             </td>
                             <td>
                                 <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 21 (suggesting based on Chara + Parent 2)" : "Grandparent 21"}
+                                    label={this.state.suggestionEnabled ? "Grandparent 21 (suggesting based on Chara & Parent 2)" : "Grandparent 21"}
                                     onSelectedCharaChange={(chara) => this.setChara('grandparent21', chara)}
                                     constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
                             </td>
@@ -160,7 +160,7 @@ export default class SuccessionPage extends React.Component {
                         <tr>
                             <td>
                                 <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 22 (suggesting based on Chara + Parent 2)" : "Grandparent 22"}
+                                    label={this.state.suggestionEnabled ? "Grandparent 22 (suggesting based on Chara & Parent 2)" : "Grandparent 22"}
                                     onSelectedCharaChange={(chara) => this.setChara('grandparent22', chara)}
                                     constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
                             </td>

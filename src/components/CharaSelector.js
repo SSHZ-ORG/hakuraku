@@ -33,14 +33,14 @@ class CharaSelector extends React.Component {
         const result = {};
         UMDatabaseWrapper.umdb.getCharaList().forEach(chara => {
             result[chara.getId()] =
-                constraintGroups.map(group => UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara))))
-                    .reduce((a, b) => a + b, 0);
+                constraintGroups.map(group => UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara))));
         });
         return result;
     })
 
     charaList() {
-        const relationPoints = this.calcRelationPoints(this.props.constraintGroups);
+        const relationPoints = Object.fromEntries(Object.entries(this.calcRelationPoints(this.props.constraintGroups))
+            .map(([k, v]) => [k, v.reduce((a, b) => a + b, 0)]));
         let l = UMDatabaseWrapper.umdb.getCharaList();
         if (this.props.constraintGroups) {
             l = l.slice().sort((a, b) => relationPoints[b.getId()] - relationPoints[a.getId()]);
@@ -53,7 +53,15 @@ class CharaSelector extends React.Component {
     }
 
     charaRenderingName(chara) {
-        const suggestionPtsString = this.props.constraintGroups ? ` (${this.calcRelationPoints(this.props.constraintGroups)[chara.getId()]} pts)` : '';
+        let suggestionPtsString = '';
+        if (this.props.constraintGroups) {
+            const points = this.calcRelationPoints(this.props.constraintGroups)[chara.getId()];
+            if (points.length === 1) {
+                suggestionPtsString = ` (${points[0]} pts)`;
+            } else {
+                suggestionPtsString = ` (${points.map(p => p.toString()).join(' + ')} = ${points.reduce((a, b) => a + b, 0)} pts)`;
+            }
+        }
         return this.charaBasicRenderingName(chara) + suggestionPtsString;
     }
 
