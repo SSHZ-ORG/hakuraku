@@ -34,6 +34,8 @@ message WinsSaddle {
   optional int32 id = 1;
   optional string name = 2;
   repeated int32 race_instance_id = 3;
+  optional int32 priority = 4;
+  optional int32 group_id = 5;
 }
 
 message SpecialCaseRace {

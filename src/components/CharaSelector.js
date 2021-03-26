@@ -12,10 +12,6 @@ const normalizeKatakana = (s) => toKatakana(s).toLowerCase(); // To support ãƒ­ã
 
 
 class CharaSelector extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
 
     onSelectionChange(selectedChara) {
         this.props.onSelectedCharaChange(selectedChara);

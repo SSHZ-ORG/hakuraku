@@ -1302,7 +1302,9 @@ proto.hakuraku.WinsSaddle.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = jspb.Message.getField(msg, 1)) == null ? undefined : f,
     name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f,
-    raceInstanceIdList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f
+    raceInstanceIdList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
+    priority: (f = jspb.Message.getField(msg, 4)) == null ? undefined : f,
+    groupId: (f = jspb.Message.getField(msg, 5)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1353,6 +1355,14 @@ proto.hakuraku.WinsSaddle.deserializeBinaryFromReader = function(msg, reader) {
         msg.addRaceInstanceId(values[i]);
       }
       break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setPriority(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setGroupId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1400,6 +1410,20 @@ proto.hakuraku.WinsSaddle.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedInt32(
       3,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 4));
+  if (f != null) {
+    writer.writeInt32(
+      4,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 5));
+  if (f != null) {
+    writer.writeInt32(
+      5,
       f
     );
   }
@@ -1512,6 +1536,78 @@ proto.hakuraku.WinsSaddle.prototype.addRaceInstanceId = function(value, opt_inde
  */
 proto.hakuraku.WinsSaddle.prototype.clearRaceInstanceIdList = function() {
   return this.setRaceInstanceIdList([]);
+};
+
+
+/**
+ * optional int32 priority = 4;
+ * @return {number}
+ */
+proto.hakuraku.WinsSaddle.prototype.getPriority = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.hakuraku.WinsSaddle} returns this
+ */
+proto.hakuraku.WinsSaddle.prototype.setPriority = function(value) {
+  return jspb.Message.setField(this, 4, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.WinsSaddle} returns this
+ */
+proto.hakuraku.WinsSaddle.prototype.clearPriority = function() {
+  return jspb.Message.setField(this, 4, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.WinsSaddle.prototype.hasPriority = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional int32 group_id = 5;
+ * @return {number}
+ */
+proto.hakuraku.WinsSaddle.prototype.getGroupId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.hakuraku.WinsSaddle} returns this
+ */
+proto.hakuraku.WinsSaddle.prototype.setGroupId = function(value) {
+  return jspb.Message.setField(this, 5, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.WinsSaddle} returns this
+ */
+proto.hakuraku.WinsSaddle.prototype.clearGroupId = function() {
+  return jspb.Message.setField(this, 5, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.WinsSaddle.prototype.hasGroupId = function() {
+  return jspb.Message.getField(this, 5) != null;
 };
 
 

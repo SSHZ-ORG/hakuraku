@@ -3,6 +3,7 @@ import {Badge, Button, Card, Form, Modal, OverlayTrigger, Popover} from "react-b
 import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import memoize from "memoize-one";
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent {
     constructor(props) {
@@ -37,30 +38,44 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
     }
 
     generateResult() {
-        const raceInstanceIds = new Set(this.state.parentRaceInstances.map(i => i.getId()));
-        const intersectionRaceIds1 = new Set(this.state.grandparent1RaceInstances.map(i => i.getId()).filter(i => raceInstanceIds.has(i)));
-        const intersectionRaceIds2 = new Set(this.state.grandparent2RaceInstances.map(i => i.getId()).filter(i => raceInstanceIds.has(i)));
-
-        const winsSaddles1 = UMDatabaseWrapper.umdb.getWinsSaddleList()
-            .filter(ws => ws.getRaceInstanceIdList().every(race => intersectionRaceIds1.has(race)));
-        const winsSaddles2 = UMDatabaseWrapper.umdb.getWinsSaddleList()
-            .filter(ws => ws.getRaceInstanceIdList().every(race => intersectionRaceIds2.has(race)));
+        const parentWinsSaddles = new Set(this.simulateGenerateWinSaddle(this.state.parentRaceInstances));
+        const winsSaddlesInteraction1 = this.simulateGenerateWinSaddle(this.state.grandparent1RaceInstances)
+            .filter(ws => parentWinsSaddles.has(ws));
+        const winsSaddlesInteraction2 = this.simulateGenerateWinSaddle(this.state.grandparent2RaceInstances)
+            .filter(ws => parentWinsSaddles.has(ws));
 
         return <div>
-            Parent & Grandparent 1: {this.renderOneResult(winsSaddles1)}
-            Parent & Grandparent 2: {this.renderOneResult(winsSaddles2)}
-            Total: {winsSaddles1.length + winsSaddles2.length} pts
+            Parent & Grandparent 1: {this.renderOneResult(winsSaddlesInteraction1)}
+            Parent & Grandparent 2: {this.renderOneResult(winsSaddlesInteraction2)}
+            Total: {winsSaddlesInteraction1.length + winsSaddlesInteraction2.length} pts
         </div>
     }
 
-    raceSelection(label, selected, callback) {
-        const raceInstanceIds = new Set(selected.map(i => i.getId()));
-        const winsSaddles = UMDatabaseWrapper.umdb.getWinsSaddleList()
-            .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)));
+    simulateGenerateWinSaddle = memoize(raceInstances => {
+        const raceInstanceIds = new Set(raceInstances.map(i => i.getId()));
 
+        const winsSaddlesByGroup = new Map();
+        UMDatabaseWrapper.umdb.getWinsSaddleList()
+            .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)))
+            .forEach(ws => {
+                if (!winsSaddlesByGroup.has(ws.getGroupId())) {
+                    winsSaddlesByGroup.set(ws.getGroupId(), []);
+                }
+                winsSaddlesByGroup.get(ws.getGroupId()).push(ws);
+            });
+
+        const finalWinsSaddles = [];
+        for (let wss of winsSaddlesByGroup.values()) {
+            wss.sort((a, b) => a.getPriority() - b.getPriority());
+            finalWinsSaddles.push(wss[0]);
+        }
+        return finalWinsSaddles;
+    });
+
+    raceSelection(label, selected, callback) {
         return <div>
             <Form.Group>
-                <Form.Label>{label} {this.renderWinSaddles(winsSaddles)}</Form.Label>
+                <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selected))}</Form.Label>
                 <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
                            multiple
                            clearButton
@@ -88,12 +103,15 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
                         them manually.</p>
                     <p>Note that there are some special races. (Hover the button to see them.) They only apply to
                         specific characters, for specific years. Other than that list, you should choose the normal one.
-                        This is important because these special races are calculated separately.
+                        This is important because these special races are calculated specially. Specifically, they are
+                        calculated separately, but would be 'overridden' by the normal ones.
                         Examples for メジロマックイーン - she has special 102501 - 宝塚記念 in the third year:</p>
                     <ul>
-                        <li>If she won 宝塚記念 in the second year only, add only the normal one (101201 - 宝塚記念).</li>
-                        <li>If she won 宝塚記念 in the third year only, add only the special one (102501 - 宝塚記念).</li>
-                        <li>If she won 宝塚記念 in both years, add both 101201 - 宝塚記念 and 102501 - 宝塚記念.</li>
+                        <li>If she won 宝塚記念 in the second year only, add the normal one only (101201 - 宝塚記念).</li>
+                        <li>If she won 宝塚記念 in the third year only, add the special one only (102501 - 宝塚記念).</li>
+                        <li>If she won 宝塚記念 in both years, add both 101201 - 宝塚記念 and 102501 - 宝塚記念. We will
+                            automatically perform the calculation about overriding for you.
+                        </li>
                     </ul>
                     <p>
                         If you know how to decrypt the responses, it's suggested that you just&nbsp;
