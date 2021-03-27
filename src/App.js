@@ -25,18 +25,21 @@ class App extends React.Component {
         return (
             <HashRouter>
                 <Navbar bg="light" expand="lg">
-                    <Navbar.Brand as={Link} to="/">Hakuraku</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Container>
+                        <Navbar.Brand as={Link} to="/">Hakuraku</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="https://github.com/SSHZ-ORG/hakuraku">Source Code</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="mr-auto">
+                                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
+                            </Nav>
+                            <Nav>
+                                <Nav.Item className="navbar-text">DB ver. {UMDatabaseWrapper.umdb.getVersion()}</Nav.Item>
+                                <Nav.Link href="https://github.com/SSHZ-ORG/hakuraku">Source Code</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
                 </Navbar>
 
                 <Container>
