@@ -4,6 +4,7 @@ import {HashRouter, Link, Route, Switch} from "react-router-dom";
 import SuccessionPage from './pages/SuccessionPage';
 import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
+import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 
 class App extends React.Component {
     constructor(props) {
@@ -33,9 +34,12 @@ class App extends React.Component {
                             <Nav className="mr-auto">
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
+                                <Nav.Link as={Link} to="/carrotjuicer">CarrotJuicer</Nav.Link>
                             </Nav>
                             <Nav>
-                                <Nav.Item className="navbar-text">DB ver. {UMDatabaseWrapper.umdb.getVersion()}</Nav.Item>
+                                <Nav.Item className="navbar-text">
+                                    DB ver. {UMDatabaseWrapper.umdb.getVersion()}
+                                </Nav.Item>
                                 <Nav.Link href="https://github.com/SSHZ-ORG/hakuraku">Source Code</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
@@ -46,6 +50,9 @@ class App extends React.Component {
                     <Switch>
                         <Route path="/succession">
                             <SuccessionPage/>
+                        </Route>
+                        <Route path="/carrotjuicer">
+                            <CarrotJuicerPage/>
                         </Route>
                         <Route path="/">
                             <Home/>
