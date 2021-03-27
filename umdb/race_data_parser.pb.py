@@ -82,9 +82,8 @@ def deserialize(b: bytearray) -> race_data_pb2.RaceSimulateData:
     data.__buffer_size_3 = struct.unpack_from('<i', b, offset)[0]
     offset += 4 + data.__buffer_size_3
 
-    fmt = '<i'
-    data.event_count = struct.unpack_from(fmt, b, offset)[0]
-    offset += struct.calcsize(fmt)
+    data.event_count = struct.unpack_from('<i', b, offset)[0]
+    offset += 4
 
     for i in range(data.event_count):
         event_wrapper = race_data_pb2.RaceSimulateData.EventDataWrapper()

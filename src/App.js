@@ -5,6 +5,7 @@ import SuccessionPage from './pages/SuccessionPage';
 import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
+import RaceDataPage from "./pages/RaceDataPage";
 
 class App extends React.Component {
     constructor(props) {
@@ -35,6 +36,7 @@ class App extends React.Component {
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
                                 <Nav.Link as={Link} to="/carrotjuicer">CarrotJuicer</Nav.Link>
+                                <Nav.Link as={Link} to="/racedata">RaceDataParser</Nav.Link>
                             </Nav>
                             <Nav>
                                 <Nav.Item className="navbar-text">
@@ -53,6 +55,9 @@ class App extends React.Component {
                         </Route>
                         <Route path="/carrotjuicer">
                             <CarrotJuicerPage/>
+                        </Route>
+                        <Route path="/racedata">
+                            <RaceDataPage/>
                         </Route>
                         <Route path="/">
                             <Home/>
