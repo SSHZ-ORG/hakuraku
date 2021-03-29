@@ -64,8 +64,8 @@ function deserialize(input) {
     data.setDistanceDiffMax(distanceDiffMax).setHorseNum(horseNum).setHorseFrameSize(horseFrameSize).setHorseResultSize(horseResultSize);
     offset += s.size;
 
-    data.setBufferSize1(oneInt32.unpack_from(buffer, offset)[0]);
-    offset += 4 + data.getBufferSize1();
+    data.setPaddingSize1(oneInt32.unpack_from(buffer, offset)[0]);
+    offset += 4 + data.getPaddingSize1();
 
     s = struct('<ii')
     const [frameCount, frameSize] = s.unpack_from(buffer, offset);
@@ -77,16 +77,16 @@ function deserialize(input) {
         offset += frameSize;
     }
 
-    data.setBufferSize2(oneInt32.unpack_from(buffer, offset)[0]);
-    offset += 4 + data.getBufferSize2();
+    data.setPaddingSize2(oneInt32.unpack_from(buffer, offset)[0]);
+    offset += 4 + data.getPaddingSize2();
 
     for (let i = 0; i < horseNum; i++) {
         data.addHorseResult(deserializeHorseResult(buffer, offset));
         offset += horseResultSize;
     }
 
-    data.setBufferSize3(oneInt32.unpack_from(buffer, offset)[0]);
-    offset += 4 + data.getBufferSize3();
+    data.setPaddingSize3(oneInt32.unpack_from(buffer, offset)[0]);
+    offset += 4 + data.getPaddingSize3();
 
     data.setEventCount(oneInt32.unpack_from(buffer, offset)[0]);
     offset += 4;

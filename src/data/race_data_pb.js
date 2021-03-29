@@ -213,15 +213,15 @@ proto.hakuraku.RaceSimulateData.toObject = function(includeInstance, msg) {
     horseNum: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f,
     horseFrameSize: (f = jspb.Message.getField(msg, 4)) == null ? undefined : f,
     horseResultSize: (f = jspb.Message.getField(msg, 5)) == null ? undefined : f,
-    bufferSize1: (f = jspb.Message.getField(msg, 6)) == null ? undefined : f,
+    paddingSize1: (f = jspb.Message.getField(msg, 6)) == null ? undefined : f,
     frameCount: (f = jspb.Message.getField(msg, 7)) == null ? undefined : f,
     frameSize: (f = jspb.Message.getField(msg, 8)) == null ? undefined : f,
     frameList: jspb.Message.toObjectList(msg.getFrameList(),
     proto.hakuraku.RaceSimulateFrameData.toObject, includeInstance),
-    bufferSize2: (f = jspb.Message.getField(msg, 10)) == null ? undefined : f,
+    paddingSize2: (f = jspb.Message.getField(msg, 10)) == null ? undefined : f,
     horseResultList: jspb.Message.toObjectList(msg.getHorseResultList(),
     proto.hakuraku.RaceSimulateHorseResultData.toObject, includeInstance),
-    bufferSize3: (f = jspb.Message.getField(msg, 12)) == null ? undefined : f,
+    paddingSize3: (f = jspb.Message.getField(msg, 12)) == null ? undefined : f,
     eventCount: (f = jspb.Message.getField(msg, 13)) == null ? undefined : f,
     eventList: jspb.Message.toObjectList(msg.getEventList(),
     proto.hakuraku.RaceSimulateData.EventDataWrapper.toObject, includeInstance)
@@ -284,7 +284,7 @@ proto.hakuraku.RaceSimulateData.deserializeBinaryFromReader = function(msg, read
       break;
     case 6:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setBufferSize1(value);
+      msg.setPaddingSize1(value);
       break;
     case 7:
       var value = /** @type {number} */ (reader.readInt32());
@@ -301,7 +301,7 @@ proto.hakuraku.RaceSimulateData.deserializeBinaryFromReader = function(msg, read
       break;
     case 10:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setBufferSize2(value);
+      msg.setPaddingSize2(value);
       break;
     case 11:
       var value = new proto.hakuraku.RaceSimulateHorseResultData;
@@ -310,7 +310,7 @@ proto.hakuraku.RaceSimulateData.deserializeBinaryFromReader = function(msg, read
       break;
     case 12:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setBufferSize3(value);
+      msg.setPaddingSize3(value);
       break;
     case 13:
       var value = /** @type {number} */ (reader.readInt32());
@@ -836,10 +836,10 @@ proto.hakuraku.RaceSimulateData.prototype.hasHorseResultSize = function() {
 
 
 /**
- * optional int32 __buffer_size_1 = 6;
+ * optional int32 __padding_size_1 = 6;
  * @return {number}
  */
-proto.hakuraku.RaceSimulateData.prototype.getBufferSize1 = function() {
+proto.hakuraku.RaceSimulateData.prototype.getPaddingSize1 = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
@@ -848,7 +848,7 @@ proto.hakuraku.RaceSimulateData.prototype.getBufferSize1 = function() {
  * @param {number} value
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.setBufferSize1 = function(value) {
+proto.hakuraku.RaceSimulateData.prototype.setPaddingSize1 = function(value) {
   return jspb.Message.setField(this, 6, value);
 };
 
@@ -857,7 +857,7 @@ proto.hakuraku.RaceSimulateData.prototype.setBufferSize1 = function(value) {
  * Clears the field making it undefined.
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.clearBufferSize1 = function() {
+proto.hakuraku.RaceSimulateData.prototype.clearPaddingSize1 = function() {
   return jspb.Message.setField(this, 6, undefined);
 };
 
@@ -866,7 +866,7 @@ proto.hakuraku.RaceSimulateData.prototype.clearBufferSize1 = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.hakuraku.RaceSimulateData.prototype.hasBufferSize1 = function() {
+proto.hakuraku.RaceSimulateData.prototype.hasPaddingSize1 = function() {
   return jspb.Message.getField(this, 6) != null;
 };
 
@@ -982,10 +982,10 @@ proto.hakuraku.RaceSimulateData.prototype.clearFrameList = function() {
 
 
 /**
- * optional int32 __buffer_size_2 = 10;
+ * optional int32 __padding_size_2 = 10;
  * @return {number}
  */
-proto.hakuraku.RaceSimulateData.prototype.getBufferSize2 = function() {
+proto.hakuraku.RaceSimulateData.prototype.getPaddingSize2 = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
 
@@ -994,7 +994,7 @@ proto.hakuraku.RaceSimulateData.prototype.getBufferSize2 = function() {
  * @param {number} value
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.setBufferSize2 = function(value) {
+proto.hakuraku.RaceSimulateData.prototype.setPaddingSize2 = function(value) {
   return jspb.Message.setField(this, 10, value);
 };
 
@@ -1003,7 +1003,7 @@ proto.hakuraku.RaceSimulateData.prototype.setBufferSize2 = function(value) {
  * Clears the field making it undefined.
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.clearBufferSize2 = function() {
+proto.hakuraku.RaceSimulateData.prototype.clearPaddingSize2 = function() {
   return jspb.Message.setField(this, 10, undefined);
 };
 
@@ -1012,7 +1012,7 @@ proto.hakuraku.RaceSimulateData.prototype.clearBufferSize2 = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.hakuraku.RaceSimulateData.prototype.hasBufferSize2 = function() {
+proto.hakuraku.RaceSimulateData.prototype.hasPaddingSize2 = function() {
   return jspb.Message.getField(this, 10) != null;
 };
 
@@ -1056,10 +1056,10 @@ proto.hakuraku.RaceSimulateData.prototype.clearHorseResultList = function() {
 
 
 /**
- * optional int32 __buffer_size_3 = 12;
+ * optional int32 __padding_size_3 = 12;
  * @return {number}
  */
-proto.hakuraku.RaceSimulateData.prototype.getBufferSize3 = function() {
+proto.hakuraku.RaceSimulateData.prototype.getPaddingSize3 = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 12, 0));
 };
 
@@ -1068,7 +1068,7 @@ proto.hakuraku.RaceSimulateData.prototype.getBufferSize3 = function() {
  * @param {number} value
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.setBufferSize3 = function(value) {
+proto.hakuraku.RaceSimulateData.prototype.setPaddingSize3 = function(value) {
   return jspb.Message.setField(this, 12, value);
 };
 
@@ -1077,7 +1077,7 @@ proto.hakuraku.RaceSimulateData.prototype.setBufferSize3 = function(value) {
  * Clears the field making it undefined.
  * @return {!proto.hakuraku.RaceSimulateData} returns this
  */
-proto.hakuraku.RaceSimulateData.prototype.clearBufferSize3 = function() {
+proto.hakuraku.RaceSimulateData.prototype.clearPaddingSize3 = function() {
   return jspb.Message.setField(this, 12, undefined);
 };
 
@@ -1086,7 +1086,7 @@ proto.hakuraku.RaceSimulateData.prototype.clearBufferSize3 = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.hakuraku.RaceSimulateData.prototype.hasBufferSize3 = function() {
+proto.hakuraku.RaceSimulateData.prototype.hasPaddingSize3 = function() {
   return jspb.Message.getField(this, 12) != null;
 };
 

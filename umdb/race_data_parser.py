@@ -61,8 +61,8 @@ def deserialize(b: bytearray) -> race_data_pb2.RaceSimulateData:
         struct.unpack_from(fmt, b, offset)
     offset += struct.calcsize(fmt)
 
-    data.__buffer_size_1 = struct.unpack_from('<i', b, offset)[0]
-    offset += 4 + data.__buffer_size_1
+    data.__padding_size_1 = struct.unpack_from('<i', b, offset)[0]
+    offset += 4 + data.__padding_size_1
 
     fmt = '<ii'
     data.frame_count, data.frame_size = struct.unpack_from(fmt, b, offset)
@@ -72,15 +72,15 @@ def deserialize(b: bytearray) -> race_data_pb2.RaceSimulateData:
         data.frame.append(deserialize_frame(b, offset, data.horse_num, data.horse_frame_size))
         offset += data.frame_size
 
-    data.__buffer_size_2 = struct.unpack_from('<i', b, offset)[0]
-    offset += 4 + data.__buffer_size_2
+    data.__padding_size_2 = struct.unpack_from('<i', b, offset)[0]
+    offset += 4 + data.__padding_size_2
 
     for i in range(data.horse_num):
         data.horse_result.append(deserialize_horse_result(b, offset))
         offset += data.horse_result_size
 
-    data.__buffer_size_3 = struct.unpack_from('<i', b, offset)[0]
-    offset += 4 + data.__buffer_size_3
+    data.__padding_size_3 = struct.unpack_from('<i', b, offset)[0]
+    offset += 4 + data.__padding_size_3
 
     data.event_count = struct.unpack_from('<i', b, offset)[0]
     offset += 4

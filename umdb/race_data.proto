@@ -10,17 +10,17 @@ message RaceSimulateData {
   optional int32 horse_frame_size = 4;
   optional int32 horse_result_size = 5;
 
-  optional int32 __buffer_size_1 = 6;
+  optional int32 __padding_size_1 = 6;
 
   optional int32 frame_count = 7;
   optional int32 frame_size = 8;
   repeated RaceSimulateFrameData frame = 9;
 
-  optional int32 __buffer_size_2 = 10;
+  optional int32 __padding_size_2 = 10;
 
   repeated RaceSimulateHorseResultData horse_result = 11;
 
-  optional int32 __buffer_size_3 = 12;
+  optional int32 __padding_size_3 = 12;
 
   optional int32 event_count = 13;
   message EventDataWrapper {
