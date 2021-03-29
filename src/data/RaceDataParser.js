@@ -8,10 +8,9 @@ const oneFloat = struct('<f')
 
 function deserializeHeader(buffer) {
     const header = new pb.RaceSimulateHeaderData();
-    const s = struct('<ii');
-    const [maxLength, version] = s.unpack_from(buffer, 0);
+    const [maxLength, version] = struct('<ii').unpack_from(buffer, 0);
     header.setMaxLength(maxLength).setVersion(version);
-    return [header, s.size];
+    return [header, 4 + maxLength];
 }
 
 function deserializeHorseFrame(buffer, offset) {

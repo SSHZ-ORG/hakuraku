@@ -7,9 +7,8 @@ import race_data_pb2
 
 def deserialize_header(b: bytearray) -> (race_data_pb2.RaceSimulateHeaderData, int):
     header = race_data_pb2.RaceSimulateHeaderData()
-    fmt = '<ii'
-    header.max_length, header.version = struct.unpack_from(fmt, b, offset=0)
-    return header, struct.calcsize(fmt)
+    header.max_length, header.version = struct.unpack_from('<ii', b, offset=0)
+    return header, 4 + header.max_length
 
 
 def deserialize_horse_frame(b: bytearray, offset: int) -> race_data_pb2.RaceSimulateHorseFrameData:
