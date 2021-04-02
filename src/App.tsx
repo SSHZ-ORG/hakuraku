@@ -7,8 +7,8 @@ import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 import RaceDataPage from "./pages/RaceDataPage";
 
-class App extends React.Component {
-    constructor(props) {
+class App extends React.Component<{}, { umdbLoaded: boolean }> {
+    constructor(props: {}) {
         super(props);
         this.state = {
             umdbLoaded: false,
@@ -20,7 +20,7 @@ class App extends React.Component {
     }
 
     render() {
-        if (this.state.umdbLoaded === false) {
+        if (!this.state.umdbLoaded) {
             return <div><Spinner animation="border"/> Loading UMDatabase...</div>
         }
 
