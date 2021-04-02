@@ -1,6 +1,11 @@
-import {UMDatabase} from './data_pb';
+import {Chara, RaceInstance, UMDatabase} from './data_pb';
 
 class _UMDatabaseWrapper {
+    umdb: UMDatabase = new UMDatabase();
+    charas: Record<number, Chara> = {};
+    raceInstances: Record<number, RaceInstance> = {};
+    interestingRaceInstances: RaceInstance[] = [];
+
     /**
      * @return {!Promise}
      */
@@ -8,33 +13,27 @@ class _UMDatabaseWrapper {
         return fetch(process.env.PUBLIC_URL + '/data/umdb.binaryproto')
             .then(response => response.arrayBuffer())
             .then(response => {
-                const umdb = UMDatabase.deserializeBinary(response);
-                this.umdb = umdb;
+                this.umdb = UMDatabase.deserializeBinary(new Uint8Array(response));
 
-                this.charas = {};
-                umdb.getCharaList().forEach((chara) => this.charas[chara.getId()] = chara);
+                this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
 
-                this.raceInstances = {};
-                umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()] = race);
+                this.umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()!] = race);
 
-                const interestingRaceInstanceIds = Array.from(umdb.getWinsSaddleList().reduce(
+                const interestingRaceInstanceIds = Array.from(this.umdb.getWinsSaddleList().reduce(
                     (s, ws) => {
                         ws.getRaceInstanceIdList().forEach(raceInstanceId => s.add(raceInstanceId));
                         return s;
                     },
-                    new Set()));
+                    new Set<number>()));
                 interestingRaceInstanceIds.sort();
                 this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
             });
     }
 
-    /**
-     * @return {!Array<!proto.hakuraku.SuccessionRelation>}
-     */
-    findSuccessionRelation(/** @type {Array<Chara>}*/ charas) {
+    findSuccessionRelation(charas: (Chara | null | undefined)[]) {
         if (charas.includes(null) || charas.includes(undefined)) return [];
 
-        const charaIds = charas.map(c => c.getId());
+        const charaIds = charas.map(c => c!.getId()!);
         if (new Set(charaIds).size !== charaIds.length) return [];
 
         return this.umdb.getSuccessionRelationList()
