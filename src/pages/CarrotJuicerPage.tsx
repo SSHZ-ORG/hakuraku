@@ -24,6 +24,9 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
     }
 
     onSelectedFilesChange(e: ChangeEvent<HTMLInputElement>) {
+        if (e.target.files === null || e.target.files.length === 0) {
+            return;
+        }
         // @ts-ignore
         this.setState({selectedFiles: Array.from(e.target.files)});
     }
