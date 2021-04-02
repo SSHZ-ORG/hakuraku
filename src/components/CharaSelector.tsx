@@ -1,49 +1,56 @@
 import React from 'react';
 import {Form} from 'react-bootstrap';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import {Typeahead} from "react-bootstrap-typeahead";
+import {AllTypeaheadOwnAndInjectedProps, Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
 import {toKatakana, toRomaji} from 'wanakana';
+import {Chara} from "../data/data_pb";
 
-const normalizeRomaji = (s) => toRomaji(s).toLowerCase();
-const normalizeKatakana = (s) => toKatakana(s).toLowerCase(); // To support ローマ字入力
+const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
+const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To support ローマ字入力
 
+type CharaSelectorProps = {
+    label: string,
+    selectedChara: Chara,
+    onSelectedCharaChange: (chara: Chara) => void,
+    constraintGroups: Chara[][] | undefined,
+}
 
-class CharaSelector extends React.Component {
+class CharaSelector extends React.Component<CharaSelectorProps> {
 
-    onSelectionChange(selectedChara) {
-        this.props.onSelectedCharaChange(selectedChara);
-    }
-
-    calcRelationPoints = memoize((constraintGroups) => {
+    calcRelationPoints = memoize((constraintGroups: Chara[][] | undefined) => {
         if (!constraintGroups) {
             return {};
         }
 
-        const result = {};
+        const result: Record<number, number[]> = {};
         UMDatabaseWrapper.umdb.getCharaList().forEach(chara => {
-            result[chara.getId()] =
+            result[chara.getId()!] =
                 constraintGroups.map(group => UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara))));
         });
         return result;
     })
+
+    onSelectionChange(selectedChara: Chara) {
+        this.props.onSelectedCharaChange(selectedChara);
+    }
 
     charaList() {
         const relationPoints = Object.fromEntries(Object.entries(this.calcRelationPoints(this.props.constraintGroups))
             .map(([k, v]) => [k, v.reduce((a, b) => a + b, 0)]));
         let l = UMDatabaseWrapper.umdb.getCharaList();
         if (this.props.constraintGroups) {
-            l = l.slice().sort((a, b) => relationPoints[b.getId()] - relationPoints[a.getId()]);
+            l = l.slice().sort((a, b) => relationPoints[b.getId()!] - relationPoints[a.getId()!]);
         }
         return l;
     }
 
-    charaRenderingName(chara) {
+    charaRenderingName(chara: Chara) {
         let suggestionPtsString = '';
         if (this.props.constraintGroups) {
-            const points = this.calcRelationPoints(this.props.constraintGroups)[chara.getId()];
+            const points = this.calcRelationPoints(this.props.constraintGroups)[chara.getId()!];
             if (points.length === 1) {
                 suggestionPtsString = ` (${points[0]} pts)`;
             } else {
@@ -53,7 +60,7 @@ class CharaSelector extends React.Component {
         return UMDatabaseUtils.charaNameWithIdAndCast(chara) + suggestionPtsString;
     }
 
-    typeaheadMatcher(option, props) {
+    typeaheadMatcher(option: Chara, props: AllTypeaheadOwnAndInjectedProps<Chara>) {
         const labelKey = UMDatabaseUtils.charaNameWithIdAndCast(option);
         return normalizeRomaji(labelKey).indexOf(normalizeRomaji(props.text)) !== -1 ||
             normalizeKatakana(labelKey).indexOf(normalizeKatakana(props.text)) !== -1;

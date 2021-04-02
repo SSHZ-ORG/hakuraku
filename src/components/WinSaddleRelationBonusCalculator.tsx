@@ -4,9 +4,18 @@ import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
+import {RaceInstance, WinsSaddle} from "../data/data_pb";
 
-class WinSaddleRelationBonusCalculator extends React.PureComponent {
-    constructor(props) {
+type WinSaddleRelationBonusCalculatorState = {
+    extended: boolean,
+    parentRaceInstances: RaceInstance[],
+    grandparent1RaceInstances: RaceInstance[],
+    grandparent2RaceInstances: RaceInstance[],
+    showUsage: boolean,
+}
+
+class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddleRelationBonusCalculatorState> {
+    constructor(props: {}) {
         super(props);
 
         this.state = {
@@ -14,10 +23,30 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
             parentRaceInstances: [],
             grandparent1RaceInstances: [],
             grandparent2RaceInstances: [],
-
             showUsage: false,
         };
     }
+
+    simulateGenerateWinSaddle = memoize((raceInstances: RaceInstance[]) => {
+        const raceInstanceIds = new Set(raceInstances.map(i => i.getId()));
+
+        const winsSaddlesByGroup: Map<number, WinsSaddle[]> = new Map();
+        UMDatabaseWrapper.umdb.getWinsSaddleList()
+            .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)))
+            .forEach(ws => {
+                if (!winsSaddlesByGroup.has(ws.getGroupId()!)) {
+                    winsSaddlesByGroup.set(ws.getGroupId()!, []);
+                }
+                winsSaddlesByGroup.get(ws.getGroupId()!)!.push(ws);
+            });
+
+        const finalWinsSaddles = [];
+        for (let wss of winsSaddlesByGroup.values()) {
+            wss.sort((a, b) => a.getPriority()! - b.getPriority()!);
+            finalWinsSaddles.push(wss[0]);
+        }
+        return finalWinsSaddles;
+    });
 
     onToggle() {
         this.setState((state) => {
@@ -27,11 +56,11 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         });
     }
 
-    renderWinSaddles(winsSaddles) {
+    renderWinSaddles(winsSaddles: WinsSaddle[]) {
         return winsSaddles.map(ws => <Badge variant="secondary">{ws.getId()} - {ws.getName()}</Badge>)
     }
 
-    renderOneResult(winsSaddles) {
+    renderOneResult(winsSaddles: WinsSaddle[]) {
         return <div>
             {winsSaddles.length} pts ({this.renderWinSaddles(winsSaddles)})
         </div>
@@ -51,36 +80,15 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
         </div>
     }
 
-    simulateGenerateWinSaddle = memoize(raceInstances => {
-        const raceInstanceIds = new Set(raceInstances.map(i => i.getId()));
-
-        const winsSaddlesByGroup = new Map();
-        UMDatabaseWrapper.umdb.getWinsSaddleList()
-            .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)))
-            .forEach(ws => {
-                if (!winsSaddlesByGroup.has(ws.getGroupId())) {
-                    winsSaddlesByGroup.set(ws.getGroupId(), []);
-                }
-                winsSaddlesByGroup.get(ws.getGroupId()).push(ws);
-            });
-
-        const finalWinsSaddles = [];
-        for (let wss of winsSaddlesByGroup.values()) {
-            wss.sort((a, b) => a.getPriority() - b.getPriority());
-            finalWinsSaddles.push(wss[0]);
-        }
-        return finalWinsSaddles;
-    });
-
-    raceSelection(label, selected, callback) {
+    raceSelection(label: string, selectedRaces: RaceInstance[], callback: (races: RaceInstance[]) => void) {
         return <div>
             <Form.Group>
-                <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selected))}</Form.Label>
+                <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
                 <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
                            multiple
                            clearButton
                            options={UMDatabaseWrapper.interestingRaceInstances}
-                           selected={selected}
+                           selected={selectedRaces}
                            onChange={callback}/>
             </Form.Group>
         </div>;
@@ -128,16 +136,16 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent {
 
     specialCaseRacePresenter() {
         const popover = (
-            <Popover>
+            <Popover id="special-case-races">
                 <Popover.Title as="h3">Special Case Races</Popover.Title>
                 <Popover.Content>
                     {UMDatabaseWrapper.umdb.getSpecialCaseRaceList().map(specialCaseRace =>
                         <div>
                             {specialCaseRace.getRaceInstanceId()}
                             &nbsp;-&nbsp;
-                            {UMDatabaseWrapper.raceInstances[specialCaseRace.getRaceInstanceId()].getName()}
+                            {UMDatabaseWrapper.raceInstances[specialCaseRace.getRaceInstanceId()!].getName()}
                             <br/>
-                            ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()]})
+                            ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()!]})
                             <br/>
                             {specialCaseRace.getCharaIdList().map(i => <>
                                 {UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/>

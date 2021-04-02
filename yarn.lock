@@ -1861,6 +1861,13 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@types/react-bootstrap-typeahead@^5.1.4":
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-typeahead/-/react-bootstrap-typeahead-5.1.4.tgz#6e03ad584630d0a484cef7ac47d0048577c95c4e"
+  integrity sha512-Tgz4G+T06w0+DCglABG8qN//17itUadxq0LgYw9+3Di78ojROauk21e+ovF9Es7KWDZbwy9d2MEQjpx/W/96zw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^17.0.3":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.3.tgz#7fdf37b8af9d6d40127137865bb3fff8871d7ee1"
@@ -1924,6 +1931,11 @@
   integrity sha512-sYAF+CF9XZ5cvEBkI7RtrG9g2GtMBkviTnBxYYyq+8BWvO4QtXfwwR6a2LFwCi4evMKZfpv6U43ViYvv17Wz3Q==
   dependencies:
     source-map "^0.6.1"
+
+"@types/wanakana@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/wanakana/-/wanakana-4.0.2.tgz#fe04d0e83e9a964ca9a1ccbf08428621e39420b2"
+  integrity sha512-UtECfmvYsKED/iMV83xIaJCUKuo+wXwaYRM+hZuUeiU+Mg8JIxUyVbvG4dff0M5tQXGOoC9QUZ88jUFlLR0jLQ==
 
 "@types/warning@^3.0.0":
   version "3.0.0"

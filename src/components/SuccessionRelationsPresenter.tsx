@@ -2,9 +2,15 @@ import React from "react";
 import {Badge, Card, OverlayTrigger, Popover} from "react-bootstrap";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
+import {SuccessionRelation} from "../data/data_pb";
 
-class SuccessionRelationsPresenter extends React.Component {
-    formatRelation(relation) {
+type SuccessionRelationsPresenterProps = {
+    title: string,
+    relations: SuccessionRelation[],
+}
+
+class SuccessionRelationsPresenter extends React.Component<SuccessionRelationsPresenterProps> {
+    formatRelation(relation: SuccessionRelation) {
         const renderTooltip = <Popover id="popover">
             <Popover.Title>
                 Group {relation.getRelationType()} - {relation.getRelationPoint()} pts
