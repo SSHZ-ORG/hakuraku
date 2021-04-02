@@ -34,6 +34,11 @@ export class UMDatabase extends jspb.Message {
   setSpecialCaseRaceList(value: Array<SpecialCaseRace>): void;
   addSpecialCaseRace(value?: SpecialCaseRace, index?: number): SpecialCaseRace;
 
+  clearSkillList(): void;
+  getSkillList(): Array<Skill>;
+  setSkillList(value: Array<Skill>): void;
+  addSkill(value?: Skill, index?: number): Skill;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UMDatabase.AsObject;
   static toObject(includeInstance: boolean, msg: UMDatabase): UMDatabase.AsObject;
@@ -52,6 +57,7 @@ export namespace UMDatabase {
     raceInstanceList: Array<RaceInstance.AsObject>,
     winsSaddleList: Array<WinsSaddle.AsObject>,
     specialCaseRaceList: Array<SpecialCaseRace.AsObject>,
+    skillList: Array<Skill.AsObject>,
   }
 }
 
@@ -246,5 +252,33 @@ export namespace SpecialCaseRace {
   }
 
   export const RacePermission: RacePermissionMap;
+}
+
+export class Skill extends jspb.Message {
+  hasId(): boolean;
+  clearId(): void;
+  getId(): number | undefined;
+  setId(value: number): void;
+
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string | undefined;
+  setName(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Skill.AsObject;
+  static toObject(includeInstance: boolean, msg: Skill): Skill.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Skill, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Skill;
+  static deserializeBinaryFromReader(message: Skill, reader: jspb.BinaryReader): Skill;
+}
+
+export namespace Skill {
+  export type AsObject = {
+    id?: number,
+    name?: string,
+  }
 }
 

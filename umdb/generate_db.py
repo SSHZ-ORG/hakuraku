@@ -99,6 +99,16 @@ def populate_special_case_race(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         pb.special_case_race.append(race)
 
 
+def populate_skills(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute("SELECT `index`, text FROM text_data WHERE category=47;")
+    rows = cursor.fetchall()
+    for row in rows:
+        r = data_pb2.Skill()
+        r.id = row[0]
+        r.name = row[1]
+        pb.skill.append(r)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--db_path", default="master.mdb")
@@ -115,6 +125,7 @@ def main():
     populate_race_instance(pb, cursor)
     populate_wins_saddle(pb, cursor)
     populate_special_case_race(pb, cursor)
+    populate_skills(pb, cursor)
 
     print(pb)
 

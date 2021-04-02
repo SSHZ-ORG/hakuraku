@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\x88\x02\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\"4\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tcast_name\x18\x03 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\"(\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"d\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\x12\x10\n\x08priority\x18\x04 \x01(\x05\x12\x10\n\x08group_id\x18\x05 \x01(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05'
+  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\xa8\x02\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\x12\x1e\n\x05skill\x18\x07 \x03(\x0b\x32\x0f.hakuraku.Skill\"4\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tcast_name\x18\x03 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\"(\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"d\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\x12\x10\n\x08priority\x18\x04 \x01(\x05\x12\x10\n\x08group_id\x18\x05 \x01(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05\"!\n\x05Skill\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t'
 )
 
 
@@ -64,8 +64,8 @@ _SPECIALCASERACE_RACEPERMISSION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=738,
-  serialized_end=866,
+  serialized_start=770,
+  serialized_end=898,
 )
 _sym_db.RegisterEnumDescriptor(_SPECIALCASERACE_RACEPERMISSION)
 
@@ -120,6 +120,13 @@ _UMDATABASE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='skill', full_name='hakuraku.UMDatabase.skill', index=6,
+      number=7, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -133,7 +140,7 @@ _UMDATABASE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=25,
-  serialized_end=289,
+  serialized_end=321,
 )
 
 
@@ -178,8 +185,8 @@ _CHARA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=291,
-  serialized_end=343,
+  serialized_start=323,
+  serialized_end=375,
 )
 
 
@@ -224,8 +231,8 @@ _SUCCESSIONRELATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=345,
-  serialized_end=437,
+  serialized_start=377,
+  serialized_end=469,
 )
 
 
@@ -263,8 +270,8 @@ _RACEINSTANCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=439,
-  serialized_end=479,
+  serialized_start=471,
+  serialized_end=511,
 )
 
 
@@ -323,8 +330,8 @@ _WINSSADDLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=481,
-  serialized_end=581,
+  serialized_start=513,
+  serialized_end=613,
 )
 
 
@@ -377,8 +384,47 @@ _SPECIALCASERACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=584,
-  serialized_end=866,
+  serialized_start=616,
+  serialized_end=898,
+)
+
+
+_SKILL = _descriptor.Descriptor(
+  name='Skill',
+  full_name='hakuraku.Skill',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='hakuraku.Skill.id', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='hakuraku.Skill.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=900,
+  serialized_end=933,
 )
 
 _UMDATABASE.fields_by_name['chara'].message_type = _CHARA
@@ -386,6 +432,7 @@ _UMDATABASE.fields_by_name['succession_relation'].message_type = _SUCCESSIONRELA
 _UMDATABASE.fields_by_name['race_instance'].message_type = _RACEINSTANCE
 _UMDATABASE.fields_by_name['wins_saddle'].message_type = _WINSSADDLE
 _UMDATABASE.fields_by_name['special_case_race'].message_type = _SPECIALCASERACE
+_UMDATABASE.fields_by_name['skill'].message_type = _SKILL
 _SPECIALCASERACE.fields_by_name['race_permission'].enum_type = _SPECIALCASERACE_RACEPERMISSION
 _SPECIALCASERACE_RACEPERMISSION.containing_type = _SPECIALCASERACE
 DESCRIPTOR.message_types_by_name['UMDatabase'] = _UMDATABASE
@@ -394,6 +441,7 @@ DESCRIPTOR.message_types_by_name['SuccessionRelation'] = _SUCCESSIONRELATION
 DESCRIPTOR.message_types_by_name['RaceInstance'] = _RACEINSTANCE
 DESCRIPTOR.message_types_by_name['WinsSaddle'] = _WINSSADDLE
 DESCRIPTOR.message_types_by_name['SpecialCaseRace'] = _SPECIALCASERACE
+DESCRIPTOR.message_types_by_name['Skill'] = _SKILL
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 UMDatabase = _reflection.GeneratedProtocolMessageType('UMDatabase', (_message.Message,), {
@@ -437,6 +485,13 @@ SpecialCaseRace = _reflection.GeneratedProtocolMessageType('SpecialCaseRace', (_
   # @@protoc_insertion_point(class_scope:hakuraku.SpecialCaseRace)
   })
 _sym_db.RegisterMessage(SpecialCaseRace)
+
+Skill = _reflection.GeneratedProtocolMessageType('Skill', (_message.Message,), {
+  'DESCRIPTOR' : _SKILL,
+  '__module__' : 'data_pb2'
+  # @@protoc_insertion_point(class_scope:hakuraku.Skill)
+  })
+_sym_db.RegisterMessage(Skill)
 
 
 # @@protoc_insertion_point(module_scope)

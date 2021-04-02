@@ -11,6 +11,8 @@ message UMDatabase {
   repeated WinsSaddle wins_saddle = 5;
 
   repeated SpecialCaseRace special_case_race = 6;
+
+  repeated Skill skill = 7;
 }
 
 message Chara {
@@ -54,4 +56,9 @@ message SpecialCaseRace {
 
   // This shouldn't belong here. But it's anyway temporary.
   repeated int32 chara_id = 4;
+}
+
+message Skill {
+  optional int32 id = 1;
+  optional string name = 2;
 }
