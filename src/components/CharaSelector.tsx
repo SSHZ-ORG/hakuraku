@@ -13,14 +13,14 @@ const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To supp
 
 type CharaSelectorProps = {
     label: string,
-    selectedChara: Chara,
+    selectedChara: Chara | undefined,
     onSelectedCharaChange: (chara: Chara) => void,
-    constraintGroups: Chara[][] | undefined,
+    constraintGroups?: (Chara | undefined)[][] | undefined,
 }
 
 class CharaSelector extends React.Component<CharaSelectorProps> {
 
-    calcRelationPoints = memoize((constraintGroups: Chara[][] | undefined) => {
+    calcRelationPoints = memoize((constraintGroups: (Chara | undefined)[][] | undefined) => {
         if (!constraintGroups) {
             return {};
         }

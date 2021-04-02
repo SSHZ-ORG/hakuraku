@@ -3,8 +3,13 @@ import {Button, Col, Form} from "react-bootstrap";
 import ReactJson from "react-json-view";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 
-export default class RaceDataPage extends React.Component {
-    constructor(props) {
+type RaceDataPageState = {
+    raceScenarioInput: string,
+    parsedRaceData: any,
+};
+
+export default class RaceDataPage extends React.Component<{}, RaceDataPageState> {
+    constructor(props: {}) {
         super(props);
 
         this.state = {
@@ -36,9 +41,10 @@ export default class RaceDataPage extends React.Component {
 
                 <hr/>
 
-                <ReactJson src={this.state.parsedRaceData} collapsed="1"/>
+                <ReactJson src={this.state.parsedRaceData} collapsed={1}/>
             </div>
         )
     }
+
 }
 

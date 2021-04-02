@@ -1,12 +1,19 @@
-import React from "react";
+import React, {ChangeEvent} from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import ReactJson from "react-json-view";
+// @ts-ignore
 import msgpack from "@ygoe/msgpack";
+// @ts-ignore
 import struct from "@aksel/structjs";
 
+type CarrotJuicerPageState = {
+    selectedFiles: File[],
+    currentFile: File | undefined,
+    currentFileContent: any,
+};
 
-export default class CarrotJuicerPage extends React.Component {
-    constructor(props) {
+export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPageState> {
+    constructor(props: {}) {
         super(props);
 
         this.state = {
@@ -16,19 +23,20 @@ export default class CarrotJuicerPage extends React.Component {
         }
     }
 
-    onSelectedFilesChange(e) {
+    onSelectedFilesChange(e: ChangeEvent<HTMLInputElement>) {
+        // @ts-ignore
         this.setState({selectedFiles: Array.from(e.target.files)});
     }
 
-    skipRequestHeader(buffer) {
+    skipRequestHeader(buffer: ArrayBuffer) {
         const offset = struct('<i').unpack_from(buffer, 0)[0];
         return buffer.slice(4 + offset);
     }
 
-    onCurrentFileChange(file) {
+    onCurrentFileChange(file: File) {
         this.setState({currentFile: file});
 
-        file.arrayBuffer().then(content => {
+        file.arrayBuffer().then((content: ArrayBuffer) => {
             const bytesToUse = file.name.endsWith("Q.msgpack") ? this.skipRequestHeader(content) : content;
             this.setState({currentFileContent: msgpack.deserialize(bytesToUse)});
         });
@@ -40,7 +48,7 @@ export default class CarrotJuicerPage extends React.Component {
                 <Row>
                     <Col>
                         <Form.File label="Select the packets captured by CarrotJuicer here..." custom multiple
-                                   onChange={e => this.onSelectedFilesChange(e)}/>
+                                   onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
                     </Col>
                 </Row>
                 <Row style={{height: '90vh'}}>
@@ -54,7 +62,7 @@ export default class CarrotJuicerPage extends React.Component {
                         </ListGroup>
                     </Col>
                     <Col xs="8" style={{maxHeight: '100%', overflowY: 'auto'}}>
-                        <ReactJson src={this.state.currentFileContent} collapsed="2"/>
+                        <ReactJson src={this.state.currentFileContent} collapsed={2}/>
                     </Col>
                 </Row>
             </div>

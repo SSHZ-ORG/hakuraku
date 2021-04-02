@@ -1,12 +1,33 @@
-import React from 'react';
+import React, {ChangeEventHandler} from 'react';
 import CharaSelector from "../components/CharaSelector";
 import {Alert, Button, Card, Form, Table} from "react-bootstrap";
 import SuccessionRelationsPresenter from "../components/SuccessionRelationsPresenter";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
+import {Chara} from "../data/data_pb";
 
-const RELATIONSHIP_PAIRS = [
+type SelectedCharasState = {
+    selectedChara: Chara | undefined,
+    parent1: Chara | undefined,
+    grandparent11: Chara | undefined,
+    grandparent12: Chara | undefined,
+    parent2: Chara | undefined,
+    grandparent21: Chara | undefined,
+    grandparent22: Chara | undefined,
+};
+
+
+type SuccessionPageState = SelectedCharasState & {
+    suggestionEnabled: boolean,
+
+    parent1WinSaddleBonus: number,
+    parent2WinSaddleBonus: number,
+
+    validatorMessages: string[],
+};
+
+const RELATIONSHIP_PAIRS: (keyof SelectedCharasState)[][] = [
     ['selectedChara', 'parent1'],
     ['selectedChara', 'parent2'],
     ['parent1', 'parent2'],
@@ -16,8 +37,8 @@ const RELATIONSHIP_PAIRS = [
     ['selectedChara', 'parent2', 'grandparent22'],
 ];
 
-export default class SuccessionPage extends React.Component {
-    constructor(props) {
+export default class SuccessionPage extends React.Component<{}, SuccessionPageState> {
+    constructor(props: {}) {
         super(props);
         this.state = {
             suggestionEnabled: false,
@@ -40,11 +61,11 @@ export default class SuccessionPage extends React.Component {
     charaSelectionChanged() {
         const state = this.state;
 
-        const validatorMessages = [];
+        const validatorMessages: string[] = [];
 
-        function validateSameChara(key1, key2) {
+        function validateSameChara(key1: keyof SelectedCharasState, key2: keyof SelectedCharasState) {
             if (state[key1] === undefined || state[key2] === undefined) return;
-            if (state[key1].getId() === state[key2].getId()) {
+            if (state[key1]!.getId() === state[key2]!.getId()) {
                 validatorMessages.push(`${key1} and ${key2} are the same`);
             }
         }
@@ -62,23 +83,25 @@ export default class SuccessionPage extends React.Component {
         this.setState({validatorMessages: validatorMessages});
     }
 
-    setChara(key, chara) {
-        this.setState((state) => state[key] = chara, this.charaSelectionChanged);
+    setChara(key: keyof SelectedCharasState, chara: Chara) {
+        const s: Pick<SelectedCharasState, any> = {};
+        s[key] = chara;
+        this.setState(s, this.charaSelectionChanged);
     }
 
-    generateRelationsPresenter(keys) {
+    generateRelationsPresenter(keys: (keyof SelectedCharasState)[]) {
         const charas = keys.map(key => this.state[key]);
         if (charas.includes(undefined)) return <div/>;
 
         return <SuccessionRelationsPresenter
-            title={`${keys.join(', ')} - ${charas.map(UMDatabaseUtils.charaNameWithIdAndCast).join(', ')}`}
+            title={`${keys.join(', ')} - ${(charas as Chara[]).map(UMDatabaseUtils.charaNameWithIdAndCast).join(', ')}`}
             relations={UMDatabaseWrapper.findSuccessionRelation(charas)}/>;
     }
 
     totalPoints() {
         const pairs = [];
         for (let pair of RELATIONSHIP_PAIRS) {
-            const charas = pair.map(key => this.state[key]);
+            const charas = pair.map((key: keyof SelectedCharasState) => this.state[key]);
             if (charas.includes(undefined)) continue;
             pairs.push(charas);
         }
@@ -100,7 +123,7 @@ export default class SuccessionPage extends React.Component {
         </Card>
     }
 
-    winSaddleRelationBonusInput(onChange) {
+    winSaddleRelationBonusInput(onChange: ChangeEventHandler<HTMLInputElement>) {
         return <Form.Group>
             <Form.Label>WinSaddleRelationBonus</Form.Label>
             <Form.Control type="number" placeholder="0" onChange={onChange}/>
@@ -137,7 +160,7 @@ export default class SuccessionPage extends React.Component {
                     <Table>
                         <tbody>
                         <tr>
-                            <td rowSpan="2">
+                            <td rowSpan={2}>
                                 <CharaSelector
                                     label={this.state.suggestionEnabled ? "Parent 1 (suggesting based on Chara)" : "Parent 1"}
                                     selectedChara={this.state.parent1}
@@ -163,7 +186,7 @@ export default class SuccessionPage extends React.Component {
                             </td>
                         </tr>
                         <tr>
-                            <td rowSpan="2">
+                            <td rowSpan={2}>
                                 <CharaSelector
                                     label={this.state.suggestionEnabled ? "Parent 2 (suggesting based on Chara + Parent 1)" : "Parent 2"}
                                     selectedChara={this.state.parent2}
