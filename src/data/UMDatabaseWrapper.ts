@@ -1,10 +1,11 @@
-import {Chara, RaceInstance, UMDatabase} from './data_pb';
+import {Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
     charas: Record<number, Chara> = {};
     raceInstances: Record<number, RaceInstance> = {};
     interestingRaceInstances: RaceInstance[] = [];
+    skills: Record<number, Skill> = {};
 
     /**
      * @return {!Promise}
@@ -18,6 +19,8 @@ class _UMDatabaseWrapper {
                 this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
 
                 this.umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()!] = race);
+
+                this.umdb.getSkillList().forEach((skill) => this.skills[skill.getId()!] = skill);
 
                 const interestingRaceInstanceIds = Array.from(this.umdb.getWinsSaddleList().reduce(
                     (s, ws) => {
