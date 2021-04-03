@@ -5,7 +5,6 @@ import ReactJson from "react-json-view";
 import msgpack from "@ygoe/msgpack";
 // @ts-ignore
 import struct from "@aksel/structjs";
-import {RaceSimulateData} from "../data/race_data_pb";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 import RaceDataPresenter from "../components/RaceDataPresenter";
 
@@ -13,8 +12,6 @@ type CarrotJuicerPageState = {
     selectedFiles: File[],
     currentFile: File | undefined,
     currentFileContent: any,
-
-    raceData: RaceSimulateData | undefined,
 };
 
 export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPageState> {
@@ -25,7 +22,6 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             selectedFiles: [],
             currentFile: undefined,
             currentFileContent: undefined,
-            raceData: undefined,
         }
     }
 
@@ -47,15 +43,17 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
 
         file.arrayBuffer().then((content: ArrayBuffer) => {
             const bytesToUse = file.name.endsWith("Q.msgpack") ? this.skipRequestHeader(content) : content;
-            this.setState({currentFileContent: msgpack.deserialize(bytesToUse)}, this.checkRaceInfo);
+            this.setState({currentFileContent: msgpack.deserialize(bytesToUse)});
         });
     }
 
-    checkRaceInfo() {
-        if (this.state.currentFileContent['data'] && this.state.currentFileContent['data']['race_scenario'] && this.state.currentFileContent['data']['race_start_info']) {
-            this.setState({raceData: deserializeFromBase64(this.state.currentFileContent['data']['race_scenario'])});
+    raceDataPresenter() {
+        if (this.state.currentFileContent && this.state.currentFileContent['data'] && this.state.currentFileContent['data']['race_scenario'] && this.state.currentFileContent['data']['race_start_info']) {
+            return <RaceDataPresenter
+                raceHorseInfo={this.state.currentFileContent['data']['race_start_info']['race_horse_data']}
+                raceData={deserializeFromBase64(this.state.currentFileContent['data']['race_scenario'])}/>;
         } else {
-            this.setState({raceData: undefined});
+            return undefined;
         }
     }
 
@@ -79,9 +77,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                         </ListGroup>
                     </Col>
                     <Col xs="8" style={{maxHeight: '100%', overflowY: 'auto'}}>
-                        {this.state.raceData &&
-                        <RaceDataPresenter raceStartInfo={this.state.currentFileContent['data']['race_start_info']}
-                                           raceData={this.state.raceData}/>}
+                        {this.raceDataPresenter()}
                         <ReactJson src={this.state.currentFileContent} collapsed={2}/>
                     </Col>
                 </Row>

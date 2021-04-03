@@ -2,10 +2,15 @@ import React from "react";
 import {Button, Col, Form} from "react-bootstrap";
 import ReactJson from "react-json-view";
 import {deserializeFromBase64} from "../data/RaceDataParser";
+import {RaceSimulateData} from "../data/race_data_pb";
+import RaceDataPresenter from "../components/RaceDataPresenter";
 
 type RaceDataPageState = {
+    raceHorseInfoInput: string,
     raceScenarioInput: string,
-    parsedRaceData: any,
+
+    parsedHorseInfo: any,
+    parsedRaceData: RaceSimulateData | undefined,
 };
 
 export default class RaceDataPage extends React.Component<{}, RaceDataPageState> {
@@ -13,15 +18,21 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
         super(props);
 
         this.state = {
+            raceHorseInfoInput: '',
             raceScenarioInput: '',
+
+            parsedHorseInfo: undefined,
             parsedRaceData: undefined,
         }
     }
 
     parse() {
-        this.setState({
-            parsedRaceData: deserializeFromBase64(this.state.raceScenarioInput).toObject()
-        });
+        this.setState({parsedRaceData: deserializeFromBase64(this.state.raceScenarioInput)});
+        try {
+            this.setState({parsedHorseInfo: JSON.parse(this.state.raceHorseInfoInput)});
+        } catch (e) {
+            this.setState({parsedHorseInfo: undefined});
+        }
     }
 
     render() {
@@ -30,6 +41,18 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
                 <Form>
                     <Form.Row>
                         <Form.Group as={Col}>
+                            <Form.Label>
+                                [Optional] <code>race_start_info.race_horse_data</code> (for single
+                                mode), <code>race_horse_data_array</code> (for daily race, not in the same packet),
+                                or <code>race_start_params_array.race_horse_data_array</code> (for team race)
+                            </Form.Label>
+                            <Form.Control as="textarea" rows={3}
+                                          onChange={e => this.setState({raceHorseInfoInput: e.target.value})}/>
+                        </Form.Group>
+                    </Form.Row>
+                    <Form.Row>
+                        <Form.Group as={Col}>
+                            <Form.Label>[Required] <code>race_scenario</code></Form.Label>
                             <Form.Control as="textarea" rows={3}
                                           onChange={e => this.setState({raceScenarioInput: e.target.value})}/>
                         </Form.Group>
@@ -41,7 +64,15 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
 
                 <hr/>
 
-                <ReactJson src={this.state.parsedRaceData} collapsed={1}/>
+                {this.state.parsedRaceData &&
+                <RaceDataPresenter
+                    raceHorseInfo={this.state.parsedHorseInfo}
+                    raceData={this.state.parsedRaceData}/>}
+
+                <hr/>
+
+                {this.state.parsedRaceData &&
+                <ReactJson src={this.state.parsedRaceData.toObject()} collapsed={1}/>}
             </div>
         )
     }

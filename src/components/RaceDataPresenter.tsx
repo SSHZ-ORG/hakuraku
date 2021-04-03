@@ -9,7 +9,7 @@ import Highcharts from 'highcharts';
 
 
 type RaceDataPresenterProps = {
-    raceStartInfo: any,
+    raceHorseInfo: any[],
     raceData: RaceSimulateData,
 };
 
@@ -34,33 +34,33 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         };
     }
 
-    displayNames = memoize((raceStartInfo: any, raceData: RaceSimulateData) => {
-        if (raceStartInfo === undefined || raceStartInfo['race_horse_data'] === undefined) {
-            return {};
-        }
-
-        if (raceStartInfo['race_horse_data'].length !== raceData.getHorseResultList().length) {
-            return {};
+    displayNames = memoize((raceHorseInfo: any[], raceData: RaceSimulateData) => {
+        const nameFromRaceHorseInfo: Record<number, string> = {};
+        if (raceHorseInfo && raceHorseInfo.length === raceData.getHorseResultList().length) {
+            raceHorseInfo.forEach((d: any) => {
+                const frameOrder = d['frame_order'] - 1; // 0-indexed
+                const charaId = d['chara_id'];
+                const charaDisplayName = charaId in UMDatabaseWrapper.charas ? UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[charaId]) : 'Unknown Chara / Mob';
+                const trainerNameSuffix = d['trainer_name'] ? ` [Trainer: ${d['trainer_name']}]` : '';
+                nameFromRaceHorseInfo[frameOrder] = ` ${charaDisplayName}${trainerNameSuffix}`;
+            });
         }
 
         const m: Record<number, string> = {};
-        raceStartInfo['race_horse_data'].forEach((d: any) => {
-            const frameOrder = d['frame_order'] - 1; // 0-indexed
+        for (let frameOrder = 0; frameOrder < raceData.getHorseResultList().length; frameOrder++) {
+            // frameOrder is 0 ordered.
             const finishOrder = raceData.getHorseResultList()[frameOrder].getFinishOrder()! + 1; // 1-indexed
-            const charaId = d['chara_id'];
-            const charaDisplayName = charaId in UMDatabaseWrapper.charas ? UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[charaId]) : 'Unknown Chara / Mob';
-            const trainerNameSuffix = d['trainer_name'] ? ` [Trainer: ${d['trainer_name']}]` : '';
-            m[frameOrder] = `[${frameOrder + 1} 番 ${finishOrder} 着] ${charaDisplayName}${trainerNameSuffix}`;
-        });
+            m[frameOrder] = `[${frameOrder + 1} 番 ${finishOrder} 着]${nameFromRaceHorseInfo[frameOrder] ?? ''}`;
+        }
         return m;
     });
 
     renderGraphs() {
-        const raceStartInfo = this.props.raceStartInfo;
+        const raceHorseInfo = this.props.raceHorseInfo;
         const raceData = this.props.raceData;
         const frameOrder = this.state.selectedCharaFrameOrder!;
 
-        const displayNames = this.displayNames(raceStartInfo, raceData);
+        const displayNames = this.displayNames(raceHorseInfo, raceData);
 
         const skillPlotLines = raceData.getEventList()
             .map(i => i.getEvent()!)
@@ -241,7 +241,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                     <Form.Control as="select" custom
                                   onChange={(e) => this.setState({selectedCharaFrameOrder: e.target.value ? parseInt(e.target.value) : undefined})}>
                         <option value="">-</option>
-                        {Object.entries(this.displayNames(this.props.raceStartInfo, this.props.raceData))
+                        {Object.entries(this.displayNames(this.props.raceHorseInfo, this.props.raceData))
                             .map(([frameOrder, displayName]) => {
                                 return <option value={frameOrder}>{displayName}</option>
                             })}
