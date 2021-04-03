@@ -117,23 +117,27 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         for (let i = 0; i < raceData.getFrameList().length; i++) {
             const frame = raceData.getFrameList()[i];
             const horseFrame = frame.getHorseFrameList()[frameOrder!];
+
+            const previousFrameTime = i === 0 ? 0 : raceData.getFrameList()[i - 1].getTime()!;
             if (horseFrame.getBlockFrontHorseIndex() !== lastBlockFrontHorseIndex) {
                 if (lastBlockFrontHorseIndex !== -1) {
-                    blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, frame.getTime()!, lastBlockFrontHorseIndex));
+                    blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, previousFrameTime, lastBlockFrontHorseIndex));
                 }
-                lastBlockFrontHorseIndexChangedTime = frame.getTime()!;
+                lastBlockFrontHorseIndexChangedTime = previousFrameTime;
                 lastBlockFrontHorseIndex = horseFrame.getBlockFrontHorseIndex()!;
             }
             if (horseFrame.getTemptationMode() !== lastTemptationMode) {
                 if (lastTemptationMode !== 0) {
-                    temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, frame.getTime()!, lastTemptationMode));
+                    temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, previousFrameTime, lastTemptationMode));
                 }
-                lastTemptationModeChangedTime = frame.getTime()!;
+                lastTemptationModeChangedTime = previousFrameTime;
                 lastTemptationMode = horseFrame.getTemptationMode()!;
             }
+
             if (lastSpurtStartTime === 0 && lastSpurtStartDistance <= horseFrame.getDistance()!) {
                 lastSpurtStartTime = frame.getTime()!;
             }
+
             if (i === 0) {
                 deltaSpeed.push({x: 0, y: 0});
                 deltaHp.push({x: 0, y: 0});
