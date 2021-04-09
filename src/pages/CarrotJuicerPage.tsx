@@ -104,8 +104,18 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             <div>
                 <Row>
                     <Col>
-                        <Form.File label="Select the packets captured by CarrotJuicer here..." custom multiple
-                                   onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
+                        <Form>
+                            <Form.Group>
+                                <Form.File label="Select the packets captured by CarrotJuicer here..." custom multiple
+                                           onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
+                                <Form.Text muted>
+                                    Use <a href="https://github.com/CNA-Bld/Riru-CarrotJuicer"
+                                           target="_blank" rel="noreferrer">Riru-CarrotJuicer</a>{' '}
+                                    to capture your packets. Select a packet containing a single mode race, or a group
+                                    of team races to inspect and visualize them here.
+                                </Form.Text>
+                            </Form.Group>
+                        </Form>
                     </Col>
                 </Row>
                 <Row style={{height: '90vh'}}>
