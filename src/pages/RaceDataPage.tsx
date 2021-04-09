@@ -1,6 +1,5 @@
 import React from "react";
 import {Button, Col, Form} from "react-bootstrap";
-import ReactJson from "react-json-view";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 import {RaceSimulateData} from "../data/race_data_pb";
 import RaceDataPresenter from "../components/RaceDataPresenter";
@@ -68,11 +67,6 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
                 <RaceDataPresenter
                     raceHorseInfo={this.state.parsedHorseInfo}
                     raceData={this.state.parsedRaceData}/>}
-
-                <hr/>
-
-                {this.state.parsedRaceData &&
-                <ReactJson src={this.state.parsedRaceData.toObject()} collapsed={1}/>}
             </div>
         )
     }

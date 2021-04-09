@@ -7,11 +7,15 @@ import msgpack from "@ygoe/msgpack";
 import struct from "@aksel/structjs";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 import RaceDataPresenter from "../components/RaceDataPresenter";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
 
 type CarrotJuicerPageState = {
     selectedFiles: File[],
     currentFile: File | undefined,
     currentFileContent: any,
+
+    selectedTeamRace: number | undefined,
 };
 
 export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPageState> {
@@ -22,6 +26,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             selectedFiles: [],
             currentFile: undefined,
             currentFileContent: undefined,
+            selectedTeamRace: undefined,
         }
     }
 
@@ -48,10 +53,47 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
     }
 
     raceDataPresenter() {
-        if (this.state.currentFileContent && this.state.currentFileContent['data'] && this.state.currentFileContent['data']['race_scenario'] && this.state.currentFileContent['data']['race_start_info']) {
-            return <RaceDataPresenter
-                raceHorseInfo={this.state.currentFileContent['data']['race_start_info']['race_horse_data']}
-                raceData={deserializeFromBase64(this.state.currentFileContent['data']['race_scenario'])}/>;
+        if (!this.state.currentFileContent) {
+            return undefined;
+        }
+        if (!this.state.currentFileContent['data']) {
+            return undefined;
+        }
+        const data = this.state.currentFileContent['data'];
+
+        if (data['race_scenario'] && data['race_start_info']) {
+            // Single mode
+            return <>
+                <RaceDataPresenter
+                    raceHorseInfo={data['race_start_info']['race_horse_data']}
+                    raceData={deserializeFromBase64(data['race_scenario'])}/>
+                <hr/>
+            </>;
+        } else if (data['race_start_params_array'] && data['race_result_array'] && data['race_start_params_array'].length === data['race_result_array'].length) {
+            // Team race
+            return <>
+                <Form>
+                    <Form.Group>
+                        <Form.Label>Team Race</Form.Label>
+                        <Form.Control as="select" custom
+                                      onChange={(e) => this.setState({selectedTeamRace: e.target.value ? parseInt(e.target.value) : undefined})}>
+                            <option value="">-</option>
+                            {data['race_start_params_array'].map((race: any, idx: number) => {
+                                return <option value={idx}>
+                                    [{idx + 1}]{' '}
+                                    [{UMDatabaseUtils.teamRaceDistanceLabels[data['race_result_array'][idx]['distance_type']] ?? 'Unknown type'}]{' '}
+                                    {UMDatabaseWrapper.raceInstances[race['race_instance_id']]?.getName() ?? 'Unknown race'}
+                                </option>
+                            })}
+                        </Form.Control>
+                    </Form.Group>
+                </Form>
+                {this.state.selectedTeamRace !== undefined &&
+                <RaceDataPresenter
+                    raceHorseInfo={data['race_start_params_array'][this.state.selectedTeamRace]['race_horse_data_array']}
+                    raceData={deserializeFromBase64(data['race_result_array'][this.state.selectedTeamRace]['race_scenario'])}/>}
+                <hr/>
+            </>;
         } else {
             return undefined;
         }

@@ -6,6 +6,7 @@ import {Form} from "react-bootstrap";
 import memoize from "memoize-one";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from 'highcharts';
+import ReactJson from "react-json-view";
 
 
 type RaceDataPresenterProps = {
@@ -264,6 +265,8 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 </Form.Group>
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}
+            <hr/>
+            <ReactJson src={this.props.raceData.toObject()} collapsed={1}/>
         </div>;
     }
 }
