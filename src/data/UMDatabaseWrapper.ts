@@ -1,4 +1,5 @@
 import {Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
+import memoize from "memoize-one";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
@@ -42,6 +43,9 @@ class _UMDatabaseWrapper {
         return this.umdb.getSuccessionRelationList()
             .filter(relation => charaIds.every(charaId => relation.getMemberCharaIdList().includes(charaId)));
     }
+
+    raceInstanceNameWithId = memoize((raceInstanceId: number) =>
+        `${raceInstanceId} - ${this.raceInstances[raceInstanceId]?.getName() ?? 'Unknown race'}`);
 }
 
 const UMDatabaseWrapper = new _UMDatabaseWrapper();

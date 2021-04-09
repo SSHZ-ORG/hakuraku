@@ -141,9 +141,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                 <Popover.Content>
                     {UMDatabaseWrapper.umdb.getSpecialCaseRaceList().map(specialCaseRace =>
                         <div>
-                            {specialCaseRace.getRaceInstanceId()}
-                            &nbsp;-&nbsp;
-                            {UMDatabaseWrapper.raceInstances[specialCaseRace.getRaceInstanceId()!].getName()}
+                            {UMDatabaseWrapper.raceInstanceNameWithId(specialCaseRace.getRaceInstanceId()!)}
                             <br/>
                             ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()!]})
                             <br/>

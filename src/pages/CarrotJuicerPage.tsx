@@ -82,7 +82,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                                 return <option value={idx}>
                                     [{idx + 1}]{' '}
                                     [{UMDatabaseUtils.teamRaceDistanceLabels[data['race_result_array'][idx]['distance_type']] ?? 'Unknown type'}]{' '}
-                                    {UMDatabaseWrapper.raceInstances[race['race_instance_id']]?.getName() ?? 'Unknown race'}
+                                    {UMDatabaseWrapper.raceInstanceNameWithId(race['race_instance_id'])}
                                 </option>
                             })}
                         </Form.Control>
