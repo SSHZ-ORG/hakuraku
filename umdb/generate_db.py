@@ -129,7 +129,7 @@ def main():
 
     print(pb)
 
-    with open('../public/data/umdb.binaryproto', 'wb') as f:
+    with open('../public/data/umdb.binarypb', 'wb') as f:
         f.write(pb.SerializeToString())
 
 

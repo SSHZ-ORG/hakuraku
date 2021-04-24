@@ -12,7 +12,7 @@ class _UMDatabaseWrapper {
      * @return {!Promise}
      */
     initialize() {
-        return fetch(process.env.PUBLIC_URL + '/data/umdb.binaryproto')
+        return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb')
             .then(response => response.arrayBuffer())
             .then(response => {
                 this.umdb = UMDatabase.deserializeBinary(new Uint8Array(response));

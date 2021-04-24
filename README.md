@@ -10,10 +10,10 @@ After editing `umdb/data.proto`, one should run `umdb/compile_proto.sh` to updat
 
 The generated code should be checked in to the repository.
 
-### Generate `umdb.binaryproto`
+### Generate `umdb.binarypb`
 
 Run `umdb/generate_db.py --db_path <path_to_master.mdb> --version <version_string>` to generate an
-updated `umdb.binaryproto` from `master.mdb`.
+updated `umdb.binarypb` from `master.mdb`.
 
 The generated file should be checked in to the repository (under `public/data`).
 
