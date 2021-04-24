@@ -42,8 +42,8 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
                         <Form.Group as={Col}>
                             <Form.Label>
                                 [Optional] <code>race_start_info.race_horse_data</code> (for single
-                                mode), <code>race_horse_data_array</code> (for daily race, not in the same packet),
-                                or <code>race_start_params_array.race_horse_data_array</code> (for team race)
+                                mode), <code>race_horse_data_array</code> (for daily race / legend race, not in the same
+                                packet), or <code>race_start_params_array.race_horse_data_array</code> (for team race)
                             </Form.Label>
                             <Form.Control as="textarea" rows={3}
                                           onChange={e => this.setState({raceHorseInfoInput: e.target.value})}/>
