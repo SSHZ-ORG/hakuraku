@@ -110,7 +110,9 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                                            onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
                                 <Form.Text muted>
                                     Use <a href="https://github.com/CNA-Bld/Riru-CarrotJuicer"
-                                           target="_blank" rel="noreferrer">Riru-CarrotJuicer</a>{' '}
+                                           target="_blank" rel="noreferrer">Riru-CarrotJuicer</a> (Android)
+                                    or <a href="https://github.com/CNA-Bld/EXNOA-CarrotJuicer"
+                                          target="_blank" rel="noreferrer">EXNOA-CarrotJuicer</a> (Windows)
                                     to capture your packets. Select a packet containing a single mode race, or a group
                                     of team races to inspect and visualize them here.
                                 </Form.Text>

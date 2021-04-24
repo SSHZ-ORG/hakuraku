@@ -34,7 +34,8 @@ optimizes the build for the best performance.
 
 Hakuraku has a built-in parser for `race_scenario` data found in the packets.
 
-If your packets are captured by [Riru-CarrotJuicer](https://github.com/CNA-Bld/Riru-CarrotJuicer), you can use
+If your packets are captured by [Riru-CarrotJuicer](https://github.com/CNA-Bld/Riru-CarrotJuicer)
+or [EXNOA-CarrotJuicer](https://github.com/CNA-Bld/EXNOA-CarrotJuicer), you can use
 the [CarrotJuicer page](https://hakuraku.sshz.org/#/carrotjuicer) to investigate the contents of the packets. If the
 packet contains a single mode race, or a group of team races, it will attempt to parse it automatically and show some
 (hopefully) useful visualizations.
