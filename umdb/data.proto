@@ -3,62 +3,62 @@ syntax = "proto2";
 package hakuraku;
 
 message UMDatabase {
-  optional string version = 1;
+    optional string version = 1;
 
-  repeated Chara chara = 2;
-  repeated SuccessionRelation succession_relation = 3;
-  repeated RaceInstance race_instance = 4;
-  repeated WinsSaddle wins_saddle = 5;
+    repeated Chara chara = 2;
+    repeated SuccessionRelation succession_relation = 3;
+    repeated RaceInstance race_instance = 4;
+    repeated WinsSaddle wins_saddle = 5;
 
-  repeated SpecialCaseRace special_case_race = 6;
+    repeated SpecialCaseRace special_case_race = 6;
 
-  repeated Skill skill = 7;
+    repeated Skill skill = 7;
 }
 
 message Chara {
-  optional int32 id = 1;
-  optional string name = 2;
-  optional string cast_name = 3;
+    optional int32 id = 1;
+    optional string name = 2;
+    optional string cast_name = 3;
 }
 
 message SuccessionRelation {
-  optional int32 relation_type = 1;
-  optional int32 relation_point = 2;
-  repeated int32 member_chara_id = 3;
+    optional int32 relation_type = 1;
+    optional int32 relation_point = 2;
+    repeated int32 member_chara_id = 3;
 }
 
 message RaceInstance {
-  optional int32 id = 1;
-  optional string name = 2;
+    optional int32 id = 1;
+    optional string name = 2;
 }
 
 message WinsSaddle {
-  optional int32 id = 1;
-  optional string name = 2;
-  repeated int32 race_instance_id = 3;
-  optional int32 priority = 4;
-  optional int32 group_id = 5;
+    optional int32 id = 1;
+    optional string name = 2;
+    repeated int32 race_instance_id = 3;
+    optional int32 priority = 4;
+    optional int32 group_id = 5;
 }
 
 message SpecialCaseRace {
-  optional int32 race_instance_id = 1;
-  optional int32 program_group = 2;
+    optional int32 race_instance_id = 1;
+    optional int32 program_group = 2;
 
-  enum RacePermission {
-    UNKNOWN_RACE_PERMISSION = 0;
-    FIRST_YEAR = 1;
-    SECOND_YEAR = 2;
-    SECOND_OR_THIRD_YEAR = 3;
-    THIRD_YEAR = 4;
-    EX = 5;
-  }
-  optional RacePermission race_permission = 3;
+    enum RacePermission {
+        UNKNOWN_RACE_PERMISSION = 0;
+        FIRST_YEAR = 1;
+        SECOND_YEAR = 2;
+        SECOND_OR_THIRD_YEAR = 3;
+        THIRD_YEAR = 4;
+        EX = 5;
+    }
+    optional RacePermission race_permission = 3;
 
-  // This shouldn't belong here. But it's anyway temporary.
-  repeated int32 chara_id = 4;
+    // This shouldn't belong here. But it's anyway temporary.
+    repeated int32 chara_id = 4;
 }
 
 message Skill {
-  optional int32 id = 1;
-  optional string name = 2;
+    optional int32 id = 1;
+    optional string name = 2;
 }
