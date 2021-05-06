@@ -117,35 +117,44 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         let lastTemptationMode = 0;
         for (let i = 0; i < raceData.getFrameList().length; i++) {
             const frame = raceData.getFrameList()[i];
-            const horseFrame = frame.getHorseFrameList()[frameOrder!];
+            const time = frame.getTime()!;
+            const horseFrame = frame.getHorseFrameList()[frameOrder];
 
-            const previousFrameTime = i === 0 ? 0 : raceData.getFrameList()[i - 1].getTime()!;
+            const previousFrame = raceData.getFrameList()[i - 1];
+            const previousTime = i === 0 ? 0 : previousFrame.getTime()!;
+            const previousHorseFrame = previousFrame?.getHorseFrameList()[frameOrder];
+
             if (horseFrame.getBlockFrontHorseIndex() !== lastBlockFrontHorseIndex) {
                 if (lastBlockFrontHorseIndex !== -1) {
-                    blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, previousFrameTime, lastBlockFrontHorseIndex));
+                    blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, previousTime, lastBlockFrontHorseIndex));
                 }
-                lastBlockFrontHorseIndexChangedTime = previousFrameTime;
+                lastBlockFrontHorseIndexChangedTime = previousTime;
                 lastBlockFrontHorseIndex = horseFrame.getBlockFrontHorseIndex()!;
             }
             if (horseFrame.getTemptationMode() !== lastTemptationMode) {
                 if (lastTemptationMode !== 0) {
-                    temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, previousFrameTime, lastTemptationMode));
+                    temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, previousTime, lastTemptationMode));
                 }
-                lastTemptationModeChangedTime = previousFrameTime;
+                lastTemptationModeChangedTime = previousTime;
                 lastTemptationMode = horseFrame.getTemptationMode()!;
             }
 
-            if (lastSpurtStartTime === 0 && lastSpurtStartDistance <= horseFrame.getDistance()!) {
-                lastSpurtStartTime = frame.getTime()!;
+            const distance = horseFrame.getDistance()!;
+            if (lastSpurtStartDistance > 0 && lastSpurtStartTime === 0 && lastSpurtStartDistance <= distance) {
+                // i should never be 0 unless it has > 0 distance at frame 0, but just in case...
+                if (i > 0) {
+                    // Interpolate it.
+                    const previousFrameDistance = previousHorseFrame.getDistance()!;
+                    lastSpurtStartTime = previousTime + (lastSpurtStartDistance - previousFrameDistance) / (distance - previousFrameDistance) * (time - previousTime);
+                }
             }
 
             if (i === 0) {
                 deltaSpeed.push({x: 0, y: 0});
                 deltaHp.push({x: 0, y: 0});
             } else {
-                const lastHorseFrame = raceData.getFrameList()[i - 1].getHorseFrameList()[frameOrder];
-                deltaSpeed.push({x: frame.getTime(), y: horseFrame.getSpeed()! - lastHorseFrame.getSpeed()!});
-                deltaHp.push({x: frame.getTime(), y: horseFrame.getHp()! - lastHorseFrame.getHp()!});
+                deltaSpeed.push({x: time, y: horseFrame.getSpeed()! - previousHorseFrame.getSpeed()!});
+                deltaHp.push({x: time, y: horseFrame.getHp()! - previousHorseFrame.getHp()!});
             }
         }
         const lastFrameTime = raceData.getFrameList()[raceData.getFrameList().length - 1].getTime()!;
@@ -156,6 +165,21 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, lastFrameTime, lastTemptationMode));
         }
 
+        const plotLines = [{
+            value: raceData.getHorseResultList()[frameOrder!].getFinishTimeRaw(),
+            dashStyle: 'LongDashDot',
+            label: {text: 'Goal in'},
+            zIndex: 20,
+        }];
+        if (lastSpurtStartDistance > 0) {
+            plotLines.push({
+                value: lastSpurtStartTime,
+                dashStyle: 'LongDash',
+                label: {text: `Last Spurt`},
+                zIndex: 0,
+            });
+        }
+
         const options1: Highcharts.Options = {
             title: {text: undefined},
             credits: {enabled: false},
@@ -163,18 +187,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 title: {text: "Time"},
                 plotLines: [
                     ...(this.state.showSkills ? skillPlotLines : []),
-                    {
-                        value: raceData.getHorseResultList()[frameOrder!].getFinishTimeRaw(),
-                        dashStyle: 'LongDashDot',
-                        label: {text: 'Goal in'},
-                        zIndex: 20,
-                    },
-                    {
-                        value: lastSpurtStartTime,
-                        dashStyle: 'LongDash',
-                        label: {text: `Last Spurt`},
-                        zIndex: 0,
-                    },
+                    ...plotLines,
                 ],
                 plotBands: [
                     ...(this.state.showBlocks ? blockFrontPlotAreas : []),
