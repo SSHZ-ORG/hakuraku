@@ -21,7 +21,13 @@ export function parse(file: File): Promise<CharaRaceData[]> {
         return Promise.resolve([]);
 
     return file.arrayBuffer().then(content => {
-        const deserialized = msgpack.deserialize(content);
+        let deserialized: any;
+        try {
+            deserialized = msgpack.deserialize(content);
+        } catch (e) {
+            console.log("Failed to parse file!", file, e);
+            return [];
+        }
 
         const data = deserialized['data'];
         if (!(data &&
