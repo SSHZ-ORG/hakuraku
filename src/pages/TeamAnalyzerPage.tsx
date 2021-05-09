@@ -138,7 +138,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                         raceCount: raceCount,
 
                         avgScore: avgScore,
-                        sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / raceCount),
+                        sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / (raceCount - 1)),
 
                         avgLastHp: _.mean(lastHps),
                         zeroLastHpCount: lastHps.filter(i => i <= 0).length,
