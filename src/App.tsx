@@ -6,6 +6,7 @@ import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 import RaceDataPage from "./pages/RaceDataPage";
+import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
 
 class App extends React.Component<{}, { umdbLoaded: boolean }> {
     constructor(props: {}) {
@@ -37,6 +38,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
                                 <Nav.Link as={Link} to="/carrotjuicer">CarrotJuicer</Nav.Link>
                                 <Nav.Link as={Link} to="/racedata">RaceDataParser</Nav.Link>
+                                <Nav.Link as={Link} to="/teamraceanalyzer">TeamRaceAnalyzer</Nav.Link>
                             </Nav>
                             <Nav>
                                 <Nav.Item className="navbar-text">
@@ -58,6 +60,9 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                         </Route>
                         <Route path="/racedata">
                             <RaceDataPage/>
+                        </Route>
+                        <Route path="/teamraceanalyzer">
+                            <TeamAnalyzerPage/>
                         </Route>
                         <Route path="/">
                             <Home/>

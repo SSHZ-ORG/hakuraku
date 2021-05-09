@@ -1,4 +1,4 @@
-import React, {ChangeEvent} from "react";
+import React from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import ReactJson from "react-json-view";
 // @ts-ignore
@@ -9,6 +9,7 @@ import {deserializeFromBase64} from "../data/RaceDataParser";
 import RaceDataPresenter from "../components/RaceDataPresenter";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import FilesSelector from "../components/FilesSelector";
 
 type CarrotJuicerPageState = {
     selectedFiles: File[],
@@ -30,12 +31,11 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
         }
     }
 
-    onSelectedFilesChange(e: ChangeEvent<HTMLInputElement>) {
-        if (e.target.files === null || e.target.files.length === 0) {
+    onSelectedFilesChange(files: File[]) {
+        if (files.length === 0) {
             return;
         }
-        // @ts-ignore
-        this.setState({selectedFiles: Array.from(e.target.files)});
+        this.setState({selectedFiles: files});
     }
 
     skipRequestHeader(buffer: ArrayBuffer) {
@@ -104,20 +104,8 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             <div>
                 <Row>
                     <Col>
-                        <Form>
-                            <Form.Group>
-                                <Form.File label="Select the packets captured by CarrotJuicer here..." custom multiple
-                                           onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
-                                <Form.Text muted>
-                                    Use <a href="https://github.com/CNA-Bld/Riru-CarrotJuicer"
-                                           target="_blank" rel="noreferrer">Riru-CarrotJuicer</a> (Android)
-                                    or <a href="https://github.com/CNA-Bld/EXNOA-CarrotJuicer"
-                                          target="_blank" rel="noreferrer">EXNOA-CarrotJuicer</a> (Windows)
-                                    to capture your packets. Select a packet containing a single mode race, or a group
-                                    of team races to inspect and visualize them here.
-                                </Form.Text>
-                            </Form.Group>
-                        </Form>
+                        <FilesSelector onFilesChange={files => this.onSelectedFilesChange(files)}
+                                       instructions="Select a packet containing a single mode race, or a group of team races to inspect and visualize them here."/>
                     </Col>
                 </Row>
                 <Row style={{height: '90vh'}}>
