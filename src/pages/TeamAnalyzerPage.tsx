@@ -20,8 +20,8 @@ type AggregatedCharaData = {
 
     viewerId: number,
     trainedCharaId: number,
-    distanceType: string,
-    runningStyle: string,
+    distanceType: number,
+    runningStyle: number,
     chara: Chara,
 
     raceCount: number,
@@ -45,15 +45,19 @@ const countFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell, 
 
 const columns: ColumnDescription<AggregatedCharaData>[] = [
     {
-        dataField: 'viewerId',
+        dataField: 'trainedCharaId',
         text: 'ID',
-        formatter: (cell, row) => <>{cell}<br/>TCID: {row.trainedCharaId}</>
+        sort: true,
+        formatter: (cell, row) => <>{row.viewerId}<br/>TCID: {cell}</>
     },
 
     {
-        dataField: 'distanceType', text: '', sort: true, formatter: (cell, row) => <>
-            {cell}
-            <br/>{row.runningStyle}
+        dataField: 'distanceType',
+        text: '',
+        sort: true,
+        formatter: (cell, row) => <>
+            {UMDatabaseUtils.teamRaceDistanceLabels[cell]}
+            <br/>{UMDatabaseUtils.runningStyleLabels[row.runningStyle]}
         </>
     },
     {
@@ -120,8 +124,8 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
                         viewerId: datas[0].viewerId,
                         trainedCharaId: datas[0].trainedCharaId,
-                        distanceType: UMDatabaseUtils.teamRaceDistanceLabels[datas[0].distanceType],
-                        runningStyle: UMDatabaseUtils.runningStyleLabels[datas[0].runningStyle],
+                        distanceType: datas[0].distanceType,
+                        runningStyle: datas[0].runningStyle,
                         chara: UMDatabaseWrapper.charas[datas[0].charaId],
 
                         raceCount: raceCount,
@@ -158,6 +162,9 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
             <Row>
                 <Col>
                     <BootstrapTable bootstrap4 condensed striped hover
+                                    id="team-race-analyzer-table"
+                                    wrapperClasses="table-responsive"
+                                    rowClasses="text-nowrap"
                                     data={this.state.aggregations} columns={columns} keyField="key"
                                     noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>

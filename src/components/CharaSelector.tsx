@@ -1,6 +1,5 @@
 import React from 'react';
 import {Form} from 'react-bootstrap';
-import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {AllTypeaheadOwnAndInjectedProps, Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";

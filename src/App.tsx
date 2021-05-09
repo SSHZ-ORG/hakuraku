@@ -7,6 +7,8 @@ import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 import RaceDataPage from "./pages/RaceDataPage";
 import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.css';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 class App extends React.Component<{}, { umdbLoaded: boolean }> {
     constructor(props: {}) {
