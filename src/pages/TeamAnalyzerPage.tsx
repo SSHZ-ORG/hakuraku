@@ -11,6 +11,8 @@ import {Chara} from "../data/data_pb";
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
     aggregations: AggregatedCharaData[],
+
+    loading: boolean,
 };
 
 type AggregatedCharaData = {
@@ -93,6 +95,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
         this.state = {
             selectedFiles: [],
             aggregations: [],
+            loading: false,
         };
     }
 
@@ -100,57 +103,57 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
         if (files.length === 0) {
             return;
         }
-        this.setState({selectedFiles: files});
+        this.setState({selectedFiles: files, aggregations: [], loading: true}, () => {
+            Promise.all(files.map(parse)).then(values => {
+                const grouped = values.flat().reduce((m: Map<string, CharaRaceData[]>, data: CharaRaceData) => {
+                    const k = groupByKey(data);
+                    if (!m.has(k)) {
+                        m.set(k, []);
+                    }
+                    m.get(k)!.push(data);
+                    return m;
+                }, new Map<string, CharaRaceData[]>());
 
-        Promise.all(files.map(parse)).then(values => {
-            const grouped = values.flat().reduce((m: Map<string, CharaRaceData[]>, data: CharaRaceData) => {
-                const k = groupByKey(data);
-                if (!m.has(k)) {
-                    m.set(k, []);
-                }
-                m.get(k)!.push(data);
-                return m;
-            }, new Map<string, CharaRaceData[]>());
+                const aggregations = Array.from(grouped.entries()).map(s => {
+                    const [k, datas] = s;
 
-            const aggregations = Array.from(grouped.entries()).map(s => {
-                const [k, datas] = s;
+                    const raceCount = datas.length;
 
-                const raceCount = datas.length;
+                    const scores = datas.map(d => d.score);
+                    const avgScore = _.mean(scores);
 
-                const scores = datas.map(d => d.score);
-                const avgScore = _.mean(scores);
+                    const lastHps = datas.map(d => d.lastHp);
 
-                const lastHps = datas.map(d => d.lastHp);
+                    const lastSpurtStartDistances = datas.map(d => d.lastSpurtStartDistance);
 
-                const lastSpurtStartDistances = datas.map(d => d.lastSpurtStartDistance);
+                    const aggregation: AggregatedCharaData = {
+                        key: k,
 
-                const aggregation: AggregatedCharaData = {
-                    key: k,
+                        viewerId: datas[0].viewerId,
+                        trainedCharaId: datas[0].trainedCharaId,
+                        distanceType: UMDatabaseUtils.teamRaceDistanceLabels[datas[0].distanceType],
+                        runningStyle: UMDatabaseUtils.runningStyleLabels[datas[0].runningStyle],
+                        chara: UMDatabaseWrapper.charas[datas[0].charaId],
 
-                    viewerId: datas[0].viewerId,
-                    trainedCharaId: datas[0].trainedCharaId,
-                    distanceType: UMDatabaseUtils.teamRaceDistanceLabels[datas[0].distanceType],
-                    runningStyle: UMDatabaseUtils.runningStyleLabels[datas[0].runningStyle],
-                    chara: UMDatabaseWrapper.charas[datas[0].charaId],
+                        raceCount: raceCount,
 
-                    raceCount: raceCount,
+                        avgScore: avgScore,
+                        sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / raceCount),
 
-                    avgScore: avgScore,
-                    sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / raceCount),
+                        avgLastHp: _.mean(lastHps),
+                        zeroLastHpCount: lastHps.filter(i => i <= 0).length,
 
-                    avgLastHp: _.mean(lastHps),
-                    zeroLastHpCount: lastHps.filter(i => i <= 0).length,
+                        avgStartDelayTime: _.mean(datas.map(d => d.startDelayTime)),
 
-                    avgStartDelayTime: _.mean(datas.map(d => d.startDelayTime)),
+                        avgLastSpurtStartDistance: _.mean(lastSpurtStartDistances.filter(d => d > 0)),
+                        noLastSpurtCount: lastSpurtStartDistances.filter(d => d <= 0).length,
+                    };
 
-                    avgLastSpurtStartDistance: _.mean(lastSpurtStartDistances.filter(d => d > 0)),
-                    noLastSpurtCount: lastSpurtStartDistances.filter(d => d <= 0).length,
-                };
+                    return aggregation;
+                });
 
-                return aggregation;
+                this.setState({aggregations: aggregations, loading: false});
             });
-
-            this.setState({aggregations: aggregations});
         });
     }
 
@@ -166,7 +169,8 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
             <Row>
                 <Col>
                     <BootstrapTable bootstrap4 condensed striped hover
-                                    data={this.state.aggregations} columns={columns} keyField="key"/>
+                                    data={this.state.aggregations} columns={columns} keyField="key"
+                                    noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>
             </Row>
         </div>
