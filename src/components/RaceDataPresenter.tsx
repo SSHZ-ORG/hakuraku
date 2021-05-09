@@ -7,6 +7,7 @@ import memoize from "memoize-one";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from 'highcharts';
 import ReactJson from "react-json-view";
+import _ from "lodash";
 
 
 type RaceDataPresenterProps = {
@@ -157,7 +158,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 deltaHp.push({x: time, y: horseFrame.getHp()! - previousHorseFrame.getHp()!});
             }
         }
-        const lastFrameTime = raceData.getFrameList()[raceData.getFrameList().length - 1].getTime()!;
+        const lastFrameTime = _.last(raceData.getFrameList())!.getTime()!;
         if (lastBlockFrontHorseIndex !== -1) {
             blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, lastFrameTime, lastBlockFrontHorseIndex));
         }

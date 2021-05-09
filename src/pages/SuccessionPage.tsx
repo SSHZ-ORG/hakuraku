@@ -6,6 +6,7 @@ import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import {Chara} from "../data/data_pb";
+import _ from "lodash";
 
 type SelectedCharasState = {
     selectedChara: Chara | undefined,
@@ -107,8 +108,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
         }
 
         const relations = pairs.map(pair => UMDatabaseWrapper.findSuccessionRelation(pair));
-        const totalPoints =
-            relations.map(r => UMDatabaseUtils.calculateTotalPoint(r)).reduce((a, b) => a + b, 0)
+        const totalPoints = _.sumBy(relations, r => UMDatabaseUtils.calculateTotalPoint(r))
             + this.state.parent1WinSaddleBonus + this.state.parent2WinSaddleBonus;
 
         return <Card bg="primary" text="white">

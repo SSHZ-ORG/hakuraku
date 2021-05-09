@@ -7,6 +7,7 @@ import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
 import {toKatakana, toRomaji} from 'wanakana';
 import {Chara} from "../data/data_pb";
+import _ from "lodash";
 
 const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
 const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To support ローマ字入力
@@ -25,12 +26,9 @@ class CharaSelector extends React.Component<CharaSelectorProps> {
             return {};
         }
 
-        const result: Record<number, number[]> = {};
-        UMDatabaseWrapper.umdb.getCharaList().forEach(chara => {
-            result[chara.getId()!] =
-                constraintGroups.map(group => UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara))));
-        });
-        return result;
+        return _.mapValues(UMDatabaseWrapper.charas,
+            (chara) => constraintGroups.map(group =>
+                UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara)))));
     })
 
     onSelectionChange(selectedChara: Chara) {
@@ -38,11 +36,10 @@ class CharaSelector extends React.Component<CharaSelectorProps> {
     }
 
     charaList() {
-        const relationPoints = Object.fromEntries(Object.entries(this.calcRelationPoints(this.props.constraintGroups))
-            .map(([k, v]) => [k, v.reduce((a, b) => a + b, 0)]));
         let l = UMDatabaseWrapper.umdb.getCharaList();
         if (this.props.constraintGroups) {
-            l = l.slice().sort((a, b) => relationPoints[b.getId()!] - relationPoints[a.getId()!]);
+            const relationPoints = _.mapValues(this.calcRelationPoints(this.props.constraintGroups), _.sum);
+            l = _.sortBy(l, chara => -relationPoints[chara.getId()!]);
         }
         return l;
     }
@@ -54,7 +51,7 @@ class CharaSelector extends React.Component<CharaSelectorProps> {
             if (points.length === 1) {
                 suggestionPtsString = ` (${points[0]} pts)`;
             } else {
-                suggestionPtsString = ` (${points.map(p => p.toString()).join(' + ')} = ${points.reduce((a, b) => a + b, 0)} pts)`;
+                suggestionPtsString = ` (${points.map(p => p.toString()).join(' + ')} = ${_.sum(points)} pts)`;
             }
         }
         return UMDatabaseUtils.charaNameWithIdAndCast(chara) + suggestionPtsString;

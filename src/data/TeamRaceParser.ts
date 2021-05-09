@@ -1,6 +1,7 @@
 import {deserializeFromBase64} from "./RaceDataParser";
 // @ts-ignore
 import msgpack from "@ygoe/msgpack";
+import _ from "lodash";
 
 export type CharaRaceData = {
     viewerId: number,
@@ -61,8 +62,8 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     distanceType: raceResult['distance_type'],
                     runningStyle: raceHorseData['running_style'],
 
-                    score: charaResult['score_array'].map((i: any) => i['score']).reduce((a: number, b: number) => a + b, 0),
-                    lastHp: raceSimulateData.getFrameList()[raceSimulateData.getFrameCount()! - 1].getHorseFrameList()[frameOrder].getHp()!,
+                    score: _.sumBy(charaResult['score_array'], (i: any) => i['score']),
+                    lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
                     startDelayTime: raceHorseResult.getStartDelayTime()!,
 
                     lastSpurtStartDistance: raceHorseResult.getLastSpurtStartDistance()!,

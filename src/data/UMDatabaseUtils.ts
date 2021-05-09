@@ -1,11 +1,10 @@
+import _ from 'lodash';
 import {Chara, SpecialCaseRace, SuccessionRelation} from './data_pb';
 
 
 class UMDatabaseUtils {
     static calculateTotalPoint(relations: SuccessionRelation[]) {
-        return relations.reduce((points, relation) => {
-            return points + relation.getRelationPoint()!;
-        }, 0);
+        return _.sumBy(relations, r => r.getRelationPoint()!);
     }
 
     static getRelationRank(point: number) {

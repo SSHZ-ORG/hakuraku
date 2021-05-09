@@ -105,18 +105,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
         }
         this.setState({selectedFiles: files, aggregations: [], loading: true}, () => {
             Promise.all(files.map(parse)).then(values => {
-                const grouped = values.flat().reduce((m: Map<string, CharaRaceData[]>, data: CharaRaceData) => {
-                    const k = groupByKey(data);
-                    if (!m.has(k)) {
-                        m.set(k, []);
-                    }
-                    m.get(k)!.push(data);
-                    return m;
-                }, new Map<string, CharaRaceData[]>());
-
-                const aggregations = Array.from(grouped.entries()).map(s => {
-                    const [k, datas] = s;
-
+                const aggregations = _.map(_.groupBy(values.flat(), groupByKey), (datas, k) => {
                     const raceCount = datas.length;
 
                     const scores = datas.map(d => d.score);
