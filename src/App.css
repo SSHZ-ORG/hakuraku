@@ -1,3 +1,4 @@
 #team-race-analyzer-table {
     table-layout: auto;
+    white-space: nowrap;
 }

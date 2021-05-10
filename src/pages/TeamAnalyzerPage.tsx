@@ -25,6 +25,7 @@ type AggregatedCharaData = {
     chara: Chara,
 
     raceCount: number,
+    finishOrders: Record<number, number>,
 
     avgScore: number,
     sdScore: number,
@@ -36,9 +37,13 @@ type AggregatedCharaData = {
 
     avgLastSpurtStartDistance: number,
     noLastSpurtCount: number,
+
+    avgZeroHpFrameCount: number,
+    avgNonZeroTemptationFrameCount: number,
 };
 
-const floatFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell, row) => cell.toFixed(2);
+const floatFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell) => cell.toFixed(2);
+const floatFormatter6: ColumnFormatter<AggregatedCharaData, {}, number> = (cell) => cell.toFixed(6);
 
 const countFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell, row) => <>{cell}<br/>({(cell / row.raceCount * 100).toFixed(2)}%)</>;
 
@@ -70,19 +75,22 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
     },
 
     {dataField: 'raceCount', text: 'N'},
+    {
+        dataField: 'finishOrders',
+        text: '',
+        formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}`
+    },
 
     {dataField: 'avgScore', text: 'μ(pts)', sort: true, formatter: floatFormatter},
     {dataField: 'sdScore', text: 'σ(pts)', sort: true, formatter: floatFormatter},
 
     {dataField: 'avgLastHp', text: 'μ(HP)', sort: true, formatter: floatFormatter},
     {dataField: 'zeroLastHpCount', text: 'C(HP0)', sort: true, formatter: countFormatter},
+    {dataField: 'avgZeroHpFrameCount', text: 'μ(fHP0)', sort: true, formatter: floatFormatter6},
 
-    {
-        dataField: 'avgStartDelayTime',
-        text: 'μ(出遅れ)',
-        sort: true,
-        formatter: (cell: number, row) => cell.toFixed(6)
-    },
+    {dataField: 'avgStartDelayTime', text: 'μ(出遅れ)', sort: true, formatter: floatFormatter6},
+
+    {dataField: 'avgNonZeroTemptationFrameCount', text: 'μ(f掛かり)', sort: true, formatter: floatFormatter6},
 
     {dataField: 'avgLastSpurtStartDistance', text: 'μ(LS)', sort: true, formatter: floatFormatter},
     {dataField: 'noLastSpurtCount', text: 'C(LS0)', sort: true, formatter: countFormatter},
@@ -129,6 +137,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                         chara: UMDatabaseWrapper.charas[datas[0].charaId],
 
                         raceCount: raceCount,
+                        finishOrders: _.countBy(datas, d => Math.min(d.finishOrder, 3)),
 
                         avgScore: avgScore,
                         sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / (raceCount - 1)),
@@ -140,6 +149,9 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
                         avgLastSpurtStartDistance: _.mean(lastSpurtStartDistances.filter(d => d > 0)),
                         noLastSpurtCount: lastSpurtStartDistances.filter(d => d <= 0).length,
+
+                        avgZeroHpFrameCount: _.meanBy(datas, d => d.zeroHpFrameCount),
+                        avgNonZeroTemptationFrameCount: _.meanBy(datas, d => d.nonZeroTemptationFrameCount),
                     };
 
                     return aggregation;
@@ -164,7 +176,6 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                     <BootstrapTable bootstrap4 condensed striped hover
                                     id="team-race-analyzer-table"
                                     wrapperClasses="table-responsive"
-                                    rowClasses="text-nowrap"
                                     data={this.state.aggregations} columns={columns} keyField="key"
                                     noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>

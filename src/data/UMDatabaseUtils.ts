@@ -34,7 +34,7 @@ class UMDatabaseUtils {
 
     static teamRaceDistanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
 
-    static runningStyleLabels: Record<number, string> = {1: '逃げ', 2: '先行', 3: '差し', 4: '追い込み'};
+    static runningStyleLabels: Record<number, string> = {1: '逃げ', 2: '先行', 3: '差し', 4: '追込'};
 }
 
 export default UMDatabaseUtils;

@@ -15,6 +15,9 @@ export type CharaRaceData = {
     lastHp: number,
     startDelayTime: number,
     lastSpurtStartDistance: number,
+    zeroHpFrameCount: number,
+    nonZeroTemptationFrameCount: number,
+    finishOrder: number, // 0-indexed
 };
 
 export function parse(file: File): Promise<CharaRaceData[]> {
@@ -55,6 +58,18 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                 const charaResult = raceResult['chara_result_array'][frameOrder];
                 const raceHorseResult = raceSimulateData.getHorseResultList()[frameOrder];
 
+                let zeroHpFrameCount = 0;
+                let nonZeroTemptationFrameCount = 0;
+                for (let frame of raceSimulateData.getFrameList()) {
+                    const horseFrame = frame.getHorseFrameList()[frameOrder];
+                    if (horseFrame.getHp()! <= 0 && frame.getTime()! < raceHorseResult.getFinishTimeRaw()!) {
+                        zeroHpFrameCount += 1;
+                    }
+                    if (horseFrame.getTemptationMode()! > 0) {
+                        nonZeroTemptationFrameCount += 1;
+                    }
+                }
+
                 outputDataList.push({
                     viewerId: viewerId,
                     trainedCharaId: raceHorseData['trained_chara_id'],
@@ -65,8 +80,10 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     score: _.sumBy(charaResult['score_array'], (i: any) => i['score']),
                     lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
                     startDelayTime: raceHorseResult.getStartDelayTime()!,
-
                     lastSpurtStartDistance: raceHorseResult.getLastSpurtStartDistance()!,
+                    zeroHpFrameCount: zeroHpFrameCount,
+                    nonZeroTemptationFrameCount: nonZeroTemptationFrameCount,
+                    finishOrder: raceHorseResult.getFinishOrder()!,
                 });
             }
         });
