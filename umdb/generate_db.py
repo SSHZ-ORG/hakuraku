@@ -109,6 +109,16 @@ def populate_skills(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         pb.skill.append(r)
 
 
+def populate_team_stadium_score_bonus(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute("SELECT `index`, text FROM text_data WHERE category=148;")
+    rows = cursor.fetchall()
+    for row in rows:
+        r = data_pb2.TeamStadiumScoreBonus()
+        r.id = row[0]
+        r.name = row[1]
+        pb.team_stadium_score_bonus.append(r)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--db_path", default="master.mdb")
@@ -126,6 +136,7 @@ def main():
     populate_wins_saddle(pb, cursor)
     populate_special_case_race(pb, cursor)
     populate_skills(pb, cursor)
+    populate_team_stadium_score_bonus(pb, cursor)
 
     print(pb)
 

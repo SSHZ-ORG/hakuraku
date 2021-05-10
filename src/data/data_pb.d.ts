@@ -39,6 +39,11 @@ export class UMDatabase extends jspb.Message {
   setSkillList(value: Array<Skill>): void;
   addSkill(value?: Skill, index?: number): Skill;
 
+  clearTeamStadiumScoreBonusList(): void;
+  getTeamStadiumScoreBonusList(): Array<TeamStadiumScoreBonus>;
+  setTeamStadiumScoreBonusList(value: Array<TeamStadiumScoreBonus>): void;
+  addTeamStadiumScoreBonus(value?: TeamStadiumScoreBonus, index?: number): TeamStadiumScoreBonus;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UMDatabase.AsObject;
   static toObject(includeInstance: boolean, msg: UMDatabase): UMDatabase.AsObject;
@@ -58,6 +63,7 @@ export namespace UMDatabase {
     winsSaddleList: Array<WinsSaddle.AsObject>,
     specialCaseRaceList: Array<SpecialCaseRace.AsObject>,
     skillList: Array<Skill.AsObject>,
+    teamStadiumScoreBonusList: Array<TeamStadiumScoreBonus.AsObject>,
   }
 }
 
@@ -276,6 +282,34 @@ export class Skill extends jspb.Message {
 }
 
 export namespace Skill {
+  export type AsObject = {
+    id?: number,
+    name?: string,
+  }
+}
+
+export class TeamStadiumScoreBonus extends jspb.Message {
+  hasId(): boolean;
+  clearId(): void;
+  getId(): number | undefined;
+  setId(value: number): void;
+
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string | undefined;
+  setName(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): TeamStadiumScoreBonus.AsObject;
+  static toObject(includeInstance: boolean, msg: TeamStadiumScoreBonus): TeamStadiumScoreBonus.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: TeamStadiumScoreBonus, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): TeamStadiumScoreBonus;
+  static deserializeBinaryFromReader(message: TeamStadiumScoreBonus, reader: jspb.BinaryReader): TeamStadiumScoreBonus;
+}
+
+export namespace TeamStadiumScoreBonus {
   export type AsObject = {
     id?: number,
     name?: string,

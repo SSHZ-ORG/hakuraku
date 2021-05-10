@@ -13,6 +13,8 @@ message UMDatabase {
     repeated SpecialCaseRace special_case_race = 6;
 
     repeated Skill skill = 7;
+
+    repeated TeamStadiumScoreBonus team_stadium_score_bonus = 8;
 }
 
 message Chara {
@@ -59,6 +61,11 @@ message SpecialCaseRace {
 }
 
 message Skill {
+    optional int32 id = 1;
+    optional string name = 2;
+}
+
+message TeamStadiumScoreBonus {
     optional int32 id = 1;
     optional string name = 2;
 }
