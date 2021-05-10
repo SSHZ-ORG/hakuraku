@@ -11,7 +11,9 @@ export type CharaRaceData = {
 
     charaId: number,
 
-    score: number,
+    rawScore: number,
+    bonusScores: Record<number, number>,
+
     lastHp: number,
     startDelayTime: number,
     lastSpurtStartDistance: number,
@@ -70,6 +72,11 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     }
                 }
 
+                const bonusScores: Record<number, number> = _.mapValues(
+                    _.groupBy(charaResult['score_array'].map((score: any) => score['bonus_array']).flat(),
+                        bonus => bonus['score_bonus_id']),
+                    bonuses => _.sumBy(bonuses, b => b['bonus_score']));
+
                 outputDataList.push({
                     viewerId: viewerId,
                     trainedCharaId: raceHorseData['trained_chara_id'],
@@ -77,7 +84,9 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     distanceType: raceResult['distance_type'],
                     runningStyle: raceHorseData['running_style'],
 
-                    score: _.sumBy(charaResult['score_array'], (i: any) => i['score']),
+                    rawScore: _.sumBy(charaResult['score_array'], (i: any) => i['score']) - _.sum(_.values(bonusScores)),
+                    bonusScores: bonusScores,
+
                     lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
                     startDelayTime: raceHorseResult.getStartDelayTime()!,
                     lastSpurtStartDistance: raceHorseResult.getLastSpurtStartDistance()!,
