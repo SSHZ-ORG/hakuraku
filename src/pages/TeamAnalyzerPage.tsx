@@ -40,7 +40,7 @@ type AggregatedCharaData = {
 
     avgStartDelayTime: number,
 
-    avgLastSpurtStartDistance: number,
+    avgLastSpurtDistancePercentage: number,
     noLastSpurtCount: number,
 
     avgZeroHpFrameCount: number,
@@ -97,7 +97,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
 
     {dataField: 'avgNonZeroTemptationFrameCount', text: 'μ(f掛かり)', sort: true, formatter: floatFormatter6},
 
-    {dataField: 'avgLastSpurtStartDistance', text: 'μ(LS)', sort: true, formatter: floatFormatter},
+    {dataField: 'avgLastSpurtDistancePercentage', text: 'μ(LS%)', sort: true, formatter: floatFormatter},
     {dataField: 'noLastSpurtCount', text: 'C(LS0)', sort: true, formatter: countFormatter},
 ];
 
@@ -131,8 +131,6 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
                     const lastHps = datas.map(d => d.lastHp);
 
-                    const lastSpurtStartDistances = datas.map(d => d.lastSpurtStartDistance);
-
                     const aggregation: AggregatedCharaData = {
                         key: k,
 
@@ -158,8 +156,8 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
                         avgStartDelayTime: _.mean(datas.map(d => d.startDelayTime)),
 
-                        avgLastSpurtStartDistance: _.mean(lastSpurtStartDistances.filter(d => d > 0)),
-                        noLastSpurtCount: lastSpurtStartDistances.filter(d => d <= 0).length,
+                        avgLastSpurtDistancePercentage: _.meanBy(datas.filter(d => d.lastSpurtDistanceRatio > 0), d => d.lastSpurtDistanceRatio) * 100,
+                        noLastSpurtCount: datas.filter(d => d.lastSpurtDistanceRatio <= 0).length,
 
                         avgZeroHpFrameCount: _.meanBy(datas, d => d.zeroHpFrameCount),
                         avgNonZeroTemptationFrameCount: _.meanBy(datas, d => d.nonZeroTemptationFrameCount),

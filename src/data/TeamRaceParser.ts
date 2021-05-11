@@ -2,6 +2,7 @@ import {deserializeFromBase64} from "./RaceDataParser";
 // @ts-ignore
 import msgpack from "@ygoe/msgpack";
 import _ from "lodash";
+import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 export type CharaRaceData = {
     viewerId: number,
@@ -16,7 +17,7 @@ export type CharaRaceData = {
 
     lastHp: number,
     startDelayTime: number,
-    lastSpurtStartDistance: number,
+    lastSpurtDistanceRatio: number,
     zeroHpFrameCount: number,
     nonZeroTemptationFrameCount: number,
     finishOrder: number, // 0-indexed
@@ -47,6 +48,8 @@ export function parse(file: File): Promise<CharaRaceData[]> {
 
         const viewerId = deserialized['data_headers']['viewer_id'];
         data['race_start_params_array'].forEach((raceStartParams: any, idx: number) => {
+            const raceInstance = UMDatabaseWrapper.raceInstances[raceStartParams['race_instance_id']];
+
             const raceHorseDatas = raceStartParams['race_horse_data_array'];
             const raceResult = data['race_result_array'][idx];
             const raceSimulateData = deserializeFromBase64(raceResult['race_scenario']);
@@ -89,7 +92,7 @@ export function parse(file: File): Promise<CharaRaceData[]> {
 
                     lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
                     startDelayTime: raceHorseResult.getStartDelayTime()!,
-                    lastSpurtStartDistance: raceHorseResult.getLastSpurtStartDistance()!,
+                    lastSpurtDistanceRatio: raceHorseResult.getLastSpurtStartDistance()! <= 0 ? 0 : 1 - (raceHorseResult.getLastSpurtStartDistance()! / raceInstance.getDistance()!),
                     zeroHpFrameCount: zeroHpFrameCount,
                     nonZeroTemptationFrameCount: nonZeroTemptationFrameCount,
                     finishOrder: raceHorseResult.getFinishOrder()!,
