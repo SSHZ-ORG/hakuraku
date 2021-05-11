@@ -8,6 +8,7 @@ import BootstrapTable, {ColumnDescription, ColumnFormatter} from 'react-bootstra
 import _ from "lodash";
 import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {Typeahead} from "react-bootstrap-typeahead";
+import {TrainedCharaData} from "../data/TrainedCharaData";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
@@ -20,10 +21,10 @@ type TeamAnalyzerPageState = {
 type AggregatedCharaData = {
     key: string,
 
-    viewerId: number,
+    trainedChara: TrainedCharaData,
     trainedCharaId: number,
-    distanceType: number,
-    runningStyle: number,
+    distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels,
+    runningStyle: keyof typeof UMDatabaseUtils.runningStyleLabels,
     chara: Chara,
 
     raceCount: number,
@@ -58,14 +59,14 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         dataField: 'trainedCharaId',
         text: 'ID',
         sort: true,
-        formatter: (cell, row) => <>{row.viewerId}<br/>TCID: {cell}</>
+        formatter: (cell, row) => <>{row.trainedChara.viewerId}<br/>TCID: {cell}</>
     },
 
     {
         dataField: 'distanceType',
         text: '',
         sort: true,
-        formatter: (cell, row) => <>
+        formatter: (cell: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels, row) => <>
             {UMDatabaseUtils.teamRaceDistanceLabels[cell]}
             <br/>{UMDatabaseUtils.runningStyleLabels[row.runningStyle]}
         </>
@@ -97,12 +98,12 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
 
     {dataField: 'avgNonZeroTemptationFrameCount', text: 'μ(f掛かり)', sort: true, formatter: floatFormatter6},
 
-    {dataField: 'avgLastSpurtDistancePercentage', text: 'μ(LS%)', sort: true, formatter: floatFormatter},
+    {dataField: 'avgLastSpurtDistancePercentage', text: 'μ(LS%)', sort: true, formatter: floatFormatter6},
     {dataField: 'noLastSpurtCount', text: 'C(LS0)', sort: true, formatter: countFormatter},
 ];
 
 function groupByKey(data: CharaRaceData): string {
-    return [data.viewerId, data.trainedCharaId, data.distanceType, data.runningStyle].join(':');
+    return [data.trainedChara.viewerId, data.trainedChara.trainedCharaId, data.distanceType, data.runningStyle].join(':');
 }
 
 export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPageState> {
@@ -134,11 +135,11 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                     const aggregation: AggregatedCharaData = {
                         key: k,
 
-                        viewerId: datas[0].viewerId,
-                        trainedCharaId: datas[0].trainedCharaId,
+                        trainedChara: datas[0].trainedChara,
+                        trainedCharaId: datas[0].trainedChara.trainedCharaId,
                         distanceType: datas[0].distanceType,
                         runningStyle: datas[0].runningStyle,
-                        chara: UMDatabaseWrapper.charas[datas[0].charaId],
+                        chara: UMDatabaseWrapper.charas[datas[0].trainedChara.charaId],
 
                         raceCount: raceCount,
                         finishOrders: _.countBy(datas, d => Math.min(d.finishOrder, 3)),

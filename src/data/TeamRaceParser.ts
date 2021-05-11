@@ -3,14 +3,14 @@ import {deserializeFromBase64} from "./RaceDataParser";
 import msgpack from "@ygoe/msgpack";
 import _ from "lodash";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
+import UMDatabaseUtils from "./UMDatabaseUtils";
+import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
 
 export type CharaRaceData = {
-    viewerId: number,
-    trainedCharaId: number,
-    distanceType: number,
-    runningStyle: number,
+    trainedChara: TrainedCharaData,
 
-    charaId: number,
+    distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels,
+    runningStyle: keyof typeof UMDatabaseUtils.runningStyleLabels,
 
     rawScore: number,
     bonusScores: Record<number, number>,
@@ -81,9 +81,8 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     bonuses => _.sumBy(bonuses, b => b['bonus_score']));
 
                 outputDataList.push({
-                    viewerId: viewerId,
-                    trainedCharaId: raceHorseData['trained_chara_id'],
-                    charaId: raceHorseData['chara_id'],
+                    trainedChara: fromRaceHorseData(raceHorseData),
+
                     distanceType: raceResult['distance_type'],
                     runningStyle: raceHorseData['running_style'],
 

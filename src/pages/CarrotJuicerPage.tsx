@@ -83,9 +83,10 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                                       onChange={(e) => this.setState({selectedTeamRace: e.target.value ? parseInt(e.target.value) : undefined})}>
                             <option value="">-</option>
                             {data['race_start_params_array'].map((race: any, idx: number) => {
+                                const distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels = data['race_result_array'][idx]['distance_type'];
                                 return <option value={idx}>
                                     [{idx + 1}]{' '}
-                                    [{UMDatabaseUtils.teamRaceDistanceLabels[data['race_result_array'][idx]['distance_type']] ?? 'Unknown type'}]{' '}
+                                    [{UMDatabaseUtils.teamRaceDistanceLabels[distanceType] ?? 'Unknown type'}]{' '}
                                     {UMDatabaseWrapper.raceInstanceNameWithId(race['race_instance_id'])}
                                 </option>
                             })}
