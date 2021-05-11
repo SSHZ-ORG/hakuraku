@@ -43,12 +43,17 @@ def populate_succession_relation(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor
 
 
 def populate_race_instance(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
-    cursor.execute("SELECT `index`, text FROM text_data WHERE category=29;")
+    cursor.execute("""SELECT ri.id, rcs.distance, t.text
+                      FROM race_instance AS ri
+                      LEFT JOIN race AS r ON ri.race_id = r.id
+                      LEFT JOIN race_course_set AS rcs ON r.course_set = rcs.id
+                      LEFT JOIN text_data AS t ON t."index" = ri.id AND t.category = 29;""")
     rows = cursor.fetchall()
     for row in rows:
         r = data_pb2.RaceInstance()
         r.id = row[0]
-        r.name = row[1]
+        r.distance = row[1]
+        r.name = row[2]
         pb.race_instance.append(r)
 
 

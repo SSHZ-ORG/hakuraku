@@ -32,6 +32,7 @@ message SuccessionRelation {
 message RaceInstance {
     optional int32 id = 1;
     optional string name = 2;
+    optional int32 distance = 3;
 }
 
 message WinsSaddle {

@@ -146,6 +146,11 @@ export class RaceInstance extends jspb.Message {
   getName(): string | undefined;
   setName(value: string): void;
 
+  hasDistance(): boolean;
+  clearDistance(): void;
+  getDistance(): number | undefined;
+  setDistance(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): RaceInstance.AsObject;
   static toObject(includeInstance: boolean, msg: RaceInstance): RaceInstance.AsObject;
@@ -160,6 +165,7 @@ export namespace RaceInstance {
   export type AsObject = {
     id?: number,
     name?: string,
+    distance?: number,
   }
 }
 

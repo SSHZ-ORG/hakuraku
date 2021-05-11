@@ -1248,7 +1248,8 @@ proto.hakuraku.RaceInstance.prototype.toObject = function(opt_includeInstance) {
 proto.hakuraku.RaceInstance.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = jspb.Message.getField(msg, 1)) == null ? undefined : f,
-    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f
+    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f,
+    distance: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1293,6 +1294,10 @@ proto.hakuraku.RaceInstance.deserializeBinaryFromReader = function(msg, reader) 
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setDistance(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1333,6 +1338,13 @@ proto.hakuraku.RaceInstance.serializeBinaryToWriter = function(message, writer) 
   if (f != null) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeInt32(
+      3,
       f
     );
   }
@@ -1408,6 +1420,42 @@ proto.hakuraku.RaceInstance.prototype.clearName = function() {
  */
 proto.hakuraku.RaceInstance.prototype.hasName = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional int32 distance = 3;
+ * @return {number}
+ */
+proto.hakuraku.RaceInstance.prototype.getDistance = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.hakuraku.RaceInstance} returns this
+ */
+proto.hakuraku.RaceInstance.prototype.setDistance = function(value) {
+  return jspb.Message.setField(this, 3, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.RaceInstance} returns this
+ */
+proto.hakuraku.RaceInstance.prototype.clearDistance = function() {
+  return jspb.Message.setField(this, 3, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.RaceInstance.prototype.hasDistance = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
