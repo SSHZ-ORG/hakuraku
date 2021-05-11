@@ -1,10 +1,10 @@
 import React from "react";
-import {Button, Col, Form, InputGroup, Row} from "react-bootstrap";
+import {Button, Col, Form, InputGroup, Row, Table} from "react-bootstrap";
 import FilesSelector from "../components/FilesSelector";
 import {CharaRaceData, parse} from "../data/TeamRaceParser";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import BootstrapTable, {ColumnDescription, ColumnFormatter} from 'react-bootstrap-table-next';
+import BootstrapTable, {ColumnDescription, ColumnFormatter, ExpandRowProps} from 'react-bootstrap-table-next';
 import _ from "lodash";
 import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {Typeahead} from "react-bootstrap-typeahead";
@@ -46,6 +46,8 @@ type AggregatedCharaData = {
 
     avgZeroHpFrameCount: number,
     avgNonZeroTemptationFrameCount: number,
+
+    skillActivationCount: Record<number, number>,
 };
 
 const floatFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell) => cell.toFixed(2);
@@ -101,6 +103,23 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
     {dataField: 'avgLastSpurtDistancePercentage', text: 'μ(LS%)', sort: true, formatter: floatFormatter6},
     {dataField: 'noLastSpurtCount', text: 'C(LS0)', sort: true, formatter: countFormatter},
 ];
+
+const expandRow: ExpandRowProps<AggregatedCharaData> = {
+    renderer: row => (
+        <Table size="small" className="w-auto">
+            <tbody>
+            {row.trainedChara.skills.map(cs =>
+                <tr>
+                    <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
+                    <td>Lv {cs.level}</td>
+                    <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
+                    <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>
+                </tr>
+            )}
+            </tbody>
+        </Table>
+    ),
+};
 
 function groupByKey(data: CharaRaceData): string {
     return [data.trainedChara.viewerId, data.trainedChara.trainedCharaId, data.distanceType, data.runningStyle].join(':');
@@ -162,6 +181,8 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
                         avgZeroHpFrameCount: _.meanBy(datas, d => d.zeroHpFrameCount),
                         avgNonZeroTemptationFrameCount: _.meanBy(datas, d => d.nonZeroTemptationFrameCount),
+
+                        skillActivationCount: _.countBy(datas.map(d => Array.from(d.activatedSkillIds)).flat()),
                     };
 
                     return aggregation;
@@ -220,10 +241,11 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
             <Row>
                 <Col>
-                    <BootstrapTable bootstrap4 condensed striped hover
+                    <BootstrapTable bootstrap4 condensed hover
                                     id="team-race-analyzer-table"
                                     wrapperClasses="table-responsive"
                                     data={this.patchedAggregations()} columns={columns} keyField="key"
+                                    expandRow={expandRow}
                                     noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>
             </Row>

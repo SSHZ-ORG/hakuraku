@@ -5,6 +5,7 @@ import _ from "lodash";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 import UMDatabaseUtils from "./UMDatabaseUtils";
 import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
+import {RaceSimulateEventData} from "./race_data_pb";
 
 export type CharaRaceData = {
     trainedChara: TrainedCharaData,
@@ -21,6 +22,8 @@ export type CharaRaceData = {
     zeroHpFrameCount: number,
     nonZeroTemptationFrameCount: number,
     finishOrder: number, // 0-indexed
+
+    activatedSkillIds: Set<number>,
 };
 
 export function parse(file: File): Promise<CharaRaceData[]> {
@@ -80,6 +83,10 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                         bonus => bonus['score_bonus_id']),
                     bonuses => _.sumBy(bonuses, b => b['bonus_score']));
 
+                const activatedSkillIds = new Set(raceSimulateData.getEventList().map(e => e.getEvent()!)
+                    .filter(event => event.getType() === RaceSimulateEventData.SimulateEventType.SKILL && event.getParamList()[0] === frameOrder)
+                    .map(event => event.getParamList()[1]));
+
                 outputDataList.push({
                     trainedChara: fromRaceHorseData(raceHorseData),
 
@@ -95,6 +102,8 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                     zeroHpFrameCount: zeroHpFrameCount,
                     nonZeroTemptationFrameCount: nonZeroTemptationFrameCount,
                     finishOrder: raceHorseResult.getFinishOrder()!,
+
+                    activatedSkillIds: activatedSkillIds,
                 });
             }
         });
