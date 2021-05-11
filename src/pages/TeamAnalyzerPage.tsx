@@ -106,18 +106,44 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
 
 const expandRow: ExpandRowProps<AggregatedCharaData> = {
     renderer: row => (
-        <Table size="small" className="w-auto">
-            <tbody>
-            {row.trainedChara.skills.map(cs =>
+        <div className="d-flex flex-row">
+            <Table size="small" className="w-auto m-2">
+                <tbody>
+                {row.trainedChara.skills.map(cs =>
+                    <tr>
+                        <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
+                        <td>Lv {cs.level}</td>
+                        <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
+                        <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>
+                    </tr>
+                )}
+                </tbody>
+            </Table>
+            <Table size="small" className="w-auto m-2">
+                <tbody>
                 <tr>
-                    <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
-                    <td>Lv {cs.level}</td>
-                    <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
-                    <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>
+                    <td>スピ</td>
+                    <td>{row.trainedChara.speed}</td>
                 </tr>
-            )}
-            </tbody>
-        </Table>
+                <tr>
+                    <td>スタ</td>
+                    <td>{row.trainedChara.stamina}</td>
+                </tr>
+                <tr>
+                    <td>パワ</td>
+                    <td>{row.trainedChara.pow}</td>
+                </tr>
+                <tr>
+                    <td>根性</td>
+                    <td>{row.trainedChara.guts}</td>
+                </tr>
+                <tr>
+                    <td>賢さ</td>
+                    <td>{row.trainedChara.wiz}</td>
+                </tr>
+                </tbody>
+            </Table>
+        </div>
     ),
 };
 
