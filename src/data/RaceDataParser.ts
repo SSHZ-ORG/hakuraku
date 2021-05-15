@@ -4,20 +4,26 @@ import pb from './race_data_pb.js';
 // @ts-ignore
 import struct from "@aksel/structjs";
 
+const oneInt16 = struct('<h');
+
 const oneInt32 = struct('<i');
+const twoInt32s = struct('<ii');
+
 const oneFloat = struct('<f');
 
 function deserializeHeader(buffer: ArrayBuffer) {
     const header = new pb.RaceSimulateHeaderData();
-    const [maxLength, version] = struct('<ii').unpack_from(buffer, 0);
+    const [maxLength, version] = twoInt32s.unpack_from(buffer, 0);
     header.setMaxLength(maxLength);
     header.setVersion(version);
     return [header, 4 + maxLength];
 }
 
+const horseFrameStruct = struct('<fHHHbb');
+
 function deserializeHorseFrame(buffer: ArrayBuffer, offset: number) {
     const horseFrame = new pb.RaceSimulateHorseFrameData();
-    const [distance, lanePosition, speed, hp, temptationMode, blockFrontHorseIndex] = struct('<fHHHbb').unpack_from(buffer, offset);
+    const [distance, lanePosition, speed, hp, temptationMode, blockFrontHorseIndex] = horseFrameStruct.unpack_from(buffer, offset);
     horseFrame.setDistance(distance);
     horseFrame.setLanePosition(lanePosition);
     horseFrame.setSpeed(speed);
@@ -38,9 +44,11 @@ function deserializeFrame(buffer: ArrayBuffer, offset: number, horseNum: number,
     return frame;
 }
 
+const horseResultStruct = struct('<ifffBBfBif');
+
 function deserializeHorseResult(buffer: ArrayBuffer, offset: number) {
     const horseResult = new pb.RaceSimulateHorseResultData();
-    const [finishOrder, finishTime, finishDiffTime, startDelayTime, gutsOrder, wizOrder, lastSpurtStartDistance, runningStyle, defeat, finishTimeRaw] = struct('<ifffBBfBif').unpack_from(buffer, offset);
+    const [finishOrder, finishTime, finishDiffTime, startDelayTime, gutsOrder, wizOrder, lastSpurtStartDistance, runningStyle, defeat, finishTimeRaw] = horseResultStruct.unpack_from(buffer, offset);
     horseResult.setFinishOrder(finishOrder);
     horseResult.setFinishTime(finishTime);
     horseResult.setFinishDiffTime(finishDiffTime);
@@ -54,14 +62,15 @@ function deserializeHorseResult(buffer: ArrayBuffer, offset: number) {
     return horseResult;
 }
 
+const eventStruct = struct('<fbb');
+
 function deserializeEvent(buffer: ArrayBuffer, offset: number) {
     const event = new pb.RaceSimulateEventData();
-    const s = struct('<fbb');
-    const [frameTime, type, paramCount] = s.unpack_from(buffer, offset);
+    const [frameTime, type, paramCount] = eventStruct.unpack_from(buffer, offset);
     event.setFrameTime(frameTime);
     event.setType(type);
     event.setParamCount(paramCount);
-    offset += s.size;
+    offset += eventStruct.size;
     for (let i = 0; i < paramCount; i++) {
         event.addParam(oneInt32.unpack_from(buffer, offset)[0]);
         offset += 4;
@@ -69,26 +78,27 @@ function deserializeEvent(buffer: ArrayBuffer, offset: number) {
     return event;
 }
 
+const raceStruct = struct('<fiii');
+
 function deserialize(input: number[]) {
-    const buffer = Uint8Array.from(input).buffer;
+    const buffer = new Uint8Array(input).buffer;
 
     const data = new pb.RaceSimulateData();
 
     let [header, offset] = deserializeHeader(buffer);
     data.setHeader(header);
 
-    let s = struct('<fiii');
-    const [distanceDiffMax, horseNum, horseFrameSize, horseResultSize] = s.unpack_from(buffer, offset);
+    const [distanceDiffMax, horseNum, horseFrameSize, horseResultSize] = raceStruct.unpack_from(buffer, offset);
     data.setDistanceDiffMax(distanceDiffMax);
     data.setHorseNum(horseNum);
     data.setHorseFrameSize(horseFrameSize);
     data.setHorseResultSize(horseResultSize);
-    offset += s.size;
+    offset += raceStruct.size;
 
     data.setPaddingSize1(oneInt32.unpack_from(buffer, offset)[0]);
     offset += 4 + data.getPaddingSize1()!;
 
-    s = struct('<ii')
+    let s = twoInt32s;
     const [frameCount, frameSize] = s.unpack_from(buffer, offset);
     data.setFrameCount(frameCount);
     data.setFrameSize(frameSize);
@@ -115,7 +125,7 @@ function deserialize(input: number[]) {
 
     for (let i = 0; i < data.getEventCount()!; i++) {
         const eventWrapper = new pb.RaceSimulateData.EventDataWrapper();
-        eventWrapper.setEventSize(struct('<h').unpack_from(buffer, offset)[0]);
+        eventWrapper.setEventSize(oneInt16.unpack_from(buffer, offset)[0]);
         offset += 2;
         eventWrapper.setEvent(deserializeEvent(buffer, offset));
         offset += eventWrapper.getEventSize();
@@ -126,7 +136,7 @@ function deserialize(input: number[]) {
 }
 
 function deserializeFromBase64(input: string) {
-    return deserialize(gzip.unzip(Base64.toUint8Array(input.trim())));
+    return deserialize(gzip.unzip(Base64.toUint8Array(input)));
 }
 
 export {deserialize, deserializeFromBase64};

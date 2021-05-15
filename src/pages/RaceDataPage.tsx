@@ -26,7 +26,7 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
     }
 
     parse() {
-        this.setState({parsedRaceData: deserializeFromBase64(this.state.raceScenarioInput)});
+        this.setState({parsedRaceData: deserializeFromBase64(this.state.raceScenarioInput.trim())});
         try {
             this.setState({parsedHorseInfo: JSON.parse(this.state.raceHorseInfoInput)});
         } catch (e) {
