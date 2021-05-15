@@ -91,19 +91,82 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}`
     },
 
-    {dataField: 'displayScore', text: 'μ(pts)', sort: true, formatter: floatFormatter},
-    {dataField: 'sdScore', text: 'σ(Rpts)', sort: true, formatter: floatFormatter},
+    {
+        dataField: 'displayScore',
+        text: 'μ(pts)',
+        sort: true,
+        formatter: floatFormatter,
+        // @ts-ignore
+        headerAttrs: {title: '(Estimated) average score, including selected bonuses'},
+    },
+    {
+        dataField: 'sdScore',
+        text: 'σ(Rpts)',
+        sort: true,
+        formatter: floatFormatter,
+        // @ts-ignore
+        headerAttrs: {title: '(Estimated) standard deviation of raw score, excluding bonuses'},
+    },
 
-    {dataField: 'avgLastHp', text: 'μ(HP)', sort: true, formatter: floatFormatter},
-    {dataField: 'zeroLastHpCount', text: 'C(HP0)', sort: true, formatter: countFormatter},
-    {dataField: 'avgZeroHpFrameCount', text: 'μ(fHP0)', sort: true, formatter: floatFormatter6},
+    {
+        dataField: 'avgLastHp',
+        text: 'μ(HP)',
+        sort: true,
+        formatter: floatFormatter,
+        // @ts-ignore
+        headerAttrs: {title: 'Average HP remaining at the last frame, including 0'},
+    },
+    {
+        dataField: 'zeroLastHpCount',
+        text: 'C(HP0)',
+        sort: true,
+        formatter: countFormatter,
+        // @ts-ignore
+        headerAttrs: {title: 'Number of races where HP is 0 at the last frame'},
+    },
+    {
+        dataField: 'avgZeroHpFrameCount',
+        text: 'μ(fHP0)',
+        sort: true,
+        formatter: floatFormatter6,
+        // @ts-ignore
+        headerAttrs: {title: 'Average number of frames before goal-in where HP is 0'},
+    },
 
-    {dataField: 'avgStartDelayTime', text: 'μ(出遅れ)', sort: true, formatter: floatFormatter6},
+    {
+        dataField: 'avgStartDelayTime',
+        text: 'μ(出遅れ)',
+        sort: true,
+        formatter: floatFormatter6,
+        // @ts-ignore
+        headerAttrs: {title: 'Average time of 出遅れ, in seconds'},
+    },
 
-    {dataField: 'avgNonZeroTemptationFrameCount', text: 'μ(f掛かり)', sort: true, formatter: floatFormatter6},
+    {
+        dataField: 'avgNonZeroTemptationFrameCount',
+        text: 'μ(f掛かり)',
+        sort: true,
+        formatter: floatFormatter6,
+        // @ts-ignore
+        headerAttrs: {title: 'Average number of frames of 掛かり'},
+    },
 
-    {dataField: 'avgLastSpurtDistancePercentage', text: 'μ(LS%)', sort: true, formatter: floatFormatter6},
-    {dataField: 'noLastSpurtCount', text: 'C(LS0)', sort: true, formatter: countFormatter},
+    {
+        dataField: 'avgLastSpurtDistancePercentage',
+        text: 'μ(LS%)',
+        sort: true,
+        formatter: floatFormatter6,
+        // @ts-ignore
+        headerAttrs: {title: 'Average percentage of last spurt distance of race distance, excluding races where no last spurt was attempted'},
+    },
+    {
+        dataField: 'noLastSpurtCount',
+        text: 'C(LS0)',
+        sort: true,
+        formatter: countFormatter,
+        // @ts-ignore
+        headerAttrs: {title: 'Number of races where no last spurt was attempted'},
+    },
 ];
 
 const expandRow: ExpandRowProps<AggregatedCharaData> = {
