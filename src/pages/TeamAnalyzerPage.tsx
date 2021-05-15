@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Col, Form, InputGroup, Row, Table} from "react-bootstrap";
 import FilesSelector from "../components/FilesSelector";
-import {CharaRaceData, parse} from "../data/TeamRaceParser";
+import {CharaRaceData, parse, TeamRaceGroupData} from "../data/TeamRaceParser";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import BootstrapTable, {ColumnDescription, ColumnFormatter, ExpandRowProps} from 'react-bootstrap-table-next';
@@ -12,6 +12,8 @@ import {TrainedCharaData} from "../data/TrainedCharaData";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
+
+    lastGroupCharaKeys: Set<string>,
     aggregations: AggregatedCharaData[],
     selectedBonuses: TeamStadiumScoreBonus[],
 
@@ -151,71 +153,87 @@ function groupByKey(data: CharaRaceData): string {
     return [data.trainedChara.viewerId, data.trainedChara.trainedCharaId, data.distanceType, data.runningStyle].join(':');
 }
 
+function aggregateChara(datas: CharaRaceData[], key: string): AggregatedCharaData {
+    const raceCount = datas.length;
+
+    const scores = datas.map(d => d.rawScore);
+    const avgScore = _.mean(scores);
+
+    const lastHps = datas.map(d => d.lastHp);
+
+    return {
+        key: key,
+
+        trainedChara: datas[0].trainedChara,
+        trainedCharaId: datas[0].trainedChara.trainedCharaId,
+        distanceType: datas[0].distanceType,
+        runningStyle: datas[0].runningStyle,
+        chara: UMDatabaseWrapper.charas[datas[0].trainedChara.charaId],
+
+        raceCount: raceCount,
+        finishOrders: _.countBy(datas, d => Math.min(d.finishOrder, 3)),
+
+        avgScore: avgScore,
+        sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / (raceCount - 1)),
+
+        displayScore: NaN,
+        avgBonusScores: _.mapValues(
+            _.reduce(datas.map(d => d.bonusScores), (result, value) => _.mergeWith(result, value, _.add)),
+            s => s / raceCount),
+
+        avgLastHp: _.mean(lastHps),
+        zeroLastHpCount: lastHps.filter(i => i <= 0).length,
+
+        avgStartDelayTime: _.mean(datas.map(d => d.startDelayTime)),
+
+        avgLastSpurtDistancePercentage: _.meanBy(datas.filter(d => d.lastSpurtDistanceRatio > 0), d => d.lastSpurtDistanceRatio) * 100,
+        noLastSpurtCount: datas.filter(d => d.lastSpurtDistanceRatio <= 0).length,
+
+        avgZeroHpFrameCount: _.meanBy(datas, d => d.zeroHpFrameCount),
+        avgNonZeroTemptationFrameCount: _.meanBy(datas, d => d.nonZeroTemptationFrameCount),
+
+        skillActivationCount: _.countBy(datas.map(d => Array.from(d.activatedSkillIds)).flat()),
+    };
+}
+
 export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPageState> {
     constructor(props: {}) {
         super(props);
 
         this.state = {
             selectedFiles: [],
+            lastGroupCharaKeys: new Set(),
             aggregations: [],
             selectedBonuses: [],
             loading: false,
         };
     }
 
+    rowClasses(row: AggregatedCharaData) {
+        if (this.state.lastGroupCharaKeys.has(row.key)) {
+            return 'table-info';
+        }
+        return '';
+    }
+
     onSelectedFilesChange(files: File[]) {
         if (files.length === 0) {
             return;
         }
-        this.setState({selectedFiles: files, aggregations: [], loading: true}, () => {
-            Promise.all(files.map(parse)).then(values => {
-                const aggregations = _.map(_.groupBy(values.flat(), groupByKey), (datas, k) => {
-                    const raceCount = datas.length;
+        this.setState({selectedFiles: files, lastGroupCharaKeys: new Set(), aggregations: [], loading: true}, () => {
+            Promise.all(files.map(parse))
+                .then(_.compact)
+                .then((teamRaceGroupDatas: TeamRaceGroupData[]) => {
+                    const lastGroupCharaKeys = _.maxBy(teamRaceGroupDatas, d => d.timestamp)?.charaRaceDatas.map(c => groupByKey(c));
 
-                    const scores = datas.map(d => d.rawScore);
-                    const avgScore = _.mean(scores);
+                    const aggregations = _.map(_.groupBy(teamRaceGroupDatas.map(g => g.charaRaceDatas).flat(), groupByKey), aggregateChara);
 
-                    const lastHps = datas.map(d => d.lastHp);
-
-                    const aggregation: AggregatedCharaData = {
-                        key: k,
-
-                        trainedChara: datas[0].trainedChara,
-                        trainedCharaId: datas[0].trainedChara.trainedCharaId,
-                        distanceType: datas[0].distanceType,
-                        runningStyle: datas[0].runningStyle,
-                        chara: UMDatabaseWrapper.charas[datas[0].trainedChara.charaId],
-
-                        raceCount: raceCount,
-                        finishOrders: _.countBy(datas, d => Math.min(d.finishOrder, 3)),
-
-                        avgScore: avgScore,
-                        sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / (raceCount - 1)),
-
-                        displayScore: NaN,
-                        avgBonusScores: _.mapValues(
-                            _.reduce(datas.map(d => d.bonusScores), (result, value) => _.mergeWith(result, value, _.add)),
-                            s => s / raceCount),
-
-                        avgLastHp: _.mean(lastHps),
-                        zeroLastHpCount: lastHps.filter(i => i <= 0).length,
-
-                        avgStartDelayTime: _.mean(datas.map(d => d.startDelayTime)),
-
-                        avgLastSpurtDistancePercentage: _.meanBy(datas.filter(d => d.lastSpurtDistanceRatio > 0), d => d.lastSpurtDistanceRatio) * 100,
-                        noLastSpurtCount: datas.filter(d => d.lastSpurtDistanceRatio <= 0).length,
-
-                        avgZeroHpFrameCount: _.meanBy(datas, d => d.zeroHpFrameCount),
-                        avgNonZeroTemptationFrameCount: _.meanBy(datas, d => d.nonZeroTemptationFrameCount),
-
-                        skillActivationCount: _.countBy(datas.map(d => Array.from(d.activatedSkillIds)).flat()),
-                    };
-
-                    return aggregation;
+                    this.setState({
+                        lastGroupCharaKeys: new Set(lastGroupCharaKeys ?? []),
+                        aggregations: aggregations,
+                        loading: false
+                    });
                 });
-
-                this.setState({aggregations: aggregations, loading: false});
-            });
         });
     }
 
@@ -272,6 +290,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                                     wrapperClasses="table-responsive"
                                     data={this.patchedAggregations()} columns={columns} keyField="key"
                                     expandRow={expandRow}
+                                    rowClasses={r => this.rowClasses(r)}
                                     noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>
             </Row>

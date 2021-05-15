@@ -7,6 +7,12 @@ import UMDatabaseUtils from "./UMDatabaseUtils";
 import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
 import {RaceSimulateEventData} from "./race_data_pb";
 
+export type TeamRaceGroupData = {
+    timestamp: number,
+
+    charaRaceDatas: CharaRaceData[],
+}
+
 export type CharaRaceData = {
     trainedChara: TrainedCharaData,
 
@@ -26,9 +32,9 @@ export type CharaRaceData = {
     activatedSkillIds: Set<number>,
 };
 
-export function parse(file: File): Promise<CharaRaceData[]> {
+export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
     if (file.name.endsWith("Q.msgpack"))
-        return Promise.resolve([]);
+        return Promise.resolve(undefined);
 
     return file.arrayBuffer().then(content => {
         let deserialized: any;
@@ -36,7 +42,7 @@ export function parse(file: File): Promise<CharaRaceData[]> {
             deserialized = msgpack.deserialize(content);
         } catch (e) {
             console.log("Failed to parse file!", file, e);
-            return [];
+            return undefined;
         }
 
         const data = deserialized['data'];
@@ -44,7 +50,7 @@ export function parse(file: File): Promise<CharaRaceData[]> {
             data['race_start_params_array'] &&
             data['race_result_array'] &&
             data['race_start_params_array'].length === data['race_result_array'].length)) {
-            return [];
+            return undefined;
         }
 
         const outputDataList: CharaRaceData[] = [];
@@ -107,6 +113,9 @@ export function parse(file: File): Promise<CharaRaceData[]> {
                 });
             }
         });
-        return outputDataList;
+        return {
+            timestamp: deserialized['data_headers']['servertime'],
+            charaRaceDatas: outputDataList,
+        };
     });
 }
