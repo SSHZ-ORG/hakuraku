@@ -34,7 +34,7 @@ type AggregatedCharaData = {
 
     displayScore: number,
     sdScore: number,
-    avgRawScoreDev: number,
+    avgRawScoreDevRatio: number,
 
     avgScore: number,
     avgBonusScores: Record<number, number>,
@@ -109,12 +109,12 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         headerAttrs: {title: '(Estimated) standard deviation of raw score, excluding bonuses'},
     },
     {
-        dataField: 'avgRawScoreDev',
-        text: 'μ(DRpts)',
+        dataField: 'avgRawScoreDevRatio',
+        text: 'μ(D%Rpts)',
         sort: true,
-        formatter: floatFormatter,
+        formatter: cell => `${(cell * 100).toFixed(2)}%`,
         // @ts-ignore
-        headerAttrs: {title: 'Average of deviation of raw score from all charas\' score in each group of races'},
+        headerAttrs: {title: 'Average of deviation rate of raw score from all charas\' score in each group of races'},
     },
 
     {
@@ -247,7 +247,7 @@ function aggregateChara(datas: CharaRaceData[], key: string): AggregatedCharaDat
 
         avgScore: avgScore,
         sdScore: Math.sqrt(_.sum(scores.map(s => Math.pow(s - avgScore, 2))) / (raceCount - 1)),
-        avgRawScoreDev: _.meanBy(datas, d => d.rawScoreDev),
+        avgRawScoreDevRatio: _.meanBy(datas, d => d.rawScoreDevRatio),
 
         displayScore: NaN,
         avgBonusScores: _.mapValues(

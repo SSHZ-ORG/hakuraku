@@ -21,7 +21,7 @@ export type CharaRaceData = {
 
     rawScore: number,
     bonusScores: Record<number, number>,
-    rawScoreDev: number,
+    rawScoreDevRatio: number,
 
     lastHp: number,
     startDelayTime: number,
@@ -102,7 +102,7 @@ export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
 
                     rawScore: _.sumBy(charaResult['score_array'], (i: any) => i['score']) - _.sum(_.values(bonusScores)),
                     bonusScores: bonusScores,
-                    rawScoreDev: 0, // dummy value
+                    rawScoreDevRatio: 0, // dummy value
 
                     lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
                     startDelayTime: raceHorseResult.getStartDelayTime()!,
@@ -117,7 +117,7 @@ export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
         });
 
         const avgRawScore = _.meanBy(outputDataList, i => i.rawScore);
-        outputDataList.forEach(i => i.rawScoreDev = i.rawScore - avgRawScore);
+        outputDataList.forEach(i => i.rawScoreDevRatio = (i.rawScore - avgRawScore) / avgRawScore);
 
         return {
             timestamp: deserialized['data_headers']['servertime'],
