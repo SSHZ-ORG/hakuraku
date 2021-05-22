@@ -219,6 +219,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
             </Table>
         </div>
     ),
+    showExpandColumn: true,
 };
 
 function groupByKey(data: CharaRaceData): string {

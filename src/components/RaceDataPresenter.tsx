@@ -2,7 +2,7 @@ import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_p
 import React from "react";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import {Form} from "react-bootstrap";
+import {Form, Table} from "react-bootstrap";
 import memoize from "memoize-one";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from 'highcharts';
@@ -11,7 +11,7 @@ import _ from "lodash";
 import FoldCard from "./FoldCard";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
 import {Chara} from "../data/data_pb";
-import BootstrapTable, {ColumnDescription} from "react-bootstrap-table-next";
+import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
 import {filterCharaSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
@@ -119,6 +119,23 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         formatter: (cell, row) => row.trainedChara.wiz,
     },
 ];
+
+const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
+    renderer: row => <div className="d-flex flex-row">
+        <Table size="small" className="w-auto m-2">
+            <tbody>
+            {row.trainedChara.skills.map(cs =>
+                <tr>
+                    <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
+                    <td>Lv {cs.level}</td>
+                    <td>{row.activatedSkills.has(cs.skillId) ? '発動' : ''}</td>
+                </tr>
+            )}
+            </tbody>
+        </Table>
+    </div>,
+    showExpandColumn: true,
+}
 
 type RaceDataPresenterProps = {
     raceHorseInfo: any[],
@@ -388,6 +405,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             <BootstrapTable bootstrap4 condensed hover
                             classes="responsive-bootstrap-table"
                             wrapperClasses="table-responsive"
+                            expandRow={charaTableExpandRow}
                             data={_.sortBy(l, d => d.finishOrder)} columns={charaTableColumns} keyField="frameOrder"/>
         </FoldCard>
     }
