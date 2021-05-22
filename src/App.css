@@ -2,3 +2,7 @@
     table-layout: auto;
     white-space: nowrap;
 }
+
+.fold-card-header {
+    cursor: pointer;
+}

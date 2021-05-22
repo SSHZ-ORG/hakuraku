@@ -1,13 +1,13 @@
 import React from "react";
-import {Badge, Button, Card, Form, Modal, OverlayTrigger, Popover} from "react-bootstrap";
+import {Badge, Button, Form, Modal, OverlayTrigger, Popover} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
 import {RaceInstance, WinsSaddle} from "../data/data_pb";
+import FoldCard from "./FoldCard";
 
 type WinSaddleRelationBonusCalculatorState = {
-    extended: boolean,
     parentRaceInstances: RaceInstance[],
     grandparent1RaceInstances: RaceInstance[],
     grandparent2RaceInstances: RaceInstance[],
@@ -19,7 +19,6 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
         super(props);
 
         this.state = {
-            extended: false,
             parentRaceInstances: [],
             grandparent1RaceInstances: [],
             grandparent2RaceInstances: [],
@@ -47,14 +46,6 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
         }
         return finalWinsSaddles;
     });
-
-    onToggle() {
-        this.setState((state) => {
-            return {
-                extended: !state.extended
-            };
-        });
-    }
 
     renderWinSaddles(winsSaddles: WinsSaddle[]) {
         return winsSaddles.map(ws => <Badge variant="secondary">{ws.getId()} - {ws.getName()}</Badge>)
@@ -170,20 +161,14 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
     }
 
     render() {
-        return <Card>
-            <Card.Header onClick={() => this.onToggle()} style={{cursor: "pointer"}}>
-                勝鞍ボーナス Calculator
-            </Card.Header>
-            {this.state.extended &&
-            <Card.Body>
-                {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}{" "}
-                <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
-                {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
-                {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
-                {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}
-                {this.generateResult()}
-            </Card.Body>}
-        </Card>
+        return <FoldCard header='勝鞍ボーナス Calculator'>
+            {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}{" "}
+            <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
+            {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
+            {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
+            {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}
+            {this.generateResult()}
+        </FoldCard>;
     }
 }
 
