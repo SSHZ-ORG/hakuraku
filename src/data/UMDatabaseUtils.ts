@@ -35,6 +35,10 @@ class UMDatabaseUtils {
     static teamRaceDistanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
 
     static runningStyleLabels: Record<number, string> = {1: '逃げ', 2: '先行', 3: '差し', 4: '追込'};
+
+    static seasonLabels: Record<number, string> = {1: '春', 2: '夏', 3: '秋', 4: '冬', 5: '春'};
+    static groundConditionLabels: Record<number, string> = {1: '良', 2: '稍重', 3: '重', 4: '不良'};
+    static weatherLabels: Record<number, string> = {1: '晴', 2: '曇', 3: '雨', 4: '雪'};
 }
 
 export default UMDatabaseUtils;

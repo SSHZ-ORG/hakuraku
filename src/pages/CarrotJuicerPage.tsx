@@ -11,6 +11,17 @@ import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import FilesSelector from "../components/FilesSelector";
 
+function teamRaceHeader(race: any): string {
+    const parts = [
+        `${UMDatabaseWrapper.raceInstances[race['race_instance_id']]?.getDistance() ?? '?'}m`,
+        UMDatabaseUtils.seasonLabels[race['season']] ?? '?',
+        UMDatabaseUtils.weatherLabels[race['weather']] ?? '?',
+        UMDatabaseUtils.groundConditionLabels[race['ground_condition']] ?? '?',
+    ];
+
+    return parts.join(' / ');
+}
+
 type CarrotJuicerPageState = {
     selectedFiles: File[],
     currentFile: File | undefined,
@@ -18,6 +29,7 @@ type CarrotJuicerPageState = {
 
     selectedTeamRace: number | undefined,
 };
+
 
 export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPageState> {
     constructor(props: {}) {
@@ -94,9 +106,12 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                     </Form.Group>
                 </Form>
                 {this.state.selectedTeamRace !== undefined &&
-                <RaceDataPresenter
-                    raceHorseInfo={data['race_start_params_array'][this.state.selectedTeamRace]['race_horse_data_array']}
-                    raceData={deserializeFromBase64(data['race_result_array'][this.state.selectedTeamRace]['race_scenario'])}/>}
+                <>
+                    {teamRaceHeader(data['race_start_params_array'][this.state.selectedTeamRace])}
+                    <RaceDataPresenter
+                        raceHorseInfo={data['race_start_params_array'][this.state.selectedTeamRace]['race_horse_data_array']}
+                        raceData={deserializeFromBase64(data['race_result_array'][this.state.selectedTeamRace]['race_scenario'])}/>
+                </>}
                 <hr/>
             </>;
         } else if (data['room_info'] && data['room_info']['race_scenario'] && data['race_horse_data_array']) {
