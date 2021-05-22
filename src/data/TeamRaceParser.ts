@@ -5,7 +5,7 @@ import _ from "lodash";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 import UMDatabaseUtils from "./UMDatabaseUtils";
 import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
-import {RaceSimulateEventData} from "./race_data_pb";
+import {getCharaActivatedSkillIds} from "./RaceDataUtils";
 
 export type TeamRaceGroupData = {
     timestamp: number,
@@ -90,9 +90,7 @@ export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
                         bonus => bonus['score_bonus_id']),
                     bonuses => _.sumBy(bonuses, b => b['bonus_score']));
 
-                const activatedSkillIds = new Set(raceSimulateData.getEventList().map(e => e.getEvent()!)
-                    .filter(event => event.getType() === RaceSimulateEventData.SimulateEventType.SKILL && event.getParamList()[0] === frameOrder)
-                    .map(event => event.getParamList()[1]));
+                const activatedSkillIds = getCharaActivatedSkillIds(raceSimulateData, frameOrder);
 
                 outputDataList.push({
                     trainedChara: fromRaceHorseData(raceHorseData),

@@ -359,7 +359,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
             <Row>
                 <Col>
                     <BootstrapTable bootstrap4 condensed hover
-                                    id="team-race-analyzer-table"
+                                    classes="responsive-bootstrap-table"
                                     wrapperClasses="table-responsive"
                                     data={this.patchedAggregations()} columns={columns} keyField="key"
                                     expandRow={expandRow}

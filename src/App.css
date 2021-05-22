@@ -1,6 +1,18 @@
-#team-race-analyzer-table {
-    table-layout: auto;
-    white-space: nowrap;
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1640px;
+    }
+}
+
+.responsive-bootstrap-table {
+    table-layout: auto !important;
+    white-space: nowrap !important;
 }
 
 .fold-card-header {

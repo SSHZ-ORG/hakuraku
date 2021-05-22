@@ -5,6 +5,8 @@ export type CharaSkill = {
 
 export type TrainedCharaData = {
     viewerId: number,
+    viewerName: string,
+
     trainedCharaId: number,
     charaId: number,
 
@@ -20,6 +22,8 @@ export type TrainedCharaData = {
 export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
     return {
         viewerId: raceHorseData['viewer_id'],
+        viewerName: raceHorseData['trainer_name'],
+
         trainedCharaId: raceHorseData['trained_chara_id'],
         charaId: raceHorseData['chara_id'],
 

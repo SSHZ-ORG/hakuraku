@@ -1,4 +1,4 @@
-import {RaceSimulateData, RaceSimulateEventData} from "../data/race_data_pb";
+import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_pb";
 import React from "react";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -8,7 +8,117 @@ import HighchartsReact from "highcharts-react-official";
 import Highcharts from 'highcharts';
 import ReactJson from "react-json-view";
 import _ from "lodash";
+import FoldCard from "./FoldCard";
+import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
+import {Chara} from "../data/data_pb";
+import BootstrapTable, {ColumnDescription} from "react-bootstrap-table-next";
+import {filterCharaSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
 
+const unknownCharaTag = 'Unknown Chara / Mob';
+
+type CharaTableData = {
+    trainedChara: TrainedCharaData,
+    chara: Chara | undefined, // Mob or unknown chara will be undefined.
+
+    frameOrder: number, // 馬番, 1-indexed
+    finishOrder: number, // 着順, 1-indexed
+
+    horseResultData: RaceSimulateHorseResultData,
+
+    popularity: number,
+    popularityMarks: number[],
+    motivation: number,
+
+    activatedSkills: Set<number>,
+};
+
+function formatTime(time: number): string {
+    const min = Math.floor(time / 60);
+    const sec = time - min * 60;
+    return `${min}:${sec < 10 ? '0' : ''}${sec.toFixed(4)}`;
+}
+
+const charaTableColumns: ColumnDescription<CharaTableData>[] = [
+    {
+        dataField: 'finishOrder',
+        text: '着',
+        sort: true,
+    },
+    {
+        dataField: 'frameOrder',
+        text: '番',
+        sort: true,
+    },
+
+    {
+        dataField: 'chara',
+        text: '',
+        formatter: (chara: Chara) => chara ? <>
+            {chara.getId()} - {chara.getName()}
+            <br/>({chara.getCastName()})
+        </> : unknownCharaTag,
+    },
+
+    {
+        dataField: 'df1',
+        isDummyField: true,
+        text: 'ト',
+        formatter: (cell, row) => row.trainedChara.viewerId ? row.trainedChara.viewerName : '',
+    },
+    {
+        dataField: 'df2',
+        isDummyField: true,
+        text: 'Time',
+        formatter: (cell, row) => <>
+            {formatTime(row.horseResultData.getFinishTime()!)}<br/>{formatTime(row.horseResultData.getFinishTimeRaw()!)}
+        </>,
+    },
+    {
+        dataField: 'df3',
+        isDummyField: true,
+        text: '',
+        formatter: (cell, row) => UMDatabaseUtils.runningStyleLabels[row.horseResultData.getRunningStyle()!],
+    },
+    {
+        dataField: 'popularity',
+        text: '人気',
+        sort: true,
+        formatter: (cell, row) => <>
+            {cell}<br/>{row.popularityMarks.join(', ')}
+        </>,
+    },
+
+    {
+        dataField: 'speed',
+        isDummyField: true,
+        text: 'スピ',
+        formatter: (cell, row) => row.trainedChara.speed,
+    },
+    {
+        dataField: 'stamina',
+        isDummyField: true,
+        text: 'スタ',
+        formatter: (cell, row) => row.trainedChara.stamina,
+    },
+    {
+        dataField: 'pow',
+        isDummyField: true,
+        text: 'パワ',
+        formatter: (cell, row) => row.trainedChara.pow,
+    },
+    {
+        dataField: 'guts',
+        isDummyField: true,
+        text: '根性',
+        formatter: (cell, row) => row.trainedChara.guts,
+    },
+    {
+        dataField: 'wiz',
+        isDummyField: true,
+        text: '賢さ',
+        formatter: (cell, row) => row.trainedChara.wiz,
+    },
+];
 
 type RaceDataPresenterProps = {
     raceHorseInfo: any[],
@@ -42,7 +152,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             raceHorseInfo.forEach((d: any) => {
                 const frameOrder = d['frame_order'] - 1; // 0-indexed
                 const charaId = d['chara_id'];
-                const charaDisplayName = charaId in UMDatabaseWrapper.charas ? UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[charaId]) : 'Unknown Chara / Mob';
+                const charaDisplayName = charaId in UMDatabaseWrapper.charas ? UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[charaId]) : unknownCharaTag;
                 const trainerNameSuffix = d['trainer_name'] ? ` [Trainer: ${d['trainer_name']}]` : '';
                 nameFromRaceHorseInfo[frameOrder] = ` ${charaDisplayName}${trainerNameSuffix}`;
             });
@@ -64,9 +174,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
         const displayNames = this.displayNames(raceHorseInfo, raceData);
 
-        const skillPlotLines = raceData.getEventList()
-            .map(i => i.getEvent()!)
-            .filter(event => event.getType() === RaceSimulateEventData.SimulateEventType.SKILL && event.getParamList()[0] === frameOrder)
+        const skillPlotLines = filterCharaSkills(raceData, frameOrder)
             .map(event => {
                 return {
                     value: event.getFrameTime(),
@@ -248,8 +356,45 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         </div>;
     }
 
+    renderCharaList() {
+        if (!this.props.raceHorseInfo || this.props.raceHorseInfo.length === 0) {
+            return undefined;
+        }
+
+        const l: CharaTableData[] = this.props.raceHorseInfo.map(data => {
+            const frameOrder = data['frame_order'] - 1;
+
+            const horseResult = this.props.raceData.getHorseResultList()[frameOrder];
+
+            const trainedCharaData = fromRaceHorseData(data);
+            return {
+                trainedChara: trainedCharaData,
+                chara: UMDatabaseWrapper.charas[trainedCharaData.charaId],
+
+                frameOrder: frameOrder + 1,
+                finishOrder: horseResult.getFinishOrder()! + 1,
+
+                horseResultData: horseResult,
+
+                popularity: data['popularity'],
+                popularityMarks: data['popularity_mark_rank_array'],
+                motivation: data['motivation'],
+
+                activatedSkills: getCharaActivatedSkillIds(this.props.raceData, frameOrder),
+            };
+        });
+
+        return <FoldCard header='出馬表'>
+            <BootstrapTable bootstrap4 condensed hover
+                            classes="responsive-bootstrap-table"
+                            wrapperClasses="table-responsive"
+                            data={_.sortBy(l, d => d.finishOrder)} columns={charaTableColumns} keyField="frameOrder"/>
+        </FoldCard>
+    }
+
     render() {
         return <div>
+            {this.renderCharaList()}
             <Form>
                 <Form.Group>
                     <Form.Label>Chara</Form.Label>
