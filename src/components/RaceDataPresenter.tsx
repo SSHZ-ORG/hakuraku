@@ -70,14 +70,18 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         isDummyField: true,
         text: 'Time',
         formatter: (cell, row) => <>
-            {formatTime(row.horseResultData.getFinishTime()!)}<br/>{formatTime(row.horseResultData.getFinishTimeRaw()!)}
+            {formatTime(row.horseResultData.getFinishTime()!)}
+            <br/>{formatTime(row.horseResultData.getFinishTimeRaw()!)}
         </>,
     },
     {
         dataField: 'df3',
         isDummyField: true,
         text: '',
-        formatter: (cell, row) => UMDatabaseUtils.runningStyleLabels[row.horseResultData.getRunningStyle()!],
+        formatter: (cell, row) => <>
+            {UMDatabaseUtils.runningStyleLabels[row.horseResultData.getRunningStyle()!]}
+            <br/>{UMDatabaseUtils.motivationLabels[row.motivation]}
+        </>,
     },
     {
         dataField: 'popularity',
