@@ -88,7 +88,7 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         text: '人気',
         sort: true,
         formatter: (cell, row) => <>
-            {cell}<br/>{row.popularityMarks.join(', ')}
+            {cell}<br/>{row.popularityMarks.map(UMDatabaseUtils.getPopularityMark).join(', ')}
         </>,
     },
 

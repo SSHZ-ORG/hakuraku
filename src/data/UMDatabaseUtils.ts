@@ -32,6 +32,11 @@ class UMDatabaseUtils {
         return `${chara.getName()} (${chara.getCastName()})`;
     }
 
+    static getPopularityMark(n: number) {
+        const mark = n === 1 ? '◎' : n === 2 ? '○' : n === 3 ? '▲' : n === 4 || n === 5 ? '△' : '';
+        return `${n}${mark}`;
+    }
+
     static teamRaceDistanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
 
     static runningStyleLabels: Record<number, string> = {1: '逃げ', 2: '先行', 3: '差し', 4: '追込'};
