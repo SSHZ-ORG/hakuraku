@@ -12,7 +12,7 @@ import FoldCard from "./FoldCard";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
 import {Chara} from "../data/data_pb";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
-import {filterCharaSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
+import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 
@@ -150,6 +150,7 @@ type RaceDataPresenterState = {
     selectedCharaFrameOrder: number | undefined,
 
     showSkills: boolean,
+    showTargetedSkills: boolean,
     showBlocks: boolean,
     showTemptationMode: boolean,
 };
@@ -162,6 +163,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             selectedCharaFrameOrder: undefined,
 
             showSkills: true,
+            showTargetedSkills: true,
             showBlocks: true,
             showTemptationMode: true,
         };
@@ -200,9 +202,19 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 return {
                     value: event.getFrameTime(),
                     label: {text: UMDatabaseWrapper.skills[event.getParamList()[1]].getName()},
-                    zIndex: 20,
+                    zIndex: 3,
                 };
             });
+
+        const skillTargetedSkillPlotLines = filterCharaTargetedSkills(raceData, frameOrder)
+            .map(event => {
+                return {
+                    value: event.getFrameTime(),
+                    label: {text: `${UMDatabaseWrapper.skills[event.getParamList()[1]].getName()} by ${displayNames[event.getParamList()[0]]}`},
+                    color: 'rgba(255, 0, 0, 0.6)',
+                    zIndex: 3,
+                };
+            })
 
         const lastSpurtStartDistance = raceData.getHorseResultList()[frameOrder].getLastSpurtStartDistance()!;
         let lastSpurtStartTime = 0;
@@ -317,6 +329,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 title: {text: "Time"},
                 plotLines: [
                     ...(this.state.showSkills ? skillPlotLines : []),
+                    ...(this.state.showTargetedSkills ? skillTargetedSkillPlotLines : []),
                     ...plotLines,
                 ],
                 plotBands: [
@@ -347,10 +360,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 },
             ],
             tooltip: {shared: true},
+            chart: {zoomType: "x"},
         };
 
         const options2: Highcharts.Options = {
-            chart: {height: '300px'},
+            chart: {height: "300px", zoomType: "x"},
             title: {text: undefined},
             credits: {enabled: false},
             xAxis: {
@@ -433,6 +447,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         onChange={(e) => this.setState({showSkills: e.target.checked})}
                         id="show-skills"
                         label="Show Skills"/>
+                    <Form.Switch
+                        checked={this.state.showTargetedSkills}
+                        onChange={(e) => this.setState({showTargetedSkills: e.target.checked})}
+                        id="show-targeted-skills"
+                        label="Show Targeted Skills"/>
                     <Form.Switch
                         checked={this.state.showBlocks}
                         onChange={(e) => this.setState({showBlocks: e.target.checked})}
