@@ -53,7 +53,7 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     {
         dataField: 'chara',
         text: '',
-        formatter: (chara: Chara) => chara ? <>
+        formatter: (chara: Chara | undefined) => chara ? <>
             {chara.getId()} - {chara.getName()}
             <br/>({chara.getCastName()})
         </> : unknownCharaTag,
@@ -130,7 +130,7 @@ const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
             <tbody>
             {row.trainedChara.skills.map(cs =>
                 <tr>
-                    <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
+                    <td>{UMDatabaseWrapper.skillName(cs.skillId)}</td>
                     <td>Lv {cs.level}</td>
                     <td>{row.activatedSkills.has(cs.skillId) ? '発動' : ''}</td>
                 </tr>
@@ -201,7 +201,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             .map(event => {
                 return {
                     value: event.getFrameTime(),
-                    label: {text: UMDatabaseWrapper.skills[event.getParamList()[1]].getName()},
+                    label: {text: UMDatabaseWrapper.skillName(event.getParamList()[1])},
                     zIndex: 3,
                 };
             });
@@ -210,7 +210,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             .map(event => {
                 return {
                     value: event.getFrameTime(),
-                    label: {text: `${UMDatabaseWrapper.skills[event.getParamList()[1]].getName()} by ${displayNames[event.getParamList()[0]]}`},
+                    label: {text: `${UMDatabaseWrapper.skillName(event.getParamList()[1])} by ${displayNames[event.getParamList()[0]]}`},
                     color: 'rgba(255, 0, 0, 0.6)',
                     zIndex: 3,
                 };

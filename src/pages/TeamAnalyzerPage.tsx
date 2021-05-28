@@ -27,7 +27,7 @@ type AggregatedCharaData = {
     trainedCharaId: number,
     distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels,
     runningStyle: keyof typeof UMDatabaseUtils.runningStyleLabels,
-    chara: Chara,
+    chara: Chara | undefined,
 
     raceCount: number,
     finishOrders: Record<number, number>,
@@ -79,10 +79,10 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
     {
         dataField: 'chara',
         text: '',
-        formatter: (chara: Chara) => <>
+        formatter: (chara: Chara | undefined) => chara ? <>
             {chara.getId()} - {chara.getName()}
             <br/>({chara.getCastName()})
-        </>
+        </> : 'Unknown Chara'
     },
 
     {dataField: 'raceCount', text: 'N'},
@@ -185,7 +185,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                 <tbody>
                 {row.trainedChara.skills.map(cs =>
                     <tr>
-                        <td>{UMDatabaseWrapper.skills[cs.skillId].getName()}</td>
+                        <td>{UMDatabaseWrapper.skillName(cs.skillId)}</td>
                         <td>Lv {cs.level}</td>
                         <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
                         <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>

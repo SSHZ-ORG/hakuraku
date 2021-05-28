@@ -45,6 +45,9 @@ class _UMDatabaseWrapper {
 
     raceInstanceNameWithId = (raceInstanceId: number) =>
         `${raceInstanceId} - ${this.raceInstances[raceInstanceId]?.getName() ?? 'Unknown race'}`;
+
+    skillName = (skillId: number) =>
+        this.skills[skillId]?.getName() ?? `Unknown Skill ${skillId}`;
 }
 
 const UMDatabaseWrapper = new _UMDatabaseWrapper();
