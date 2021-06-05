@@ -5,7 +5,7 @@ import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import {Form, Table} from "react-bootstrap";
 import memoize from "memoize-one";
 import HighchartsReact from "highcharts-react-official";
-import Highcharts from 'highcharts';
+import Highcharts, {PointOptionsObject, SeriesSplineOptions} from 'highcharts';
 import ReactJson from "react-json-view";
 import _ from "lodash";
 import FoldCard from "./FoldCard";
@@ -153,6 +153,8 @@ type RaceDataPresenterState = {
     showTargetedSkills: boolean,
     showBlocks: boolean,
     showTemptationMode: boolean,
+
+    diffGraphUseDistanceAsXAxis: boolean,
 };
 
 class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, RaceDataPresenterState> {
@@ -166,6 +168,8 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             showTargetedSkills: true,
             showBlocks: true,
             showTemptationMode: true,
+
+            diffGraphUseDistanceAsXAxis: false,
         };
     }
 
@@ -428,9 +432,58 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         </FoldCard>
     }
 
+
+    renderGlobalRaceDistanceDiffGraph() {
+        const series: Record<number, SeriesSplineOptions> = _.mapValues(this.displayNames(this.props.raceHorseInfo, this.props.raceData), name => {
+            return {
+                name: name,
+                data: [] as PointOptionsObject[],
+                type: 'spline',
+            } as SeriesSplineOptions;
+        });
+
+        this.props.raceData.getFrameList().forEach(frame => {
+            const time = frame.getTime()!;
+
+            const minDistance = _.min(frame.getHorseFrameList().map(horseFrame => horseFrame.getDistance()!))!;
+            const maxDistance = _.max(frame.getHorseFrameList().map(horseFrame => horseFrame.getDistance()!))!;
+            const baseDistance = (minDistance + maxDistance) / 2;
+
+            frame.getHorseFrameList().forEach((horseFrame, frameOrder) => {
+                series[frameOrder].data!.push({
+                    x: this.state.diffGraphUseDistanceAsXAxis ? baseDistance : time,
+                    y: (horseFrame.getDistance()! - baseDistance),
+                });
+            });
+        });
+
+        const options: Highcharts.Options = {
+            chart: {zoomType: "xy"},
+            title: {text: undefined},
+            credits: {enabled: false},
+            xAxis: {
+                title: {text: this.state.diffGraphUseDistanceAsXAxis ? "Base Distance" : "Time"},
+            },
+            yAxis: {title: {text: undefined}},
+            series: _.values(series),
+            tooltip: {shared: true},
+        };
+
+        return <FoldCard header='Distance Diff Graph'>
+            <Form.Switch
+                checked={this.state.diffGraphUseDistanceAsXAxis}
+                onChange={(e) => this.setState({diffGraphUseDistanceAsXAxis: e.target.checked})}
+                id="diff-graph-use-distance-as-x-axis"
+                label="Use Base Distance as X Axis"/>
+            <HighchartsReact highcharts={Highcharts} options={options}/>
+        </FoldCard>
+    }
+
+
     render() {
         return <div>
             {this.renderCharaList()}
+            {this.renderGlobalRaceDistanceDiffGraph()}
             <Form>
                 <Form.Group>
                     <Form.Label>Chara</Form.Label>
