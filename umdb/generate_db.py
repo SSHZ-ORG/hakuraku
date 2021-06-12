@@ -1,6 +1,9 @@
 import argparse
+import json
 import sqlite3
 from collections import defaultdict
+
+from google.protobuf import json_format
 
 import data_pb2
 
@@ -147,6 +150,9 @@ def main():
 
     with open('../public/data/umdb.binarypb', 'wb') as f:
         f.write(pb.SerializeToString())
+
+    with open('../public/data/umdb.json', 'w') as f:
+        json.dump(json_format.MessageToDict(pb), f, ensure_ascii=False, indent=2)
 
 
 if __name__ == '__main__':

@@ -17,9 +17,6 @@ updated `umdb.binarypb` from `master.mdb`.
 
 The generated file should be checked in to the repository (under `public/data`).
 
-Hopefully useful command:
-`adb shell 'su -c cp /data/data/jp.co.cygames.umamusume/files/master/master.mdb /sdcard/' && adb pull /sdcard/master.mdb`
-
 ### Local run
 
 `yarn start` runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the
