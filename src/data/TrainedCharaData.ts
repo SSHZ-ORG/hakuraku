@@ -17,6 +17,8 @@ export type TrainedCharaData = {
     pow: number,
     guts: number,
     wiz: number,
+
+    rawData: any,
 };
 
 export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
@@ -37,5 +39,7 @@ export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
         pow: raceHorseData['pow'],
         guts: raceHorseData['guts'],
         wiz: raceHorseData['wiz'],
+
+        rawData: raceHorseData,
     };
 }

@@ -9,6 +9,7 @@ import _ from "lodash";
 import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {Typeahead} from "react-bootstrap-typeahead";
 import {TrainedCharaData} from "../data/TrainedCharaData";
+import CopyButton from "../components/CopyButton";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
@@ -60,6 +61,13 @@ const countFormatter: ColumnFormatter<AggregatedCharaData, {}, number> = (cell, 
 
 
 const columns: ColumnDescription<AggregatedCharaData>[] = [
+    {
+        dataField: 'copy',
+        isDummyField: true,
+        text: '',
+        formatter: (cell, row) => <CopyButton content={JSON.stringify(row.trainedChara.rawData)}/>,
+    },
+
     {
         dataField: 'trainedCharaId',
         text: 'ID',

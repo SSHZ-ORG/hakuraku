@@ -13,6 +13,7 @@ import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
 import {Chara} from "../data/data_pb";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
 import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
+import CopyButton from "./CopyButton";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 
@@ -39,6 +40,13 @@ function formatTime(time: number): string {
 }
 
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
+    {
+        dataField: 'copy',
+        isDummyField: true,
+        text: '',
+        formatter: (cell, row) => <CopyButton content={JSON.stringify(row.trainedChara.rawData)}/>,
+    },
+
     {
         dataField: 'finishOrder',
         text: '着',

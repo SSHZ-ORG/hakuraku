@@ -18,3 +18,8 @@
 .fold-card-header {
     cursor: pointer;
 }
+
+.copy-button {
+    cursor: pointer;
+    font-size: medium;
+}
