@@ -101,6 +101,12 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     },
 
     {
+        dataField: 'rankPoints',
+        isDummyField: true,
+        text: '評価点',
+        formatter: (cell, row) => row.trainedChara.rankPoints,
+    },
+    {
         dataField: 'speed',
         isDummyField: true,
         text: 'スピ',

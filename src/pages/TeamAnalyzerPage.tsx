@@ -93,6 +93,13 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         </> : 'Unknown Chara'
     },
 
+    {
+        dataField: 'rankPoints',
+        isDummyField: true,
+        text: '評価点',
+        formatter: (cell, row) => row.trainedChara.rankPoints,
+    },
+
     {dataField: 'raceCount', text: 'N'},
     {
         dataField: 'finishOrders',
