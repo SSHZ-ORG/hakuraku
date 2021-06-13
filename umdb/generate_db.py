@@ -108,12 +108,16 @@ def populate_special_case_race(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
 
 
 def populate_skills(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
-    cursor.execute("SELECT `index`, text FROM text_data WHERE category=47;")
+    cursor.execute('''SELECT s.id, t.text, s.grade_value, s.tag_id
+                      FROM skill_data AS s
+                      JOIN text_data AS t ON t."index"=s.id AND t.category=47;''')
     rows = cursor.fetchall()
     for row in rows:
         r = data_pb2.Skill()
         r.id = row[0]
         r.name = row[1]
+        r.grade_value = row[2]
+        r.tag_id.extend(row[3].split('/'))
         pb.skill.append(r)
 
 

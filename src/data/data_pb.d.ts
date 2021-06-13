@@ -277,6 +277,16 @@ export class Skill extends jspb.Message {
   getName(): string | undefined;
   setName(value: string): void;
 
+  hasGradeValue(): boolean;
+  clearGradeValue(): void;
+  getGradeValue(): number | undefined;
+  setGradeValue(value: number): void;
+
+  clearTagIdList(): void;
+  getTagIdList(): Array<string>;
+  setTagIdList(value: Array<string>): void;
+  addTagId(value: string, index?: number): string;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Skill.AsObject;
   static toObject(includeInstance: boolean, msg: Skill): Skill.AsObject;
@@ -291,6 +301,8 @@ export namespace Skill {
   export type AsObject = {
     id?: number,
     name?: string,
+    gradeValue?: number,
+    tagIdList: Array<string>,
   }
 }
 

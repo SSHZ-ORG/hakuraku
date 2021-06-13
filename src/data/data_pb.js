@@ -161,7 +161,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.hakuraku.Skill = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.hakuraku.Skill.repeatedFields_, null);
 };
 goog.inherits(proto.hakuraku.Skill, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -2125,6 +2125,13 @@ proto.hakuraku.SpecialCaseRace.prototype.clearCharaIdList = function() {
 
 
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.hakuraku.Skill.repeatedFields_ = [4];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -2157,7 +2164,9 @@ proto.hakuraku.Skill.prototype.toObject = function(opt_includeInstance) {
 proto.hakuraku.Skill.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = jspb.Message.getField(msg, 1)) == null ? undefined : f,
-    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f
+    name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f,
+    gradeValue: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f,
+    tagIdList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -2202,6 +2211,14 @@ proto.hakuraku.Skill.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setGradeValue(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addTagId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -2242,6 +2259,20 @@ proto.hakuraku.Skill.serializeBinaryToWriter = function(message, writer) {
   if (f != null) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeInt32(
+      3,
+      f
+    );
+  }
+  f = message.getTagIdList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      4,
       f
     );
   }
@@ -2317,6 +2348,79 @@ proto.hakuraku.Skill.prototype.clearName = function() {
  */
 proto.hakuraku.Skill.prototype.hasName = function() {
   return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional int32 grade_value = 3;
+ * @return {number}
+ */
+proto.hakuraku.Skill.prototype.getGradeValue = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.hakuraku.Skill} returns this
+ */
+proto.hakuraku.Skill.prototype.setGradeValue = function(value) {
+  return jspb.Message.setField(this, 3, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.Skill} returns this
+ */
+proto.hakuraku.Skill.prototype.clearGradeValue = function() {
+  return jspb.Message.setField(this, 3, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.Skill.prototype.hasGradeValue = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * repeated string tag_id = 4;
+ * @return {!Array<string>}
+ */
+proto.hakuraku.Skill.prototype.getTagIdList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 4));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.hakuraku.Skill} returns this
+ */
+proto.hakuraku.Skill.prototype.setTagIdList = function(value) {
+  return jspb.Message.setField(this, 4, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.hakuraku.Skill} returns this
+ */
+proto.hakuraku.Skill.prototype.addTagId = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.hakuraku.Skill} returns this
+ */
+proto.hakuraku.Skill.prototype.clearTagIdList = function() {
+  return this.setTagIdList([]);
 };
 
 
