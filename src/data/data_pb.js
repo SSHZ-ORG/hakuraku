@@ -2212,7 +2212,7 @@ proto.hakuraku.Skill.deserializeBinaryFromReader = function(msg, reader) {
       msg.setName(value);
       break;
     case 3:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {number} */ (reader.readSint32());
       msg.setGradeValue(value);
       break;
     case 4:
@@ -2264,7 +2264,7 @@ proto.hakuraku.Skill.serializeBinaryToWriter = function(message, writer) {
   }
   f = /** @type {number} */ (jspb.Message.getField(message, 3));
   if (f != null) {
-    writer.writeInt32(
+    writer.writeSint32(
       3,
       f
     );
@@ -2352,7 +2352,7 @@ proto.hakuraku.Skill.prototype.hasName = function() {
 
 
 /**
- * optional int32 grade_value = 3;
+ * optional sint32 grade_value = 3;
  * @return {number}
  */
 proto.hakuraku.Skill.prototype.getGradeValue = function() {
