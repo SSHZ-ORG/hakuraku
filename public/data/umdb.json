@@ -1,5 +1,5 @@
 {
-  "version": "10001700",
+  "version": "10001800",
   "chara": [
     {
       "id": 1001,
@@ -433,6 +433,7 @@
       "relationPoint": 2,
       "memberCharaId": [
         1007,
+        1012,
         1016,
         1018,
         1023,
@@ -462,6 +463,7 @@
       "memberCharaId": [
         1010,
         1011,
+        1012,
         1014,
         1017,
         1020,
@@ -741,7 +743,10 @@
     },
     {
       "relationType": 505,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "memberCharaId": [
+        1012
+      ]
     },
     {
       "relationType": 506,
@@ -1126,7 +1131,8 @@
       "relationType": 2517,
       "relationPoint": 1,
       "memberCharaId": [
-        1009
+        1009,
+        1012
       ]
     },
     {
@@ -1157,7 +1163,8 @@
       "relationType": 2521,
       "relationPoint": 1,
       "memberCharaId": [
-        1008
+        1008,
+        1012
       ]
     },
     {
@@ -1269,6 +1276,7 @@
       "memberCharaId": [
         1008,
         1009,
+        1012,
         1018,
         1038,
         1052
@@ -1406,6 +1414,7 @@
       "relationType": 2807,
       "relationPoint": 1,
       "memberCharaId": [
+        1012,
         1016
       ]
     },
@@ -1534,6 +1543,7 @@
       "relationPoint": 7,
       "memberCharaId": [
         1007,
+        1012,
         1050,
         1052
       ]
@@ -1578,6 +1588,7 @@
         1008,
         1009,
         1011,
+        1012,
         1013,
         1014,
         1015,
@@ -1631,6 +1642,7 @@
         1009,
         1010,
         1011,
+        1012,
         1013,
         1014,
         1015,
@@ -1684,6 +1696,7 @@
         1006,
         1007,
         1010,
+        1012,
         1014,
         1015,
         1017,
@@ -1852,13 +1865,17 @@
     },
     {
       "relationType": 7014,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1012
+      ]
     },
     {
       "relationType": 7015,
       "relationPoint": 1,
       "memberCharaId": [
-        1002
+        1002,
+        1012
       ]
     },
     {
@@ -4395,7 +4412,10 @@
     },
     {
       "relationType": 8357,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1012
+      ]
     },
     {
       "relationType": 8358,
@@ -8534,6 +8554,11 @@
       "distance": 1800
     },
     {
+      "id": 904190,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1600
+    },
+    {
       "id": 910001,
       "name": "URAファイナルズ予選",
       "distance": 1200
@@ -10933,6 +10958,14 @@
     {
       "id": 100111,
       "name": "精神一到何事か成らざらん",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 100121,
+      "name": "タイマン！デッドヒート！",
       "gradeValue": 340,
       "tagId": [
         "401"
@@ -14119,6 +14152,14 @@
     {
       "id": 900111,
       "name": "精神一到何事か成らざらん",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900121,
+      "name": "タイマン！デッドヒート！",
       "gradeValue": 180,
       "tagId": [
         "401"
