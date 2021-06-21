@@ -378,11 +378,18 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 },
             ],
             tooltip: {shared: true},
-            chart: {zoomType: "x"},
+            chart: {
+                zoomType: "x",
+                panning: {enabled: true}, panKey: "alt",
+            },
         };
 
         const options2: Highcharts.Options = {
-            chart: {height: "300px", zoomType: "x"},
+            chart: {
+                height: "300px",
+                zoomType: "x",
+                panning: {enabled: true}, panKey: "alt",
+            },
             title: {text: undefined},
             credits: {enabled: false},
             xAxis: {
@@ -472,13 +479,20 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         });
 
         const options: Highcharts.Options = {
-            chart: {zoomType: "xy"},
+            chart: {
+                zoomType: "x",
+                panning: {enabled: true}, panKey: "alt",
+            },
             title: {text: undefined},
             credits: {enabled: false},
             xAxis: {
                 title: {text: this.state.diffGraphUseDistanceAsXAxis ? "Base Distance" : "Time"},
             },
-            yAxis: {title: {text: undefined}},
+            yAxis: {
+                title: {text: undefined},
+                startOnTick: false,
+                endOnTick: false,
+            },
             series: _.values(series),
             tooltip: {shared: true},
         };
