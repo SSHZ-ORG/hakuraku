@@ -122,6 +122,14 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                     raceData={deserializeFromBase64(data['room_info']['race_scenario'])}/>
                 <hr/>
             </>;
+        } else if (data['race_scenario'] && data['race_horse_data_array']) {
+            // Room match
+            return <>
+                <RaceDataPresenter
+                    raceHorseInfo={data['race_horse_data_array']}
+                    raceData={deserializeFromBase64(data['race_scenario'])}/>
+                <hr/>
+            </>;
         } else {
             return undefined;
         }
