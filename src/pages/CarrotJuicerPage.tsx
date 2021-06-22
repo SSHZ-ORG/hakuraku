@@ -1,7 +1,6 @@
 import React from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import ReactJson from "react-json-view";
-// @ts-ignore
 import msgpack from "@ygoe/msgpack";
 // @ts-ignore
 import struct from "@aksel/structjs";

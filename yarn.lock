@@ -1665,10 +1665,10 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
-"@testing-library/jest-dom@^5.13.0":
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.13.0.tgz#0a365684e2c1159f857f5915be50089fc5657df0"
-  integrity sha512-+jXXTn8GjRnZkJfzG/tqK/2Q7dGlBInR412WE7Aml7CT3wdSpx5dMQC0HOwVQoZ3cNTmQUy8fCVGUV/Zhoyvcw==
+"@testing-library/jest-dom@^5.14.1":
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.14.1.tgz#8501e16f1e55a55d675fe73eecee32cdaddb9766"
+  integrity sha512-dfB7HVIgTNCxH22M1+KU6viG5of2ldoA5ly8Ar8xkezKHKXjRvznCdbMbqjYGgO2xjRbwnR+rR8MLUIqF3kKbQ==
   dependencies:
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
@@ -1676,6 +1676,7 @@
     chalk "^3.0.0"
     css "^3.0.0"
     css.escape "^1.5.1"
+    dom-accessibility-api "^0.5.6"
     lodash "^4.17.15"
     redent "^3.0.0"
 
@@ -1844,10 +1845,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
   integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
 
-"@types/node@^15.12.1":
-  version "15.12.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.1.tgz#9b60797dee1895383a725f828a869c86c6caa5c2"
-  integrity sha512-zyxJM8I1c9q5sRMtVF+zdd13Jt6RU4r4qfhTd7lQubyThvLfx6yYekWSQjGCGV2Tkecgxnlpl/DNlb6Hg+dmEw==
+"@types/node@^15.12.4":
+  version "15.12.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.4.tgz#e1cf817d70a1e118e81922c4ff6683ce9d422e26"
+  integrity sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1874,10 +1875,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-bootstrap-table-next@^4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.13.tgz#0f02ef3f3dddff298564621ff5b86ca39f3aead2"
-  integrity sha512-vphk6SWBO/AOfimSLSONvWOMNQFQPJq+dFj6cikGtXsW9eRZu4U+lhAwtgtfYNgLgIWODA1U2D2GXljKQYm5EQ==
+"@types/react-bootstrap-table-next@^4.0.14":
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.14.tgz#e2fa2c8ba1a50c8c6cf4a7f5c55a17b19b8e0c46"
+  integrity sha512-Sdv+fFSeUZenEQU1bdlGfN1exKmrl/EJ49GL5d9i130xmvPjYRnEIb9NQLZE/WyJmkLs38oZUEb81efBhJuRlg==
   dependencies:
     "@types/react" "*"
 
@@ -1888,10 +1889,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^17.0.6":
-  version "17.0.6"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.6.tgz#c158325cf91b196270bc0f4af73463f149e7eafe"
-  integrity sha512-MGTI+TudxAnGTj8aco8mogaPSJGK2Whje7OZh1CxNLRyhJpTZg/pGQpIbCT0eCVFQyH7UFpdvCqQEThHIp/gsA==
+"@types/react-dom@^17.0.8":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
+  integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
   dependencies:
     "@types/react" "*"
 
@@ -1928,10 +1929,19 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@>=16.14.8", "@types/react@^17.0.9":
+"@types/react@>=16.14.8":
   version "17.0.9"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.9.tgz#1147fb520024a62c9b3841f5cb4db89b73ddb87f"
   integrity sha512-2Cw7FvevpJxQrCb+k5t6GH1KIvmadj5uBbjPaLlJB/nZWUj56e1ZqcD6zsoMFB47MsJUTFl9RJ132A7hb3QFJA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.11.tgz#67fcd0ddbf5a0b083a0f94e926c7d63f3b836451"
+  integrity sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2283,10 +2293,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@ygoe/msgpack@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@ygoe/msgpack/-/msgpack-1.0.2.tgz#7237b74179933bb9b73aa09d15d2a4414cfc7377"
-  integrity sha512-GXnUKo8aFiTE1RmhzGXzXNXoN500Zxe0FH62thZi18xI82N+Gcdw9MWjhV0SdTEfjHFwZiw0+ZJSE8sD02pRsQ==
+"@ygoe/msgpack@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@ygoe/msgpack/-/msgpack-1.0.3.tgz#3889f4c0c2d68b2be83e1f6f4444efab02d6f257"
+  integrity sha512-Sjp0O/sNgOJxTOO1c2Zuu7nsHRIGu2iGPYyhUedKKbcHyUl73jbCaomEFJZHNb/6i94B+ZNZHVnFgpo0ENSXxQ==
 
 abab@^2.0.3:
   version "2.0.5"
@@ -4327,6 +4337,11 @@ dom-accessibility-api@^0.5.4:
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.4.tgz#b06d059cdd4a4ad9a79275f9d414a5c126241166"
   integrity sha512-TvrjBckDy2c6v6RLxPv5QXOnU+SmF9nBII5621Ve5fu6Z/BDrENurBEvlC1f44lKEUVqOpK4w9E5Idc5/EgkLQ==
 
+dom-accessibility-api@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.6.tgz#3f5d43b52c7a3bd68b5fb63fa47b4e4c1fdf65a9"
+  integrity sha512-DplGLZd8L1lN64jlT27N9TVSESFR5STaEJvX+thCby7fuCHonfPpAlodYc3vuUYbDuDec5w8AMP7oCM5TWFsqw==
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -5571,10 +5586,10 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-google-protobuf@^3.17.2:
-  version "3.17.2"
-  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.17.2.tgz#7708eec9cf4a4dcdb624201f1ba1045994a6c22e"
-  integrity sha512-LlFVMhSkNy6C1MakEjiwbLxq5w+V+Go+mvt2EUoysrp8gXl903ic2W/3BwzM4/WnDMJP+u7UO2efUSl/0CJMzA==
+google-protobuf@^3.17.3:
+  version "3.17.3"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.17.3.tgz#f87595073545a77946c8f0b67c302c5f7646d700"
+  integrity sha512-OVPzcSWIAJ+d5yiHyeaLrdufQtrvaBrF4JQg+z8ynTkbO3uFcujqXszTumqg1cGsAsjkWnI+M5B1xZ19yR4Wyg==
 
 got@^9.6.0:
   version "9.6.0"
@@ -5732,10 +5747,10 @@ highcharts-react-official@^3.0.0:
   resolved "https://registry.yarnpkg.com/highcharts-react-official/-/highcharts-react-official-3.0.0.tgz#f2e81ed59d299c3473a0dd5ba5df24028875226a"
   integrity sha512-VefJgDY2hkT9gfppsQGrRF2g5u8d9dtfHGcx2/xqiP+PkZXCqalw9xOeKVCRvJKTOh0coiDFwvVjOvB7KaGl4A==
 
-highcharts@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-9.1.1.tgz#919223d7ccc429af8237a591855d8f48bea13872"
-  integrity sha512-dNkUIJUNMh/G2TxQxxlQeILVs9tXiXQRxVkNGU9SLCh2zB2jcjJ7aQdgA0k7PFTEvDVUHphumZ301sHkDS7/pg==
+highcharts@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-9.1.2.tgz#c9b15390a10acb274a941d2aa5bc05c0889646d9"
+  integrity sha512-RwCnJnxAUCGG4R/WDG+QP/4VJNtOpkQTkXcuf58DjDvm9ZILplSMdZvrbMRC9Y9ecuJQCjjZsiifvyS5E2IBvQ==
 
 history@^4.9.0:
   version "4.10.1"
@@ -11411,10 +11426,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
-  integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
+typescript@^4.3.4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
+  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
 
 ua-parser-js@^0.7.18:
   version "0.7.25"

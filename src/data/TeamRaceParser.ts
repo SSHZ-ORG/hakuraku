@@ -1,5 +1,4 @@
 import {deserializeFromBase64} from "./RaceDataParser";
-// @ts-ignore
 import msgpack from "@ygoe/msgpack";
 import _ from "lodash";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
