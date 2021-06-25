@@ -339,7 +339,12 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
             <Row>
                 <Col>
                     <FilesSelector onFilesChange={files => this.onSelectedFilesChange(files)}
-                                   instructions="You can simply select all packets from CarrotJuicer directory - packets that are not team races will be ignored."/>
+                                   instructions={<>
+                                       Select multiple team stadium race packets to analyze performance of team members.
+                                       Packets that are not team stadium races will be ignored. You may find <a
+                                       href='https://gist.github.com/CNA-Bld/5b475cb46c7d407fa69a528e448972ab'>
+                                       this script</a> useful.
+                                   </>}/>
                 </Col>
             </Row>
 

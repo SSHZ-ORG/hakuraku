@@ -2,7 +2,7 @@ import React, {ChangeEvent} from "react";
 import {Form} from "react-bootstrap";
 
 type FilesSelectorProps = {
-    instructions?: string,
+    instructions?: React.ReactNode,
 
     onFilesChange: (files: File[]) => void,
 };

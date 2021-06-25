@@ -140,7 +140,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                 <Row>
                     <Col>
                         <FilesSelector onFilesChange={files => this.onSelectedFilesChange(files)}
-                                       instructions="Select a packet containing a single mode race, or a group of team races to inspect and visualize them here."/>
+                                       instructions="Select a packet containing a single mode race, a group of team stadium races, a room race (Taurus cup etc.) or a room match to inspect and visualize them here."/>
                     </Col>
                 </Row>
                 <Row style={{height: '90vh'}}>
