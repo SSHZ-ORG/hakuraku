@@ -183,7 +183,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             showBlocks: true,
             showTemptationMode: true,
 
-            diffGraphUseDistanceAsXAxis: false,
+            diffGraphUseDistanceAsXAxis: true,
         };
     }
 
