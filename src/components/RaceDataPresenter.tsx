@@ -2,7 +2,7 @@ import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_p
 import React from "react";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import {Form, Table} from "react-bootstrap";
+import {Alert, Form, Table} from "react-bootstrap";
 import memoize from "memoize-one";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts, {PointOptionsObject, SeriesSplineOptions} from 'highcharts';
@@ -16,6 +16,7 @@ import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds}
 import CopyButton from "./CopyButton";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
+const supportedRaceDataVersion = 100000002;
 
 type CharaTableData = {
     trainedChara: TrainedCharaData,
@@ -510,6 +511,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
     render() {
         return <div>
+            {(this.props.raceData.getHeader()!.getVersion()! > supportedRaceDataVersion) &&
+            <Alert variant="warning">
+                RaceData version {this.props.raceData.getHeader()!.getVersion()!} higher than supported
+                version {supportedRaceDataVersion}, use at your own risk!
+            </Alert>}
             {this.renderCharaList()}
             {this.renderGlobalRaceDistanceDiffGraph()}
             <Form>
