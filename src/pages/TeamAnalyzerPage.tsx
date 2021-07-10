@@ -14,6 +14,7 @@ import CopyButton from "../components/CopyButton";
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
 
+    lastGroupAceCharaKeys: Set<string>,
     lastGroupCharaKeys: Set<string>,
     aggregations: AggregatedCharaData[],
     selectedBonuses: TeamStadiumScoreBonus[],
@@ -291,6 +292,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
 
         this.state = {
             selectedFiles: [],
+            lastGroupAceCharaKeys: new Set(),
             lastGroupCharaKeys: new Set(),
             aggregations: [],
             selectedBonuses: [],
@@ -299,6 +301,9 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
     }
 
     rowClasses(row: AggregatedCharaData) {
+        if (this.state.lastGroupAceCharaKeys.has(row.key)) {
+            return 'table-primary';
+        }
         if (this.state.lastGroupCharaKeys.has(row.key)) {
             return 'table-info';
         }
@@ -309,16 +314,23 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
         if (files.length === 0) {
             return;
         }
-        this.setState({selectedFiles: files, lastGroupCharaKeys: new Set(), aggregations: [], loading: true}, () => {
+        this.setState({
+            selectedFiles: files,
+            lastGroupAceCharaKeys: new Set(),
+            lastGroupCharaKeys: new Set(),
+            aggregations: [],
+            loading: true
+        }, () => {
             Promise.all(files.map(parse))
                 .then(_.compact)
                 .then((teamRaceGroupDatas: TeamRaceGroupData[]) => {
-                    const lastGroupCharaKeys = _.maxBy(teamRaceGroupDatas, d => d.timestamp)?.charaRaceDatas.map(c => groupByKey(c));
+                    const lastGroupCharas = _.maxBy(teamRaceGroupDatas, d => d.timestamp)?.charaRaceDatas;
 
                     const aggregations = _.map(_.groupBy(teamRaceGroupDatas.map(g => g.charaRaceDatas).flat(), groupByKey), aggregateChara);
 
                     this.setState({
-                        lastGroupCharaKeys: new Set(lastGroupCharaKeys ?? []),
+                        lastGroupAceCharaKeys: new Set(lastGroupCharas?.filter(c => c.isAce).map(c => groupByKey(c)) ?? []),
+                        lastGroupCharaKeys: new Set(lastGroupCharas?.map(c => groupByKey(c)) ?? []),
                         aggregations: aggregations,
                         loading: false
                     });
