@@ -1,5 +1,5 @@
 {
-  "version": "10001900",
+  "version": "10002000",
   "chara": [
     {
       "id": 1001,
@@ -347,6 +347,11 @@
       "castName": "野口瑠璃子"
     },
     {
+      "id": 1071,
+      "name": "メジロアルダン",
+      "castName": "会沢紗弥"
+    },
+    {
       "id": 1072,
       "name": "ヤエノムテキ",
       "castName": "日原あゆみ"
@@ -432,6 +437,7 @@
       "relationType": 105,
       "relationPoint": 2,
       "memberCharaId": [
+        1005,
         1007,
         1012,
         1016,
@@ -479,6 +485,7 @@
         1001,
         1002,
         1003,
+        1005,
         1006,
         1007,
         1008,
@@ -745,6 +752,7 @@
       "relationType": 505,
       "relationPoint": 2,
       "memberCharaId": [
+        1005,
         1012
       ]
     },
@@ -795,6 +803,7 @@
       "memberCharaId": [
         1001,
         1002,
+        1005,
         1032
       ]
     },
@@ -1172,6 +1181,7 @@
       "relationPoint": 1,
       "memberCharaId": [
         1004,
+        1005,
         1011,
         1016,
         1026
@@ -1244,6 +1254,7 @@
         1002,
         1003,
         1004,
+        1005,
         1006,
         1007,
         1010,
@@ -1422,6 +1433,7 @@
       "relationType": 2808,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1024
       ]
     },
@@ -1507,6 +1519,7 @@
       "relationPoint": 7,
       "memberCharaId": [
         1003,
+        1005,
         1009,
         1010,
         1013,
@@ -1566,6 +1579,7 @@
       "relationPoint": 7,
       "memberCharaId": [
         1004,
+        1005,
         1006,
         1008,
         1009,
@@ -1636,6 +1650,7 @@
         1002,
         1003,
         1004,
+        1005,
         1006,
         1007,
         1008,
@@ -1711,6 +1726,7 @@
       "relationPoint": 1,
       "memberCharaId": [
         1003,
+        1005,
         1008,
         1013,
         1018,
@@ -2342,20 +2358,23 @@
       "relationType": 8052,
       "relationPoint": 1,
       "memberCharaId": [
-        1003
+        1003,
+        1005
       ]
     },
     {
       "relationType": 8053,
       "relationPoint": 1,
       "memberCharaId": [
-        1004
+        1004,
+        1005
       ]
     },
     {
       "relationType": 8054,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1013
       ]
     },
@@ -2363,6 +2382,7 @@
       "relationType": 8055,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1015
       ]
     },
@@ -2370,17 +2390,22 @@
       "relationType": 8056,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1017
       ]
     },
     {
       "relationType": 8057,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8058,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1027
       ]
     },
@@ -2388,47 +2413,66 @@
       "relationType": 8059,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1038
       ]
     },
     {
       "relationType": 8060,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8061,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8062,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1045
       ]
     },
     {
       "relationType": 8063,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8064,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1056
       ]
     },
     {
       "relationType": 8065,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8066,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1005
+      ]
     },
     {
       "relationType": 8067,
       "relationPoint": 1,
       "memberCharaId": [
+        1005,
         1060
       ]
     },
@@ -8559,6 +8603,11 @@
       "distance": 1600
     },
     {
+      "id": 904191,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1600
+    },
+    {
       "id": 910001,
       "name": "URAファイナルズ予選",
       "distance": 1200
@@ -10912,6 +10961,14 @@
       "gradeValue": 340,
       "tagId": [
         "403"
+      ]
+    },
+    {
+      "id": 100051,
+      "name": "煌星のヴォードヴィル",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
       ]
     },
     {
@@ -14122,6 +14179,14 @@
       "gradeValue": 180,
       "tagId": [
         "403"
+      ]
+    },
+    {
+      "id": 900051,
+      "name": "煌星のヴォードヴィル",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
       ]
     },
     {
