@@ -1,5 +1,5 @@
 {
-  "version": "10002000",
+  "version": "10002100",
   "chara": [
     {
       "id": 1001,
@@ -429,6 +429,7 @@
         1026,
         1030,
         1032,
+        1040,
         1041,
         1056
       ]
@@ -500,6 +501,7 @@
         1032,
         1035,
         1038,
+        1040,
         1045,
         1046,
         1050,
@@ -648,7 +650,10 @@
     },
     {
       "relationType": 320,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 321,
@@ -857,7 +862,10 @@
     },
     {
       "relationType": 2105,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 2106,
@@ -1272,6 +1280,7 @@
         1030,
         1032,
         1035,
+        1040,
         1041,
         1045,
         1046,
@@ -1377,7 +1386,10 @@
     },
     {
       "relationType": 2801,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 2802,
@@ -1530,6 +1542,7 @@
         1023,
         1030,
         1038,
+        1040,
         1041,
         1045
       ]
@@ -1587,6 +1600,7 @@
         1011,
         1014,
         1026,
+        1040,
         1046
       ]
     },
@@ -1673,6 +1687,7 @@
         1032,
         1035,
         1038,
+        1040,
         1041,
         1045,
         1050,
@@ -1734,6 +1749,7 @@
         1026,
         1027,
         1032,
+        1040,
         1041,
         1046,
         1060,
@@ -2031,7 +2047,8 @@
       "relationType": 8009,
       "relationPoint": 1,
       "memberCharaId": [
-        1001
+        1001,
+        1040
       ]
     },
     {
@@ -2153,7 +2170,8 @@
       "relationType": 8025,
       "relationPoint": 1,
       "memberCharaId": [
-        1002
+        1002,
+        1040
       ]
     },
     {
@@ -2421,7 +2439,8 @@
       "relationType": 8060,
       "relationPoint": 1,
       "memberCharaId": [
-        1005
+        1005,
+        1040
       ]
     },
     {
@@ -2649,7 +2668,8 @@
       "relationType": 8090,
       "relationPoint": 1,
       "memberCharaId": [
-        1010
+        1010,
+        1040
       ]
     },
     {
@@ -2925,7 +2945,8 @@
       "relationType": 8126,
       "relationPoint": 1,
       "memberCharaId": [
-        1016
+        1016,
+        1040
       ]
     },
     {
@@ -3140,7 +3161,8 @@
       "relationType": 8156,
       "relationPoint": 1,
       "memberCharaId": [
-        1020
+        1020,
+        1040
       ]
     },
     {
@@ -3235,7 +3257,10 @@
     },
     {
       "relationType": 8170,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8171,
@@ -3392,7 +3417,10 @@
     },
     {
       "relationType": 8196,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8197,
@@ -3491,7 +3519,8 @@
       "relationType": 8211,
       "relationPoint": 1,
       "memberCharaId": [
-        1030
+        1030,
+        1040
       ]
     },
     {
@@ -3613,7 +3642,8 @@
       "relationType": 8227,
       "relationPoint": 1,
       "memberCharaId": [
-        1032
+        1032,
+        1040
       ]
     },
     {
@@ -3723,7 +3753,10 @@
     },
     {
       "relationType": 8243,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8244,
@@ -3817,7 +3850,10 @@
     },
     {
       "relationType": 8259,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8260,
@@ -3976,13 +4012,15 @@
       "relationType": 8285,
       "relationPoint": 1,
       "memberCharaId": [
-        1006
+        1006,
+        1040
       ]
     },
     {
       "relationType": 8286,
       "relationPoint": 1,
       "memberCharaId": [
+        1040,
         1050
       ]
     },
@@ -4053,6 +4091,7 @@
       "relationType": 8295,
       "relationPoint": 1,
       "memberCharaId": [
+        1040,
         1041
       ]
     },
@@ -4370,7 +4409,10 @@
     },
     {
       "relationType": 8342,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8343,
@@ -4492,7 +4534,10 @@
     },
     {
       "relationType": 8363,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8364,
@@ -4656,7 +4701,10 @@
     },
     {
       "relationType": 8388,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8389,
@@ -4766,7 +4814,10 @@
     },
     {
       "relationType": 8406,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1040
+      ]
     },
     {
       "relationType": 8407,
@@ -4955,6 +5006,11 @@
     {
       "id": 101001,
       "name": "日本ダービー",
+      "distance": 2400
+    },
+    {
+      "id": 701301,
+      "name": "東京優駿（日本ダービー）",
       "distance": 2400
     },
     {
@@ -6438,6 +6494,11 @@
       "distance": 3200
     },
     {
+      "id": 600007,
+      "name": "キャンサー杯",
+      "distance": 1600
+    },
+    {
       "id": 600017,
       "name": "タウラス杯 決勝",
       "distance": 2400
@@ -6446,6 +6507,11 @@
       "id": 600018,
       "name": "ジェミニ杯 決勝",
       "distance": 3200
+    },
+    {
+      "id": 600019,
+      "name": "キャンサー杯 決勝",
+      "distance": 1600
     },
     {
       "id": 610000,
@@ -7653,6 +7719,26 @@
       "distance": 2400
     },
     {
+      "id": 700901,
+      "name": "朝日杯FS",
+      "distance": 1600
+    },
+    {
+      "id": 701001,
+      "name": "菊花賞",
+      "distance": 3000
+    },
+    {
+      "id": 701101,
+      "name": "ケガ明けトレーニング",
+      "distance": 2000
+    },
+    {
+      "id": 701201,
+      "name": "色褪せない記憶",
+      "distance": 2500
+    },
+    {
       "id": 900880,
       "name": "クラシック級未勝利戦",
       "distance": 1200
@@ -8606,6 +8692,11 @@
       "id": 904191,
       "name": "ジュニア級メイクデビュー",
       "distance": 1600
+    },
+    {
+      "id": 904192,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1500
     },
     {
       "id": 910001,
@@ -11148,6 +11239,14 @@
       "gradeValue": 340,
       "tagId": [
         "401",
+        "403"
+      ]
+    },
+    {
+      "id": 100401,
+      "name": "KEEP IT REAL.",
+      "gradeValue": 340,
+      "tagId": [
         "403"
       ]
     },
@@ -14150,6 +14249,22 @@
       ]
     },
     {
+      "id": 300011,
+      "name": "癒えない渇き",
+      "gradeValue": 0,
+      "tagId": [
+        "402"
+      ]
+    },
+    {
+      "id": 300021,
+      "name": "変わらぬままで",
+      "gradeValue": 0,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900011,
       "name": "シューティングスター",
       "gradeValue": 180,
@@ -14366,6 +14481,14 @@
       "gradeValue": 180,
       "tagId": [
         "401",
+        "403"
+      ]
+    },
+    {
+      "id": 900401,
+      "name": "KEEP IT REAL.",
+      "gradeValue": 180,
+      "tagId": [
         "403"
       ]
     },
