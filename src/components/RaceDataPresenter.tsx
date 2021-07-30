@@ -14,6 +14,7 @@ import {Chara} from "../data/data_pb";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
 import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
 import CopyButton from "./CopyButton";
+import CharaProperLabels from "./CharaProperLabels";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
@@ -140,7 +141,7 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
 ];
 
 const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
-    renderer: row => <div className="d-flex flex-row">
+    renderer: row => <div className="d-flex flex-row align-items-start">
         <Table size="small" className="w-auto m-2">
             <tbody>
             {row.trainedChara.skills.map(cs =>
@@ -152,6 +153,7 @@ const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
             )}
             </tbody>
         </Table>
+        <CharaProperLabels chara={row.trainedChara}/>
     </div>,
     showExpandColumn: true,
 }

@@ -10,6 +10,7 @@ import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {Typeahead} from "react-bootstrap-typeahead";
 import {TrainedCharaData} from "../data/TrainedCharaData";
 import CopyButton from "../components/CopyButton";
+import CharaProperLabels from "../components/CharaProperLabels";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
@@ -196,7 +197,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
 
 const expandRow: ExpandRowProps<AggregatedCharaData> = {
     renderer: row => (
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row align-items-start">
             <Table size="small" className="w-auto m-2">
                 <tbody>
                 {row.trainedChara.skills.map(cs =>
@@ -233,6 +234,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                 </tr>
                 </tbody>
             </Table>
+            <CharaProperLabels chara={row.trainedChara}/>
         </div>
     ),
     showExpandColumn: true,
