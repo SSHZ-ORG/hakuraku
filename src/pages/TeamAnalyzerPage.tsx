@@ -99,7 +99,13 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         dataField: 'rankPoints',
         isDummyField: true,
         text: '評価点',
-        formatter: (cell, row) => row.trainedChara.rankPoints,
+        formatter: (cell, row) => <>
+            {row.trainedChara.rankPoints}
+            <br/>
+            {UMDatabaseUtils.charaProperLabels[row.distanceType === 5 ? row.trainedChara.properGroundDirt : row.trainedChara.properGroundTurf]}
+            {' '}{UMDatabaseUtils.charaProperLabels[row.trainedChara.properDistances[row.distanceType === 5 ? 2 : row.distanceType]]}
+            {' '}{UMDatabaseUtils.charaProperLabels[row.trainedChara.properRunningStyles[row.runningStyle]]}
+        </>,
     },
 
     {dataField: 'raceCount', text: 'N'},
