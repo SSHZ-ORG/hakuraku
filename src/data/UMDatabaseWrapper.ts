@@ -1,4 +1,5 @@
 import {Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
+import pako from "pako";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
@@ -11,10 +12,10 @@ class _UMDatabaseWrapper {
      * @return {!Promise}
      */
     initialize() {
-        return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb')
+        return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb.gz')
             .then(response => response.arrayBuffer())
             .then(response => {
-                this.umdb = UMDatabase.deserializeBinary(new Uint8Array(response));
+                this.umdb = UMDatabase.deserializeBinary(pako.inflate(new Uint8Array(response)));
 
                 this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
 

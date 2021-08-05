@@ -1,4 +1,5 @@
 import argparse
+import gzip
 import json
 import sqlite3
 from collections import defaultdict
@@ -152,8 +153,8 @@ def main():
 
     print(pb)
 
-    with open('../public/data/umdb.binarypb', 'wb') as f:
-        f.write(pb.SerializeToString())
+    with open('../public/data/umdb.binarypb.gz', 'wb') as f:
+        f.write(gzip.compress(pb.SerializeToString(), mtime=0))
 
     with open('../public/data/umdb.json', 'w') as f:
         json.dump(json_format.MessageToDict(pb), f, ensure_ascii=False, indent=2)
