@@ -1,8 +1,8 @@
 import {Base64} from "js-base64";
-import gzip from "gzip-js";
 import pb from './race_data_pb.js';
 // @ts-ignore
 import struct from "@aksel/structjs";
+import pako from "pako";
 
 const oneInt16 = struct('<h');
 
@@ -80,9 +80,8 @@ function deserializeEvent(buffer: ArrayBuffer, offset: number) {
 
 const raceStruct = struct('<fiii');
 
-function deserialize(input: number[]) {
-    const buffer = new Uint8Array(input).buffer;
-
+function deserialize(input: Uint8Array) {
+    const buffer = input.buffer;
     const data = new pb.RaceSimulateData();
 
     let [header, offset] = deserializeHeader(buffer);
@@ -136,7 +135,7 @@ function deserialize(input: number[]) {
 }
 
 function deserializeFromBase64(input: string) {
-    return deserialize(gzip.unzip(Base64.toUint8Array(input)));
+    return deserialize(pako.inflate(Base64.toUint8Array(input)));
 }
 
 export {deserialize, deserializeFromBase64};
