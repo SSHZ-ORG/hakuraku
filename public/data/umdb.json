@@ -1,5 +1,5 @@
 {
-  "version": "10002200",
+  "version": "10002300",
   "chara": [
     {
       "id": 1001,
@@ -416,6 +416,7 @@
         1015,
         1020,
         1052,
+        1058,
         1060,
         1061
       ]
@@ -507,6 +508,7 @@
         1050,
         1052,
         1056,
+        1058,
         1060,
         1061
       ]
@@ -635,7 +637,10 @@
     },
     {
       "relationType": 317,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 318,
@@ -1098,7 +1103,8 @@
         1015,
         1023,
         1024,
-        1027
+        1027,
+        1058
       ]
     },
     {
@@ -1286,6 +1292,7 @@
         1046,
         1050,
         1056,
+        1058,
         1060,
         1061
       ]
@@ -1481,7 +1488,8 @@
       "relationPoint": 1,
       "memberCharaId": [
         1015,
-        1052
+        1052,
+        1058
       ]
     },
     {
@@ -1544,7 +1552,8 @@
         1038,
         1040,
         1041,
-        1045
+        1045,
+        1058
       ]
     },
     {
@@ -1635,6 +1644,7 @@
         1046,
         1050,
         1056,
+        1058,
         1060
       ]
     },
@@ -1692,6 +1702,7 @@
         1045,
         1050,
         1056,
+        1058,
         1060,
         1061
       ]
@@ -1708,7 +1719,8 @@
       "relationType": 3201,
       "relationPoint": 1,
       "memberCharaId": [
-        1038
+        1038,
+        1058
       ]
     },
     {
@@ -2085,7 +2097,8 @@
       "relationType": 8014,
       "relationPoint": 1,
       "memberCharaId": [
-        1001
+        1001,
+        1058
       ]
     },
     {
@@ -2208,7 +2221,8 @@
       "relationType": 8030,
       "relationPoint": 1,
       "memberCharaId": [
-        1002
+        1002,
+        1058
       ]
     },
     {
@@ -2477,7 +2491,8 @@
       "relationType": 8065,
       "relationPoint": 1,
       "memberCharaId": [
-        1005
+        1005,
+        1058
       ]
     },
     {
@@ -2706,7 +2721,8 @@
       "relationType": 8095,
       "relationPoint": 1,
       "memberCharaId": [
-        1010
+        1010,
+        1058
       ]
     },
     {
@@ -2983,7 +2999,8 @@
       "relationType": 8131,
       "relationPoint": 1,
       "memberCharaId": [
-        1016
+        1016,
+        1058
       ]
     },
     {
@@ -3184,7 +3201,8 @@
       "relationType": 8159,
       "relationPoint": 1,
       "memberCharaId": [
-        1020
+        1020,
+        1058
       ]
     },
     {
@@ -3286,7 +3304,10 @@
     },
     {
       "relationType": 8175,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8176,
@@ -3439,7 +3460,10 @@
     },
     {
       "relationType": 8200,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8201,
@@ -3557,7 +3581,8 @@
       "relationType": 8216,
       "relationPoint": 1,
       "memberCharaId": [
-        1030
+        1030,
+        1058
       ]
     },
     {
@@ -3680,7 +3705,8 @@
       "relationType": 8232,
       "relationPoint": 1,
       "memberCharaId": [
-        1032
+        1032,
+        1058
       ]
     },
     {
@@ -3782,7 +3808,10 @@
     },
     {
       "relationType": 8248,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8249,
@@ -3879,7 +3908,10 @@
     },
     {
       "relationType": 8264,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8265,
@@ -4121,7 +4153,8 @@
       "relationType": 8299,
       "relationPoint": 1,
       "memberCharaId": [
-        1041
+        1041,
+        1058
       ]
     },
     {
@@ -4438,7 +4471,10 @@
     },
     {
       "relationType": 8347,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8348,
@@ -4563,7 +4599,10 @@
     },
     {
       "relationType": 8368,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8369,
@@ -4730,7 +4769,10 @@
     },
     {
       "relationType": 8393,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8394,
@@ -4836,7 +4878,10 @@
     },
     {
       "relationType": 8410,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1058
+      ]
     },
     {
       "relationType": 8411,
@@ -4853,14 +4898,16 @@
       "relationType": 8413,
       "relationPoint": 1,
       "memberCharaId": [
-        1006
+        1006,
+        1058
       ]
     },
     {
       "relationType": 8414,
       "relationPoint": 1,
       "memberCharaId": [
-        1050
+        1050,
+        1058
       ]
     },
     {
@@ -6927,6 +6974,21 @@
       "id": 593503,
       "name": "日本ダービー（HARD）",
       "distance": 2400
+    },
+    {
+      "id": 594001,
+      "name": "宝塚記念（HARD）",
+      "distance": 2200
+    },
+    {
+      "id": 594002,
+      "name": "宝塚記念（HARD）",
+      "distance": 2200
+    },
+    {
+      "id": 594003,
+      "name": "宝塚記念（HARD）",
+      "distance": 2200
     },
     {
       "id": 594501,
@@ -11765,6 +11827,15 @@
       ]
     },
     {
+      "id": 100581,
+      "name": "I Never Goof Up!",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "403"
+      ]
+    },
+    {
       "id": 100601,
       "name": "きっとその先へ…！",
       "gradeValue": 340,
@@ -15020,6 +15091,15 @@
       "gradeValue": 180,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 900581,
+      "name": "I Never Goof Up!",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
