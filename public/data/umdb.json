@@ -1,5 +1,5 @@
 {
-  "version": "10002300",
+  "version": "10002500",
   "chara": [
     {
       "id": 1001,
@@ -447,6 +447,7 @@
         1023,
         1027,
         1035,
+        1037,
         1046,
         1050
       ]
@@ -501,6 +502,7 @@
         1026,
         1032,
         1035,
+        1037,
         1038,
         1040,
         1045,
@@ -646,6 +648,7 @@
       "relationType": 318,
       "relationPoint": 2,
       "memberCharaId": [
+        1037,
         1046
       ]
     },
@@ -1080,7 +1083,8 @@
         1016,
         1017,
         1026,
-        1035
+        1035,
+        1037
       ]
     },
     {
@@ -1147,6 +1151,7 @@
         1008,
         1015,
         1018,
+        1037,
         1045
       ]
     },
@@ -1286,6 +1291,7 @@
         1030,
         1032,
         1035,
+        1037,
         1040,
         1041,
         1045,
@@ -1350,7 +1356,8 @@
       "relationType": 2701,
       "relationPoint": 1,
       "memberCharaId": [
-        1006
+        1006,
+        1037
       ]
     },
     {
@@ -1519,6 +1526,7 @@
       "relationType": 2817,
       "relationPoint": 1,
       "memberCharaId": [
+        1037,
         1038
       ]
     },
@@ -1568,6 +1576,7 @@
         1027,
         1032,
         1035,
+        1037,
         1056,
         1060,
         1061
@@ -1640,6 +1649,7 @@
         1030,
         1032,
         1035,
+        1037,
         1045,
         1046,
         1050,
@@ -1696,6 +1706,7 @@
         1030,
         1032,
         1035,
+        1037,
         1038,
         1040,
         1041,
@@ -1745,7 +1756,8 @@
         1023,
         1024,
         1030,
-        1035
+        1035,
+        1037
       ]
     },
     {
@@ -3928,31 +3940,38 @@
       "relationType": 8267,
       "relationPoint": 1,
       "memberCharaId": [
-        1004
+        1004,
+        1037
       ]
     },
     {
       "relationType": 8268,
       "relationPoint": 1,
       "memberCharaId": [
-        1007
+        1007,
+        1037
       ]
     },
     {
       "relationType": 8269,
       "relationPoint": 1,
       "memberCharaId": [
-        1009
+        1009,
+        1037
       ]
     },
     {
       "relationType": 8270,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1037
+      ]
     },
     {
       "relationType": 8271,
       "relationPoint": 1,
       "memberCharaId": [
+        1037,
         1045
       ]
     },
@@ -3965,11 +3984,17 @@
     },
     {
       "relationType": 8273,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1037
+      ]
     },
     {
       "relationType": 8274,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1037
+      ]
     },
     {
       "relationType": 8275,
@@ -7026,6 +7051,11 @@
       "distance": 1600
     },
     {
+      "id": 600008,
+      "name": "レオ杯",
+      "distance": 2200
+    },
+    {
       "id": 600017,
       "name": "タウラス杯 決勝",
       "distance": 2400
@@ -7039,6 +7069,11 @@
       "id": 600019,
       "name": "キャンサー杯 決勝",
       "distance": 1600
+    },
+    {
+      "id": 600020,
+      "name": "レオ杯 決勝",
+      "distance": 2200
     },
     {
       "id": 610000,
@@ -11761,6 +11796,14 @@
       ]
     },
     {
+      "id": 100371,
+      "name": "Schwarze Schwert",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100381,
       "name": "#LookatCurren",
       "gradeValue": 340,
@@ -15022,6 +15065,14 @@
     {
       "id": 900351,
       "name": "勝利のチケットを、君にッ！",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900371,
+      "name": "Schwarze Schwert",
       "gradeValue": 180,
       "tagId": [
         "401"
