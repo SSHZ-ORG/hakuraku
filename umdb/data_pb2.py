@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\xeb\x02\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\x12\x1e\n\x05skill\x18\x07 \x03(\x0b\x32\x0f.hakuraku.Skill\x12\x41\n\x18team_stadium_score_bonus\x18\x08 \x03(\x0b\x32\x1f.hakuraku.TeamStadiumScoreBonus\"4\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tcast_name\x18\x03 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\":\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x10\n\x08\x64istance\x18\x03 \x01(\x05\"d\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\x12\x10\n\x08priority\x18\x04 \x01(\x05\x12\x10\n\x08group_id\x18\x05 \x01(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05\"F\n\x05Skill\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0bgrade_value\x18\x03 \x01(\x11\x12\x0e\n\x06tag_id\x18\x04 \x03(\t\"1\n\x15TeamStadiumScoreBonus\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t'
+  serialized_pb=b'\n\ndata.proto\x12\x08hakuraku\"\x89\x03\n\nUMDatabase\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1e\n\x05\x63hara\x18\x02 \x03(\x0b\x32\x0f.hakuraku.Chara\x12\x1c\n\x04\x63\x61rd\x18\t \x03(\x0b\x32\x0e.hakuraku.Card\x12\x39\n\x13succession_relation\x18\x03 \x03(\x0b\x32\x1c.hakuraku.SuccessionRelation\x12-\n\rrace_instance\x18\x04 \x03(\x0b\x32\x16.hakuraku.RaceInstance\x12)\n\x0bwins_saddle\x18\x05 \x03(\x0b\x32\x14.hakuraku.WinsSaddle\x12\x34\n\x11special_case_race\x18\x06 \x03(\x0b\x32\x19.hakuraku.SpecialCaseRace\x12\x1e\n\x05skill\x18\x07 \x03(\x0b\x32\x0f.hakuraku.Skill\x12\x41\n\x18team_stadium_score_bonus\x18\x08 \x03(\x0b\x32\x1f.hakuraku.TeamStadiumScoreBonus\"4\n\x05\x43hara\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tcast_name\x18\x03 \x01(\t\" \n\x04\x43\x61rd\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\"\\\n\x12SuccessionRelation\x12\x15\n\rrelation_type\x18\x01 \x01(\x05\x12\x16\n\x0erelation_point\x18\x02 \x01(\x05\x12\x17\n\x0fmember_chara_id\x18\x03 \x03(\x05\":\n\x0cRaceInstance\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x10\n\x08\x64istance\x18\x03 \x01(\x05\"d\n\nWinsSaddle\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x18\n\x10race_instance_id\x18\x03 \x03(\x05\x12\x10\n\x08priority\x18\x04 \x01(\x05\x12\x10\n\x08group_id\x18\x05 \x01(\x05\"\x9a\x02\n\x0fSpecialCaseRace\x12\x18\n\x10race_instance_id\x18\x01 \x01(\x05\x12\x15\n\rprogram_group\x18\x02 \x01(\x05\x12\x41\n\x0frace_permission\x18\x03 \x01(\x0e\x32(.hakuraku.SpecialCaseRace.RacePermission\x12\x10\n\x08\x63hara_id\x18\x04 \x03(\x05\"\x80\x01\n\x0eRacePermission\x12\x1b\n\x17UNKNOWN_RACE_PERMISSION\x10\x00\x12\x0e\n\nFIRST_YEAR\x10\x01\x12\x0f\n\x0bSECOND_YEAR\x10\x02\x12\x18\n\x14SECOND_OR_THIRD_YEAR\x10\x03\x12\x0e\n\nTHIRD_YEAR\x10\x04\x12\x06\n\x02\x45X\x10\x05\"F\n\x05Skill\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0bgrade_value\x18\x03 \x01(\x11\x12\x0e\n\x06tag_id\x18\x04 \x03(\t\"1\n\x15TeamStadiumScoreBonus\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0c\n\x04name\x18\x02 \x01(\t'
 )
 
 
@@ -64,8 +64,8 @@ _SPECIALCASERACE_RACEPERMISSION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=855,
-  serialized_end=983,
+  serialized_start=919,
+  serialized_end=1047,
 )
 _sym_db.RegisterEnumDescriptor(_SPECIALCASERACE_RACEPERMISSION)
 
@@ -93,42 +93,49 @@ _UMDATABASE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='succession_relation', full_name='hakuraku.UMDatabase.succession_relation', index=2,
+      name='card', full_name='hakuraku.UMDatabase.card', index=2,
+      number=9, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='succession_relation', full_name='hakuraku.UMDatabase.succession_relation', index=3,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='race_instance', full_name='hakuraku.UMDatabase.race_instance', index=3,
+      name='race_instance', full_name='hakuraku.UMDatabase.race_instance', index=4,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='wins_saddle', full_name='hakuraku.UMDatabase.wins_saddle', index=4,
+      name='wins_saddle', full_name='hakuraku.UMDatabase.wins_saddle', index=5,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='special_case_race', full_name='hakuraku.UMDatabase.special_case_race', index=5,
+      name='special_case_race', full_name='hakuraku.UMDatabase.special_case_race', index=6,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='skill', full_name='hakuraku.UMDatabase.skill', index=6,
+      name='skill', full_name='hakuraku.UMDatabase.skill', index=7,
       number=7, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='team_stadium_score_bonus', full_name='hakuraku.UMDatabase.team_stadium_score_bonus', index=7,
+      name='team_stadium_score_bonus', full_name='hakuraku.UMDatabase.team_stadium_score_bonus', index=8,
       number=8, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -147,7 +154,7 @@ _UMDATABASE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=25,
-  serialized_end=388,
+  serialized_end=418,
 )
 
 
@@ -192,8 +199,47 @@ _CHARA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=390,
-  serialized_end=442,
+  serialized_start=420,
+  serialized_end=472,
+)
+
+
+_CARD = _descriptor.Descriptor(
+  name='Card',
+  full_name='hakuraku.Card',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='hakuraku.Card.id', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='hakuraku.Card.name', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=474,
+  serialized_end=506,
 )
 
 
@@ -238,8 +284,8 @@ _SUCCESSIONRELATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=444,
-  serialized_end=536,
+  serialized_start=508,
+  serialized_end=600,
 )
 
 
@@ -284,8 +330,8 @@ _RACEINSTANCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=538,
-  serialized_end=596,
+  serialized_start=602,
+  serialized_end=660,
 )
 
 
@@ -344,8 +390,8 @@ _WINSSADDLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=598,
-  serialized_end=698,
+  serialized_start=662,
+  serialized_end=762,
 )
 
 
@@ -398,8 +444,8 @@ _SPECIALCASERACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=701,
-  serialized_end=983,
+  serialized_start=765,
+  serialized_end=1047,
 )
 
 
@@ -451,8 +497,8 @@ _SKILL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=985,
-  serialized_end=1055,
+  serialized_start=1049,
+  serialized_end=1119,
 )
 
 
@@ -490,11 +536,12 @@ _TEAMSTADIUMSCOREBONUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1057,
-  serialized_end=1106,
+  serialized_start=1121,
+  serialized_end=1170,
 )
 
 _UMDATABASE.fields_by_name['chara'].message_type = _CHARA
+_UMDATABASE.fields_by_name['card'].message_type = _CARD
 _UMDATABASE.fields_by_name['succession_relation'].message_type = _SUCCESSIONRELATION
 _UMDATABASE.fields_by_name['race_instance'].message_type = _RACEINSTANCE
 _UMDATABASE.fields_by_name['wins_saddle'].message_type = _WINSSADDLE
@@ -505,6 +552,7 @@ _SPECIALCASERACE.fields_by_name['race_permission'].enum_type = _SPECIALCASERACE_
 _SPECIALCASERACE_RACEPERMISSION.containing_type = _SPECIALCASERACE
 DESCRIPTOR.message_types_by_name['UMDatabase'] = _UMDATABASE
 DESCRIPTOR.message_types_by_name['Chara'] = _CHARA
+DESCRIPTOR.message_types_by_name['Card'] = _CARD
 DESCRIPTOR.message_types_by_name['SuccessionRelation'] = _SUCCESSIONRELATION
 DESCRIPTOR.message_types_by_name['RaceInstance'] = _RACEINSTANCE
 DESCRIPTOR.message_types_by_name['WinsSaddle'] = _WINSSADDLE
@@ -526,6 +574,13 @@ Chara = _reflection.GeneratedProtocolMessageType('Chara', (_message.Message,), {
   # @@protoc_insertion_point(class_scope:hakuraku.Chara)
   })
 _sym_db.RegisterMessage(Chara)
+
+Card = _reflection.GeneratedProtocolMessageType('Card', (_message.Message,), {
+  'DESCRIPTOR' : _CARD,
+  '__module__' : 'data_pb2'
+  # @@protoc_insertion_point(class_scope:hakuraku.Card)
+  })
+_sym_db.RegisterMessage(Card)
 
 SuccessionRelation = _reflection.GeneratedProtocolMessageType('SuccessionRelation', (_message.Message,), {
   'DESCRIPTOR' : _SUCCESSIONRELATION,

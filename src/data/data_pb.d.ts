@@ -14,6 +14,11 @@ export class UMDatabase extends jspb.Message {
   setCharaList(value: Array<Chara>): void;
   addChara(value?: Chara, index?: number): Chara;
 
+  clearCardList(): void;
+  getCardList(): Array<Card>;
+  setCardList(value: Array<Card>): void;
+  addCard(value?: Card, index?: number): Card;
+
   clearSuccessionRelationList(): void;
   getSuccessionRelationList(): Array<SuccessionRelation>;
   setSuccessionRelationList(value: Array<SuccessionRelation>): void;
@@ -58,6 +63,7 @@ export namespace UMDatabase {
   export type AsObject = {
     version?: string,
     charaList: Array<Chara.AsObject>,
+    cardList: Array<Card.AsObject>,
     successionRelationList: Array<SuccessionRelation.AsObject>,
     raceInstanceList: Array<RaceInstance.AsObject>,
     winsSaddleList: Array<WinsSaddle.AsObject>,
@@ -98,6 +104,34 @@ export namespace Chara {
     id?: number,
     name?: string,
     castName?: string,
+  }
+}
+
+export class Card extends jspb.Message {
+  hasId(): boolean;
+  clearId(): void;
+  getId(): number | undefined;
+  setId(value: number): void;
+
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string | undefined;
+  setName(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Card.AsObject;
+  static toObject(includeInstance: boolean, msg: Card): Card.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Card, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Card;
+  static deserializeBinaryFromReader(message: Card, reader: jspb.BinaryReader): Card;
+}
+
+export namespace Card {
+  export type AsObject = {
+    id?: number,
+    name?: string,
   }
 }
 

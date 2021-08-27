@@ -27,6 +27,16 @@ def populate_charas(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         pb.chara.append(c)
 
 
+def populate_cards(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute("SELECT `index`, text FROM text_data WHERE category=5;")
+    rows = cursor.fetchall()
+    for row in rows:
+        c = data_pb2.Card()
+        c.id = row[0]
+        c.name = row[1]
+        pb.card.append(c)
+
+
 def populate_succession_relation(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
     relations = {}
 
@@ -144,6 +154,7 @@ def main():
     cursor = open_db(args.db_path)
 
     populate_charas(pb, cursor)
+    populate_cards(pb, cursor)
     populate_succession_relation(pb, cursor)
     populate_race_instance(pb, cursor)
     populate_wins_saddle(pb, cursor)

@@ -6,6 +6,7 @@ message UMDatabase {
     optional string version = 1;
 
     repeated Chara chara = 2;
+    repeated Card card = 9;
     repeated SuccessionRelation succession_relation = 3;
     repeated RaceInstance race_instance = 4;
     repeated WinsSaddle wins_saddle = 5;
@@ -21,6 +22,11 @@ message Chara {
     optional int32 id = 1;
     optional string name = 2;
     optional string cast_name = 3;
+}
+
+message Card {
+    optional int32 id = 1;
+    optional string name = 2;
 }
 
 message SuccessionRelation {
