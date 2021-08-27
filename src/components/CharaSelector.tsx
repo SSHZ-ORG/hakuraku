@@ -18,7 +18,7 @@ type CharaSelectorProps = {
     constraintGroups?: (Chara | undefined)[][] | undefined,
 }
 
-class CharaSelector extends React.Component<CharaSelectorProps> {
+export default class CharaSelector extends React.Component<CharaSelectorProps> {
 
     calcRelationPoints = memoize((constraintGroups: (Chara | undefined)[][] | undefined) => {
         if (!constraintGroups) {
@@ -76,5 +76,3 @@ class CharaSelector extends React.Component<CharaSelectorProps> {
         </Form.Group>
     }
 }
-
-export default CharaSelector;

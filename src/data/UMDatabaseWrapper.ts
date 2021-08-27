@@ -1,9 +1,10 @@
-import {Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
+import {Card, Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
 import pako from "pako";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
     charas: Record<number, Chara> = {};
+    cards: Record<number, Card> = {};
     raceInstances: Record<number, RaceInstance> = {};
     interestingRaceInstances: RaceInstance[] = [];
     skills: Record<number, Skill> = {};
@@ -18,6 +19,7 @@ class _UMDatabaseWrapper {
                 this.umdb = UMDatabase.deserializeBinary(pako.inflate(new Uint8Array(response)));
 
                 this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
+                this.umdb.getCardList().forEach((card) => this.cards[card.getId()!] = card);
 
                 this.umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()!] = race);
 

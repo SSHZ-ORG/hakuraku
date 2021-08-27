@@ -35,40 +35,38 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
     }
 
     render() {
-        return (
-            <div>
-                <Form>
-                    <Form.Row>
-                        <Form.Group as={Col}>
-                            <Form.Label>
-                                [Optional] <code>race_start_info.race_horse_data</code> (for single
-                                mode), <code>race_horse_data_array</code> (for daily race / legend race, not in the same
-                                packet), or <code>race_start_params_array.race_horse_data_array</code> (for team race)
-                            </Form.Label>
-                            <Form.Control as="textarea" rows={3}
-                                          onChange={e => this.setState({raceHorseInfoInput: e.target.value})}/>
-                        </Form.Group>
-                    </Form.Row>
-                    <Form.Row>
-                        <Form.Group as={Col}>
-                            <Form.Label>[Required] <code>race_scenario</code></Form.Label>
-                            <Form.Control as="textarea" rows={3}
-                                          onChange={e => this.setState({raceScenarioInput: e.target.value})}/>
-                        </Form.Group>
-                    </Form.Row>
-                    <Button variant="primary" onClick={() => this.parse()}>
-                        Parse
-                    </Button>
-                </Form>
+        return <>
+            <Form>
+                <Form.Row>
+                    <Form.Group as={Col}>
+                        <Form.Label>
+                            [Optional] <code>race_start_info.race_horse_data</code> (for single
+                            mode), <code>race_horse_data_array</code> (for daily race / legend race, not in the same
+                            packet), or <code>race_start_params_array.race_horse_data_array</code> (for team race)
+                        </Form.Label>
+                        <Form.Control as="textarea" rows={3}
+                                      onChange={e => this.setState({raceHorseInfoInput: e.target.value})}/>
+                    </Form.Group>
+                </Form.Row>
+                <Form.Row>
+                    <Form.Group as={Col}>
+                        <Form.Label>[Required] <code>race_scenario</code></Form.Label>
+                        <Form.Control as="textarea" rows={3}
+                                      onChange={e => this.setState({raceScenarioInput: e.target.value})}/>
+                    </Form.Group>
+                </Form.Row>
+                <Button variant="primary" onClick={() => this.parse()}>
+                    Parse
+                </Button>
+            </Form>
 
-                <hr/>
+            <hr/>
 
-                {this.state.parsedRaceData &&
-                <RaceDataPresenter
-                    raceHorseInfo={this.state.parsedHorseInfo}
-                    raceData={this.state.parsedRaceData}/>}
-            </div>
-        )
+            {this.state.parsedRaceData &&
+            <RaceDataPresenter
+                raceHorseInfo={this.state.parsedHorseInfo}
+                raceData={this.state.parsedRaceData}/>}
+        </>;
     }
 
 }

@@ -9,7 +9,7 @@ type SuccessionRelationsPresenterProps = {
     relations: SuccessionRelation[],
 }
 
-class SuccessionRelationsPresenter extends React.Component<SuccessionRelationsPresenterProps> {
+export default class SuccessionRelationsPresenter extends React.PureComponent<SuccessionRelationsPresenterProps> {
     formatRelation(relation: SuccessionRelation) {
         const renderTooltip = <Popover id="popover">
             <Popover.Title>
@@ -26,23 +26,17 @@ class SuccessionRelationsPresenter extends React.Component<SuccessionRelationsPr
                     Grp {relation.getRelationType()} - {relation.getRelationPoint()} pts
                 </Badge>
             </OverlayTrigger>{" "}
-        </>
+        </>;
     }
 
     render() {
-        return (
-            <div>
-                <Card>
-                    <Card.Header>{this.props.title} - {UMDatabaseUtils.calculateTotalPoint(this.props.relations)} pts</Card.Header>
-                    <Card.Body>
-                        <Card.Text>
-                            {this.props.relations.map(relation => this.formatRelation(relation))}
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-        );
+        return <Card>
+            <Card.Header>{this.props.title} - {UMDatabaseUtils.calculateTotalPoint(this.props.relations)} pts</Card.Header>
+            <Card.Body>
+                <Card.Text>
+                    {this.props.relations.map(relation => this.formatRelation(relation))}
+                </Card.Text>
+            </Card.Body>
+        </Card>;
     }
 }
-
-export default SuccessionRelationsPresenter;

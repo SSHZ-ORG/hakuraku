@@ -146,81 +146,79 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
     }
 
     render() {
-        return (
-            <div>
-                <Form>
-                    <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
-                    <CharaSelector label="Chara"
-                                   selectedChara={this.state.selectedChara}
-                                   onSelectedCharaChange={(chara) => this.setChara('selectedChara', chara)}/>
-                    <Form.Switch checked={this.state.suggestionEnabled}
-                                 onChange={(e) => this.setState({suggestionEnabled: e.target.checked})}
-                                 id="suggestion-checkbox"
-                                 label="Enable Suggestion"/>
-                    <Table>
-                        <tbody>
-                        <tr>
-                            <td rowSpan={2}>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Parent 1 (suggesting based on Chara)" : "Parent 1"}
-                                    selectedChara={this.state.parent1}
-                                    onSelectedCharaChange={(chara) => this.setChara('parent1', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara]] : undefined}/>
-                                {this.winSaddleRelationBonusInput((event) => this.setState({parent1WinSaddleBonus: parseInt(event.target.value) || 0}))}
-                            </td>
-                            <td>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 11 (suggesting based on Chara & Parent 1)" : "Grandparent 11"}
-                                    selectedChara={this.state.grandparent11}
-                                    onSelectedCharaChange={(chara) => this.setChara('grandparent11', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 12 (suggesting based on Chara & Parent 1)" : "Grandparent 12"}
-                                    selectedChara={this.state.grandparent12}
-                                    onSelectedCharaChange={(chara) => this.setChara('grandparent12', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td rowSpan={2}>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Parent 2 (suggesting based on Chara + Parent 1)" : "Parent 2"}
-                                    selectedChara={this.state.parent2}
-                                    onSelectedCharaChange={(chara) => this.setChara('parent2', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara], [this.state.parent1]] : undefined}/>
-                                {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}))}
-                            </td>
-                            <td>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 21 (suggesting based on Chara & Parent 2)" : "Grandparent 21"}
-                                    selectedChara={this.state.grandparent21}
-                                    onSelectedCharaChange={(chara) => this.setChara('grandparent21', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <CharaSelector
-                                    label={this.state.suggestionEnabled ? "Grandparent 22 (suggesting based on Chara & Parent 2)" : "Grandparent 22"}
-                                    selectedChara={this.state.grandparent22}
-                                    onSelectedCharaChange={(chara) => this.setChara('grandparent22', chara)}
-                                    constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </Table>
-                </Form>
-                {this.state.validatorMessages.map(message => <Alert variant="danger">{message}</Alert>)}
-                <WinSaddleRelationBonusCalculator/>
-                <hr/>
-                {this.totalPoints()}
-                <hr/>
-                {RELATIONSHIP_PAIRS.map(pair => this.generateRelationsPresenter(pair))}
-            </div>
-        );
+        return <>
+            <Form>
+                <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
+                <CharaSelector label="Chara"
+                               selectedChara={this.state.selectedChara}
+                               onSelectedCharaChange={(chara) => this.setChara('selectedChara', chara)}/>
+                <Form.Switch checked={this.state.suggestionEnabled}
+                             onChange={(e) => this.setState({suggestionEnabled: e.target.checked})}
+                             id="suggestion-checkbox"
+                             label="Enable Suggestion"/>
+                <Table>
+                    <tbody>
+                    <tr>
+                        <td rowSpan={2}>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Parent 1 (suggesting based on Chara)" : "Parent 1"}
+                                selectedChara={this.state.parent1}
+                                onSelectedCharaChange={(chara) => this.setChara('parent1', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara]] : undefined}/>
+                            {this.winSaddleRelationBonusInput((event) => this.setState({parent1WinSaddleBonus: parseInt(event.target.value) || 0}))}
+                        </td>
+                        <td>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Grandparent 11 (suggesting based on Chara & Parent 1)" : "Grandparent 11"}
+                                selectedChara={this.state.grandparent11}
+                                onSelectedCharaChange={(chara) => this.setChara('grandparent11', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Grandparent 12 (suggesting based on Chara & Parent 1)" : "Grandparent 12"}
+                                selectedChara={this.state.grandparent12}
+                                onSelectedCharaChange={(chara) => this.setChara('grandparent12', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent1]] : undefined}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowSpan={2}>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Parent 2 (suggesting based on Chara + Parent 1)" : "Parent 2"}
+                                selectedChara={this.state.parent2}
+                                onSelectedCharaChange={(chara) => this.setChara('parent2', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara], [this.state.parent1]] : undefined}/>
+                            {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}))}
+                        </td>
+                        <td>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Grandparent 21 (suggesting based on Chara & Parent 2)" : "Grandparent 21"}
+                                selectedChara={this.state.grandparent21}
+                                onSelectedCharaChange={(chara) => this.setChara('grandparent21', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <CharaSelector
+                                label={this.state.suggestionEnabled ? "Grandparent 22 (suggesting based on Chara & Parent 2)" : "Grandparent 22"}
+                                selectedChara={this.state.grandparent22}
+                                onSelectedCharaChange={(chara) => this.setChara('grandparent22', chara)}
+                                constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </Table>
+            </Form>
+            {this.state.validatorMessages.map(message => <Alert variant="danger">{message}</Alert>)}
+            <WinSaddleRelationBonusCalculator/>
+            <hr/>
+            {this.totalPoints()}
+            <hr/>
+            {RELATIONSHIP_PAIRS.map(pair => this.generateRelationsPresenter(pair))}
+        </>;
     }
 }

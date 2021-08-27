@@ -12,6 +12,7 @@ export type TrainedCharaData = {
 
     trainedCharaId: number,
     charaId: number,
+    cardId: number,
 
     skills: CharaSkill[],
 
@@ -94,6 +95,7 @@ export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
 
         trainedCharaId: raceHorseData['trained_chara_id'],
         charaId: raceHorseData['chara_id'],
+        cardId: raceHorseData['card_id'],
 
         skills: charaSkills,
 

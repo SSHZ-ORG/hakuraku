@@ -15,6 +15,7 @@ import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap
 import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
 import CopyButton from "./CopyButton";
 import CharaProperLabels from "./CharaProperLabels";
+import CardNamePresenter from "./CardNamePresenter";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
@@ -63,9 +64,9 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     {
         dataField: 'chara',
         text: '',
-        formatter: (chara: Chara | undefined) => chara ? <>
+        formatter: (chara: Chara | undefined, row) => chara ? <>
             {chara.getId()} - {chara.getName()}
-            <br/>({chara.getCastName()})
+            <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
         </> : unknownCharaTag,
     },
 
@@ -210,6 +211,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         }
         return m;
     });
+
 
     renderGraphs() {
         const raceHorseInfo = this.props.raceHorseInfo;

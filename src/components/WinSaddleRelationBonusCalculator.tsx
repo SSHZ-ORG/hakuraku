@@ -47,6 +47,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
         return finalWinsSaddles;
     });
 
+
     renderWinSaddles(winsSaddles: WinsSaddle[]) {
         return winsSaddles.map(ws => <Badge variant="secondary">{ws.getId()} - {ws.getName()}</Badge>)
     }
@@ -72,17 +73,15 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
     }
 
     raceSelection(label: string, selectedRaces: RaceInstance[], callback: (races: RaceInstance[]) => void) {
-        return <div>
-            <Form.Group>
-                <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
-                <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
-                           multiple
-                           clearButton
-                           options={UMDatabaseWrapper.interestingRaceInstances}
-                           selected={selectedRaces}
-                           onChange={callback}/>
-            </Form.Group>
-        </div>;
+        return <Form.Group>
+            <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
+            <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
+                       multiple
+                       clearButton
+                       options={UMDatabaseWrapper.interestingRaceInstances}
+                       selected={selectedRaces}
+                       onChange={callback}/>
+        </Form.Group>;
     }
 
     usagePresenter() {
@@ -122,7 +121,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                     </p>
                 </Modal.Body>
             </Modal>
-        </>
+        </>;
     }
 
     specialCaseRacePresenter() {
@@ -131,7 +130,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                 <Popover.Title as="h3">Special Case Races</Popover.Title>
                 <Popover.Content>
                     {UMDatabaseWrapper.umdb.getSpecialCaseRaceList().map(specialCaseRace =>
-                        <div>
+                        <>
                             {UMDatabaseWrapper.raceInstanceNameWithId(specialCaseRace.getRaceInstanceId()!)}
                             <br/>
                             ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()!]})
@@ -140,9 +139,9 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                                 {UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/>
                             </>)}
                             <hr/>
-                        </div>
+                        </>
                     )}
-                    <div>All other races should use the default instance.</div>
+                    All other races should use the default instance.
                 </Popover.Content>
             </Popover>
         );

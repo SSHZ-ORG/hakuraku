@@ -11,6 +11,7 @@ import {Typeahead} from "react-bootstrap-typeahead";
 import {TrainedCharaData} from "../data/TrainedCharaData";
 import CopyButton from "../components/CopyButton";
 import CharaProperLabels from "../components/CharaProperLabels";
+import CardNamePresenter from "../components/CardNamePresenter";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
@@ -89,9 +90,9 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
     {
         dataField: 'chara',
         text: '',
-        formatter: (chara: Chara | undefined) => chara ? <>
+        formatter: (chara: Chara | undefined, row) => chara ? <>
             {chara.getId()} - {chara.getName()}
-            <br/>({chara.getCastName()})
+            <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
         </> : 'Unknown Chara'
     },
 
@@ -355,7 +356,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
     }
 
     render() {
-        return <div>
+        return <>
             <Row>
                 <Col>
                     <FilesSelector onFilesChange={files => this.onSelectedFilesChange(files)}
@@ -408,6 +409,6 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                                     noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>
             </Row>
-        </div>
+        </>;
     }
 }
