@@ -67,6 +67,36 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
         });
     }
 
+    teamRaceDataPresenter(raceStartParamsArray: any, raceResultArray: any) {
+        return <>
+            <Form>
+                <Form.Group>
+                    <Form.Label>Team Race</Form.Label>
+                    <Form.Control as="select" custom
+                                  onChange={(e) => this.setState({selectedTeamRace: e.target.value ? parseInt(e.target.value) : undefined})}>
+                        <option value="">-</option>
+                        {raceStartParamsArray.map((race: any, idx: number) => {
+                            const distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels = raceResultArray[idx]['distance_type'];
+                            return <option value={idx}>
+                                [{idx + 1}]{' '}
+                                [{UMDatabaseUtils.teamRaceDistanceLabels[distanceType] ?? 'Unknown type'}]{' '}
+                                {UMDatabaseWrapper.raceInstanceNameWithId(race['race_instance_id'])}
+                            </option>
+                        })}
+                    </Form.Control>
+                </Form.Group>
+            </Form>
+            {this.state.selectedTeamRace !== undefined &&
+            <>
+                {teamRaceHeader(raceStartParamsArray[this.state.selectedTeamRace])}
+                <RaceDataPresenter
+                    raceHorseInfo={raceStartParamsArray[this.state.selectedTeamRace]['race_horse_data_array']}
+                    raceData={deserializeFromBase64(raceResultArray[this.state.selectedTeamRace]['race_scenario'])}/>
+            </>}
+            <hr/>
+        </>;
+    }
+
     raceDataPresenter() {
         if (!this.state.currentFileContent) {
             return undefined;
@@ -86,33 +116,10 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             </>;
         } else if (data['race_start_params_array'] && data['race_result_array'] && data['race_start_params_array'].length === data['race_result_array'].length) {
             // Team race
-            return <>
-                <Form>
-                    <Form.Group>
-                        <Form.Label>Team Race</Form.Label>
-                        <Form.Control as="select" custom
-                                      onChange={(e) => this.setState({selectedTeamRace: e.target.value ? parseInt(e.target.value) : undefined})}>
-                            <option value="">-</option>
-                            {data['race_start_params_array'].map((race: any, idx: number) => {
-                                const distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels = data['race_result_array'][idx]['distance_type'];
-                                return <option value={idx}>
-                                    [{idx + 1}]{' '}
-                                    [{UMDatabaseUtils.teamRaceDistanceLabels[distanceType] ?? 'Unknown type'}]{' '}
-                                    {UMDatabaseWrapper.raceInstanceNameWithId(race['race_instance_id'])}
-                                </option>
-                            })}
-                        </Form.Control>
-                    </Form.Group>
-                </Form>
-                {this.state.selectedTeamRace !== undefined &&
-                <>
-                    {teamRaceHeader(data['race_start_params_array'][this.state.selectedTeamRace])}
-                    <RaceDataPresenter
-                        raceHorseInfo={data['race_start_params_array'][this.state.selectedTeamRace]['race_horse_data_array']}
-                        raceData={deserializeFromBase64(data['race_result_array'][this.state.selectedTeamRace]['race_scenario'])}/>
-                </>}
-                <hr/>
-            </>;
+            return this.teamRaceDataPresenter(data['race_start_params_array'], data['race_result_array']);
+        } else if (data['team_data_set'] && data['team_data_set']['race_result_array']) {
+            // Aoharu
+            return this.teamRaceDataPresenter(data['team_data_set']['race_result_array'], data['team_data_set']['race_result_array']);
         } else if (data['room_info'] && data['room_info']['race_scenario'] && data['race_horse_data_array']) {
             // Room race (Taurus Cup)
             return <>
