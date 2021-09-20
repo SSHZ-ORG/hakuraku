@@ -1,5 +1,5 @@
 {
-  "version": "10002800",
+  "version": "10003000",
   "chara": [
     {
       "id": 1001,
@@ -418,6 +418,7 @@
         1008,
         1009,
         1013,
+        1019,
         1038
       ]
     },
@@ -513,6 +514,7 @@
         1015,
         1016,
         1018,
+        1019,
         1023,
         1024,
         1026,
@@ -640,6 +642,7 @@
       "relationType": 314,
       "relationPoint": 2,
       "memberCharaId": [
+        1019,
         1032
       ]
     },
@@ -1021,7 +1024,10 @@
     },
     {
       "relationType": 2501,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1019
+      ]
     },
     {
       "relationType": 2502,
@@ -1113,7 +1119,8 @@
       "memberCharaId": [
         1006,
         1008,
-        1010
+        1010,
+        1019
       ]
     },
     {
@@ -1172,6 +1179,7 @@
         1008,
         1015,
         1018,
+        1019,
         1037,
         1045
       ]
@@ -1189,7 +1197,8 @@
       "relationPoint": 1,
       "memberCharaId": [
         1006,
-        1010
+        1010,
+        1019
       ]
     },
     {
@@ -1304,6 +1313,7 @@
         1015,
         1016,
         1017,
+        1019,
         1020,
         1023,
         1024,
@@ -1524,7 +1534,10 @@
     },
     {
       "relationType": 2813,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1019
+      ]
     },
     {
       "relationType": 2814,
@@ -1578,6 +1591,7 @@
         1015,
         1017,
         1018,
+        1019,
         1023,
         1028,
         1030,
@@ -1642,6 +1656,7 @@
         1010,
         1011,
         1014,
+        1019,
         1026,
         1040,
         1046
@@ -1666,6 +1681,7 @@
         1016,
         1017,
         1018,
+        1019,
         1020,
         1023,
         1024,
@@ -1723,6 +1739,7 @@
         1016,
         1017,
         1018,
+        1019,
         1020,
         1023,
         1024,
@@ -1748,6 +1765,7 @@
       "relationType": 3102,
       "relationPoint": 7,
       "memberCharaId": [
+        1019,
         1046,
         1052
       ]
@@ -1816,6 +1834,7 @@
         1004,
         1009,
         1016,
+        1019,
         1045,
         1056
       ]
@@ -3138,31 +3157,38 @@
       "relationType": 8144,
       "relationPoint": 1,
       "memberCharaId": [
-        1004
+        1004,
+        1019
       ]
     },
     {
       "relationType": 8145,
       "relationPoint": 1,
       "memberCharaId": [
-        1007
+        1007,
+        1019
       ]
     },
     {
       "relationType": 8146,
       "relationPoint": 1,
       "memberCharaId": [
-        1009
+        1009,
+        1019
       ]
     },
     {
       "relationType": 8147,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1019
+      ]
     },
     {
       "relationType": 8148,
       "relationPoint": 1,
       "memberCharaId": [
+        1019,
         1045
       ]
     },
@@ -3170,16 +3196,23 @@
       "relationType": 8149,
       "relationPoint": 1,
       "memberCharaId": [
+        1019,
         1046
       ]
     },
     {
       "relationType": 8150,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1019
+      ]
     },
     {
       "relationType": 8151,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "memberCharaId": [
+        1019
+      ]
     },
     {
       "relationType": 8152,
@@ -7112,6 +7145,11 @@
       "distance": 2200
     },
     {
+      "id": 600009,
+      "name": "ヴァルゴ杯",
+      "distance": 1600
+    },
+    {
       "id": 600017,
       "name": "タウラス杯 決勝",
       "distance": 2400
@@ -7130,6 +7168,11 @@
       "id": 600020,
       "name": "レオ杯 決勝",
       "distance": 2200
+    },
+    {
+      "id": 600021,
+      "name": "ヴァルゴ杯 決勝",
+      "distance": 1600
     },
     {
       "id": 610000,
@@ -12592,6 +12635,14 @@
       ]
     },
     {
+      "id": 100191,
+      "name": "尊み☆ﾗｽﾄｽﾊﾟ—(ﾟ∀ﾟ)—ﾄ!",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100201,
       "name": "アングリング×スキーミング",
       "gradeValue": 340,
@@ -15648,6 +15699,14 @@
       ]
     },
     {
+      "id": 201592,
+      "name": "ウママニア",
+      "gradeValue": 508,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 201601,
       "name": "地固め",
       "gradeValue": 217,
@@ -15719,6 +15778,24 @@
       "tagId": [
         "302",
         "401"
+      ]
+    },
+    {
+      "id": 201681,
+      "name": "狙うは最前列！",
+      "gradeValue": 394,
+      "tagId": [
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 201682,
+      "name": "前列狙い",
+      "gradeValue": 174,
+      "tagId": [
+        "303",
+        "403"
       ]
     },
     {
@@ -15972,6 +16049,14 @@
     {
       "id": 900181,
       "name": "ブレイズ・オブ・プライド",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900191,
+      "name": "尊み☆ﾗｽﾄｽﾊﾟ—(ﾟ∀ﾟ)—ﾄ!",
       "gradeValue": 180,
       "tagId": [
         "401"
@@ -16354,6 +16439,10 @@
     {
       "id": 101802,
       "name": "[クエルクス・キウィーリス]"
+    },
+    {
+      "id": 101901,
+      "name": "[超特急！フルカラー特殊PP]"
     },
     {
       "id": 102001,
