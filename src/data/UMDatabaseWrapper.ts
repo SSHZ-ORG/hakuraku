@@ -14,7 +14,7 @@ class _UMDatabaseWrapper {
      * @return {!Promise}
      */
     initialize() {
-        return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb.gz')
+        return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb.gz', {cache: 'no-cache'})
             .then(response => response.arrayBuffer())
             .then(response => {
                 this.umdb = UMDatabase.deserializeBinary(pako.inflate(new Uint8Array(response)));
