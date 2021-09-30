@@ -406,77 +406,197 @@
     {
       "relationType": 101,
       "relationPoint": 2,
-      "memberCharaId": [
-        1024
+      "member": [
+        {
+          "id": 1,
+          "charaId": 1024
+        }
       ]
     },
     {
       "relationType": 102,
       "relationPoint": 2,
-      "memberCharaId": [
-        1003,
-        1008,
-        1009,
-        1013,
-        1019,
-        1038
+      "member": [
+        {
+          "id": 7,
+          "charaId": 1003
+        },
+        {
+          "id": 8,
+          "charaId": 1008
+        },
+        {
+          "id": 9,
+          "charaId": 1009
+        },
+        {
+          "id": 10,
+          "charaId": 1013
+        },
+        {
+          "id": 11,
+          "charaId": 1019
+        },
+        {
+          "id": 12,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 103,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1011,
-        1014,
-        1015,
-        1020,
-        1028,
-        1052,
-        1058,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 14,
+          "charaId": 1011
+        },
+        {
+          "id": 15,
+          "charaId": 1014
+        },
+        {
+          "id": 16,
+          "charaId": 1020
+        },
+        {
+          "id": 17,
+          "charaId": 1052
+        },
+        {
+          "id": 18,
+          "charaId": 1001
+        },
+        {
+          "id": 19,
+          "charaId": 1015
+        },
+        {
+          "id": 20,
+          "charaId": 1028
+        },
+        {
+          "id": 22,
+          "charaId": 1058
+        },
+        {
+          "id": 23,
+          "charaId": 1060
+        },
+        {
+          "id": 24,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 104,
       "relationPoint": 2,
-      "memberCharaId": [
-        1002,
-        1010,
-        1026,
-        1030,
-        1032,
-        1040,
-        1041,
-        1056
+      "member": [
+        {
+          "id": 25,
+          "charaId": 1010
+        },
+        {
+          "id": 27,
+          "charaId": 1030
+        },
+        {
+          "id": 28,
+          "charaId": 1041
+        },
+        {
+          "id": 31,
+          "charaId": 1002
+        },
+        {
+          "id": 33,
+          "charaId": 1026
+        },
+        {
+          "id": 34,
+          "charaId": 1032
+        },
+        {
+          "id": 36,
+          "charaId": 1040
+        },
+        {
+          "id": 38,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 105,
       "relationPoint": 2,
-      "memberCharaId": [
-        1005,
-        1007,
-        1012,
-        1016,
-        1018,
-        1023,
-        1027,
-        1035,
-        1037,
-        1046,
-        1050
+      "member": [
+        {
+          "id": 39,
+          "charaId": 1012
+        },
+        {
+          "id": 40,
+          "charaId": 1027
+        },
+        {
+          "id": 43,
+          "charaId": 1005
+        },
+        {
+          "id": 44,
+          "charaId": 1007
+        },
+        {
+          "id": 45,
+          "charaId": 1016
+        },
+        {
+          "id": 46,
+          "charaId": 1018
+        },
+        {
+          "id": 47,
+          "charaId": 1023
+        },
+        {
+          "id": 49,
+          "charaId": 1035
+        },
+        {
+          "id": 50,
+          "charaId": 1037
+        },
+        {
+          "id": 51,
+          "charaId": 1046
+        },
+        {
+          "id": 52,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 106,
       "relationPoint": 2,
-      "memberCharaId": [
-        1004,
-        1006,
-        1017,
-        1045
+      "member": [
+        {
+          "id": 54,
+          "charaId": 1004
+        },
+        {
+          "id": 55,
+          "charaId": 1017
+        },
+        {
+          "id": 57,
+          "charaId": 1006
+        },
+        {
+          "id": 60,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -486,59 +606,179 @@
     {
       "relationType": 201,
       "relationPoint": 2,
-      "memberCharaId": [
-        1010,
-        1011,
-        1012,
-        1014,
-        1017,
-        1020,
-        1027,
-        1030,
-        1041
+      "member": [
+        {
+          "id": 62,
+          "charaId": 1010
+        },
+        {
+          "id": 63,
+          "charaId": 1011
+        },
+        {
+          "id": 64,
+          "charaId": 1012
+        },
+        {
+          "id": 65,
+          "charaId": 1014
+        },
+        {
+          "id": 66,
+          "charaId": 1017
+        },
+        {
+          "id": 67,
+          "charaId": 1020
+        },
+        {
+          "id": 69,
+          "charaId": 1027
+        },
+        {
+          "id": 71,
+          "charaId": 1030
+        },
+        {
+          "id": 74,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 202,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1002,
-        1003,
-        1005,
-        1006,
-        1007,
-        1008,
-        1009,
-        1013,
-        1015,
-        1016,
-        1018,
-        1019,
-        1023,
-        1024,
-        1026,
-        1028,
-        1032,
-        1035,
-        1037,
-        1038,
-        1040,
-        1045,
-        1046,
-        1050,
-        1052,
-        1056,
-        1058,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 80,
+          "charaId": 1001
+        },
+        {
+          "id": 81,
+          "charaId": 1002
+        },
+        {
+          "id": 82,
+          "charaId": 1003
+        },
+        {
+          "id": 83,
+          "charaId": 1005
+        },
+        {
+          "id": 84,
+          "charaId": 1006
+        },
+        {
+          "id": 85,
+          "charaId": 1007
+        },
+        {
+          "id": 86,
+          "charaId": 1008
+        },
+        {
+          "id": 87,
+          "charaId": 1009
+        },
+        {
+          "id": 88,
+          "charaId": 1013
+        },
+        {
+          "id": 89,
+          "charaId": 1015
+        },
+        {
+          "id": 90,
+          "charaId": 1016
+        },
+        {
+          "id": 91,
+          "charaId": 1018
+        },
+        {
+          "id": 92,
+          "charaId": 1019
+        },
+        {
+          "id": 95,
+          "charaId": 1023
+        },
+        {
+          "id": 96,
+          "charaId": 1024
+        },
+        {
+          "id": 97,
+          "charaId": 1026
+        },
+        {
+          "id": 98,
+          "charaId": 1028
+        },
+        {
+          "id": 99,
+          "charaId": 1032
+        },
+        {
+          "id": 101,
+          "charaId": 1035
+        },
+        {
+          "id": 103,
+          "charaId": 1037
+        },
+        {
+          "id": 104,
+          "charaId": 1038
+        },
+        {
+          "id": 106,
+          "charaId": 1040
+        },
+        {
+          "id": 109,
+          "charaId": 1045
+        },
+        {
+          "id": 110,
+          "charaId": 1046
+        },
+        {
+          "id": 112,
+          "charaId": 1050
+        },
+        {
+          "id": 117,
+          "charaId": 1056
+        },
+        {
+          "id": 118,
+          "charaId": 1058
+        },
+        {
+          "id": 119,
+          "charaId": 1060
+        },
+        {
+          "id": 120,
+          "charaId": 1061
+        },
+        {
+          "id": 122,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 203,
       "relationPoint": 2,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 121,
+          "charaId": 1004
+        }
       ]
     },
     {
@@ -548,62 +788,101 @@
     {
       "relationType": 301,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1002
+      "member": [
+        {
+          "id": 123,
+          "charaId": 1001
+        },
+        {
+          "id": 124,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 302,
       "relationPoint": 2,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 125,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 303,
       "relationPoint": 2,
-      "memberCharaId": [
-        1008,
-        1009
+      "member": [
+        {
+          "id": 127,
+          "charaId": 1008
+        },
+        {
+          "id": 128,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 304,
       "relationPoint": 2,
-      "memberCharaId": [
-        1010
+      "member": [
+        {
+          "id": 129,
+          "charaId": 1010
+        }
       ]
     },
     {
       "relationType": 305,
       "relationPoint": 2,
-      "memberCharaId": [
-        1011,
-        1014
+      "member": [
+        {
+          "id": 131,
+          "charaId": 1011
+        },
+        {
+          "id": 132,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 306,
       "relationPoint": 2,
-      "memberCharaId": [
-        1015,
-        1023
+      "member": [
+        {
+          "id": 133,
+          "charaId": 1015
+        },
+        {
+          "id": 134,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 307,
       "relationPoint": 2,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 135,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 308,
       "relationPoint": 2,
-      "memberCharaId": [
-        1003,
-        1024
+      "member": [
+        {
+          "id": 137,
+          "charaId": 1024
+        },
+        {
+          "id": 138,
+          "charaId": 1003
+        }
       ]
     },
     {
@@ -613,66 +892,99 @@
     {
       "relationType": 310,
       "relationPoint": 2,
-      "memberCharaId": [
-        1026
+      "member": [
+        {
+          "id": 141,
+          "charaId": 1026
+        }
       ]
     },
     {
       "relationType": 311,
       "relationPoint": 2,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 143,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 312,
       "relationPoint": 2,
-      "memberCharaId": [
-        1028
+      "member": [
+        {
+          "id": 145,
+          "charaId": 1028
+        }
       ]
     },
     {
       "relationType": 313,
       "relationPoint": 2,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 147,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 314,
       "relationPoint": 2,
-      "memberCharaId": [
-        1019,
-        1032
+      "member": [
+        {
+          "id": 149,
+          "charaId": 1032
+        },
+        {
+          "id": 150,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 315,
       "relationPoint": 2,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 152,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 316,
       "relationPoint": 2,
-      "memberCharaId": [
-        1035
+      "member": [
+        {
+          "id": 153,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 317,
       "relationPoint": 2,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 156,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 318,
       "relationPoint": 2,
-      "memberCharaId": [
-        1037,
-        1046
+      "member": [
+        {
+          "id": 157,
+          "charaId": 1037
+        },
+        {
+          "id": 158,
+          "charaId": 1046
+        }
       ]
     },
     {
@@ -682,332 +994,623 @@
     {
       "relationType": 320,
       "relationPoint": 2,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 161,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 321,
       "relationPoint": 2,
-      "memberCharaId": [
-        1045,
-        1050
+      "member": [
+        {
+          "id": 163,
+          "charaId": 1045
+        },
+        {
+          "id": 164,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 322,
       "relationPoint": 2,
-      "memberCharaId": [
-        1052,
-        1061
+      "member": [
+        {
+          "id": 165,
+          "charaId": 1052
+        },
+        {
+          "id": 166,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 323,
       "relationPoint": 2,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 168,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 401,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1011,
-        1014,
-        1020,
-        1061
+      "member": [
+        {
+          "id": 169,
+          "charaId": 1001
+        },
+        {
+          "id": 170,
+          "charaId": 1011
+        },
+        {
+          "id": 171,
+          "charaId": 1014
+        },
+        {
+          "id": 172,
+          "charaId": 1020
+        },
+        {
+          "id": 173,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 402,
       "relationPoint": 2,
-      "memberCharaId": [
-        1002,
-        1010,
-        1041,
-        1056
+      "member": [
+        {
+          "id": 174,
+          "charaId": 1002
+        },
+        {
+          "id": 175,
+          "charaId": 1041
+        },
+        {
+          "id": 176,
+          "charaId": 1010
+        },
+        {
+          "id": 177,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 403,
       "relationPoint": 2,
-      "memberCharaId": [
-        1003,
-        1008,
-        1009,
-        1013
+      "member": [
+        {
+          "id": 178,
+          "charaId": 1003
+        },
+        {
+          "id": 179,
+          "charaId": 1008
+        },
+        {
+          "id": 180,
+          "charaId": 1009
+        },
+        {
+          "id": 181,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 404,
       "relationPoint": 2,
-      "memberCharaId": [
-        1023,
-        1035,
-        1050
+      "member": [
+        {
+          "id": 182,
+          "charaId": 1023
+        },
+        {
+          "id": 183,
+          "charaId": 1050
+        },
+        {
+          "id": 184,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 501,
       "relationPoint": 2,
-      "memberCharaId": [
-        1016,
-        1017,
-        1018
+      "member": [
+        {
+          "id": 185,
+          "charaId": 1017
+        },
+        {
+          "id": 186,
+          "charaId": 1018
+        },
+        {
+          "id": 187,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 502,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1011,
-        1014,
-        1020
+      "member": [
+        {
+          "id": 188,
+          "charaId": 1001
+        },
+        {
+          "id": 189,
+          "charaId": 1011
+        },
+        {
+          "id": 190,
+          "charaId": 1014
+        },
+        {
+          "id": 191,
+          "charaId": 1020
+        }
       ]
     },
     {
       "relationType": 503,
       "relationPoint": 2,
-      "memberCharaId": [
-        1013,
-        1027
+      "member": [
+        {
+          "id": 192,
+          "charaId": 1013
+        },
+        {
+          "id": 193,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 504,
       "relationPoint": 2,
-      "memberCharaId": [
-        1013,
-        1061
+      "member": [
+        {
+          "id": 195,
+          "charaId": 1061
+        },
+        {
+          "id": 196,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 505,
       "relationPoint": 2,
-      "memberCharaId": [
-        1005,
-        1012
+      "member": [
+        {
+          "id": 198,
+          "charaId": 1012
+        },
+        {
+          "id": 199,
+          "charaId": 1005
+        }
       ]
     },
     {
       "relationType": 506,
       "relationPoint": 2,
-      "memberCharaId": [
-        1006,
-        1045
+      "member": [
+        {
+          "id": 200,
+          "charaId": 1006
+        },
+        {
+          "id": 202,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 507,
       "relationPoint": 2,
-      "memberCharaId": [
-        1023,
-        1035,
-        1050
+      "member": [
+        {
+          "id": 204,
+          "charaId": 1023
+        },
+        {
+          "id": 205,
+          "charaId": 1050
+        },
+        {
+          "id": 206,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 508,
       "relationPoint": 2,
-      "memberCharaId": [
-        1030,
-        1052
+      "member": [
+        {
+          "id": 1687,
+          "charaId": 1030
+        },
+        {
+          "id": 1688,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 509,
       "relationPoint": 2,
-      "memberCharaId": [
-        1041,
-        1052
+      "member": [
+        {
+          "id": 1689,
+          "charaId": 1041
+        },
+        {
+          "id": 1690,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 510,
       "relationPoint": 2,
-      "memberCharaId": [
-        1001,
-        1052
+      "member": [
+        {
+          "id": 1740,
+          "charaId": 1001
+        },
+        {
+          "id": 1741,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 2001,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1002,
-        1005,
-        1032
+      "member": [
+        {
+          "id": 207,
+          "charaId": 1002
+        },
+        {
+          "id": 208,
+          "charaId": 1001
+        },
+        {
+          "id": 209,
+          "charaId": 1005
+        },
+        {
+          "id": 212,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 2002,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018,
-        1035
+      "member": [
+        {
+          "id": 213,
+          "charaId": 1018
+        },
+        {
+          "id": 214,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 2003,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041
+      "member": [
+        {
+          "id": 215,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 2101,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1009,
-        1046
+      "member": [
+        {
+          "id": 217,
+          "charaId": 1007
+        },
+        {
+          "id": 218,
+          "charaId": 1009
+        },
+        {
+          "id": 219,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2102,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1035
+      "member": [
+        {
+          "id": 220,
+          "charaId": 1001
+        },
+        {
+          "id": 221,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 2103,
       "relationPoint": 1,
-      "memberCharaId": [
-        1011,
-        1024
+      "member": [
+        {
+          "id": 222,
+          "charaId": 1011
+        },
+        {
+          "id": 223,
+          "charaId": 1024
+        }
       ]
     },
     {
       "relationType": 2104,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1024
+      "member": [
+        {
+          "id": 224,
+          "charaId": 1015
+        },
+        {
+          "id": 225,
+          "charaId": 1024
+        }
       ]
     },
     {
       "relationType": 2105,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 227,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 2106,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1018,
-        1041
+      "member": [
+        {
+          "id": 228,
+          "charaId": 1018
+        },
+        {
+          "id": 229,
+          "charaId": 1009
+        },
+        {
+          "id": 230,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 2107,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 231,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 2201,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1017
+      "member": [
+        {
+          "id": 233,
+          "charaId": 1017
+        },
+        {
+          "id": 234,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 2301,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1004
+      "member": [
+        {
+          "id": 235,
+          "charaId": 1001
+        },
+        {
+          "id": 236,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 2302,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1035
+      "member": [
+        {
+          "id": 237,
+          "charaId": 1004
+        },
+        {
+          "id": 238,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 2303,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1013
+      "member": [
+        {
+          "id": 239,
+          "charaId": 1013
+        },
+        {
+          "id": 240,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 2401,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1691,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 2402,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1692,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2403,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1045
+      "member": [
+        {
+          "id": 1693,
+          "charaId": 1006
+        },
+        {
+          "id": 1694,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 2404,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1013,
-        1027,
-        1030,
-        1041,
-        1060
+      "member": [
+        {
+          "id": 1695,
+          "charaId": 1003
+        },
+        {
+          "id": 1696,
+          "charaId": 1013
+        },
+        {
+          "id": 1697,
+          "charaId": 1027
+        },
+        {
+          "id": 1698,
+          "charaId": 1030
+        },
+        {
+          "id": 1699,
+          "charaId": 1041
+        },
+        {
+          "id": 1700,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 2405,
       "relationPoint": 1,
-      "memberCharaId": [
-        1024,
-        1035
+      "member": [
+        {
+          "id": 1701,
+          "charaId": 1024
+        },
+        {
+          "id": 1702,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 2406,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1002,
-        1010,
-        1011,
-        1014,
-        1018,
-        1056,
-        1061
+      "member": [
+        {
+          "id": 1703,
+          "charaId": 1001
+        },
+        {
+          "id": 1704,
+          "charaId": 1002
+        },
+        {
+          "id": 1705,
+          "charaId": 1010
+        },
+        {
+          "id": 1706,
+          "charaId": 1011
+        },
+        {
+          "id": 1707,
+          "charaId": 1014
+        },
+        {
+          "id": 1708,
+          "charaId": 1018
+        },
+        {
+          "id": 1709,
+          "charaId": 1056
+        },
+        {
+          "id": 1710,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 2407,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1052
+      "member": [
+        {
+          "id": 1711,
+          "charaId": 1032
+        },
+        {
+          "id": 1712,
+          "charaId": 1052
+        }
       ]
     },
     {
@@ -1017,24 +1620,39 @@
     {
       "relationType": 2409,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1009
+      "member": [
+        {
+          "id": 1713,
+          "charaId": 1008
+        },
+        {
+          "id": 1714,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 2501,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019
+      "member": [
+        {
+          "id": 750,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 2502,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038,
-        1061
+      "member": [
+        {
+          "id": 727,
+          "charaId": 1038
+        },
+        {
+          "id": 728,
+          "charaId": 1061
+        }
       ]
     },
     {
@@ -1044,173 +1662,401 @@
     {
       "relationType": 2504,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 721,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 2505,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1007,
-        1015,
-        1016,
-        1017,
-        1020,
-        1026,
-        1032,
-        1050
+      "member": [
+        {
+          "id": 710,
+          "charaId": 1003
+        },
+        {
+          "id": 711,
+          "charaId": 1007
+        },
+        {
+          "id": 712,
+          "charaId": 1015
+        },
+        {
+          "id": 713,
+          "charaId": 1016
+        },
+        {
+          "id": 714,
+          "charaId": 1020
+        },
+        {
+          "id": 715,
+          "charaId": 1026
+        },
+        {
+          "id": 716,
+          "charaId": 1032
+        },
+        {
+          "id": 718,
+          "charaId": 1050
+        },
+        {
+          "id": 719,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2506,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1007,
-        1013,
-        1015,
-        1017,
-        1023,
-        1024,
-        1030,
-        1045
+      "member": [
+        {
+          "id": 674,
+          "charaId": 1001
+        },
+        {
+          "id": 675,
+          "charaId": 1007
+        },
+        {
+          "id": 676,
+          "charaId": 1013
+        },
+        {
+          "id": 677,
+          "charaId": 1015
+        },
+        {
+          "id": 679,
+          "charaId": 1023
+        },
+        {
+          "id": 680,
+          "charaId": 1024
+        },
+        {
+          "id": 682,
+          "charaId": 1030
+        },
+        {
+          "id": 684,
+          "charaId": 1045
+        },
+        {
+          "id": 685,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2507,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014
+      "member": [
+        {
+          "id": 771,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 2508,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008
+      "member": [
+        {
+          "id": 770,
+          "charaId": 1008
+        }
       ]
     },
     {
       "relationType": 2509,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 645,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 2510,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1003,
-        1008,
-        1016,
-        1017,
-        1026,
-        1035,
-        1037
+      "member": [
+        {
+          "id": 662,
+          "charaId": 1001
+        },
+        {
+          "id": 663,
+          "charaId": 1003
+        },
+        {
+          "id": 664,
+          "charaId": 1008
+        },
+        {
+          "id": 665,
+          "charaId": 1016
+        },
+        {
+          "id": 666,
+          "charaId": 1026
+        },
+        {
+          "id": 669,
+          "charaId": 1035
+        },
+        {
+          "id": 670,
+          "charaId": 1037
+        },
+        {
+          "id": 671,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2511,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1008,
-        1010,
-        1019
+      "member": [
+        {
+          "id": 742,
+          "charaId": 1006
+        },
+        {
+          "id": 743,
+          "charaId": 1008
+        },
+        {
+          "id": 744,
+          "charaId": 1010
+        },
+        {
+          "id": 745,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 2512,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1007,
-        1011,
-        1013,
-        1015,
-        1023,
-        1024,
-        1027,
-        1058
+      "member": [
+        {
+          "id": 648,
+          "charaId": 1002
+        },
+        {
+          "id": 649,
+          "charaId": 1007
+        },
+        {
+          "id": 650,
+          "charaId": 1011
+        },
+        {
+          "id": 651,
+          "charaId": 1013
+        },
+        {
+          "id": 652,
+          "charaId": 1015
+        },
+        {
+          "id": 654,
+          "charaId": 1023
+        },
+        {
+          "id": 655,
+          "charaId": 1024
+        },
+        {
+          "id": 656,
+          "charaId": 1027
+        },
+        {
+          "id": 661,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 2513,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1028,
-        1038,
-        1041
+      "member": [
+        {
+          "id": 752,
+          "charaId": 1010
+        },
+        {
+          "id": 753,
+          "charaId": 1028
+        },
+        {
+          "id": 754,
+          "charaId": 1038
+        },
+        {
+          "id": 755,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 2514,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 705,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 2515,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1013,
-        1016,
-        1017,
-        1020,
-        1023,
-        1024,
-        1030,
-        1045,
-        1056
+      "member": [
+        {
+          "id": 729,
+          "charaId": 1007
+        },
+        {
+          "id": 730,
+          "charaId": 1013
+        },
+        {
+          "id": 731,
+          "charaId": 1016
+        },
+        {
+          "id": 732,
+          "charaId": 1020
+        },
+        {
+          "id": 733,
+          "charaId": 1023
+        },
+        {
+          "id": 734,
+          "charaId": 1024
+        },
+        {
+          "id": 736,
+          "charaId": 1030
+        },
+        {
+          "id": 738,
+          "charaId": 1045
+        },
+        {
+          "id": 739,
+          "charaId": 1056
+        },
+        {
+          "id": 740,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2516,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1008,
-        1015,
-        1018,
-        1019,
-        1037,
-        1045
+      "member": [
+        {
+          "id": 686,
+          "charaId": 1001
+        },
+        {
+          "id": 687,
+          "charaId": 1008
+        },
+        {
+          "id": 688,
+          "charaId": 1015
+        },
+        {
+          "id": 689,
+          "charaId": 1018
+        },
+        {
+          "id": 690,
+          "charaId": 1019
+        },
+        {
+          "id": 692,
+          "charaId": 1037
+        },
+        {
+          "id": 693,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 2517,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1012
+      "member": [
+        {
+          "id": 765,
+          "charaId": 1009
+        },
+        {
+          "id": 766,
+          "charaId": 1012
+        }
       ]
     },
     {
       "relationType": 2518,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1010,
-        1019
+      "member": [
+        {
+          "id": 747,
+          "charaId": 1006
+        },
+        {
+          "id": 748,
+          "charaId": 1010
+        },
+        {
+          "id": 749,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 2519,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1003,
-        1008,
-        1014,
-        1015,
-        1017
+      "member": [
+        {
+          "id": 758,
+          "charaId": 1001
+        },
+        {
+          "id": 759,
+          "charaId": 1003
+        },
+        {
+          "id": 760,
+          "charaId": 1008
+        },
+        {
+          "id": 761,
+          "charaId": 1014
+        },
+        {
+          "id": 762,
+          "charaId": 1015
+        },
+        {
+          "id": 764,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -1220,35 +2066,83 @@
     {
       "relationType": 2521,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1012
+      "member": [
+        {
+          "id": 723,
+          "charaId": 1008
+        },
+        {
+          "id": 724,
+          "charaId": 1012
+        }
       ]
     },
     {
       "relationType": 2522,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1005,
-        1011,
-        1016,
-        1026
+      "member": [
+        {
+          "id": 698,
+          "charaId": 1005
+        },
+        {
+          "id": 699,
+          "charaId": 1011
+        },
+        {
+          "id": 700,
+          "charaId": 1016
+        },
+        {
+          "id": 701,
+          "charaId": 1026
+        },
+        {
+          "id": 703,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 2523,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1006,
-        1007,
-        1009,
-        1011,
-        1015,
-        1016,
-        1017,
-        1024
+      "member": [
+        {
+          "id": 633,
+          "charaId": 1003
+        },
+        {
+          "id": 634,
+          "charaId": 1006
+        },
+        {
+          "id": 635,
+          "charaId": 1007
+        },
+        {
+          "id": 636,
+          "charaId": 1009
+        },
+        {
+          "id": 637,
+          "charaId": 1011
+        },
+        {
+          "id": 638,
+          "charaId": 1015
+        },
+        {
+          "id": 639,
+          "charaId": 1016
+        },
+        {
+          "id": 640,
+          "charaId": 1024
+        },
+        {
+          "id": 644,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -1258,8 +2152,11 @@
     {
       "relationType": 2525,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 697,
+          "charaId": 1046
+        }
       ]
     },
     {
@@ -1277,281 +2174,617 @@
     {
       "relationType": 2529,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 773,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2530,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 673,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2531,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 704,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2601,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1002,
-        1003,
-        1004,
-        1005,
-        1006,
-        1007,
-        1010,
-        1011,
-        1013,
-        1014,
-        1015,
-        1016,
-        1017,
-        1019,
-        1020,
-        1023,
-        1024,
-        1026,
-        1027,
-        1028,
-        1030,
-        1032,
-        1035,
-        1037,
-        1040,
-        1041,
-        1045,
-        1046,
-        1050,
-        1056,
-        1058,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 241,
+          "charaId": 1001
+        },
+        {
+          "id": 242,
+          "charaId": 1002
+        },
+        {
+          "id": 243,
+          "charaId": 1003
+        },
+        {
+          "id": 244,
+          "charaId": 1004
+        },
+        {
+          "id": 245,
+          "charaId": 1005
+        },
+        {
+          "id": 246,
+          "charaId": 1006
+        },
+        {
+          "id": 247,
+          "charaId": 1007
+        },
+        {
+          "id": 248,
+          "charaId": 1010
+        },
+        {
+          "id": 249,
+          "charaId": 1011
+        },
+        {
+          "id": 250,
+          "charaId": 1013
+        },
+        {
+          "id": 251,
+          "charaId": 1014
+        },
+        {
+          "id": 252,
+          "charaId": 1015
+        },
+        {
+          "id": 253,
+          "charaId": 1016
+        },
+        {
+          "id": 254,
+          "charaId": 1017
+        },
+        {
+          "id": 255,
+          "charaId": 1019
+        },
+        {
+          "id": 256,
+          "charaId": 1020
+        },
+        {
+          "id": 258,
+          "charaId": 1023
+        },
+        {
+          "id": 259,
+          "charaId": 1024
+        },
+        {
+          "id": 261,
+          "charaId": 1026
+        },
+        {
+          "id": 262,
+          "charaId": 1027
+        },
+        {
+          "id": 263,
+          "charaId": 1028
+        },
+        {
+          "id": 264,
+          "charaId": 1030
+        },
+        {
+          "id": 266,
+          "charaId": 1032
+        },
+        {
+          "id": 269,
+          "charaId": 1035
+        },
+        {
+          "id": 271,
+          "charaId": 1037
+        },
+        {
+          "id": 272,
+          "charaId": 1040
+        },
+        {
+          "id": 273,
+          "charaId": 1041
+        },
+        {
+          "id": 275,
+          "charaId": 1045
+        },
+        {
+          "id": 276,
+          "charaId": 1046
+        },
+        {
+          "id": 280,
+          "charaId": 1050
+        },
+        {
+          "id": 284,
+          "charaId": 1056
+        },
+        {
+          "id": 286,
+          "charaId": 1058
+        },
+        {
+          "id": 287,
+          "charaId": 1060
+        },
+        {
+          "id": 288,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 2602,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1009,
-        1012,
-        1018,
-        1038,
-        1052
+      "member": [
+        {
+          "id": 289,
+          "charaId": 1008
+        },
+        {
+          "id": 290,
+          "charaId": 1009
+        },
+        {
+          "id": 291,
+          "charaId": 1012
+        },
+        {
+          "id": 292,
+          "charaId": 1018
+        },
+        {
+          "id": 295,
+          "charaId": 1038
+        },
+        {
+          "id": 300,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 2603,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1002,
-        1006,
-        1007,
-        1013,
-        1024,
-        1027,
-        1035,
-        1041,
-        1045,
-        1052,
-        1056,
-        1060
+      "member": [
+        {
+          "id": 1715,
+          "charaId": 1001
+        },
+        {
+          "id": 1716,
+          "charaId": 1002
+        },
+        {
+          "id": 1717,
+          "charaId": 1006
+        },
+        {
+          "id": 1718,
+          "charaId": 1007
+        },
+        {
+          "id": 1719,
+          "charaId": 1013
+        },
+        {
+          "id": 1720,
+          "charaId": 1024
+        },
+        {
+          "id": 1721,
+          "charaId": 1027
+        },
+        {
+          "id": 1722,
+          "charaId": 1035
+        },
+        {
+          "id": 1723,
+          "charaId": 1041
+        },
+        {
+          "id": 1724,
+          "charaId": 1045
+        },
+        {
+          "id": 1725,
+          "charaId": 1052
+        },
+        {
+          "id": 1726,
+          "charaId": 1056
+        },
+        {
+          "id": 1727,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 2604,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1004,
-        1008,
-        1009,
-        1010,
-        1011,
-        1014,
-        1017,
-        1018,
-        1030,
-        1032,
-        1061
+      "member": [
+        {
+          "id": 1728,
+          "charaId": 1003
+        },
+        {
+          "id": 1729,
+          "charaId": 1004
+        },
+        {
+          "id": 1730,
+          "charaId": 1008
+        },
+        {
+          "id": 1731,
+          "charaId": 1009
+        },
+        {
+          "id": 1732,
+          "charaId": 1010
+        },
+        {
+          "id": 1733,
+          "charaId": 1011
+        },
+        {
+          "id": 1734,
+          "charaId": 1014
+        },
+        {
+          "id": 1735,
+          "charaId": 1017
+        },
+        {
+          "id": 1736,
+          "charaId": 1018
+        },
+        {
+          "id": 1737,
+          "charaId": 1030
+        },
+        {
+          "id": 1738,
+          "charaId": 1032
+        },
+        {
+          "id": 1739,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 2701,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1037
+      "member": [
+        {
+          "id": 352,
+          "charaId": 1006
+        },
+        {
+          "id": 353,
+          "charaId": 1037
+        }
       ]
     },
     {
       "relationType": 2702,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1017
+      "member": [
+        {
+          "id": 354,
+          "charaId": 1015
+        },
+        {
+          "id": 355,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 2703,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023
+      "member": [
+        {
+          "id": 356,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 2704,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 359,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 2705,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1046
+      "member": [
+        {
+          "id": 360,
+          "charaId": 1008
+        },
+        {
+          "id": 361,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2706,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1060
+      "member": [
+        {
+          "id": 362,
+          "charaId": 1007
+        },
+        {
+          "id": 363,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 2801,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 366,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 2802,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1045
+      "member": [
+        {
+          "id": 367,
+          "charaId": 1006
+        },
+        {
+          "id": 368,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 2803,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1027
+      "member": [
+        {
+          "id": 370,
+          "charaId": 1013
+        },
+        {
+          "id": 371,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 2804,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1060
+      "member": [
+        {
+          "id": 373,
+          "charaId": 1003
+        },
+        {
+          "id": 374,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 2805,
       "relationPoint": 1,
-      "memberCharaId": [
-        1026,
-        1030,
-        1041
+      "member": [
+        {
+          "id": 375,
+          "charaId": 1026
+        },
+        {
+          "id": 376,
+          "charaId": 1030
+        },
+        {
+          "id": 377,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 2806,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1035,
-        1050
+      "member": [
+        {
+          "id": 379,
+          "charaId": 1023
+        },
+        {
+          "id": 381,
+          "charaId": 1035
+        },
+        {
+          "id": 382,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 2807,
       "relationPoint": 1,
-      "memberCharaId": [
-        1012,
-        1016
+      "member": [
+        {
+          "id": 383,
+          "charaId": 1012
+        },
+        {
+          "id": 384,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 2808,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1024,
-        1028
+      "member": [
+        {
+          "id": 386,
+          "charaId": 1005
+        },
+        {
+          "id": 387,
+          "charaId": 1024
+        },
+        {
+          "id": 388,
+          "charaId": 1028
+        }
       ]
     },
     {
       "relationType": 2809,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 390,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 2810,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1010,
-        1056
+      "member": [
+        {
+          "id": 392,
+          "charaId": 1002
+        },
+        {
+          "id": 393,
+          "charaId": 1010
+        },
+        {
+          "id": 395,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 2811,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1011,
-        1014,
-        1020,
-        1061
+      "member": [
+        {
+          "id": 397,
+          "charaId": 1001
+        },
+        {
+          "id": 398,
+          "charaId": 1011
+        },
+        {
+          "id": 399,
+          "charaId": 1014
+        },
+        {
+          "id": 400,
+          "charaId": 1020
+        },
+        {
+          "id": 401,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 2812,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1052,
-        1058
+      "member": [
+        {
+          "id": 402,
+          "charaId": 1015
+        },
+        {
+          "id": 404,
+          "charaId": 1052
+        },
+        {
+          "id": 405,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 2813,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019
+      "member": [
+        {
+          "id": 406,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 2814,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 409,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 2815,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1009
+      "member": [
+        {
+          "id": 410,
+          "charaId": 1008
+        },
+        {
+          "id": 411,
+          "charaId": 1009
+        }
       ]
     },
     {
@@ -1561,289 +2794,847 @@
     {
       "relationType": 2817,
       "relationPoint": 1,
-      "memberCharaId": [
-        1037,
-        1038
+      "member": [
+        {
+          "id": 414,
+          "charaId": 1037
+        },
+        {
+          "id": 415,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 2901,
       "relationPoint": 7,
-      "memberCharaId": [
-        1002,
-        1004,
-        1020,
-        1024,
-        1026,
-        1046
+      "member": [
+        {
+          "id": 416,
+          "charaId": 1002
+        },
+        {
+          "id": 417,
+          "charaId": 1004
+        },
+        {
+          "id": 418,
+          "charaId": 1020
+        },
+        {
+          "id": 419,
+          "charaId": 1024
+        },
+        {
+          "id": 420,
+          "charaId": 1026
+        },
+        {
+          "id": 422,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 2902,
       "relationPoint": 7,
-      "memberCharaId": [
-        1003,
-        1005,
-        1009,
-        1010,
-        1013,
-        1014,
-        1015,
-        1017,
-        1018,
-        1019,
-        1023,
-        1028,
-        1030,
-        1038,
-        1040,
-        1041,
-        1045,
-        1058
+      "member": [
+        {
+          "id": 423,
+          "charaId": 1003
+        },
+        {
+          "id": 424,
+          "charaId": 1005
+        },
+        {
+          "id": 425,
+          "charaId": 1009
+        },
+        {
+          "id": 426,
+          "charaId": 1010
+        },
+        {
+          "id": 427,
+          "charaId": 1013
+        },
+        {
+          "id": 428,
+          "charaId": 1014
+        },
+        {
+          "id": 429,
+          "charaId": 1015
+        },
+        {
+          "id": 430,
+          "charaId": 1017
+        },
+        {
+          "id": 431,
+          "charaId": 1018
+        },
+        {
+          "id": 432,
+          "charaId": 1019
+        },
+        {
+          "id": 434,
+          "charaId": 1023
+        },
+        {
+          "id": 435,
+          "charaId": 1028
+        },
+        {
+          "id": 437,
+          "charaId": 1030
+        },
+        {
+          "id": 438,
+          "charaId": 1038
+        },
+        {
+          "id": 439,
+          "charaId": 1040
+        },
+        {
+          "id": 440,
+          "charaId": 1041
+        },
+        {
+          "id": 442,
+          "charaId": 1045
+        },
+        {
+          "id": 447,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 2903,
       "relationPoint": 7,
-      "memberCharaId": [
-        1001,
-        1006,
-        1008,
-        1011,
-        1016,
-        1027,
-        1032,
-        1035,
-        1037,
-        1056,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 448,
+          "charaId": 1001
+        },
+        {
+          "id": 449,
+          "charaId": 1006
+        },
+        {
+          "id": 450,
+          "charaId": 1008
+        },
+        {
+          "id": 451,
+          "charaId": 1011
+        },
+        {
+          "id": 452,
+          "charaId": 1016
+        },
+        {
+          "id": 454,
+          "charaId": 1027
+        },
+        {
+          "id": 455,
+          "charaId": 1032
+        },
+        {
+          "id": 457,
+          "charaId": 1035
+        },
+        {
+          "id": 458,
+          "charaId": 1037
+        },
+        {
+          "id": 464,
+          "charaId": 1056
+        },
+        {
+          "id": 466,
+          "charaId": 1060
+        },
+        {
+          "id": 467,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 2904,
       "relationPoint": 7,
-      "memberCharaId": [
-        1007,
-        1012,
-        1050,
-        1052
+      "member": [
+        {
+          "id": 468,
+          "charaId": 1007
+        },
+        {
+          "id": 469,
+          "charaId": 1012
+        },
+        {
+          "id": 474,
+          "charaId": 1050
+        },
+        {
+          "id": 475,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 3001,
       "relationPoint": 7,
-      "memberCharaId": [
-        1004,
-        1010,
-        1026,
-        1028,
-        1038,
-        1041,
-        1052,
-        1061
+      "member": [
+        {
+          "id": 477,
+          "charaId": 1004
+        },
+        {
+          "id": 478,
+          "charaId": 1010
+        },
+        {
+          "id": 479,
+          "charaId": 1041
+        },
+        {
+          "id": 480,
+          "charaId": 1052
+        },
+        {
+          "id": 481,
+          "charaId": 1061
+        },
+        {
+          "id": 482,
+          "charaId": 1026
+        },
+        {
+          "id": 483,
+          "charaId": 1028
+        },
+        {
+          "id": 484,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 3002,
       "relationPoint": 7,
-      "memberCharaId": [
-        1004,
-        1005,
-        1006,
-        1008,
-        1009,
-        1010,
-        1011,
-        1014,
-        1019,
-        1026,
-        1040,
-        1046
+      "member": [
+        {
+          "id": 489,
+          "charaId": 1004
+        },
+        {
+          "id": 490,
+          "charaId": 1005
+        },
+        {
+          "id": 491,
+          "charaId": 1006
+        },
+        {
+          "id": 492,
+          "charaId": 1008
+        },
+        {
+          "id": 493,
+          "charaId": 1009
+        },
+        {
+          "id": 494,
+          "charaId": 1010
+        },
+        {
+          "id": 495,
+          "charaId": 1011
+        },
+        {
+          "id": 496,
+          "charaId": 1014
+        },
+        {
+          "id": 497,
+          "charaId": 1040
+        },
+        {
+          "id": 498,
+          "charaId": 1019
+        },
+        {
+          "id": 499,
+          "charaId": 1026
+        },
+        {
+          "id": 505,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 3003,
       "relationPoint": 7,
-      "memberCharaId": [
-        1001,
-        1002,
-        1003,
-        1006,
-        1007,
-        1008,
-        1009,
-        1011,
-        1012,
-        1013,
-        1014,
-        1015,
-        1016,
-        1017,
-        1018,
-        1019,
-        1020,
-        1023,
-        1024,
-        1026,
-        1027,
-        1030,
-        1032,
-        1035,
-        1037,
-        1045,
-        1046,
-        1050,
-        1056,
-        1058,
-        1060
+      "member": [
+        {
+          "id": 509,
+          "charaId": 1001
+        },
+        {
+          "id": 510,
+          "charaId": 1002
+        },
+        {
+          "id": 511,
+          "charaId": 1003
+        },
+        {
+          "id": 512,
+          "charaId": 1006
+        },
+        {
+          "id": 513,
+          "charaId": 1007
+        },
+        {
+          "id": 514,
+          "charaId": 1008
+        },
+        {
+          "id": 515,
+          "charaId": 1009
+        },
+        {
+          "id": 516,
+          "charaId": 1011
+        },
+        {
+          "id": 517,
+          "charaId": 1012
+        },
+        {
+          "id": 518,
+          "charaId": 1013
+        },
+        {
+          "id": 519,
+          "charaId": 1014
+        },
+        {
+          "id": 520,
+          "charaId": 1015
+        },
+        {
+          "id": 521,
+          "charaId": 1017
+        },
+        {
+          "id": 522,
+          "charaId": 1018
+        },
+        {
+          "id": 523,
+          "charaId": 1020
+        },
+        {
+          "id": 524,
+          "charaId": 1024
+        },
+        {
+          "id": 525,
+          "charaId": 1027
+        },
+        {
+          "id": 526,
+          "charaId": 1030
+        },
+        {
+          "id": 527,
+          "charaId": 1032
+        },
+        {
+          "id": 528,
+          "charaId": 1035
+        },
+        {
+          "id": 529,
+          "charaId": 1045
+        },
+        {
+          "id": 530,
+          "charaId": 1056
+        },
+        {
+          "id": 531,
+          "charaId": 1060
+        },
+        {
+          "id": 532,
+          "charaId": 1016
+        },
+        {
+          "id": 533,
+          "charaId": 1019
+        },
+        {
+          "id": 536,
+          "charaId": 1023
+        },
+        {
+          "id": 537,
+          "charaId": 1026
+        },
+        {
+          "id": 543,
+          "charaId": 1037
+        },
+        {
+          "id": 546,
+          "charaId": 1046
+        },
+        {
+          "id": 550,
+          "charaId": 1050
+        },
+        {
+          "id": 553,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 3004,
       "relationPoint": 7,
-      "memberCharaId": [
-        1001,
-        1007,
-        1013,
-        1015,
-        1016,
-        1017,
-        1020,
-        1023,
-        1024,
-        1030,
-        1045,
-        1060
+      "member": [
+        {
+          "id": 555,
+          "charaId": 1001
+        },
+        {
+          "id": 556,
+          "charaId": 1007
+        },
+        {
+          "id": 557,
+          "charaId": 1013
+        },
+        {
+          "id": 558,
+          "charaId": 1015
+        },
+        {
+          "id": 559,
+          "charaId": 1017
+        },
+        {
+          "id": 560,
+          "charaId": 1020
+        },
+        {
+          "id": 561,
+          "charaId": 1024
+        },
+        {
+          "id": 562,
+          "charaId": 1030
+        },
+        {
+          "id": 563,
+          "charaId": 1045
+        },
+        {
+          "id": 564,
+          "charaId": 1060
+        },
+        {
+          "id": 565,
+          "charaId": 1016
+        },
+        {
+          "id": 567,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 3101,
       "relationPoint": 7,
-      "memberCharaId": [
-        1001,
-        1002,
-        1003,
-        1004,
-        1005,
-        1006,
-        1007,
-        1008,
-        1009,
-        1010,
-        1011,
-        1012,
-        1013,
-        1014,
-        1015,
-        1016,
-        1017,
-        1018,
-        1019,
-        1020,
-        1023,
-        1024,
-        1026,
-        1027,
-        1028,
-        1030,
-        1032,
-        1035,
-        1037,
-        1038,
-        1040,
-        1041,
-        1045,
-        1050,
-        1056,
-        1058,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 570,
+          "charaId": 1001
+        },
+        {
+          "id": 571,
+          "charaId": 1002
+        },
+        {
+          "id": 572,
+          "charaId": 1003
+        },
+        {
+          "id": 573,
+          "charaId": 1004
+        },
+        {
+          "id": 574,
+          "charaId": 1005
+        },
+        {
+          "id": 575,
+          "charaId": 1006
+        },
+        {
+          "id": 576,
+          "charaId": 1007
+        },
+        {
+          "id": 577,
+          "charaId": 1008
+        },
+        {
+          "id": 578,
+          "charaId": 1009
+        },
+        {
+          "id": 579,
+          "charaId": 1010
+        },
+        {
+          "id": 580,
+          "charaId": 1011
+        },
+        {
+          "id": 581,
+          "charaId": 1012
+        },
+        {
+          "id": 582,
+          "charaId": 1013
+        },
+        {
+          "id": 583,
+          "charaId": 1014
+        },
+        {
+          "id": 584,
+          "charaId": 1015
+        },
+        {
+          "id": 585,
+          "charaId": 1017
+        },
+        {
+          "id": 586,
+          "charaId": 1018
+        },
+        {
+          "id": 587,
+          "charaId": 1020
+        },
+        {
+          "id": 588,
+          "charaId": 1024
+        },
+        {
+          "id": 589,
+          "charaId": 1027
+        },
+        {
+          "id": 590,
+          "charaId": 1030
+        },
+        {
+          "id": 591,
+          "charaId": 1032
+        },
+        {
+          "id": 592,
+          "charaId": 1035
+        },
+        {
+          "id": 593,
+          "charaId": 1040
+        },
+        {
+          "id": 594,
+          "charaId": 1041
+        },
+        {
+          "id": 595,
+          "charaId": 1045
+        },
+        {
+          "id": 596,
+          "charaId": 1056
+        },
+        {
+          "id": 597,
+          "charaId": 1060
+        },
+        {
+          "id": 598,
+          "charaId": 1061
+        },
+        {
+          "id": 599,
+          "charaId": 1016
+        },
+        {
+          "id": 600,
+          "charaId": 1019
+        },
+        {
+          "id": 603,
+          "charaId": 1023
+        },
+        {
+          "id": 605,
+          "charaId": 1026
+        },
+        {
+          "id": 606,
+          "charaId": 1028
+        },
+        {
+          "id": 612,
+          "charaId": 1037
+        },
+        {
+          "id": 613,
+          "charaId": 1038
+        },
+        {
+          "id": 620,
+          "charaId": 1050
+        },
+        {
+          "id": 626,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 3102,
       "relationPoint": 7,
-      "memberCharaId": [
-        1019,
-        1046,
-        1052
+      "member": [
+        {
+          "id": 628,
+          "charaId": 1052
+        },
+        {
+          "id": 629,
+          "charaId": 1019
+        },
+        {
+          "id": 632,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 3201,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028,
-        1038,
-        1058
+      "member": [
+        {
+          "id": 775,
+          "charaId": 1028
+        },
+        {
+          "id": 778,
+          "charaId": 1038
+        },
+        {
+          "id": 789,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 3202,
       "relationPoint": 1,
-      "memberCharaId": [
-        1011,
-        1052
+      "member": [
+        {
+          "id": 791,
+          "charaId": 1011
+        },
+        {
+          "id": 793,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 3203,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1007,
-        1010,
-        1012,
-        1014,
-        1015,
-        1017,
-        1023,
-        1024,
-        1030,
-        1035,
-        1037
+      "member": [
+        {
+          "id": 795,
+          "charaId": 1006
+        },
+        {
+          "id": 796,
+          "charaId": 1007
+        },
+        {
+          "id": 797,
+          "charaId": 1010
+        },
+        {
+          "id": 798,
+          "charaId": 1012
+        },
+        {
+          "id": 799,
+          "charaId": 1014
+        },
+        {
+          "id": 800,
+          "charaId": 1015
+        },
+        {
+          "id": 801,
+          "charaId": 1017
+        },
+        {
+          "id": 802,
+          "charaId": 1023
+        },
+        {
+          "id": 803,
+          "charaId": 1024
+        },
+        {
+          "id": 806,
+          "charaId": 1030
+        },
+        {
+          "id": 807,
+          "charaId": 1035
+        },
+        {
+          "id": 808,
+          "charaId": 1037
+        }
       ]
     },
     {
       "relationType": 3204,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1005,
-        1008,
-        1013,
-        1018,
-        1020,
-        1026,
-        1027,
-        1032,
-        1040,
-        1041,
-        1046,
-        1060,
-        1061
+      "member": [
+        {
+          "id": 809,
+          "charaId": 1003
+        },
+        {
+          "id": 810,
+          "charaId": 1005
+        },
+        {
+          "id": 811,
+          "charaId": 1008
+        },
+        {
+          "id": 812,
+          "charaId": 1013
+        },
+        {
+          "id": 813,
+          "charaId": 1018
+        },
+        {
+          "id": 814,
+          "charaId": 1020
+        },
+        {
+          "id": 815,
+          "charaId": 1026
+        },
+        {
+          "id": 816,
+          "charaId": 1027
+        },
+        {
+          "id": 818,
+          "charaId": 1032
+        },
+        {
+          "id": 819,
+          "charaId": 1040
+        },
+        {
+          "id": 820,
+          "charaId": 1041
+        },
+        {
+          "id": 821,
+          "charaId": 1046
+        },
+        {
+          "id": 823,
+          "charaId": 1060
+        },
+        {
+          "id": 824,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 3205,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1002,
-        1004,
-        1009,
-        1016,
-        1019,
-        1045,
-        1056
+      "member": [
+        {
+          "id": 825,
+          "charaId": 1001
+        },
+        {
+          "id": 826,
+          "charaId": 1002
+        },
+        {
+          "id": 827,
+          "charaId": 1004
+        },
+        {
+          "id": 828,
+          "charaId": 1009
+        },
+        {
+          "id": 829,
+          "charaId": 1016
+        },
+        {
+          "id": 830,
+          "charaId": 1019
+        },
+        {
+          "id": 832,
+          "charaId": 1045
+        },
+        {
+          "id": 833,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 3206,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050
+      "member": [
+        {
+          "id": 834,
+          "charaId": 1050
+        }
       ]
     },
     {
@@ -1857,1474 +3648,2455 @@
     {
       "relationType": 7000,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1014
+      "member": [
+        {
+          "id": 302,
+          "charaId": 1002
+        },
+        {
+          "id": 303,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 7001,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1018
+      "member": [
+        {
+          "id": 304,
+          "charaId": 1002
+        },
+        {
+          "id": 305,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 7002,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1056
+      "member": [
+        {
+          "id": 306,
+          "charaId": 1002
+        },
+        {
+          "id": 307,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 7003,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1011
+      "member": [
+        {
+          "id": 308,
+          "charaId": 1001
+        },
+        {
+          "id": 309,
+          "charaId": 1011
+        }
       ]
     },
     {
       "relationType": 7004,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1014
+      "member": [
+        {
+          "id": 310,
+          "charaId": 1001
+        },
+        {
+          "id": 311,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 7005,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1015
+      "member": [
+        {
+          "id": 312,
+          "charaId": 1001
+        },
+        {
+          "id": 313,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 7006,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1020
+      "member": [
+        {
+          "id": 314,
+          "charaId": 1001
+        },
+        {
+          "id": 315,
+          "charaId": 1020
+        }
       ]
     },
     {
       "relationType": 7007,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1061
+      "member": [
+        {
+          "id": 316,
+          "charaId": 1001
+        },
+        {
+          "id": 317,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 7008,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1013
+      "member": [
+        {
+          "id": 318,
+          "charaId": 1003
+        },
+        {
+          "id": 319,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 7009,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 320,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 7010,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1027
+      "member": [
+        {
+          "id": 322,
+          "charaId": 1006
+        },
+        {
+          "id": 323,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 7011,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1045
+      "member": [
+        {
+          "id": 324,
+          "charaId": 1006
+        },
+        {
+          "id": 325,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 7012,
       "relationPoint": 1,
-      "memberCharaId": [
-        1008,
-        1009
+      "member": [
+        {
+          "id": 326,
+          "charaId": 1008
+        },
+        {
+          "id": 327,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 7013,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1011
+      "member": [
+        {
+          "id": 328,
+          "charaId": 1011
+        },
+        {
+          "id": 329,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 7014,
       "relationPoint": 1,
-      "memberCharaId": [
-        1012
+      "member": [
+        {
+          "id": 330,
+          "charaId": 1012
+        }
       ]
     },
     {
       "relationType": 7015,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1012
+      "member": [
+        {
+          "id": 332,
+          "charaId": 1012
+        },
+        {
+          "id": 333,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 7016,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1013
+      "member": [
+        {
+          "id": 334,
+          "charaId": 1013
+        },
+        {
+          "id": 335,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 7017,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 337,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 7018,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1035
+      "member": [
+        {
+          "id": 338,
+          "charaId": 1023
+        },
+        {
+          "id": 339,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 7019,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1050
+      "member": [
+        {
+          "id": 340,
+          "charaId": 1023
+        },
+        {
+          "id": 341,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 7020,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 342,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 7021,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035,
-        1050
+      "member": [
+        {
+          "id": 344,
+          "charaId": 1035
+        },
+        {
+          "id": 345,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 7022,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1060
+      "member": [
+        {
+          "id": 346,
+          "charaId": 1060
+        },
+        {
+          "id": 347,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 7023,
       "relationPoint": 1,
-      "memberCharaId": [
-        1011,
-        1061
+      "member": [
+        {
+          "id": 348,
+          "charaId": 1061
+        },
+        {
+          "id": 349,
+          "charaId": 1011
+        }
       ]
     },
     {
       "relationType": 7024,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1061
+      "member": [
+        {
+          "id": 350,
+          "charaId": 1061
+        },
+        {
+          "id": 351,
+          "charaId": 1020
+        }
       ]
     },
     {
       "relationType": 8001,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1003
+      "member": [
+        {
+          "id": 835,
+          "charaId": 1001
+        },
+        {
+          "id": 836,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8002,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1004
+      "member": [
+        {
+          "id": 837,
+          "charaId": 1001
+        },
+        {
+          "id": 838,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8003,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1013
+      "member": [
+        {
+          "id": 839,
+          "charaId": 1001
+        },
+        {
+          "id": 840,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8004,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1015
+      "member": [
+        {
+          "id": 841,
+          "charaId": 1001
+        },
+        {
+          "id": 842,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8005,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1017
+      "member": [
+        {
+          "id": 843,
+          "charaId": 1001
+        },
+        {
+          "id": 844,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8006,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001
+      "member": [
+        {
+          "id": 845,
+          "charaId": 1001
+        }
       ]
     },
     {
       "relationType": 8007,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1027
+      "member": [
+        {
+          "id": 847,
+          "charaId": 1001
+        },
+        {
+          "id": 848,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8008,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1038
+      "member": [
+        {
+          "id": 849,
+          "charaId": 1001
+        },
+        {
+          "id": 850,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8009,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1040
+      "member": [
+        {
+          "id": 851,
+          "charaId": 1001
+        },
+        {
+          "id": 852,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8010,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001
+      "member": [
+        {
+          "id": 853,
+          "charaId": 1001
+        }
       ]
     },
     {
       "relationType": 8011,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1045
+      "member": [
+        {
+          "id": 855,
+          "charaId": 1001
+        },
+        {
+          "id": 856,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8012,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001
+      "member": [
+        {
+          "id": 857,
+          "charaId": 1001
+        }
       ]
     },
     {
       "relationType": 8013,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1056
+      "member": [
+        {
+          "id": 859,
+          "charaId": 1001
+        },
+        {
+          "id": 860,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8014,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1058
+      "member": [
+        {
+          "id": 861,
+          "charaId": 1001
+        },
+        {
+          "id": 862,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8015,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001
+      "member": [
+        {
+          "id": 863,
+          "charaId": 1001
+        }
       ]
     },
     {
       "relationType": 8016,
       "relationPoint": 1,
-      "memberCharaId": [
-        1001,
-        1060
+      "member": [
+        {
+          "id": 865,
+          "charaId": 1001
+        },
+        {
+          "id": 866,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8017,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1003
+      "member": [
+        {
+          "id": 867,
+          "charaId": 1002
+        },
+        {
+          "id": 868,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8018,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1004
+      "member": [
+        {
+          "id": 869,
+          "charaId": 1002
+        },
+        {
+          "id": 870,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8019,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1013
+      "member": [
+        {
+          "id": 871,
+          "charaId": 1002
+        },
+        {
+          "id": 872,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8020,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1015
+      "member": [
+        {
+          "id": 873,
+          "charaId": 1002
+        },
+        {
+          "id": 874,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8021,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1017
+      "member": [
+        {
+          "id": 875,
+          "charaId": 1002
+        },
+        {
+          "id": 876,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8022,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002
+      "member": [
+        {
+          "id": 877,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 8023,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1027
+      "member": [
+        {
+          "id": 879,
+          "charaId": 1002
+        },
+        {
+          "id": 880,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8024,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1038
+      "member": [
+        {
+          "id": 881,
+          "charaId": 1002
+        },
+        {
+          "id": 882,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8025,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1040
+      "member": [
+        {
+          "id": 883,
+          "charaId": 1002
+        },
+        {
+          "id": 884,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8026,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002
+      "member": [
+        {
+          "id": 885,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 8027,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1045
+      "member": [
+        {
+          "id": 887,
+          "charaId": 1002
+        },
+        {
+          "id": 888,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8028,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002
+      "member": [
+        {
+          "id": 889,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 8029,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1056
+      "member": [
+        {
+          "id": 891,
+          "charaId": 1002
+        },
+        {
+          "id": 892,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8030,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1058
+      "member": [
+        {
+          "id": 893,
+          "charaId": 1002
+        },
+        {
+          "id": 894,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8031,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002
+      "member": [
+        {
+          "id": 895,
+          "charaId": 1002
+        }
       ]
     },
     {
       "relationType": 8032,
       "relationPoint": 1,
-      "memberCharaId": [
-        1002,
-        1060
+      "member": [
+        {
+          "id": 897,
+          "charaId": 1002
+        },
+        {
+          "id": 898,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8033,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1007
+      "member": [
+        {
+          "id": 899,
+          "charaId": 1003
+        },
+        {
+          "id": 900,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8034,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1009
+      "member": [
+        {
+          "id": 901,
+          "charaId": 1003
+        },
+        {
+          "id": 902,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8035,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1018
+      "member": [
+        {
+          "id": 903,
+          "charaId": 1003
+        },
+        {
+          "id": 904,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8036,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 905,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8037,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1023
+      "member": [
+        {
+          "id": 907,
+          "charaId": 1003
+        },
+        {
+          "id": 908,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8038,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1035
+      "member": [
+        {
+          "id": 909,
+          "charaId": 1003
+        },
+        {
+          "id": 910,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8039,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1046
+      "member": [
+        {
+          "id": 911,
+          "charaId": 1003
+        },
+        {
+          "id": 912,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8040,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 913,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8041,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 915,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8042,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1050
+      "member": [
+        {
+          "id": 917,
+          "charaId": 1003
+        },
+        {
+          "id": 918,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8043,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1007
+      "member": [
+        {
+          "id": 919,
+          "charaId": 1004
+        },
+        {
+          "id": 920,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8044,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1009
+      "member": [
+        {
+          "id": 921,
+          "charaId": 1004
+        },
+        {
+          "id": 922,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8045,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1018
+      "member": [
+        {
+          "id": 923,
+          "charaId": 1004
+        },
+        {
+          "id": 924,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8046,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 925,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8047,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1023
+      "member": [
+        {
+          "id": 927,
+          "charaId": 1004
+        },
+        {
+          "id": 928,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8048,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1035
+      "member": [
+        {
+          "id": 929,
+          "charaId": 1004
+        },
+        {
+          "id": 930,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8049,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1046
+      "member": [
+        {
+          "id": 931,
+          "charaId": 1004
+        },
+        {
+          "id": 932,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8050,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 933,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8051,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 935,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8052,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1005
+      "member": [
+        {
+          "id": 937,
+          "charaId": 1005
+        },
+        {
+          "id": 938,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8053,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1005
+      "member": [
+        {
+          "id": 939,
+          "charaId": 1005
+        },
+        {
+          "id": 940,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8054,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1013
+      "member": [
+        {
+          "id": 941,
+          "charaId": 1005
+        },
+        {
+          "id": 942,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8055,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1015
+      "member": [
+        {
+          "id": 943,
+          "charaId": 1005
+        },
+        {
+          "id": 944,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8056,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1017
+      "member": [
+        {
+          "id": 945,
+          "charaId": 1005
+        },
+        {
+          "id": 946,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8057,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005
+      "member": [
+        {
+          "id": 947,
+          "charaId": 1005
+        }
       ]
     },
     {
       "relationType": 8058,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1027
+      "member": [
+        {
+          "id": 949,
+          "charaId": 1005
+        },
+        {
+          "id": 950,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8059,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1038
+      "member": [
+        {
+          "id": 951,
+          "charaId": 1005
+        },
+        {
+          "id": 952,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8060,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1040
+      "member": [
+        {
+          "id": 953,
+          "charaId": 1005
+        },
+        {
+          "id": 954,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8061,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005
+      "member": [
+        {
+          "id": 955,
+          "charaId": 1005
+        }
       ]
     },
     {
       "relationType": 8062,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1045
+      "member": [
+        {
+          "id": 957,
+          "charaId": 1005
+        },
+        {
+          "id": 958,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8063,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005
+      "member": [
+        {
+          "id": 959,
+          "charaId": 1005
+        }
       ]
     },
     {
       "relationType": 8064,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1056
+      "member": [
+        {
+          "id": 961,
+          "charaId": 1005
+        },
+        {
+          "id": 962,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8065,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1058
+      "member": [
+        {
+          "id": 963,
+          "charaId": 1005
+        },
+        {
+          "id": 964,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8066,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005
+      "member": [
+        {
+          "id": 965,
+          "charaId": 1005
+        }
       ]
     },
     {
       "relationType": 8067,
       "relationPoint": 1,
-      "memberCharaId": [
-        1005,
-        1060
+      "member": [
+        {
+          "id": 967,
+          "charaId": 1005
+        },
+        {
+          "id": 968,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8068,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1006
+      "member": [
+        {
+          "id": 969,
+          "charaId": 1006
+        },
+        {
+          "id": 970,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8069,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 971,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8070,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1045
+      "member": [
+        {
+          "id": 973,
+          "charaId": 1006
+        },
+        {
+          "id": 974,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8071,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 975,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8072,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1018
+      "member": [
+        {
+          "id": 977,
+          "charaId": 1007
+        },
+        {
+          "id": 978,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8073,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007
+      "member": [
+        {
+          "id": 979,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8074,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1023
+      "member": [
+        {
+          "id": 981,
+          "charaId": 1007
+        },
+        {
+          "id": 982,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8075,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1035
+      "member": [
+        {
+          "id": 983,
+          "charaId": 1007
+        },
+        {
+          "id": 984,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8076,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007
+      "member": [
+        {
+          "id": 985,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8077,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1018
+      "member": [
+        {
+          "id": 987,
+          "charaId": 1009
+        },
+        {
+          "id": 988,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8078,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 989,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8079,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1023
+      "member": [
+        {
+          "id": 991,
+          "charaId": 1009
+        },
+        {
+          "id": 992,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8080,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1035
+      "member": [
+        {
+          "id": 993,
+          "charaId": 1009
+        },
+        {
+          "id": 994,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8081,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 995,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8082,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1010
+      "member": [
+        {
+          "id": 997,
+          "charaId": 1010
+        },
+        {
+          "id": 998,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8083,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1010
+      "member": [
+        {
+          "id": 999,
+          "charaId": 1010
+        },
+        {
+          "id": 1000,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8084,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1013
+      "member": [
+        {
+          "id": 1001,
+          "charaId": 1010
+        },
+        {
+          "id": 1002,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8085,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1015
+      "member": [
+        {
+          "id": 1003,
+          "charaId": 1010
+        },
+        {
+          "id": 1004,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8086,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1017
+      "member": [
+        {
+          "id": 1005,
+          "charaId": 1010
+        },
+        {
+          "id": 1006,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8087,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010
+      "member": [
+        {
+          "id": 1007,
+          "charaId": 1010
+        }
       ]
     },
     {
       "relationType": 8088,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1027
+      "member": [
+        {
+          "id": 1009,
+          "charaId": 1010
+        },
+        {
+          "id": 1010,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8089,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1038
+      "member": [
+        {
+          "id": 1011,
+          "charaId": 1010
+        },
+        {
+          "id": 1012,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8090,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1040
+      "member": [
+        {
+          "id": 1013,
+          "charaId": 1010
+        },
+        {
+          "id": 1014,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8091,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010
+      "member": [
+        {
+          "id": 1015,
+          "charaId": 1010
+        }
       ]
     },
     {
       "relationType": 8092,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1045
+      "member": [
+        {
+          "id": 1017,
+          "charaId": 1010
+        },
+        {
+          "id": 1018,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8093,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010
+      "member": [
+        {
+          "id": 1019,
+          "charaId": 1010
+        }
       ]
     },
     {
       "relationType": 8094,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1056
+      "member": [
+        {
+          "id": 1021,
+          "charaId": 1010
+        },
+        {
+          "id": 1022,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8095,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1058
+      "member": [
+        {
+          "id": 1023,
+          "charaId": 1010
+        },
+        {
+          "id": 1024,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8096,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010
+      "member": [
+        {
+          "id": 1025,
+          "charaId": 1010
+        }
       ]
     },
     {
       "relationType": 8097,
       "relationPoint": 1,
-      "memberCharaId": [
-        1010,
-        1060
+      "member": [
+        {
+          "id": 1027,
+          "charaId": 1010
+        },
+        {
+          "id": 1028,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8098,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1013
+      "member": [
+        {
+          "id": 1029,
+          "charaId": 1013
+        },
+        {
+          "id": 1030,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8099,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1013
+      "member": [
+        {
+          "id": 1031,
+          "charaId": 1013
+        },
+        {
+          "id": 1032,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8100,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1018
+      "member": [
+        {
+          "id": 1033,
+          "charaId": 1013
+        },
+        {
+          "id": 1034,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8101,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1035,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8102,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1023
+      "member": [
+        {
+          "id": 1037,
+          "charaId": 1013
+        },
+        {
+          "id": 1038,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8103,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1035
+      "member": [
+        {
+          "id": 1039,
+          "charaId": 1013
+        },
+        {
+          "id": 1040,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8104,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1046
+      "member": [
+        {
+          "id": 1041,
+          "charaId": 1013
+        },
+        {
+          "id": 1042,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8105,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1043,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8106,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1045,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8107,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1050
+      "member": [
+        {
+          "id": 1047,
+          "charaId": 1013
+        },
+        {
+          "id": 1048,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8108,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1014
+      "member": [
+        {
+          "id": 1049,
+          "charaId": 1014
+        },
+        {
+          "id": 1050,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8109,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1014
+      "member": [
+        {
+          "id": 1051,
+          "charaId": 1014
+        },
+        {
+          "id": 1052,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8110,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1014
+      "member": [
+        {
+          "id": 1053,
+          "charaId": 1014
+        },
+        {
+          "id": 1054,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8111,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014
+      "member": [
+        {
+          "id": 1055,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 8112,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014,
-        1045
+      "member": [
+        {
+          "id": 1057,
+          "charaId": 1014
+        },
+        {
+          "id": 1058,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8113,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014,
-        1046
+      "member": [
+        {
+          "id": 1059,
+          "charaId": 1014
+        },
+        {
+          "id": 1060,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8114,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014
+      "member": [
+        {
+          "id": 1061,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 8115,
       "relationPoint": 1,
-      "memberCharaId": [
-        1014
+      "member": [
+        {
+          "id": 1063,
+          "charaId": 1014
+        }
       ]
     },
     {
       "relationType": 8116,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1015
+      "member": [
+        {
+          "id": 1065,
+          "charaId": 1015
+        },
+        {
+          "id": 1066,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8117,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1050
+      "member": [
+        {
+          "id": 1067,
+          "charaId": 1015
+        },
+        {
+          "id": 1068,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8118,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1016
+      "member": [
+        {
+          "id": 1069,
+          "charaId": 1016
+        },
+        {
+          "id": 1070,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8119,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1016
+      "member": [
+        {
+          "id": 1071,
+          "charaId": 1016
+        },
+        {
+          "id": 1072,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8120,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1016
+      "member": [
+        {
+          "id": 1073,
+          "charaId": 1016
+        },
+        {
+          "id": 1074,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8121,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1016
+      "member": [
+        {
+          "id": 1075,
+          "charaId": 1016
+        },
+        {
+          "id": 1076,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8122,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1017
+      "member": [
+        {
+          "id": 1077,
+          "charaId": 1016
+        },
+        {
+          "id": 1078,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8123,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016
+      "member": [
+        {
+          "id": 1079,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 8124,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1027
+      "member": [
+        {
+          "id": 1081,
+          "charaId": 1016
+        },
+        {
+          "id": 1082,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8125,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1038
+      "member": [
+        {
+          "id": 1083,
+          "charaId": 1016
+        },
+        {
+          "id": 1084,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8126,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1040
+      "member": [
+        {
+          "id": 1085,
+          "charaId": 1016
+        },
+        {
+          "id": 1086,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8127,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016
+      "member": [
+        {
+          "id": 1087,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 8128,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1045
+      "member": [
+        {
+          "id": 1089,
+          "charaId": 1016
+        },
+        {
+          "id": 1090,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8129,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016
+      "member": [
+        {
+          "id": 1091,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 8130,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1056
+      "member": [
+        {
+          "id": 1093,
+          "charaId": 1016
+        },
+        {
+          "id": 1094,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8131,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1058
+      "member": [
+        {
+          "id": 1095,
+          "charaId": 1016
+        },
+        {
+          "id": 1096,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8132,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016
+      "member": [
+        {
+          "id": 1097,
+          "charaId": 1016
+        }
       ]
     },
     {
       "relationType": 8133,
       "relationPoint": 1,
-      "memberCharaId": [
-        1016,
-        1060
+      "member": [
+        {
+          "id": 1099,
+          "charaId": 1016
+        },
+        {
+          "id": 1100,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8134,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1017
+      "member": [
+        {
+          "id": 1101,
+          "charaId": 1017
+        },
+        {
+          "id": 1102,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8135,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1017
+      "member": [
+        {
+          "id": 1103,
+          "charaId": 1017
+        },
+        {
+          "id": 1104,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8136,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1018
+      "member": [
+        {
+          "id": 1105,
+          "charaId": 1017
+        },
+        {
+          "id": 1106,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8137,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1107,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8138,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1023
+      "member": [
+        {
+          "id": 1109,
+          "charaId": 1017
+        },
+        {
+          "id": 1110,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8139,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1035
+      "member": [
+        {
+          "id": 1111,
+          "charaId": 1017
+        },
+        {
+          "id": 1112,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8140,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1046
+      "member": [
+        {
+          "id": 1113,
+          "charaId": 1017
+        },
+        {
+          "id": 1114,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8141,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1115,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8142,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1117,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8143,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1050
+      "member": [
+        {
+          "id": 1119,
+          "charaId": 1017
+        },
+        {
+          "id": 1120,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8144,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1019
+      "member": [
+        {
+          "id": 1121,
+          "charaId": 1019
+        },
+        {
+          "id": 1122,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8145,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1019
+      "member": [
+        {
+          "id": 1123,
+          "charaId": 1019
+        },
+        {
+          "id": 1124,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8146,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1019
+      "member": [
+        {
+          "id": 1125,
+          "charaId": 1019
+        },
+        {
+          "id": 1126,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8147,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019
+      "member": [
+        {
+          "id": 1127,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 8148,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019,
-        1045
+      "member": [
+        {
+          "id": 1129,
+          "charaId": 1019
+        },
+        {
+          "id": 1130,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8149,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019,
-        1046
+      "member": [
+        {
+          "id": 1131,
+          "charaId": 1019
+        },
+        {
+          "id": 1132,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8150,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019
+      "member": [
+        {
+          "id": 1133,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 8151,
       "relationPoint": 1,
-      "memberCharaId": [
-        1019
+      "member": [
+        {
+          "id": 1135,
+          "charaId": 1019
+        }
       ]
     },
     {
       "relationType": 8152,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1020
+      "member": [
+        {
+          "id": 1137,
+          "charaId": 1020
+        },
+        {
+          "id": 1138,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8153,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1020
+      "member": [
+        {
+          "id": 1139,
+          "charaId": 1020
+        },
+        {
+          "id": 1140,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8154,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1027
+      "member": [
+        {
+          "id": 1141,
+          "charaId": 1020
+        },
+        {
+          "id": 1142,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8155,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1038
+      "member": [
+        {
+          "id": 1143,
+          "charaId": 1020
+        },
+        {
+          "id": 1144,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8156,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1040
+      "member": [
+        {
+          "id": 1145,
+          "charaId": 1020
+        },
+        {
+          "id": 1146,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8157,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020
+      "member": [
+        {
+          "id": 1147,
+          "charaId": 1020
+        }
       ]
     },
     {
       "relationType": 8158,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1045
+      "member": [
+        {
+          "id": 1149,
+          "charaId": 1020
+        },
+        {
+          "id": 1150,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8159,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1058
+      "member": [
+        {
+          "id": 1151,
+          "charaId": 1020
+        },
+        {
+          "id": 1152,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8160,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020
+      "member": [
+        {
+          "id": 1153,
+          "charaId": 1020
+        }
       ]
     },
     {
       "relationType": 8161,
       "relationPoint": 1,
-      "memberCharaId": [
-        1020,
-        1060
+      "member": [
+        {
+          "id": 1155,
+          "charaId": 1020
+        },
+        {
+          "id": 1156,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8162,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1158,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8163,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1160,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8164,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1162,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8165,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1164,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8166,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1166,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -3334,22 +6106,31 @@
     {
       "relationType": 8168,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1170,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8169,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1172,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8170,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1174,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -3359,8 +6140,11 @@
     {
       "relationType": 8172,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1178,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -3370,15 +6154,21 @@
     {
       "relationType": 8174,
       "relationPoint": 1,
-      "memberCharaId": [
-        1056
+      "member": [
+        {
+          "id": 1182,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8175,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1184,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -3388,106 +6178,169 @@
     {
       "relationType": 8177,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1188,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8178,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1027
+      "member": [
+        {
+          "id": 1189,
+          "charaId": 1027
+        },
+        {
+          "id": 1190,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8179,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027,
-        1050
+      "member": [
+        {
+          "id": 1191,
+          "charaId": 1027
+        },
+        {
+          "id": 1192,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8180,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1028
+      "member": [
+        {
+          "id": 1193,
+          "charaId": 1028
+        },
+        {
+          "id": 1194,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8181,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1028
+      "member": [
+        {
+          "id": 1195,
+          "charaId": 1028
+        },
+        {
+          "id": 1196,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8182,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1028
+      "member": [
+        {
+          "id": 1197,
+          "charaId": 1028
+        },
+        {
+          "id": 1198,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8183,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028
+      "member": [
+        {
+          "id": 1199,
+          "charaId": 1028
+        }
       ]
     },
     {
       "relationType": 8184,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028,
-        1045
+      "member": [
+        {
+          "id": 1201,
+          "charaId": 1028
+        },
+        {
+          "id": 1202,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8185,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028,
-        1046
+      "member": [
+        {
+          "id": 1203,
+          "charaId": 1028
+        },
+        {
+          "id": 1204,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8186,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028
+      "member": [
+        {
+          "id": 1205,
+          "charaId": 1028
+        }
       ]
     },
     {
       "relationType": 8187,
       "relationPoint": 1,
-      "memberCharaId": [
-        1028
+      "member": [
+        {
+          "id": 1207,
+          "charaId": 1028
+        }
       ]
     },
     {
       "relationType": 8188,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1210,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8189,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1212,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8190,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 1214,
+          "charaId": 1018
+        }
       ]
     },
     {
@@ -3497,36 +6350,51 @@
     {
       "relationType": 8192,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023
+      "member": [
+        {
+          "id": 1218,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8193,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1220,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8194,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035
+      "member": [
+        {
+          "id": 1222,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8195,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1224,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8196,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1226,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -3536,8 +6404,11 @@
     {
       "relationType": 8198,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1230,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -3547,8 +6418,11 @@
     {
       "relationType": 8200,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1234,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -3558,291 +6432,477 @@
     {
       "relationType": 8202,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1238,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8203,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1030
+      "member": [
+        {
+          "id": 1239,
+          "charaId": 1030
+        },
+        {
+          "id": 1240,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8204,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1030
+      "member": [
+        {
+          "id": 1241,
+          "charaId": 1030
+        },
+        {
+          "id": 1242,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8205,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1030
+      "member": [
+        {
+          "id": 1243,
+          "charaId": 1030
+        },
+        {
+          "id": 1244,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8206,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1030
+      "member": [
+        {
+          "id": 1245,
+          "charaId": 1030
+        },
+        {
+          "id": 1246,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8207,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1030
+      "member": [
+        {
+          "id": 1247,
+          "charaId": 1030
+        },
+        {
+          "id": 1248,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8208,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 1249,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 8209,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027,
-        1030
+      "member": [
+        {
+          "id": 1251,
+          "charaId": 1030
+        },
+        {
+          "id": 1252,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8210,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1038
+      "member": [
+        {
+          "id": 1253,
+          "charaId": 1030
+        },
+        {
+          "id": 1254,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8211,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1040
+      "member": [
+        {
+          "id": 1255,
+          "charaId": 1030
+        },
+        {
+          "id": 1256,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8212,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 1257,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 8213,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1045
+      "member": [
+        {
+          "id": 1259,
+          "charaId": 1030
+        },
+        {
+          "id": 1260,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8214,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 1261,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 8215,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1056
+      "member": [
+        {
+          "id": 1263,
+          "charaId": 1030
+        },
+        {
+          "id": 1264,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8216,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1058
+      "member": [
+        {
+          "id": 1265,
+          "charaId": 1030
+        },
+        {
+          "id": 1266,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8217,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030
+      "member": [
+        {
+          "id": 1267,
+          "charaId": 1030
+        }
       ]
     },
     {
       "relationType": 8218,
       "relationPoint": 1,
-      "memberCharaId": [
-        1030,
-        1060
+      "member": [
+        {
+          "id": 1269,
+          "charaId": 1030
+        },
+        {
+          "id": 1270,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8219,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1032
+      "member": [
+        {
+          "id": 1271,
+          "charaId": 1032
+        },
+        {
+          "id": 1272,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8220,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1032
+      "member": [
+        {
+          "id": 1273,
+          "charaId": 1032
+        },
+        {
+          "id": 1274,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8221,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1032
+      "member": [
+        {
+          "id": 1275,
+          "charaId": 1032
+        },
+        {
+          "id": 1276,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8222,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1032
+      "member": [
+        {
+          "id": 1277,
+          "charaId": 1032
+        },
+        {
+          "id": 1278,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8223,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1032
+      "member": [
+        {
+          "id": 1279,
+          "charaId": 1032
+        },
+        {
+          "id": 1280,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8224,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 1281,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 8225,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027,
-        1032
+      "member": [
+        {
+          "id": 1283,
+          "charaId": 1032
+        },
+        {
+          "id": 1284,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8226,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1038
+      "member": [
+        {
+          "id": 1285,
+          "charaId": 1032
+        },
+        {
+          "id": 1286,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8227,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1040
+      "member": [
+        {
+          "id": 1287,
+          "charaId": 1032
+        },
+        {
+          "id": 1288,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8228,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 1289,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 8229,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1045
+      "member": [
+        {
+          "id": 1291,
+          "charaId": 1032
+        },
+        {
+          "id": 1292,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8230,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 1293,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 8231,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1056
+      "member": [
+        {
+          "id": 1295,
+          "charaId": 1032
+        },
+        {
+          "id": 1296,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8232,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1058
+      "member": [
+        {
+          "id": 1297,
+          "charaId": 1032
+        },
+        {
+          "id": 1298,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8233,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032
+      "member": [
+        {
+          "id": 1299,
+          "charaId": 1032
+        }
       ]
     },
     {
       "relationType": 8234,
       "relationPoint": 1,
-      "memberCharaId": [
-        1032,
-        1060
+      "member": [
+        {
+          "id": 1301,
+          "charaId": 1032
+        },
+        {
+          "id": 1302,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8235,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1304,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8236,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1306,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8237,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1308,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8238,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1310,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8239,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1312,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -3852,22 +6912,31 @@
     {
       "relationType": 8241,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1316,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8242,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1318,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8243,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1320,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -3877,8 +6946,11 @@
     {
       "relationType": 8245,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1324,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -3888,15 +6960,21 @@
     {
       "relationType": 8247,
       "relationPoint": 1,
-      "memberCharaId": [
-        1056
+      "member": [
+        {
+          "id": 1328,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8248,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1330,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -3906,43 +6984,61 @@
     {
       "relationType": 8250,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1334,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8251,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1336,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8252,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1338,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8253,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1340,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8254,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1342,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8255,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1344,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -3952,22 +7048,31 @@
     {
       "relationType": 8257,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1348,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8258,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1350,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8259,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1352,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -3977,8 +7082,11 @@
     {
       "relationType": 8261,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1356,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -3988,15 +7096,21 @@
     {
       "relationType": 8263,
       "relationPoint": 1,
-      "memberCharaId": [
-        1056
+      "member": [
+        {
+          "id": 1360,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8264,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1362,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -4006,126 +7120,195 @@
     {
       "relationType": 8266,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1366,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8267,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1037
+      "member": [
+        {
+          "id": 1367,
+          "charaId": 1037
+        },
+        {
+          "id": 1368,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8268,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1037
+      "member": [
+        {
+          "id": 1369,
+          "charaId": 1037
+        },
+        {
+          "id": 1370,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8269,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1037
+      "member": [
+        {
+          "id": 1371,
+          "charaId": 1037
+        },
+        {
+          "id": 1372,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8270,
       "relationPoint": 1,
-      "memberCharaId": [
-        1037
+      "member": [
+        {
+          "id": 1373,
+          "charaId": 1037
+        }
       ]
     },
     {
       "relationType": 8271,
       "relationPoint": 1,
-      "memberCharaId": [
-        1037,
-        1045
+      "member": [
+        {
+          "id": 1375,
+          "charaId": 1037
+        },
+        {
+          "id": 1376,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8272,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1378,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8273,
       "relationPoint": 1,
-      "memberCharaId": [
-        1037
+      "member": [
+        {
+          "id": 1379,
+          "charaId": 1037
+        }
       ]
     },
     {
       "relationType": 8274,
       "relationPoint": 1,
-      "memberCharaId": [
-        1037
+      "member": [
+        {
+          "id": 1381,
+          "charaId": 1037
+        }
       ]
     },
     {
       "relationType": 8275,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1038
+      "member": [
+        {
+          "id": 1383,
+          "charaId": 1038
+        },
+        {
+          "id": 1384,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8276,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038,
-        1050
+      "member": [
+        {
+          "id": 1385,
+          "charaId": 1038
+        },
+        {
+          "id": 1386,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8277,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1388,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8278,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007
+      "member": [
+        {
+          "id": 1390,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8279,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 1392,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8280,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1394,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8281,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1396,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8282,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1398,
+          "charaId": 1046
+        }
       ]
     },
     {
@@ -4135,161 +7318,263 @@
     {
       "relationType": 8284,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050
+      "member": [
+        {
+          "id": 1402,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8285,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1040
+      "member": [
+        {
+          "id": 1403,
+          "charaId": 1040
+        },
+        {
+          "id": 1404,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8286,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040,
-        1050
+      "member": [
+        {
+          "id": 1405,
+          "charaId": 1040
+        },
+        {
+          "id": 1406,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8287,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1041
+      "member": [
+        {
+          "id": 1407,
+          "charaId": 1041
+        },
+        {
+          "id": 1408,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8288,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015,
-        1041
+      "member": [
+        {
+          "id": 1409,
+          "charaId": 1041
+        },
+        {
+          "id": 1410,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8289,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018,
-        1041
+      "member": [
+        {
+          "id": 1411,
+          "charaId": 1041
+        },
+        {
+          "id": 1412,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8290,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041
+      "member": [
+        {
+          "id": 1413,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 8291,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1041
+      "member": [
+        {
+          "id": 1415,
+          "charaId": 1041
+        },
+        {
+          "id": 1416,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8292,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027,
-        1041
+      "member": [
+        {
+          "id": 1417,
+          "charaId": 1041
+        },
+        {
+          "id": 1418,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8293,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035,
-        1041
+      "member": [
+        {
+          "id": 1419,
+          "charaId": 1041
+        },
+        {
+          "id": 1420,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8294,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038,
-        1041
+      "member": [
+        {
+          "id": 1421,
+          "charaId": 1041
+        },
+        {
+          "id": 1422,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8295,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040,
-        1041
+      "member": [
+        {
+          "id": 1423,
+          "charaId": 1041
+        },
+        {
+          "id": 1424,
+          "charaId": 1040
+        }
       ]
     },
     {
       "relationType": 8296,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041
+      "member": [
+        {
+          "id": 1425,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 8297,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041,
-        1045
+      "member": [
+        {
+          "id": 1427,
+          "charaId": 1041
+        },
+        {
+          "id": 1428,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8298,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041
+      "member": [
+        {
+          "id": 1429,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 8299,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041,
-        1058
+      "member": [
+        {
+          "id": 1431,
+          "charaId": 1041
+        },
+        {
+          "id": 1432,
+          "charaId": 1058
+        }
       ]
     },
     {
       "relationType": 8300,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041
+      "member": [
+        {
+          "id": 1433,
+          "charaId": 1041
+        }
       ]
     },
     {
       "relationType": 8301,
       "relationPoint": 1,
-      "memberCharaId": [
-        1041,
-        1060
+      "member": [
+        {
+          "id": 1435,
+          "charaId": 1041
+        },
+        {
+          "id": 1436,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8302,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1438,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8303,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007
+      "member": [
+        {
+          "id": 1440,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8304,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 1442,
+          "charaId": 1009
+        }
       ]
     },
     {
@@ -4299,15 +7584,21 @@
     {
       "relationType": 8306,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1446,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8307,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1448,
+          "charaId": 1046
+        }
       ]
     },
     {
@@ -4321,36 +7612,51 @@
     {
       "relationType": 8310,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 1454,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8311,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050
+      "member": [
+        {
+          "id": 1456,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8312,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1458,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8313,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007
+      "member": [
+        {
+          "id": 1460,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8314,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009
+      "member": [
+        {
+          "id": 1462,
+          "charaId": 1009
+        }
       ]
     },
     {
@@ -4360,15 +7666,21 @@
     {
       "relationType": 8316,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1466,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8317,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1468,
+          "charaId": 1046
+        }
       ]
     },
     {
@@ -4382,143 +7694,227 @@
     {
       "relationType": 8320,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1045
+      "member": [
+        {
+          "id": 1473,
+          "charaId": 1045
+        },
+        {
+          "id": 1474,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8321,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1045
+      "member": [
+        {
+          "id": 1475,
+          "charaId": 1045
+        },
+        {
+          "id": 1476,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8322,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018,
-        1045
+      "member": [
+        {
+          "id": 1477,
+          "charaId": 1045
+        },
+        {
+          "id": 1478,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8323,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1479,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8324,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1045
+      "member": [
+        {
+          "id": 1481,
+          "charaId": 1045
+        },
+        {
+          "id": 1482,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8325,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035,
-        1045
+      "member": [
+        {
+          "id": 1483,
+          "charaId": 1045
+        },
+        {
+          "id": 1484,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8326,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045,
-        1046
+      "member": [
+        {
+          "id": 1485,
+          "charaId": 1045
+        },
+        {
+          "id": 1486,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8327,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1487,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8328,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1489,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8329,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018,
-        1046
+      "member": [
+        {
+          "id": 1491,
+          "charaId": 1046
+        },
+        {
+          "id": 1492,
+          "charaId": 1018
+        }
       ]
     },
     {
       "relationType": 8330,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1493,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8331,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023,
-        1046
+      "member": [
+        {
+          "id": 1495,
+          "charaId": 1046
+        },
+        {
+          "id": 1496,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8332,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035,
-        1046
+      "member": [
+        {
+          "id": 1497,
+          "charaId": 1046
+        },
+        {
+          "id": 1498,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8333,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046
+      "member": [
+        {
+          "id": 1499,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8334,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1502,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8335,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1504,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8336,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1506,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8337,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1508,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8338,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1510,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -4528,22 +7924,31 @@
     {
       "relationType": 8340,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1514,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8341,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1516,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8342,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1518,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -4553,8 +7958,11 @@
     {
       "relationType": 8344,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1522,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -4564,15 +7972,21 @@
     {
       "relationType": 8346,
       "relationPoint": 1,
-      "memberCharaId": [
-        1056
+      "member": [
+        {
+          "id": 1526,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8347,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1528,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -4582,15 +7996,21 @@
     {
       "relationType": 8349,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1532,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8350,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 1534,
+          "charaId": 1018
+        }
       ]
     },
     {
@@ -4600,15 +8020,21 @@
     {
       "relationType": 8352,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023
+      "member": [
+        {
+          "id": 1538,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8353,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035
+      "member": [
+        {
+          "id": 1540,
+          "charaId": 1035
+        }
       ]
     },
     {
@@ -4618,38 +8044,59 @@
     {
       "relationType": 8355,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1050
+      "member": [
+        {
+          "id": 1543,
+          "charaId": 1050
+        },
+        {
+          "id": 1544,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8356,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045,
-        1050
+      "member": [
+        {
+          "id": 1545,
+          "charaId": 1050
+        },
+        {
+          "id": 1546,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8357,
       "relationPoint": 1,
-      "memberCharaId": [
-        1012
+      "member": [
+        {
+          "id": 1548,
+          "charaId": 1012
+        }
       ]
     },
     {
       "relationType": 8358,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1550,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8359,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1552,
+          "charaId": 1027
+        }
       ]
     },
     {
@@ -4659,8 +8106,11 @@
     {
       "relationType": 8361,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1556,
+          "charaId": 1038
+        }
       ]
     },
     {
@@ -4670,8 +8120,11 @@
     {
       "relationType": 8363,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1560,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -4681,15 +8134,21 @@
     {
       "relationType": 8365,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050
+      "member": [
+        {
+          "id": 1564,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8366,
       "relationPoint": 1,
-      "memberCharaId": [
-        1052
+      "member": [
+        {
+          "id": 1566,
+          "charaId": 1052
+        }
       ]
     },
     {
@@ -4699,8 +8158,11 @@
     {
       "relationType": 8368,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1570,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -4710,113 +8172,179 @@
     {
       "relationType": 8370,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1574,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8371,
       "relationPoint": 1,
-      "memberCharaId": [
-        1061
+      "member": [
+        {
+          "id": 1576,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 8372,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1052
+      "member": [
+        {
+          "id": 1577,
+          "charaId": 1052
+        },
+        {
+          "id": 1578,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8373,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1052
+      "member": [
+        {
+          "id": 1579,
+          "charaId": 1052
+        },
+        {
+          "id": 1580,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8374,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1052
+      "member": [
+        {
+          "id": 1581,
+          "charaId": 1052
+        },
+        {
+          "id": 1582,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8375,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1052
+      "member": [
+        {
+          "id": 1583,
+          "charaId": 1052
+        },
+        {
+          "id": 1584,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8376,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1052
+      "member": [
+        {
+          "id": 1585,
+          "charaId": 1052
+        },
+        {
+          "id": 1586,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8377,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046,
-        1052
+      "member": [
+        {
+          "id": 1587,
+          "charaId": 1052
+        },
+        {
+          "id": 1588,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8378,
       "relationPoint": 1,
-      "memberCharaId": [
-        1052
+      "member": [
+        {
+          "id": 1589,
+          "charaId": 1052
+        }
       ]
     },
     {
       "relationType": 8379,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050,
-        1052
+      "member": [
+        {
+          "id": 1591,
+          "charaId": 1052
+        },
+        {
+          "id": 1592,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8380,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003
+      "member": [
+        {
+          "id": 1594,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8381,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1596,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8382,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013
+      "member": [
+        {
+          "id": 1598,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8383,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1600,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8384,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017
+      "member": [
+        {
+          "id": 1602,
+          "charaId": 1017
+        }
       ]
     },
     {
@@ -4826,22 +8354,31 @@
     {
       "relationType": 8386,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1606,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8387,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1608,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8388,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1610,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -4851,8 +8388,11 @@
     {
       "relationType": 8390,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1614,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -4862,15 +8402,21 @@
     {
       "relationType": 8392,
       "relationPoint": 1,
-      "memberCharaId": [
-        1056
+      "member": [
+        {
+          "id": 1618,
+          "charaId": 1056
+        }
       ]
     },
     {
       "relationType": 8393,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1620,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -4880,45 +8426,69 @@
     {
       "relationType": 8395,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1624,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8396,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004,
-        1056
+      "member": [
+        {
+          "id": 1625,
+          "charaId": 1056
+        },
+        {
+          "id": 1626,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8397,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045,
-        1056
+      "member": [
+        {
+          "id": 1627,
+          "charaId": 1056
+        },
+        {
+          "id": 1628,
+          "charaId": 1045
+        }
       ]
     },
     {
       "relationType": 8398,
       "relationPoint": 1,
-      "memberCharaId": [
-        1004
+      "member": [
+        {
+          "id": 1630,
+          "charaId": 1004
+        }
       ]
     },
     {
       "relationType": 8399,
       "relationPoint": 1,
-      "memberCharaId": [
-        1015
+      "member": [
+        {
+          "id": 1632,
+          "charaId": 1015
+        }
       ]
     },
     {
       "relationType": 8400,
       "relationPoint": 1,
-      "memberCharaId": [
-        1018
+      "member": [
+        {
+          "id": 1634,
+          "charaId": 1018
+        }
       ]
     },
     {
@@ -4928,36 +8498,51 @@
     {
       "relationType": 8402,
       "relationPoint": 1,
-      "memberCharaId": [
-        1023
+      "member": [
+        {
+          "id": 1638,
+          "charaId": 1023
+        }
       ]
     },
     {
       "relationType": 8403,
       "relationPoint": 1,
-      "memberCharaId": [
-        1027
+      "member": [
+        {
+          "id": 1640,
+          "charaId": 1027
+        }
       ]
     },
     {
       "relationType": 8404,
       "relationPoint": 1,
-      "memberCharaId": [
-        1035
+      "member": [
+        {
+          "id": 1642,
+          "charaId": 1035
+        }
       ]
     },
     {
       "relationType": 8405,
       "relationPoint": 1,
-      "memberCharaId": [
-        1038
+      "member": [
+        {
+          "id": 1644,
+          "charaId": 1038
+        }
       ]
     },
     {
       "relationType": 8406,
       "relationPoint": 1,
-      "memberCharaId": [
-        1040
+      "member": [
+        {
+          "id": 1646,
+          "charaId": 1040
+        }
       ]
     },
     {
@@ -4967,8 +8552,11 @@
     {
       "relationType": 8408,
       "relationPoint": 1,
-      "memberCharaId": [
-        1045
+      "member": [
+        {
+          "id": 1650,
+          "charaId": 1045
+        }
       ]
     },
     {
@@ -4978,8 +8566,11 @@
     {
       "relationType": 8410,
       "relationPoint": 1,
-      "memberCharaId": [
-        1058
+      "member": [
+        {
+          "id": 1654,
+          "charaId": 1058
+        }
       ]
     },
     {
@@ -4989,117 +8580,195 @@
     {
       "relationType": 8412,
       "relationPoint": 1,
-      "memberCharaId": [
-        1060
+      "member": [
+        {
+          "id": 1658,
+          "charaId": 1060
+        }
       ]
     },
     {
       "relationType": 8413,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1058
+      "member": [
+        {
+          "id": 1659,
+          "charaId": 1058
+        },
+        {
+          "id": 1660,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8414,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050,
-        1058
+      "member": [
+        {
+          "id": 1661,
+          "charaId": 1058
+        },
+        {
+          "id": 1662,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8415,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006
+      "member": [
+        {
+          "id": 1664,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8416,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050
+      "member": [
+        {
+          "id": 1666,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8417,
       "relationPoint": 1,
-      "memberCharaId": [
-        1006,
-        1060
+      "member": [
+        {
+          "id": 1667,
+          "charaId": 1060
+        },
+        {
+          "id": 1668,
+          "charaId": 1006
+        }
       ]
     },
     {
       "relationType": 8418,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050,
-        1060
+      "member": [
+        {
+          "id": 1669,
+          "charaId": 1060
+        },
+        {
+          "id": 1670,
+          "charaId": 1050
+        }
       ]
     },
     {
       "relationType": 8419,
       "relationPoint": 1,
-      "memberCharaId": [
-        1003,
-        1061
+      "member": [
+        {
+          "id": 1671,
+          "charaId": 1061
+        },
+        {
+          "id": 1672,
+          "charaId": 1003
+        }
       ]
     },
     {
       "relationType": 8420,
       "relationPoint": 1,
-      "memberCharaId": [
-        1007,
-        1061
+      "member": [
+        {
+          "id": 1673,
+          "charaId": 1061
+        },
+        {
+          "id": 1674,
+          "charaId": 1007
+        }
       ]
     },
     {
       "relationType": 8421,
       "relationPoint": 1,
-      "memberCharaId": [
-        1009,
-        1061
+      "member": [
+        {
+          "id": 1675,
+          "charaId": 1061
+        },
+        {
+          "id": 1676,
+          "charaId": 1009
+        }
       ]
     },
     {
       "relationType": 8422,
       "relationPoint": 1,
-      "memberCharaId": [
-        1013,
-        1061
+      "member": [
+        {
+          "id": 1677,
+          "charaId": 1061
+        },
+        {
+          "id": 1678,
+          "charaId": 1013
+        }
       ]
     },
     {
       "relationType": 8423,
       "relationPoint": 1,
-      "memberCharaId": [
-        1017,
-        1061
+      "member": [
+        {
+          "id": 1679,
+          "charaId": 1061
+        },
+        {
+          "id": 1680,
+          "charaId": 1017
+        }
       ]
     },
     {
       "relationType": 8424,
       "relationPoint": 1,
-      "memberCharaId": [
-        1046,
-        1061
+      "member": [
+        {
+          "id": 1681,
+          "charaId": 1061
+        },
+        {
+          "id": 1682,
+          "charaId": 1046
+        }
       ]
     },
     {
       "relationType": 8425,
       "relationPoint": 1,
-      "memberCharaId": [
-        1061
+      "member": [
+        {
+          "id": 1683,
+          "charaId": 1061
+        }
       ]
     },
     {
       "relationType": 8426,
       "relationPoint": 1,
-      "memberCharaId": [
-        1050,
-        1061
+      "member": [
+        {
+          "id": 1685,
+          "charaId": 1061
+        },
+        {
+          "id": 1686,
+          "charaId": 1050
+        }
       ]
     }
   ],

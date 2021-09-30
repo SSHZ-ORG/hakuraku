@@ -27,6 +27,7 @@ const GROUP_TYPE_TAGS: Record<string, string> = {
 
 type SuccessionRelationsPageState = {
     selectedCharas: Chara[],
+    showRelationId: boolean,
 }
 
 export default class SuccessionRelationsPage extends React.PureComponent<{}, SuccessionRelationsPageState> {
@@ -35,13 +36,14 @@ export default class SuccessionRelationsPage extends React.PureComponent<{}, Suc
 
         this.state = {
             selectedCharas: [],
+            showRelationId: true,
         }
     }
 
     renderRelationsGroups(relations: SuccessionRelation[], key: string) {
         return <FoldCard header={`Relations ${key}xx ${GROUP_TYPE_TAGS[key] ?? ''}`}>
             {UMDatabaseUtils.findSuccessionRelation(this.state.selectedCharas, relations)
-                .map(r => <><SuccessionRelationChip relation={r}/>{' '}</>)}
+                .map(r => <><SuccessionRelationChip relation={r} showId={this.state.showRelationId}/>{' '}</>)}
         </FoldCard>;
     }
 
@@ -59,6 +61,14 @@ export default class SuccessionRelationsPage extends React.PureComponent<{}, Suc
                     selected={this.state.selectedCharas}
                     onChange={s => this.setState({selectedCharas: s})}
                     filterBy={UMDatabaseUtils.charaTypeaheadMatcher}/>
+            </Form.Group>
+
+            <Form.Group>
+                <Form.Switch
+                    checked={this.state.showRelationId}
+                    onChange={(e) => this.setState({showRelationId: e.target.checked})}
+                    id="show-relation-id"
+                    label="Show SuccessionRelationMember IDs"/>
             </Form.Group>
 
             {_.map(relationsGroups, (g, k) => this.renderRelationsGroups(g, k))}

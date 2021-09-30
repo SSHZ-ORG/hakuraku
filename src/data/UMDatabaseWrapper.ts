@@ -8,6 +8,7 @@ class _UMDatabaseWrapper {
     raceInstances: Record<number, RaceInstance> = {};
     interestingRaceInstances: RaceInstance[] = [];
     skills: Record<number, Skill> = {};
+    successionRelationMemberCharaIds: Record<number, Set<number>> = {};
 
     /**
      * @return {!Promise}
@@ -20,6 +21,9 @@ class _UMDatabaseWrapper {
 
                 this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
                 this.umdb.getCardList().forEach((card) => this.cards[card.getId()!] = card);
+
+                this.umdb.getSuccessionRelationList().forEach((relation) =>
+                    this.successionRelationMemberCharaIds[relation.getRelationType()!] = new Set(relation.getMemberList().map(m => m.getCharaId()!)));
 
                 this.umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()!] = race);
 

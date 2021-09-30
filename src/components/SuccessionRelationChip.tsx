@@ -6,6 +6,7 @@ import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type SuccessionRelationChipProps = {
     relation: SuccessionRelation,
+    showId: boolean,
 }
 
 export default class SuccessionRelationChip extends React.PureComponent<SuccessionRelationChipProps> {
@@ -15,7 +16,7 @@ export default class SuccessionRelationChip extends React.PureComponent<Successi
                 Group {this.props.relation.getRelationType()} - {this.props.relation.getRelationPoint()} pts
             </Popover.Title>
             <Popover.Content>
-                {this.props.relation.getMemberCharaIdList().map(i => <>{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/></>)}
+                {this.props.relation.getMemberList().map(m => <>{this.props.showId ? `[${m.getId()}] `: ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.getCharaId()!])}<br/></>)}
             </Popover.Content>
         </Popover>;
 

@@ -32,7 +32,12 @@ message Card {
 message SuccessionRelation {
     optional int32 relation_type = 1;
     optional int32 relation_point = 2;
-    repeated int32 member_chara_id = 3;
+
+    message Member {
+        optional int32 id = 1;
+        optional int32 chara_id = 2;
+    }
+    repeated Member member = 3;
 }
 
 message RaceInstance {

@@ -100,7 +100,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
             <Card.Header>{title} - {UMDatabaseUtils.calculateTotalPoint(relations)} pts</Card.Header>
             <Card.Body>
                 <Card.Text>
-                    {relations.map(relation => <><SuccessionRelationChip relation={relation}/>{' '}</>)}
+                    {relations.map(relation => <><SuccessionRelationChip relation={relation} showId={false}/>{' '}</>)}
                 </Card.Text>
             </Card.Body>
         </Card>;

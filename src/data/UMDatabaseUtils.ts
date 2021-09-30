@@ -48,8 +48,9 @@ class UMDatabaseUtils {
         const charaIds = charas.map(c => c!.getId()!);
         if (new Set(charaIds).size !== charaIds.length) return [];
 
-        return relations
-            .filter(relation => charaIds.every(charaId => relation.getMemberCharaIdList().includes(charaId)));
+        return relations.filter(relation => {
+            return charaIds.every(charaId => UMDatabaseWrapper.successionRelationMemberCharaIds[relation.getRelationType()!].has(charaId));
+        });
     }
 
     static charaTypeaheadMatcher(option: Chara, props: AllTypeaheadOwnAndInjectedProps<Chara>) {

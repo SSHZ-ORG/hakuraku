@@ -146,10 +146,10 @@ export class SuccessionRelation extends jspb.Message {
   getRelationPoint(): number | undefined;
   setRelationPoint(value: number): void;
 
-  clearMemberCharaIdList(): void;
-  getMemberCharaIdList(): Array<number>;
-  setMemberCharaIdList(value: Array<number>): void;
-  addMemberCharaId(value: number, index?: number): number;
+  clearMemberList(): void;
+  getMemberList(): Array<SuccessionRelation.Member>;
+  setMemberList(value: Array<SuccessionRelation.Member>): void;
+  addMember(value?: SuccessionRelation.Member, index?: number): SuccessionRelation.Member;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SuccessionRelation.AsObject;
@@ -165,7 +165,35 @@ export namespace SuccessionRelation {
   export type AsObject = {
     relationType?: number,
     relationPoint?: number,
-    memberCharaIdList: Array<number>,
+    memberList: Array<SuccessionRelation.Member.AsObject>,
+  }
+
+  export class Member extends jspb.Message {
+    hasId(): boolean;
+    clearId(): void;
+    getId(): number | undefined;
+    setId(value: number): void;
+
+    hasCharaId(): boolean;
+    clearCharaId(): void;
+    getCharaId(): number | undefined;
+    setCharaId(value: number): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Member.AsObject;
+    static toObject(includeInstance: boolean, msg: Member): Member.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Member, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Member;
+    static deserializeBinaryFromReader(message: Member, reader: jspb.BinaryReader): Member;
+  }
+
+  export namespace Member {
+    export type AsObject = {
+      id?: number,
+      charaId?: number,
+    }
   }
 }
 

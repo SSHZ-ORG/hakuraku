@@ -48,10 +48,13 @@ def populate_succession_relation(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor
         r.relation_point = row[1]
         relations[r.relation_type] = r
 
-    cursor.execute("SELECT relation_type, chara_id FROM succession_relation_member ORDER BY relation_type, chara_id;")
+    cursor.execute("SELECT id, relation_type, chara_id FROM succession_relation_member ORDER BY id;")
     rows = cursor.fetchall()
     for row in rows:
-        relations[row[0]].member_chara_id.append(row[1])
+        member = data_pb2.SuccessionRelation.Member()
+        member.id = row[0]
+        member.chara_id = row[2]
+        relations[row[1]].member.append(member)
 
     pb.succession_relation.extend(relations.values())
 
