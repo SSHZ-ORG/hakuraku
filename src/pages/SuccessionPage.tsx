@@ -1,12 +1,11 @@
-import React, {ChangeEventHandler} from 'react';
-import CharaSelector from "../components/CharaSelector";
-import {Alert, Button, Card, Form, Table} from "react-bootstrap";
-import SuccessionRelationsPresenter from "../components/SuccessionRelationsPresenter";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
-import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import {Chara} from "../data/data_pb";
 import _ from "lodash";
+import React, {ChangeEventHandler} from 'react';
+import {Alert, Button, Card, Form, Table} from "react-bootstrap";
+import CharaSelector from "../components/CharaSelector";
+import SuccessionRelationChip from "../components/SuccessionRelationChip";
+import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
+import {Chara} from "../data/data_pb";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
 
 type SelectedCharasState = {
     selectedChara: Chara | undefined,
@@ -94,9 +93,17 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
         const charas = keys.map(key => this.state[key]);
         if (charas.includes(undefined)) return <div/>;
 
-        return <SuccessionRelationsPresenter
-            title={`${keys.join(', ')} - ${(charas as Chara[]).map(UMDatabaseUtils.charaNameWithIdAndCast).join(', ')}`}
-            relations={UMDatabaseWrapper.findSuccessionRelation(charas)}/>;
+        const title = `${keys.join(', ')} - ${(charas as Chara[]).map(UMDatabaseUtils.charaNameWithIdAndCast).join(', ')}`;
+        const relations = UMDatabaseUtils.findSuccessionRelation(charas);
+
+        return <Card>
+            <Card.Header>{title} - {UMDatabaseUtils.calculateTotalPoint(relations)} pts</Card.Header>
+            <Card.Body>
+                <Card.Text>
+                    {relations.map(relation => <><SuccessionRelationChip relation={relation}/>{' '}</>)}
+                </Card.Text>
+            </Card.Body>
+        </Card>;
     }
 
     totalPoints() {
@@ -107,7 +114,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
             pairs.push(charas);
         }
 
-        const relations = pairs.map(pair => UMDatabaseWrapper.findSuccessionRelation(pair));
+        const relations = pairs.map(pair => UMDatabaseUtils.findSuccessionRelation(pair));
         const totalPoints = _.sumBy(relations, r => UMDatabaseUtils.calculateTotalPoint(r))
             + this.state.parent1WinSaddleBonus + this.state.parent2WinSaddleBonus;
 

@@ -1,5 +1,5 @@
-import {Card, Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
 import pako from "pako";
+import {Card, Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
@@ -34,16 +34,6 @@ class _UMDatabaseWrapper {
                 interestingRaceInstanceIds.sort();
                 this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
             });
-    }
-
-    findSuccessionRelation(charas: (Chara | null | undefined)[]) {
-        if (charas.includes(null) || charas.includes(undefined)) return [];
-
-        const charaIds = charas.map(c => c!.getId()!);
-        if (new Set(charaIds).size !== charaIds.length) return [];
-
-        return this.umdb.getSuccessionRelationList()
-            .filter(relation => charaIds.every(charaId => relation.getMemberCharaIdList().includes(charaId)));
     }
 
     raceInstanceNameWithId = (raceInstanceId: number) =>

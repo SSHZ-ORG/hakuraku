@@ -1,15 +1,11 @@
+import _ from "lodash";
+import memoize from "memoize-one";
 import React from 'react';
 import {Form} from 'react-bootstrap';
-import {AllTypeaheadOwnAndInjectedProps, Typeahead} from "react-bootstrap-typeahead";
-import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import memoize from "memoize-one";
-import {toKatakana, toRomaji} from 'wanakana';
+import {Typeahead} from "react-bootstrap-typeahead";
 import {Chara} from "../data/data_pb";
-import _ from "lodash";
-
-const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
-const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To support ローマ字入力
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type CharaSelectorProps = {
     label: string,
@@ -27,7 +23,7 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
 
         return _.mapValues(UMDatabaseWrapper.charas,
             (chara) => constraintGroups.map(group =>
-                UMDatabaseUtils.calculateTotalPoint(UMDatabaseWrapper.findSuccessionRelation(group.concat(chara)))));
+                UMDatabaseUtils.calculateTotalPoint(UMDatabaseUtils.findSuccessionRelation(group.concat(chara)))));
     })
 
     onSelectionChange(selectedChara: Chara) {
@@ -56,12 +52,6 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
         return UMDatabaseUtils.charaNameWithIdAndCast(chara) + suggestionPtsString;
     }
 
-    typeaheadMatcher(option: Chara, props: AllTypeaheadOwnAndInjectedProps<Chara>) {
-        const labelKey = UMDatabaseUtils.charaNameWithIdAndCast(option);
-        return normalizeRomaji(labelKey).indexOf(normalizeRomaji(props.text)) !== -1 ||
-            normalizeKatakana(labelKey).indexOf(normalizeKatakana(props.text)) !== -1;
-    }
-
     render() {
         return <Form.Group>
             <Form.Label>{this.props.label}</Form.Label>
@@ -71,7 +61,7 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
                 options={this.charaList()}
                 selected={this.props.selectedChara ? [this.props.selectedChara] : []}
                 onChange={(selection) => this.onSelectionChange(selection[0])}
-                filterBy={(option, props) => this.typeaheadMatcher(option, props)}
+                filterBy={UMDatabaseUtils.charaTypeaheadMatcher}
                 isInvalid={!this.props.selectedChara}/>
         </Form.Group>
     }

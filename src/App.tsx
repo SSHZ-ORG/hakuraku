@@ -1,14 +1,15 @@
-import './App.css';
 import React from 'react';
-import {HashRouter, Link, Route, Switch} from "react-router-dom";
-import SuccessionPage from './pages/SuccessionPage';
-import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
-import CarrotJuicerPage from "./pages/CarrotJuicerPage";
-import RaceDataPage from "./pages/RaceDataPage";
-import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.css';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import {HashRouter, Link, Route, Switch} from "react-router-dom";
+import './App.css';
+import UMDatabaseWrapper from './data/UMDatabaseWrapper';
+import CarrotJuicerPage from "./pages/CarrotJuicerPage";
+import RaceDataPage from "./pages/RaceDataPage";
+import SuccessionPage from './pages/SuccessionPage';
+import SuccessionRelationsPage from "./pages/SuccessionRelationsPage";
+import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
 
 class App extends React.Component<{}, { umdbLoaded: boolean }> {
     constructor(props: {}) {
@@ -38,6 +39,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                             <Nav className="mr-auto">
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
+                                <Nav.Link as={Link} to="/successionrelations">SuccessionRelations</Nav.Link>
                                 <Nav.Link as={Link} to="/carrotjuicer">CarrotJuicer</Nav.Link>
                                 <Nav.Link as={Link} to="/racedata">RaceDataParser</Nav.Link>
                                 <Nav.Link as={Link} to="/teamraceanalyzer">TeamRaceAnalyzer</Nav.Link>
@@ -56,6 +58,9 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                     <Switch>
                         <Route path="/succession">
                             <SuccessionPage/>
+                        </Route>
+                        <Route path="/successionrelations">
+                            <SuccessionRelationsPage/>
                         </Route>
                         <Route path="/carrotjuicer">
                             <CarrotJuicerPage/>

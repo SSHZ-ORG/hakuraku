@@ -1,6 +1,11 @@
 import _ from 'lodash';
+import {AllTypeaheadOwnAndInjectedProps} from "react-bootstrap-typeahead";
+import {toKatakana, toRomaji} from "wanakana";
 import {Chara, SpecialCaseRace, SuccessionRelation} from './data_pb';
+import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
+const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
+const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To support ローマ字入力
 
 class UMDatabaseUtils {
     static calculateTotalPoint(relations: SuccessionRelation[]) {
@@ -35,6 +40,22 @@ class UMDatabaseUtils {
     static getPopularityMark(n: number) {
         const mark = n === 1 ? '◎' : n === 2 ? '○' : n === 3 ? '▲' : n === 4 || n === 5 ? '△' : '';
         return `${n}${mark}`;
+    }
+
+    static findSuccessionRelation(charas: (Chara | null | undefined)[], relations: SuccessionRelation[] = UMDatabaseWrapper.umdb.getSuccessionRelationList()) {
+        if (charas.includes(null) || charas.includes(undefined)) return [];
+
+        const charaIds = charas.map(c => c!.getId()!);
+        if (new Set(charaIds).size !== charaIds.length) return [];
+
+        return relations
+            .filter(relation => charaIds.every(charaId => relation.getMemberCharaIdList().includes(charaId)));
+    }
+
+    static charaTypeaheadMatcher(option: Chara, props: AllTypeaheadOwnAndInjectedProps<Chara>) {
+        const labelKey = UMDatabaseUtils.charaNameWithIdAndCast(option);
+        return normalizeRomaji(labelKey).indexOf(normalizeRomaji(props.text)) !== -1 ||
+            normalizeKatakana(labelKey).indexOf(normalizeKatakana(props.text)) !== -1;
     }
 
     static teamRaceDistanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
