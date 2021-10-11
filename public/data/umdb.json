@@ -1,5 +1,5 @@
 {
-  "version": "10003100",
+  "version": "10003200",
   "chara": [
     {
       "id": 1001,
@@ -476,6 +476,10 @@
           "charaId": 1028
         },
         {
+          "id": 21,
+          "charaId": 1039
+        },
+        {
           "id": 22,
           "charaId": 1058
         },
@@ -734,6 +738,10 @@
           "charaId": 1038
         },
         {
+          "id": 105,
+          "charaId": 1039
+        },
+        {
           "id": 106,
           "charaId": 1040
         },
@@ -989,7 +997,13 @@
     },
     {
       "relationType": 319,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 159,
+          "charaId": 1039
+        }
+      ]
     },
     {
       "relationType": 320,
@@ -1780,6 +1794,10 @@
         {
           "id": 645,
           "charaId": 1018
+        },
+        {
+          "id": 646,
+          "charaId": 1039
         }
       ]
     },
@@ -1914,6 +1932,10 @@
         {
           "id": 705,
           "charaId": 1009
+        },
+        {
+          "id": 707,
+          "charaId": 1039
         }
       ]
     },
@@ -2366,6 +2388,10 @@
         {
           "id": 295,
           "charaId": 1038
+        },
+        {
+          "id": 296,
+          "charaId": 1039
         },
         {
           "id": 300,
@@ -2954,6 +2980,10 @@
           "charaId": 1037
         },
         {
+          "id": 459,
+          "charaId": 1039
+        },
+        {
           "id": 464,
           "charaId": 1056
         },
@@ -3076,6 +3106,10 @@
           "charaId": 1026
         },
         {
+          "id": 502,
+          "charaId": 1039
+        },
+        {
           "id": 505,
           "charaId": 1046
         }
@@ -3196,6 +3230,10 @@
         {
           "id": 543,
           "charaId": 1037
+        },
+        {
+          "id": 544,
+          "charaId": 1039
         },
         {
           "id": 546,
@@ -3414,6 +3452,10 @@
           "charaId": 1038
         },
         {
+          "id": 614,
+          "charaId": 1039
+        },
+        {
           "id": 620,
           "charaId": 1050
         },
@@ -3452,6 +3494,10 @@
         {
           "id": 778,
           "charaId": 1038
+        },
+        {
+          "id": 779,
+          "charaId": 1039
         },
         {
           "id": 789,
@@ -7256,6 +7302,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1387,
+          "charaId": 1039
+        },
+        {
           "id": 1388,
           "charaId": 1003
         }
@@ -7265,6 +7315,10 @@
       "relationType": 8278,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1389,
+          "charaId": 1039
+        },
         {
           "id": 1390,
           "charaId": 1007
@@ -7276,6 +7330,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1391,
+          "charaId": 1039
+        },
+        {
           "id": 1392,
           "charaId": 1009
         }
@@ -7285,6 +7343,10 @@
       "relationType": 8280,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1393,
+          "charaId": 1039
+        },
         {
           "id": 1394,
           "charaId": 1013
@@ -7296,6 +7358,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1395,
+          "charaId": 1039
+        },
+        {
           "id": 1396,
           "charaId": 1017
         }
@@ -7306,6 +7372,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1397,
+          "charaId": 1039
+        },
+        {
           "id": 1398,
           "charaId": 1046
         }
@@ -7313,12 +7383,22 @@
     },
     {
       "relationType": 8283,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1399,
+          "charaId": 1039
+        }
+      ]
     },
     {
       "relationType": 8284,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1401,
+          "charaId": 1039
+        },
         {
           "id": 1402,
           "charaId": 1050
@@ -8115,7 +8195,13 @@
     },
     {
       "relationType": 8362,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1558,
+          "charaId": 1039
+        }
+      ]
     },
     {
       "relationType": 8363,
@@ -16403,6 +16489,14 @@
       ]
     },
     {
+      "id": 100391,
+      "name": "姫たるもの、勝利をこの手に",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100401,
       "name": "KEEP IT REAL.",
       "gradeValue": 340,
@@ -19869,6 +19963,14 @@
       ]
     },
     {
+      "id": 900391,
+      "name": "姫たるもの、勝利をこの手に",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900401,
       "name": "KEEP IT REAL.",
       "gradeValue": 180,
@@ -20227,6 +20329,10 @@
     {
       "id": 103801,
       "name": "[フィーユ・エクレール]"
+    },
+    {
+      "id": 103901,
+      "name": "[プリンセス・オブ・ピンク]"
     },
     {
       "id": 104001,
