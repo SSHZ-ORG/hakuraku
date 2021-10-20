@@ -1,5 +1,5 @@
 {
-  "version": "10003300",
+  "version": "10003400",
   "chara": [
     {
       "id": 1001,
@@ -347,6 +347,11 @@
       "castName": "野口瑠璃子"
     },
     {
+      "id": 1070,
+      "name": "シリウスシンボリ",
+      "castName": "ファイルーズあい"
+    },
+    {
       "id": 1071,
       "name": "メジロアルダン",
       "castName": "会沢紗弥"
@@ -502,6 +507,10 @@
           "charaId": 1010
         },
         {
+          "id": 26,
+          "charaId": 1025
+        },
+        {
           "id": 27,
           "charaId": 1030
         },
@@ -634,6 +643,10 @@
         {
           "id": 67,
           "charaId": 1020
+        },
+        {
+          "id": 68,
+          "charaId": 1025
         },
         {
           "id": 69,
@@ -895,7 +908,13 @@
     },
     {
       "relationType": 309,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 139,
+          "charaId": 1025
+        }
+      ]
     },
     {
       "relationType": 310,
@@ -1312,6 +1331,10 @@
         {
           "id": 209,
           "charaId": 1005
+        },
+        {
+          "id": 210,
+          "charaId": 1025
         },
         {
           "id": 212,
@@ -1754,6 +1777,10 @@
           "charaId": 1024
         },
         {
+          "id": 681,
+          "charaId": 1025
+        },
+        {
           "id": 682,
           "charaId": 1030
         },
@@ -1968,6 +1995,10 @@
           "charaId": 1024
         },
         {
+          "id": 735,
+          "charaId": 1025
+        },
+        {
           "id": 736,
           "charaId": 1030
         },
@@ -2162,6 +2193,10 @@
           "charaId": 1024
         },
         {
+          "id": 641,
+          "charaId": 1025
+        },
+        {
           "id": 644,
           "charaId": 1017
         }
@@ -2298,6 +2333,10 @@
         {
           "id": 259,
           "charaId": 1024
+        },
+        {
+          "id": 260,
+          "charaId": 1025
         },
         {
           "id": 261,
@@ -2554,6 +2593,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 358,
+          "charaId": 1025
+        },
+        {
           "id": 359,
           "charaId": 1030
         }
@@ -2794,6 +2837,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 408,
+          "charaId": 1025
+        },
+        {
           "id": 409,
           "charaId": 1032
         }
@@ -2962,6 +3009,10 @@
         {
           "id": 452,
           "charaId": 1016
+        },
+        {
+          "id": 453,
+          "charaId": 1025
         },
         {
           "id": 454,
@@ -3300,6 +3351,10 @@
         {
           "id": 567,
           "charaId": 1023
+        },
+        {
+          "id": 568,
+          "charaId": 1025
         }
       ]
     },
@@ -3436,6 +3491,10 @@
           "charaId": 1023
         },
         {
+          "id": 604,
+          "charaId": 1025
+        },
+        {
           "id": 605,
           "charaId": 1026
         },
@@ -3558,6 +3617,10 @@
         {
           "id": 803,
           "charaId": 1024
+        },
+        {
+          "id": 804,
+          "charaId": 1025
         },
         {
           "id": 806,
@@ -6100,6 +6163,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1157,
+          "charaId": 1025
+        },
+        {
           "id": 1158,
           "charaId": 1003
         }
@@ -6109,6 +6176,10 @@
       "relationType": 8163,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1159,
+          "charaId": 1025
+        },
         {
           "id": 1160,
           "charaId": 1004
@@ -6120,6 +6191,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1161,
+          "charaId": 1025
+        },
+        {
           "id": 1162,
           "charaId": 1013
         }
@@ -6129,6 +6204,10 @@
       "relationType": 8165,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1163,
+          "charaId": 1025
+        },
         {
           "id": 1164,
           "charaId": 1015
@@ -6140,6 +6219,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1165,
+          "charaId": 1025
+        },
+        {
           "id": 1166,
           "charaId": 1017
         }
@@ -6147,12 +6230,22 @@
     },
     {
       "relationType": 8167,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1167,
+          "charaId": 1025
+        }
+      ]
     },
     {
       "relationType": 8168,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1169,
+          "charaId": 1025
+        },
         {
           "id": 1170,
           "charaId": 1027
@@ -6164,6 +6257,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1171,
+          "charaId": 1025
+        },
+        {
           "id": 1172,
           "charaId": 1038
         }
@@ -6174,6 +6271,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1173,
+          "charaId": 1025
+        },
+        {
           "id": 1174,
           "charaId": 1040
         }
@@ -6181,12 +6282,22 @@
     },
     {
       "relationType": 8171,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1175,
+          "charaId": 1025
+        }
+      ]
     },
     {
       "relationType": 8172,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1177,
+          "charaId": 1025
+        },
         {
           "id": 1178,
           "charaId": 1045
@@ -6195,12 +6306,22 @@
     },
     {
       "relationType": 8173,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1179,
+          "charaId": 1025
+        }
+      ]
     },
     {
       "relationType": 8174,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1181,
+          "charaId": 1025
+        },
         {
           "id": 1182,
           "charaId": 1056
@@ -6212,6 +6333,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1183,
+          "charaId": 1025
+        },
+        {
           "id": 1184,
           "charaId": 1058
         }
@@ -6219,12 +6344,22 @@
     },
     {
       "relationType": 8176,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1185,
+          "charaId": 1025
+        }
+      ]
     },
     {
       "relationType": 8177,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1187,
+          "charaId": 1025
+        },
         {
           "id": 1188,
           "charaId": 1060
@@ -16448,6 +16583,14 @@
       ]
     },
     {
+      "id": 100251,
+      "name": "アナタヲ・オイカケテ",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100261,
       "name": "G00 1st.F∞;",
       "gradeValue": 340,
@@ -19633,6 +19776,26 @@
       ]
     },
     {
+      "id": 201701,
+      "name": "決死の覚悟",
+      "gradeValue": 508,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 201702,
+      "name": "ありったけ",
+      "gradeValue": 217,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -19919,6 +20082,14 @@
       "tagId": [
         "401",
         "403"
+      ]
+    },
+    {
+      "id": 900251,
+      "name": "アナタヲ・オイカケテ",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
       ]
     },
     {
@@ -20318,6 +20489,10 @@
     {
       "id": 102402,
       "name": "[サンライト・ブーケ]"
+    },
+    {
+      "id": 102501,
+      "name": "[Creeping Black]"
     },
     {
       "id": 102601,
