@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /.idea/
-/umdb/master.mdb
+/umdb/*.mdb
 __pycache__/
