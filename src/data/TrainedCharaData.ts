@@ -27,10 +27,55 @@ export type TrainedCharaData = {
     properGroundTurf: number,
     properGroundDirt: number,
 
-    rankPoints: number,
+    rankScore: number,
 
     rawData: any,
 };
+
+type StatusPoints = {
+    speed: number,
+    stamina: number,
+    pow: number,
+    guts: number,
+    wiz: number,
+}
+
+function calcRankScore(raceHorseData: any, statusPoints: StatusPoints, charaSkills: CharaSkill[], properRunningStyles: Record<number, number>, properDistances: Record<number, number>): number {
+    if (raceHorseData['rank_score']) {
+        return raceHorseData['rank_score'];
+    }
+
+    let rankScore = _.sumBy([statusPoints.speed, statusPoints.stamina, statusPoints.pow, statusPoints.guts, statusPoints.wiz],
+        value => statusPointToRankPoint[value]);
+    for (let charaSkill of charaSkills) {
+        const skillId = charaSkill.skillId;
+        const skill = UMDatabaseWrapper.skills[skillId];
+        if (skill === undefined) {
+            continue;
+        }
+
+        if (skillId < 200000) {
+            // 固有スキル
+            rankScore += skill.getGradeValue()! / 2 * charaSkill.level;
+        } else {
+            const tagIds = new Set(skill.getTagIdList());
+            let multiplier = 1;
+            [1, 2, 3, 4].forEach(runningStyleTag => {
+                if (tagIds.has('10' + runningStyleTag.toString())) {
+                    multiplier *= properSkillMultiplier[properRunningStyles[runningStyleTag]];
+                }
+            });
+            [1, 2, 3, 4].forEach(distanceTag => {
+                if (tagIds.has('20' + distanceTag.toString())) {
+                    multiplier *= properSkillMultiplier[properDistances[distanceTag]];
+                }
+            });
+            rankScore += Math.round(skill.getGradeValue()! * multiplier);
+        }
+    }
+
+    return rankScore;
+}
 
 export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
     const charaSkills: CharaSkill[] = raceHorseData['skill_array'].map((skill: any) => ({
@@ -59,36 +104,6 @@ export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
         4: raceHorseData['proper_running_style_oikomi'],
     };
 
-    let rankPoints = _.sumBy([statusPoints.speed, statusPoints.stamina, statusPoints.pow, statusPoints.guts, statusPoints.wiz],
-        value => statusPointToRankPoint[value]);
-    for (let charaSkill of charaSkills) {
-        const skillId = charaSkill.skillId;
-        const skill = UMDatabaseWrapper.skills[skillId];
-        if (skill === undefined) {
-            continue;
-        }
-
-        if (skillId < 200000) {
-            // 固有スキル
-            rankPoints += skill.getGradeValue()! / 2 * charaSkill.level;
-        } else {
-            const tagIds = new Set(skill.getTagIdList());
-            let multiplier = 1;
-            [1, 2, 3, 4].forEach(runningStyleTag => {
-                if (tagIds.has('10' + runningStyleTag.toString())) {
-                    multiplier *= properSkillMultiplier[properRunningStyles[runningStyleTag]];
-                }
-            });
-            [1, 2, 3, 4].forEach(distanceTag => {
-                if (tagIds.has('20' + distanceTag.toString())) {
-                    multiplier *= properSkillMultiplier[properDistances[distanceTag]];
-                }
-            });
-            rankPoints += Math.round(skill.getGradeValue()! * multiplier);
-        }
-    }
-
-
     return {
         viewerId: raceHorseData['viewer_id'],
         viewerName: raceHorseData['trainer_name'],
@@ -106,7 +121,7 @@ export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
         properGroundTurf: raceHorseData['proper_ground_turf'],
         properGroundDirt: raceHorseData['proper_ground_dirt'],
 
-        rankPoints: rankPoints,
+        rankScore: calcRankScore(raceHorseData, statusPoints, charaSkills, properRunningStyles, properDistances),
 
         rawData: raceHorseData,
     };

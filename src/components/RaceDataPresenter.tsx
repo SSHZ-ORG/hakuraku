@@ -104,10 +104,10 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     },
 
     {
-        dataField: 'rankPoints',
+        dataField: 'rankScore',
         isDummyField: true,
         text: '評価点',
-        formatter: (cell, row) => row.trainedChara.rankPoints,
+        formatter: (cell, row) => row.trainedChara.rankScore,
     },
     {
         dataField: 'speed',
