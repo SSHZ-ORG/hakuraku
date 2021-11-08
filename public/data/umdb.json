@@ -1,5 +1,5 @@
 {
-  "version": "10003550",
+  "version": "10003600",
   "chara": [
     {
       "id": 1001,
@@ -535,6 +535,10 @@
           "charaId": 1040
         },
         {
+          "id": 37,
+          "charaId": 1048
+        },
+        {
           "id": 38,
           "charaId": 1056
         }
@@ -767,6 +771,10 @@
           "charaId": 1046
         },
         {
+          "id": 111,
+          "charaId": 1048
+        },
+        {
           "id": 112,
           "charaId": 1050
         },
@@ -987,6 +995,10 @@
         {
           "id": 153,
           "charaId": 1035
+        },
+        {
+          "id": 154,
+          "charaId": 1048
         }
       ]
     },
@@ -2047,6 +2059,10 @@
         {
           "id": 693,
           "charaId": 1045
+        },
+        {
+          "id": 695,
+          "charaId": 1048
         }
       ]
     },
@@ -2381,6 +2397,10 @@
         {
           "id": 276,
           "charaId": 1046
+        },
+        {
+          "id": 278,
+          "charaId": 1048
         },
         {
           "id": 280,
@@ -2862,7 +2882,13 @@
     },
     {
       "relationType": 2816,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 412,
+          "charaId": 1048
+        }
+      ]
     },
     {
       "relationType": 2817,
@@ -2979,6 +3005,10 @@
         {
           "id": 442,
           "charaId": 1045
+        },
+        {
+          "id": 444,
+          "charaId": 1048
         },
         {
           "id": 447,
@@ -3291,6 +3321,10 @@
           "charaId": 1046
         },
         {
+          "id": 548,
+          "charaId": 1048
+        },
+        {
           "id": 550,
           "charaId": 1050
         },
@@ -3515,6 +3549,10 @@
           "charaId": 1039
         },
         {
+          "id": 618,
+          "charaId": 1048
+        },
+        {
           "id": 620,
           "charaId": 1050
         },
@@ -3557,6 +3595,10 @@
         {
           "id": 779,
           "charaId": 1039
+        },
+        {
+          "id": 784,
+          "charaId": 1048
         },
         {
           "id": 789,
@@ -4605,6 +4647,10 @@
         {
           "id": 913,
           "charaId": 1003
+        },
+        {
+          "id": 914,
+          "charaId": 1048
         }
       ]
     },
@@ -4733,6 +4779,10 @@
         {
           "id": 933,
           "charaId": 1004
+        },
+        {
+          "id": 934,
+          "charaId": 1048
         }
       ]
     },
@@ -5061,6 +5111,10 @@
         {
           "id": 985,
           "charaId": 1007
+        },
+        {
+          "id": 986,
+          "charaId": 1048
         }
       ]
     },
@@ -5123,6 +5177,10 @@
         {
           "id": 995,
           "charaId": 1009
+        },
+        {
+          "id": 996,
+          "charaId": 1048
         }
       ]
     },
@@ -5435,6 +5493,10 @@
         {
           "id": 1043,
           "charaId": 1013
+        },
+        {
+          "id": 1044,
+          "charaId": 1048
         }
       ]
     },
@@ -5899,6 +5961,10 @@
         {
           "id": 1115,
           "charaId": 1017
+        },
+        {
+          "id": 1116,
+          "charaId": 1048
         }
       ]
     },
@@ -6594,7 +6660,13 @@
     },
     {
       "relationType": 8199,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1232,
+          "charaId": 1048
+        }
+      ]
     },
     {
       "relationType": 8200,
@@ -7721,6 +7793,10 @@
         {
           "id": 1429,
           "charaId": 1041
+        },
+        {
+          "id": 1430,
+          "charaId": 1048
         }
       ]
     },
@@ -8007,6 +8083,10 @@
         {
           "id": 1487,
           "charaId": 1045
+        },
+        {
+          "id": 1488,
+          "charaId": 1048
         }
       ]
     },
@@ -8079,6 +8159,10 @@
         {
           "id": 1499,
           "charaId": 1046
+        },
+        {
+          "id": 1500,
+          "charaId": 1048
         }
       ]
     },
@@ -8254,7 +8338,13 @@
     },
     {
       "relationType": 8354,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1542,
+          "charaId": 1048
+        }
+      ]
     },
     {
       "relationType": 8355,
@@ -8782,7 +8872,13 @@
     },
     {
       "relationType": 8409,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1652,
+          "charaId": 1048
+        }
+      ]
     },
     {
       "relationType": 8410,
@@ -11028,6 +11124,21 @@
       "id": 596003,
       "name": "朝日杯FS（HARD）",
       "distance": 1600
+    },
+    {
+      "id": 596501,
+      "name": "天皇賞（秋）（HARD）",
+      "distance": 2000
+    },
+    {
+      "id": 596502,
+      "name": "天皇賞（秋）（HARD）",
+      "distance": 2000
+    },
+    {
+      "id": 596503,
+      "name": "天皇賞（秋）（HARD）",
+      "distance": 2000
     },
     {
       "id": 600005,
@@ -16698,6 +16809,14 @@
       ]
     },
     {
+      "id": 100481,
+      "name": "YEAH☆VIVID TIME!",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100501,
       "name": "Nemesis",
       "gradeValue": 340,
@@ -19826,6 +19945,14 @@
       ]
     },
     {
+      "id": 201801,
+      "name": "凸凹ネイル",
+      "gradeValue": -129,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -20230,6 +20357,14 @@
       ]
     },
     {
+      "id": 900481,
+      "name": "YEAH☆VIVID TIME!",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900501,
       "name": "Nemesis",
       "gradeValue": 180,
@@ -20608,6 +20743,10 @@
     {
       "id": 104601,
       "name": "[あぶそりゅーと☆LOVE]"
+    },
+    {
+      "id": 104801,
+      "name": "[ポップス☆ジョーカー]"
     },
     {
       "id": 105001,
