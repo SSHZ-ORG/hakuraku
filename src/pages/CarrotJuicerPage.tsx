@@ -1,14 +1,14 @@
+// @ts-ignore
+import struct from "@aksel/structjs";
+import msgpack from "@ygoe/msgpack";
 import React from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import ReactJson from "react-json-view";
-import msgpack from "@ygoe/msgpack";
-// @ts-ignore
-import struct from "@aksel/structjs";
-import {deserializeFromBase64} from "../data/RaceDataParser";
-import RaceDataPresenter from "../components/RaceDataPresenter";
-import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import FilesSelector from "../components/FilesSelector";
+import RaceDataPresenter from "../components/RaceDataPresenter";
+import {deserializeFromBase64} from "../data/RaceDataParser";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 function teamRaceHeader(race: any): string {
     const parts = [
@@ -134,6 +134,14 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                 <RaceDataPresenter
                     raceHorseInfo={data['race_horse_data_array']}
                     raceData={deserializeFromBase64(data['race_scenario'])}/>
+                <hr/>
+            </>;
+        } else if (data['race_result_info']) {
+            // Practice race
+            return <>
+                <RaceDataPresenter
+                    raceHorseInfo={data['race_result_info']['race_horse_data_array']}
+                    raceData={deserializeFromBase64(data['race_result_info']['race_scenario'])}/>
                 <hr/>
             </>;
         } else {
