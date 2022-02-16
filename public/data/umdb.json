@@ -12451,6612 +12451,7934 @@
     {
       "id": 100101,
       "name": "フェブラリーS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 100201,
       "name": "高松宮記念",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 100301,
       "name": "大阪杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 100401,
       "name": "桜花賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 100501,
       "name": "皐月賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 100601,
       "name": "天皇賞（春）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 100701,
       "name": "NHKマイルC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 100801,
       "name": "ヴィクトリアマイル",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 100901,
       "name": "オークス",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 101001,
       "name": "日本ダービー",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 701301,
       "name": "東京優駿（日本ダービー）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 101101,
       "name": "安田記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 101201,
       "name": "宝塚記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 101301,
       "name": "スプリンターズS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 101401,
       "name": "秋華賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 101501,
       "name": "菊花賞",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 101601,
       "name": "天皇賞（秋）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 101701,
       "name": "エリザベス女王杯",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 101801,
       "name": "マイルCS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 101901,
       "name": "ジャパンC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 102001,
       "name": "チャンピオンズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 102101,
       "name": "阪神JF",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 102201,
       "name": "朝日杯FS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 102301,
       "name": "有馬記念",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 102401,
       "name": "ホープフルS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 102501,
       "name": "宝塚記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 102601,
       "name": "菊花賞",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 102701,
       "name": "天皇賞（春）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 102801,
       "name": "皐月賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 110101,
       "name": "帝王賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 110201,
       "name": "ジャパンダートダービー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 110301,
       "name": "JBCレディスクラシック",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 110401,
       "name": "JBCスプリント",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 110501,
       "name": "JBCクラシック",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 110601,
       "name": "東京大賞典",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 200101,
       "name": "日経新春杯",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 200201,
       "name": "東海S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 200301,
       "name": "アメリカJCC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 200401,
       "name": "京都記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 200501,
       "name": "中山記念",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 200601,
       "name": "弥生賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 200701,
       "name": "金鯱賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 200801,
       "name": "フィリーズレビュー",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 200901,
       "name": "阪神大賞典",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 201001,
       "name": "スプリングS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 201101,
       "name": "日経賞",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 201201,
       "name": "阪神ウマ娘S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 201301,
       "name": "ニュージーランドT",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 201401,
       "name": "マイラーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 201501,
       "name": "フローラS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 201601,
       "name": "青葉賞",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 201701,
       "name": "京都新聞杯",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 201801,
       "name": "京王杯スプリングC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 201901,
       "name": "目黒記念",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 202001,
       "name": "札幌記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 202101,
       "name": "セントウルS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 202201,
       "name": "ローズS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 202301,
       "name": "セントライト記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 202401,
       "name": "神戸新聞杯",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 202501,
       "name": "オールカマー",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 202601,
       "name": "毎日王冠",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 202701,
       "name": "京都大賞典",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 202801,
       "name": "府中ウマ娘S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 202901,
       "name": "スワンS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 203001,
       "name": "京王杯ジュニアS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 203101,
       "name": "アルゼンチン共和国杯",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 203201,
       "name": "デイリー杯ジュニアS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 203301,
       "name": "ステイヤーズS",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 203401,
       "name": "阪神C",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 203501,
       "name": "スプリングS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 300101,
       "name": "京都金杯",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 300201,
       "name": "中山金杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 300301,
       "name": "シンザン記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 300401,
       "name": "フェアリーS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 300501,
       "name": "愛知杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 300601,
       "name": "京成杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 300701,
       "name": "シルクロードS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 300801,
       "name": "根岸S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 300901,
       "name": "きさらぎ賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 301001,
       "name": "東京新聞杯",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 301101,
       "name": "クイーンC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 301201,
       "name": "共同通信杯",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 301301,
       "name": "京都ウマ娘S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 301401,
       "name": "ダイヤモンドS",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 301501,
       "name": "小倉大賞典",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 301601,
       "name": "アーリントンC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 301701,
       "name": "阪急杯",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 301801,
       "name": "チューリップ賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 301901,
       "name": "オーシャンS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 302001,
       "name": "中山ウマ娘S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 302101,
       "name": "ファルコンS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 302201,
       "name": "フラワーC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 302301,
       "name": "毎日杯",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 302401,
       "name": "マーチS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 302501,
       "name": "ダービー卿CT",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 302601,
       "name": "アンタレスS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 302701,
       "name": "福島ウマ娘S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 302801,
       "name": "新潟大賞典",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 302901,
       "name": "平安S",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 303001,
       "name": "鳴尾記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 303101,
       "name": "マーメイドS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 303201,
       "name": "エプソムC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 303301,
       "name": "ユニコーンS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 303401,
       "name": "函館スプリントS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 303501,
       "name": "CBC賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 303601,
       "name": "ラジオNIKKEI賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 303701,
       "name": "プロキオンS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 303801,
       "name": "七夕賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 303901,
       "name": "函館記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 304001,
       "name": "中京記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 304101,
       "name": "函館ジュニアS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 304201,
       "name": "アイビスSD",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 304301,
       "name": "クイーンS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 304401,
       "name": "小倉記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 304501,
       "name": "レパードS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 304601,
       "name": "関屋記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 304701,
       "name": "エルムS",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 304801,
       "name": "北九州記念",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 304901,
       "name": "新潟ジュニアS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 305001,
       "name": "キーンランドC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 305101,
       "name": "札幌ジュニアS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 305201,
       "name": "小倉ジュニアS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 305301,
       "name": "新潟記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 305401,
       "name": "紫苑S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 305501,
       "name": "京成杯AH",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 305601,
       "name": "シリウスS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 305701,
       "name": "サウジアラビアRC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 305801,
       "name": "富士S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 305901,
       "name": "アルテミスS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 306001,
       "name": "ファンタジーS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 306101,
       "name": "みやこS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 306201,
       "name": "武蔵野S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 306301,
       "name": "福島記念",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 306401,
       "name": "東スポ杯ジュニアS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 306501,
       "name": "京都ジュニアS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 306601,
       "name": "京阪杯",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 306701,
       "name": "チャレンジC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 306801,
       "name": "中日新聞杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 306901,
       "name": "カペラS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 307001,
       "name": "ターコイズS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 400101,
       "name": "万葉S",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 400201,
       "name": "ジュニアC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 400301,
       "name": "淀短距離S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 400401,
       "name": "ポルックスS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 400501,
       "name": "ジャニュアリーS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 400601,
       "name": "ニューイヤーS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 400701,
       "name": "紅梅S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 400801,
       "name": "すばるS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 400901,
       "name": "若駒S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 401001,
       "name": "カーバンクルS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 401101,
       "name": "白富士S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 401201,
       "name": "クロッカスS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 401301,
       "name": "大和S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 401401,
       "name": "エルフィンS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 401501,
       "name": "洛陽S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 401601,
       "name": "アルデバランS",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 401701,
       "name": "バレンタインS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 401801,
       "name": "ヒヤシンスS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 401901,
       "name": "総武S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 402001,
       "name": "すみれS",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 402101,
       "name": "大阪城S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 402201,
       "name": "ポラリスS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 402301,
       "name": "仁川S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 402401,
       "name": "アネモネS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 402501,
       "name": "昇竜S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 402601,
       "name": "東風S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 402701,
       "name": "若葉S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 402801,
       "name": "千葉S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 403001,
       "name": "六甲S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 403101,
       "name": "コーラルS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 403201,
       "name": "マーガレットS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 403301,
       "name": "伏竜S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 403501,
       "name": "忘れな草賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 403601,
       "name": "京葉S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 403701,
       "name": "春雷S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 403801,
       "name": "福島民報杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 403901,
       "name": "橘S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 404001,
       "name": "オアシスS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 404101,
       "name": "天王山S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 404201,
       "name": "端午S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 404301,
       "name": "スイートピーS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 404401,
       "name": "谷川岳S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 404501,
       "name": "プリンシパルS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 404601,
       "name": "メトロポリタンS",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 404701,
       "name": "鞍馬S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 404801,
       "name": "ブリリアントS",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 404901,
       "name": "都大路S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 405001,
       "name": "葵S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 405101,
       "name": "栗東S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 405201,
       "name": "青竜S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 405301,
       "name": "メイS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 405401,
       "name": "鳳雛S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 405501,
       "name": "韋駄天S",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 405601,
       "name": "白百合S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 405701,
       "name": "欅S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 405801,
       "name": "安土城S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 405901,
       "name": "アハルテケS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 406001,
       "name": "天保山S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 406101,
       "name": "米子S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 406201,
       "name": "大沼S",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 406301,
       "name": "パラダイスS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 406401,
       "name": "巴賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 406501,
       "name": "マリーンS",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 406601,
       "name": "名鉄杯",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 406801,
       "name": "中京ジュニアS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 406901,
       "name": "福島テレビOP",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 407001,
       "name": "ダリア賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 407101,
       "name": "札幌日経OP",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 407201,
       "name": "UHB賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 407301,
       "name": "阿蘇S",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 407401,
       "name": "フェニックス賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 407501,
       "name": "コスモス賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 407601,
       "name": "NST賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 407701,
       "name": "クローバー賞",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 407801,
       "name": "ひまわり賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 407901,
       "name": "BSN賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 408001,
       "name": "小倉日経OP",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 408101,
       "name": "朱鷺S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 408201,
       "name": "丹頂S",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 408301,
       "name": "すずらん賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 408401,
       "name": "エニフS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 408501,
       "name": "野路菊S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 408601,
       "name": "ラジオ日本賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 408701,
       "name": "ききょうS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 408801,
       "name": "芙蓉S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 408901,
       "name": "カンナS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 409001,
       "name": "ポートアイランドS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 409101,
       "name": "オパールS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 409201,
       "name": "グリーンチャンネルC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 409301,
       "name": "もみじS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 409401,
       "name": "オクトーバーS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 409501,
       "name": "信越S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 409601,
       "name": "アイビーS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 409701,
       "name": "室町S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 409801,
       "name": "ブラジルC",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 409901,
       "name": "萩S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 410001,
       "name": "カシオペアS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 410101,
       "name": "ルミエールオータムD",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 410201,
       "name": "オーロC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 410301,
       "name": "福島ジュニアS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 410401,
       "name": "アンドロメダS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 410501,
       "name": "霜月S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 410601,
       "name": "福島民友C",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 410701,
       "name": "キャピタルS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 410801,
       "name": "オータムリーフS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 410901,
       "name": "ラピスラズリS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 411001,
       "name": "師走S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 411101,
       "name": "リゲルS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 411201,
       "name": "タンザナイトS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 411301,
       "name": "ディセンバーS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 411401,
       "name": "クリスマスローズS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 411501,
       "name": "ギャラクシーS",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 411601,
       "name": "ベテルギウスS",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 411801,
       "name": "北九州短距離S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 411901,
       "name": "吾妻小富士S",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 412001,
       "name": "スレイプニルS",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 412101,
       "name": "三宮S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 412201,
       "name": "関越S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 412301,
       "name": "ながつきS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 412401,
       "name": "太秦S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 450101,
       "name": "アスター賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 450201,
       "name": "サフラン賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 450301,
       "name": "りんどう賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 450401,
       "name": "紫菊賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 450501,
       "name": "プラタナス賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 450601,
       "name": "なでしこ賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 450701,
       "name": "百日草特別",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 450801,
       "name": "きんもくせい特別",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 450901,
       "name": "オキザリス賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 451001,
       "name": "黄菊賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 451101,
       "name": "もちの木賞",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 451201,
       "name": "赤松賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 451301,
       "name": "秋明菊賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 451401,
       "name": "カトレア賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 451501,
       "name": "ベゴニア賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 451601,
       "name": "白菊賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 451701,
       "name": "葉牡丹賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 451801,
       "name": "こうやまき賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 451901,
       "name": "万両賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 452001,
       "name": "黒松賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 452101,
       "name": "エリカ賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 452201,
       "name": "つわぶき賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 452301,
       "name": "ひいらぎ賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 452401,
       "name": "さざんか賞",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 452501,
       "name": "寒椿賞",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 452601,
       "name": "千両賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 500101,
       "name": "練習",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 500201,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 500301,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 500401,
       "name": "練習",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 500501,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 500701,
       "name": "練習",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 500901,
       "name": "練習",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 501001,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 501101,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 501201,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 501301,
       "name": "練習",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 501501,
       "name": "練習",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 501701,
       "name": "練習",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 501801,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 501901,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 502001,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 502101,
       "name": "練習",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 502201,
       "name": "練習",
-      "distance": 1150
+      "distance": 1150,
+      "groundType": "DIRT"
     },
     {
       "id": 502301,
       "name": "練習",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 502401,
       "name": "練習",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 502501,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 502601,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 502701,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 502901,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 503001,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 503101,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 503201,
       "name": "練習",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 503301,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 503401,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 503601,
       "name": "練習",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 503701,
       "name": "練習",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 503801,
       "name": "練習",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 503901,
       "name": "練習",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 504001,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 504101,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 504201,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 504301,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 504401,
       "name": "練習",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 504701,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 504801,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 504901,
       "name": "練習",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 505001,
       "name": "練習",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 505101,
       "name": "練習",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 505201,
       "name": "練習",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 505301,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 505501,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 505601,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 505701,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 505801,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 505901,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 506101,
       "name": "練習",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 506201,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 506301,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 506401,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 506501,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 506701,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 506801,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 507001,
       "name": "練習",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 507101,
       "name": "練習",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 507201,
       "name": "練習",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 507301,
       "name": "練習",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 507401,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 507501,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 507601,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 507701,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 507801,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 507901,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 508001,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 508101,
       "name": "練習",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 508201,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 508301,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 508401,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 508501,
       "name": "練習",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 508601,
       "name": "練習",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 508701,
       "name": "練習",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 508801,
       "name": "練習",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 508901,
       "name": "練習",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 509001,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 509101,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 509201,
       "name": "練習",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 509301,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 509401,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 509501,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 509601,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 509701,
       "name": "練習",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 509801,
       "name": "練習",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 509901,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 510001,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 510101,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 510301,
       "name": "練習",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 510501,
       "name": "練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 510601,
       "name": "練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 510701,
       "name": "練習",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 510801,
       "name": "練習 フェブラリーS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 510901,
       "name": "練習 高松宮記念",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 511001,
       "name": "練習 大阪杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 511101,
       "name": "練習 桜花賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 511201,
       "name": "練習 皐月賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 511301,
       "name": "練習 天皇賞（春）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 511401,
       "name": "練習 NHKマイルカップ",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 511501,
       "name": "練習 ヴィクトリアマイル",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 511601,
       "name": "練習 オークス",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 511701,
       "name": "練習 日本ダービー",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 511801,
       "name": "練習 安田記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 511901,
       "name": "練習 宝塚記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 512001,
       "name": "練習 スプリンターズS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 512101,
       "name": "練習 秋華賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 512201,
       "name": "練習 菊花賞",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 512301,
       "name": "練習 天皇賞（秋）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 512401,
       "name": "練習 エリザベス女王杯",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 512501,
       "name": "練習 マイルCS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 512601,
       "name": "練習 ジャパンC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 512701,
       "name": "練習 チャンピオンズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 512801,
       "name": "練習 阪神JF",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 512901,
       "name": "練習 朝日杯FS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 513001,
       "name": "練習 有馬記念",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 513101,
       "name": "練習 ホープフルS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 513201,
       "name": "練習 帝王賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 513301,
       "name": "練習 ジャパンダートダービー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 513401,
       "name": "練習 JBCレディスクラシック",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 513501,
       "name": "練習 JBCスプリント",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 513601,
       "name": "練習 JBCクラシック",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 513701,
       "name": "練習 東京大賞典",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800031,
       "name": "トレーナーズC",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 800032,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800033,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800034,
       "name": "トレーナーズC",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 800035,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800036,
       "name": "トレーナーズC",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 800037,
       "name": "トレーナーズC",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 800038,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800039,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800040,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800041,
       "name": "トレーナーズC",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 800042,
       "name": "トレーナーズC",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 800043,
       "name": "トレーナーズC",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 800044,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800045,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800046,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800047,
       "name": "トレーナーズC",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 800048,
       "name": "トレーナーズC",
-      "distance": 1150
+      "distance": 1150,
+      "groundType": "DIRT"
     },
     {
       "id": 800049,
       "name": "トレーナーズC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800050,
       "name": "トレーナーズC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800051,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800052,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800053,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800054,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800055,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800056,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800057,
       "name": "トレーナーズC",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 800058,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800059,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 800060,
       "name": "トレーナーズC",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 800061,
       "name": "トレーナーズC",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 800062,
       "name": "トレーナーズC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800063,
       "name": "トレーナーズC",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 800064,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800065,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800066,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800067,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800068,
       "name": "トレーナーズC",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 800069,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 800070,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 800071,
       "name": "トレーナーズC",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 800072,
       "name": "トレーナーズC",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 800073,
       "name": "トレーナーズC",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 800074,
       "name": "トレーナーズC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800075,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800076,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800077,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800078,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800079,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800080,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 800081,
       "name": "トレーナーズC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800082,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800083,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800084,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800085,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800086,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800087,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 800088,
       "name": "トレーナーズC",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 800089,
       "name": "トレーナーズC",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 800090,
       "name": "トレーナーズC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800091,
       "name": "トレーナーズC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800092,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800093,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800094,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800095,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800096,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800097,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800098,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800099,
       "name": "トレーナーズC",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 800100,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800101,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 800102,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 800103,
       "name": "トレーナーズC",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 800104,
       "name": "トレーナーズC",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 800105,
       "name": "トレーナーズC",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 800106,
       "name": "トレーナーズC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800107,
       "name": "トレーナーズC",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800108,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800109,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800110,
       "name": "トレーナーズC",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800111,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 800112,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800113,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800114,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800115,
       "name": "トレーナーズC",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 800116,
       "name": "トレーナーズC",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 800117,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800118,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 800119,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800120,
       "name": "トレーナーズC",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 800121,
       "name": "トレーナーズC",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800122,
       "name": "トレーナーズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800123,
       "name": "トレーナーズC",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 580001,
       "name": "ムーンライト賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 580002,
       "name": "ムーンライト賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 580003,
       "name": "ムーンライト賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 580031,
       "name": "ジュピターカップ",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 580032,
       "name": "ジュピターカップ",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 580033,
       "name": "ジュピターカップ",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 592001,
       "name": "ジャパンC（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 592002,
       "name": "ジャパンC（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 592003,
       "name": "ジャパンC（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 593001,
       "name": "天皇賞（春）（HARD）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 593002,
       "name": "天皇賞（春）（HARD）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 593003,
       "name": "天皇賞（春）（HARD）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 593004,
       "name": "天皇賞（春）（HARD）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 593501,
       "name": "日本ダービー（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 593502,
       "name": "日本ダービー（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 593503,
       "name": "日本ダービー（HARD）",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 594001,
       "name": "宝塚記念（HARD）",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 594002,
       "name": "宝塚記念（HARD）",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 594003,
       "name": "宝塚記念（HARD）",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 594501,
       "name": "スプリンターズS（HARD）",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 594502,
       "name": "スプリンターズS（HARD）",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 594503,
       "name": "スプリンターズS（HARD）",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 594504,
       "name": "スプリンターズS（HARD）",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 595001,
       "name": "菊花賞（HARD）",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 595002,
       "name": "菊花賞（HARD）",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 595003,
       "name": "菊花賞（HARD）",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 595501,
       "name": "有馬記念（HARD）",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 595502,
       "name": "有馬記念（HARD）",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 595503,
       "name": "有馬記念（HARD）",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 596001,
       "name": "朝日杯FS（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 596002,
       "name": "朝日杯FS（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 596003,
       "name": "朝日杯FS（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 596501,
       "name": "天皇賞（秋）（HARD）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 596502,
       "name": "天皇賞（秋）（HARD）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 596503,
       "name": "天皇賞（秋）（HARD）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 597001,
       "name": "阪神ジュベナイルフィリーズ（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 597002,
       "name": "阪神ジュベナイルフィリーズ（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 597003,
       "name": "阪神ジュベナイルフィリーズ（HARD）",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 600001,
       "name": "カプリコーン杯",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 600002,
       "name": "アクエリアス杯",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 600005,
       "name": "タウラス杯",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 600006,
       "name": "ジェミニ杯",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 600007,
       "name": "キャンサー杯",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 600008,
       "name": "レオ杯",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 600009,
       "name": "ヴァルゴ杯",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 600010,
       "name": "ライブラ杯",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 600011,
       "name": "スコーピオ杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 600012,
       "name": "サジタリウス杯",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 600013,
       "name": "カプリコーン杯 決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 600014,
       "name": "アクエリアス杯 決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 600017,
       "name": "タウラス杯 決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 600018,
       "name": "ジェミニ杯 決勝",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 600019,
       "name": "キャンサー杯 決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 600020,
       "name": "レオ杯 決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 600021,
       "name": "ヴァルゴ杯 決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 600022,
       "name": "ライブラ杯 決勝",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 600023,
       "name": "スコーピオ杯 決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 600024,
       "name": "サジタリウス杯 決勝",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610000,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610001,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610002,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610003,
       "name": "チームレース　マイル代表",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 610004,
       "name": "チームレース　マイル代表",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 610005,
       "name": "チームレース　マイル代表",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 610006,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610007,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610008,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610009,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610010,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610011,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610012,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610013,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610014,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610015,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610016,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610017,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610018,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610019,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610020,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610021,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610022,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610023,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610024,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610025,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610026,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610027,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610028,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610029,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610030,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610031,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610032,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610033,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610034,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610035,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610036,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610037,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610038,
       "name": "チームレース　短距離代表",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 610039,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610040,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610041,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610042,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610043,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610044,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610045,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610046,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610047,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610048,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610049,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610050,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610051,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610052,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610053,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610054,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610055,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610056,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610057,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610058,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610059,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610060,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610061,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610062,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610063,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610064,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610065,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610066,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610067,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610068,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610069,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610070,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610071,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610072,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610073,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610074,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610075,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610076,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610077,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610078,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610079,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610080,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610081,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610082,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610083,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610084,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610085,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610086,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610087,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610088,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610089,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610090,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610091,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610092,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610093,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610094,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610095,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610096,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610097,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610098,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610099,
       "name": "チームレース　長距離代表",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 610100,
       "name": "チームレース　長距離代表",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 610101,
       "name": "チームレース　長距離代表",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 610102,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610103,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610104,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610105,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610106,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610107,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610108,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610109,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610110,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610111,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610112,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610113,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610114,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610115,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610116,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610117,
       "name": "チームレース　中距離代表",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 610118,
       "name": "チームレース　中距離代表",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 610119,
       "name": "チームレース　中距離代表",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 610120,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610121,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610122,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610123,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610124,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610125,
       "name": "チームレース　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 610126,
       "name": "チームレース　長距離代表",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 610127,
       "name": "チームレース　長距離代表",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 610128,
       "name": "チームレース　長距離代表",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 610129,
       "name": "チームレース　ダート代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 610130,
       "name": "チームレース　ダート代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 610131,
       "name": "チームレース　ダート代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 610135,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610136,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610137,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610138,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610139,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610140,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610141,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610142,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610143,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610144,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610145,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610146,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610147,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610148,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610149,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610150,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610151,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610152,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610153,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610154,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610155,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610156,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610157,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610158,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610159,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610160,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610161,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610162,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610163,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610164,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610165,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610166,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610167,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610168,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610169,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610170,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610171,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610172,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610173,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610174,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610175,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610176,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610177,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610178,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610179,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610180,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610181,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610182,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610183,
       "name": "チームレース　長距離代表",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 610184,
       "name": "チームレース　長距離代表",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 610185,
       "name": "チームレース　長距離代表",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 610186,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610187,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610188,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610189,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610190,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610191,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610192,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610193,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610194,
       "name": "チームレース　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 610195,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610196,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610197,
       "name": "チームレース　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 610198,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610199,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610200,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610201,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610202,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610203,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610204,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610205,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610206,
       "name": "チームレース　中距離代表",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 610207,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610208,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610209,
       "name": "チームレース　中距離代表",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 610210,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610211,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610212,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610213,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610214,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610215,
       "name": "チームレース　長距離代表",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 610216,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610217,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610218,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610219,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610220,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610221,
       "name": "チームレース　短距離代表",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 610222,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610223,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610224,
       "name": "チームレース　マイル代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 610225,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610226,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610227,
       "name": "チームレース　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 610228,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610229,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610230,
       "name": "チームレース　長距離代表",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 610231,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610232,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610233,
       "name": "チームレース　ダート代表",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 610234,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610235,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 610236,
       "name": "チームレース　ダート代表",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 700101,
       "name": "チーム練習",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 700201,
       "name": "合宿後練習",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 700301,
       "name": "新旧エース対決",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 700401,
       "name": "練習試合",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 700501,
       "name": "チーム練習",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 700701,
       "name": "皐月賞の夢",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 700801,
       "name": "ダービーの夢",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 700901,
       "name": "朝日杯FS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 701001,
       "name": "菊花賞",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 701101,
       "name": "ケガ明けトレーニング",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 701201,
       "name": "色褪せない記憶",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 701401,
       "name": "チーム練習",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 701501,
       "name": "離れぬ憂慮",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 701601,
       "name": "信じる想い",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 900880,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900881,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900882,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900883,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900884,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900890,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900891,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900892,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900893,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 900930,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 900931,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 900932,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 900933,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 900940,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900941,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900942,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900943,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900944,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900950,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900951,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900952,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900953,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 900970,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 900971,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 900972,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 900973,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 900990,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 900991,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 900992,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 901020,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 901021,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 901022,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 901023,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 901040,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 901041,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 901042,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 901050,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901051,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901052,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901053,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901054,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901070,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901071,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901072,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901073,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 901080,
       "name": "クラシック級未勝利戦",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 901081,
       "name": "クラシック級未勝利戦",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 901082,
       "name": "クラシック級未勝利戦",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 901083,
       "name": "クラシック級未勝利戦",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 901110,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 901210,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 901240,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904186,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904185,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902430,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902431,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902432,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902433,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902434,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902435,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902436,
       "name": "クラシック級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902450,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902451,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902452,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902453,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902454,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902460,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902461,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902462,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902463,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902464,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902465,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902466,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902480,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902481,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902482,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902483,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902484,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902485,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902486,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902490,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902491,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902492,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902493,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902494,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902495,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902496,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902510,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902511,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902512,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902513,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902514,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902515,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902530,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902531,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902532,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902533,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902550,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902551,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902552,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902553,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902554,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902555,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902556,
       "name": "クラシック級未勝利戦",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 902560,
       "name": "クラシック級未勝利戦",
-      "distance": 2300
+      "distance": 2300,
+      "groundType": "TURF"
     },
     {
       "id": 902570,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 902571,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 902572,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 902573,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 902574,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 902580,
       "name": "ジュニア級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902581,
       "name": "ジュニア級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902582,
       "name": "ジュニア級未勝利戦",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902590,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902591,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902592,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902593,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902594,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 902610,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902611,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902612,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902613,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 902620,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902621,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902622,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902623,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902624,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 902640,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902641,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902642,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902643,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902660,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902661,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902662,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902663,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 902680,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902681,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902682,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902683,
       "name": "ジュニア級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 902730,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1300
+      "distance": 1300,
+      "groundType": "DIRT"
     },
     {
       "id": 902790,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 902810,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 903380,
       "name": "クラシック級未勝利戦",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 903381,
       "name": "クラシック級未勝利戦",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 903410,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 903411,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 903430,
       "name": "クラシック級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 903440,
       "name": "クラシック級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 903450,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 903451,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 903470,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 903471,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 903490,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 903491,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 903520,
       "name": "クラシック級未勝利戦",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 903530,
       "name": "ジュニア級未勝利戦",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 903531,
       "name": "ジュニア級未勝利戦",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 903540,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 903550,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 903570,
       "name": "ジュニア級未勝利戦",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 903590,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 903591,
       "name": "ジュニア級未勝利戦",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 903610,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 903611,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 903620,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 903720,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 903940,
       "name": "クラシック級未勝利戦",
-      "distance": 1150
+      "distance": 1150,
+      "groundType": "DIRT"
     },
     {
       "id": 903941,
       "name": "クラシック級未勝利戦",
-      "distance": 1150
+      "distance": 1150,
+      "groundType": "DIRT"
     },
     {
       "id": 903960,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 903961,
       "name": "クラシック級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 903980,
       "name": "クラシック級未勝利戦",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 903981,
       "name": "クラシック級未勝利戦",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 904000,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 904001,
       "name": "クラシック級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 904020,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904021,
       "name": "クラシック級未勝利戦",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904040,
       "name": "クラシック級未勝利戦",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 904050,
       "name": "ジュニア級未勝利戦",
-      "distance": 1150
+      "distance": 1150,
+      "groundType": "DIRT"
     },
     {
       "id": 904060,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 904061,
       "name": "ジュニア級未勝利戦",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 904100,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 904101,
       "name": "ジュニア級未勝利戦",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 904181,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904182,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904183,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904184,
       "name": "ジュニア級メイクデビュー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 904187,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904188,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 904189,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 904190,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904191,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904192,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1500
+      "distance": 1500,
+      "groundType": "TURF"
     },
     {
       "id": 904193,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 904194,
       "name": "ジュニア級メイクデビュー",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910001,
       "name": "URAファイナルズ予選",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910002,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910003,
       "name": "URAファイナルズ予選",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910004,
       "name": "URAファイナルズ予選",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910005,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910006,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910007,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910008,
       "name": "URAファイナルズ予選",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910009,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910010,
       "name": "URAファイナルズ予選",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910011,
       "name": "URAファイナルズ予選",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910012,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910013,
       "name": "URAファイナルズ予選",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910014,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910015,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910016,
       "name": "URAファイナルズ予選",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910017,
       "name": "URAファイナルズ予選",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910018,
       "name": "URAファイナルズ予選",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910019,
       "name": "URAファイナルズ予選",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910020,
       "name": "URAファイナルズ予選",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910021,
       "name": "URAファイナルズ予選",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910022,
       "name": "URAファイナルズ予選",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910023,
       "name": "URAファイナルズ予選",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910024,
       "name": "URAファイナルズ予選",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910025,
       "name": "URAファイナルズ予選",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910026,
       "name": "URAファイナルズ予選",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 910027,
       "name": "URAファイナルズ予選",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910028,
       "name": "URAファイナルズ予選",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910029,
       "name": "URAファイナルズ予選",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 910030,
       "name": "URAファイナルズ予選",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910031,
       "name": "URAファイナルズ予選",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 910032,
       "name": "URAファイナルズ予選",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910033,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910034,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910035,
       "name": "URAファイナルズ予選",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 910036,
       "name": "URAファイナルズ予選",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910037,
       "name": "URAファイナルズ予選",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 910038,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910039,
       "name": "URAファイナルズ予選",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910040,
       "name": "URAファイナルズ予選",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 910041,
       "name": "URAファイナルズ予選",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 910101,
       "name": "URAファイナルズ準決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910102,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910103,
       "name": "URAファイナルズ準決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910104,
       "name": "URAファイナルズ準決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910105,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910106,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910107,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910108,
       "name": "URAファイナルズ準決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910109,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910110,
       "name": "URAファイナルズ準決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910111,
       "name": "URAファイナルズ準決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910112,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910113,
       "name": "URAファイナルズ準決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910114,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910115,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910116,
       "name": "URAファイナルズ準決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910117,
       "name": "URAファイナルズ準決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910118,
       "name": "URAファイナルズ準決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910119,
       "name": "URAファイナルズ準決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910120,
       "name": "URAファイナルズ準決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910121,
       "name": "URAファイナルズ準決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910122,
       "name": "URAファイナルズ準決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910123,
       "name": "URAファイナルズ準決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910124,
       "name": "URAファイナルズ準決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910125,
       "name": "URAファイナルズ準決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910126,
       "name": "URAファイナルズ準決勝",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 910127,
       "name": "URAファイナルズ準決勝",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910128,
       "name": "URAファイナルズ準決勝",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910129,
       "name": "URAファイナルズ準決勝",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 910130,
       "name": "URAファイナルズ準決勝",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910131,
       "name": "URAファイナルズ準決勝",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 910132,
       "name": "URAファイナルズ準決勝",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910133,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910134,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910135,
       "name": "URAファイナルズ準決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 910136,
       "name": "URAファイナルズ準決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910137,
       "name": "URAファイナルズ準決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 910138,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910139,
       "name": "URAファイナルズ準決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910140,
       "name": "URAファイナルズ準決勝",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 910141,
       "name": "URAファイナルズ準決勝",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 910201,
       "name": "URAファイナルズ決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910202,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910203,
       "name": "URAファイナルズ決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910204,
       "name": "URAファイナルズ決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 910205,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910206,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910207,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 910208,
       "name": "URAファイナルズ決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910209,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910210,
       "name": "URAファイナルズ決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910211,
       "name": "URAファイナルズ決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910212,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910213,
       "name": "URAファイナルズ決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 910214,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910215,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 910216,
       "name": "URAファイナルズ決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910217,
       "name": "URAファイナルズ決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910218,
       "name": "URAファイナルズ決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910219,
       "name": "URAファイナルズ決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910220,
       "name": "URAファイナルズ決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910221,
       "name": "URAファイナルズ決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910222,
       "name": "URAファイナルズ決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910223,
       "name": "URAファイナルズ決勝",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 910224,
       "name": "URAファイナルズ決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 910225,
       "name": "URAファイナルズ決勝",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 910226,
       "name": "URAファイナルズ決勝",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 910227,
       "name": "URAファイナルズ決勝",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910228,
       "name": "URAファイナルズ決勝",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910229,
       "name": "URAファイナルズ決勝",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 910230,
       "name": "URAファイナルズ決勝",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 910231,
       "name": "URAファイナルズ決勝",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 910232,
       "name": "URAファイナルズ決勝",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 910233,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910234,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910235,
       "name": "URAファイナルズ決勝",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 910236,
       "name": "URAファイナルズ決勝",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "DIRT"
     },
     {
       "id": 910237,
       "name": "URAファイナルズ決勝",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 910238,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910239,
       "name": "URAファイナルズ決勝",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 910240,
       "name": "URAファイナルズ決勝",
-      "distance": 2100
+      "distance": 2100,
+      "groundType": "DIRT"
     },
     {
       "id": 910241,
       "name": "URAファイナルズ決勝",
-      "distance": 1900
+      "distance": 1900,
+      "groundType": "DIRT"
     },
     {
       "id": 999901,
       "name": "URAファイナルズ決勝",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 620000,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620001,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 620002,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620003,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620004,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 620005,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620006,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620007,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620008,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620009,
       "name": "チーム対抗戦　短距離代表G",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 620010,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620011,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620012,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620013,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620014,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620015,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620016,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620017,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620018,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620019,
       "name": "チーム対抗戦　マイル代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620020,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620021,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620022,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620023,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620024,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620025,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620026,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 620027,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620028,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620029,
       "name": "チーム対抗戦　中距離代表G",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620030,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620031,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620032,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620033,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 620034,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 620035,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 620036,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620037,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620038,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620039,
       "name": "チーム対抗戦　長距離代表G",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620040,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620041,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620042,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620043,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620044,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 620045,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620046,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620047,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620048,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620049,
       "name": "チーム対抗戦　ダート代表G",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620050,
       "name": "チーム対抗戦　短距離代表F",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620051,
       "name": "チーム対抗戦　短距離代表F",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620052,
       "name": "チーム対抗戦　短距離代表F",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 620053,
       "name": "チーム対抗戦　マイル代表F",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620054,
       "name": "チーム対抗戦　マイル代表F",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620055,
       "name": "チーム対抗戦　マイル代表F",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620056,
       "name": "チーム対抗戦　中距離代表F",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620057,
       "name": "チーム対抗戦　中距離代表F",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620058,
       "name": "チーム対抗戦　中距離代表F",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620059,
       "name": "チーム対抗戦　長距離代表F",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620060,
       "name": "チーム対抗戦　長距離代表F",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 620061,
       "name": "チーム対抗戦　長距離代表F",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 620062,
       "name": "チーム対抗戦　ダート代表F",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620063,
       "name": "チーム対抗戦　ダート代表F",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620064,
       "name": "チーム対抗戦　ダート代表F",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 620065,
       "name": "チーム対抗戦　短距離代表E",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620066,
       "name": "チーム対抗戦　短距離代表E",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620067,
       "name": "チーム対抗戦　短距離代表E",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620068,
       "name": "チーム対抗戦　マイル代表E",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620069,
       "name": "チーム対抗戦　マイル代表E",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620070,
       "name": "チーム対抗戦　マイル代表E",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620071,
       "name": "チーム対抗戦　中距離代表E",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620072,
       "name": "チーム対抗戦　中距離代表E",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 620073,
       "name": "チーム対抗戦　中距離代表E",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620074,
       "name": "チーム対抗戦　長距離代表E",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 620075,
       "name": "チーム対抗戦　長距離代表E",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620076,
       "name": "チーム対抗戦　長距離代表E",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620077,
       "name": "チーム対抗戦　ダート代表E",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620078,
       "name": "チーム対抗戦　ダート代表E",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620079,
       "name": "チーム対抗戦　ダート代表E",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620080,
       "name": "チーム対抗戦　短距離代表D",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620081,
       "name": "チーム対抗戦　短距離代表D",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 620082,
       "name": "チーム対抗戦　短距離代表D",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620083,
       "name": "チーム対抗戦　マイル代表D",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620084,
       "name": "チーム対抗戦　マイル代表D",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620085,
       "name": "チーム対抗戦　マイル代表D",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620086,
       "name": "チーム対抗戦　中距離代表D",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620087,
       "name": "チーム対抗戦　中距離代表D",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620088,
       "name": "チーム対抗戦　中距離代表D",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620089,
       "name": "チーム対抗戦　長距離代表D",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620090,
       "name": "チーム対抗戦　長距離代表D",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620091,
       "name": "チーム対抗戦　長距離代表D",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620092,
       "name": "チーム対抗戦　ダート代表D",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620093,
       "name": "チーム対抗戦　ダート代表D",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620094,
       "name": "チーム対抗戦　ダート代表D",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620095,
       "name": "チーム対抗戦　短距離代表C",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620096,
       "name": "チーム対抗戦　短距離代表C",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 620097,
       "name": "チーム対抗戦　短距離代表C",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620098,
       "name": "チーム対抗戦　マイル代表C",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620099,
       "name": "チーム対抗戦　マイル代表C",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620100,
       "name": "チーム対抗戦　マイル代表C",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620101,
       "name": "チーム対抗戦　中距離代表C",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620102,
       "name": "チーム対抗戦　中距離代表C",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620103,
       "name": "チーム対抗戦　中距離代表C",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620104,
       "name": "チーム対抗戦　長距離代表C",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 620105,
       "name": "チーム対抗戦　長距離代表C",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 620106,
       "name": "チーム対抗戦　長距離代表C",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 620107,
       "name": "チーム対抗戦　ダート代表C",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620108,
       "name": "チーム対抗戦　ダート代表C",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 620109,
       "name": "チーム対抗戦　ダート代表C",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620110,
       "name": "チーム対抗戦　短距離代表B",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620111,
       "name": "チーム対抗戦　短距離代表B",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620112,
       "name": "チーム対抗戦　短距離代表B",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620113,
       "name": "チーム対抗戦　マイル代表B",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620114,
       "name": "チーム対抗戦　マイル代表B",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620115,
       "name": "チーム対抗戦　マイル代表B",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620116,
       "name": "チーム対抗戦　中距離代表B",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 620117,
       "name": "チーム対抗戦　中距離代表B",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620118,
       "name": "チーム対抗戦　中距離代表B",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620119,
       "name": "チーム対抗戦　長距離代表B",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620120,
       "name": "チーム対抗戦　長距離代表B",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620121,
       "name": "チーム対抗戦　長距離代表B",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620122,
       "name": "チーム対抗戦　ダート代表B",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620123,
       "name": "チーム対抗戦　ダート代表B",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620124,
       "name": "チーム対抗戦　ダート代表B",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620125,
       "name": "チーム対抗戦　短距離代表A",
-      "distance": 1000
+      "distance": 1000,
+      "groundType": "TURF"
     },
     {
       "id": 620126,
       "name": "チーム対抗戦　短距離代表A",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620127,
       "name": "チーム対抗戦　短距離代表A",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620128,
       "name": "チーム対抗戦　マイル代表A",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620129,
       "name": "チーム対抗戦　マイル代表A",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620130,
       "name": "チーム対抗戦　マイル代表A",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620131,
       "name": "チーム対抗戦　中距離代表A",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620132,
       "name": "チーム対抗戦　中距離代表A",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620133,
       "name": "チーム対抗戦　中距離代表A",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620134,
       "name": "チーム対抗戦　長距離代表A",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620135,
       "name": "チーム対抗戦　長距離代表A",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620136,
       "name": "チーム対抗戦　長距離代表A",
-      "distance": 3600
+      "distance": 3600,
+      "groundType": "TURF"
     },
     {
       "id": 620137,
       "name": "チーム対抗戦　ダート代表A",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620138,
       "name": "チーム対抗戦　ダート代表A",
-      "distance": 1700
+      "distance": 1700,
+      "groundType": "DIRT"
     },
     {
       "id": 620139,
       "name": "チーム対抗戦　ダート代表A",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620140,
       "name": "チーム対抗戦　短距離代表S",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 620141,
       "name": "チーム対抗戦　短距離代表S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620142,
       "name": "チーム対抗戦　短距離代表S",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 620143,
       "name": "チーム対抗戦　マイル代表S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 620144,
       "name": "チーム対抗戦　マイル代表S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620145,
       "name": "チーム対抗戦　マイル代表S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620146,
       "name": "チーム対抗戦　中距離代表S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620147,
       "name": "チーム対抗戦　中距離代表S",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620148,
       "name": "チーム対抗戦　中距離代表S",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 620149,
       "name": "チーム対抗戦　長距離代表S",
-      "distance": 3400
+      "distance": 3400,
+      "groundType": "TURF"
     },
     {
       "id": 620150,
       "name": "チーム対抗戦　長距離代表S",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 620151,
       "name": "チーム対抗戦　長距離代表S",
-      "distance": 2600
+      "distance": 2600,
+      "groundType": "TURF"
     },
     {
       "id": 620152,
       "name": "チーム対抗戦　ダート代表S",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 620153,
       "name": "チーム対抗戦　ダート代表S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620154,
       "name": "チーム対抗戦　ダート代表S",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 620155,
       "name": "理事長代理チーム戦　短距離代表",
-      "distance": 1400
+      "distance": 1400,
+      "groundType": "TURF"
     },
     {
       "id": 620156,
       "name": "理事長代理チーム戦　マイル代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 620157,
       "name": "理事長代理チーム戦　中距離代表",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 620158,
       "name": "理事長代理チーム戦　長距離代表",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 620159,
       "name": "理事長代理チーム戦　ダート代表",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 800001,
       "name": "フェブラリーS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "DIRT"
     },
     {
       "id": 800002,
       "name": "高松宮記念",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800003,
       "name": "大阪杯",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800004,
       "name": "桜花賞",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800005,
       "name": "皐月賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800006,
       "name": "天皇賞（春）",
-      "distance": 3200
+      "distance": 3200,
+      "groundType": "TURF"
     },
     {
       "id": 800007,
       "name": "NHKマイルカップ",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800008,
       "name": "ヴィクトリアマイル",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800009,
       "name": "オークス",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800010,
       "name": "日本ダービー",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800011,
       "name": "安田記念",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800012,
       "name": "宝塚記念",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800013,
       "name": "スプリンターズS",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "TURF"
     },
     {
       "id": 800014,
       "name": "秋華賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800015,
       "name": "菊花賞",
-      "distance": 3000
+      "distance": 3000,
+      "groundType": "TURF"
     },
     {
       "id": 800016,
       "name": "天皇賞（秋）",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800017,
       "name": "エリザベス女王杯",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 800018,
       "name": "マイルCS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800019,
       "name": "ジャパンC",
-      "distance": 2400
+      "distance": 2400,
+      "groundType": "TURF"
     },
     {
       "id": 800020,
       "name": "チャンピオンズC",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800021,
       "name": "阪神JF",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800022,
       "name": "朝日杯FS",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 800023,
       "name": "有馬記念",
-      "distance": 2500
+      "distance": 2500,
+      "groundType": "TURF"
     },
     {
       "id": 800024,
       "name": "ホープフルS",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 800025,
       "name": "帝王賞",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800026,
       "name": "ジャパンダートダービー",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800027,
       "name": "JBCレディスクラシック",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "DIRT"
     },
     {
       "id": 800028,
       "name": "JBCスプリント",
-      "distance": 1200
+      "distance": 1200,
+      "groundType": "DIRT"
     },
     {
       "id": 800029,
       "name": "JBCクラシック",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 800030,
       "name": "東京大賞典",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "DIRT"
     },
     {
       "id": 630001,
       "name": "カーニバルレース HARD",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 630002,
       "name": "カーニバルレース HARD",
-      "distance": 1800
+      "distance": 1800,
+      "groundType": "TURF"
     },
     {
       "id": 630003,
       "name": "カーニバルレース HARD",
-      "distance": 2000
+      "distance": 2000,
+      "groundType": "TURF"
     },
     {
       "id": 630004,
       "name": "カーニバルレース HARD",
-      "distance": 2200
+      "distance": 2200,
+      "groundType": "TURF"
     },
     {
       "id": 630005,
       "name": "チャレンジレース VERY HARD",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     },
     {
       "id": 630006,
       "name": "チャレンジレース EXTREME",
-      "distance": 1600
+      "distance": 1600,
+      "groundType": "TURF"
     }
   ],
   "winsSaddle": [

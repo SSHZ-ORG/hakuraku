@@ -13,11 +13,18 @@
 
 var jspb = require('google-protobuf');
 var goog = jspb;
-var global = Function('return this')();
+var global = (function() {
+  if (this) { return this; }
+  if (typeof window !== 'undefined') { return window; }
+  if (typeof global !== 'undefined') { return global; }
+  if (typeof self !== 'undefined') { return self; }
+  return Function('return this')();
+}.call(null));
 
 goog.exportSymbol('proto.hakuraku.Card', null, global);
 goog.exportSymbol('proto.hakuraku.Chara', null, global);
 goog.exportSymbol('proto.hakuraku.RaceInstance', null, global);
+goog.exportSymbol('proto.hakuraku.RaceInstance.GroundType', null, global);
 goog.exportSymbol('proto.hakuraku.Skill', null, global);
 goog.exportSymbol('proto.hakuraku.SpecialCaseRace', null, global);
 goog.exportSymbol('proto.hakuraku.SpecialCaseRace.RacePermission', null, global);
@@ -1741,7 +1748,8 @@ proto.hakuraku.RaceInstance.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: (f = jspb.Message.getField(msg, 1)) == null ? undefined : f,
     name: (f = jspb.Message.getField(msg, 2)) == null ? undefined : f,
-    distance: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f
+    distance: (f = jspb.Message.getField(msg, 3)) == null ? undefined : f,
+    groundType: (f = jspb.Message.getField(msg, 4)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1789,6 +1797,10 @@ proto.hakuraku.RaceInstance.deserializeBinaryFromReader = function(msg, reader) 
     case 3:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setDistance(value);
+      break;
+    case 4:
+      var value = /** @type {!proto.hakuraku.RaceInstance.GroundType} */ (reader.readEnum());
+      msg.setGroundType(value);
       break;
     default:
       reader.skipField();
@@ -1840,8 +1852,24 @@ proto.hakuraku.RaceInstance.serializeBinaryToWriter = function(message, writer) 
       f
     );
   }
+  f = /** @type {!proto.hakuraku.RaceInstance.GroundType} */ (jspb.Message.getField(message, 4));
+  if (f != null) {
+    writer.writeEnum(
+      4,
+      f
+    );
+  }
 };
 
+
+/**
+ * @enum {number}
+ */
+proto.hakuraku.RaceInstance.GroundType = {
+  UNKNOWN_GROUND_TYPE: 0,
+  TURF: 1,
+  DIRT: 2
+};
 
 /**
  * optional int32 id = 1;
@@ -1948,6 +1976,42 @@ proto.hakuraku.RaceInstance.prototype.clearDistance = function() {
  */
 proto.hakuraku.RaceInstance.prototype.hasDistance = function() {
   return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional GroundType ground_type = 4;
+ * @return {!proto.hakuraku.RaceInstance.GroundType}
+ */
+proto.hakuraku.RaceInstance.prototype.getGroundType = function() {
+  return /** @type {!proto.hakuraku.RaceInstance.GroundType} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {!proto.hakuraku.RaceInstance.GroundType} value
+ * @return {!proto.hakuraku.RaceInstance} returns this
+ */
+proto.hakuraku.RaceInstance.prototype.setGroundType = function(value) {
+  return jspb.Message.setField(this, 4, value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.hakuraku.RaceInstance} returns this
+ */
+proto.hakuraku.RaceInstance.prototype.clearGroundType = function() {
+  return jspb.Message.setField(this, 4, undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.hakuraku.RaceInstance.prototype.hasGroundType = function() {
+  return jspb.Message.getField(this, 4) != null;
 };
 
 

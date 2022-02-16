@@ -44,6 +44,13 @@ message RaceInstance {
     optional int32 id = 1;
     optional string name = 2;
     optional int32 distance = 3;
+
+    enum GroundType {
+        UNKNOWN_GROUND_TYPE = 0;
+        TURF = 1;
+        DIRT = 2;
+    }
+    optional GroundType ground_type = 4;
 }
 
 message WinsSaddle {

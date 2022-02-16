@@ -213,6 +213,11 @@ export class RaceInstance extends jspb.Message {
   getDistance(): number | undefined;
   setDistance(value: number): void;
 
+  hasGroundType(): boolean;
+  clearGroundType(): void;
+  getGroundType(): RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap] | undefined;
+  setGroundType(value: RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap]): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): RaceInstance.AsObject;
   static toObject(includeInstance: boolean, msg: RaceInstance): RaceInstance.AsObject;
@@ -228,7 +233,16 @@ export namespace RaceInstance {
     id?: number,
     name?: string,
     distance?: number,
+    groundType?: RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap],
   }
+
+  export interface GroundTypeMap {
+    UNKNOWN_GROUND_TYPE: 0;
+    TURF: 1;
+    DIRT: 2;
+  }
+
+  export const GroundType: GroundTypeMap;
 }
 
 export class WinsSaddle extends jspb.Message {

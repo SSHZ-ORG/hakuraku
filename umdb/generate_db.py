@@ -60,7 +60,7 @@ def populate_succession_relation(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor
 
 
 def populate_race_instance(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
-    cursor.execute("""SELECT ri.id, rcs.distance, t.text
+    cursor.execute("""SELECT ri.id, rcs.distance, rcs.ground, t.text
                       FROM race_instance AS ri
                       LEFT JOIN race AS r ON ri.race_id = r.id
                       LEFT JOIN race_course_set AS rcs ON r.course_set = rcs.id
@@ -70,7 +70,8 @@ def populate_race_instance(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         r = data_pb2.RaceInstance()
         r.id = row[0]
         r.distance = row[1]
-        r.name = row[2]
+        r.ground_type = row[2]
+        r.name = row[3]
         pb.race_instance.append(r)
 
 
