@@ -6,7 +6,7 @@ import CardNamePresenter from "../components/CardNamePresenter";
 import CharaProperLabels from "../components/CharaProperLabels";
 import CopyButton from "../components/CopyButton";
 import FilesSelector from "../components/FilesSelector";
-import {Chara} from "../data/data_pb";
+import {Chara, RaceInstance} from "../data/data_pb";
 import {parse, RoomRaceCharaData, RoomRaceData} from "../data/RoomRaceParser";
 import {TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -17,6 +17,8 @@ type RoomRaceAnalyzerPageState = {
 
     aggregatedCharaDatas: AggregatedCharaData[],
     distances: Set<number>,
+    distanceType: number | undefined,
+    groundType: RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap],
     inconsistentDistance: boolean,
 
     viewerOnly: boolean,
@@ -38,86 +40,21 @@ type AggregatedCharaData = {
     skillsActivationDistances: Record<number, number[]>,
 }
 
-const aggregatedCharaDataColumns: ColumnDescription<AggregatedCharaData>[] = [
-    {
-        dataField: 'copy',
-        isDummyField: true,
-        text: '',
-        formatter: (cell, row) => <CopyButton content={JSON.stringify(row.trainedChara.rawData)}/>,
-    },
-
-    {
-        dataField: 'chara',
-        text: '',
-        formatter: (chara: Chara | undefined, row) => chara ? <>
-            {chara.getId()} - {chara.getName()}
-            <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
-        </> : 'Unknown Chara',
-    },
-
-    {
-        dataField: 'df1',
-        isDummyField: true,
-        text: 'ト',
-        formatter: (cell, row) => <>
-            {row.trainedChara.viewerName}
-            <br/>{row.trainedChara.viewerId} - {row.trainedChara.trainedCharaId}
-        </>,
-    },
-
-    {
-        dataField: 'finishOrders',
-        text: '',
-        formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}-${cell[4] ?? 0}-${cell[5] ?? 0}`
-    },
-    {
-        dataField: 'df2',
-        isDummyField: true,
-        text: 'Avg Time',
-        formatter: (cell, row) => <>
-            {UMDatabaseUtils.formatTime(row.averageTime)}
-            <br/>{UMDatabaseUtils.formatTime(row.averageRawTime)}
-        </>,
-    },
-
-    {
-        dataField: 'rankScore',
-        isDummyField: true,
-        text: '評価点',
-        formatter: (cell, row) => row.trainedChara.rankScore,
-    },
-    {
-        dataField: 'speed',
-        isDummyField: true,
-        text: 'スピ',
-        formatter: (cell, row) => row.trainedChara.speed,
-    },
-    {
-        dataField: 'stamina',
-        isDummyField: true,
-        text: 'スタ',
-        formatter: (cell, row) => row.trainedChara.stamina,
-    },
-    {
-        dataField: 'pow',
-        isDummyField: true,
-        text: 'パワ',
-        formatter: (cell, row) => row.trainedChara.pow,
-    },
-    {
-        dataField: 'guts',
-        isDummyField: true,
-        text: '根性',
-        formatter: (cell, row) => row.trainedChara.guts,
-    },
-    {
-        dataField: 'wiz',
-        isDummyField: true,
-        text: '賢さ',
-        formatter: (cell, row) => row.trainedChara.wiz,
-    },
-];
-
+function toDistanceType(distance: number): number | undefined {
+    if (distance < 1200) {
+        return undefined;
+    }
+    if (distance < 1600) {
+        return 1;
+    }
+    if (distance < 2000) {
+        return 2;
+    }
+    if (distance < 2500) {
+        return 3;
+    }
+    return 4;
+}
 
 const expandRow: ExpandRowProps<AggregatedCharaData> = {
     renderer: row => (
@@ -152,11 +89,110 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             selectedFiles: [],
             aggregatedCharaDatas: [],
             distances: new Set(),
+            distanceType: undefined,
+            groundType: RaceInstance.GroundType.UNKNOWN_GROUND_TYPE,
             inconsistentDistance: false,
             viewerOnly: true,
-            loading: false
+            loading: false,
         };
     }
+
+    aggregatedCharaDataColumns: ColumnDescription<AggregatedCharaData>[] = [
+        {
+            dataField: 'copy',
+            isDummyField: true,
+            text: '',
+            formatter: (cell, row) => <CopyButton content={JSON.stringify(row.trainedChara.rawData)}/>,
+        },
+
+        {
+            dataField: 'chara',
+            text: '',
+            formatter: (chara: Chara | undefined, row) => chara ? <>
+                {chara.getId()} - {chara.getName()}
+                <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
+            </> : 'Unknown Chara',
+        },
+
+        {
+            dataField: 'df1',
+            isDummyField: true,
+            text: 'ト',
+            formatter: (cell, row) => <>
+                {row.trainedChara.viewerName}
+                <br/>{row.trainedChara.viewerId} - {row.trainedChara.trainedCharaId}
+            </>,
+        },
+
+        {
+            dataField: 'finishOrders',
+            text: '',
+            formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}-${cell[4] ?? 0}-${cell[5] ?? 0}`
+        },
+        {
+            dataField: 'df2',
+            isDummyField: true,
+            text: 'Avg Time',
+            formatter: (cell, row) => <>
+                {UMDatabaseUtils.formatTime(row.averageTime)}
+                <br/>{UMDatabaseUtils.formatTime(row.averageRawTime)}
+            </>,
+        },
+
+        {
+            dataField: 'rankScore',
+            isDummyField: true,
+            text: '評価点',
+            formatter: (cell, row) => {
+                let properGroundLabel = '?';
+                switch (this.state.groundType) {
+                    case RaceInstance.GroundType.TURF:
+                        properGroundLabel = UMDatabaseUtils.charaProperLabels[row.trainedChara.properGroundTurf];
+                        break;
+                    case RaceInstance.GroundType.DIRT:
+                        properGroundLabel = UMDatabaseUtils.charaProperLabels[row.trainedChara.properGroundDirt];
+                        break;
+                }
+                return <>
+                    {row.trainedChara.rankScore}
+                    <br/>
+                    {properGroundLabel}
+                    {' '}{this.state.distanceType ? UMDatabaseUtils.charaProperLabels[row.trainedChara.properDistances[this.state.distanceType]] : '?'}
+                </>
+            },
+        },
+        {
+            dataField: 'speed',
+            isDummyField: true,
+            text: 'スピ',
+            formatter: (cell, row) => row.trainedChara.speed,
+        },
+        {
+            dataField: 'stamina',
+            isDummyField: true,
+            text: 'スタ',
+            formatter: (cell, row) => row.trainedChara.stamina,
+        },
+        {
+            dataField: 'pow',
+            isDummyField: true,
+            text: 'パワ',
+            formatter: (cell, row) => row.trainedChara.pow,
+        },
+        {
+            dataField: 'guts',
+            isDummyField: true,
+            text: '根性',
+            formatter: (cell, row) => row.trainedChara.guts,
+        },
+        {
+            dataField: 'wiz',
+            isDummyField: true,
+            text: '賢さ',
+            formatter: (cell, row) => row.trainedChara.wiz,
+        },
+    ];
+
 
     onSelectedFilesChange(files: File[]) {
         if (files.length === 0) {
@@ -170,6 +206,9 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                 .then(_.compact)
                 .then((roomRaceDatas: RoomRaceData[]) => {
                     const distances = new Set(roomRaceDatas.map(d => d.raceInstance.getDistance()!));
+                    const distanceType = distances.size === 1 ? toDistanceType(distances.values().next().value) : undefined;
+                    const groundTypes = new Set(roomRaceDatas.map(d => d.raceInstance.getGroundType()!));
+                    const groundType = groundTypes.size === 1 ? groundTypes.values().next().value : RaceInstance.GroundType.UNKNOWN_GROUND_TYPE;
                     const viewerIds = new Set(roomRaceDatas.map(d => d.viewerId));
 
                     function aggregate(datas: RoomRaceCharaData[], key: string): AggregatedCharaData {
@@ -190,17 +229,29 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                     }
 
                     const aggregations: AggregatedCharaData[] = _.map(_.groupBy(roomRaceDatas.map(d => d.charaDatas).flat(),
-                            c => `${c.trainedChara.viewerId}:${c.trainedChara.trainedCharaId}`),
+                            c => `${c.trainedChara.viewerId}:${c.trainedChara.trainedCharaId}:${distanceType}:${groundType}`),
                         aggregate);
 
                     this.setState({
                         loading: false,
                         aggregatedCharaDatas: aggregations,
                         distances: distances,
+                        distanceType: distanceType,
+                        groundType: groundType,
                         inconsistentDistance: distances.size > 1,
                     });
                 })
         });
+    }
+
+    groundType() {
+        switch (this.state.groundType) {
+            case RaceInstance.GroundType.TURF:
+                return <>芝</>;
+            case RaceInstance.GroundType.DIRT:
+                return <>ダート</>;
+        }
+        return <>Unknown</>;
     }
 
     render() {
@@ -227,7 +278,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
 
             <Row>
                 <Col>
-                    Distance: {_.join([...this.state.distances], ', ')}
+                    Distance: {_.join([...this.state.distances], ', ')}{' '}{this.groundType()}
                     {this.state.inconsistentDistance &&
                         <Alert variant="warning">Inconsistent Distances Detected!</Alert>}
                 </Col>
@@ -239,7 +290,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                                     classes="responsive-bootstrap-table"
                                     wrapperClasses="table-responsive"
                                     data={this.state.aggregatedCharaDatas.filter(d => d.viewerIdAtLeastOneMatches || !this.state.viewerOnly)}
-                                    columns={aggregatedCharaDataColumns}
+                                    columns={this.aggregatedCharaDataColumns}
                                     keyField="key"
                                     expandRow={expandRow}/>
                 </Col>
