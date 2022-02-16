@@ -1,5 +1,5 @@
 {
-  "version": "10004900",
+  "version": "10005000",
   "chara": [
     {
       "id": 1001,
@@ -367,6 +367,11 @@
       "castName": "大西綺華"
     },
     {
+      "id": 1077,
+      "name": "ナリタトップロード",
+      "castName": "中村カンナ"
+    },
+    {
       "id": 2001,
       "name": "ハッピーミーク",
       "castName": "吉咲みゆ"
@@ -594,6 +599,10 @@
           "charaId": 1023
         },
         {
+          "id": 48,
+          "charaId": 1033
+        },
+        {
           "id": 49,
           "charaId": 1035
         },
@@ -786,6 +795,10 @@
         {
           "id": 99,
           "charaId": 1032
+        },
+        {
+          "id": 100,
+          "charaId": 1033
         },
         {
           "id": 101,
@@ -1039,6 +1052,10 @@
       "relationType": 315,
       "relationPoint": 2,
       "member": [
+        {
+          "id": 151,
+          "charaId": 1033
+        },
         {
           "id": 152,
           "charaId": 1038
@@ -2424,6 +2441,10 @@
           "charaId": 1026
         },
         {
+          "id": 668,
+          "charaId": 1033
+        },
+        {
           "id": 669,
           "charaId": 1035
         },
@@ -2974,6 +2995,10 @@
           "charaId": 1032
         },
         {
+          "id": 267,
+          "charaId": 1033
+        },
+        {
           "id": 269,
           "charaId": 1035
         },
@@ -3472,6 +3497,10 @@
           "charaId": 1015
         },
         {
+          "id": 403,
+          "charaId": 1033
+        },
+        {
           "id": 404,
           "charaId": 1052
         },
@@ -3782,6 +3811,10 @@
           "charaId": 1021
         },
         {
+          "id": 471,
+          "charaId": 1033
+        },
+        {
           "id": 474,
           "charaId": 1050
         },
@@ -4014,6 +4047,10 @@
         {
           "id": 537,
           "charaId": 1026
+        },
+        {
+          "id": 540,
+          "charaId": 1033
         },
         {
           "id": 543,
@@ -4268,6 +4305,10 @@
           "charaId": 1028
         },
         {
+          "id": 609,
+          "charaId": 1033
+        },
+        {
           "id": 612,
           "charaId": 1037
         },
@@ -4334,6 +4375,10 @@
         {
           "id": 775,
           "charaId": 1028
+        },
+        {
+          "id": 776,
+          "charaId": 1033
         },
         {
           "id": 778,
@@ -8126,6 +8171,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1303,
+          "charaId": 1033
+        },
+        {
           "id": 1304,
           "charaId": 1003
         }
@@ -8135,6 +8184,10 @@
       "relationType": 8236,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1305,
+          "charaId": 1033
+        },
         {
           "id": 1306,
           "charaId": 1004
@@ -8146,6 +8199,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1307,
+          "charaId": 1033
+        },
+        {
           "id": 1308,
           "charaId": 1013
         }
@@ -8155,6 +8212,10 @@
       "relationType": 8238,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1309,
+          "charaId": 1033
+        },
         {
           "id": 1310,
           "charaId": 1015
@@ -8166,6 +8227,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1311,
+          "charaId": 1033
+        },
+        {
           "id": 1312,
           "charaId": 1017
         }
@@ -8175,6 +8240,10 @@
       "relationType": 8240,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1313,
+          "charaId": 1033
+        },
         {
           "id": 1314,
           "charaId": 1022
@@ -8186,6 +8255,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1315,
+          "charaId": 1033
+        },
+        {
           "id": 1316,
           "charaId": 1027
         }
@@ -8195,6 +8268,10 @@
       "relationType": 8242,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1317,
+          "charaId": 1033
+        },
         {
           "id": 1318,
           "charaId": 1038
@@ -8206,6 +8283,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1319,
+          "charaId": 1033
+        },
+        {
           "id": 1320,
           "charaId": 1040
         }
@@ -8213,12 +8294,22 @@
     },
     {
       "relationType": 8244,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1321,
+          "charaId": 1033
+        }
+      ]
     },
     {
       "relationType": 8245,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1323,
+          "charaId": 1033
+        },
         {
           "id": 1324,
           "charaId": 1045
@@ -8227,12 +8318,22 @@
     },
     {
       "relationType": 8246,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1325,
+          "charaId": 1033
+        }
+      ]
     },
     {
       "relationType": 8247,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1327,
+          "charaId": 1033
+        },
         {
           "id": 1328,
           "charaId": 1056
@@ -8244,6 +8345,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1329,
+          "charaId": 1033
+        },
+        {
           "id": 1330,
           "charaId": 1058
         }
@@ -8254,6 +8359,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1331,
+          "charaId": 1033
+        },
+        {
           "id": 1332,
           "charaId": 1059
         }
@@ -8263,6 +8372,10 @@
       "relationType": 8250,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1333,
+          "charaId": 1033
+        },
         {
           "id": 1334,
           "charaId": 1060
@@ -10548,6 +10661,10 @@
         {
           "id": 1817,
           "charaId": 1069
+        },
+        {
+          "id": 1818,
+          "charaId": 1033
         }
       ]
     },
@@ -10792,10 +10909,6 @@
         {
           "id": 1867,
           "charaId": 1071
-        },
-        {
-          "id": 1870,
-          "charaId": 1041
         }
       ]
     },
@@ -10804,8 +10917,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1871,
+          "id": 1869,
           "charaId": 1071
+        },
+        {
+          "id": 1870,
+          "charaId": 1041
         }
       ]
     },
@@ -10814,7 +10931,7 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1869,
+          "id": 1871,
           "charaId": 1071
         }
       ]
@@ -10838,8 +10955,8 @@
           "charaId": 1071
         },
         {
-          "id": 1887,
-          "charaId": 1071
+          "id": 1876,
+          "charaId": 1001
         }
       ]
     },
@@ -10848,12 +10965,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1876,
-          "charaId": 1001
+          "id": 1877,
+          "charaId": 1071
         },
         {
-          "id": 1888,
-          "charaId": 1030
+          "id": 1878,
+          "charaId": 1002
         }
       ]
     },
@@ -10862,12 +10979,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1877,
+          "id": 1879,
           "charaId": 1071
         },
         {
-          "id": 1889,
-          "charaId": 1071
+          "id": 1880,
+          "charaId": 1005
         }
       ]
     },
@@ -10876,12 +10993,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1878,
-          "charaId": 1002
+          "id": 1881,
+          "charaId": 1071
         },
         {
-          "id": 1890,
-          "charaId": 1032
+          "id": 1882,
+          "charaId": 1010
         }
       ]
     },
@@ -10890,12 +11007,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1879,
+          "id": 1883,
           "charaId": 1071
         },
         {
-          "id": 1891,
-          "charaId": 1071
+          "id": 1884,
+          "charaId": 1016
         }
       ]
     },
@@ -10904,8 +11021,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1880,
-          "charaId": 1005
+          "id": 1885,
+          "charaId": 1071
+        },
+        {
+          "id": 1886,
+          "charaId": 1025
         }
       ]
     },
@@ -10914,12 +11035,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1881,
+          "id": 1887,
           "charaId": 1071
         },
         {
-          "id": 1893,
-          "charaId": 1071
+          "id": 1888,
+          "charaId": 1030
         }
       ]
     },
@@ -10928,8 +11049,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1882,
-          "charaId": 1010
+          "id": 1889,
+          "charaId": 1071
+        },
+        {
+          "id": 1890,
+          "charaId": 1032
         }
       ]
     },
@@ -10938,12 +11063,12 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1883,
+          "id": 1891,
           "charaId": 1071
         },
         {
-          "id": 1895,
-          "charaId": 1071
+          "id": 1892,
+          "charaId": 1033
         }
       ]
     },
@@ -10952,8 +11077,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1884,
-          "charaId": 1016
+          "id": 1893,
+          "charaId": 1071
         }
       ]
     },
@@ -10962,11 +11087,7 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1885,
-          "charaId": 1071
-        },
-        {
-          "id": 1897,
+          "id": 1895,
           "charaId": 1071
         }
       ]
@@ -10976,8 +11097,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 1886,
-          "charaId": 1025
+          "id": 1897,
+          "charaId": 1071
         }
       ]
     },
@@ -11227,7 +11348,13 @@
     },
     {
       "relationType": 8519,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1956,
+          "charaId": 1033
+        }
+      ]
     },
     {
       "relationType": 8520,
@@ -11423,7 +11550,13 @@
     },
     {
       "relationType": 8544,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2006,
+          "charaId": 1033
+        }
+      ]
     },
     {
       "relationType": 8545,
@@ -11503,28 +11636,16 @@
     },
     {
       "relationType": 8555,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8556,
       "relationPoint": 1,
       "member": [
         {
           "id": 2028,
           "charaId": 1004
-        },
-        {
-          "id": 2032,
-          "charaId": 1069
         }
       ]
     },
     {
-      "relationType": 8557,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8558,
+      "relationType": 8556,
       "relationPoint": 1,
       "member": [
         {
@@ -11534,11 +11655,21 @@
       ]
     },
     {
-      "relationType": 8559,
+      "relationType": 8557,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2032,
+          "charaId": 1069
+        }
+      ]
+    },
+    {
+      "relationType": 8558,
       "relationPoint": 1
     },
     {
-      "relationType": 8560,
+      "relationType": 8559,
       "relationPoint": 1,
       "member": [
         {
@@ -11548,17 +11679,33 @@
       ]
     },
     {
-      "relationType": 8561,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8562,
+      "relationType": 8560,
       "relationPoint": 1,
       "member": [
         {
           "id": 2038,
           "charaId": 1038
-        },
+        }
+      ]
+    },
+    {
+      "relationType": 8561,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2040,
+          "charaId": 1040
+        }
+      ]
+    },
+    {
+      "relationType": 8562,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 8563,
+      "relationPoint": 1,
+      "member": [
         {
           "id": 2044,
           "charaId": 1058
@@ -11566,17 +11713,9 @@
       ]
     },
     {
-      "relationType": 8563,
-      "relationPoint": 1
-    },
-    {
       "relationType": 8564,
       "relationPoint": 1,
       "member": [
-        {
-          "id": 2040,
-          "charaId": 1040
-        },
         {
           "id": 2046,
           "charaId": 1060
@@ -11585,28 +11724,16 @@
     },
     {
       "relationType": 8565,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8566,
       "relationPoint": 1,
       "member": [
         {
           "id": 2048,
           "charaId": 1027
-        },
-        {
-          "id": 2052,
-          "charaId": 1071
         }
       ]
     },
     {
-      "relationType": 8567,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8568,
+      "relationType": 8566,
       "relationPoint": 1,
       "member": [
         {
@@ -11616,7 +11743,25 @@
       ]
     },
     {
+      "relationType": 8567,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2052,
+          "charaId": 1071
+        }
+      ]
+    },
+    {
+      "relationType": 8568,
+      "relationPoint": 1
+    },
+    {
       "relationType": 8569,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 8570,
       "relationPoint": 1,
       "member": [
         {
@@ -11624,10 +11769,6 @@
           "charaId": 1041
         }
       ]
-    },
-    {
-      "relationType": 8570,
-      "relationPoint": 1
     },
     {
       "relationType": 8571,
@@ -11752,8 +11893,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 2096,
-          "charaId": 1023
+          "id": 2092,
+          "charaId": 1018
         }
       ]
     },
@@ -11762,8 +11903,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 2092,
-          "charaId": 1018
+          "id": 2094,
+          "charaId": 1021
         }
       ]
     },
@@ -11772,8 +11913,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 2098,
-          "charaId": 1035
+          "id": 2096,
+          "charaId": 1023
         }
       ]
     },
@@ -11782,8 +11923,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 2094,
-          "charaId": 1021
+          "id": 2098,
+          "charaId": 1035
         }
       ]
     },
@@ -11799,28 +11940,16 @@
     },
     {
       "relationType": 8592,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8593,
       "relationPoint": 1,
       "member": [
         {
           "id": 2102,
           "charaId": 1004
-        },
-        {
-          "id": 2106,
-          "charaId": 1069
         }
       ]
     },
     {
-      "relationType": 8594,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8595,
+      "relationType": 8593,
       "relationPoint": 1,
       "member": [
         {
@@ -11830,12 +11959,26 @@
       ]
     },
     {
+      "relationType": 8594,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2106,
+          "charaId": 1069
+        }
+      ]
+    },
+    {
+      "relationType": 8595,
+      "relationPoint": 1
+    },
+    {
       "relationType": 8596,
       "relationPoint": 1,
       "member": [
         {
-          "id": 2112,
-          "charaId": 1013
+          "id": 2110,
+          "charaId": 1003
         }
       ]
     },
@@ -11844,8 +11987,8 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 2110,
-          "charaId": 1003
+          "id": 2112,
+          "charaId": 1013
         }
       ]
     },
@@ -11861,28 +12004,16 @@
     },
     {
       "relationType": 8599,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8600,
       "relationPoint": 1,
       "member": [
         {
           "id": 2116,
           "charaId": 1014
-        },
-        {
-          "id": 2122,
-          "charaId": 1037
         }
       ]
     },
     {
-      "relationType": 8601,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8602,
+      "relationType": 8600,
       "relationPoint": 1,
       "member": [
         {
@@ -11892,11 +12023,7 @@
       ]
     },
     {
-      "relationType": 8603,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8604,
+      "relationType": 8601,
       "relationPoint": 1,
       "member": [
         {
@@ -11906,17 +12033,25 @@
       ]
     },
     {
-      "relationType": 8605,
+      "relationType": 8602,
       "relationPoint": 1,
       "member": [
         {
-          "id": 2132,
-          "charaId": 1061
+          "id": 2122,
+          "charaId": 1037
         }
       ]
     },
     {
-      "relationType": 8606,
+      "relationType": 8603,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 8604,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 8605,
       "relationPoint": 1,
       "member": [
         {
@@ -11926,11 +12061,7 @@
       ]
     },
     {
-      "relationType": 8607,
-      "relationPoint": 1
-    },
-    {
-      "relationType": 8608,
+      "relationType": 8606,
       "relationPoint": 1,
       "member": [
         {
@@ -11938,6 +12069,20 @@
           "charaId": 1052
         }
       ]
+    },
+    {
+      "relationType": 8607,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2132,
+          "charaId": 1061
+        }
+      ]
+    },
+    {
+      "relationType": 8608,
+      "relationPoint": 1
     },
     {
       "relationType": 8609,
@@ -12277,7 +12422,13 @@
     },
     {
       "relationType": 8648,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2214,
+          "charaId": 1033
+        }
+      ]
     },
     {
       "relationType": 8649,
@@ -20736,6 +20887,14 @@
       ]
     },
     {
+      "id": 100331,
+      "name": "ディオスクロイの流星",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100351,
       "name": "勝利のチケットを、君にッ！",
       "gradeValue": 340,
@@ -24583,6 +24742,14 @@
       ]
     },
     {
+      "id": 900331,
+      "name": "ディオスクロイの流星",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900351,
       "name": "勝利のチケットを、君にッ！",
       "gradeValue": 180,
@@ -25102,6 +25269,10 @@
     {
       "id": 103201,
       "name": "[tach-nology]"
+    },
+    {
+      "id": 103301,
+      "name": "[Starry Nocturne]"
     },
     {
       "id": 103501,
