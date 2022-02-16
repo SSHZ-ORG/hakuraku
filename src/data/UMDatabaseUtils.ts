@@ -59,6 +59,12 @@ class UMDatabaseUtils {
             normalizeKatakana(labelKey).indexOf(normalizeKatakana(props.text)) !== -1;
     }
 
+    static formatTime(time: number): string {
+        const min = Math.floor(time / 60);
+        const sec = time - min * 60;
+        return `${min}:${sec.toFixed(4).padStart(7, '0')}`;
+    }
+
     static teamRaceDistanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
 
     static distanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離'};

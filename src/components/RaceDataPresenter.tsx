@@ -1,21 +1,21 @@
-import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_pb";
-import React from "react";
-import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import {Alert, Form, Table} from "react-bootstrap";
-import memoize from "memoize-one";
-import HighchartsReact from "highcharts-react-official";
 import Highcharts, {PointOptionsObject, SeriesSplineOptions} from 'highcharts';
-import ReactJson from "react-json-view";
+import HighchartsReact from "highcharts-react-official";
 import _ from "lodash";
-import FoldCard from "./FoldCard";
-import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
-import {Chara} from "../data/data_pb";
+import memoize from "memoize-one";
+import React from "react";
+import {Alert, Form, Table} from "react-bootstrap";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
+import ReactJson from "react-json-view";
+import {Chara} from "../data/data_pb";
+import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_pb";
 import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
-import CopyButton from "./CopyButton";
-import CharaProperLabels from "./CharaProperLabels";
+import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import CardNamePresenter from "./CardNamePresenter";
+import CharaProperLabels from "./CharaProperLabels";
+import CopyButton from "./CopyButton";
+import FoldCard from "./FoldCard";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
@@ -35,12 +35,6 @@ type CharaTableData = {
 
     activatedSkills: Set<number>,
 };
-
-function formatTime(time: number): string {
-    const min = Math.floor(time / 60);
-    const sec = time - min * 60;
-    return `${min}:${sec < 10 ? '0' : ''}${sec.toFixed(4)}`;
-}
 
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     {
@@ -81,8 +75,8 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         isDummyField: true,
         text: 'Time',
         formatter: (cell, row) => <>
-            {formatTime(row.horseResultData.getFinishTime()!)}
-            <br/>{formatTime(row.horseResultData.getFinishTimeRaw()!)}
+            {UMDatabaseUtils.formatTime(row.horseResultData.getFinishTime()!)}
+            <br/>{UMDatabaseUtils.formatTime(row.horseResultData.getFinishTimeRaw()!)}
         </>,
     },
     {
@@ -516,10 +510,10 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
     render() {
         return <div>
             {(this.props.raceData.getHeader()!.getVersion()! > supportedRaceDataVersion) &&
-            <Alert variant="warning">
-                RaceData version {this.props.raceData.getHeader()!.getVersion()!} higher than supported
-                version {supportedRaceDataVersion}, use at your own risk!
-            </Alert>}
+                <Alert variant="warning">
+                    RaceData version {this.props.raceData.getHeader()!.getVersion()!} higher than supported
+                    version {supportedRaceDataVersion}, use at your own risk!
+                </Alert>}
             {this.renderCharaList()}
             {this.renderGlobalRaceDistanceDiffGraph()}
             <Form>

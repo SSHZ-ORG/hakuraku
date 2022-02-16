@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, Container, Nav, Navbar, Spinner} from "react-bootstrap";
+import {Alert, Container, Nav, Navbar, NavDropdown, Spinner} from "react-bootstrap";
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.css';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import {HashRouter, Link, Route, Switch} from "react-router-dom";
@@ -7,6 +7,7 @@ import './App.css';
 import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 import RaceDataPage from "./pages/RaceDataPage";
+import RoomRaceAnalyzerPage from "./pages/RoomRaceAnalyzerPage";
 import SuccessionPage from './pages/SuccessionPage';
 import SuccessionRelationsPage from "./pages/SuccessionRelationsPage";
 import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
@@ -40,9 +41,20 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
                                 <Nav.Link as={Link} to="/successionrelations">SuccessionRelations</Nav.Link>
-                                <Nav.Link as={Link} to="/carrotjuicer">CarrotJuicer</Nav.Link>
-                                <Nav.Link as={Link} to="/racedata">RaceDataParser</Nav.Link>
-                                <Nav.Link as={Link} to="/teamraceanalyzer">TeamRaceAnalyzer</Nav.Link>
+                                <NavDropdown title="CarrotJuicer Tools" id="carrotjuicer-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/carrotjuicer">
+                                        Packet / Race Inspector
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/racedata">
+                                        Race Scenario Parser
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/teamraceanalyzer">
+                                        Team Race Analyzer
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/roomraceanalyzer">
+                                        Room Race Analyzer
+                                    </NavDropdown.Item>
+                                </NavDropdown>
                             </Nav>
                             <Nav>
                                 <Nav.Item className="navbar-text">
@@ -70,6 +82,9 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                         </Route>
                         <Route path="/teamraceanalyzer">
                             <TeamAnalyzerPage/>
+                        </Route>
+                        <Route path="/roomraceanalyzer">
+                            <RoomRaceAnalyzerPage/>
                         </Route>
                         <Route path="/">
                             <Home/>
