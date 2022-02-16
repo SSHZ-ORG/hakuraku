@@ -16,7 +16,7 @@ export default class SuccessionRelationChip extends React.PureComponent<Successi
                 Group {this.props.relation.getRelationType()} - {this.props.relation.getRelationPoint()} pts
             </Popover.Title>
             <Popover.Content>
-                {this.props.relation.getMemberList().map(m => <>{this.props.showId ? `[${m.getId()}] `: ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.getCharaId()!])}<br/></>)}
+                {this.props.relation.getMemberList().map(m => <>{this.props.showId ? `[${m.getId()}] ` : ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.getCharaId()!])}<br/></>)}
             </Popover.Content>
         </Popover>;
 

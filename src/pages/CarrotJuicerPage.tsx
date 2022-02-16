@@ -87,12 +87,12 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                 </Form.Group>
             </Form>
             {this.state.selectedTeamRace !== undefined &&
-            <>
-                {teamRaceHeader(raceStartParamsArray[this.state.selectedTeamRace])}
-                <RaceDataPresenter
-                    raceHorseInfo={raceStartParamsArray[this.state.selectedTeamRace]['race_horse_data_array']}
-                    raceData={deserializeFromBase64(raceResultArray[this.state.selectedTeamRace]['race_scenario'])}/>
-            </>}
+                <>
+                    {teamRaceHeader(raceStartParamsArray[this.state.selectedTeamRace])}
+                    <RaceDataPresenter
+                        raceHorseInfo={raceStartParamsArray[this.state.selectedTeamRace]['race_horse_data_array']}
+                        raceData={deserializeFromBase64(raceResultArray[this.state.selectedTeamRace]['race_scenario'])}/>
+                </>}
             <hr/>
         </>;
     }

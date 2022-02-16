@@ -63,9 +63,9 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
             <hr/>
 
             {this.state.parsedRaceData &&
-            <RaceDataPresenter
-                raceHorseInfo={this.state.parsedHorseInfo}
-                raceData={this.state.parsedRaceData}/>}
+                <RaceDataPresenter
+                    raceHorseInfo={this.state.parsedHorseInfo}
+                    raceData={this.state.parsedRaceData}/>}
         </>;
     }
 

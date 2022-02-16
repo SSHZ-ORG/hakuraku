@@ -19,7 +19,6 @@ type RoomRaceAnalyzerPageState = {
     distances: Set<number>,
     distanceType: number | undefined,
     groundType: RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap],
-    inconsistentDistance: boolean,
 
     viewerOnly: boolean,
     loading: boolean,
@@ -91,7 +90,6 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             distances: new Set(),
             distanceType: undefined,
             groundType: RaceInstance.GroundType.UNKNOWN_GROUND_TYPE,
-            inconsistentDistance: false,
             viewerOnly: true,
             loading: false,
         };
@@ -238,7 +236,6 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                         distances: distances,
                         distanceType: distanceType,
                         groundType: groundType,
-                        inconsistentDistance: distances.size > 1,
                     });
                 })
         });
@@ -247,11 +244,11 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
     groundType() {
         switch (this.state.groundType) {
             case RaceInstance.GroundType.TURF:
-                return <>芝</>;
+                return '芝';
             case RaceInstance.GroundType.DIRT:
-                return <>ダート</>;
+                return 'ダート';
         }
-        return <>Unknown</>;
+        return 'Unknown';
     }
 
     render() {
@@ -279,7 +276,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             <Row>
                 <Col>
                     Distance: {_.join([...this.state.distances], ', ')}{' '}{this.groundType()}
-                    {this.state.inconsistentDistance &&
+                    {this.state.distances.size > 1 &&
                         <Alert variant="warning">Inconsistent Distances Detected!</Alert>}
                 </Col>
             </Row>
