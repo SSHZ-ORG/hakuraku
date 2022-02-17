@@ -198,6 +198,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
         }
         this.setState({
             selectedFiles: files,
+            aggregatedCharaDatas: [],
             loading: true,
         }, () => {
             Promise.all(files.map(parse))
@@ -289,7 +290,8 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                                     data={this.state.aggregatedCharaDatas.filter(d => d.viewerIdAtLeastOneMatches || !this.state.viewerOnly)}
                                     columns={this.aggregatedCharaDataColumns}
                                     keyField="key"
-                                    expandRow={expandRow}/>
+                                    expandRow={expandRow}
+                                    noDataIndication={this.state.loading ? 'Loading...' : 'No data loaded'}/>
                 </Col>
             </Row>
         </>;
