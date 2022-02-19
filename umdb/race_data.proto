@@ -66,9 +66,11 @@ message RaceSimulateEventData {
     optional float frame_time = 1;
     enum SimulateEventType {
         SCORE = 0; // Original format uses 0 - it's NOT unspecified!
-        NOUSE_1 = 1;
+        CHALLENGE_MATCH_POINT = 1;
         NOUSE_2 = 2;
         SKILL = 3;
+        COMPETE_TOP = 4;
+        COMPETE_FIGHT = 5;
     }
     optional SimulateEventType type = 2; // byte
     optional uint32 param_count = 3; // byte

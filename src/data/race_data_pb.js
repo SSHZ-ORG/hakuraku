@@ -2706,9 +2706,11 @@ proto.hakuraku.RaceSimulateEventData.serializeBinaryToWriter = function(message,
  */
 proto.hakuraku.RaceSimulateEventData.SimulateEventType = {
   SCORE: 0,
-  NOUSE_1: 1,
+  CHALLENGE_MATCH_POINT: 1,
   NOUSE_2: 2,
-  SKILL: 3
+  SKILL: 3,
+  COMPETE_TOP: 4,
+  COMPETE_FIGHT: 5
 };
 
 /**

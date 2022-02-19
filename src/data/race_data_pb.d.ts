@@ -356,9 +356,11 @@ export namespace RaceSimulateEventData {
 
   export interface SimulateEventTypeMap {
     SCORE: 0;
-    NOUSE_1: 1;
+    CHALLENGE_MATCH_POINT: 1;
     NOUSE_2: 2;
     SKILL: 3;
+    COMPETE_TOP: 4;
+    COMPETE_FIGHT: 5;
   }
 
   export const SimulateEventType: SimulateEventTypeMap;
