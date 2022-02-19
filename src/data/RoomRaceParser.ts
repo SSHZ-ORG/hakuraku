@@ -51,6 +51,11 @@ export function parse(file: File): Promise<RoomRaceData | undefined> {
             raceScenario = data['race_result_info']['race_scenario'];
             raceHorseDataArray = data['race_result_info']['race_horse_data_array'];
             raceInstanceId = data['race_result_info']['race_instance_id'];
+        } else if (data['room_info'] && data['room_info']['race_scenario'] && data['race_horse_data_array']) {
+            // Champions Meeting
+            raceScenario = data['room_info']['race_scenario'];
+            raceHorseDataArray = data['race_horse_data_array'];
+            raceInstanceId = data['room_info']['race_instance_id'];
         } else {
             return undefined;
         }
