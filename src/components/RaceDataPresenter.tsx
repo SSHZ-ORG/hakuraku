@@ -8,7 +8,13 @@ import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap
 import ReactJson from "react-json-view";
 import {Chara} from "../data/data_pb";
 import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_pb";
-import {filterCharaSkills, filterCharaTargetedSkills, getCharaActivatedSkillIds} from "../data/RaceDataUtils";
+import {
+    filterCharaCompeteFight,
+    filterCharaCompeteTop,
+    filterCharaSkills,
+    filterCharaTargetedSkills,
+    getCharaActivatedSkillIds
+} from "../data/RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
@@ -165,6 +171,7 @@ type RaceDataPresenterState = {
     showTargetedSkills: boolean,
     showBlocks: boolean,
     showTemptationMode: boolean,
+    showCompetes: boolean,
 
     diffGraphUseDistanceAsXAxis: boolean,
 };
@@ -180,6 +187,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             showTargetedSkills: true,
             showBlocks: true,
             showTemptationMode: true,
+            showCompetes: true,
 
             diffGraphUseDistanceAsXAxis: true,
         };
@@ -231,7 +239,28 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                     color: 'rgba(255, 0, 0, 0.6)',
                     zIndex: 3,
                 };
-            })
+            });
+
+        const competePlotLines = [
+            ...filterCharaCompeteTop(raceData, frameOrder)
+                .map(event => {
+                    return {
+                        value: event.getFrameTime(),
+                        label: {text: "位置取り争い"},
+                        color: 'rgba(0, 255, 0, 0.6)',
+                        zIndex: 3,
+                    };
+                }),
+            ...filterCharaCompeteFight(raceData, frameOrder)
+                .map(event => {
+                    return {
+                        value: event.getFrameTime(),
+                        label: {text: "追い比べ"},
+                        color: 'rgba(0, 255, 0, 0.6)',
+                        zIndex: 3,
+                    };
+                }),
+        ];
 
         const lastSpurtStartDistance = raceData.getHorseResultList()[frameOrder].getLastSpurtStartDistance()!;
         let lastSpurtStartTime = 0;
@@ -347,6 +376,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 plotLines: [
                     ...(this.state.showSkills ? skillPlotLines : []),
                     ...(this.state.showTargetedSkills ? skillTargetedSkillPlotLines : []),
+                    ...(this.state.showCompetes ? competePlotLines : []),
                     ...plotLines,
                 ],
                 plotBands: [
@@ -547,6 +577,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         onChange={(e) => this.setState({showTemptationMode: e.target.checked})}
                         id="show-temptation-mode"
                         label="Show Temptation Mode"/>
+                    <Form.Switch
+                        checked={this.state.showCompetes}
+                        onChange={(e) => this.setState({showCompetes: e.target.checked})}
+                        id="show-competes"
+                        label="Show 位置取り争い & 追い比べ"/>
                 </Form.Group>
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}
