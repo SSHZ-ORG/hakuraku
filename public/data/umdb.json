@@ -1,5 +1,5 @@
 {
-  "version": "10005000",
+  "version": "10005100",
   "chara": [
     {
       "id": 1001,
@@ -425,6 +425,10 @@
         {
           "id": 1,
           "charaId": 1024
+        },
+        {
+          "id": 2392,
+          "charaId": 1068
         }
       ]
     },
@@ -505,6 +509,10 @@
         {
           "id": 24,
           "charaId": 1061
+        },
+        {
+          "id": 2407,
+          "charaId": 1062
         }
       ]
     },
@@ -855,6 +863,14 @@
         {
           "id": 122,
           "charaId": 1052
+        },
+        {
+          "id": 2441,
+          "charaId": 1062
+        },
+        {
+          "id": 2446,
+          "charaId": 1068
         }
       ]
     },
@@ -1193,6 +1209,10 @@
         {
           "id": 2457,
           "charaId": 1056
+        },
+        {
+          "id": 2458,
+          "charaId": 1062
         }
       ]
     },
@@ -1220,7 +1240,13 @@
     },
     {
       "relationType": 332,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2468,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 333,
@@ -1741,6 +1767,10 @@
         {
           "id": 2485,
           "charaId": 1060
+        },
+        {
+          "id": 2486,
+          "charaId": 1062
         }
       ]
     },
@@ -1750,7 +1780,13 @@
     },
     {
       "relationType": 515,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2492,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 516,
@@ -1769,6 +1805,10 @@
         {
           "id": 2495,
           "charaId": 1003
+        },
+        {
+          "id": 2496,
+          "charaId": 1068
         }
       ]
     },
@@ -2011,6 +2051,10 @@
         {
           "id": 2507,
           "charaId": 1041
+        },
+        {
+          "id": 2508,
+          "charaId": 1068
         }
       ]
     },
@@ -2161,6 +2205,10 @@
         {
           "id": 1700,
           "charaId": 1060
+        },
+        {
+          "id": 2363,
+          "charaId": 1062
         }
       ]
     },
@@ -2375,6 +2423,10 @@
         {
           "id": 685,
           "charaId": 1017
+        },
+        {
+          "id": 2310,
+          "charaId": 1068
         }
       ]
     },
@@ -2621,6 +2673,10 @@
         {
           "id": 740,
           "charaId": 1017
+        },
+        {
+          "id": 2323,
+          "charaId": 1068
         }
       ]
     },
@@ -2663,6 +2719,10 @@
         {
           "id": 695,
           "charaId": 1048
+        },
+        {
+          "id": 2314,
+          "charaId": 1068
         }
       ]
     },
@@ -2733,6 +2793,10 @@
         {
           "id": 764,
           "charaId": 1017
+        },
+        {
+          "id": 2328,
+          "charaId": 1068
         }
       ]
     },
@@ -2831,6 +2895,10 @@
         {
           "id": 644,
           "charaId": 1017
+        },
+        {
+          "id": 2302,
+          "charaId": 1068
         }
       ]
     },
@@ -3053,6 +3121,14 @@
         {
           "id": 2515,
           "charaId": 1071
+        },
+        {
+          "id": 2517,
+          "charaId": 1062
+        },
+        {
+          "id": 2522,
+          "charaId": 1068
         }
       ]
     },
@@ -3215,6 +3291,14 @@
         {
           "id": 1838,
           "charaId": 1069
+        },
+        {
+          "id": 2385,
+          "charaId": 1062
+        },
+        {
+          "id": 2388,
+          "charaId": 1068
         }
       ]
     },
@@ -3253,6 +3337,10 @@
         {
           "id": 356,
           "charaId": 1023
+        },
+        {
+          "id": 2541,
+          "charaId": 1068
         }
       ]
     },
@@ -3377,6 +3465,10 @@
         {
           "id": 377,
           "charaId": 1041
+        },
+        {
+          "id": 2552,
+          "charaId": 1062
         }
       ]
     },
@@ -3598,7 +3690,13 @@
     },
     {
       "relationType": 2824,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2556,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 2825,
@@ -3631,6 +3729,10 @@
         {
           "id": 422,
           "charaId": 1046
+        },
+        {
+          "id": 2231,
+          "charaId": 1068
         }
       ]
     },
@@ -3791,6 +3893,10 @@
         {
           "id": 467,
           "charaId": 1061
+        },
+        {
+          "id": 2245,
+          "charaId": 1062
         }
       ]
     },
@@ -4087,6 +4193,10 @@
         {
           "id": 2270,
           "charaId": 1071
+        },
+        {
+          "id": 2275,
+          "charaId": 1068
         }
       ]
     },
@@ -4149,6 +4259,14 @@
         {
           "id": 568,
           "charaId": 1025
+        },
+        {
+          "id": 2279,
+          "charaId": 1062
+        },
+        {
+          "id": 2281,
+          "charaId": 1068
         }
       ]
     },
@@ -4341,6 +4459,14 @@
           "charaId": 1071
         },
         {
+          "id": 2288,
+          "charaId": 1062
+        },
+        {
+          "id": 2294,
+          "charaId": 1068
+        },
+        {
           "id": 2296,
           "charaId": 1069
         }
@@ -4479,6 +4605,10 @@
         {
           "id": 2337,
           "charaId": 1071
+        },
+        {
+          "id": 2339,
+          "charaId": 1068
         }
       ]
     },
@@ -4583,6 +4713,10 @@
         {
           "id": 833,
           "charaId": 1056
+        },
+        {
+          "id": 2352,
+          "charaId": 1062
         }
       ]
     },
@@ -4992,7 +5126,13 @@
     },
     {
       "relationType": 7029,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2534,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 7030,
@@ -10814,7 +10954,13 @@
     },
     {
       "relationType": 8466,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1850,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8467,
@@ -11202,7 +11348,13 @@
     },
     {
       "relationType": 8502,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1922,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8503,
@@ -11421,6 +11573,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1975,
+          "charaId": 1062
+        },
+        {
           "id": 1976,
           "charaId": 1006
         }
@@ -11430,6 +11586,10 @@
       "relationType": 8530,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1977,
+          "charaId": 1062
+        },
         {
           "id": 1978,
           "charaId": 1050
@@ -11441,6 +11601,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1979,
+          "charaId": 1062
+        },
+        {
           "id": 1980,
           "charaId": 1020
         }
@@ -11448,12 +11612,22 @@
     },
     {
       "relationType": 8532,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1981,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8533,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1983,
+          "charaId": 1062
+        },
         {
           "id": 1984,
           "charaId": 1041
@@ -11462,16 +11636,32 @@
     },
     {
       "relationType": 8534,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1985,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8535,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1987,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8536,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1989,
+          "charaId": 1062
+        },
         {
           "id": 1990,
           "charaId": 1001
@@ -11483,6 +11673,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1991,
+          "charaId": 1062
+        },
+        {
           "id": 1992,
           "charaId": 1002
         }
@@ -11492,6 +11686,10 @@
       "relationType": 8538,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1993,
+          "charaId": 1062
+        },
         {
           "id": 1994,
           "charaId": 1005
@@ -11503,6 +11701,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1995,
+          "charaId": 1062
+        },
+        {
           "id": 1996,
           "charaId": 1010
         }
@@ -11512,6 +11714,10 @@
       "relationType": 8540,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1997,
+          "charaId": 1062
+        },
         {
           "id": 1998,
           "charaId": 1016
@@ -11523,6 +11729,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1999,
+          "charaId": 1062
+        },
+        {
           "id": 2000,
           "charaId": 1025
         }
@@ -11532,6 +11742,10 @@
       "relationType": 8542,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2001,
+          "charaId": 1062
+        },
         {
           "id": 2002,
           "charaId": 1030
@@ -11543,6 +11757,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2003,
+          "charaId": 1062
+        },
+        {
           "id": 2004,
           "charaId": 1032
         }
@@ -11553,6 +11771,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2005,
+          "charaId": 1062
+        },
+        {
           "id": 2006,
           "charaId": 1033
         }
@@ -11560,19 +11782,43 @@
     },
     {
       "relationType": 8545,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2007,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8546,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2009,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8547,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2011,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8548,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2013,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8549,
@@ -11754,7 +12000,13 @@
     },
     {
       "relationType": 8568,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2054,
+          "charaId": 1062
+        }
+      ]
     },
     {
       "relationType": 8569,
@@ -11842,7 +12094,13 @@
     },
     {
       "relationType": 8581,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2080,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8582,
@@ -11893,6 +12151,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2091,
+          "charaId": 1068
+        },
+        {
           "id": 2092,
           "charaId": 1018
         }
@@ -11902,6 +12164,10 @@
       "relationType": 8588,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2093,
+          "charaId": 1068
+        },
         {
           "id": 2094,
           "charaId": 1021
@@ -11913,6 +12179,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2095,
+          "charaId": 1068
+        },
+        {
           "id": 2096,
           "charaId": 1023
         }
@@ -11922,6 +12192,10 @@
       "relationType": 8590,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2097,
+          "charaId": 1068
+        },
         {
           "id": 2098,
           "charaId": 1035
@@ -11933,6 +12207,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2099,
+          "charaId": 1068
+        },
+        {
           "id": 2100,
           "charaId": 1048
         }
@@ -11942,6 +12220,10 @@
       "relationType": 8592,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2101,
+          "charaId": 1068
+        },
         {
           "id": 2102,
           "charaId": 1004
@@ -11953,6 +12235,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2103,
+          "charaId": 1068
+        },
+        {
           "id": 2104,
           "charaId": 1045
         }
@@ -11963,6 +12249,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2105,
+          "charaId": 1068
+        },
+        {
           "id": 2106,
           "charaId": 1069
         }
@@ -11970,12 +12260,22 @@
     },
     {
       "relationType": 8595,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2107,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8596,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2109,
+          "charaId": 1068
+        },
         {
           "id": 2110,
           "charaId": 1003
@@ -11987,6 +12287,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2111,
+          "charaId": 1068
+        },
+        {
           "id": 2112,
           "charaId": 1013
         }
@@ -11996,6 +12300,10 @@
       "relationType": 8598,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2113,
+          "charaId": 1068
+        },
         {
           "id": 2114,
           "charaId": 1017
@@ -12007,6 +12315,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2115,
+          "charaId": 1068
+        },
+        {
           "id": 2116,
           "charaId": 1014
         }
@@ -12016,6 +12328,10 @@
       "relationType": 8600,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2117,
+          "charaId": 1068
+        },
         {
           "id": 2118,
           "charaId": 1019
@@ -12027,6 +12343,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2119,
+          "charaId": 1068
+        },
+        {
           "id": 2120,
           "charaId": 1028
         }
@@ -12037,6 +12357,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2121,
+          "charaId": 1068
+        },
+        {
           "id": 2122,
           "charaId": 1037
         }
@@ -12044,16 +12368,32 @@
     },
     {
       "relationType": 8603,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2123,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8604,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2125,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8605,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2127,
+          "charaId": 1068
+        },
         {
           "id": 2128,
           "charaId": 1039
@@ -12065,6 +12405,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2129,
+          "charaId": 1068
+        },
+        {
           "id": 2130,
           "charaId": 1052
         }
@@ -12075,6 +12419,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2131,
+          "charaId": 1068
+        },
+        {
           "id": 2132,
           "charaId": 1061
         }
@@ -12082,11 +12430,23 @@
     },
     {
       "relationType": 8608,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2133,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8609,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2135,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 8610,
@@ -19199,6 +19559,744 @@
       "groundType": "DIRT"
     },
     {
+      "id": 920001,
+      "name": "TSクライマックス第1戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920002,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920003,
+      "name": "TSクライマックス第1戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920004,
+      "name": "TSクライマックス第1戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920005,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920006,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920007,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920008,
+      "name": "TSクライマックス第1戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920009,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920010,
+      "name": "TSクライマックス第1戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920011,
+      "name": "TSクライマックス第1戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920012,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920013,
+      "name": "TSクライマックス第1戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920014,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920015,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920016,
+      "name": "TSクライマックス第1戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920017,
+      "name": "TSクライマックス第1戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920018,
+      "name": "TSクライマックス第1戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920019,
+      "name": "TSクライマックス第1戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920020,
+      "name": "TSクライマックス第1戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920021,
+      "name": "TSクライマックス第1戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920022,
+      "name": "TSクライマックス第1戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920023,
+      "name": "TSクライマックス第1戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920024,
+      "name": "TSクライマックス第1戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920025,
+      "name": "TSクライマックス第1戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920026,
+      "name": "TSクライマックス第1戦",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920027,
+      "name": "TSクライマックス第1戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920028,
+      "name": "TSクライマックス第1戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920029,
+      "name": "TSクライマックス第1戦",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920030,
+      "name": "TSクライマックス第1戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920031,
+      "name": "TSクライマックス第1戦",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920032,
+      "name": "TSクライマックス第1戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920033,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920034,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920035,
+      "name": "TSクライマックス第1戦",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920036,
+      "name": "TSクライマックス第1戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920037,
+      "name": "TSクライマックス第1戦",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920038,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920039,
+      "name": "TSクライマックス第1戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920040,
+      "name": "TSクライマックス第1戦",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920041,
+      "name": "TSクライマックス第1戦",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920042,
+      "name": "TSクライマックス第2戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920043,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920044,
+      "name": "TSクライマックス第2戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920045,
+      "name": "TSクライマックス第2戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920046,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920047,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920048,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920049,
+      "name": "TSクライマックス第2戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920050,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920051,
+      "name": "TSクライマックス第2戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920052,
+      "name": "TSクライマックス第2戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920053,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920054,
+      "name": "TSクライマックス第2戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920055,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920056,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920057,
+      "name": "TSクライマックス第2戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920058,
+      "name": "TSクライマックス第2戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920059,
+      "name": "TSクライマックス第2戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920060,
+      "name": "TSクライマックス第2戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920061,
+      "name": "TSクライマックス第2戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920062,
+      "name": "TSクライマックス第2戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920063,
+      "name": "TSクライマックス第2戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920064,
+      "name": "TSクライマックス第2戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920065,
+      "name": "TSクライマックス第2戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920066,
+      "name": "TSクライマックス第2戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920067,
+      "name": "TSクライマックス第2戦",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920068,
+      "name": "TSクライマックス第2戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920069,
+      "name": "TSクライマックス第2戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920070,
+      "name": "TSクライマックス第2戦",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920071,
+      "name": "TSクライマックス第2戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920072,
+      "name": "TSクライマックス第2戦",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920073,
+      "name": "TSクライマックス第2戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920074,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920075,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920076,
+      "name": "TSクライマックス第2戦",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920077,
+      "name": "TSクライマックス第2戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920078,
+      "name": "TSクライマックス第2戦",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920079,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920080,
+      "name": "TSクライマックス第2戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920081,
+      "name": "TSクライマックス第2戦",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920082,
+      "name": "TSクライマックス第2戦",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920083,
+      "name": "TSクライマックス第3戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920084,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920085,
+      "name": "TSクライマックス第3戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920086,
+      "name": "TSクライマックス第3戦",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920087,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920088,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920089,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920090,
+      "name": "TSクライマックス第3戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920091,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920092,
+      "name": "TSクライマックス第3戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920093,
+      "name": "TSクライマックス第3戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920094,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920095,
+      "name": "TSクライマックス第3戦",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920096,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920097,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920098,
+      "name": "TSクライマックス第3戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920099,
+      "name": "TSクライマックス第3戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920100,
+      "name": "TSクライマックス第3戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920101,
+      "name": "TSクライマックス第3戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920102,
+      "name": "TSクライマックス第3戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920103,
+      "name": "TSクライマックス第3戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920104,
+      "name": "TSクライマックス第3戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920105,
+      "name": "TSクライマックス第3戦",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920106,
+      "name": "TSクライマックス第3戦",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920107,
+      "name": "TSクライマックス第3戦",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920108,
+      "name": "TSクライマックス第3戦",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920109,
+      "name": "TSクライマックス第3戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920110,
+      "name": "TSクライマックス第3戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920111,
+      "name": "TSクライマックス第3戦",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920112,
+      "name": "TSクライマックス第3戦",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920113,
+      "name": "TSクライマックス第3戦",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920114,
+      "name": "TSクライマックス第3戦",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 920115,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920116,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920117,
+      "name": "TSクライマックス第3戦",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920118,
+      "name": "TSクライマックス第3戦",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920119,
+      "name": "TSクライマックス第3戦",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920120,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920121,
+      "name": "TSクライマックス第3戦",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920122,
+      "name": "TSクライマックス第3戦",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 920123,
+      "name": "TSクライマックス第3戦",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
       "id": 999901,
       "name": "URAファイナルズ決勝",
       "distance": 2400,
@@ -21904,6 +23002,7 @@
       "name": "introduction：My body",
       "gradeValue": 240,
       "tagId": [
+        "401",
         "402"
       ]
     },
@@ -21944,7 +23043,8 @@
       "name": "来てください来てください！",
       "gradeValue": 240,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -21964,11 +23064,21 @@
       ]
     },
     {
+      "id": 10621,
+      "name": "レディー、どんっ！",
+      "gradeValue": 240,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
       "id": 100011,
       "name": "シューティングスター",
       "gradeValue": 340,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -22114,7 +23224,8 @@
       "name": "尊み☆ﾗｽﾄｽﾊﾟ—(ﾟ∀ﾟ)—ﾄ!",
       "gradeValue": 340,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -22205,6 +23316,7 @@
       "name": "U=ma2",
       "gradeValue": 340,
       "tagId": [
+        "401",
         "402"
       ]
     },
@@ -22311,7 +23423,8 @@
       "name": "来ます来てます来させます！",
       "gradeValue": 340,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -22345,6 +23458,24 @@
       "gradeValue": 340,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 100621,
+      "name": "どんっ、パッ、むんっ",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100681,
+      "name": "勝ち鬨ワッショイ！",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
@@ -22891,6 +24022,15 @@
       ]
     },
     {
+      "id": 200154,
+      "name": "良バ場の鬼",
+      "gradeValue": 461,
+      "tagId": [
+        "401",
+        "403"
+      ]
+    },
+    {
       "id": 200161,
       "name": "道悪◎",
       "gradeValue": 174,
@@ -23421,6 +24561,7 @@
       "gradeValue": 508,
       "tagId": [
         "301",
+        "302",
         "402"
       ]
     },
@@ -23430,6 +24571,7 @@
       "gradeValue": 217,
       "tagId": [
         "301",
+        "302",
         "402"
       ]
     },
@@ -23832,7 +24974,8 @@
       "tagId": [
         "201",
         "302",
-        "402"
+        "402",
+        "403"
       ]
     },
     {
@@ -23842,7 +24985,8 @@
       "tagId": [
         "201",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -23852,7 +24996,8 @@
       "tagId": [
         "201",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -23882,7 +25027,8 @@
       "tagId": [
         "202",
         "301",
-        "402"
+        "402",
+        "406"
       ]
     },
     {
@@ -23892,7 +25038,8 @@
       "tagId": [
         "202",
         "301",
-        "402"
+        "402",
+        "406"
       ]
     },
     {
@@ -23962,7 +25109,8 @@
       "tagId": [
         "203",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -23972,7 +25120,8 @@
       "tagId": [
         "203",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -24478,7 +25627,7 @@
       "gradeValue": 508,
       "tagId": [
         "202",
-        "302",
+        "301",
         "406"
       ]
     },
@@ -24488,7 +25637,7 @@
       "gradeValue": 217,
       "tagId": [
         "202",
-        "302",
+        "301",
         "406"
       ]
     },
@@ -24648,6 +25797,15 @@
       "id": 201172,
       "name": "長距離直線○",
       "gradeValue": 217,
+      "tagId": [
+        "204",
+        "401"
+      ]
+    },
+    {
+      "id": 201173,
+      "name": "烈風一閃",
+      "gradeValue": 508,
       "tagId": [
         "204",
         "401"
@@ -24832,6 +25990,7 @@
       "tagId": [
         "101",
         "301",
+        "302",
         "401"
       ]
     },
@@ -25471,7 +26630,8 @@
       "gradeValue": 508,
       "tagId": [
         "302",
-        "401"
+        "401",
+        "502"
       ]
     },
     {
@@ -25480,7 +26640,8 @@
       "gradeValue": 217,
       "tagId": [
         "302",
-        "401"
+        "401",
+        "502"
       ]
     },
     {
@@ -25489,7 +26650,8 @@
       "gradeValue": 394,
       "tagId": [
         "303",
-        "403"
+        "403",
+        "502"
       ]
     },
     {
@@ -25498,7 +26660,8 @@
       "gradeValue": 174,
       "tagId": [
         "303",
-        "403"
+        "403",
+        "502"
       ]
     },
     {
@@ -25565,7 +26728,8 @@
       "gradeValue": 217,
       "tagId": [
         "302",
-        "402"
+        "402",
+        "502"
       ]
     },
     {
@@ -25645,12 +26809,21 @@
       ]
     },
     {
+      "id": 202051,
+      "name": "大逃げ",
+      "gradeValue": 370,
+      "tagId": [
+        "101"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
       "tagId": [
         "302",
-        "401"
+        "401",
+        "802"
       ]
     },
     {
@@ -25659,7 +26832,8 @@
       "gradeValue": 263,
       "tagId": [
         "302",
-        "401"
+        "401",
+        "802"
       ]
     },
     {
@@ -25668,7 +26842,8 @@
       "gradeValue": 633,
       "tagId": [
         "302",
-        "402"
+        "402",
+        "802"
       ]
     },
     {
@@ -25677,7 +26852,8 @@
       "gradeValue": 263,
       "tagId": [
         "302",
-        "402"
+        "402",
+        "802"
       ]
     },
     {
@@ -25686,7 +26862,8 @@
       "gradeValue": 633,
       "tagId": [
         "303",
-        "403"
+        "403",
+        "802"
       ]
     },
     {
@@ -25695,7 +26872,8 @@
       "gradeValue": 263,
       "tagId": [
         "303",
-        "403"
+        "403",
+        "802"
       ]
     },
     {
@@ -25705,7 +26883,8 @@
       "tagId": [
         "303",
         "401",
-        "403"
+        "403",
+        "802"
       ]
     },
     {
@@ -25715,7 +26894,8 @@
       "tagId": [
         "303",
         "401",
-        "403"
+        "403",
+        "802"
       ]
     },
     {
@@ -25725,7 +26905,8 @@
       "tagId": [
         "301",
         "403",
-        "405"
+        "405",
+        "802"
       ]
     },
     {
@@ -25735,7 +26916,30 @@
       "tagId": [
         "301",
         "403",
-        "405"
+        "405",
+        "802"
+      ]
+    },
+    {
+      "id": 210061,
+      "name": "一番星",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "402",
+        "403",
+        "804"
+      ]
+    },
+    {
+      "id": 210062,
+      "name": "綺羅星",
+      "gradeValue": 263,
+      "tagId": [
+        "401",
+        "402",
+        "403",
+        "804"
       ]
     },
     {
@@ -25823,7 +27027,8 @@
       "name": "シューティングスター",
       "gradeValue": 180,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -25969,7 +27174,8 @@
       "name": "尊み☆ﾗｽﾄｽﾊﾟ—(ﾟ∀ﾟ)—ﾄ!",
       "gradeValue": 180,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -26060,6 +27266,7 @@
       "name": "U=ma2",
       "gradeValue": 180,
       "tagId": [
+        "401",
         "402"
       ]
     },
@@ -26166,7 +27373,8 @@
       "name": "来ます来てます来させます！",
       "gradeValue": 180,
       "tagId": [
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -26200,6 +27408,24 @@
       "gradeValue": 180,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 900621,
+      "name": "どんっ、パッ、むんっ",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 900681,
+      "name": "勝ち鬨ワッショイ！",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
@@ -26679,6 +27905,14 @@
     {
       "id": 106101,
       "name": "[キング・オブ・エメラルド]"
+    },
+    {
+      "id": 106201,
+      "name": "[ぱんぱかティルトット]"
+    },
+    {
+      "id": 106801,
+      "name": "[錦上・大判御輿]"
     },
     {
       "id": 106901,
