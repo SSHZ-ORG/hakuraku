@@ -68,6 +68,13 @@ type CharaTableData = {
     activatedSkills: Set<number>,
 };
 
+const runningStyleLabel = (horseResultData: RaceSimulateHorseResultData, activatedSkills: Set<number>) => {
+    if (activatedSkills.has(202051)) {
+        return '大逃げ';
+    }
+    return UMDatabaseUtils.runningStyleLabels[horseResultData.getRunningStyle()!];
+};
+
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     {
         dataField: 'copy',
@@ -116,7 +123,7 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         isDummyField: true,
         text: '',
         formatter: (cell, row) => <>
-            {UMDatabaseUtils.runningStyleLabels[row.horseResultData.getRunningStyle()!]}
+            {runningStyleLabel(row.horseResultData, row.activatedSkills)}
             <br/>{UMDatabaseUtils.motivationLabels[row.motivation]}
         </>,
     },
