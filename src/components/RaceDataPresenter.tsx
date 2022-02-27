@@ -147,7 +147,7 @@ const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
             <tbody>
             {row.trainedChara.skills.map(cs =>
                 <tr>
-                    <td>{UMDatabaseWrapper.skillName(cs.skillId)}</td>
+                    <td>{UMDatabaseWrapper.skillNameWithId(cs.skillId)}</td>
                     <td>Lv {cs.level}</td>
                     <td>{row.activatedSkills.has(cs.skillId) ? '発動' : ''}</td>
                 </tr>

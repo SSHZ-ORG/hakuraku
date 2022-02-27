@@ -45,6 +45,9 @@ class _UMDatabaseWrapper {
 
     skillName = (skillId: number) =>
         this.skills[skillId]?.getName() ?? `Unknown Skill ${skillId}`;
+
+    skillNameWithId = (skillId: number) =>
+        `[${skillId}] ${this.skills[skillId]?.getName() ?? 'Unknown Skill'}`;
 }
 
 const UMDatabaseWrapper = new _UMDatabaseWrapper();

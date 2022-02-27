@@ -209,7 +209,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                 <tbody>
                 {row.trainedChara.skills.map(cs =>
                     <tr>
-                        <td>{UMDatabaseWrapper.skillName(cs.skillId)}</td>
+                        <td>{UMDatabaseWrapper.skillNameWithId(cs.skillId)}</td>
                         <td>Lv {cs.level}</td>
                         <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
                         <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>

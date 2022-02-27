@@ -63,7 +63,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                 {row.trainedChara.skills.map(cs => {
                         const distances = (row.skillsActivationDistances[cs.skillId] ?? []).sort((a, b) => a - b);
                         return <tr>
-                            <td>{UMDatabaseWrapper.skillName(cs.skillId)}</td>
+                            <td>{UMDatabaseWrapper.skillNameWithId(cs.skillId)}</td>
                             <td>Lv {cs.level}</td>
                             <td>{distances.length}</td>
                             <td>({(100 * distances.length / row.raceCount).toFixed(2)}%)</td>
