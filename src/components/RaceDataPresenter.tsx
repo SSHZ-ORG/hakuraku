@@ -7,7 +7,7 @@ import {Alert, Form, Table} from "react-bootstrap";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
 import ReactJson from "react-json-view";
 import {Chara} from "../data/data_pb";
-import {RaceSimulateData, RaceSimulateHorseResultData} from "../data/race_data_pb";
+import {RaceSimulateData, RaceSimulateEventData, RaceSimulateHorseResultData} from "../data/race_data_pb";
 import {
     filterCharaCompeteFight,
     filterCharaCompeteTop,
@@ -25,6 +25,32 @@ import FoldCard from "./FoldCard";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
+
+type CompeteTableData = {
+    time: number,
+    type: string,
+    charas: {
+        displayName: string,
+    }[],
+};
+
+const competeTableColumns: ColumnDescription<CompeteTableData> [] = [
+    {
+        dataField: 'time',
+        text: 'Time',
+    },
+    {
+        dataField: 'type',
+        text: 'Type',
+    },
+    {
+        dataField: 'charas',
+        text: '',
+        formatter: (_, row) => <>
+            {row.charas.map(c => <>{c.displayName}<br/></>)}
+        </>,
+    },
+];
 
 type CharaTableData = {
     trainedChara: TrainedCharaData,
@@ -445,6 +471,35 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         </div>;
     }
 
+    renderCompetesList() {
+        const groupedEvents = _.groupBy(this.props.raceData.getEventList().map(e => e.getEvent()!)
+                .filter(e => e.getType() === RaceSimulateEventData.SimulateEventType.COMPETE_TOP || e.getType() === RaceSimulateEventData.SimulateEventType.COMPETE_FIGHT),
+            e => e.getFrameTime()!);
+
+        const d: CompeteTableData[] = _.values(groupedEvents).map(events => {
+            const time = events[0].getFrameTime()!;
+            return {
+                time: time,
+                type: events[0].getType() === RaceSimulateEventData.SimulateEventType.COMPETE_TOP ? "位置取り争い" : "追い比べ",
+                charas: events.map(e => {
+                    const frameOrder = e.getParamList()[0];
+                    return {
+                        displayName: this.displayNames(this.props.raceHorseInfo, this.props.raceData)[frameOrder],
+                    };
+                }),
+            };
+        })
+
+        return <FoldCard header='Competes'>
+            <BootstrapTable bootstrap4 condensed hover
+                            classes="responsive-bootstrap-table"
+                            wrapperClasses="table-responsive"
+                            data={d}
+                            columns={competeTableColumns}
+                            keyField="time"/>
+        </FoldCard>
+    }
+
     renderCharaList() {
         if (!this.props.raceHorseInfo || this.props.raceHorseInfo.length === 0) {
             return undefined;
@@ -546,6 +601,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 </Alert>}
             {this.renderCharaList()}
             {this.renderGlobalRaceDistanceDiffGraph()}
+            {this.renderCompetesList()}
             <Form>
                 <Form.Group>
                     <Form.Label>Chara</Form.Label>
