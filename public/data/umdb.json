@@ -1,5 +1,5 @@
 {
-  "version": "10005400",
+  "version": "10005600",
   "chara": [
     {
       "id": 1001,
@@ -377,6 +377,11 @@
       "castName": "中村カンナ"
     },
     {
+      "id": 1078,
+      "name": "ヤマニンゼファー",
+      "castName": "今泉りおな"
+    },
+    {
       "id": 2001,
       "name": "ハッピーミーク",
       "castName": "吉咲みゆ"
@@ -430,6 +435,10 @@
         {
           "id": 1,
           "charaId": 1024
+        },
+        {
+          "id": 3,
+          "charaId": 1051
         },
         {
           "id": 2391,
@@ -858,6 +867,10 @@
           "charaId": 1050
         },
         {
+          "id": 113,
+          "charaId": 1051
+        },
+        {
           "id": 117,
           "charaId": 1056
         },
@@ -1038,6 +1051,10 @@
         {
           "id": 141,
           "charaId": 1026
+        },
+        {
+          "id": 142,
+          "charaId": 1051
         }
       ]
     },
@@ -2264,6 +2281,10 @@
         {
           "id": 2363,
           "charaId": 1062
+        },
+        {
+          "id": 2368,
+          "charaId": 1051
         }
       ]
     },
@@ -2390,6 +2411,10 @@
         {
           "id": 721,
           "charaId": 1009
+        },
+        {
+          "id": 722,
+          "charaId": 1051
         }
       ]
     },
@@ -2664,6 +2689,10 @@
         {
           "id": 755,
           "charaId": 1041
+        },
+        {
+          "id": 756,
+          "charaId": 1051
         }
       ]
     },
@@ -2882,6 +2911,10 @@
         {
           "id": 724,
           "charaId": 1012
+        },
+        {
+          "id": 725,
+          "charaId": 1051
         },
         {
           "id": 726,
@@ -3244,6 +3277,10 @@
           "charaId": 1039
         },
         {
+          "id": 299,
+          "charaId": 1051
+        },
+        {
           "id": 300,
           "charaId": 1052
         },
@@ -3552,6 +3589,10 @@
         {
           "id": 377,
           "charaId": 1041
+        },
+        {
+          "id": 378,
+          "charaId": 1051
         },
         {
           "id": 2552,
@@ -3912,6 +3953,10 @@
           "charaId": 1048
         },
         {
+          "id": 445,
+          "charaId": 1051
+        },
+        {
           "id": 447,
           "charaId": 1058
         },
@@ -4068,6 +4113,10 @@
         {
           "id": 484,
           "charaId": 1038
+        },
+        {
+          "id": 486,
+          "charaId": 1051
         }
       ]
     },
@@ -4126,6 +4175,10 @@
         {
           "id": 505,
           "charaId": 1046
+        },
+        {
+          "id": 506,
+          "charaId": 1051
         },
         {
           "id": 508,
@@ -4558,6 +4611,10 @@
           "charaId": 1050
         },
         {
+          "id": 621,
+          "charaId": 1051
+        },
+        {
           "id": 626,
           "charaId": 1058
         },
@@ -4636,6 +4693,10 @@
         {
           "id": 784,
           "charaId": 1048
+        },
+        {
+          "id": 786,
+          "charaId": 1051
         },
         {
           "id": 789,
@@ -9858,6 +9919,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1547,
+          "charaId": 1051
+        },
+        {
           "id": 1548,
           "charaId": 1012
         }
@@ -9867,6 +9932,10 @@
       "relationType": 8358,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1549,
+          "charaId": 1051
+        },
         {
           "id": 1550,
           "charaId": 1015
@@ -9878,6 +9947,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1551,
+          "charaId": 1051
+        },
+        {
           "id": 1552,
           "charaId": 1027
         }
@@ -9885,12 +9958,22 @@
     },
     {
       "relationType": 8360,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1553,
+          "charaId": 1051
+        }
+      ]
     },
     {
       "relationType": 8361,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1555,
+          "charaId": 1051
+        },
         {
           "id": 1556,
           "charaId": 1038
@@ -9902,6 +9985,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1557,
+          "charaId": 1051
+        },
+        {
           "id": 1558,
           "charaId": 1039
         }
@@ -9912,6 +9999,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1559,
+          "charaId": 1051
+        },
+        {
           "id": 1560,
           "charaId": 1040
         }
@@ -9919,12 +10010,22 @@
     },
     {
       "relationType": 8364,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1561,
+          "charaId": 1051
+        }
+      ]
     },
     {
       "relationType": 8365,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1563,
+          "charaId": 1051
+        },
         {
           "id": 1564,
           "charaId": 1050
@@ -9936,6 +10037,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1565,
+          "charaId": 1051
+        },
+        {
           "id": 1566,
           "charaId": 1052
         }
@@ -9943,12 +10048,22 @@
     },
     {
       "relationType": 8367,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1567,
+          "charaId": 1051
+        }
+      ]
     },
     {
       "relationType": 8368,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1569,
+          "charaId": 1051
+        },
         {
           "id": 1570,
           "charaId": 1058
@@ -9960,6 +10075,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1571,
+          "charaId": 1051
+        },
+        {
           "id": 1572,
           "charaId": 1059
         }
@@ -9970,6 +10089,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1573,
+          "charaId": 1051
+        },
+        {
           "id": 1574,
           "charaId": 1060
         }
@@ -9979,6 +10102,10 @@
       "relationType": 8371,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1575,
+          "charaId": 1051
+        },
         {
           "id": 1576,
           "charaId": 1061
@@ -11145,7 +11272,13 @@
     },
     {
       "relationType": 8471,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1860,
+          "charaId": 1051
+        }
+      ]
     },
     {
       "relationType": 8472,
@@ -11396,6 +11529,10 @@
         {
           "id": 1899,
           "charaId": 1071
+        },
+        {
+          "id": 1900,
+          "charaId": 1051
         }
       ]
     },
@@ -11964,6 +12101,10 @@
         {
           "id": 2013,
           "charaId": 1062
+        },
+        {
+          "id": 2014,
+          "charaId": 1051
         }
       ]
     },
@@ -12297,7 +12438,13 @@
     },
     {
       "relationType": 8586,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2090,
+          "charaId": 1051
+        }
+      ]
     },
     {
       "relationType": 8587,
@@ -13134,6 +13281,10 @@
         {
           "id": 2221,
           "charaId": 1074
+        },
+        {
+          "id": 2222,
+          "charaId": 1051
         }
       ]
     }
@@ -19206,6 +19357,12 @@
       "groundType": "TURF"
     },
     {
+      "id": 904195,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 910001,
       "name": "URAファイナルズ予選",
       "distance": 1200,
@@ -21862,6 +22019,42 @@
       "name": "チャレンジレース EXTREME",
       "distance": 1600,
       "groundType": "TURF"
+    },
+    {
+      "id": 630007,
+      "name": "カーニバルレース HARD",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630008,
+      "name": "カーニバルレース HARD",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630009,
+      "name": "カーニバルレース HARD",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630010,
+      "name": "カーニバルレース HARD",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630011,
+      "name": "チャレンジレース VERY HARD",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630012,
+      "name": "チャレンジレース EXTREME",
+      "distance": 2000,
+      "groundType": "TURF"
     }
   ],
   "winsSaddle": [
@@ -23793,6 +23986,14 @@
       "gradeValue": 340,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 100511,
+      "name": "つぼみ、ほころぶ時",
+      "gradeValue": 340,
+      "tagId": [
+        "403"
       ]
     },
     {
@@ -27151,6 +27352,16 @@
       ]
     },
     {
+      "id": 201901,
+      "name": "鍔迫り合い",
+      "gradeValue": 508,
+      "tagId": [
+        "102",
+        "303",
+        "403"
+      ]
+    },
+    {
       "id": 201902,
       "name": "真っ向勝負",
       "gradeValue": 217,
@@ -27907,6 +28118,14 @@
       ]
     },
     {
+      "id": 900511,
+      "name": "つぼみ、ほころぶ時",
+      "gradeValue": 180,
+      "tagId": [
+        "403"
+      ]
+    },
+    {
       "id": 900521,
       "name": "ワクワククライマックス",
       "gradeValue": 180,
@@ -28188,6 +28407,14 @@
       "tagId": [
         "0"
       ]
+    },
+    {
+      "id": 1000012,
+      "name": "カーニバルボーナス",
+      "gradeValue": 0,
+      "tagId": [
+        "0"
+      ]
     }
   ],
   "teamStadiumScoreBonus": [
@@ -28460,6 +28687,10 @@
     {
       "id": 105001,
       "name": "[Nevertheless]"
+    },
+    {
+      "id": 105101,
+      "name": "[ティアード・ペタル]"
     },
     {
       "id": 105201,
