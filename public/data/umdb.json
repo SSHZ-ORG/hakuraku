@@ -1,5 +1,5 @@
 {
-  "version": "10006000",
+  "version": "10006100",
   "chara": [
     {
       "id": 1001,
@@ -24729,6 +24729,15 @@
       ]
     },
     {
+      "id": 110221,
+      "name": "Best day ever",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "403"
+      ]
+    },
+    {
       "id": 110231,
       "name": "Presents from X",
       "gradeValue": 340,
@@ -24768,6 +24777,15 @@
       "gradeValue": 340,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 110381,
+      "name": "One True Color",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
@@ -28177,6 +28195,26 @@
       ]
     },
     {
+      "id": 202151,
+      "name": "勇往邁進",
+      "gradeValue": 508,
+      "tagId": [
+        "103",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 202152,
+      "name": "フルスロットル",
+      "gradeValue": 217,
+      "tagId": [
+        "103",
+        "302",
+        "401"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -28969,6 +29007,15 @@
       ]
     },
     {
+      "id": 910221,
+      "name": "Best day ever",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "403"
+      ]
+    },
+    {
       "id": 910231,
       "name": "Presents from X",
       "gradeValue": 180,
@@ -29008,6 +29055,15 @@
       "gradeValue": 180,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 910381,
+      "name": "One True Color",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
@@ -29255,6 +29311,10 @@
       "name": "[Noble Seamair]"
     },
     {
+      "id": 102202,
+      "name": "[Titania]"
+    },
+    {
       "id": 102301,
       "name": "[pf.Victory formula...]"
     },
@@ -29325,6 +29385,10 @@
     {
       "id": 103801,
       "name": "[フィーユ・エクレール]"
+    },
+    {
+      "id": 103802,
+      "name": "[朔月のマ・シェリ]"
     },
     {
       "id": 103901,
