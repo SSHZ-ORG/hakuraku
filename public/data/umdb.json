@@ -1,5 +1,5 @@
 {
-  "version": "10006200",
+  "version": "10006300",
   "chara": [
     {
       "id": 1001,
@@ -435,6 +435,10 @@
         {
           "id": 1,
           "charaId": 1024
+        },
+        {
+          "id": 2,
+          "charaId": 1044
         },
         {
           "id": 3,
@@ -873,6 +877,10 @@
         {
           "id": 106,
           "charaId": 1040
+        },
+        {
+          "id": 108,
+          "charaId": 1044
         },
         {
           "id": 109,
@@ -1360,7 +1368,13 @@
     },
     {
       "relationType": 335,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2473,
+          "charaId": 1044
+        }
+      ]
     },
     {
       "relationType": 336,
@@ -2444,7 +2458,17 @@
     },
     {
       "relationType": 2408,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2561,
+          "charaId": 1022
+        },
+        {
+          "id": 2562,
+          "charaId": 1044
+        }
+      ]
     },
     {
       "relationType": 2409,
@@ -2765,6 +2789,10 @@
           "charaId": 1034
         },
         {
+          "id": 658,
+          "charaId": 1044
+        },
+        {
           "id": 661,
           "charaId": 1058
         },
@@ -2815,6 +2843,10 @@
         {
           "id": 707,
           "charaId": 1039
+        },
+        {
+          "id": 708,
+          "charaId": 1044
         },
         {
           "id": 709,
@@ -2945,6 +2977,10 @@
         {
           "id": 767,
           "charaId": 1022
+        },
+        {
+          "id": 768,
+          "charaId": 1044
         },
         {
           "id": 769,
@@ -3417,6 +3453,10 @@
           "charaId": 1039
         },
         {
+          "id": 298,
+          "charaId": 1044
+        },
+        {
           "id": 299,
           "charaId": 1051
         },
@@ -3505,6 +3545,10 @@
         {
           "id": 2377,
           "charaId": 1031
+        },
+        {
+          "id": 2378,
+          "charaId": 1044
         }
       ]
     },
@@ -4253,6 +4297,10 @@
           "charaId": 1033
         },
         {
+          "id": 473,
+          "charaId": 1044
+        },
+        {
           "id": 474,
           "charaId": 1050
         },
@@ -4517,6 +4565,10 @@
         {
           "id": 544,
           "charaId": 1039
+        },
+        {
+          "id": 545,
+          "charaId": 1044
         },
         {
           "id": 546,
@@ -4823,6 +4875,10 @@
           "charaId": 1039
         },
         {
+          "id": 616,
+          "charaId": 1044
+        },
+        {
           "id": 618,
           "charaId": 1048
         },
@@ -4925,6 +4981,10 @@
         {
           "id": 779,
           "charaId": 1039
+        },
+        {
+          "id": 782,
+          "charaId": 1044
         },
         {
           "id": 784,
@@ -9693,6 +9753,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1457,
+          "charaId": 1044
+        },
+        {
           "id": 1458,
           "charaId": 1004
         }
@@ -9702,6 +9766,10 @@
       "relationType": 8313,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1459,
+          "charaId": 1044
+        },
         {
           "id": 1460,
           "charaId": 1007
@@ -9713,6 +9781,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1461,
+          "charaId": 1044
+        },
+        {
           "id": 1462,
           "charaId": 1009
         }
@@ -9722,6 +9794,10 @@
       "relationType": 8315,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1463,
+          "charaId": 1044
+        },
         {
           "id": 1464,
           "charaId": 1022
@@ -9733,6 +9809,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1465,
+          "charaId": 1044
+        },
+        {
           "id": 1466,
           "charaId": 1045
         }
@@ -9743,6 +9823,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1467,
+          "charaId": 1044
+        },
+        {
           "id": 1468,
           "charaId": 1046
         }
@@ -9750,11 +9834,23 @@
     },
     {
       "relationType": 8318,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1469,
+          "charaId": 1044
+        }
+      ]
     },
     {
       "relationType": 8319,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1471,
+          "charaId": 1044
+        }
+      ]
     },
     {
       "relationType": 8320,
@@ -11437,6 +11533,10 @@
         {
           "id": 1835,
           "charaId": 1069
+        },
+        {
+          "id": 1836,
+          "charaId": 1044
         }
       ]
     },
@@ -12287,6 +12387,10 @@
         {
           "id": 1973,
           "charaId": 1072
+        },
+        {
+          "id": 1974,
+          "charaId": 1044
         }
       ]
     },
@@ -13209,6 +13313,10 @@
         {
           "id": 2125,
           "charaId": 1068
+        },
+        {
+          "id": 2126,
+          "charaId": 1044
         }
       ]
     },
@@ -13505,6 +13613,10 @@
         {
           "id": 2171,
           "charaId": 1067
+        },
+        {
+          "id": 2172,
+          "charaId": 1044
         }
       ]
     },
@@ -22645,6 +22757,18 @@
       "name": "天皇賞（春）（HARD）",
       "distance": 3200,
       "groundType": "TURF"
+    },
+    {
+      "id": 1200101,
+      "name": "宝塚記念（HARD）",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 1200102,
+      "name": "宝塚記念（HARD）",
+      "distance": 2200,
+      "groundType": "TURF"
     }
   ],
   "winsSaddle": [
@@ -24558,6 +24682,14 @@
     {
       "id": 100411,
       "name": "優等生×バクシン＝大勝利ッ",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 100441,
+      "name": "いただき☆ストレリチア！",
       "gradeValue": 340,
       "tagId": [
         "401"
@@ -28298,6 +28430,16 @@
       ]
     },
     {
+      "id": 202141,
+      "name": "アタシに指図しないで！！！",
+      "gradeValue": -174,
+      "tagId": [
+        "301",
+        "405",
+        "407"
+      ]
+    },
+    {
       "id": 202151,
       "name": "勇往邁進",
       "gradeValue": 508,
@@ -28315,6 +28457,14 @@
         "103",
         "302",
         "401"
+      ]
+    },
+    {
+      "id": 202161,
+      "name": "自制心",
+      "gradeValue": 217,
+      "tagId": [
+        "405"
       ]
     },
     {
@@ -28855,6 +29005,14 @@
     {
       "id": 900411,
       "name": "優等生×バクシン＝大勝利ッ",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900441,
+      "name": "いただき☆ストレリチア！",
       "gradeValue": 180,
       "tagId": [
         "401"
@@ -29520,6 +29678,10 @@
     {
       "id": 104101,
       "name": "[サクラ、すすめ！]"
+    },
+    {
+      "id": 104401,
+      "name": "[プラタナス・ウィッチ]"
     },
     {
       "id": 104501,
