@@ -1,5 +1,5 @@
 {
-  "version": "10006300",
+  "version": "10006310",
   "chara": [
     {
       "id": 1001,
@@ -12758,17 +12758,7 @@
     },
     {
       "relationType": 8558,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2033,
-          "charaId": 1064
-        },
-        {
-          "id": 2034,
-          "charaId": 1072
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8559,
@@ -12880,31 +12870,11 @@
     },
     {
       "relationType": 8567,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2051,
-          "charaId": 1064
-        },
-        {
-          "id": 2052,
-          "charaId": 1071
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8568,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2053,
-          "charaId": 1064
-        },
-        {
-          "id": 2054,
-          "charaId": 1062
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8569,
@@ -13186,17 +13156,7 @@
     },
     {
       "relationType": 8595,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2107,
-          "charaId": 1068
-        },
-        {
-          "id": 2108,
-          "charaId": 1072
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8596,
@@ -13364,23 +13324,11 @@
     },
     {
       "relationType": 8608,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2133,
-          "charaId": 1068
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8609,
-      "relationPoint": 1,
-      "member": [
-        {
-          "id": 2135,
-          "charaId": 1068
-        }
-      ]
+      "relationPoint": 1
     },
     {
       "relationType": 8610,
