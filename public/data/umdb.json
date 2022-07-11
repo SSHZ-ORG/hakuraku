@@ -1,5 +1,5 @@
 {
-  "version": "10006410",
+  "version": "10006500",
   "chara": [
     {
       "id": 1001,
@@ -579,6 +579,10 @@
           "charaId": 1032
         },
         {
+          "id": 35,
+          "charaId": 1036
+        },
+        {
           "id": 36,
           "charaId": 1040
         },
@@ -861,6 +865,10 @@
         {
           "id": 101,
           "charaId": 1035
+        },
+        {
+          "id": 102,
+          "charaId": 1036
         },
         {
           "id": 103,
@@ -1178,6 +1186,10 @@
       "relationType": 317,
       "relationPoint": 2,
       "member": [
+        {
+          "id": 155,
+          "charaId": 1036
+        },
         {
           "id": 156,
           "charaId": 1058
@@ -1999,6 +2011,10 @@
           "charaId": 1025
         },
         {
+          "id": 211,
+          "charaId": 1036
+        },
+        {
           "id": 212,
           "charaId": 1032
         }
@@ -2453,6 +2469,10 @@
         {
           "id": 1712,
           "charaId": 1052
+        },
+        {
+          "id": 2563,
+          "charaId": 1036
         }
       ]
     },
@@ -2557,6 +2577,10 @@
         {
           "id": 716,
           "charaId": 1032
+        },
+        {
+          "id": 717,
+          "charaId": 1036
         },
         {
           "id": 718,
@@ -2889,6 +2913,10 @@
         {
           "id": 736,
           "charaId": 1030
+        },
+        {
+          "id": 737,
+          "charaId": 1036
         },
         {
           "id": 738,
@@ -3343,6 +3371,10 @@
           "charaId": 1035
         },
         {
+          "id": 270,
+          "charaId": 1036
+        },
+        {
           "id": 271,
           "charaId": 1037
         },
@@ -3549,6 +3581,10 @@
         {
           "id": 2378,
           "charaId": 1044
+        },
+        {
+          "id": 2379,
+          "charaId": 1036
         }
       ]
     },
@@ -3953,6 +3989,10 @@
         {
           "id": 406,
           "charaId": 1019
+        },
+        {
+          "id": 407,
+          "charaId": 1036
         }
       ]
     },
@@ -4297,6 +4337,10 @@
           "charaId": 1033
         },
         {
+          "id": 472,
+          "charaId": 1036
+        },
+        {
           "id": 473,
           "charaId": 1044
         },
@@ -4557,6 +4601,10 @@
         {
           "id": 541,
           "charaId": 1034
+        },
+        {
+          "id": 542,
+          "charaId": 1036
         },
         {
           "id": 543,
@@ -4863,6 +4911,10 @@
           "charaId": 1034
         },
         {
+          "id": 611,
+          "charaId": 1036
+        },
+        {
           "id": 612,
           "charaId": 1037
         },
@@ -5015,6 +5067,10 @@
         {
           "id": 791,
           "charaId": 1011
+        },
+        {
+          "id": 792,
+          "charaId": 1036
         },
         {
           "id": 793,
@@ -9043,6 +9099,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1335,
+          "charaId": 1036
+        },
+        {
           "id": 1336,
           "charaId": 1003
         }
@@ -9052,6 +9112,10 @@
       "relationType": 8252,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1337,
+          "charaId": 1036
+        },
         {
           "id": 1338,
           "charaId": 1004
@@ -9063,6 +9127,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1339,
+          "charaId": 1036
+        },
+        {
           "id": 1340,
           "charaId": 1013
         }
@@ -9072,6 +9140,10 @@
       "relationType": 8254,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1341,
+          "charaId": 1036
+        },
         {
           "id": 1342,
           "charaId": 1015
@@ -9083,6 +9155,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1343,
+          "charaId": 1036
+        },
+        {
           "id": 1344,
           "charaId": 1017
         }
@@ -9092,6 +9168,10 @@
       "relationType": 8256,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1345,
+          "charaId": 1036
+        },
         {
           "id": 1346,
           "charaId": 1022
@@ -9103,6 +9183,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1347,
+          "charaId": 1036
+        },
+        {
           "id": 1348,
           "charaId": 1027
         }
@@ -9112,6 +9196,10 @@
       "relationType": 8258,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1349,
+          "charaId": 1036
+        },
         {
           "id": 1350,
           "charaId": 1038
@@ -9123,6 +9211,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1351,
+          "charaId": 1036
+        },
+        {
           "id": 1352,
           "charaId": 1040
         }
@@ -9130,12 +9222,22 @@
     },
     {
       "relationType": 8260,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1353,
+          "charaId": 1036
+        }
+      ]
     },
     {
       "relationType": 8261,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1355,
+          "charaId": 1036
+        },
         {
           "id": 1356,
           "charaId": 1045
@@ -9144,12 +9246,22 @@
     },
     {
       "relationType": 8262,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1357,
+          "charaId": 1036
+        }
+      ]
     },
     {
       "relationType": 8263,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1359,
+          "charaId": 1036
+        },
         {
           "id": 1360,
           "charaId": 1056
@@ -9161,6 +9273,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1361,
+          "charaId": 1036
+        },
+        {
           "id": 1362,
           "charaId": 1058
         }
@@ -9171,6 +9287,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1363,
+          "charaId": 1036
+        },
+        {
           "id": 1364,
           "charaId": 1059
         }
@@ -9180,6 +9300,10 @@
       "relationType": 8266,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1365,
+          "charaId": 1036
+        },
         {
           "id": 1366,
           "charaId": 1060
@@ -11437,6 +11561,10 @@
         {
           "id": 1819,
           "charaId": 1069
+        },
+        {
+          "id": 1820,
+          "charaId": 1036
         }
       ]
     },
@@ -11867,6 +11995,10 @@
         {
           "id": 1893,
           "charaId": 1071
+        },
+        {
+          "id": 1894,
+          "charaId": 1036
         }
       ]
     },
@@ -12291,6 +12423,10 @@
         {
           "id": 1957,
           "charaId": 1072
+        },
+        {
+          "id": 1958,
+          "charaId": 1036
         }
       ]
     },
@@ -12617,6 +12753,10 @@
         {
           "id": 2007,
           "charaId": 1062
+        },
+        {
+          "id": 2008,
+          "charaId": 1036
         }
       ]
     },
@@ -13841,6 +13981,10 @@
         {
           "id": 2215,
           "charaId": 1074
+        },
+        {
+          "id": 2216,
+          "charaId": 1036
         }
       ]
     },
@@ -17307,6 +17451,12 @@
       "groundType": "TURF"
     },
     {
+      "id": 600031,
+      "name": "キャンサー杯",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
       "id": 600041,
       "name": "タウラス杯 決勝",
       "distance": 2400,
@@ -17316,6 +17466,12 @@
       "id": 600042,
       "name": "ジェミニ杯 決勝",
       "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 600043,
+      "name": "キャンサー杯 決勝",
+      "distance": 2200,
       "groundType": "TURF"
     },
     {
@@ -24595,6 +24751,15 @@
       ]
     },
     {
+      "id": 100361,
+      "name": "trigger:BEAT",
+      "gradeValue": 340,
+      "tagId": [
+        "401",
+        "403"
+      ]
+    },
+    {
       "id": 100371,
       "name": "Schwarzes Schwert",
       "gradeValue": 340,
@@ -27720,6 +27885,15 @@
       ]
     },
     {
+      "id": 201453,
+      "name": "月影一閃",
+      "gradeValue": 508,
+      "tagId": [
+        "104",
+        "401"
+      ]
+    },
+    {
       "id": 201461,
       "name": "追込コーナー◎",
       "gradeValue": 262,
@@ -28441,6 +28615,15 @@
       ]
     },
     {
+      "id": 202181,
+      "name": "99 Problems",
+      "gradeValue": -174,
+      "tagId": [
+        "404",
+        "405"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -28940,6 +29123,15 @@
       "gradeValue": 180,
       "tagId": [
         "401"
+      ]
+    },
+    {
+      "id": 900361,
+      "name": "trigger:BEAT",
+      "gradeValue": 180,
+      "tagId": [
+        "401",
+        "403"
       ]
     },
     {
@@ -29640,6 +29832,10 @@
     {
       "id": 103501,
       "name": "[Go To Winning!]"
+    },
+    {
+      "id": 103601,
+      "name": "[unsigned]"
     },
     {
       "id": 103701,
