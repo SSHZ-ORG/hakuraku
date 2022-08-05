@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import {AllTypeaheadOwnAndInjectedProps} from "react-bootstrap-typeahead";
 import {toKatakana, toRomaji} from "wanakana";
-import {Chara, SpecialCaseRace, SuccessionRelation} from './data_pb';
+import {Chara, SpecialCaseRace, SuccessionRelation, SupportCard} from './data_pb';
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
@@ -35,6 +35,10 @@ class UMDatabaseUtils {
 
     static charaNameWithCast(chara: Chara) {
         return `${chara.getName()} (${chara.getCastName()})`;
+    }
+
+    static supportCardNameWithId(supportCard: SupportCard) {
+        return `${supportCard.getId()} - ${supportCard.getName()}`;
     }
 
     static getPopularityMark(n: number) {
@@ -79,3 +83,5 @@ class UMDatabaseUtils {
 }
 
 export default UMDatabaseUtils;
+
+export type Story = { id: number, name: string, chara?: Chara, supportCard?: SupportCard };

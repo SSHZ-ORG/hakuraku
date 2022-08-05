@@ -19,6 +19,11 @@ export class UMDatabase extends jspb.Message {
   setCardList(value: Array<Card>): void;
   addCard(value?: Card, index?: number): Card;
 
+  clearSupportCardList(): void;
+  getSupportCardList(): Array<SupportCard>;
+  setSupportCardList(value: Array<SupportCard>): void;
+  addSupportCard(value?: SupportCard, index?: number): SupportCard;
+
   clearSuccessionRelationList(): void;
   getSuccessionRelationList(): Array<SuccessionRelation>;
   setSuccessionRelationList(value: Array<SuccessionRelation>): void;
@@ -49,6 +54,11 @@ export class UMDatabase extends jspb.Message {
   setTeamStadiumScoreBonusList(value: Array<TeamStadiumScoreBonus>): void;
   addTeamStadiumScoreBonus(value?: TeamStadiumScoreBonus, index?: number): TeamStadiumScoreBonus;
 
+  clearStoryList(): void;
+  getStoryList(): Array<Story>;
+  setStoryList(value: Array<Story>): void;
+  addStory(value?: Story, index?: number): Story;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UMDatabase.AsObject;
   static toObject(includeInstance: boolean, msg: UMDatabase): UMDatabase.AsObject;
@@ -64,12 +74,14 @@ export namespace UMDatabase {
     version?: string,
     charaList: Array<Chara.AsObject>,
     cardList: Array<Card.AsObject>,
+    supportCardList: Array<SupportCard.AsObject>,
     successionRelationList: Array<SuccessionRelation.AsObject>,
     raceInstanceList: Array<RaceInstance.AsObject>,
     winsSaddleList: Array<WinsSaddle.AsObject>,
     specialCaseRaceList: Array<SpecialCaseRace.AsObject>,
     skillList: Array<Skill.AsObject>,
     teamStadiumScoreBonusList: Array<TeamStadiumScoreBonus.AsObject>,
+    storyList: Array<Story.AsObject>,
   }
 }
 
@@ -132,6 +144,40 @@ export namespace Card {
   export type AsObject = {
     id?: number,
     name?: string,
+  }
+}
+
+export class SupportCard extends jspb.Message {
+  hasId(): boolean;
+  clearId(): void;
+  getId(): number | undefined;
+  setId(value: number): void;
+
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string | undefined;
+  setName(value: string): void;
+
+  hasCharaId(): boolean;
+  clearCharaId(): void;
+  getCharaId(): number | undefined;
+  setCharaId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): SupportCard.AsObject;
+  static toObject(includeInstance: boolean, msg: SupportCard): SupportCard.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: SupportCard, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SupportCard;
+  static deserializeBinaryFromReader(message: SupportCard, reader: jspb.BinaryReader): SupportCard;
+}
+
+export namespace SupportCard {
+  export type AsObject = {
+    id?: number,
+    name?: string,
+    charaId?: number,
   }
 }
 
@@ -404,6 +450,34 @@ export class TeamStadiumScoreBonus extends jspb.Message {
 }
 
 export namespace TeamStadiumScoreBonus {
+  export type AsObject = {
+    id?: number,
+    name?: string,
+  }
+}
+
+export class Story extends jspb.Message {
+  hasId(): boolean;
+  clearId(): void;
+  getId(): number | undefined;
+  setId(value: number): void;
+
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string | undefined;
+  setName(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Story.AsObject;
+  static toObject(includeInstance: boolean, msg: Story): Story.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Story, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Story;
+  static deserializeBinaryFromReader(message: Story, reader: jspb.BinaryReader): Story;
+}
+
+export namespace Story {
   export type AsObject = {
     id?: number,
     name?: string,

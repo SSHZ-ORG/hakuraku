@@ -11,6 +11,7 @@ import RoomRaceAnalyzerPage from "./pages/RoomRaceAnalyzerPage";
 import SuccessionPage from './pages/SuccessionPage';
 import SuccessionRelationsPage from "./pages/SuccessionRelationsPage";
 import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
+import StoriesPage from "./pages/StoriesPage";
 
 class App extends React.Component<{}, { umdbLoaded: boolean }> {
     constructor(props: {}) {
@@ -41,6 +42,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/succession">Succession</Nav.Link>
                                 <Nav.Link as={Link} to="/successionrelations">SuccessionRelations</Nav.Link>
+                                <Nav.Link as={Link} to="/stories">Stories</Nav.Link>
                                 <NavDropdown title="CarrotJuicer Tools" id="carrotjuicer-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/carrotjuicer">
                                         Packet / Race Inspector
@@ -73,6 +75,9 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                         </Route>
                         <Route path="/successionrelations">
                             <SuccessionRelationsPage/>
+                        </Route>
+                        <Route path="/stories">
+                            <StoriesPage/>
                         </Route>
                         <Route path="/carrotjuicer">
                             <CarrotJuicerPage/>

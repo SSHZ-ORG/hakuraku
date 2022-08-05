@@ -7,6 +7,7 @@ message UMDatabase {
 
     repeated Chara chara = 2;
     repeated Card card = 9;
+    repeated SupportCard support_card = 11;
     repeated SuccessionRelation succession_relation = 3;
     repeated RaceInstance race_instance = 4;
     repeated WinsSaddle wins_saddle = 5;
@@ -16,6 +17,8 @@ message UMDatabase {
     repeated Skill skill = 7;
 
     repeated TeamStadiumScoreBonus team_stadium_score_bonus = 8;
+
+    repeated Story story = 10;
 }
 
 message Chara {
@@ -27,6 +30,12 @@ message Chara {
 message Card {
     optional int32 id = 1;
     optional string name = 2;
+}
+
+message SupportCard {
+    optional int32 id = 1;
+    optional string name = 2;
+    optional int32 chara_id = 3;
 }
 
 message SuccessionRelation {
@@ -91,6 +100,11 @@ message Skill {
 }
 
 message TeamStadiumScoreBonus {
+    optional int32 id = 1;
+    optional string name = 2;
+}
+
+message Story {
     optional int32 id = 1;
     optional string name = 2;
 }

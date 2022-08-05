@@ -1924,12 +1924,27 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@types/react-bootstrap-table-next@*":
+  version "4.0.18"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.18.tgz#6b5ad945ef2e0abff0ae966fa1e9ed7b00b5fac0"
+  integrity sha512-dJOj06ReCclTr/gR+gEXqTWyi3U2XTML/dFDZjuMbiC8Ud3Im1kQZT2w910uXAF67OJ63uL4l8Gk2pUd7wJexQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-bootstrap-table-next@^4.0.16":
   version "4.0.16"
   resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.16.tgz#323904d1b78cf64bdd1fbe131cf3aee96755c8cb"
   integrity sha512-qMl6OmnQwE0vzg0PIE0EzrqWLIgx6v1vaqBdT/NQTZbVOHng55Kb6CalsOrrKMQJrebFTp2Kc4Djc0DrSHr8lw==
   dependencies:
     "@types/react" "*"
+
+"@types/react-bootstrap-table2-filter@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table2-filter/-/react-bootstrap-table2-filter-1.3.4.tgz#5846ec3a7fb91f5fef9c8ff7b69bb23b0606dd7d"
+  integrity sha512-ItSSr4XRdYC8jkyUP/i2Bc5aDvoa52hCgWElLndo0S1Z6Gt5p6K9Z98r3BubZuo1disAa6+t5tBMVzJ6trI5eg==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-bootstrap-table-next" "*"
 
 "@types/react-bootstrap-typeahead@^5.1.7":
   version "5.1.7"
@@ -9584,6 +9599,11 @@ react-bootstrap-table-next@^4.0.3:
     classnames "^2.2.5"
     react-transition-group "^4.2.0"
     underscore "1.9.1"
+
+react-bootstrap-table2-filter@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-table2-filter/-/react-bootstrap-table2-filter-1.3.3.tgz#ba189d137a2200b89f046041d0f4f307ce700623"
+  integrity sha512-lE+CHHGewzN9PCPaRqbu9wia8NMfwOBMPOAoAyfxbbMrZzjCf1WYRrHbWGzUj1MQlF5kJxLMwRgy/C604OmgMw==
 
 react-bootstrap-typeahead@^5.2.0:
   version "5.2.0"

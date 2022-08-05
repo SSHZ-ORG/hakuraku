@@ -1,14 +1,17 @@
 import pako from "pako";
-import {Card, Chara, RaceInstance, Skill, UMDatabase} from './data_pb';
+import {Card, Chara, RaceInstance, Skill, SupportCard, UMDatabase} from './data_pb';
+import {Story} from "./UMDatabaseUtils";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
     charas: Record<number, Chara> = {};
     cards: Record<number, Card> = {};
+    supportCards: Record<number, SupportCard> = {};
     raceInstances: Record<number, RaceInstance> = {};
     interestingRaceInstances: RaceInstance[] = [];
     skills: Record<number, Skill> = {};
     successionRelationMemberCharaIds: Record<number, Set<number>> = {};
+    stories: Story[] = [];
 
     /**
      * @return {!Promise}
@@ -21,6 +24,7 @@ class _UMDatabaseWrapper {
 
                 this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
                 this.umdb.getCardList().forEach((card) => this.cards[card.getId()!] = card);
+                this.umdb.getSupportCardList().forEach((card) => this.supportCards[card.getId()!] = card);
 
                 this.umdb.getSuccessionRelationList().forEach((relation) =>
                     this.successionRelationMemberCharaIds[relation.getRelationType()!] = new Set(relation.getMemberList().map(m => m.getCharaId()!)));
@@ -37,6 +41,21 @@ class _UMDatabaseWrapper {
                     new Set<number>()));
                 interestingRaceInstanceIds.sort();
                 this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
+
+                this.stories = this.umdb.getStoryList().map(story => {
+                    const o: Story = {
+                        id: story.getId()!,
+                        name: story.getName()!,
+                    };
+                    const id = story.getId()!;
+                    if ((501000000 <= id && id < 510000000) || (801000000 <= id && id < 810000000)) {
+                        o.chara = this.charas[Math.floor(id / 1000) % 10000];
+                    } else if (810000000 <= id && id < 840000000) {
+                        o.supportCard = this.supportCards[Math.floor(id / 1000) % 100000];
+                    }
+
+                    return o;
+                })
             });
     }
 

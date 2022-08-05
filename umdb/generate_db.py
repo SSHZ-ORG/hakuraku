@@ -37,6 +37,19 @@ def populate_cards(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         pb.card.append(c)
 
 
+def populate_support_cards(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute('''SELECT s.id, t.text, s.chara_id
+                      FROM support_card_data AS s
+                      JOIN text_data AS t ON t."index"=s.id AND t.category=75;''')
+    rows = cursor.fetchall()
+    for row in rows:
+        c = data_pb2.SupportCard()
+        c.id = row[0]
+        c.name = row[1]
+        c.chara_id = row[2]
+        pb.support_card.append(c)
+
+
 def populate_succession_relation(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
     relations = {}
 
@@ -146,6 +159,16 @@ def populate_team_stadium_score_bonus(pb: data_pb2.UMDatabase, cursor: sqlite3.C
         pb.team_stadium_score_bonus.append(r)
 
 
+def populate_stories(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
+    cursor.execute("SELECT `index`, text FROM text_data WHERE category=181;")
+    rows = cursor.fetchall()
+    for row in rows:
+        r = data_pb2.Story()
+        r.id = row[0]
+        r.name = row[1]
+        pb.story.append(r)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--db_path", default="master.mdb")
@@ -157,14 +180,17 @@ def main():
 
     cursor = open_db(args.db_path)
 
-    populate_charas(pb, cursor)
-    populate_cards(pb, cursor)
-    populate_succession_relation(pb, cursor)
-    populate_race_instance(pb, cursor)
-    populate_wins_saddle(pb, cursor)
-    populate_special_case_race(pb, cursor)
-    populate_skills(pb, cursor)
-    populate_team_stadium_score_bonus(pb, cursor)
+    for p in (populate_charas,
+              populate_cards,
+              populate_support_cards,
+              populate_succession_relation,
+              populate_race_instance,
+              populate_wins_saddle,
+              populate_special_case_race,
+              populate_skills,
+              populate_team_stadium_score_bonus,
+              populate_stories):
+        p(pb, cursor)
 
     print(pb)
 
