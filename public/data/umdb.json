@@ -1,5 +1,5 @@
 {
-  "version": "10007200",
+  "version": "10007300",
   "chara": [
     {
       "id": 1001,
@@ -752,6 +752,10 @@
           "charaId": 1021
         },
         {
+          "id": 59,
+          "charaId": 1042
+        },
+        {
           "id": 60,
           "charaId": 1045
         },
@@ -946,6 +950,10 @@
         {
           "id": 106,
           "charaId": 1040
+        },
+        {
+          "id": 107,
+          "charaId": 1042
         },
         {
           "id": 108,
@@ -1290,6 +1298,10 @@
         {
           "id": 159,
           "charaId": 1039
+        },
+        {
+          "id": 160,
+          "charaId": 1042
         }
       ]
     },
@@ -2664,6 +2676,10 @@
         {
           "id": 2371,
           "charaId": 1074
+        },
+        {
+          "id": 3757,
+          "charaId": 1042
         }
       ]
     },
@@ -2892,6 +2908,10 @@
         {
           "id": 771,
           "charaId": 1014
+        },
+        {
+          "id": 772,
+          "charaId": 1042
         }
       ]
     },
@@ -3772,6 +3792,10 @@
           "charaId": 1039
         },
         {
+          "id": 297,
+          "charaId": 1042
+        },
+        {
           "id": 298,
           "charaId": 1044
         },
@@ -3958,6 +3982,10 @@
         {
           "id": 2568,
           "charaId": 1098
+        },
+        {
+          "id": 2569,
+          "charaId": 1042
         }
       ]
     },
@@ -4046,6 +4074,10 @@
         {
           "id": 363,
           "charaId": 1060
+        },
+        {
+          "id": 2665,
+          "charaId": 1042
         }
       ]
     },
@@ -4234,6 +4266,10 @@
         {
           "id": 393,
           "charaId": 1010
+        },
+        {
+          "id": 394,
+          "charaId": 1042
         },
         {
           "id": 395,
@@ -4606,6 +4642,10 @@
           "charaId": 1039
         },
         {
+          "id": 460,
+          "charaId": 1042
+        },
+        {
           "id": 462,
           "charaId": 1053
         },
@@ -4718,6 +4758,10 @@
           "charaId": 1038
         },
         {
+          "id": 485,
+          "charaId": 1042
+        },
+        {
           "id": 486,
           "charaId": 1051
         },
@@ -4786,6 +4830,10 @@
         {
           "id": 502,
           "charaId": 1039
+        },
+        {
+          "id": 503,
+          "charaId": 1042
         },
         {
           "id": 505,
@@ -5282,6 +5330,10 @@
           "charaId": 1039
         },
         {
+          "id": 615,
+          "charaId": 1042
+        },
+        {
           "id": 616,
           "charaId": 1044
         },
@@ -5531,6 +5583,10 @@
       "relationType": 3204,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 780,
+          "charaId": 1042
+        },
         {
           "id": 809,
           "charaId": 1003
@@ -10238,6 +10294,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1437,
+          "charaId": 1042
+        },
+        {
           "id": 1438,
           "charaId": 1004
         }
@@ -10247,6 +10307,10 @@
       "relationType": 8303,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1439,
+          "charaId": 1042
+        },
         {
           "id": 1440,
           "charaId": 1007
@@ -10258,6 +10322,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1441,
+          "charaId": 1042
+        },
+        {
           "id": 1442,
           "charaId": 1009
         }
@@ -10267,6 +10335,10 @@
       "relationType": 8305,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1443,
+          "charaId": 1042
+        },
         {
           "id": 1444,
           "charaId": 1022
@@ -10278,6 +10350,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1445,
+          "charaId": 1042
+        },
+        {
           "id": 1446,
           "charaId": 1045
         }
@@ -10288,6 +10364,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1447,
+          "charaId": 1042
+        },
+        {
           "id": 1448,
           "charaId": 1046
         }
@@ -10295,11 +10375,23 @@
     },
     {
       "relationType": 8308,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1449,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8309,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 1451,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8310,
@@ -12108,6 +12200,10 @@
         {
           "id": 1833,
           "charaId": 1069
+        },
+        {
+          "id": 1834,
+          "charaId": 1042
         }
       ]
     },
@@ -12978,6 +13074,10 @@
         {
           "id": 1971,
           "charaId": 1072
+        },
+        {
+          "id": 1972,
+          "charaId": 1042
         }
       ]
     },
@@ -13882,6 +13982,10 @@
         {
           "id": 2123,
           "charaId": 1068
+        },
+        {
+          "id": 2124,
+          "charaId": 1042
         }
       ]
     },
@@ -14170,6 +14274,10 @@
         {
           "id": 2169,
           "charaId": 1067
+        },
+        {
+          "id": 2170,
+          "charaId": 1042
         }
       ]
     },
@@ -15317,7 +15425,13 @@
     },
     {
       "relationType": 8755,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2967,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8756,
@@ -16525,7 +16639,13 @@
     },
     {
       "relationType": 8910,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3249,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8911,
@@ -16773,7 +16893,13 @@
     },
     {
       "relationType": 8942,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3305,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8943,
@@ -17021,7 +17147,13 @@
     },
     {
       "relationType": 8974,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3361,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 8975,
@@ -18114,6 +18246,10 @@
         {
           "id": 3570,
           "charaId": 1098
+        },
+        {
+          "id": 3571,
+          "charaId": 1042
         }
       ]
     },
@@ -18841,7 +18977,13 @@
     },
     {
       "relationType": 9193,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3709,
+          "charaId": 1042
+        }
+      ]
     },
     {
       "relationType": 9194,
@@ -25698,6 +25840,12 @@
       "groundType": "DIRT"
     },
     {
+      "id": 904199,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 910001,
       "name": "URAファイナルズ予選",
       "distance": 1200,
@@ -28446,6 +28594,18 @@
       "groundType": "TURF"
     },
     {
+      "id": 1200201,
+      "name": "スプリンターズS（HARD）",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 1200202,
+      "name": "スプリンターズS（HARD）",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 650001,
       "name": "スカウトレース 短距離",
       "distance": 1200,
@@ -28601,7 +28761,7 @@
       "raceInstanceId": [
         102301
       ],
-      "priority": 13,
+      "priority": 101,
       "groupId": 37
     },
     {
@@ -28610,7 +28770,7 @@
       "raceInstanceId": [
         101901
       ],
-      "priority": 14,
+      "priority": 102,
       "groupId": 33
     },
     {
@@ -28619,7 +28779,7 @@
       "raceInstanceId": [
         101001
       ],
-      "priority": 15,
+      "priority": 103,
       "groupId": 22
     },
     {
@@ -28628,7 +28788,7 @@
       "raceInstanceId": [
         100601
       ],
-      "priority": 16,
+      "priority": 104,
       "groupId": 18
     },
     {
@@ -28637,7 +28797,7 @@
       "raceInstanceId": [
         101201
       ],
-      "priority": 17,
+      "priority": 105,
       "groupId": 24
     },
     {
@@ -28646,7 +28806,7 @@
       "raceInstanceId": [
         101601
       ],
-      "priority": 19,
+      "priority": 106,
       "groupId": 30
     },
     {
@@ -28655,7 +28815,7 @@
       "raceInstanceId": [
         101501
       ],
-      "priority": 20,
+      "priority": 107,
       "groupId": 28
     },
     {
@@ -28664,7 +28824,7 @@
       "raceInstanceId": [
         100301
       ],
-      "priority": 22,
+      "priority": 108,
       "groupId": 15
     },
     {
@@ -28673,7 +28833,7 @@
       "raceInstanceId": [
         100501
       ],
-      "priority": 23,
+      "priority": 109,
       "groupId": 17
     },
     {
@@ -28682,7 +28842,7 @@
       "raceInstanceId": [
         100901
       ],
-      "priority": 24,
+      "priority": 110,
       "groupId": 21
     },
     {
@@ -28691,7 +28851,7 @@
       "raceInstanceId": [
         100201
       ],
-      "priority": 25,
+      "priority": 111,
       "groupId": 14
     },
     {
@@ -28700,7 +28860,7 @@
       "raceInstanceId": [
         101101
       ],
-      "priority": 26,
+      "priority": 112,
       "groupId": 23
     },
     {
@@ -28709,7 +28869,7 @@
       "raceInstanceId": [
         101301
       ],
-      "priority": 27,
+      "priority": 113,
       "groupId": 26
     },
     {
@@ -28718,7 +28878,7 @@
       "raceInstanceId": [
         101801
       ],
-      "priority": 28,
+      "priority": 114,
       "groupId": 32
     },
     {
@@ -28727,7 +28887,7 @@
       "raceInstanceId": [
         100401
       ],
-      "priority": 29,
+      "priority": 115,
       "groupId": 16
     },
     {
@@ -28736,7 +28896,7 @@
       "raceInstanceId": [
         100801
       ],
-      "priority": 30,
+      "priority": 116,
       "groupId": 20
     },
     {
@@ -28745,7 +28905,7 @@
       "raceInstanceId": [
         101701
       ],
-      "priority": 31,
+      "priority": 117,
       "groupId": 31
     },
     {
@@ -28754,7 +28914,7 @@
       "raceInstanceId": [
         100701
       ],
-      "priority": 32,
+      "priority": 118,
       "groupId": 19
     },
     {
@@ -28763,7 +28923,7 @@
       "raceInstanceId": [
         101401
       ],
-      "priority": 33,
+      "priority": 119,
       "groupId": 27
     },
     {
@@ -28772,7 +28932,7 @@
       "raceInstanceId": [
         102001
       ],
-      "priority": 34,
+      "priority": 120,
       "groupId": 34
     },
     {
@@ -28781,7 +28941,7 @@
       "raceInstanceId": [
         100101
       ],
-      "priority": 35,
+      "priority": 121,
       "groupId": 13
     },
     {
@@ -28790,7 +28950,7 @@
       "raceInstanceId": [
         110501
       ],
-      "priority": 36,
+      "priority": 122,
       "groupId": 43
     },
     {
@@ -28799,7 +28959,7 @@
       "raceInstanceId": [
         110601
       ],
-      "priority": 37,
+      "priority": 123,
       "groupId": 44
     },
     {
@@ -28808,7 +28968,7 @@
       "raceInstanceId": [
         102201
       ],
-      "priority": 38,
+      "priority": 124,
       "groupId": 36
     },
     {
@@ -28817,7 +28977,7 @@
       "raceInstanceId": [
         102401
       ],
-      "priority": 39,
+      "priority": 125,
       "groupId": 38
     },
     {
@@ -28826,7 +28986,7 @@
       "raceInstanceId": [
         102101
       ],
-      "priority": 40,
+      "priority": 126,
       "groupId": 35
     },
     {
@@ -28835,7 +28995,7 @@
       "raceInstanceId": [
         110101
       ],
-      "priority": 41,
+      "priority": 127,
       "groupId": 39
     },
     {
@@ -28844,7 +29004,7 @@
       "raceInstanceId": [
         110401
       ],
-      "priority": 42,
+      "priority": 128,
       "groupId": 42
     },
     {
@@ -28853,7 +29013,7 @@
       "raceInstanceId": [
         110201
       ],
-      "priority": 43,
+      "priority": 129,
       "groupId": 40
     },
     {
@@ -28862,7 +29022,7 @@
       "raceInstanceId": [
         110301
       ],
-      "priority": 44,
+      "priority": 130,
       "groupId": 41
     },
     {
@@ -28871,7 +29031,7 @@
       "raceInstanceId": [
         200101
       ],
-      "priority": 45,
+      "priority": 201,
       "groupId": 45
     },
     {
@@ -28880,7 +29040,7 @@
       "raceInstanceId": [
         200201
       ],
-      "priority": 46,
+      "priority": 202,
       "groupId": 46
     },
     {
@@ -28889,7 +29049,7 @@
       "raceInstanceId": [
         200301
       ],
-      "priority": 47,
+      "priority": 203,
       "groupId": 47
     },
     {
@@ -28898,7 +29058,7 @@
       "raceInstanceId": [
         200401
       ],
-      "priority": 48,
+      "priority": 204,
       "groupId": 48
     },
     {
@@ -28907,7 +29067,7 @@
       "raceInstanceId": [
         200501
       ],
-      "priority": 49,
+      "priority": 205,
       "groupId": 49
     },
     {
@@ -28916,7 +29076,7 @@
       "raceInstanceId": [
         200601
       ],
-      "priority": 50,
+      "priority": 207,
       "groupId": 50
     },
     {
@@ -28925,7 +29085,7 @@
       "raceInstanceId": [
         200701
       ],
-      "priority": 51,
+      "priority": 208,
       "groupId": 51
     },
     {
@@ -28934,7 +29094,7 @@
       "raceInstanceId": [
         200801
       ],
-      "priority": 52,
+      "priority": 209,
       "groupId": 52
     },
     {
@@ -28943,7 +29103,7 @@
       "raceInstanceId": [
         200901
       ],
-      "priority": 53,
+      "priority": 210,
       "groupId": 53
     },
     {
@@ -28952,7 +29112,7 @@
       "raceInstanceId": [
         201001
       ],
-      "priority": 54,
+      "priority": 211,
       "groupId": 54
     },
     {
@@ -28961,7 +29121,7 @@
       "raceInstanceId": [
         201101
       ],
-      "priority": 56,
+      "priority": 212,
       "groupId": 56
     },
     {
@@ -28970,7 +29130,7 @@
       "raceInstanceId": [
         201201
       ],
-      "priority": 57,
+      "priority": 213,
       "groupId": 57
     },
     {
@@ -28979,7 +29139,7 @@
       "raceInstanceId": [
         201301
       ],
-      "priority": 58,
+      "priority": 214,
       "groupId": 58
     },
     {
@@ -28988,7 +29148,7 @@
       "raceInstanceId": [
         201401
       ],
-      "priority": 59,
+      "priority": 215,
       "groupId": 59
     },
     {
@@ -28997,7 +29157,7 @@
       "raceInstanceId": [
         201501
       ],
-      "priority": 60,
+      "priority": 216,
       "groupId": 60
     },
     {
@@ -29006,7 +29166,7 @@
       "raceInstanceId": [
         201601
       ],
-      "priority": 61,
+      "priority": 217,
       "groupId": 61
     },
     {
@@ -29015,7 +29175,7 @@
       "raceInstanceId": [
         201701
       ],
-      "priority": 62,
+      "priority": 218,
       "groupId": 62
     },
     {
@@ -29024,7 +29184,7 @@
       "raceInstanceId": [
         201801
       ],
-      "priority": 63,
+      "priority": 219,
       "groupId": 63
     },
     {
@@ -29033,7 +29193,7 @@
       "raceInstanceId": [
         201901
       ],
-      "priority": 64,
+      "priority": 220,
       "groupId": 64
     },
     {
@@ -29042,7 +29202,7 @@
       "raceInstanceId": [
         202001
       ],
-      "priority": 65,
+      "priority": 221,
       "groupId": 65
     },
     {
@@ -29051,7 +29211,7 @@
       "raceInstanceId": [
         202101
       ],
-      "priority": 66,
+      "priority": 222,
       "groupId": 66
     },
     {
@@ -29060,7 +29220,7 @@
       "raceInstanceId": [
         202201
       ],
-      "priority": 67,
+      "priority": 223,
       "groupId": 67
     },
     {
@@ -29069,7 +29229,7 @@
       "raceInstanceId": [
         202301
       ],
-      "priority": 68,
+      "priority": 224,
       "groupId": 68
     },
     {
@@ -29078,7 +29238,7 @@
       "raceInstanceId": [
         202401
       ],
-      "priority": 69,
+      "priority": 225,
       "groupId": 69
     },
     {
@@ -29087,7 +29247,7 @@
       "raceInstanceId": [
         202501
       ],
-      "priority": 70,
+      "priority": 226,
       "groupId": 70
     },
     {
@@ -29096,7 +29256,7 @@
       "raceInstanceId": [
         202601
       ],
-      "priority": 71,
+      "priority": 227,
       "groupId": 71
     },
     {
@@ -29105,7 +29265,7 @@
       "raceInstanceId": [
         202701
       ],
-      "priority": 72,
+      "priority": 228,
       "groupId": 72
     },
     {
@@ -29114,7 +29274,7 @@
       "raceInstanceId": [
         202801
       ],
-      "priority": 73,
+      "priority": 229,
       "groupId": 73
     },
     {
@@ -29123,7 +29283,7 @@
       "raceInstanceId": [
         202901
       ],
-      "priority": 74,
+      "priority": 230,
       "groupId": 74
     },
     {
@@ -29132,7 +29292,7 @@
       "raceInstanceId": [
         203001
       ],
-      "priority": 75,
+      "priority": 232,
       "groupId": 75
     },
     {
@@ -29141,7 +29301,7 @@
       "raceInstanceId": [
         203101
       ],
-      "priority": 76,
+      "priority": 233,
       "groupId": 76
     },
     {
@@ -29150,7 +29310,7 @@
       "raceInstanceId": [
         203201
       ],
-      "priority": 77,
+      "priority": 234,
       "groupId": 77
     },
     {
@@ -29159,7 +29319,7 @@
       "raceInstanceId": [
         203301
       ],
-      "priority": 78,
+      "priority": 235,
       "groupId": 78
     },
     {
@@ -29168,7 +29328,7 @@
       "raceInstanceId": [
         203401
       ],
-      "priority": 79,
+      "priority": 236,
       "groupId": 79
     },
     {
@@ -29177,7 +29337,7 @@
       "raceInstanceId": [
         300101
       ],
-      "priority": 80,
+      "priority": 301,
       "groupId": 80
     },
     {
@@ -29186,7 +29346,7 @@
       "raceInstanceId": [
         300201
       ],
-      "priority": 81,
+      "priority": 302,
       "groupId": 81
     },
     {
@@ -29195,7 +29355,7 @@
       "raceInstanceId": [
         300301
       ],
-      "priority": 82,
+      "priority": 303,
       "groupId": 82
     },
     {
@@ -29204,7 +29364,7 @@
       "raceInstanceId": [
         300401
       ],
-      "priority": 83,
+      "priority": 304,
       "groupId": 83
     },
     {
@@ -29213,7 +29373,7 @@
       "raceInstanceId": [
         300501
       ],
-      "priority": 84,
+      "priority": 305,
       "groupId": 84
     },
     {
@@ -29222,7 +29382,7 @@
       "raceInstanceId": [
         300601
       ],
-      "priority": 85,
+      "priority": 306,
       "groupId": 85
     },
     {
@@ -29231,7 +29391,7 @@
       "raceInstanceId": [
         300701
       ],
-      "priority": 86,
+      "priority": 307,
       "groupId": 86
     },
     {
@@ -29240,7 +29400,7 @@
       "raceInstanceId": [
         300801
       ],
-      "priority": 87,
+      "priority": 308,
       "groupId": 87
     },
     {
@@ -29249,7 +29409,7 @@
       "raceInstanceId": [
         300901
       ],
-      "priority": 88,
+      "priority": 309,
       "groupId": 88
     },
     {
@@ -29258,7 +29418,7 @@
       "raceInstanceId": [
         301001
       ],
-      "priority": 89,
+      "priority": 310,
       "groupId": 89
     },
     {
@@ -29267,7 +29427,7 @@
       "raceInstanceId": [
         301101
       ],
-      "priority": 90,
+      "priority": 311,
       "groupId": 90
     },
     {
@@ -29276,7 +29436,7 @@
       "raceInstanceId": [
         301201
       ],
-      "priority": 91,
+      "priority": 312,
       "groupId": 91
     },
     {
@@ -29285,7 +29445,7 @@
       "raceInstanceId": [
         301301
       ],
-      "priority": 92,
+      "priority": 313,
       "groupId": 92
     },
     {
@@ -29294,7 +29454,7 @@
       "raceInstanceId": [
         301401
       ],
-      "priority": 93,
+      "priority": 314,
       "groupId": 93
     },
     {
@@ -29303,7 +29463,7 @@
       "raceInstanceId": [
         301501
       ],
-      "priority": 94,
+      "priority": 315,
       "groupId": 94
     },
     {
@@ -29312,7 +29472,7 @@
       "raceInstanceId": [
         301601
       ],
-      "priority": 95,
+      "priority": 316,
       "groupId": 95
     },
     {
@@ -29321,7 +29481,7 @@
       "raceInstanceId": [
         301701
       ],
-      "priority": 96,
+      "priority": 317,
       "groupId": 96
     },
     {
@@ -29330,7 +29490,7 @@
       "raceInstanceId": [
         301801
       ],
-      "priority": 97,
+      "priority": 206,
       "groupId": 97
     },
     {
@@ -29339,7 +29499,7 @@
       "raceInstanceId": [
         301901
       ],
-      "priority": 98,
+      "priority": 318,
       "groupId": 98
     },
     {
@@ -29348,7 +29508,7 @@
       "raceInstanceId": [
         302001
       ],
-      "priority": 99,
+      "priority": 319,
       "groupId": 99
     },
     {
@@ -29357,7 +29517,7 @@
       "raceInstanceId": [
         302101
       ],
-      "priority": 100,
+      "priority": 320,
       "groupId": 100
     },
     {
@@ -29366,7 +29526,7 @@
       "raceInstanceId": [
         302201
       ],
-      "priority": 101,
+      "priority": 321,
       "groupId": 101
     },
     {
@@ -29375,7 +29535,7 @@
       "raceInstanceId": [
         302301
       ],
-      "priority": 102,
+      "priority": 322,
       "groupId": 102
     },
     {
@@ -29384,7 +29544,7 @@
       "raceInstanceId": [
         302401
       ],
-      "priority": 103,
+      "priority": 323,
       "groupId": 103
     },
     {
@@ -29393,7 +29553,7 @@
       "raceInstanceId": [
         302501
       ],
-      "priority": 104,
+      "priority": 324,
       "groupId": 104
     },
     {
@@ -29402,7 +29562,7 @@
       "raceInstanceId": [
         302601
       ],
-      "priority": 105,
+      "priority": 325,
       "groupId": 105
     },
     {
@@ -29411,7 +29571,7 @@
       "raceInstanceId": [
         302701
       ],
-      "priority": 106,
+      "priority": 326,
       "groupId": 106
     },
     {
@@ -29420,7 +29580,7 @@
       "raceInstanceId": [
         302801
       ],
-      "priority": 107,
+      "priority": 327,
       "groupId": 107
     },
     {
@@ -29429,7 +29589,7 @@
       "raceInstanceId": [
         302901
       ],
-      "priority": 108,
+      "priority": 328,
       "groupId": 108
     },
     {
@@ -29438,7 +29598,7 @@
       "raceInstanceId": [
         303001
       ],
-      "priority": 110,
+      "priority": 330,
       "groupId": 110
     },
     {
@@ -29447,7 +29607,7 @@
       "raceInstanceId": [
         303101
       ],
-      "priority": 111,
+      "priority": 331,
       "groupId": 111
     },
     {
@@ -29456,7 +29616,7 @@
       "raceInstanceId": [
         303201
       ],
-      "priority": 112,
+      "priority": 332,
       "groupId": 112
     },
     {
@@ -29465,7 +29625,7 @@
       "raceInstanceId": [
         303301
       ],
-      "priority": 113,
+      "priority": 333,
       "groupId": 113
     },
     {
@@ -29474,7 +29634,7 @@
       "raceInstanceId": [
         303401
       ],
-      "priority": 114,
+      "priority": 334,
       "groupId": 114
     },
     {
@@ -29483,7 +29643,7 @@
       "raceInstanceId": [
         303501
       ],
-      "priority": 115,
+      "priority": 335,
       "groupId": 115
     },
     {
@@ -29492,7 +29652,7 @@
       "raceInstanceId": [
         303601
       ],
-      "priority": 116,
+      "priority": 336,
       "groupId": 116
     },
     {
@@ -29501,7 +29661,7 @@
       "raceInstanceId": [
         303701
       ],
-      "priority": 117,
+      "priority": 337,
       "groupId": 117
     },
     {
@@ -29510,7 +29670,7 @@
       "raceInstanceId": [
         303801
       ],
-      "priority": 118,
+      "priority": 338,
       "groupId": 118
     },
     {
@@ -29519,7 +29679,7 @@
       "raceInstanceId": [
         303901
       ],
-      "priority": 119,
+      "priority": 339,
       "groupId": 119
     },
     {
@@ -29528,7 +29688,7 @@
       "raceInstanceId": [
         304001
       ],
-      "priority": 120,
+      "priority": 340,
       "groupId": 120
     },
     {
@@ -29537,7 +29697,7 @@
       "raceInstanceId": [
         304101
       ],
-      "priority": 121,
+      "priority": 341,
       "groupId": 121
     },
     {
@@ -29546,7 +29706,7 @@
       "raceInstanceId": [
         304201
       ],
-      "priority": 122,
+      "priority": 342,
       "groupId": 122
     },
     {
@@ -29555,7 +29715,7 @@
       "raceInstanceId": [
         304301
       ],
-      "priority": 123,
+      "priority": 343,
       "groupId": 123
     },
     {
@@ -29564,7 +29724,7 @@
       "raceInstanceId": [
         304401
       ],
-      "priority": 124,
+      "priority": 344,
       "groupId": 124
     },
     {
@@ -29573,7 +29733,7 @@
       "raceInstanceId": [
         304501
       ],
-      "priority": 125,
+      "priority": 345,
       "groupId": 125
     },
     {
@@ -29582,7 +29742,7 @@
       "raceInstanceId": [
         304601
       ],
-      "priority": 126,
+      "priority": 346,
       "groupId": 126
     },
     {
@@ -29591,7 +29751,7 @@
       "raceInstanceId": [
         304701
       ],
-      "priority": 127,
+      "priority": 347,
       "groupId": 127
     },
     {
@@ -29600,7 +29760,7 @@
       "raceInstanceId": [
         304801
       ],
-      "priority": 128,
+      "priority": 348,
       "groupId": 128
     },
     {
@@ -29609,7 +29769,7 @@
       "raceInstanceId": [
         304901
       ],
-      "priority": 129,
+      "priority": 349,
       "groupId": 129
     },
     {
@@ -29618,7 +29778,7 @@
       "raceInstanceId": [
         305001
       ],
-      "priority": 130,
+      "priority": 350,
       "groupId": 130
     },
     {
@@ -29627,7 +29787,7 @@
       "raceInstanceId": [
         305101
       ],
-      "priority": 131,
+      "priority": 351,
       "groupId": 131
     },
     {
@@ -29636,7 +29796,7 @@
       "raceInstanceId": [
         305201
       ],
-      "priority": 132,
+      "priority": 352,
       "groupId": 132
     },
     {
@@ -29645,7 +29805,7 @@
       "raceInstanceId": [
         305301
       ],
-      "priority": 133,
+      "priority": 353,
       "groupId": 133
     },
     {
@@ -29654,7 +29814,7 @@
       "raceInstanceId": [
         305401
       ],
-      "priority": 134,
+      "priority": 354,
       "groupId": 134
     },
     {
@@ -29663,7 +29823,7 @@
       "raceInstanceId": [
         305501
       ],
-      "priority": 135,
+      "priority": 355,
       "groupId": 135
     },
     {
@@ -29672,7 +29832,7 @@
       "raceInstanceId": [
         305601
       ],
-      "priority": 136,
+      "priority": 356,
       "groupId": 136
     },
     {
@@ -29681,7 +29841,7 @@
       "raceInstanceId": [
         305701
       ],
-      "priority": 137,
+      "priority": 357,
       "groupId": 137
     },
     {
@@ -29690,7 +29850,7 @@
       "raceInstanceId": [
         305801
       ],
-      "priority": 138,
+      "priority": 231,
       "groupId": 138
     },
     {
@@ -29699,7 +29859,7 @@
       "raceInstanceId": [
         305901
       ],
-      "priority": 139,
+      "priority": 358,
       "groupId": 139
     },
     {
@@ -29708,7 +29868,7 @@
       "raceInstanceId": [
         306001
       ],
-      "priority": 140,
+      "priority": 359,
       "groupId": 140
     },
     {
@@ -29717,7 +29877,7 @@
       "raceInstanceId": [
         306101
       ],
-      "priority": 141,
+      "priority": 360,
       "groupId": 141
     },
     {
@@ -29726,7 +29886,7 @@
       "raceInstanceId": [
         306201
       ],
-      "priority": 142,
+      "priority": 361,
       "groupId": 142
     },
     {
@@ -29735,7 +29895,7 @@
       "raceInstanceId": [
         306301
       ],
-      "priority": 143,
+      "priority": 362,
       "groupId": 143
     },
     {
@@ -29744,7 +29904,7 @@
       "raceInstanceId": [
         306401
       ],
-      "priority": 144,
+      "priority": 363,
       "groupId": 144
     },
     {
@@ -29753,7 +29913,7 @@
       "raceInstanceId": [
         306501
       ],
-      "priority": 145,
+      "priority": 364,
       "groupId": 145
     },
     {
@@ -29762,7 +29922,7 @@
       "raceInstanceId": [
         306601
       ],
-      "priority": 146,
+      "priority": 365,
       "groupId": 146
     },
     {
@@ -29771,7 +29931,7 @@
       "raceInstanceId": [
         306701
       ],
-      "priority": 147,
+      "priority": 366,
       "groupId": 147
     },
     {
@@ -29780,7 +29940,7 @@
       "raceInstanceId": [
         306801
       ],
-      "priority": 148,
+      "priority": 367,
       "groupId": 148
     },
     {
@@ -29789,7 +29949,7 @@
       "raceInstanceId": [
         306901
       ],
-      "priority": 149,
+      "priority": 368,
       "groupId": 149
     },
     {
@@ -29798,7 +29958,7 @@
       "raceInstanceId": [
         307001
       ],
-      "priority": 150,
+      "priority": 369,
       "groupId": 150
     },
     {
@@ -29839,7 +29999,7 @@
       "raceInstanceId": [
         102501
       ],
-      "priority": 18,
+      "priority": 105,
       "groupId": 24
     },
     {
@@ -29848,7 +30008,7 @@
       "raceInstanceId": [
         102601
       ],
-      "priority": 21,
+      "priority": 107,
       "groupId": 28
     },
     {
@@ -29857,7 +30017,7 @@
       "raceInstanceId": [
         203501
       ],
-      "priority": 55,
+      "priority": 211,
       "groupId": 54
     },
     {
@@ -29866,7 +30026,7 @@
       "raceInstanceId": [
         405001
       ],
-      "priority": 109,
+      "priority": 329,
       "groupId": 109
     },
     {
@@ -29896,7 +30056,7 @@
       "raceInstanceId": [
         102701
       ],
-      "priority": 16,
+      "priority": 104,
       "groupId": 18
     },
     {
@@ -29916,7 +30076,7 @@
       "raceInstanceId": [
         102801
       ],
-      "priority": 23,
+      "priority": 109,
       "groupId": 17
     },
     {
@@ -29925,7 +30085,7 @@
       "raceInstanceId": [
         111101
       ],
-      "priority": 44,
+      "priority": 130,
       "groupId": 41
     },
     {
@@ -29934,7 +30094,7 @@
       "raceInstanceId": [
         111201
       ],
-      "priority": 42,
+      "priority": 128,
       "groupId": 42
     },
     {
@@ -29943,7 +30103,7 @@
       "raceInstanceId": [
         111301
       ],
-      "priority": 36,
+      "priority": 122,
       "groupId": 43
     },
     {
@@ -29952,7 +30112,7 @@
       "raceInstanceId": [
         111401
       ],
-      "priority": 44,
+      "priority": 130,
       "groupId": 41
     },
     {
@@ -29961,7 +30121,7 @@
       "raceInstanceId": [
         111501
       ],
-      "priority": 42,
+      "priority": 128,
       "groupId": 42
     },
     {
@@ -29970,7 +30130,7 @@
       "raceInstanceId": [
         111601
       ],
-      "priority": 36,
+      "priority": 122,
       "groupId": 43
     },
     {
@@ -29979,7 +30139,7 @@
       "raceInstanceId": [
         111701
       ],
-      "priority": 44,
+      "priority": 130,
       "groupId": 41
     },
     {
@@ -29988,7 +30148,7 @@
       "raceInstanceId": [
         111801
       ],
-      "priority": 42,
+      "priority": 128,
       "groupId": 42
     },
     {
@@ -29997,7 +30157,7 @@
       "raceInstanceId": [
         111901
       ],
-      "priority": 36,
+      "priority": 122,
       "groupId": 43
     },
     {
@@ -30006,7 +30166,7 @@
       "raceInstanceId": [
         110701
       ],
-      "priority": 151,
+      "priority": 131,
       "groupId": 151
     },
     {
@@ -30015,7 +30175,7 @@
       "raceInstanceId": [
         110801
       ],
-      "priority": 152,
+      "priority": 132,
       "groupId": 152
     },
     {
@@ -30024,7 +30184,7 @@
       "raceInstanceId": [
         110901
       ],
-      "priority": 153,
+      "priority": 133,
       "groupId": 153
     },
     {
@@ -30033,7 +30193,7 @@
       "raceInstanceId": [
         111001
       ],
-      "priority": 154,
+      "priority": 134,
       "groupId": 154
     },
     {
@@ -30042,7 +30202,7 @@
       "raceInstanceId": [
         203601
       ],
-      "priority": 155,
+      "priority": 237,
       "groupId": 155
     },
     {
@@ -30051,7 +30211,7 @@
       "raceInstanceId": [
         203701
       ],
-      "priority": 156,
+      "priority": 238,
       "groupId": 156
     },
     {
@@ -30060,7 +30220,7 @@
       "raceInstanceId": [
         203801
       ],
-      "priority": 157,
+      "priority": 239,
       "groupId": 157
     },
     {
@@ -30069,7 +30229,7 @@
       "raceInstanceId": [
         203901
       ],
-      "priority": 158,
+      "priority": 240,
       "groupId": 158
     },
     {
@@ -30078,7 +30238,7 @@
       "raceInstanceId": [
         204001
       ],
-      "priority": 159,
+      "priority": 241,
       "groupId": 159
     },
     {
@@ -30087,7 +30247,7 @@
       "raceInstanceId": [
         204101
       ],
-      "priority": 160,
+      "priority": 242,
       "groupId": 160
     },
     {
@@ -30096,7 +30256,7 @@
       "raceInstanceId": [
         307101
       ],
-      "priority": 161,
+      "priority": 370,
       "groupId": 161
     },
     {
@@ -30105,7 +30265,7 @@
       "raceInstanceId": [
         307201
       ],
-      "priority": 162,
+      "priority": 371,
       "groupId": 162
     },
     {
@@ -30114,7 +30274,7 @@
       "raceInstanceId": [
         307301
       ],
-      "priority": 163,
+      "priority": 372,
       "groupId": 163
     },
     {
@@ -30123,7 +30283,7 @@
       "raceInstanceId": [
         307401
       ],
-      "priority": 164,
+      "priority": 373,
       "groupId": 164
     },
     {
@@ -30132,7 +30292,7 @@
       "raceInstanceId": [
         307501
       ],
-      "priority": 165,
+      "priority": 374,
       "groupId": 165
     },
     {
@@ -30141,7 +30301,7 @@
       "raceInstanceId": [
         307601
       ],
-      "priority": 166,
+      "priority": 375,
       "groupId": 166
     },
     {
@@ -30150,7 +30310,7 @@
       "raceInstanceId": [
         307701
       ],
-      "priority": 167,
+      "priority": 376,
       "groupId": 167
     }
   ],
@@ -31382,6 +31542,14 @@
     {
       "id": 100411,
       "name": "優等生×バクシン＝大勝利ッ",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 100421,
+      "name": "『I'm possible』",
       "gradeValue": 340,
       "tagId": [
         "401"
@@ -33659,6 +33827,15 @@
       ]
     },
     {
+      "id": 200963,
+      "name": "紫電一閃",
+      "gradeValue": 508,
+      "tagId": [
+        "201",
+        "401"
+      ]
+    },
+    {
       "id": 200971,
       "name": "短距離コーナー◎",
       "gradeValue": 262,
@@ -35857,6 +36034,28 @@
       ]
     },
     {
+      "id": 202401,
+      "name": "電光石火",
+      "gradeValue": 508,
+      "tagId": [
+        "201",
+        "202",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 202402,
+      "name": "一足飛び",
+      "gradeValue": 217,
+      "tagId": [
+        "201",
+        "202",
+        "303",
+        "403"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -36447,6 +36646,14 @@
     {
       "id": 900411,
       "name": "優等生×バクシン＝大勝利ッ",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900421,
+      "name": "『I'm possible』",
       "gradeValue": 180,
       "tagId": [
         "401"
@@ -37260,6 +37467,10 @@
     {
       "id": 104101,
       "name": "[サクラ、すすめ！]"
+    },
+    {
+      "id": 104201,
+      "name": "[Rocket☆Star]"
     },
     {
       "id": 104401,
@@ -60672,6 +60883,530 @@
       "name": "グランドライブ、スタート！"
     },
     {
+      "id": 501042100,
+      "name": "シーキングザパール登場！"
+    },
+    {
+      "id": 501042101,
+      "name": "新年の抱負"
+    },
+    {
+      "id": 501042102,
+      "name": "初詣"
+    },
+    {
+      "id": 501042103,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501042104,
+      "name": "夏合宿（2年目）にて"
+    },
+    {
+      "id": 501042105,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501042107,
+      "name": "バレンタイン"
+    },
+    {
+      "id": 501042108,
+      "name": "ファン感謝祭"
+    },
+    {
+      "id": 501042109,
+      "name": "クリスマス"
+    },
+    {
+      "id": 501042110,
+      "name": "エンディング（ノーマル）"
+    },
+    {
+      "id": 501042111,
+      "name": "102番目のストーリー"
+    },
+    {
+      "id": 501042112,
+      "name": "温泉旅行"
+    },
+    {
+      "id": 501042113,
+      "name": "シークレットな一家"
+    },
+    {
+      "id": 501042114,
+      "name": "突然の巨大トラップ！"
+    },
+    {
+      "id": 501042115,
+      "name": "ビッグペインを知ってこそ"
+    },
+    {
+      "id": 501042116,
+      "name": "発見！デスティニーなGⅠ"
+    },
+    {
+      "id": 501042117,
+      "name": "青天のニュープラン"
+    },
+    {
+      "id": 501042118,
+      "name": "このワールドに花冠を"
+    },
+    {
+      "id": 501042119,
+      "name": "マイルもオールマイン"
+    },
+    {
+      "id": 501042200,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501042201,
+      "name": "デイリー杯ジュニアSにむけて"
+    },
+    {
+      "id": 501042202,
+      "name": "阪神JFにむけて"
+    },
+    {
+      "id": 501042203,
+      "name": "桜花賞にむけて"
+    },
+    {
+      "id": 501042204,
+      "name": "NHKマイルCにむけて"
+    },
+    {
+      "id": 501042205,
+      "name": "ローズSにむけて"
+    },
+    {
+      "id": 501042206,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501042207,
+      "name": "高松宮記念にむけて"
+    },
+    {
+      "id": 501042208,
+      "name": "安田記念にむけて"
+    },
+    {
+      "id": 501042209,
+      "name": "スプリンターズSにむけて"
+    },
+    {
+      "id": 501042210,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501042300,
+      "name": "夏合宿（2年目）終了"
+    },
+    {
+      "id": 501042301,
+      "name": "夏合宿（3年目）終了"
+    },
+    {
+      "id": 501042302,
+      "name": "福引チャンス！"
+    },
+    {
+      "id": 501042303,
+      "name": "デビュー戦の後に・予想外のライバルズ"
+    },
+    {
+      "id": 501042304,
+      "name": "デイリー杯ジュニアSの後に・次なる牙"
+    },
+    {
+      "id": 501042305,
+      "name": "阪神JFの後に・Oh！パールファミリー"
+    },
+    {
+      "id": 501042306,
+      "name": "桜花賞の後に・私だけのドゥリーム"
+    },
+    {
+      "id": 501042307,
+      "name": "NHKマイルCの後に・約束の頂点"
+    },
+    {
+      "id": 501042308,
+      "name": "NHKマイルCの後に・リトル誤算"
+    },
+    {
+      "id": 501042309,
+      "name": "ローズSの後に・足りないエクステンド"
+    },
+    {
+      "id": 501042310,
+      "name": "マイルCSの後に・満身創痍のミラクル"
+    },
+    {
+      "id": 501042311,
+      "name": "マイルCSの後に・敗れてもアナザー"
+    },
+    {
+      "id": 501042312,
+      "name": "高松宮記念の後に・悪夢のバッティング"
+    },
+    {
+      "id": 501042313,
+      "name": "安田記念の後に・渾身のビヨンド"
+    },
+    {
+      "id": 501042314,
+      "name": "スプリンターズSの後に・虹をも超えて"
+    },
+    {
+      "id": 501042315,
+      "name": "マイルCSの後に・誰もがポッシブル"
+    },
+    {
+      "id": 501042400,
+      "name": "シーキングザパール登場！"
+    },
+    {
+      "id": 501042401,
+      "name": "シークレットな一家"
+    },
+    {
+      "id": 501042402,
+      "name": "突然の巨大トラップ！"
+    },
+    {
+      "id": 501042403,
+      "name": "ビッグペインを知ってこそ"
+    },
+    {
+      "id": 501042404,
+      "name": "発見！デスティニーなGⅠ"
+    },
+    {
+      "id": 501042405,
+      "name": "青天のニュープラン"
+    },
+    {
+      "id": 501042406,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501042407,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501042408,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501042409,
+      "name": "デイリー杯ジュニアSにむけて"
+    },
+    {
+      "id": 501042410,
+      "name": "阪神JFにむけて"
+    },
+    {
+      "id": 501042411,
+      "name": "桜花賞にむけて"
+    },
+    {
+      "id": 501042412,
+      "name": "NHKマイルCにむけて"
+    },
+    {
+      "id": 501042413,
+      "name": "ローズSにむけて"
+    },
+    {
+      "id": 501042414,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501042415,
+      "name": "高松宮記念にむけて"
+    },
+    {
+      "id": 501042416,
+      "name": "安田記念にむけて"
+    },
+    {
+      "id": 501042417,
+      "name": "スプリンターズSにむけて"
+    },
+    {
+      "id": 501042418,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501042419,
+      "name": "デビュー戦の後に・予想外のライバルズ"
+    },
+    {
+      "id": 501042420,
+      "name": "デイリー杯ジュニアSの後に・次なる牙"
+    },
+    {
+      "id": 501042421,
+      "name": "阪神JFの後に・Oh！パールファミリー"
+    },
+    {
+      "id": 501042422,
+      "name": "桜花賞の後に・私だけのドゥリーム"
+    },
+    {
+      "id": 501042423,
+      "name": "NHKマイルCの後に・約束の頂点"
+    },
+    {
+      "id": 501042424,
+      "name": "NHKマイルCの後に・リトル誤算"
+    },
+    {
+      "id": 501042425,
+      "name": "ローズSの後に・足りないエクステンド"
+    },
+    {
+      "id": 501042426,
+      "name": "マイルCSの後に・満身創痍のミラクル"
+    },
+    {
+      "id": 501042427,
+      "name": "マイルCSの後に・敗れてもアナザー"
+    },
+    {
+      "id": 501042428,
+      "name": "高松宮記念の後に・悪夢のバッティング"
+    },
+    {
+      "id": 501042429,
+      "name": "安田記念の後に・渾身のビヨンド"
+    },
+    {
+      "id": 501042430,
+      "name": "スプリンターズSの後に・虹をも超えて"
+    },
+    {
+      "id": 501042431,
+      "name": "マイルCSの後に・誰もがポッシブル"
+    },
+    {
+      "id": 501042500,
+      "name": "名指導"
+    },
+    {
+      "id": 501042506,
+      "name": "ダンスレッスン"
+    },
+    {
+      "id": 501042507,
+      "name": "ファンレター"
+    },
+    {
+      "id": 501042508,
+      "name": "レース疲れ"
+    },
+    {
+      "id": 501042509,
+      "name": "連続出走で……"
+    },
+    {
+      "id": 501042510,
+      "name": "恐怖を振りほどいて"
+    },
+    {
+      "id": 501042511,
+      "name": "バイト＆ウインド"
+    },
+    {
+      "id": 501042513,
+      "name": "前人未踏のチャレンジ"
+    },
+    {
+      "id": 501042514,
+      "name": "くじけぬガッツ、みなぎるパワー"
+    },
+    {
+      "id": 501042515,
+      "name": "ファンタスティックなお茶会"
+    },
+    {
+      "id": 501042516,
+      "name": "貴方と過ごした季節に乾杯"
+    },
+    {
+      "id": 501042517,
+      "name": "おあずけエアライン"
+    },
+    {
+      "id": 501042518,
+      "name": "遥かなるガイド"
+    },
+    {
+      "id": 501042519,
+      "name": "消えないリグレット"
+    },
+    {
+      "id": 501042520,
+      "name": "見上げればバカンス"
+    },
+    {
+      "id": 501042521,
+      "name": "夜ふかし気味で……"
+    },
+    {
+      "id": 501042522,
+      "name": "お肌の調子が……"
+    },
+    {
+      "id": 501042523,
+      "name": "坐禅体験会にて"
+    },
+    {
+      "id": 501042524,
+      "name": "五目の輝きをつかめ！"
+    },
+    {
+      "id": 501042600,
+      "name": "武者震い"
+    },
+    {
+      "id": 501042601,
+      "name": "今度こそ！"
+    },
+    {
+      "id": 501042700,
+      "name": "寝不足で……"
+    },
+    {
+      "id": 501042701,
+      "name": "休息はバッチリ！"
+    },
+    {
+      "id": 501042702,
+      "name": "ポッシビリティの汁物"
+    },
+    {
+      "id": 501042703,
+      "name": "レボリューションは突然に"
+    },
+    {
+      "id": 501042704,
+      "name": "キャンバスは2人のもの"
+    },
+    {
+      "id": 501042705,
+      "name": "エキサイティング☆ロケット"
+    },
+    {
+      "id": 501042706,
+      "name": "オーネストなセールスで！"
+    },
+    {
+      "id": 501042707,
+      "name": "神社でお祈り！"
+    },
+    {
+      "id": 501042708,
+      "name": "レース勝利！"
+    },
+    {
+      "id": 501042709,
+      "name": "レース入着"
+    },
+    {
+      "id": 501042710,
+      "name": "レース敗北"
+    },
+    {
+      "id": 501042711,
+      "name": "今度こそ負けない！"
+    },
+    {
+      "id": 501042712,
+      "name": "不在の理由は……"
+    },
+    {
+      "id": 501042713,
+      "name": "お大事に！"
+    },
+    {
+      "id": 501042714,
+      "name": "無茶は厳禁！"
+    },
+    {
+      "id": 501042715,
+      "name": "追加の自主トレ"
+    },
+    {
+      "id": 501042716,
+      "name": "ダイエット成功！"
+    },
+    {
+      "id": 501042717,
+      "name": "保健室にて"
+    },
+    {
+      "id": 501042718,
+      "name": "リフレッシュ完了"
+    },
+    {
+      "id": 501042719,
+      "name": "世界一の言葉"
+    },
+    {
+      "id": 501042720,
+      "name": "あんし～ん笹針師、参☆上"
+    },
+    {
+      "id": 501042722,
+      "name": "頭痛で憂鬱"
+    },
+    {
+      "id": 501042726,
+      "name": "クレーンゲームに挑戦！"
+    },
+    {
+      "id": 501042727,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501042728,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501042729,
+      "name": "クレーンゲーム失敗……"
+    },
+    {
+      "id": 501042730,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501042731,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501042732,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501042733,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501042900,
+      "name": "自己紹介"
+    },
+    {
+      "id": 501042901,
+      "name": "グランドライブ、スタート！"
+    },
+    {
       "id": 501044100,
       "name": "スイープトウショウ登場！"
     },
@@ -73044,6 +73779,22 @@
       "name": "しっかり、努力！"
     },
     {
+      "id": 801085001,
+      "name": "華麗なる憂い？"
+    },
+    {
+      "id": 801085002,
+      "name": "華麗なる旋律"
+    },
+    {
+      "id": 801093001,
+      "name": "やさしさくばり"
+    },
+    {
+      "id": 801093002,
+      "name": "ぬれてもへいき"
+    },
+    {
       "id": 809001001,
       "name": "選んだ生き方"
     },
@@ -73650,6 +74401,14 @@
     {
       "id": 820050002,
       "name": "また船釣りに行こう"
+    },
+    {
+      "id": 820051001,
+      "name": "凪いだ水面にて"
+    },
+    {
+      "id": 820051002,
+      "name": "薄氷の上にて"
     },
     {
       "id": 830001001,
@@ -75004,6 +75763,18 @@
       "name": "幹事の特性が宴会に与える影響について"
     },
     {
+      "id": 830114001,
+      "name": "伸ばす背筋は何のため"
+    },
+    {
+      "id": 830114002,
+      "name": "辣腕振るうは何のため"
+    },
+    {
+      "id": 830114003,
+      "name": "その優しさは誰のため"
+    },
+    {
       "id": 830121001,
       "name": "タスクを再実行します。"
     },
@@ -75408,6 +76179,16 @@
       "charaId": 1057
     },
     {
+      "id": 10079,
+      "name": "[トレセン学園]ダイイチルビー",
+      "charaId": 1085
+    },
+    {
+      "id": 10080,
+      "name": "[トレセン学園]ケイエスミラクル",
+      "charaId": 1093
+    },
+    {
       "id": 10081,
       "name": "[トレセン学園]ツルマルツヨシ",
       "charaId": 1073
@@ -75661,6 +76442,11 @@
       "id": 20050,
       "name": "[ゆるっと、まにまに]セイウンスカイ",
       "charaId": 1020
+    },
+    {
+      "id": 20051,
+      "name": "[The 3rd MIRACLE]ケイエスミラクル",
+      "charaId": 1093
     },
     {
       "id": 30001,
@@ -76201,6 +76987,11 @@
       "id": 30113,
       "name": "[ユークロニア・アーキテクト]ビワハヤヒデ",
       "charaId": 1023
+    },
+    {
+      "id": 30114,
+      "name": "[嗚呼華麗ナル一族]ダイイチルビー",
+      "charaId": 1085
     },
     {
       "id": 30121,
