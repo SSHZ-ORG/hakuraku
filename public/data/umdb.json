@@ -1,5 +1,5 @@
 {
-  "version": "10008400",
+  "version": "10008520",
   "chara": [
     {
       "id": 1001,
@@ -758,6 +758,10 @@
         {
           "id": 2418,
           "charaId": 1064
+        },
+        {
+          "id": 2419,
+          "charaId": 1065
         }
       ]
     },
@@ -1060,6 +1064,10 @@
         {
           "id": 2443,
           "charaId": 1064
+        },
+        {
+          "id": 2444,
+          "charaId": 1065
         },
         {
           "id": 2445,
@@ -1489,7 +1497,13 @@
     },
     {
       "relationType": 330,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2463,
+          "charaId": 1065
+        }
+      ]
     },
     {
       "relationType": 331,
@@ -2114,6 +2128,10 @@
         {
           "id": 2489,
           "charaId": 1064
+        },
+        {
+          "id": 2490,
+          "charaId": 1065
         }
       ]
     },
@@ -2438,6 +2456,10 @@
         {
           "id": 2505,
           "charaId": 1071
+        },
+        {
+          "id": 2506,
+          "charaId": 1065
         }
       ]
     },
@@ -2702,6 +2724,10 @@
         {
           "id": 2365,
           "charaId": 1064
+        },
+        {
+          "id": 2366,
+          "charaId": 1065
         },
         {
           "id": 2368,
@@ -3426,6 +3452,10 @@
         {
           "id": 749,
           "charaId": 1019
+        },
+        {
+          "id": 2325,
+          "charaId": 1065
         }
       ]
     },
@@ -3932,6 +3962,10 @@
           "charaId": 1064
         },
         {
+          "id": 2519,
+          "charaId": 1065
+        },
+        {
           "id": 2521,
           "charaId": 1067
         },
@@ -4190,6 +4224,10 @@
           "charaId": 1062
         },
         {
+          "id": 2387,
+          "charaId": 1065
+        },
+        {
           "id": 2388,
           "charaId": 1068
         },
@@ -4390,6 +4428,10 @@
         {
           "id": 2545,
           "charaId": 1064
+        },
+        {
+          "id": 2546,
+          "charaId": 1065
         }
       ]
     },
@@ -4868,6 +4910,10 @@
         {
           "id": 3797,
           "charaId": 1100
+        },
+        {
+          "id": 3798,
+          "charaId": 1065
         }
       ]
     },
@@ -5144,6 +5190,10 @@
         {
           "id": 1763,
           "charaId": 1069
+        },
+        {
+          "id": 2264,
+          "charaId": 1065
         },
         {
           "id": 2265,
@@ -5704,6 +5754,10 @@
           "charaId": 1064
         },
         {
+          "id": 2291,
+          "charaId": 1065
+        },
+        {
           "id": 2293,
           "charaId": 1067
         },
@@ -6004,6 +6058,10 @@
         {
           "id": 2344,
           "charaId": 1072
+        },
+        {
+          "id": 2346,
+          "charaId": 1065
         },
         {
           "id": 2348,
@@ -14186,6 +14244,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2061,
+          "charaId": 1065
+        },
+        {
           "id": 2062,
           "charaId": 1050
         }
@@ -14195,6 +14257,10 @@
       "relationType": 8573,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2063,
+          "charaId": 1065
+        },
         {
           "id": 2064,
           "charaId": 1029
@@ -14206,6 +14272,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2065,
+          "charaId": 1065
+        },
+        {
           "id": 2066,
           "charaId": 1041
         }
@@ -14213,7 +14283,13 @@
     },
     {
       "relationType": 8575,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2067,
+          "charaId": 1065
+        }
+      ]
     },
     {
       "relationType": 8576,
@@ -16579,7 +16655,13 @@
     },
     {
       "relationType": 8817,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3085,
+          "charaId": 1065
+        }
+      ]
     },
     {
       "relationType": 8818,
@@ -27140,6 +27222,12 @@
       "groundType": "DIRT"
     },
     {
+      "id": 904201,
+      "name": "ジュニア級メイクデビュー",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
       "id": 910001,
       "name": "URAファイナルズ予選",
       "distance": 1200,
@@ -28628,8 +28716,50 @@
       "groundType": "TURF"
     },
     {
+      "id": 622005,
+      "name": "チーム対抗戦　短距離代表E",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622010,
+      "name": "チーム対抗戦　短距離代表D",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 620001,
       "name": "チーム対抗戦　短距離代表G",
+      "distance": 1000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622002,
+      "name": "チーム対抗戦　短距離代表F",
+      "distance": 1000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622009,
+      "name": "チーム対抗戦　短距離代表D",
+      "distance": 1000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622013,
+      "name": "チーム対抗戦　短距離代表C",
+      "distance": 1000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622023,
+      "name": "チーム対抗戦　短距離代表B",
+      "distance": 1000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622025,
+      "name": "チーム対抗戦　短距離代表A",
       "distance": 1000,
       "groundType": "TURF"
     },
@@ -28640,8 +28770,26 @@
       "groundType": "TURF"
     },
     {
+      "id": 622003,
+      "name": "チーム対抗戦　短距離代表E",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 620003,
       "name": "チーム対抗戦　短距離代表G",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622000,
+      "name": "チーム対抗戦　短距離代表F",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622020,
+      "name": "チーム対抗戦　短距離代表B",
       "distance": 1200,
       "groundType": "TURF"
     },
@@ -28652,8 +28800,74 @@
       "groundType": "TURF"
     },
     {
+      "id": 622001,
+      "name": "チーム対抗戦　短距離代表F",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622007,
+      "name": "チーム対抗戦　短距離代表D",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622016,
+      "name": "チーム対抗戦　短距離代表C",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622019,
+      "name": "チーム対抗戦　短距離代表B",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622021,
+      "name": "チーム対抗戦　短距離代表B",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622024,
+      "name": "チーム対抗戦　短距離代表A",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
       "id": 620005,
       "name": "チーム対抗戦　短距離代表G",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622006,
+      "name": "チーム対抗戦　短距離代表E",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622008,
+      "name": "チーム対抗戦　短距離代表D",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622012,
+      "name": "チーム対抗戦　短距離代表C",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622014,
+      "name": "チーム対抗戦　短距離代表C",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622022,
+      "name": "チーム対抗戦　短距離代表B",
       "distance": 1200,
       "groundType": "TURF"
     },
@@ -28664,8 +28878,38 @@
       "groundType": "TURF"
     },
     {
+      "id": 622004,
+      "name": "チーム対抗戦　短距離代表E",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622011,
+      "name": "チーム対抗戦　短距離代表D",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622017,
+      "name": "チーム対抗戦　短距離代表C",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622018,
+      "name": "チーム対抗戦　短距離代表B",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 620007,
       "name": "チーム対抗戦　短距離代表G",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622015,
+      "name": "チーム対抗戦　短距離代表C",
       "distance": 1200,
       "groundType": "TURF"
     },
@@ -28688,8 +28932,50 @@
       "groundType": "TURF"
     },
     {
+      "id": 622031,
+      "name": "チーム対抗戦　マイル代表E",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622036,
+      "name": "チーム対抗戦　マイル代表D",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
       "id": 620011,
       "name": "チーム対抗戦　マイル代表G",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622028,
+      "name": "チーム対抗戦　マイル代表F",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622035,
+      "name": "チーム対抗戦　マイル代表D",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622039,
+      "name": "チーム対抗戦　マイル代表C",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622049,
+      "name": "チーム対抗戦　マイル代表B",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622051,
+      "name": "チーム対抗戦　マイル代表A",
       "distance": 1800,
       "groundType": "TURF"
     },
@@ -28700,8 +28986,26 @@
       "groundType": "TURF"
     },
     {
+      "id": 622029,
+      "name": "チーム対抗戦　マイル代表E",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
       "id": 620013,
       "name": "チーム対抗戦　マイル代表G",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622026,
+      "name": "チーム対抗戦　マイル代表F",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622046,
+      "name": "チーム対抗戦　マイル代表B",
       "distance": 1600,
       "groundType": "TURF"
     },
@@ -28712,8 +29016,74 @@
       "groundType": "TURF"
     },
     {
+      "id": 622027,
+      "name": "チーム対抗戦　マイル代表F",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622033,
+      "name": "チーム対抗戦　マイル代表D",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622042,
+      "name": "チーム対抗戦　マイル代表C",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622045,
+      "name": "チーム対抗戦　マイル代表B",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622047,
+      "name": "チーム対抗戦　マイル代表B",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622050,
+      "name": "チーム対抗戦　マイル代表A",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
       "id": 620015,
       "name": "チーム対抗戦　マイル代表G",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622032,
+      "name": "チーム対抗戦　マイル代表E",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622034,
+      "name": "チーム対抗戦　マイル代表D",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622038,
+      "name": "チーム対抗戦　マイル代表C",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622040,
+      "name": "チーム対抗戦　マイル代表C",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622048,
+      "name": "チーム対抗戦　マイル代表B",
       "distance": 1600,
       "groundType": "TURF"
     },
@@ -28724,8 +29094,38 @@
       "groundType": "TURF"
     },
     {
+      "id": 622030,
+      "name": "チーム対抗戦　マイル代表E",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622037,
+      "name": "チーム対抗戦　マイル代表D",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622043,
+      "name": "チーム対抗戦　マイル代表C",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622044,
+      "name": "チーム対抗戦　マイル代表B",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
       "id": 620017,
       "name": "チーム対抗戦　マイル代表G",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622041,
+      "name": "チーム対抗戦　マイル代表C",
       "distance": 1800,
       "groundType": "TURF"
     },
@@ -28748,8 +29148,50 @@
       "groundType": "TURF"
     },
     {
+      "id": 622057,
+      "name": "チーム対抗戦　中距離代表E",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622062,
+      "name": "チーム対抗戦　中距離代表D",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
       "id": 620021,
       "name": "チーム対抗戦　中距離代表G",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622054,
+      "name": "チーム対抗戦　中距離代表F",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622061,
+      "name": "チーム対抗戦　中距離代表D",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622065,
+      "name": "チーム対抗戦　中距離代表C",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622075,
+      "name": "チーム対抗戦　中距離代表B",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622077,
+      "name": "チーム対抗戦　中距離代表A",
       "distance": 2000,
       "groundType": "TURF"
     },
@@ -28760,8 +29202,26 @@
       "groundType": "TURF"
     },
     {
+      "id": 622055,
+      "name": "チーム対抗戦　中距離代表E",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
       "id": 620023,
       "name": "チーム対抗戦　中距離代表G",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622052,
+      "name": "チーム対抗戦　中距離代表F",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622072,
+      "name": "チーム対抗戦　中距離代表B",
       "distance": 2000,
       "groundType": "TURF"
     },
@@ -28772,8 +29232,74 @@
       "groundType": "TURF"
     },
     {
+      "id": 622053,
+      "name": "チーム対抗戦　中距離代表F",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622059,
+      "name": "チーム対抗戦　中距離代表D",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622068,
+      "name": "チーム対抗戦　中距離代表C",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622071,
+      "name": "チーム対抗戦　中距離代表B",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622073,
+      "name": "チーム対抗戦　中距離代表B",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622076,
+      "name": "チーム対抗戦　中距離代表A",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
       "id": 620025,
       "name": "チーム対抗戦　中距離代表G",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622058,
+      "name": "チーム対抗戦　中距離代表E",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622060,
+      "name": "チーム対抗戦　中距離代表D",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622064,
+      "name": "チーム対抗戦　中距離代表C",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622066,
+      "name": "チーム対抗戦　中距離代表C",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622074,
+      "name": "チーム対抗戦　中距離代表B",
       "distance": 2000,
       "groundType": "TURF"
     },
@@ -28784,8 +29310,38 @@
       "groundType": "TURF"
     },
     {
+      "id": 622056,
+      "name": "チーム対抗戦　中距離代表E",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622063,
+      "name": "チーム対抗戦　中距離代表D",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622069,
+      "name": "チーム対抗戦　中距離代表C",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622070,
+      "name": "チーム対抗戦　中距離代表B",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
       "id": 620027,
       "name": "チーム対抗戦　中距離代表G",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622067,
+      "name": "チーム対抗戦　中距離代表C",
       "distance": 2000,
       "groundType": "TURF"
     },
@@ -28808,8 +29364,50 @@
       "groundType": "TURF"
     },
     {
+      "id": 622083,
+      "name": "チーム対抗戦　長距離代表E",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622088,
+      "name": "チーム対抗戦　長距離代表D",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
       "id": 620031,
       "name": "チーム対抗戦　長距離代表G",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622080,
+      "name": "チーム対抗戦　長距離代表F",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622087,
+      "name": "チーム対抗戦　長距離代表D",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622091,
+      "name": "チーム対抗戦　長距離代表C",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622101,
+      "name": "チーム対抗戦　長距離代表B",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622103,
+      "name": "チーム対抗戦　長距離代表A",
       "distance": 2600,
       "groundType": "TURF"
     },
@@ -28820,8 +29418,26 @@
       "groundType": "TURF"
     },
     {
+      "id": 622081,
+      "name": "チーム対抗戦　長距離代表E",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
       "id": 620033,
       "name": "チーム対抗戦　長距離代表G",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622078,
+      "name": "チーム対抗戦　長距離代表F",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622098,
+      "name": "チーム対抗戦　長距離代表B",
       "distance": 3600,
       "groundType": "TURF"
     },
@@ -28832,8 +29448,74 @@
       "groundType": "TURF"
     },
     {
+      "id": 622079,
+      "name": "チーム対抗戦　長距離代表F",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622085,
+      "name": "チーム対抗戦　長距離代表D",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622094,
+      "name": "チーム対抗戦　長距離代表C",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622097,
+      "name": "チーム対抗戦　長距離代表B",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622099,
+      "name": "チーム対抗戦　長距離代表B",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622102,
+      "name": "チーム対抗戦　長距離代表A",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
       "id": 620035,
       "name": "チーム対抗戦　長距離代表G",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622084,
+      "name": "チーム対抗戦　長距離代表E",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622086,
+      "name": "チーム対抗戦　長距離代表D",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622090,
+      "name": "チーム対抗戦　長距離代表C",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622092,
+      "name": "チーム対抗戦　長距離代表C",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622100,
+      "name": "チーム対抗戦　長距離代表B",
       "distance": 3000,
       "groundType": "TURF"
     },
@@ -28844,8 +29526,38 @@
       "groundType": "TURF"
     },
     {
+      "id": 622082,
+      "name": "チーム対抗戦　長距離代表E",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622089,
+      "name": "チーム対抗戦　長距離代表D",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622095,
+      "name": "チーム対抗戦　長距離代表C",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622096,
+      "name": "チーム対抗戦　長距離代表B",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
       "id": 620037,
       "name": "チーム対抗戦　長距離代表G",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 622093,
+      "name": "チーム対抗戦　長距離代表C",
       "distance": 2600,
       "groundType": "TURF"
     },
@@ -28868,8 +29580,50 @@
       "groundType": "DIRT"
     },
     {
+      "id": 622109,
+      "name": "チーム対抗戦　ダート代表E",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622114,
+      "name": "チーム対抗戦　ダート代表D",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
       "id": 620041,
       "name": "チーム対抗戦　ダート代表G",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622106,
+      "name": "チーム対抗戦　ダート代表F",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622113,
+      "name": "チーム対抗戦　ダート代表D",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622117,
+      "name": "チーム対抗戦　ダート代表C",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622127,
+      "name": "チーム対抗戦　ダート代表B",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622129,
+      "name": "チーム対抗戦　ダート代表A",
       "distance": 1700,
       "groundType": "DIRT"
     },
@@ -28880,8 +29634,26 @@
       "groundType": "DIRT"
     },
     {
+      "id": 622107,
+      "name": "チーム対抗戦　ダート代表E",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
       "id": 620043,
       "name": "チーム対抗戦　ダート代表G",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622104,
+      "name": "チーム対抗戦　ダート代表F",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622124,
+      "name": "チーム対抗戦　ダート代表B",
       "distance": 1800,
       "groundType": "DIRT"
     },
@@ -28892,8 +29664,74 @@
       "groundType": "DIRT"
     },
     {
+      "id": 622105,
+      "name": "チーム対抗戦　ダート代表F",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622111,
+      "name": "チーム対抗戦　ダート代表D",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622120,
+      "name": "チーム対抗戦　ダート代表C",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622123,
+      "name": "チーム対抗戦　ダート代表B",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622125,
+      "name": "チーム対抗戦　ダート代表B",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622128,
+      "name": "チーム対抗戦　ダート代表A",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
       "id": 620045,
       "name": "チーム対抗戦　ダート代表G",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622110,
+      "name": "チーム対抗戦　ダート代表E",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622112,
+      "name": "チーム対抗戦　ダート代表D",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622116,
+      "name": "チーム対抗戦　ダート代表C",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622118,
+      "name": "チーム対抗戦　ダート代表C",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622126,
+      "name": "チーム対抗戦　ダート代表B",
       "distance": 1800,
       "groundType": "DIRT"
     },
@@ -28904,8 +29742,38 @@
       "groundType": "DIRT"
     },
     {
+      "id": 622108,
+      "name": "チーム対抗戦　ダート代表E",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622115,
+      "name": "チーム対抗戦　ダート代表D",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622121,
+      "name": "チーム対抗戦　ダート代表C",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622122,
+      "name": "チーム対抗戦　ダート代表B",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
       "id": 620047,
       "name": "チーム対抗戦　ダート代表G",
+      "distance": 1700,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 622119,
+      "name": "チーム対抗戦　ダート代表C",
       "distance": 1700,
       "groundType": "DIRT"
     },
@@ -29858,6 +30726,42 @@
       "groundType": "TURF"
     },
     {
+      "id": 630013,
+      "name": "カーニバルレース HARD",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630014,
+      "name": "カーニバルレース HARD",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630015,
+      "name": "カーニバルレース HARD",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630016,
+      "name": "カーニバルレース HARD",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630017,
+      "name": "チャレンジレース VERY HARD",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 630018,
+      "name": "チャレンジレース EXTREME",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
       "id": 1200001,
       "name": "天皇賞（春）（HARD）",
       "distance": 3200,
@@ -30029,6 +30933,396 @@
       "id": 650018,
       "name": "スカウトレース ダート",
       "distance": 2000,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621001,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621002,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621003,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621004,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621005,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621006,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621007,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621008,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621009,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621010,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621011,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621012,
+      "name": "チーム対抗戦　短距離代表強豪",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621013,
+      "name": "理事長代理チーム戦　短距離代表",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621101,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621102,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621103,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621104,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621105,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621106,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621107,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621108,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621109,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621110,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621111,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621112,
+      "name": "チーム対抗戦　マイル代表強豪",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621113,
+      "name": "理事長代理チーム戦　マイル代表",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621201,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621202,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621203,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621204,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621205,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621206,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621207,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621208,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621209,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621210,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621211,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621212,
+      "name": "チーム対抗戦　中距離代表強豪",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621213,
+      "name": "理事長代理チーム戦　中距離代表",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621301,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621302,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621303,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621304,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621305,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621306,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621307,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621308,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621309,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621310,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621311,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621312,
+      "name": "チーム対抗戦　長距離代表強豪",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621313,
+      "name": "理事長代理チーム戦　長距離代表",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 621401,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621402,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 2400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621403,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621404,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621405,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621406,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621407,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621408,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621409,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621410,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621411,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621412,
+      "name": "チーム対抗戦　ダート代表強豪",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 621413,
+      "name": "理事長代理チーム戦　ダート代表",
+      "distance": 1600,
       "groundType": "DIRT"
     }
   ],
@@ -33102,6 +34396,14 @@
       "tagId": [
         "401",
         "402"
+      ]
+    },
+    {
+      "id": 100651,
+      "name": "アゲてアゲてぷちょへんざ！",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
       ]
     },
     {
@@ -37796,6 +39098,34 @@
       ]
     },
     {
+      "id": 202501,
+      "name": "遮二無二",
+      "gradeValue": 508,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 202502,
+      "name": "向こう見ず",
+      "gradeValue": 217,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 202511,
+      "name": "1番人気でヤバたん",
+      "gradeValue": -174,
+      "tagId": [
+        "405"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -38622,6 +39952,14 @@
       ]
     },
     {
+      "id": 900651,
+      "name": "アゲてアゲてぷちょへんざ！",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900671,
       "name": "晦冥を照らせ永遠の耀き",
       "gradeValue": 180,
@@ -39072,6 +40410,14 @@
     },
     {
       "id": 1000012,
+      "name": "カーニバルボーナス",
+      "gradeValue": 0,
+      "tagId": [
+        "0"
+      ]
+    },
+    {
+      "id": 1000013,
       "name": "カーニバルボーナス",
       "gradeValue": 0,
       "tagId": [
@@ -39565,6 +40911,10 @@
     {
       "id": 106401,
       "name": "[Line Breakthrough]"
+    },
+    {
+      "id": 106501,
+      "name": "[Fun☆Fun☆ぱりない]"
     },
     {
       "id": 106701,
@@ -40153,6 +41503,22 @@
       "name": "チュートリアル"
     },
     {
+      "id": 400002042,
+      "name": "アオハル杯4戦目にむけて・強敵の予感"
+    },
+    {
+      "id": 400002043,
+      "name": "アオハル杯4戦目・強豪チーム、撃破！"
+    },
+    {
+      "id": 400002044,
+      "name": "アオハル杯5戦目にむけて"
+    },
+    {
+      "id": 400002045,
+      "name": "アオハル杯5戦目・勝利を掴んで"
+    },
+    {
       "id": 400002100,
       "name": "理事長代理の評価アップ"
     },
@@ -40211,6 +41577,10 @@
     {
       "id": 400002120,
       "name": "チームステータスランクアップ！"
+    },
+    {
+      "id": 400002121,
+      "name": "チーム総合力アップ・金色の差し入れ"
     },
     {
       "id": 400002204,
@@ -40455,6 +41825,22 @@
     {
       "id": 400002444,
       "name": "ついに集まったチームメンバー！"
+    },
+    {
+      "id": 400002446,
+      "name": "アオハル杯4戦目にむけて・強敵の予感"
+    },
+    {
+      "id": 400002447,
+      "name": "アオハル杯4戦目・強豪チーム、撃破！"
+    },
+    {
+      "id": 400002448,
+      "name": "アオハル杯5戦目にむけて"
+    },
+    {
+      "id": 400002449,
+      "name": "アオハル杯5戦目・勝利を掴んで"
     },
     {
       "id": 400003000,
@@ -72505,6 +73891,554 @@
       "name": "グランドライブ、スタート！"
     },
     {
+      "id": 501065100,
+      "name": "ダイタクヘリオス登場！"
+    },
+    {
+      "id": 501065101,
+      "name": "新年の抱負"
+    },
+    {
+      "id": 501065102,
+      "name": "初詣"
+    },
+    {
+      "id": 501065103,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501065104,
+      "name": "夏合宿（2年目）にて"
+    },
+    {
+      "id": 501065105,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501065107,
+      "name": "バレンタイン"
+    },
+    {
+      "id": 501065108,
+      "name": "ファン感謝祭"
+    },
+    {
+      "id": 501065109,
+      "name": "クリスマス"
+    },
+    {
+      "id": 501065110,
+      "name": "エンディング（ノーマル）"
+    },
+    {
+      "id": 501065111,
+      "name": "ズッ友爆走アゲ道中☆"
+    },
+    {
+      "id": 501065112,
+      "name": "温泉旅行"
+    },
+    {
+      "id": 501065113,
+      "name": "2人の好きちゃん☆"
+    },
+    {
+      "id": 501065114,
+      "name": "ウチらの人生スプリント"
+    },
+    {
+      "id": 501065115,
+      "name": "絶対ぜんぜんわかんない！"
+    },
+    {
+      "id": 501065116,
+      "name": "神超え鬼超えis最＆高♪"
+    },
+    {
+      "id": 501065117,
+      "name": "Up To Eleven"
+    },
+    {
+      "id": 501065118,
+      "name": "“私の太陽”"
+    },
+    {
+      "id": 501065119,
+      "name": "スプSガチ応援めっファイ！"
+    },
+    {
+      "id": 501065120,
+      "name": "パリピれマイル王☆"
+    },
+    {
+      "id": 501065200,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501065201,
+      "name": "阪神JFにむけて"
+    },
+    {
+      "id": 501065202,
+      "name": "葵Sにむけて"
+    },
+    {
+      "id": 501065203,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501065204,
+      "name": "高松宮記念にむけて"
+    },
+    {
+      "id": 501065205,
+      "name": "マイラーズCにむけて"
+    },
+    {
+      "id": 501065206,
+      "name": "安田記念にむけて"
+    },
+    {
+      "id": 501065207,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501065208,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501065300,
+      "name": "夏合宿（2年目）終了"
+    },
+    {
+      "id": 501065301,
+      "name": "夏合宿（3年目）終了"
+    },
+    {
+      "id": 501065302,
+      "name": "福引チャンス！"
+    },
+    {
+      "id": 501065303,
+      "name": "デビュー戦の後に・でびう☆"
+    },
+    {
+      "id": 501065304,
+      "name": "阪神JFの後に・ばくわら☆"
+    },
+    {
+      "id": 501065305,
+      "name": "葵Sの後に・しゅきを目指して！"
+    },
+    {
+      "id": 501065306,
+      "name": "マイルCSの後に・ガチってアゲ！"
+    },
+    {
+      "id": 501065307,
+      "name": "高松宮記念の後に・ケド！？"
+    },
+    {
+      "id": 501065308,
+      "name": "高松宮記念の後に・アゲ磨き"
+    },
+    {
+      "id": 501065309,
+      "name": "高松宮記念の後に・しょんど"
+    },
+    {
+      "id": 501065310,
+      "name": "マイラーズCの後に・レベチ☆"
+    },
+    {
+      "id": 501065311,
+      "name": "安田記念の後に・ウチ神"
+    },
+    {
+      "id": 501065312,
+      "name": "安田記念の後に・ひかり"
+    },
+    {
+      "id": 501065313,
+      "name": "安田記念の後に・爆発超えて！"
+    },
+    {
+      "id": 501065314,
+      "name": "マイルCSの後に・ぷっつん？"
+    },
+    {
+      "id": 501065315,
+      "name": "有馬記念の後に・奇跡は起きた"
+    },
+    {
+      "id": 501065316,
+      "name": "有馬記念の後に・ウチらの奇跡"
+    },
+    {
+      "id": 501065317,
+      "name": "有馬記念の後に・新たな奇跡"
+    },
+    {
+      "id": 501065400,
+      "name": "ダイタクヘリオス登場！"
+    },
+    {
+      "id": 501065401,
+      "name": "2人の好きちゃん☆"
+    },
+    {
+      "id": 501065402,
+      "name": "ウチらの人生スプリント"
+    },
+    {
+      "id": 501065403,
+      "name": "絶対ぜんぜんわかんない！"
+    },
+    {
+      "id": 501065404,
+      "name": "神超え鬼超えis最＆高♪"
+    },
+    {
+      "id": 501065405,
+      "name": "Up To Eleven"
+    },
+    {
+      "id": 501065406,
+      "name": "“私の太陽”"
+    },
+    {
+      "id": 501065407,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501065408,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501065409,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501065410,
+      "name": "阪神JFにむけて"
+    },
+    {
+      "id": 501065411,
+      "name": "葵Sにむけて"
+    },
+    {
+      "id": 501065412,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501065413,
+      "name": "高松宮記念にむけて"
+    },
+    {
+      "id": 501065414,
+      "name": "マイラーズCにむけて"
+    },
+    {
+      "id": 501065415,
+      "name": "安田記念にむけて"
+    },
+    {
+      "id": 501065416,
+      "name": "マイルCSにむけて"
+    },
+    {
+      "id": 501065417,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501065418,
+      "name": "デビュー戦の後に・でびう☆"
+    },
+    {
+      "id": 501065419,
+      "name": "阪神JFの後に・ばくわら☆"
+    },
+    {
+      "id": 501065420,
+      "name": "葵Sの後に・しゅきを目指して！"
+    },
+    {
+      "id": 501065421,
+      "name": "マイルCSの後に・ガチってアゲ！"
+    },
+    {
+      "id": 501065422,
+      "name": "高松宮記念の後に・ケド！？"
+    },
+    {
+      "id": 501065423,
+      "name": "高松宮記念の後に・アゲ磨き"
+    },
+    {
+      "id": 501065424,
+      "name": "高松宮記念の後に・しょんど"
+    },
+    {
+      "id": 501065425,
+      "name": "マイラーズCの後に・レベチ☆"
+    },
+    {
+      "id": 501065426,
+      "name": "安田記念の後に・ウチ神"
+    },
+    {
+      "id": 501065427,
+      "name": "安田記念の後に・ひかり"
+    },
+    {
+      "id": 501065428,
+      "name": "安田記念の後に・爆発超えて！"
+    },
+    {
+      "id": 501065429,
+      "name": "マイルCSの後に・ぷっつん？"
+    },
+    {
+      "id": 501065430,
+      "name": "有馬記念の後に・奇跡は起きた"
+    },
+    {
+      "id": 501065431,
+      "name": "有馬記念の後に・ウチらの奇跡"
+    },
+    {
+      "id": 501065432,
+      "name": "有馬記念の後に・新たな奇跡"
+    },
+    {
+      "id": 501065500,
+      "name": "名指導"
+    },
+    {
+      "id": 501065506,
+      "name": "ダンスレッスン"
+    },
+    {
+      "id": 501065507,
+      "name": "ファンレター"
+    },
+    {
+      "id": 501065508,
+      "name": "レース疲れ"
+    },
+    {
+      "id": 501065509,
+      "name": "連続出走で……"
+    },
+    {
+      "id": 501065510,
+      "name": "持つべきものはダチ"
+    },
+    {
+      "id": 501065511,
+      "name": "メンブレありえんてぃー♪"
+    },
+    {
+      "id": 501065513,
+      "name": "壇上参上モチ上々！"
+    },
+    {
+      "id": 501065514,
+      "name": "トレぴ☆えんどれすふぃーばー☆"
+    },
+    {
+      "id": 501065515,
+      "name": "言葉はSoul！いっつショウタイム！"
+    },
+    {
+      "id": 501065516,
+      "name": "キカゲンは全コンプで☆"
+    },
+    {
+      "id": 501065517,
+      "name": "フェスれんぱおん！"
+    },
+    {
+      "id": 501065518,
+      "name": "決死のスマホ捜索"
+    },
+    {
+      "id": 501065519,
+      "name": "もっとファボりたかった……"
+    },
+    {
+      "id": 501065520,
+      "name": "かますぜウチらマジまんじ"
+    },
+    {
+      "id": 501065521,
+      "name": "夜ふかし気味で……"
+    },
+    {
+      "id": 501065522,
+      "name": "お肌の調子が……"
+    },
+    {
+      "id": 501065523,
+      "name": "爆逃げよいちょ～☆"
+    },
+    {
+      "id": 501065524,
+      "name": "新聞を読むウマ娘"
+    },
+    {
+      "id": 501065525,
+      "name": "人気、応えてみました"
+    },
+    {
+      "id": 501065526,
+      "name": "人気、飛ばしちゃいました"
+    },
+    {
+      "id": 501065527,
+      "name": "予想、裏切ってみました"
+    },
+    {
+      "id": 501065528,
+      "name": "フルーツサンドパーリィDAY★"
+    },
+    {
+      "id": 501065600,
+      "name": "武者震い"
+    },
+    {
+      "id": 501065601,
+      "name": "今度こそ！"
+    },
+    {
+      "id": 501065700,
+      "name": "寝不足で……"
+    },
+    {
+      "id": 501065701,
+      "name": "休息はバッチリ！"
+    },
+    {
+      "id": 501065702,
+      "name": "終わりよければおけまる！"
+    },
+    {
+      "id": 501065703,
+      "name": "森でもかませパーリーピーポー"
+    },
+    {
+      "id": 501065704,
+      "name": "ウチらはやっぱり最＆高！"
+    },
+    {
+      "id": 501065705,
+      "name": "マジヤバ☆星座ウォッチャー"
+    },
+    {
+      "id": 501065706,
+      "name": "プチ痛★トゥース！"
+    },
+    {
+      "id": 501065707,
+      "name": "神社でお祈り！"
+    },
+    {
+      "id": 501065708,
+      "name": "レース勝利！"
+    },
+    {
+      "id": 501065709,
+      "name": "レース入着"
+    },
+    {
+      "id": 501065710,
+      "name": "レース敗北"
+    },
+    {
+      "id": 501065711,
+      "name": "今度こそ負けない！"
+    },
+    {
+      "id": 501065712,
+      "name": "不在の理由は……"
+    },
+    {
+      "id": 501065713,
+      "name": "お大事に！"
+    },
+    {
+      "id": 501065714,
+      "name": "無茶は厳禁！"
+    },
+    {
+      "id": 501065715,
+      "name": "追加の自主トレ"
+    },
+    {
+      "id": 501065716,
+      "name": "ダイエット成功！"
+    },
+    {
+      "id": 501065717,
+      "name": "保健室にて"
+    },
+    {
+      "id": 501065718,
+      "name": "リフレッシュ完了"
+    },
+    {
+      "id": 501065719,
+      "name": "逃せない☆このBIG WAVE"
+    },
+    {
+      "id": 501065720,
+      "name": "あんし～ん笹針師、参☆上"
+    },
+    {
+      "id": 501065722,
+      "name": "頭痛で憂鬱"
+    },
+    {
+      "id": 501065726,
+      "name": "クレーンゲームに挑戦！"
+    },
+    {
+      "id": 501065727,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501065728,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501065729,
+      "name": "クレーンゲーム失敗……"
+    },
+    {
+      "id": 501065730,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501065731,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501065732,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501065733,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501065900,
+      "name": "自己紹介"
+    },
+    {
+      "id": 501065901,
+      "name": "グランドライブ、スタート！"
+    },
+    {
       "id": 501067100,
       "name": "サトノダイヤモンド登場！"
     },
@@ -79077,6 +81011,14 @@
       "name": "華麗なる旋律"
     },
     {
+      "id": 801087001,
+      "name": "いつもそばから見つめてる"
+    },
+    {
+      "id": 801087002,
+      "name": "いつも写真から見つめてる"
+    },
+    {
       "id": 801093001,
       "name": "やさしさくばり"
     },
@@ -79723,6 +81665,14 @@
     {
       "id": 820054002,
       "name": "みんなのテイエムオペラオー"
+    },
+    {
+      "id": 820055001,
+      "name": "お見送りします、海まで"
+    },
+    {
+      "id": 820055002,
+      "name": "あがくのです、新天地まで"
     },
     {
       "id": 830001001,
@@ -81269,6 +83219,18 @@
       "name": "背中合わせ"
     },
     {
+      "id": 830130001,
+      "name": "できること"
+    },
+    {
+      "id": 830130002,
+      "name": "やってみたこと"
+    },
+    {
+      "id": 830130003,
+      "name": "やりたいこと"
+    },
+    {
       "id": 830145001,
       "name": "偉大なる芸術家の如く……"
     },
@@ -81725,6 +83687,11 @@
       "charaId": 1078
     },
     {
+      "id": 10087,
+      "name": "[トレセン学園]アストンマーチャン",
+      "charaId": 1087
+    },
+    {
       "id": 20001,
       "name": "[やれやれ、お帰り]フジキセキ",
       "charaId": 1005
@@ -81988,6 +83955,11 @@
       "id": 20054,
       "name": "[偉大なるフォトグラフィーア]テイエムオペラオー",
       "charaId": 1015
+    },
+    {
+      "id": 20055,
+      "name": "[添付ファイル、温めますか？]アストンマーチャン",
+      "charaId": 1087
     },
     {
       "id": 30001,
@@ -82608,6 +84580,11 @@
       "id": 30129,
       "name": "[遥か流るる冬夏青青]グラスワンダー",
       "charaId": 1011
+    },
+    {
+      "id": 30130,
+      "name": "[To you]ケイエスミラクル",
+      "charaId": 1093
     },
     {
       "id": 30145,
