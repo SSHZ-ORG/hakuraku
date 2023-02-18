@@ -23,11 +23,13 @@ export default class FilesSelector extends React.Component<FilesSelectorProps> {
                 <Form.File label="Select the packets captured by CarrotJuicer here..." custom multiple
                            onChange={(e: ChangeEvent<HTMLInputElement>) => this.onSelectedFilesChange(e)}/>
                 <Form.Text muted>
-                    Use <a href="https://github.com/CNA-Bld/Riru-CarrotJuicer"
-                           target="_blank" rel="noreferrer">Riru-CarrotJuicer</a> (Android)
-                    or <a href="https://github.com/CNA-Bld/EXNOA-CarrotJuicer"
-                          target="_blank" rel="noreferrer">EXNOA-CarrotJuicer</a> (Windows)
-                    to capture your packets. {this.props.instructions ?? ''}
+                    <>
+                        Use <a href="https://github.com/CNA-Bld/Riru-CarrotJuicer"
+                               target="_blank" rel="noreferrer">Riru-CarrotJuicer</a> (Android)
+                        or <a href="https://github.com/CNA-Bld/EXNOA-CarrotJuicer"
+                              target="_blank" rel="noreferrer">EXNOA-CarrotJuicer</a> (Windows)
+                        to capture your packets. {this.props.instructions ?? ''}
+                    </>
                 </Form.Text>
             </Form.Group>
         </Form>;

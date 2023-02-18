@@ -5,7 +5,6 @@ import memoize from "memoize-one";
 import React from "react";
 import {Alert, Form, Table} from "react-bootstrap";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
-import ReactJson from "react-json-view";
 import {Chara} from "../data/data_pb";
 import {RaceSimulateData, RaceSimulateEventData, RaceSimulateHorseResultData} from "../data/race_data_pb";
 import {
@@ -22,6 +21,7 @@ import CardNamePresenter from "./CardNamePresenter";
 import CharaProperLabels from "./CharaProperLabels";
 import CopyButton from "./CopyButton";
 import FoldCard from "./FoldCard";
+import {JsonViewer} from "@textea/json-viewer";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
@@ -649,7 +649,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}
             <hr/>
-            <ReactJson src={this.props.raceData.toObject()} collapsed={1}/>
+            <JsonViewer value={this.props.raceData.toObject()} defaultInspectDepth={1}/>
         </div>;
     }
 }

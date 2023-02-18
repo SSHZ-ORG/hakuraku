@@ -3,12 +3,12 @@ import struct from "@aksel/structjs";
 import msgpack from "@ygoe/msgpack";
 import React from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
-import ReactJson from "react-json-view";
 import FilesSelector from "../components/FilesSelector";
 import RaceDataPresenter from "../components/RaceDataPresenter";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
+import {JsonViewer} from "@textea/json-viewer";
 
 function teamRaceHeader(race: any): string {
     const parts = [
@@ -169,7 +169,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                 </Col>
                 <Col xs="8" style={{maxHeight: '100%', overflowY: 'auto'}}>
                     {this.raceDataPresenter()}
-                    <ReactJson src={this.state.currentFileContent} collapsed={2}/>
+                    <JsonViewer value={this.state.currentFileContent} defaultInspectDepth={2}/>
                 </Col>
             </Row>
         </>;

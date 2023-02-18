@@ -26,7 +26,7 @@ export default class FoldCard extends React.PureComponent<FoldCardProps, FoldCar
             </Card.Header>
             {this.state.extended &&
                 <Card.Body>
-                    {this.props.children}
+                    <>{this.props.children}</>
                 </Card.Body>}
         </Card>
     }
