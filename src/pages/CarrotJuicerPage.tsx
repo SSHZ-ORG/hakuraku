@@ -12,7 +12,7 @@ import {JsonViewer} from "@textea/json-viewer";
 
 function teamRaceHeader(race: any): string {
     const parts = [
-        `${UMDatabaseWrapper.raceInstances[race['race_instance_id']]?.getDistance() ?? '?'}m`,
+        `${UMDatabaseWrapper.raceInstances[race['race_instance_id']]?.distance ?? '?'}m`,
         UMDatabaseUtils.seasonLabels[race['season']] ?? '?',
         UMDatabaseUtils.weatherLabels[race['weather']] ?? '?',
         UMDatabaseUtils.groundConditionLabels[race['ground_condition']] ?? '?',

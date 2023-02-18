@@ -71,16 +71,16 @@ export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
                 const frameOrder = raceHorseData['frame_order'] - 1;
 
                 const charaResult = raceResult['chara_result_array'][frameOrder];
-                const raceHorseResult = raceSimulateData.getHorseResultList()[frameOrder];
+                const raceHorseResult = raceSimulateData.horseResult[frameOrder];
 
                 let zeroHpFrameCount = 0;
                 let nonZeroTemptationFrameCount = 0;
-                for (let frame of raceSimulateData.getFrameList()) {
-                    const horseFrame = frame.getHorseFrameList()[frameOrder];
-                    if (horseFrame.getHp()! <= 0 && frame.getTime()! < raceHorseResult.getFinishTimeRaw()!) {
+                for (let frame of raceSimulateData.frame) {
+                    const horseFrame = frame.horseFrame[frameOrder];
+                    if (horseFrame.hp! <= 0 && frame.time! < raceHorseResult.finishTimeRaw!) {
                         zeroHpFrameCount += 1;
                     }
-                    if (horseFrame.getTemptationMode()! > 0) {
+                    if (horseFrame.temptationMode! > 0) {
                         nonZeroTemptationFrameCount += 1;
                     }
                 }
@@ -103,12 +103,12 @@ export function parse(file: File): Promise<TeamRaceGroupData | undefined> {
                     bonusScores: bonusScores,
                     rawScoreDevRatio: 0, // dummy value
 
-                    lastHp: _.last(raceSimulateData.getFrameList())!.getHorseFrameList()[frameOrder].getHp()!,
-                    startDelayTime: raceHorseResult.getStartDelayTime()!,
-                    lastSpurtDistanceRatio: raceHorseResult.getLastSpurtStartDistance()! <= 0 ? 0 : 1 - (raceHorseResult.getLastSpurtStartDistance()! / raceInstance.getDistance()!),
+                    lastHp: _.last(raceSimulateData.frame)!.horseFrame[frameOrder].hp!,
+                    startDelayTime: raceHorseResult.startDelayTime!,
+                    lastSpurtDistanceRatio: raceHorseResult.lastSpurtStartDistance! <= 0 ? 0 : 1 - (raceHorseResult.lastSpurtStartDistance! / raceInstance.distance!),
                     zeroHpFrameCount: zeroHpFrameCount,
                     nonZeroTemptationFrameCount: nonZeroTemptationFrameCount,
-                    finishOrder: raceHorseResult.getFinishOrder()!,
+                    finishOrder: raceHorseResult.finishOrder!,
 
                     activatedSkillIds: activatedSkillIds,
                 });

@@ -4,7 +4,7 @@ import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
-import {RaceInstance, WinsSaddle} from "../data/data_pb";
+import {RaceInstance, SpecialCaseRace_RacePermission, WinsSaddle} from "../data/data_pb";
 import FoldCard from "./FoldCard";
 
 type WinSaddleRelationBonusCalculatorState = {
@@ -27,21 +27,21 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
     }
 
     simulateGenerateWinSaddle = memoize((raceInstances: RaceInstance[]) => {
-        const raceInstanceIds = new Set(raceInstances.map(i => i.getId()));
+        const raceInstanceIds = new Set(raceInstances.map(i => i.id));
 
         const winsSaddlesByGroup: Map<number, WinsSaddle[]> = new Map();
-        UMDatabaseWrapper.umdb.getWinsSaddleList()
-            .filter(ws => ws.getRaceInstanceIdList().every(race => raceInstanceIds.has(race)))
+        UMDatabaseWrapper.umdb.winsSaddle
+            .filter(ws => ws.raceInstanceId.every(race => raceInstanceIds.has(race)))
             .forEach(ws => {
-                if (!winsSaddlesByGroup.has(ws.getGroupId()!)) {
-                    winsSaddlesByGroup.set(ws.getGroupId()!, []);
+                if (!winsSaddlesByGroup.has(ws.groupId!)) {
+                    winsSaddlesByGroup.set(ws.groupId!, []);
                 }
-                winsSaddlesByGroup.get(ws.getGroupId()!)!.push(ws);
+                winsSaddlesByGroup.get(ws.groupId!)!.push(ws);
             });
 
         const finalWinsSaddles = [];
         for (let wss of winsSaddlesByGroup.values()) {
-            wss.sort((a, b) => a.getPriority()! - b.getPriority()!);
+            wss.sort((a, b) => a.priority! - b.priority!);
             finalWinsSaddles.push(wss[0]);
         }
         return finalWinsSaddles;
@@ -49,7 +49,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
 
 
     renderWinSaddles(winsSaddles: WinsSaddle[]) {
-        return winsSaddles.map(ws => <Badge variant="secondary">{ws.getId()} - {ws.getName()}</Badge>)
+        return winsSaddles.map(ws => <Badge variant="secondary">{ws.id} - {ws.name}</Badge>)
     }
 
     renderOneResult(winsSaddles: WinsSaddle[]) {
@@ -75,7 +75,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
     raceSelection(label: string, selectedRaces: RaceInstance[], callback: (races: RaceInstance[]) => void) {
         return <Form.Group>
             <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
-            <Typeahead labelKey={(race) => `${race.getId()} - ${race.getName()}`}
+            <Typeahead labelKey={(race) => `${race.id} - ${race.name}`}
                        multiple
                        clearButton
                        options={UMDatabaseWrapper.interestingRaceInstances}
@@ -105,8 +105,10 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                         calculated separately, but would be 'overridden' by the normal ones.
                         Examples for メジロマックイーン - she has special 102501 - 宝塚記念 in the third year:</p>
                     <ul>
-                        <li>If she won 宝塚記念 in the second year only, add the normal one only (101201 - 宝塚記念).</li>
-                        <li>If she won 宝塚記念 in the third year only, add the special one only (102501 - 宝塚記念).</li>
+                        <li>If she won 宝塚記念 in the second year only, add the normal one only (101201 - 宝塚記念).
+                        </li>
+                        <li>If she won 宝塚記念 in the third year only, add the special one only (102501 - 宝塚記念).
+                        </li>
                         <li>If she won 宝塚記念 in both years, add both 101201 - 宝塚記念 and 102501 - 宝塚記念. We will
                             automatically perform the calculation about overriding for you.
                         </li>
@@ -129,13 +131,13 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
             <Popover id="special-case-races">
                 <Popover.Title as="h3">Special Case Races</Popover.Title>
                 <Popover.Content>
-                    {UMDatabaseWrapper.umdb.getSpecialCaseRaceList().map(specialCaseRace =>
+                    {UMDatabaseWrapper.umdb.specialCaseRace.map(specialCaseRace =>
                         <>
-                            {UMDatabaseWrapper.raceInstanceNameWithId(specialCaseRace.getRaceInstanceId()!)}
+                            {UMDatabaseWrapper.raceInstanceNameWithId(specialCaseRace.raceInstanceId!)}
                             <br/>
-                            ({UMDatabaseUtils.racePermissionEnumNames[specialCaseRace.getRacePermission()!]})
+                            ({SpecialCaseRace_RacePermission[specialCaseRace.racePermission!]})
                             <br/>
-                            {specialCaseRace.getCharaIdList().map(i => <>
+                            {specialCaseRace.charaId.map(i => <>
                                 {UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/>
                             </>)}
                             <hr/>

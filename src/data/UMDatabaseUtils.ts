@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import {AllTypeaheadOwnAndInjectedProps} from "react-bootstrap-typeahead";
 import {toKatakana, toRomaji} from "wanakana";
-import {Chara, SpecialCaseRace, SuccessionRelation, SupportCard} from './data_pb';
+import {Chara, SuccessionRelation, SupportCard} from './data_pb';
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
@@ -9,7 +9,7 @@ const normalizeKatakana = (s: string) => toKatakana(s).toLowerCase(); // To supp
 
 class UMDatabaseUtils {
     static calculateTotalPoint(relations: SuccessionRelation[]) {
-        return _.sumBy(relations, r => r.getRelationPoint()!);
+        return _.sumBy(relations, r => r.relationPoint!);
     }
 
     static getRelationRank(point: number) {
@@ -22,23 +22,16 @@ class UMDatabaseUtils {
         return '△';
     }
 
-    static racePermissionEnumNames: Record<SpecialCaseRace.RacePermissionMap[keyof SpecialCaseRace.RacePermissionMap], string> =
-        Object.keys(SpecialCaseRace.RacePermission).reduce((ret, key) => {
-            // @ts-ignore
-            ret[SpecialCaseRace.RacePermission[key]] = key;
-            return ret;
-        }, {} as Record<SpecialCaseRace.RacePermissionMap[keyof SpecialCaseRace.RacePermissionMap], string>);
-
     static charaNameWithIdAndCast(chara: Chara) {
-        return `${chara.getId()} - ${UMDatabaseUtils.charaNameWithCast(chara)}`;
+        return `${chara.id} - ${UMDatabaseUtils.charaNameWithCast(chara)}`;
     }
 
     static charaNameWithCast(chara: Chara) {
-        return `${chara.getName()} (${chara.getCastName()})`;
+        return `${chara.name} (${chara.castName})`;
     }
 
     static supportCardNameWithId(supportCard: SupportCard) {
-        return `${supportCard.getId()} - ${supportCard.getName()}`;
+        return `${supportCard.id} - ${supportCard.name}`;
     }
 
     static getPopularityMark(n: number) {
@@ -46,14 +39,14 @@ class UMDatabaseUtils {
         return `${n}${mark}`;
     }
 
-    static findSuccessionRelation(charas: (Chara | null | undefined)[], relations: SuccessionRelation[] = UMDatabaseWrapper.umdb.getSuccessionRelationList()) {
+    static findSuccessionRelation(charas: (Chara | null | undefined)[], relations: SuccessionRelation[] = UMDatabaseWrapper.umdb.successionRelation) {
         if (charas.includes(null) || charas.includes(undefined)) return [];
 
-        const charaIds = charas.map(c => c!.getId()!);
+        const charaIds = charas.map(c => c!.id!);
         if (new Set(charaIds).size !== charaIds.length) return [];
 
         return relations.filter(relation => {
-            return charaIds.every(charaId => UMDatabaseWrapper.successionRelationMemberCharaIds[relation.getRelationType()!].has(charaId));
+            return charaIds.every(charaId => UMDatabaseWrapper.successionRelationMemberCharaIds[relation.relationType!].has(charaId));
         });
     }
 

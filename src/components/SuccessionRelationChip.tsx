@@ -13,16 +13,16 @@ export default class SuccessionRelationChip extends React.PureComponent<Successi
     render() {
         const renderTooltip = <Popover id="popover">
             <Popover.Title>
-                Group {this.props.relation.getRelationType()} - {this.props.relation.getRelationPoint()} pts
+                Group {this.props.relation.relationType} - {this.props.relation.relationPoint} pts
             </Popover.Title>
             <Popover.Content>
-                {this.props.relation.getMemberList().map(m => <>{this.props.showId ? `[${m.getId()}] ` : ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.getCharaId()!])}<br/></>)}
+                {this.props.relation.member.map(m => <>{this.props.showId ? `[${m.id}] ` : ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.charaId!])}<br/></>)}
             </Popover.Content>
         </Popover>;
 
         return <OverlayTrigger overlay={renderTooltip} placement="auto">
             <Badge variant="secondary">
-                Grp {this.props.relation.getRelationType()} - {this.props.relation.getRelationPoint()} pts
+                Grp {this.props.relation.relationType} - {this.props.relation.relationPoint} pts
             </Badge>
         </OverlayTrigger>;
     }

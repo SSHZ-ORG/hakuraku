@@ -62,7 +62,7 @@ export function parse(file: File): Promise<RoomRaceData | undefined> {
 
         const outputDataList: RoomRaceCharaData[] = [];
         const raceSimulateData = deserializeFromBase64(raceScenario);
-        const frameTimes = raceSimulateData.getFrameList().map(frame => frame.getTime()!);
+        const frameTimes = raceSimulateData.frame.map(frame => frame.time!);
 
         for (let raceHorseData of raceHorseDataArray) {
             if (!raceHorseData['viewer_id']) {
@@ -71,18 +71,18 @@ export function parse(file: File): Promise<RoomRaceData | undefined> {
 
             const frameOrder = raceHorseData['frame_order'] - 1;
 
-            const raceHorseResult = raceSimulateData.getHorseResultList()[frameOrder];
+            const raceHorseResult = raceSimulateData.horseResult[frameOrder];
 
             const skillEvents = filterCharaSkills(raceSimulateData, frameOrder).map(eventData => {
-                const frameIndex = _.sortedIndex(frameTimes, eventData.getFrameTime()!);
+                const frameIndex = _.sortedIndex(frameTimes, eventData.frameTime!);
                 let distance = 0;
                 if (frameIndex > 0) {
-                    const distance1 = raceSimulateData.getFrameList()[frameIndex - 1].getHorseFrameList()[frameOrder].getDistance()!;
-                    const distance2 = raceSimulateData.getFrameList()[frameIndex].getHorseFrameList()[frameOrder].getDistance()!;
-                    distance = distance1 + (distance2 - distance1) / (frameTimes[frameIndex] - frameTimes[frameIndex - 1]) * (eventData.getFrameTime()! - frameTimes[frameIndex - 1]);
+                    const distance1 = raceSimulateData.frame[frameIndex - 1].horseFrame[frameOrder].distance!;
+                    const distance2 = raceSimulateData.frame[frameIndex].horseFrame[frameOrder].distance!;
+                    distance = distance1 + (distance2 - distance1) / (frameTimes[frameIndex] - frameTimes[frameIndex - 1]) * (eventData.frameTime! - frameTimes[frameIndex - 1]);
                 }
                 return {
-                    skillId: eventData.getParamList()[1],
+                    skillId: eventData.param[1],
                     activationDistance: distance,
                 };
             });
@@ -90,9 +90,9 @@ export function parse(file: File): Promise<RoomRaceData | undefined> {
             outputDataList.push({
                 trainedChara: fromRaceHorseData(raceHorseData),
 
-                finishTime: raceHorseResult.getFinishTime()!,
-                finishTimeRaw: raceHorseResult.getFinishTimeRaw()!,
-                finishOrder: raceHorseResult.getFinishOrder()!,
+                finishTime: raceHorseResult.finishTime!,
+                finishTimeRaw: raceHorseResult.finishTimeRaw!,
+                finishOrder: raceHorseResult.finishOrder!,
 
                 skillActivationDistances: skillEvents,
             });

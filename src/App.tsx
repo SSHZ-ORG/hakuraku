@@ -60,7 +60,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
                             </Nav>
                             <Nav>
                                 <Nav.Item className="navbar-text">
-                                    DB ver. {UMDatabaseWrapper.umdb.getVersion()}
+                                    DB ver. {UMDatabaseWrapper.umdb.version}
                                 </Nav.Item>
                                 <Nav.Link href="https://github.com/SSHZ-ORG/hakuraku">Source Code</Nav.Link>
                             </Nav>

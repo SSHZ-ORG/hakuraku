@@ -91,8 +91,8 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         dataField: 'chara',
         text: '',
         formatter: (chara: Chara | undefined, row) => chara ? <>
-            {chara.getId()} - {chara.getName()}
-            <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
+            {chara.id} - {chara.name}
+            <br/>({chara.castName}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
         </> : 'Unknown Chara'
     },
 
@@ -350,7 +350,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
     patchedAggregations() {
         const r = _.cloneDeep(this.state.aggregations);
         r.forEach(aggregation => {
-            aggregation.displayScore = aggregation.avgScore + _.sum(this.state.selectedBonuses.map(b => aggregation.avgBonusScores[b.getId()!] ?? 0));
+            aggregation.displayScore = aggregation.avgScore + _.sum(this.state.selectedBonuses.map(b => aggregation.avgBonusScores[b.id!] ?? 0));
         });
         return r;
     }
@@ -378,14 +378,14 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                                     Included Bonuses
                                 </InputGroup.Text>
                             </InputGroup.Prepend>
-                            <Typeahead labelKey={(b) => `${b.getId()} - ${b.getName()}`}
+                            <Typeahead labelKey={(b) => `${b.id} - ${b.name}`}
                                        multiple
-                                       options={UMDatabaseWrapper.umdb.getTeamStadiumScoreBonusList()}
+                                       options={UMDatabaseWrapper.umdb.teamStadiumScoreBonus}
                                        selected={this.state.selectedBonuses}
                                        onChange={s => this.setState({selectedBonuses: s})}/>
                             <InputGroup.Append>
                                 <Button variant="outline-secondary"
-                                        onClick={() => this.setState({selectedBonuses: UMDatabaseWrapper.umdb.getTeamStadiumScoreBonusList()})}>
+                                        onClick={() => this.setState({selectedBonuses: UMDatabaseWrapper.umdb.teamStadiumScoreBonus})}>
                                     All
                                 </Button>{' '}
                                 <Button variant="outline-secondary"

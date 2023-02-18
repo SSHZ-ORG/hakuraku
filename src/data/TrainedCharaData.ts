@@ -56,9 +56,9 @@ function calcRankScore(raceHorseData: any, statusPoints: StatusPoints, charaSkil
 
         if (skillId < 200000) {
             // 固有スキル
-            rankScore += skill.getGradeValue()! / 2 * charaSkill.level;
+            rankScore += skill.gradeValue! / 2 * charaSkill.level;
         } else {
-            const tagIds = new Set(skill.getTagIdList());
+            const tagIds = new Set(skill.tagId);
             let multiplier = 1;
             [1, 2, 3, 4].forEach(runningStyleTag => {
                 if (tagIds.has('10' + runningStyleTag.toString())) {
@@ -70,7 +70,7 @@ function calcRankScore(raceHorseData: any, statusPoints: StatusPoints, charaSkil
                     multiplier *= properSkillMultiplier[properDistances[distanceTag]];
                 }
             });
-            rankScore += Math.round(skill.getGradeValue()! * multiplier);
+            rankScore += Math.round(skill.gradeValue! * multiplier);
         }
     }
 

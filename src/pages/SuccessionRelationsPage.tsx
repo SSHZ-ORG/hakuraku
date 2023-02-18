@@ -48,8 +48,8 @@ export default class SuccessionRelationsPage extends React.PureComponent<{}, Suc
     }
 
     render() {
-        const relationsGroups = _.groupBy(UMDatabaseWrapper.umdb.getSuccessionRelationList(),
-            r => Math.floor(r.getRelationType()! / 100));
+        const relationsGroups = _.groupBy(UMDatabaseWrapper.umdb.successionRelation,
+            r => Math.floor(r.relationType! / 100));
 
         return <>
             <Form.Group>
@@ -57,7 +57,7 @@ export default class SuccessionRelationsPage extends React.PureComponent<{}, Suc
                 <Typeahead
                     multiple
                     labelKey={UMDatabaseUtils.charaNameWithIdAndCast}
-                    options={UMDatabaseWrapper.umdb.getCharaList()}
+                    options={UMDatabaseWrapper.umdb.chara}
                     selected={this.state.selectedCharas}
                     onChange={s => this.setState({selectedCharas: s})}
                     filterBy={UMDatabaseUtils.charaTypeaheadMatcher}/>

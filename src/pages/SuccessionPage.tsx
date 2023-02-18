@@ -65,7 +65,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
 
         function validateSameChara(key1: keyof SelectedCharasState, key2: keyof SelectedCharasState) {
             if (state[key1] === undefined || state[key2] === undefined) return;
-            if (state[key1]!.getId() === state[key2]!.getId()) {
+            if (state[key1]!.id === state[key2]!.id) {
                 validatorMessages.push(`${key1} and ${key2} are the same`);
             }
         }

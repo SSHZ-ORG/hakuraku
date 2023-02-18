@@ -20,34 +20,34 @@ class _UMDatabaseWrapper {
         return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb.gz', {cache: 'no-cache'})
             .then(response => response.arrayBuffer())
             .then(response => {
-                this.umdb = UMDatabase.deserializeBinary(pako.inflate(new Uint8Array(response)));
+                this.umdb = UMDatabase.fromBinary(pako.inflate(new Uint8Array(response)));
 
-                this.umdb.getCharaList().forEach((chara) => this.charas[chara.getId()!] = chara);
-                this.umdb.getCardList().forEach((card) => this.cards[card.getId()!] = card);
-                this.umdb.getSupportCardList().forEach((card) => this.supportCards[card.getId()!] = card);
+                this.umdb.chara.forEach((chara) => this.charas[chara.id!] = chara);
+                this.umdb.card.forEach((card) => this.cards[card.id!] = card);
+                this.umdb.supportCard.forEach((card) => this.supportCards[card.id!] = card);
 
-                this.umdb.getSuccessionRelationList().forEach((relation) =>
-                    this.successionRelationMemberCharaIds[relation.getRelationType()!] = new Set(relation.getMemberList().map(m => m.getCharaId()!)));
+                this.umdb.successionRelation.forEach((relation) =>
+                    this.successionRelationMemberCharaIds[relation.relationType!] = new Set(relation.member.map(m => m.charaId!)));
 
-                this.umdb.getRaceInstanceList().forEach((race) => this.raceInstances[race.getId()!] = race);
+                this.umdb.raceInstance.forEach((race) => this.raceInstances[race.id!] = race);
 
-                this.umdb.getSkillList().forEach((skill) => this.skills[skill.getId()!] = skill);
+                this.umdb.skill.forEach((skill) => this.skills[skill.id!] = skill);
 
-                const interestingRaceInstanceIds = Array.from(this.umdb.getWinsSaddleList().reduce(
+                const interestingRaceInstanceIds = Array.from(this.umdb.winsSaddle.reduce(
                     (s, ws) => {
-                        ws.getRaceInstanceIdList().forEach(raceInstanceId => s.add(raceInstanceId));
+                        ws.raceInstanceId.forEach(raceInstanceId => s.add(raceInstanceId));
                         return s;
                     },
                     new Set<number>()));
                 interestingRaceInstanceIds.sort();
                 this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
 
-                this.stories = this.umdb.getStoryList().map(story => {
+                this.stories = this.umdb.story.map(story => {
                     const o: Story = {
-                        id: story.getId()!,
-                        name: story.getName()!,
+                        id: story.id!,
+                        name: story.name!,
                     };
-                    const id = story.getId()!;
+                    const id = story.id!;
                     if ((501000000 <= id && id < 510000000) || (801000000 <= id && id < 810000000)) {
                         o.chara = this.charas[Math.floor(id / 1000) % 10000];
                     } else if (810000000 <= id && id < 840000000) {
@@ -60,13 +60,13 @@ class _UMDatabaseWrapper {
     }
 
     raceInstanceNameWithId = (raceInstanceId: number) =>
-        `${raceInstanceId} - ${this.raceInstances[raceInstanceId]?.getName() ?? 'Unknown race'}`;
+        `${raceInstanceId} - ${this.raceInstances[raceInstanceId]?.name ?? 'Unknown race'}`;
 
     skillName = (skillId: number) =>
-        this.skills[skillId]?.getName() ?? `Unknown Skill ${skillId}`;
+        this.skills[skillId]?.name ?? `Unknown Skill ${skillId}`;
 
     skillNameWithId = (skillId: number) =>
-        `[${skillId}] ${this.skills[skillId]?.getName() ?? 'Unknown Skill'}`;
+        `[${skillId}] ${this.skills[skillId]?.name ?? 'Unknown Skill'}`;
 }
 
 const UMDatabaseWrapper = new _UMDatabaseWrapper();

@@ -6,7 +6,7 @@ import CardNamePresenter from "../components/CardNamePresenter";
 import CharaProperLabels from "../components/CharaProperLabels";
 import CopyButton from "../components/CopyButton";
 import FilesSelector from "../components/FilesSelector";
-import {Chara, RaceInstance} from "../data/data_pb";
+import {Chara, RaceInstance_GroundType} from "../data/data_pb";
 import {parse, RoomRaceCharaData, RoomRaceData} from "../data/RoomRaceParser";
 import {TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -18,7 +18,7 @@ type RoomRaceAnalyzerPageState = {
     aggregatedCharaDatas: AggregatedCharaData[],
     distances: Set<number>,
     distanceType: number | undefined,
-    groundType: RaceInstance.GroundTypeMap[keyof RaceInstance.GroundTypeMap],
+    groundType: RaceInstance_GroundType,
 
     viewerOnly: boolean,
     loading: boolean,
@@ -89,7 +89,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             aggregatedCharaDatas: [],
             distances: new Set(),
             distanceType: undefined,
-            groundType: RaceInstance.GroundType.UNKNOWN_GROUND_TYPE,
+            groundType: RaceInstance_GroundType.UNKNOWN_GROUND_TYPE,
             viewerOnly: true,
             loading: false,
         };
@@ -107,8 +107,8 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             dataField: 'chara',
             text: '',
             formatter: (chara: Chara | undefined, row) => chara ? <>
-                {chara.getId()} - {chara.getName()}
-                <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
+                {chara.id} - {chara.name}
+                <br/>({chara.castName}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
             </> : 'Unknown Chara',
         },
 
@@ -144,10 +144,10 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             formatter: (cell, row) => {
                 let properGroundLabel = '?';
                 switch (this.state.groundType) {
-                    case RaceInstance.GroundType.TURF:
+                    case RaceInstance_GroundType.TURF:
                         properGroundLabel = UMDatabaseUtils.charaProperLabels[row.trainedChara.properGroundTurf];
                         break;
-                    case RaceInstance.GroundType.DIRT:
+                    case RaceInstance_GroundType.DIRT:
                         properGroundLabel = UMDatabaseUtils.charaProperLabels[row.trainedChara.properGroundDirt];
                         break;
                 }
@@ -204,10 +204,10 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
             Promise.all(files.map(parse))
                 .then(_.compact)
                 .then((roomRaceDatas: RoomRaceData[]) => {
-                    const distances = new Set(roomRaceDatas.map(d => d.raceInstance.getDistance()!));
+                    const distances = new Set(roomRaceDatas.map(d => d.raceInstance.distance!));
                     const distanceType = distances.size === 1 ? toDistanceType(distances.values().next().value) : undefined;
-                    const groundTypes = new Set(roomRaceDatas.map(d => d.raceInstance.getGroundType()!));
-                    const groundType = groundTypes.size === 1 ? groundTypes.values().next().value : RaceInstance.GroundType.UNKNOWN_GROUND_TYPE;
+                    const groundTypes = new Set(roomRaceDatas.map(d => d.raceInstance.groundType!));
+                    const groundType = groundTypes.size === 1 ? groundTypes.values().next().value : RaceInstance_GroundType.UNKNOWN_GROUND_TYPE;
                     const viewerIds = new Set(roomRaceDatas.map(d => d.viewerId));
 
                     function aggregate(datas: RoomRaceCharaData[], key: string): AggregatedCharaData {
@@ -244,9 +244,9 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
 
     groundType() {
         switch (this.state.groundType) {
-            case RaceInstance.GroundType.TURF:
+            case RaceInstance_GroundType.TURF:
                 return '芝';
-            case RaceInstance.GroundType.DIRT:
+            case RaceInstance_GroundType.DIRT:
                 return 'ダート';
         }
         return 'Unknown';

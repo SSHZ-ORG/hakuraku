@@ -6,7 +6,11 @@ import React from "react";
 import {Alert, Form, Table} from "react-bootstrap";
 import BootstrapTable, {ColumnDescription, ExpandRowProps} from "react-bootstrap-table-next";
 import {Chara} from "../data/data_pb";
-import {RaceSimulateData, RaceSimulateEventData, RaceSimulateHorseResultData} from "../data/race_data_pb";
+import {
+    RaceSimulateData,
+    RaceSimulateEventData_SimulateEventType,
+    RaceSimulateHorseResultData
+} from "../data/race_data_pb";
 import {
     filterCharaCompeteFight,
     filterCharaCompeteTop,
@@ -72,7 +76,7 @@ const runningStyleLabel = (horseResultData: RaceSimulateHorseResultData, activat
     if (activatedSkills.has(202051)) {
         return '大逃げ';
     }
-    return UMDatabaseUtils.runningStyleLabels[horseResultData.getRunningStyle()!];
+    return UMDatabaseUtils.runningStyleLabels[horseResultData.runningStyle!];
 };
 
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
@@ -98,8 +102,8 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         dataField: 'chara',
         text: '',
         formatter: (chara: Chara | undefined, row) => chara ? <>
-            {chara.getId()} - {chara.getName()}
-            <br/>({chara.getCastName()}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
+            {chara.id} - {chara.name}
+            <br/>({chara.castName}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
         </> : unknownCharaTag,
     },
 
@@ -114,8 +118,8 @@ const charaTableColumns: ColumnDescription<CharaTableData>[] = [
         isDummyField: true,
         text: 'Time',
         formatter: (cell, row) => <>
-            {UMDatabaseUtils.formatTime(row.horseResultData.getFinishTime()!)}
-            <br/>{UMDatabaseUtils.formatTime(row.horseResultData.getFinishTimeRaw()!)}
+            {UMDatabaseUtils.formatTime(row.horseResultData.finishTime!)}
+            <br/>{UMDatabaseUtils.formatTime(row.horseResultData.finishTimeRaw!)}
         </>,
     },
     {
@@ -228,7 +232,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
     displayNames = memoize((raceHorseInfo: any[], raceData: RaceSimulateData) => {
         const nameFromRaceHorseInfo: Record<number, string> = {};
-        if (raceHorseInfo && raceHorseInfo.length === raceData.getHorseResultList().length) {
+        if (raceHorseInfo && raceHorseInfo.length === raceData.horseResult.length) {
             raceHorseInfo.forEach((d: any) => {
                 const frameOrder = d['frame_order'] - 1; // 0-indexed
                 const charaId = d['chara_id'];
@@ -239,9 +243,9 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         }
 
         const m: Record<number, string> = {};
-        for (let frameOrder = 0; frameOrder < raceData.getHorseResultList().length; frameOrder++) {
+        for (let frameOrder = 0; frameOrder < raceData.horseResult.length; frameOrder++) {
             // frameOrder is 0 ordered.
-            const finishOrder = raceData.getHorseResultList()[frameOrder].getFinishOrder()! + 1; // 1-indexed
+            const finishOrder = raceData.horseResult[frameOrder].finishOrder! + 1; // 1-indexed
             m[frameOrder] = `[${frameOrder + 1} 番 ${finishOrder} 着]${nameFromRaceHorseInfo[frameOrder] ?? ''}`;
         }
         return m;
@@ -258,8 +262,8 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         const skillPlotLines = filterCharaSkills(raceData, frameOrder)
             .map(event => {
                 return {
-                    value: event.getFrameTime(),
-                    label: {text: UMDatabaseWrapper.skillName(event.getParamList()[1])},
+                    value: event.frameTime,
+                    label: {text: UMDatabaseWrapper.skillName(event.param[1])},
                     zIndex: 3,
                 };
             });
@@ -267,8 +271,8 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         const skillTargetedSkillPlotLines = filterCharaTargetedSkills(raceData, frameOrder)
             .map(event => {
                 return {
-                    value: event.getFrameTime(),
-                    label: {text: `${UMDatabaseWrapper.skillName(event.getParamList()[1])} by ${displayNames[event.getParamList()[0]]}`},
+                    value: event.frameTime,
+                    label: {text: `${UMDatabaseWrapper.skillName(event.param[1])} by ${displayNames[event.param[0]]}`},
                     color: 'rgba(255, 0, 0, 0.6)',
                     zIndex: 3,
                 };
@@ -278,7 +282,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             ...filterCharaCompeteTop(raceData, frameOrder)
                 .map(event => {
                     return {
-                        value: event.getFrameTime(),
+                        value: event.frameTime,
                         label: {text: "位置取り争い"},
                         color: 'rgba(0, 255, 0, 0.6)',
                         zIndex: 3,
@@ -287,7 +291,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             ...filterCharaCompeteFight(raceData, frameOrder)
                 .map(event => {
                     return {
-                        value: event.getFrameTime(),
+                        value: event.frameTime,
                         label: {text: "追い比べ"},
                         color: 'rgba(0, 255, 0, 0.6)',
                         zIndex: 3,
@@ -295,7 +299,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 }),
         ];
 
-        const lastSpurtStartDistance = raceData.getHorseResultList()[frameOrder].getLastSpurtStartDistance()!;
+        const lastSpurtStartDistance = raceData.horseResult[frameOrder].lastSpurtStartDistance!;
         let lastSpurtStartTime = 0;
 
         function makeBlockedPlotArea(from: number, to: number, blockedByIndex: number): Highcharts.XAxisPlotBandsOptions {
@@ -336,36 +340,36 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         let lastBlockFrontHorseIndex = -1;
         let lastTemptationModeChangedTime = 0;
         let lastTemptationMode = 0;
-        for (let i = 0; i < raceData.getFrameList().length; i++) {
-            const frame = raceData.getFrameList()[i];
-            const time = frame.getTime()!;
-            const horseFrame = frame.getHorseFrameList()[frameOrder];
+        for (let i = 0; i < raceData.frame.length; i++) {
+            const frame = raceData.frame[i];
+            const time = frame.time!;
+            const horseFrame = frame.horseFrame[frameOrder];
 
-            const previousFrame = raceData.getFrameList()[i - 1];
-            const previousTime = i === 0 ? 0 : previousFrame.getTime()!;
-            const previousHorseFrame = previousFrame?.getHorseFrameList()[frameOrder];
+            const previousFrame = raceData.frame[i - 1];
+            const previousTime = i === 0 ? 0 : previousFrame.time!;
+            const previousHorseFrame = previousFrame?.horseFrame[frameOrder];
 
-            if (horseFrame.getBlockFrontHorseIndex() !== lastBlockFrontHorseIndex) {
+            if (horseFrame.blockFrontHorseIndex !== lastBlockFrontHorseIndex) {
                 if (lastBlockFrontHorseIndex !== -1) {
                     blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, previousTime, lastBlockFrontHorseIndex));
                 }
                 lastBlockFrontHorseIndexChangedTime = previousTime;
-                lastBlockFrontHorseIndex = horseFrame.getBlockFrontHorseIndex()!;
+                lastBlockFrontHorseIndex = horseFrame.blockFrontHorseIndex!;
             }
-            if (horseFrame.getTemptationMode() !== lastTemptationMode) {
+            if (horseFrame.temptationMode !== lastTemptationMode) {
                 if (lastTemptationMode !== 0) {
                     temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, previousTime, lastTemptationMode));
                 }
                 lastTemptationModeChangedTime = previousTime;
-                lastTemptationMode = horseFrame.getTemptationMode()!;
+                lastTemptationMode = horseFrame.temptationMode!;
             }
 
-            const distance = horseFrame.getDistance()!;
+            const distance = horseFrame.distance!;
             if (lastSpurtStartDistance > 0 && lastSpurtStartTime === 0 && lastSpurtStartDistance <= distance) {
                 // i should never be 0 unless it has > 0 distance at frame 0, but just in case...
                 if (i > 0) {
                     // Interpolate it.
-                    const previousFrameDistance = previousHorseFrame.getDistance()!;
+                    const previousFrameDistance = previousHorseFrame.distance!;
                     lastSpurtStartTime = previousTime + (lastSpurtStartDistance - previousFrameDistance) / (distance - previousFrameDistance) * (time - previousTime);
                 }
             }
@@ -374,11 +378,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 deltaSpeed.push({x: 0, y: 0});
                 deltaHp.push({x: 0, y: 0});
             } else {
-                deltaSpeed.push({x: time, y: horseFrame.getSpeed()! - previousHorseFrame.getSpeed()!});
-                deltaHp.push({x: time, y: horseFrame.getHp()! - previousHorseFrame.getHp()!});
+                deltaSpeed.push({x: time, y: horseFrame.speed! - previousHorseFrame.speed!});
+                deltaHp.push({x: time, y: horseFrame.hp! - previousHorseFrame.hp!});
             }
         }
-        const lastFrameTime = _.last(raceData.getFrameList())!.getTime()!;
+        const lastFrameTime = _.last(raceData.frame)!.time!;
         if (lastBlockFrontHorseIndex !== -1) {
             blockFrontPlotAreas.push(makeBlockedPlotArea(lastBlockFrontHorseIndexChangedTime, lastFrameTime, lastBlockFrontHorseIndex));
         }
@@ -387,7 +391,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         }
 
         const plotLines = [{
-            value: raceData.getHorseResultList()[frameOrder!].getFinishTimeRaw(),
+            value: raceData.horseResult[frameOrder!].finishTimeRaw,
             dashStyle: 'LongDashDot',
             label: {text: 'Goal in'},
             zIndex: 20,
@@ -421,19 +425,19 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             series: [
                 {
                     name: "Speed",
-                    data: raceData.getFrameList().map(frame => {
+                    data: raceData.frame.map(frame => {
                         return {
-                            x: frame.getTime(),
-                            y: frame.getHorseFrameList()[frameOrder!].getSpeed(),
+                            x: frame.time,
+                            y: frame.horseFrame[frameOrder!].speed,
                         }
                     }),
                     type: "spline",
                 }, {
                     name: "HP",
-                    data: raceData.getFrameList().map(frame => {
+                    data: raceData.frame.map(frame => {
                         return {
-                            x: frame.getTime(),
-                            y: frame.getHorseFrameList()[frameOrder!].getHp(),
+                            x: frame.time,
+                            y: frame.horseFrame[frameOrder!].hp,
                         }
                     }),
                     type: "spline",
@@ -479,17 +483,17 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
     }
 
     renderCompetesList() {
-        const groupedEvents = _.groupBy(this.props.raceData.getEventList().map(e => e.getEvent()!)
-                .filter(e => e.getType() === RaceSimulateEventData.SimulateEventType.COMPETE_TOP || e.getType() === RaceSimulateEventData.SimulateEventType.COMPETE_FIGHT),
-            e => e.getFrameTime()!);
+        const groupedEvents = _.groupBy(this.props.raceData.event.map(e => e.event!)
+                .filter(e => e.type === RaceSimulateEventData_SimulateEventType.COMPETE_TOP || e.type === RaceSimulateEventData_SimulateEventType.COMPETE_FIGHT),
+            e => e.frameTime!);
 
         const d: CompeteTableData[] = _.values(groupedEvents).map(events => {
-            const time = events[0].getFrameTime()!;
+            const time = events[0].frameTime!;
             return {
                 time: time,
-                type: events[0].getType() === RaceSimulateEventData.SimulateEventType.COMPETE_TOP ? "位置取り争い" : "追い比べ",
+                type: events[0].type === RaceSimulateEventData_SimulateEventType.COMPETE_TOP ? "位置取り争い" : "追い比べ",
                 charas: events.map(e => {
-                    const frameOrder = e.getParamList()[0];
+                    const frameOrder = e.param[0];
                     return {
                         displayName: this.displayNames(this.props.raceHorseInfo, this.props.raceData)[frameOrder],
                     };
@@ -515,7 +519,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         const l: CharaTableData[] = this.props.raceHorseInfo.map(data => {
             const frameOrder = data['frame_order'] - 1;
 
-            const horseResult = this.props.raceData.getHorseResultList()[frameOrder];
+            const horseResult = this.props.raceData.horseResult[frameOrder];
 
             const trainedCharaData = fromRaceHorseData(data);
             return {
@@ -523,7 +527,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 chara: UMDatabaseWrapper.charas[trainedCharaData.charaId],
 
                 frameOrder: frameOrder + 1,
-                finishOrder: horseResult.getFinishOrder()! + 1,
+                finishOrder: horseResult.finishOrder! + 1,
 
                 horseResultData: horseResult,
 
@@ -554,17 +558,17 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             } as SeriesSplineOptions;
         });
 
-        this.props.raceData.getFrameList().forEach(frame => {
-            const time = frame.getTime()!;
+        this.props.raceData.frame.forEach(frame => {
+            const time = frame.time!;
 
-            const minDistance = _.min(frame.getHorseFrameList().map(horseFrame => horseFrame.getDistance()!))!;
-            const maxDistance = _.max(frame.getHorseFrameList().map(horseFrame => horseFrame.getDistance()!))!;
+            const minDistance = _.min(frame.horseFrame.map(horseFrame => horseFrame.distance!))!;
+            const maxDistance = _.max(frame.horseFrame.map(horseFrame => horseFrame.distance!))!;
             const baseDistance = (minDistance + maxDistance) / 2;
 
-            frame.getHorseFrameList().forEach((horseFrame, frameOrder) => {
+            frame.horseFrame.forEach((horseFrame, frameOrder) => {
                 series[frameOrder].data!.push({
                     x: this.state.diffGraphUseDistanceAsXAxis ? baseDistance : time,
-                    y: (horseFrame.getDistance()! - baseDistance),
+                    y: (horseFrame.distance! - baseDistance),
                 });
             });
         });
@@ -601,9 +605,9 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
     render() {
         return <div>
-            {(this.props.raceData.getHeader()!.getVersion()! > supportedRaceDataVersion) &&
+            {(this.props.raceData.header!.version! > supportedRaceDataVersion) &&
                 <Alert variant="warning">
-                    RaceData version {this.props.raceData.getHeader()!.getVersion()!} higher than supported
+                    RaceData version {this.props.raceData.header!.version!} higher than supported
                     version {supportedRaceDataVersion}, use at your own risk!
                 </Alert>}
             {this.renderCharaList()}
@@ -649,7 +653,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}
             <hr/>
-            <JsonViewer value={this.props.raceData.toObject()} defaultInspectDepth={1}/>
+            <JsonViewer value={this.props.raceData} defaultInspectDepth={1}/>
         </div>;
     }
 }

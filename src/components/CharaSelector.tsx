@@ -31,10 +31,10 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
     }
 
     charaList() {
-        let l = UMDatabaseWrapper.umdb.getCharaList();
+        let l = UMDatabaseWrapper.umdb.chara;
         if (this.props.constraintGroups) {
             const relationPoints = _.mapValues(this.calcRelationPoints(this.props.constraintGroups), _.sum);
-            l = _.sortBy(l, chara => -relationPoints[chara.getId()!]);
+            l = _.sortBy(l, chara => -relationPoints[chara.id!]);
         }
         return l;
     }
@@ -42,7 +42,7 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
     charaRenderingName(chara: Chara) {
         let suggestionPtsString = '';
         if (this.props.constraintGroups) {
-            const points = this.calcRelationPoints(this.props.constraintGroups)[chara.getId()!];
+            const points = this.calcRelationPoints(this.props.constraintGroups)[chara.id!];
             if (points.length === 1) {
                 suggestionPtsString = ` (${points[0]} pts)`;
             } else {
