@@ -1,5 +1,5 @@
 {
-  "version": "10008770",
+  "version": "10008810",
   "chara": [
     {
       "id": 1001,
@@ -402,14 +402,34 @@
       "castName": "礒部花凜"
     },
     {
+      "id": 1086,
+      "name": "メジロラモーヌ",
+      "castName": "東山奈央"
+    },
+    {
       "id": 1087,
       "name": "アストンマーチャン",
       "castName": "井上ほの花"
     },
     {
+      "id": 1088,
+      "name": "サトノクラウン",
+      "castName": "鈴代紗弓"
+    },
+    {
+      "id": 1089,
+      "name": "シュヴァルグラン",
+      "castName": "夏吉ゆうこ"
+    },
+    {
       "id": 1093,
       "name": "ケイエスミラクル",
       "castName": "佐藤日向"
+    },
+    {
+      "id": 1094,
+      "name": "ジャングルポケット",
+      "castName": "藤本侑里"
     },
     {
       "id": 1098,
@@ -425,6 +445,11 @@
       "id": 1100,
       "name": "ワンダーアキュート",
       "castName": "須藤叶希"
+    },
+    {
+      "id": 1104,
+      "name": "カツラギエース",
+      "castName": "藤原夏海"
     },
     {
       "id": 2001,
@@ -480,6 +505,21 @@
       "id": 9008,
       "name": "ライトハロー",
       "castName": "植田佳奈"
+    },
+    {
+      "id": 9040,
+      "name": "ダーレーアラビアン",
+      "castName": "進藤尚美"
+    },
+    {
+      "id": 9041,
+      "name": "ゴドルフィンバルブ",
+      "castName": "佐藤聡美"
+    },
+    {
+      "id": 9042,
+      "name": "バイアリーターク",
+      "castName": "斎賀みつき"
     }
   ],
   "successionRelation": [
@@ -544,6 +584,10 @@
         {
           "id": 12,
           "charaId": 1038
+        },
+        {
+          "id": 2399,
+          "charaId": 1066
         },
         {
           "id": 2400,
@@ -804,6 +848,10 @@
         {
           "id": 2423,
           "charaId": 1071
+        },
+        {
+          "id": 2425,
+          "charaId": 1057
         }
       ]
     },
@@ -890,6 +938,10 @@
         {
           "id": 2427,
           "charaId": 1071
+        },
+        {
+          "id": 2428,
+          "charaId": 1066
         },
         {
           "id": 2430,
@@ -1120,6 +1172,16 @@
     {
       "relationType": 204,
       "relationPoint": 2
+    },
+    {
+      "relationType": 205,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 78,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 301,
@@ -1520,6 +1582,10 @@
         {
           "id": 2465,
           "charaId": 1034
+        },
+        {
+          "id": 2466,
+          "charaId": 1066
         }
       ]
     },
@@ -1856,16 +1922,24 @@
           "charaId": 1002
         },
         {
-          "id": 175,
-          "charaId": 1041
-        },
-        {
           "id": 176,
           "charaId": 1010
         },
         {
           "id": 177,
           "charaId": 1056
+        },
+        {
+          "id": 3877,
+          "charaId": 1022
+        },
+        {
+          "id": 3878,
+          "charaId": 1059
+        },
+        {
+          "id": 3879,
+          "charaId": 1074
         }
       ]
     },
@@ -1888,6 +1962,14 @@
         {
           "id": 181,
           "charaId": 1013
+        },
+        {
+          "id": 3880,
+          "charaId": 1066
+        },
+        {
+          "id": 3881,
+          "charaId": 1087
         }
       ]
     },
@@ -1906,6 +1988,312 @@
         {
           "id": 184,
           "charaId": 1035
+        },
+        {
+          "id": 3882,
+          "charaId": 1018
+        },
+        {
+          "id": 3883,
+          "charaId": 1033
+        },
+        {
+          "id": 3884,
+          "charaId": 1043
+        }
+      ]
+    },
+    {
+      "relationType": 405,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3886,
+          "charaId": 1006
+        },
+        {
+          "id": 3887,
+          "charaId": 1021
+        },
+        {
+          "id": 3888,
+          "charaId": 1034
+        },
+        {
+          "id": 3889,
+          "charaId": 1045
+        },
+        {
+          "id": 3890,
+          "charaId": 1071
+        }
+      ]
+    },
+    {
+      "relationType": 406,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3891,
+          "charaId": 1004
+        },
+        {
+          "id": 3892,
+          "charaId": 1017
+        },
+        {
+          "id": 3893,
+          "charaId": 1057
+        }
+      ]
+    },
+    {
+      "relationType": 407,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3897,
+          "charaId": 1007
+        },
+        {
+          "id": 3898,
+          "charaId": 1005
+        },
+        {
+          "id": 3899,
+          "charaId": 1012
+        },
+        {
+          "id": 3900,
+          "charaId": 1016
+        },
+        {
+          "id": 3901,
+          "charaId": 1037
+        },
+        {
+          "id": 3902,
+          "charaId": 1046
+        }
+      ]
+    },
+    {
+      "relationType": 408,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3904,
+          "charaId": 1027
+        },
+        {
+          "id": 3905,
+          "charaId": 1031
+        },
+        {
+          "id": 3906,
+          "charaId": 1064
+        },
+        {
+          "id": 3907,
+          "charaId": 1065
+        }
+      ]
+    },
+    {
+      "relationType": 409,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3909,
+          "charaId": 1053
+        },
+        {
+          "id": 3910,
+          "charaId": 1072
+        }
+      ]
+    },
+    {
+      "relationType": 410,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3915,
+          "charaId": 1025
+        },
+        {
+          "id": 3916,
+          "charaId": 1032
+        },
+        {
+          "id": 3917,
+          "charaId": 1036
+        }
+      ]
+    },
+    {
+      "relationType": 411,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3922,
+          "charaId": 1026
+        },
+        {
+          "id": 3923,
+          "charaId": 1030
+        },
+        {
+          "id": 3924,
+          "charaId": 1041
+        },
+        {
+          "id": 3925,
+          "charaId": 1069
+        }
+      ]
+    },
+    {
+      "relationType": 412,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3926,
+          "charaId": 1040
+        },
+        {
+          "id": 3927,
+          "charaId": 1048
+        },
+        {
+          "id": 3928,
+          "charaId": 1049
+        },
+        {
+          "id": 3930,
+          "charaId": 1100
+        }
+      ]
+    },
+    {
+      "relationType": 413,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3931,
+          "charaId": 1028
+        },
+        {
+          "id": 3932,
+          "charaId": 1039
+        },
+        {
+          "id": 3934,
+          "charaId": 1098
+        },
+        {
+          "id": 3935,
+          "charaId": 1099
+        }
+      ]
+    },
+    {
+      "relationType": 414,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3937,
+          "charaId": 1015
+        },
+        {
+          "id": 3938,
+          "charaId": 1052
+        },
+        {
+          "id": 3939,
+          "charaId": 1058
+        }
+      ]
+    },
+    {
+      "relationType": 415,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3940,
+          "charaId": 1060
+        },
+        {
+          "id": 3941,
+          "charaId": 1062
+        }
+      ]
+    },
+    {
+      "relationType": 416,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3944,
+          "charaId": 1029
+        },
+        {
+          "id": 3945,
+          "charaId": 1038
+        },
+        {
+          "id": 3946,
+          "charaId": 1078
+        }
+      ]
+    },
+    {
+      "relationType": 417,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3947,
+          "charaId": 1019
+        },
+        {
+          "id": 3948,
+          "charaId": 1047
+        }
+      ]
+    },
+    {
+      "relationType": 418,
+      "relationPoint": 2
+    },
+    {
+      "relationType": 419,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3955,
+          "charaId": 1024
+        },
+        {
+          "id": 3956,
+          "charaId": 1044
+        },
+        {
+          "id": 3957,
+          "charaId": 1051
+        }
+      ]
+    },
+    {
+      "relationType": 420,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3959,
+          "charaId": 1067
+        },
+        {
+          "id": 3960,
+          "charaId": 1068
         }
       ]
     },
@@ -1994,6 +2382,14 @@
         {
           "id": 197,
           "charaId": 1022
+        },
+        {
+          "id": 3963,
+          "charaId": 1067
+        },
+        {
+          "id": 3965,
+          "charaId": 1071
         }
       ]
     },
@@ -2053,7 +2449,7 @@
     },
     {
       "relationType": 508,
-      "relationPoint": 2,
+      "relationPoint": 8,
       "member": [
         {
           "id": 1687,
@@ -2067,7 +2463,7 @@
     },
     {
       "relationType": 509,
-      "relationPoint": 2,
+      "relationPoint": 8,
       "member": [
         {
           "id": 1689,
@@ -2081,7 +2477,7 @@
     },
     {
       "relationType": 510,
-      "relationPoint": 2,
+      "relationPoint": 8,
       "member": [
         {
           "id": 1740,
@@ -2132,6 +2528,10 @@
         {
           "id": 2486,
           "charaId": 1062
+        },
+        {
+          "id": 2488,
+          "charaId": 1066
         }
       ]
     },
@@ -2193,27 +2593,575 @@
     },
     {
       "relationType": 518,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2497,
+          "charaId": 1002
+        },
+        {
+          "id": 2498,
+          "charaId": 1046
+        },
+        {
+          "id": 3967,
+          "charaId": 1031
+        },
+        {
+          "id": 3968,
+          "charaId": 1026
+        },
+        {
+          "id": 3969,
+          "charaId": 1004
+        }
+      ]
     },
     {
       "relationType": 519,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 2499,
+          "charaId": 1032
+        },
+        {
+          "id": 2500,
+          "charaId": 1044
+        },
+        {
+          "id": 3970,
+          "charaId": 1067
+        },
+        {
+          "id": 3971,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 520,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3972,
+          "charaId": 1046
+        },
+        {
+          "id": 3973,
+          "charaId": 1098
+        },
+        {
+          "id": 3974,
+          "charaId": 1099
+        },
+        {
+          "id": 3975,
+          "charaId": 1100
+        }
+      ]
     },
     {
       "relationType": 521,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3976,
+          "charaId": 1065
+        },
+        {
+          "id": 3979,
+          "charaId": 1078
+        }
+      ]
     },
     {
       "relationType": 522,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3980,
+          "charaId": 1067
+        }
+      ]
     },
     {
       "relationType": 523,
-      "relationPoint": 2
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3982,
+          "charaId": 1001
+        },
+        {
+          "id": 3983,
+          "charaId": 1002
+        },
+        {
+          "id": 3984,
+          "charaId": 1006
+        },
+        {
+          "id": 3985,
+          "charaId": 1007
+        },
+        {
+          "id": 3986,
+          "charaId": 1013
+        },
+        {
+          "id": 3987,
+          "charaId": 1016
+        },
+        {
+          "id": 3988,
+          "charaId": 1030
+        },
+        {
+          "id": 3989,
+          "charaId": 1035
+        }
+      ]
+    },
+    {
+      "relationType": 524,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 3990,
+          "charaId": 1017
+        },
+        {
+          "id": 3991,
+          "charaId": 1018
+        },
+        {
+          "id": 3992,
+          "charaId": 1016
+        },
+        {
+          "id": 3993,
+          "charaId": 1012
+        },
+        {
+          "id": 3994,
+          "charaId": 1004
+        },
+        {
+          "id": 3995,
+          "charaId": 1005
+        },
+        {
+          "id": 3996,
+          "charaId": 1010
+        },
+        {
+          "id": 3997,
+          "charaId": 1015
+        },
+        {
+          "id": 3998,
+          "charaId": 1011
+        },
+        {
+          "id": 3999,
+          "charaId": 1014
+        }
+      ]
+    },
+    {
+      "relationType": 525,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 4001,
+          "charaId": 1007
+        },
+        {
+          "id": 4002,
+          "charaId": 1008
+        },
+        {
+          "id": 4003,
+          "charaId": 1009
+        },
+        {
+          "id": 4004,
+          "charaId": 1002
+        },
+        {
+          "id": 4005,
+          "charaId": 1001
+        },
+        {
+          "id": 4006,
+          "charaId": 1003
+        },
+        {
+          "id": 4007,
+          "charaId": 1013
+        }
+      ]
+    },
+    {
+      "relationType": 526,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 4008,
+          "charaId": 1002
+        },
+        {
+          "id": 4009,
+          "charaId": 1064
+        },
+        {
+          "id": 4010,
+          "charaId": 1065
+        },
+        {
+          "id": 4011,
+          "charaId": 1066
+        }
+      ]
+    },
+    {
+      "relationType": 527,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4012,
+          "charaId": 1052
+        },
+        {
+          "id": 4013,
+          "charaId": 1019
+        }
+      ]
+    },
+    {
+      "relationType": 528,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4014,
+          "charaId": 1052
+        },
+        {
+          "id": 4015,
+          "charaId": 1007
+        }
+      ]
+    },
+    {
+      "relationType": 529,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4016,
+          "charaId": 1052
+        },
+        {
+          "id": 4017,
+          "charaId": 1036
+        }
+      ]
+    },
+    {
+      "relationType": 530,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4018,
+          "charaId": 1052
+        },
+        {
+          "id": 4019,
+          "charaId": 1046
+        }
+      ]
+    },
+    {
+      "relationType": 531,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4020,
+          "charaId": 1052
+        },
+        {
+          "id": 4021,
+          "charaId": 1024
+        }
+      ]
+    },
+    {
+      "relationType": 532,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4022,
+          "charaId": 1052
+        },
+        {
+          "id": 4023,
+          "charaId": 1059
+        }
+      ]
+    },
+    {
+      "relationType": 533,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4024,
+          "charaId": 1052
+        },
+        {
+          "id": 4025,
+          "charaId": 1060
+        }
+      ]
+    },
+    {
+      "relationType": 534,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4026,
+          "charaId": 1052
+        },
+        {
+          "id": 4027,
+          "charaId": 1010
+        }
+      ]
+    },
+    {
+      "relationType": 535,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4028,
+          "charaId": 1052
+        },
+        {
+          "id": 4029,
+          "charaId": 1020
+        }
+      ]
+    },
+    {
+      "relationType": 536,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4030,
+          "charaId": 1052
+        },
+        {
+          "id": 4031,
+          "charaId": 1011
+        }
+      ]
+    },
+    {
+      "relationType": 537,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4032,
+          "charaId": 1052
+        },
+        {
+          "id": 4033,
+          "charaId": 1015
+        }
+      ]
+    },
+    {
+      "relationType": 538,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4034,
+          "charaId": 1052
+        },
+        {
+          "id": 4035,
+          "charaId": 1033
+        }
+      ]
+    },
+    {
+      "relationType": 539,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4036,
+          "charaId": 1052
+        },
+        {
+          "id": 4037,
+          "charaId": 1056
+        }
+      ]
+    },
+    {
+      "relationType": 540,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4038,
+          "charaId": 1052
+        },
+        {
+          "id": 4039,
+          "charaId": 1058
+        }
+      ]
+    },
+    {
+      "relationType": 541,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4040,
+          "charaId": 1052
+        },
+        {
+          "id": 4041,
+          "charaId": 1061
+        }
+      ]
+    },
+    {
+      "relationType": 542,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4042,
+          "charaId": 1052
+        },
+        {
+          "id": 4043,
+          "charaId": 1022
+        }
+      ]
+    },
+    {
+      "relationType": 543,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4044,
+          "charaId": 1052
+        },
+        {
+          "id": 4045,
+          "charaId": 1038
+        }
+      ]
+    },
+    {
+      "relationType": 544,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4046,
+          "charaId": 1052
+        }
+      ]
+    },
+    {
+      "relationType": 545,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4048,
+          "charaId": 1052
+        },
+        {
+          "id": 4049,
+          "charaId": 1006
+        }
+      ]
+    },
+    {
+      "relationType": 546,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4050,
+          "charaId": 1052
+        },
+        {
+          "id": 4051,
+          "charaId": 1039
+        }
+      ]
+    },
+    {
+      "relationType": 547,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4052,
+          "charaId": 1052
+        },
+        {
+          "id": 4053,
+          "charaId": 1100
+        }
+      ]
+    },
+    {
+      "relationType": 548,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4054,
+          "charaId": 1052
+        }
+      ]
+    },
+    {
+      "relationType": 549,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4056,
+          "charaId": 1052
+        }
+      ]
+    },
+    {
+      "relationType": 550,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4058,
+          "charaId": 1052
+        },
+        {
+          "id": 4059,
+          "charaId": 1047
+        }
+      ]
+    },
+    {
+      "relationType": 551,
+      "relationPoint": 8,
+      "member": [
+        {
+          "id": 4060,
+          "charaId": 1052
+        },
+        {
+          "id": 4061,
+          "charaId": 1021
+        }
+      ]
     },
     {
       "relationType": 2001,
@@ -2311,7 +3259,13 @@
     },
     {
       "relationType": 2008,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2607,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 2009,
@@ -2489,7 +3443,13 @@
     },
     {
       "relationType": 2110,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2627,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 2111,
@@ -2670,6 +3630,10 @@
         {
           "id": 1692,
           "charaId": 1017
+        },
+        {
+          "id": 4483,
+          "charaId": 1057
         }
       ]
     },
@@ -2700,6 +3664,18 @@
         {
           "id": 2565,
           "charaId": 1053
+        },
+        {
+          "id": 2566,
+          "charaId": 1021
+        },
+        {
+          "id": 2567,
+          "charaId": 1034
+        },
+        {
+          "id": 4491,
+          "charaId": 1040
         }
       ]
     },
@@ -2744,6 +3720,10 @@
           "charaId": 1065
         },
         {
+          "id": 2367,
+          "charaId": 1066
+        },
+        {
           "id": 2368,
           "charaId": 1051
         },
@@ -2754,6 +3734,10 @@
         {
           "id": 3821,
           "charaId": 1078
+        },
+        {
+          "id": 4492,
+          "charaId": 1026
         }
       ]
     },
@@ -2772,6 +3756,30 @@
         {
           "id": 3780,
           "charaId": 1029
+        },
+        {
+          "id": 4495,
+          "charaId": 1005
+        },
+        {
+          "id": 4496,
+          "charaId": 1012
+        },
+        {
+          "id": 4497,
+          "charaId": 1016
+        },
+        {
+          "id": 4498,
+          "charaId": 1023
+        },
+        {
+          "id": 4499,
+          "charaId": 1028
+        },
+        {
+          "id": 4500,
+          "charaId": 1050
         }
       ]
     },
@@ -2822,6 +3830,14 @@
         {
           "id": 3758,
           "charaId": 1043
+        },
+        {
+          "id": 4501,
+          "charaId": 1020
+        },
+        {
+          "id": 4502,
+          "charaId": 1059
         }
       ]
     },
@@ -2840,6 +3856,26 @@
         {
           "id": 2563,
           "charaId": 1036
+        },
+        {
+          "id": 4503,
+          "charaId": 1015
+        },
+        {
+          "id": 4504,
+          "charaId": 1019
+        },
+        {
+          "id": 4505,
+          "charaId": 1025
+        },
+        {
+          "id": 4506,
+          "charaId": 1033
+        },
+        {
+          "id": 4507,
+          "charaId": 1058
         }
       ]
     },
@@ -2876,6 +3912,14 @@
         {
           "id": 3765,
           "charaId": 1087
+        },
+        {
+          "id": 4508,
+          "charaId": 1039
+        },
+        {
+          "id": 4509,
+          "charaId": 1046
         }
       ]
     },
@@ -2892,8 +3936,16 @@
           "charaId": 1100
         },
         {
-          "id": 3778,
-          "charaId": 1098
+          "id": 4510,
+          "charaId": 1037
+        },
+        {
+          "id": 4511,
+          "charaId": 1038
+        },
+        {
+          "id": 4512,
+          "charaId": 1048
         }
       ]
     },
@@ -2904,6 +3956,10 @@
         {
           "id": 3779,
           "charaId": 1099
+        },
+        {
+          "id": 4513,
+          "charaId": 1098
         }
       ]
     },
@@ -2941,7 +3997,37 @@
     },
     {
       "relationType": 2503,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4149,
+          "charaId": 1072
+        },
+        {
+          "id": 4150,
+          "charaId": 1045
+        },
+        {
+          "id": 4151,
+          "charaId": 1003
+        },
+        {
+          "id": 4152,
+          "charaId": 1013
+        },
+        {
+          "id": 4154,
+          "charaId": 1018
+        },
+        {
+          "id": 4156,
+          "charaId": 1009
+        },
+        {
+          "id": 4157,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 2504,
@@ -3000,6 +4086,10 @@
         {
           "id": 719,
           "charaId": 1017
+        },
+        {
+          "id": 720,
+          "charaId": 1057
         },
         {
           "id": 2319,
@@ -3154,6 +4244,10 @@
         {
           "id": 671,
           "charaId": 1017
+        },
+        {
+          "id": 672,
+          "charaId": 1057
         },
         {
           "id": 1766,
@@ -3366,6 +4460,10 @@
           "charaId": 1017
         },
         {
+          "id": 741,
+          "charaId": 1057
+        },
+        {
           "id": 2322,
           "charaId": 1067
         },
@@ -3418,6 +4516,10 @@
         {
           "id": 695,
           "charaId": 1048
+        },
+        {
+          "id": 696,
+          "charaId": 1057
         },
         {
           "id": 2313,
@@ -3548,6 +4650,10 @@
         {
           "id": 726,
           "charaId": 1059
+        },
+        {
+          "id": 2736,
+          "charaId": 1040
         }
       ]
     },
@@ -3653,7 +4759,25 @@
     },
     {
       "relationType": 2524,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4158,
+          "charaId": 1050
+        },
+        {
+          "id": 4159,
+          "charaId": 1074
+        },
+        {
+          "id": 4160,
+          "charaId": 1033
+        },
+        {
+          "id": 4161,
+          "charaId": 1032
+        }
+      ]
     },
     {
       "relationType": 2525,
@@ -3781,7 +4905,13 @@
     },
     {
       "relationType": 2534,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4146,
+          "charaId": 1019
+        }
+      ]
     },
     {
       "relationType": 2601,
@@ -3956,6 +5086,10 @@
           "charaId": 1056
         },
         {
+          "id": 285,
+          "charaId": 1057
+        },
+        {
           "id": 286,
           "charaId": 1058
         },
@@ -3990,6 +5124,10 @@
         {
           "id": 2519,
           "charaId": 1065
+        },
+        {
+          "id": 2520,
+          "charaId": 1066
         },
         {
           "id": 2521,
@@ -4148,6 +5286,10 @@
           "charaId": 1064
         },
         {
+          "id": 2374,
+          "charaId": 1066
+        },
+        {
           "id": 2375,
           "charaId": 1067
         },
@@ -4186,6 +5328,58 @@
         {
           "id": 3856,
           "charaId": 1043
+        },
+        {
+          "id": 3857,
+          "charaId": 1057
+        },
+        {
+          "id": 3858,
+          "charaId": 1012
+        },
+        {
+          "id": 3859,
+          "charaId": 1015
+        },
+        {
+          "id": 3860,
+          "charaId": 1020
+        },
+        {
+          "id": 3861,
+          "charaId": 1023
+        },
+        {
+          "id": 3862,
+          "charaId": 1025
+        },
+        {
+          "id": 3863,
+          "charaId": 1028
+        },
+        {
+          "id": 3864,
+          "charaId": 1033
+        },
+        {
+          "id": 3865,
+          "charaId": 1037
+        },
+        {
+          "id": 3866,
+          "charaId": 1038
+        },
+        {
+          "id": 4514,
+          "charaId": 1050
+        },
+        {
+          "id": 4515,
+          "charaId": 1058
+        },
+        {
+          "id": 4519,
+          "charaId": 1040
         }
       ]
     },
@@ -4288,6 +5482,50 @@
         {
           "id": 2572,
           "charaId": 1049
+        },
+        {
+          "id": 3822,
+          "charaId": 1005
+        },
+        {
+          "id": 3823,
+          "charaId": 1016
+        },
+        {
+          "id": 3824,
+          "charaId": 1019
+        },
+        {
+          "id": 3825,
+          "charaId": 1021
+        },
+        {
+          "id": 3826,
+          "charaId": 1022
+        },
+        {
+          "id": 3827,
+          "charaId": 1026
+        },
+        {
+          "id": 3828,
+          "charaId": 1034
+        },
+        {
+          "id": 3829,
+          "charaId": 1039
+        },
+        {
+          "id": 4516,
+          "charaId": 1046
+        },
+        {
+          "id": 4517,
+          "charaId": 1048
+        },
+        {
+          "id": 4518,
+          "charaId": 1059
         }
       ]
     },
@@ -4378,16 +5616,248 @@
       "relationPoint": 1,
       "member": [
         {
-          "id": 362,
-          "charaId": 1007
-        },
-        {
           "id": 363,
           "charaId": 1060
         },
         {
           "id": 2665,
           "charaId": 1042
+        },
+        {
+          "id": 4484,
+          "charaId": 1040
+        }
+      ]
+    },
+    {
+      "relationType": 2707,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4062,
+          "charaId": 1028
+        },
+        {
+          "id": 4063,
+          "charaId": 1052
+        }
+      ]
+    },
+    {
+      "relationType": 2708,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4064,
+          "charaId": 1100
+        }
+      ]
+    },
+    {
+      "relationType": 2709,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 2710,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4068,
+          "charaId": 1064
+        },
+        {
+          "id": 4069,
+          "charaId": 1035
+        }
+      ]
+    },
+    {
+      "relationType": 2711,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4070,
+          "charaId": 1024
+        },
+        {
+          "id": 4071,
+          "charaId": 1098
+        }
+      ]
+    },
+    {
+      "relationType": 2712,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4073,
+          "charaId": 1012
+        }
+      ]
+    },
+    {
+      "relationType": 2713,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4075,
+          "charaId": 1038
+        }
+      ]
+    },
+    {
+      "relationType": 2714,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4076,
+          "charaId": 1018
+        }
+      ]
+    },
+    {
+      "relationType": 2715,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 2716,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4080,
+          "charaId": 1031
+        },
+        {
+          "id": 4081,
+          "charaId": 1065
+        }
+      ]
+    },
+    {
+      "relationType": 2717,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4082,
+          "charaId": 1072
+        },
+        {
+          "id": 4083,
+          "charaId": 1027
+        }
+      ]
+    },
+    {
+      "relationType": 2718,
+      "relationPoint": 1
+    },
+    {
+      "relationType": 2719,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4086,
+          "charaId": 1066
+        },
+        {
+          "id": 4087,
+          "charaId": 1032
+        }
+      ]
+    },
+    {
+      "relationType": 2720,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4088,
+          "charaId": 1041
+        },
+        {
+          "id": 4090,
+          "charaId": 1043
+        }
+      ]
+    },
+    {
+      "relationType": 2721,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4092,
+          "charaId": 1005
+        }
+      ]
+    },
+    {
+      "relationType": 2722,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4094,
+          "charaId": 1051
+        },
+        {
+          "id": 4095,
+          "charaId": 1074
+        }
+      ]
+    },
+    {
+      "relationType": 2723,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4097,
+          "charaId": 1020
+        }
+      ]
+    },
+    {
+      "relationType": 2724,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4100,
+          "charaId": 1002
+        }
+      ]
+    },
+    {
+      "relationType": 2725,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4101,
+          "charaId": 1001
+        }
+      ]
+    },
+    {
+      "relationType": 2726,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4103,
+          "charaId": 1034
+        },
+        {
+          "id": 4104,
+          "charaId": 1062
+        }
+      ]
+    },
+    {
+      "relationType": 2727,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4106,
+          "charaId": 1045
+        },
+        {
+          "id": 4107,
+          "charaId": 1078
         }
       ]
     },
@@ -4476,6 +5946,10 @@
         {
           "id": 374,
           "charaId": 1060
+        },
+        {
+          "id": 2548,
+          "charaId": 1066
         },
         {
           "id": 2549,
@@ -4751,11 +6225,23 @@
     },
     {
       "relationType": 2822,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4112,
+          "charaId": 1022
+        }
+      ]
     },
     {
       "relationType": 2823,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4117,
+          "charaId": 1047
+        }
+      ]
     },
     {
       "relationType": 2824,
@@ -4764,16 +6250,52 @@
         {
           "id": 2555,
           "charaId": 1067
-        },
-        {
-          "id": 2556,
-          "charaId": 1068
         }
       ]
     },
     {
       "relationType": 2825,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4110,
+          "charaId": 1057
+        }
+      ]
+    },
+    {
+      "relationType": 2826,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4120,
+          "charaId": 1046
+        }
+      ]
+    },
+    {
+      "relationType": 2827,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4122,
+          "charaId": 1007
+        },
+        {
+          "id": 4123,
+          "charaId": 1099
+        }
+      ]
+    },
+    {
+      "relationType": 2828,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4125,
+          "charaId": 1068
+        }
+      ]
     },
     {
       "relationType": 2901,
@@ -4810,6 +6332,10 @@
         {
           "id": 2228,
           "charaId": 1064
+        },
+        {
+          "id": 2230,
+          "charaId": 1066
         },
         {
           "id": 2231,
@@ -5084,6 +6610,10 @@
         {
           "id": 475,
           "charaId": 1052
+        },
+        {
+          "id": 476,
+          "charaId": 1057
         }
       ]
     },
@@ -5428,6 +6958,10 @@
           "charaId": 1050
         },
         {
+          "id": 552,
+          "charaId": 1057
+        },
+        {
           "id": 553,
           "charaId": 1058
         },
@@ -5450,6 +6984,10 @@
         {
           "id": 2273,
           "charaId": 1064
+        },
+        {
+          "id": 2274,
+          "charaId": 1066
         },
         {
           "id": 2275,
@@ -5772,6 +7310,10 @@
           "charaId": 1053
         },
         {
+          "id": 625,
+          "charaId": 1057
+        },
+        {
           "id": 626,
           "charaId": 1058
         },
@@ -5798,6 +7340,10 @@
         {
           "id": 2291,
           "charaId": 1065
+        },
+        {
+          "id": 2292,
+          "charaId": 1066
         },
         {
           "id": 2293,
@@ -5872,50 +7418,6 @@
           "charaId": 1022
         },
         {
-          "id": 775,
-          "charaId": 1028
-        },
-        {
-          "id": 776,
-          "charaId": 1033
-        },
-        {
-          "id": 777,
-          "charaId": 1034
-        },
-        {
-          "id": 778,
-          "charaId": 1038
-        },
-        {
-          "id": 779,
-          "charaId": 1039
-        },
-        {
-          "id": 782,
-          "charaId": 1044
-        },
-        {
-          "id": 784,
-          "charaId": 1048
-        },
-        {
-          "id": 786,
-          "charaId": 1051
-        },
-        {
-          "id": 787,
-          "charaId": 1053
-        },
-        {
-          "id": 789,
-          "charaId": 1058
-        },
-        {
-          "id": 790,
-          "charaId": 1059
-        },
-        {
           "id": 2329,
           "charaId": 1067
         }
@@ -5940,6 +7442,14 @@
         {
           "id": 1768,
           "charaId": 1069
+        },
+        {
+          "id": 2332,
+          "charaId": 1028
+        },
+        {
+          "id": 2333,
+          "charaId": 1048
         }
       ]
     },
@@ -6030,6 +7540,18 @@
         {
           "id": 3867,
           "charaId": 1047
+        },
+        {
+          "id": 3868,
+          "charaId": 1033
+        },
+        {
+          "id": 3869,
+          "charaId": 1038
+        },
+        {
+          "id": 4485,
+          "charaId": 1058
         }
       ]
     },
@@ -6094,6 +7616,10 @@
           "charaId": 1046
         },
         {
+          "id": 822,
+          "charaId": 1057
+        },
+        {
           "id": 823,
           "charaId": 1060
         },
@@ -6110,6 +7636,10 @@
           "charaId": 1065
         },
         {
+          "id": 2347,
+          "charaId": 1066
+        },
+        {
           "id": 2348,
           "charaId": 1074
         },
@@ -6120,6 +7650,10 @@
         {
           "id": 2762,
           "charaId": 1043
+        },
+        {
+          "id": 4487,
+          "charaId": 1051
         }
       ]
     },
@@ -6174,6 +7708,22 @@
         {
           "id": 2359,
           "charaId": 1078
+        },
+        {
+          "id": 3874,
+          "charaId": 1034
+        },
+        {
+          "id": 3875,
+          "charaId": 1044
+        },
+        {
+          "id": 4488,
+          "charaId": 1053
+        },
+        {
+          "id": 4489,
+          "charaId": 1059
         }
       ]
     },
@@ -6184,6 +7734,964 @@
         {
           "id": 834,
           "charaId": 1050
+        },
+        {
+          "id": 4490,
+          "charaId": 1039
+        }
+      ]
+    },
+    {
+      "relationType": 3301,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4162,
+          "charaId": 1052
+        },
+        {
+          "id": 4163,
+          "charaId": 1060
+        },
+        {
+          "id": 4164,
+          "charaId": 1066
+        },
+        {
+          "id": 4165,
+          "charaId": 1062
+        },
+        {
+          "id": 4167,
+          "charaId": 1071
+        },
+        {
+          "id": 4169,
+          "charaId": 1029
+        }
+      ]
+    },
+    {
+      "relationType": 3401,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4175,
+          "charaId": 1052
+        },
+        {
+          "id": 4176,
+          "charaId": 1007
+        },
+        {
+          "id": 4177,
+          "charaId": 1008
+        },
+        {
+          "id": 4178,
+          "charaId": 1019
+        },
+        {
+          "id": 4179,
+          "charaId": 1030
+        },
+        {
+          "id": 4180,
+          "charaId": 1034
+        },
+        {
+          "id": 4181,
+          "charaId": 1037
+        },
+        {
+          "id": 4182,
+          "charaId": 1044
+        },
+        {
+          "id": 4183,
+          "charaId": 1046
+        },
+        {
+          "id": 4184,
+          "charaId": 1048
+        },
+        {
+          "id": 4185,
+          "charaId": 1053
+        },
+        {
+          "id": 4187,
+          "charaId": 1056
+        },
+        {
+          "id": 4188,
+          "charaId": 1060
+        },
+        {
+          "id": 4189,
+          "charaId": 1062
+        },
+        {
+          "id": 4191,
+          "charaId": 1064
+        },
+        {
+          "id": 4192,
+          "charaId": 1066
+        },
+        {
+          "id": 4194,
+          "charaId": 1074
+        },
+        {
+          "id": 4202,
+          "charaId": 1098
+        },
+        {
+          "id": 4203,
+          "charaId": 1099
+        },
+        {
+          "id": 4204,
+          "charaId": 1100
+        }
+      ]
+    },
+    {
+      "relationType": 3501,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4210,
+          "charaId": 1001
+        },
+        {
+          "id": 4211,
+          "charaId": 1003
+        },
+        {
+          "id": 4212,
+          "charaId": 1007
+        },
+        {
+          "id": 4213,
+          "charaId": 1015
+        },
+        {
+          "id": 4214,
+          "charaId": 1016
+        },
+        {
+          "id": 4215,
+          "charaId": 1017
+        },
+        {
+          "id": 4216,
+          "charaId": 1020
+        },
+        {
+          "id": 4217,
+          "charaId": 1023
+        },
+        {
+          "id": 4218,
+          "charaId": 1026
+        },
+        {
+          "id": 4219,
+          "charaId": 1027
+        },
+        {
+          "id": 4220,
+          "charaId": 1030
+        },
+        {
+          "id": 4221,
+          "charaId": 1031
+        },
+        {
+          "id": 4222,
+          "charaId": 1033
+        },
+        {
+          "id": 4223,
+          "charaId": 1035
+        },
+        {
+          "id": 4224,
+          "charaId": 1036
+        },
+        {
+          "id": 4225,
+          "charaId": 1037
+        },
+        {
+          "id": 4226,
+          "charaId": 1040
+        },
+        {
+          "id": 4227,
+          "charaId": 1047
+        },
+        {
+          "id": 4228,
+          "charaId": 1049
+        },
+        {
+          "id": 4229,
+          "charaId": 1050
+        },
+        {
+          "id": 4230,
+          "charaId": 1056
+        },
+        {
+          "id": 4231,
+          "charaId": 1057
+        },
+        {
+          "id": 4232,
+          "charaId": 1061
+        },
+        {
+          "id": 4233,
+          "charaId": 1062
+        },
+        {
+          "id": 4234,
+          "charaId": 1067
+        },
+        {
+          "id": 4235,
+          "charaId": 1068
+        },
+        {
+          "id": 4236,
+          "charaId": 1069
+        },
+        {
+          "id": 4237,
+          "charaId": 1072
+        },
+        {
+          "id": 4238,
+          "charaId": 1074
+        }
+      ]
+    },
+    {
+      "relationType": 3502,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4250,
+          "charaId": 1008
+        },
+        {
+          "id": 4251,
+          "charaId": 1009
+        },
+        {
+          "id": 4252,
+          "charaId": 1018
+        },
+        {
+          "id": 4253,
+          "charaId": 1029
+        },
+        {
+          "id": 4254,
+          "charaId": 1039
+        },
+        {
+          "id": 4255,
+          "charaId": 1044
+        },
+        {
+          "id": 4256,
+          "charaId": 1051
+        },
+        {
+          "id": 4257,
+          "charaId": 1059
+        }
+      ]
+    },
+    {
+      "relationType": 3503,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4263,
+          "charaId": 1001
+        },
+        {
+          "id": 4264,
+          "charaId": 1003
+        },
+        {
+          "id": 4265,
+          "charaId": 1007
+        },
+        {
+          "id": 4266,
+          "charaId": 1013
+        },
+        {
+          "id": 4267,
+          "charaId": 1015
+        },
+        {
+          "id": 4268,
+          "charaId": 1017
+        },
+        {
+          "id": 4269,
+          "charaId": 1018
+        },
+        {
+          "id": 4270,
+          "charaId": 1021
+        },
+        {
+          "id": 4271,
+          "charaId": 1023
+        },
+        {
+          "id": 4272,
+          "charaId": 1024
+        },
+        {
+          "id": 4273,
+          "charaId": 1027
+        },
+        {
+          "id": 4274,
+          "charaId": 1030
+        },
+        {
+          "id": 4275,
+          "charaId": 1034
+        },
+        {
+          "id": 4276,
+          "charaId": 1036
+        },
+        {
+          "id": 4277,
+          "charaId": 1037
+        },
+        {
+          "id": 4278,
+          "charaId": 1040
+        },
+        {
+          "id": 4279,
+          "charaId": 1045
+        },
+        {
+          "id": 4280,
+          "charaId": 1047
+        },
+        {
+          "id": 4281,
+          "charaId": 1048
+        },
+        {
+          "id": 4282,
+          "charaId": 1050
+        },
+        {
+          "id": 4284,
+          "charaId": 1056
+        },
+        {
+          "id": 4285,
+          "charaId": 1057
+        },
+        {
+          "id": 4286,
+          "charaId": 1058
+        },
+        {
+          "id": 4287,
+          "charaId": 1059
+        },
+        {
+          "id": 4288,
+          "charaId": 1060
+        },
+        {
+          "id": 4289,
+          "charaId": 1062
+        },
+        {
+          "id": 4291,
+          "charaId": 1064
+        },
+        {
+          "id": 4292,
+          "charaId": 1067
+        },
+        {
+          "id": 4293,
+          "charaId": 1068
+        },
+        {
+          "id": 4294,
+          "charaId": 1072
+        },
+        {
+          "id": 4295,
+          "charaId": 1074
+        }
+      ]
+    },
+    {
+      "relationType": 3504,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4304,
+          "charaId": 1001
+        },
+        {
+          "id": 4305,
+          "charaId": 1003
+        },
+        {
+          "id": 4306,
+          "charaId": 1006
+        },
+        {
+          "id": 4307,
+          "charaId": 1007
+        },
+        {
+          "id": 4308,
+          "charaId": 1008
+        },
+        {
+          "id": 4309,
+          "charaId": 1009
+        },
+        {
+          "id": 4310,
+          "charaId": 1012
+        },
+        {
+          "id": 4311,
+          "charaId": 1013
+        },
+        {
+          "id": 4312,
+          "charaId": 1015
+        },
+        {
+          "id": 4313,
+          "charaId": 1016
+        },
+        {
+          "id": 4314,
+          "charaId": 1017
+        },
+        {
+          "id": 4315,
+          "charaId": 1018
+        },
+        {
+          "id": 4316,
+          "charaId": 1019
+        },
+        {
+          "id": 4317,
+          "charaId": 1020
+        },
+        {
+          "id": 4318,
+          "charaId": 1021
+        },
+        {
+          "id": 4319,
+          "charaId": 1023
+        },
+        {
+          "id": 4320,
+          "charaId": 1024
+        },
+        {
+          "id": 4321,
+          "charaId": 1030
+        },
+        {
+          "id": 4322,
+          "charaId": 1034
+        },
+        {
+          "id": 4323,
+          "charaId": 1035
+        },
+        {
+          "id": 4324,
+          "charaId": 1036
+        },
+        {
+          "id": 4325,
+          "charaId": 1037
+        },
+        {
+          "id": 4326,
+          "charaId": 1044
+        },
+        {
+          "id": 4327,
+          "charaId": 1045
+        },
+        {
+          "id": 4328,
+          "charaId": 1047
+        },
+        {
+          "id": 4329,
+          "charaId": 1048
+        },
+        {
+          "id": 4330,
+          "charaId": 1053
+        },
+        {
+          "id": 4332,
+          "charaId": 1057
+        },
+        {
+          "id": 4333,
+          "charaId": 1058
+        },
+        {
+          "id": 4334,
+          "charaId": 1060
+        },
+        {
+          "id": 4335,
+          "charaId": 1061
+        },
+        {
+          "id": 4336,
+          "charaId": 1062
+        },
+        {
+          "id": 4338,
+          "charaId": 1065
+        },
+        {
+          "id": 4339,
+          "charaId": 1066
+        },
+        {
+          "id": 4340,
+          "charaId": 1064
+        },
+        {
+          "id": 4341,
+          "charaId": 1067
+        },
+        {
+          "id": 4342,
+          "charaId": 1068
+        },
+        {
+          "id": 4343,
+          "charaId": 1071
+        },
+        {
+          "id": 4344,
+          "charaId": 1072
+        },
+        {
+          "id": 4345,
+          "charaId": 1074
+        }
+      ]
+    },
+    {
+      "relationType": 3505,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 4360,
+          "charaId": 1006
+        },
+        {
+          "id": 4361,
+          "charaId": 1019
+        },
+        {
+          "id": 4362,
+          "charaId": 1028
+        },
+        {
+          "id": 4363,
+          "charaId": 1029
+        },
+        {
+          "id": 4364,
+          "charaId": 1034
+        },
+        {
+          "id": 4365,
+          "charaId": 1043
+        },
+        {
+          "id": 4366,
+          "charaId": 1046
+        },
+        {
+          "id": 4367,
+          "charaId": 1052
+        },
+        {
+          "id": 4368,
+          "charaId": 1066
+        },
+        {
+          "id": 4373,
+          "charaId": 1098
+        },
+        {
+          "id": 4374,
+          "charaId": 1099
+        },
+        {
+          "id": 4375,
+          "charaId": 1100
+        }
+      ]
+    },
+    {
+      "relationType": 3506,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 4376,
+          "charaId": 1002
+        },
+        {
+          "id": 4377,
+          "charaId": 1007
+        },
+        {
+          "id": 4378,
+          "charaId": 1008
+        },
+        {
+          "id": 4379,
+          "charaId": 1010
+        },
+        {
+          "id": 4380,
+          "charaId": 1014
+        },
+        {
+          "id": 4381,
+          "charaId": 1017
+        },
+        {
+          "id": 4382,
+          "charaId": 1019
+        },
+        {
+          "id": 4383,
+          "charaId": 1025
+        },
+        {
+          "id": 4384,
+          "charaId": 1036
+        },
+        {
+          "id": 4385,
+          "charaId": 1037
+        },
+        {
+          "id": 4386,
+          "charaId": 1038
+        },
+        {
+          "id": 4387,
+          "charaId": 1042
+        },
+        {
+          "id": 4388,
+          "charaId": 1046
+        },
+        {
+          "id": 4389,
+          "charaId": 1047
+        },
+        {
+          "id": 4390,
+          "charaId": 1049
+        },
+        {
+          "id": 4391,
+          "charaId": 1067
+        },
+        {
+          "id": 4401,
+          "charaId": 1099
+        }
+      ]
+    },
+    {
+      "relationType": 3507,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4405,
+          "charaId": 1004
+        },
+        {
+          "id": 4406,
+          "charaId": 1005
+        },
+        {
+          "id": 4407,
+          "charaId": 1008
+        },
+        {
+          "id": 4408,
+          "charaId": 1011
+        },
+        {
+          "id": 4409,
+          "charaId": 1012
+        },
+        {
+          "id": 4410,
+          "charaId": 1016
+        },
+        {
+          "id": 4411,
+          "charaId": 1019
+        },
+        {
+          "id": 4412,
+          "charaId": 1026
+        },
+        {
+          "id": 4413,
+          "charaId": 1031
+        },
+        {
+          "id": 4414,
+          "charaId": 1032
+        },
+        {
+          "id": 4415,
+          "charaId": 1033
+        },
+        {
+          "id": 4416,
+          "charaId": 1040
+        },
+        {
+          "id": 4417,
+          "charaId": 1050
+        },
+        {
+          "id": 4418,
+          "charaId": 1051
+        },
+        {
+          "id": 4419,
+          "charaId": 1059
+        },
+        {
+          "id": 4420,
+          "charaId": 1069
+        },
+        {
+          "id": 4421,
+          "charaId": 1074
+        }
+      ]
+    },
+    {
+      "relationType": 3508,
+      "relationPoint": 2,
+      "member": [
+        {
+          "id": 4423,
+          "charaId": 1010
+        },
+        {
+          "id": 4424,
+          "charaId": 1028
+        },
+        {
+          "id": 4425,
+          "charaId": 1038
+        },
+        {
+          "id": 4426,
+          "charaId": 1041
+        },
+        {
+          "id": 4427,
+          "charaId": 1042
+        },
+        {
+          "id": 4428,
+          "charaId": 1046
+        },
+        {
+          "id": 4429,
+          "charaId": 1051
+        },
+        {
+          "id": 4430,
+          "charaId": 1052
+        },
+        {
+          "id": 4431,
+          "charaId": 1053
+        },
+        {
+          "id": 4433,
+          "charaId": 1061
+        },
+        {
+          "id": 4434,
+          "charaId": 1065
+        },
+        {
+          "id": 4435,
+          "charaId": 1078
+        },
+        {
+          "id": 4437,
+          "charaId": 1087
+        }
+      ]
+    },
+    {
+      "relationType": 3509,
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 4440,
+          "charaId": 1002
+        },
+        {
+          "id": 4441,
+          "charaId": 1004
+        },
+        {
+          "id": 4442,
+          "charaId": 1005
+        },
+        {
+          "id": 4443,
+          "charaId": 1006
+        },
+        {
+          "id": 4444,
+          "charaId": 1008
+        },
+        {
+          "id": 4445,
+          "charaId": 1009
+        },
+        {
+          "id": 4446,
+          "charaId": 1010
+        },
+        {
+          "id": 4447,
+          "charaId": 1011
+        },
+        {
+          "id": 4448,
+          "charaId": 1012
+        },
+        {
+          "id": 4449,
+          "charaId": 1014
+        },
+        {
+          "id": 4450,
+          "charaId": 1016
+        },
+        {
+          "id": 4451,
+          "charaId": 1019
+        },
+        {
+          "id": 4452,
+          "charaId": 1022
+        },
+        {
+          "id": 4453,
+          "charaId": 1042
+        },
+        {
+          "id": 4454,
+          "charaId": 1043
+        },
+        {
+          "id": 4455,
+          "charaId": 1044
+        },
+        {
+          "id": 4456,
+          "charaId": 1046
+        },
+        {
+          "id": 4457,
+          "charaId": 1051
+        },
+        {
+          "id": 4458,
+          "charaId": 1053
+        },
+        {
+          "id": 4460,
+          "charaId": 1057
+        },
+        {
+          "id": 4461,
+          "charaId": 1059
+        },
+        {
+          "id": 4462,
+          "charaId": 1061
+        },
+        {
+          "id": 4463,
+          "charaId": 1062
+        },
+        {
+          "id": 4465,
+          "charaId": 1065
+        },
+        {
+          "id": 4466,
+          "charaId": 1069
+        },
+        {
+          "id": 4468,
+          "charaId": 1078
+        },
+        {
+          "id": 4480,
+          "charaId": 1098
+        },
+        {
+          "id": 4481,
+          "charaId": 1099
+        },
+        {
+          "id": 4482,
+          "charaId": 1100
         }
       ]
     },
@@ -6590,6 +9098,10 @@
         {
           "id": 2531,
           "charaId": 1003
+        },
+        {
+          "id": 2532,
+          "charaId": 1066
         }
       ]
     },
@@ -12136,6 +14648,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1629,
+          "charaId": 1057
+        },
+        {
           "id": 1630,
           "charaId": 1004
         }
@@ -12145,6 +14661,10 @@
       "relationType": 8399,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1631,
+          "charaId": 1057
+        },
         {
           "id": 1632,
           "charaId": 1015
@@ -12156,6 +14676,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1633,
+          "charaId": 1057
+        },
+        {
           "id": 1634,
           "charaId": 1018
         }
@@ -12165,6 +14689,10 @@
       "relationType": 8401,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1635,
+          "charaId": 1057
+        },
         {
           "id": 1636,
           "charaId": 1021
@@ -12176,6 +14704,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1637,
+          "charaId": 1057
+        },
+        {
           "id": 1638,
           "charaId": 1023
         }
@@ -12185,6 +14717,10 @@
       "relationType": 8403,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1639,
+          "charaId": 1057
+        },
         {
           "id": 1640,
           "charaId": 1027
@@ -12196,6 +14732,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1641,
+          "charaId": 1057
+        },
+        {
           "id": 1642,
           "charaId": 1035
         }
@@ -12205,6 +14745,10 @@
       "relationType": 8405,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1643,
+          "charaId": 1057
+        },
         {
           "id": 1644,
           "charaId": 1038
@@ -12216,6 +14760,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1645,
+          "charaId": 1057
+        },
+        {
           "id": 1646,
           "charaId": 1040
         }
@@ -12225,6 +14773,10 @@
       "relationType": 8407,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1647,
+          "charaId": 1057
+        },
         {
           "id": 1648,
           "charaId": 1043
@@ -12236,6 +14788,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1649,
+          "charaId": 1057
+        },
+        {
           "id": 1650,
           "charaId": 1045
         }
@@ -12245,6 +14801,10 @@
       "relationType": 8409,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1651,
+          "charaId": 1057
+        },
         {
           "id": 1652,
           "charaId": 1048
@@ -12256,6 +14816,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1653,
+          "charaId": 1057
+        },
+        {
           "id": 1654,
           "charaId": 1058
         }
@@ -12266,6 +14830,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 1655,
+          "charaId": 1057
+        },
+        {
           "id": 1656,
           "charaId": 1059
         }
@@ -12275,6 +14843,10 @@
       "relationType": 8412,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 1657,
+          "charaId": 1057
+        },
         {
           "id": 1658,
           "charaId": 1060
@@ -12694,6 +15266,10 @@
         {
           "id": 1799,
           "charaId": 1069
+        },
+        {
+          "id": 1800,
+          "charaId": 1057
         }
       ]
     },
@@ -13132,6 +15708,10 @@
         {
           "id": 1871,
           "charaId": 1071
+        },
+        {
+          "id": 1872,
+          "charaId": 1057
         }
       ]
     },
@@ -13572,6 +16152,10 @@
         {
           "id": 1935,
           "charaId": 1072
+        },
+        {
+          "id": 1936,
+          "charaId": 1057
         }
       ]
     },
@@ -13914,6 +16498,10 @@
         {
           "id": 1985,
           "charaId": 1062
+        },
+        {
+          "id": 1986,
+          "charaId": 1057
         }
       ]
     },
@@ -14370,6 +16958,10 @@
         {
           "id": 2059,
           "charaId": 1064
+        },
+        {
+          "id": 2060,
+          "charaId": 1057
         }
       ]
     },
@@ -14422,6 +17014,10 @@
         {
           "id": 2067,
           "charaId": 1065
+        },
+        {
+          "id": 2068,
+          "charaId": 1057
         }
       ]
     },
@@ -14429,6 +17025,10 @@
       "relationType": 8576,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2069,
+          "charaId": 1066
+        },
         {
           "id": 2070,
           "charaId": 1007
@@ -14440,6 +17040,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2071,
+          "charaId": 1066
+        },
+        {
           "id": 2072,
           "charaId": 1009
         }
@@ -14449,6 +17053,10 @@
       "relationType": 8578,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2073,
+          "charaId": 1066
+        },
         {
           "id": 2074,
           "charaId": 1046
@@ -14460,6 +17068,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2075,
+          "charaId": 1066
+        },
+        {
           "id": 2076,
           "charaId": 1049
         }
@@ -14469,6 +17081,10 @@
       "relationType": 8580,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2077,
+          "charaId": 1066
+        },
         {
           "id": 2078,
           "charaId": 1067
@@ -14480,6 +17096,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2079,
+          "charaId": 1066
+        },
+        {
           "id": 2080,
           "charaId": 1068
         }
@@ -14489,6 +17109,10 @@
       "relationType": 8582,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2081,
+          "charaId": 1066
+        },
         {
           "id": 2082,
           "charaId": 1050
@@ -14500,6 +17124,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2083,
+          "charaId": 1066
+        },
+        {
           "id": 2084,
           "charaId": 1003
         }
@@ -14509,6 +17137,10 @@
       "relationType": 8584,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2085,
+          "charaId": 1066
+        },
         {
           "id": 2086,
           "charaId": 1013
@@ -14520,6 +17152,10 @@
       "relationPoint": 1,
       "member": [
         {
+          "id": 2087,
+          "charaId": 1066
+        },
+        {
           "id": 2088,
           "charaId": 1017
         }
@@ -14529,6 +17165,10 @@
       "relationType": 8586,
       "relationPoint": 1,
       "member": [
+        {
+          "id": 2089,
+          "charaId": 1066
+        },
         {
           "id": 2090,
           "charaId": 1051
@@ -15196,6 +17836,10 @@
         {
           "id": 2193,
           "charaId": 1074
+        },
+        {
+          "id": 2194,
+          "charaId": 1057
         }
       ]
     },
@@ -15721,7 +18365,13 @@
     },
     {
       "relationType": 8693,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2845,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 8694,
@@ -16068,6 +18718,10 @@
         {
           "id": 2918,
           "charaId": 1078
+        },
+        {
+          "id": 2919,
+          "charaId": 1066
         }
       ]
     },
@@ -16351,7 +19005,13 @@
     },
     {
       "relationType": 8763,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 2983,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 8764,
@@ -16551,7 +19211,13 @@
     },
     {
       "relationType": 8789,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3031,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 8790,
@@ -17258,6 +19924,10 @@
         {
           "id": 3164,
           "charaId": 1087
+        },
+        {
+          "id": 3165,
+          "charaId": 1057
         }
       ]
     },
@@ -17317,7 +19987,13 @@
     },
     {
       "relationType": 8870,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3177,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 8871,
@@ -17719,7 +20395,13 @@
     },
     {
       "relationType": 8918,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3265,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 8919,
@@ -17979,7 +20661,13 @@
     },
     {
       "relationType": 8950,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3321,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 8951,
@@ -18239,7 +20927,13 @@
     },
     {
       "relationType": 8982,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3377,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 8983,
@@ -18587,7 +21281,13 @@
     },
     {
       "relationType": 9027,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3445,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 9028,
@@ -19398,6 +22098,10 @@
         {
           "id": 3584,
           "charaId": 1098
+        },
+        {
+          "id": 3585,
+          "charaId": 1066
         }
       ]
     },
@@ -19917,7 +22621,13 @@
     },
     {
       "relationType": 9169,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3673,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 9170,
@@ -20171,7 +22881,13 @@
     },
     {
       "relationType": 9201,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3721,
+          "charaId": 1066
+        }
+      ]
     },
     {
       "relationType": 9202,
@@ -20369,7 +23085,13 @@
     },
     {
       "relationType": 9228,
-      "relationPoint": 1
+      "relationPoint": 1,
+      "member": [
+        {
+          "id": 3755,
+          "charaId": 1057
+        }
+      ]
     },
     {
       "relationType": 9229,
@@ -30992,6 +33714,990 @@
       "groundType": "TURF"
     },
     {
+      "id": 930001,
+      "name": "グロウアップレース",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930002,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930003,
+      "name": "グロウアップレース",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930004,
+      "name": "グロウアップレース",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930005,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930006,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930007,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930008,
+      "name": "グロウアップレース",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930009,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930010,
+      "name": "グロウアップレース",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930011,
+      "name": "グロウアップレース",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930012,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930013,
+      "name": "グロウアップレース",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930014,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930015,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930016,
+      "name": "グロウアップレース",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930017,
+      "name": "グロウアップレース",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930018,
+      "name": "グロウアップレース",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930019,
+      "name": "グロウアップレース",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930020,
+      "name": "グロウアップレース",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930021,
+      "name": "グロウアップレース",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930022,
+      "name": "グロウアップレース",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930023,
+      "name": "グロウアップレース",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930024,
+      "name": "グロウアップレース",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930025,
+      "name": "グロウアップレース",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930026,
+      "name": "グロウアップレース",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930027,
+      "name": "グロウアップレース",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930028,
+      "name": "グロウアップレース",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930029,
+      "name": "グロウアップレース",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930030,
+      "name": "グロウアップレース",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930031,
+      "name": "グロウアップレース",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930032,
+      "name": "グロウアップレース",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930033,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930034,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930035,
+      "name": "グロウアップレース",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930036,
+      "name": "グロウアップレース",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930037,
+      "name": "グロウアップレース",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930038,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930039,
+      "name": "グロウアップレース",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930040,
+      "name": "グロウアップレース",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930041,
+      "name": "グロウアップレース",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930042,
+      "name": "WBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930043,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930044,
+      "name": "WBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930045,
+      "name": "WBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930046,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930047,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930048,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930049,
+      "name": "WBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930050,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930051,
+      "name": "WBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930052,
+      "name": "WBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930053,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930054,
+      "name": "WBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930055,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930056,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930057,
+      "name": "WBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930058,
+      "name": "WBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930059,
+      "name": "WBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930060,
+      "name": "WBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930061,
+      "name": "WBC",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930062,
+      "name": "WBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930063,
+      "name": "WBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930064,
+      "name": "WBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930065,
+      "name": "WBC",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930066,
+      "name": "WBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930067,
+      "name": "WBC",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930068,
+      "name": "WBC",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930069,
+      "name": "WBC",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930070,
+      "name": "WBC",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930071,
+      "name": "WBC",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930072,
+      "name": "WBC",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930073,
+      "name": "WBC",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930074,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930075,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930076,
+      "name": "WBC",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930077,
+      "name": "WBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930078,
+      "name": "WBC",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930079,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930080,
+      "name": "WBC",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930081,
+      "name": "WBC",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930082,
+      "name": "WBC",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930083,
+      "name": "SWBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930084,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930085,
+      "name": "SWBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930086,
+      "name": "SWBC",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930087,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930088,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930089,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930090,
+      "name": "SWBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930091,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930092,
+      "name": "SWBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930093,
+      "name": "SWBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930094,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930095,
+      "name": "SWBC",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930096,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930097,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930098,
+      "name": "SWBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930099,
+      "name": "SWBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930100,
+      "name": "SWBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930101,
+      "name": "SWBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930102,
+      "name": "SWBC",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930103,
+      "name": "SWBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930104,
+      "name": "SWBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930105,
+      "name": "SWBC",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930106,
+      "name": "SWBC",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930107,
+      "name": "SWBC",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930108,
+      "name": "SWBC",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930109,
+      "name": "SWBC",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930110,
+      "name": "SWBC",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930111,
+      "name": "SWBC",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930112,
+      "name": "SWBC",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930113,
+      "name": "SWBC",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930114,
+      "name": "SWBC",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930115,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930116,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930117,
+      "name": "SWBC",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930118,
+      "name": "SWBC",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930119,
+      "name": "SWBC",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930120,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930121,
+      "name": "SWBC",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930122,
+      "name": "SWBC",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930123,
+      "name": "SWBC",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930124,
+      "name": "グランドマスターズ",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930125,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930126,
+      "name": "グランドマスターズ",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930127,
+      "name": "グランドマスターズ",
+      "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930128,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930129,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930130,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930131,
+      "name": "グランドマスターズ",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930132,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930133,
+      "name": "グランドマスターズ",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930134,
+      "name": "グランドマスターズ",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930135,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930136,
+      "name": "グランドマスターズ",
+      "distance": 1600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930137,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930138,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930139,
+      "name": "グランドマスターズ",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930140,
+      "name": "グランドマスターズ",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930141,
+      "name": "グランドマスターズ",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930142,
+      "name": "グランドマスターズ",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930143,
+      "name": "グランドマスターズ",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930144,
+      "name": "グランドマスターズ",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930145,
+      "name": "グランドマスターズ",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930146,
+      "name": "グランドマスターズ",
+      "distance": 2200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930147,
+      "name": "グランドマスターズ",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930148,
+      "name": "グランドマスターズ",
+      "distance": 2000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930149,
+      "name": "グランドマスターズ",
+      "distance": 3200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930150,
+      "name": "グランドマスターズ",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930151,
+      "name": "グランドマスターズ",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930152,
+      "name": "グランドマスターズ",
+      "distance": 3600,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930153,
+      "name": "グランドマスターズ",
+      "distance": 2500,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930154,
+      "name": "グランドマスターズ",
+      "distance": 3400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930155,
+      "name": "グランドマスターズ",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 930156,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930157,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930158,
+      "name": "グランドマスターズ",
+      "distance": 1200,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930159,
+      "name": "グランドマスターズ",
+      "distance": 1400,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930160,
+      "name": "グランドマスターズ",
+      "distance": 1600,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930161,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930162,
+      "name": "グランドマスターズ",
+      "distance": 1800,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930163,
+      "name": "グランドマスターズ",
+      "distance": 2100,
+      "groundType": "DIRT"
+    },
+    {
+      "id": 930164,
+      "name": "グランドマスターズ",
+      "distance": 1900,
+      "groundType": "DIRT"
+    },
+    {
       "id": 650001,
       "name": "スカウトレース 短距離",
       "distance": 1200,
@@ -34076,11 +37782,18 @@
       ]
     },
     {
+      "id": 10661,
+      "name": "エンジン点火！",
+      "gradeValue": 240,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100011,
       "name": "シューティングスター",
       "gradeValue": 340,
       "tagId": [
-        "401",
         "403"
       ]
     },
@@ -34278,7 +37991,8 @@
       "name": "アナタヲ・オイカケテ",
       "gradeValue": 340,
       "tagId": [
-        "401"
+        "401",
+        "406"
       ]
     },
     {
@@ -34521,6 +38235,14 @@
       ]
     },
     {
+      "id": 100571,
+      "name": "叙情、旅路の果てに",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 100581,
       "name": "I Never Goof Up!",
       "gradeValue": 340,
@@ -34574,6 +38296,14 @@
     {
       "id": 100651,
       "name": "アゲてアゲてぷちょへんざ！",
+      "gradeValue": 340,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 100661,
+      "name": "エンジン全開！大噴射！",
       "gradeValue": 340,
       "tagId": [
         "401"
@@ -34878,7 +38608,9 @@
       "name": "Drain for rose",
       "gradeValue": 340,
       "tagId": [
-        "402"
+        "401",
+        "402",
+        "406"
       ]
     },
     {
@@ -34979,7 +38711,8 @@
       "name": "Spooky-Scary-Happy",
       "gradeValue": 340,
       "tagId": [
-        "401"
+        "401",
+        "406"
       ]
     },
     {
@@ -35210,6 +38943,7 @@
       "name": "淀の申し子",
       "gradeValue": 461,
       "tagId": [
+        "401",
         "402",
         "405",
         "604"
@@ -35930,6 +39664,7 @@
       "name": "一陣の風",
       "gradeValue": 508,
       "tagId": [
+        "401",
         "403"
       ]
     },
@@ -35946,6 +39681,7 @@
       "name": "好転一息",
       "gradeValue": 508,
       "tagId": [
+        "302",
         "402"
       ]
     },
@@ -35954,6 +39690,7 @@
       "name": "直線回復",
       "gradeValue": 217,
       "tagId": [
+        "302",
         "402"
       ]
     },
@@ -36023,7 +39760,8 @@
       "tagId": [
         "301",
         "302",
-        "402"
+        "402",
+        "403"
       ]
     },
     {
@@ -36033,7 +39771,8 @@
       "tagId": [
         "301",
         "302",
-        "402"
+        "402",
+        "403"
       ]
     },
     {
@@ -36416,6 +40155,7 @@
       "gradeValue": 508,
       "tagId": [
         "201",
+        "303",
         "403"
       ]
     },
@@ -36425,6 +40165,7 @@
       "gradeValue": 217,
       "tagId": [
         "201",
+        "303",
         "403"
       ]
     },
@@ -36591,6 +40332,7 @@
       "gradeValue": 508,
       "tagId": [
         "204",
+        "302",
         "402"
       ]
     },
@@ -36600,6 +40342,7 @@
       "gradeValue": 217,
       "tagId": [
         "204",
+        "302",
         "402"
       ]
     },
@@ -36629,6 +40372,7 @@
       "gradeValue": 508,
       "tagId": [
         "204",
+        "401",
         "402"
       ]
     },
@@ -37041,7 +40785,6 @@
       "gradeValue": 508,
       "tagId": [
         "202",
-        "302",
         "403"
       ]
     },
@@ -37051,7 +40794,6 @@
       "gradeValue": 217,
       "tagId": [
         "202",
-        "302",
         "403"
       ]
     },
@@ -37355,7 +41097,8 @@
       "tagId": [
         "204",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -37365,7 +41108,8 @@
       "tagId": [
         "204",
         "303",
-        "401"
+        "401",
+        "403"
       ]
     },
     {
@@ -37375,6 +41119,7 @@
       "tagId": [
         "204",
         "302",
+        "402",
         "406"
       ]
     },
@@ -37385,6 +41130,7 @@
       "tagId": [
         "204",
         "302",
+        "402",
         "406"
       ]
     },
@@ -37519,7 +41265,7 @@
       "gradeValue": 508,
       "tagId": [
         "101",
-        "302",
+        "303",
         "403"
       ]
     },
@@ -37529,7 +41275,7 @@
       "gradeValue": 217,
       "tagId": [
         "101",
-        "302",
+        "303",
         "403"
       ]
     },
@@ -37662,7 +41408,7 @@
       "tagId": [
         "102",
         "303",
-        "402"
+        "406"
       ]
     },
     {
@@ -37672,7 +41418,7 @@
       "tagId": [
         "102",
         "303",
-        "402"
+        "406"
       ]
     },
     {
@@ -37771,7 +41517,7 @@
       "gradeValue": 508,
       "tagId": [
         "103",
-        "303",
+        "302",
         "402"
       ]
     },
@@ -37781,7 +41527,7 @@
       "gradeValue": 217,
       "tagId": [
         "103",
-        "303",
+        "302",
         "402"
       ]
     },
@@ -38050,6 +41796,8 @@
       "gradeValue": 334,
       "tagId": [
         "401",
+        "402",
+        "403",
         "609"
       ]
     },
@@ -38059,6 +41807,8 @@
       "gradeValue": 174,
       "tagId": [
         "401",
+        "402",
+        "403",
         "609"
       ]
     },
@@ -39343,6 +43093,48 @@
       ]
     },
     {
+      "id": 202521,
+      "name": "天衣無縫",
+      "gradeValue": 508,
+      "tagId": [
+        "203",
+        "204",
+        "403"
+      ]
+    },
+    {
+      "id": 202522,
+      "name": "型破り",
+      "gradeValue": 217,
+      "tagId": [
+        "203",
+        "204",
+        "403"
+      ]
+    },
+    {
+      "id": 202531,
+      "name": "優位形成",
+      "gradeValue": 508,
+      "tagId": [
+        "202",
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 202532,
+      "name": "しとやかな足取り",
+      "gradeValue": 217,
+      "tagId": [
+        "202",
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
       "id": 210011,
       "name": "アオハル燃焼・速",
       "gradeValue": 633,
@@ -39570,6 +43362,66 @@
       ]
     },
     {
+      "id": 210261,
+      "name": "太陽の叡智",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "805"
+      ]
+    },
+    {
+      "id": 210262,
+      "name": "陽の加護",
+      "gradeValue": 263,
+      "tagId": [
+        "302",
+        "401",
+        "805"
+      ]
+    },
+    {
+      "id": 210271,
+      "name": "大海の叡智",
+      "gradeValue": 633,
+      "tagId": [
+        "301",
+        "403",
+        "805"
+      ]
+    },
+    {
+      "id": 210272,
+      "name": "海の加護",
+      "gradeValue": 263,
+      "tagId": [
+        "301",
+        "403",
+        "805"
+      ]
+    },
+    {
+      "id": 210281,
+      "name": "大地の叡智",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401",
+        "805"
+      ]
+    },
+    {
+      "id": 210282,
+      "name": "地の加護",
+      "gradeValue": 263,
+      "tagId": [
+        "303",
+        "401",
+        "805"
+      ]
+    },
+    {
       "id": 300011,
       "name": "癒えない渇き",
       "gradeValue": 0,
@@ -39686,7 +43538,6 @@
       "name": "シューティングスター",
       "gradeValue": 180,
       "tagId": [
-        "401",
         "403"
       ]
     },
@@ -39884,7 +43735,8 @@
       "name": "アナタヲ・オイカケテ",
       "gradeValue": 180,
       "tagId": [
-        "401"
+        "401",
+        "406"
       ]
     },
     {
@@ -40127,6 +43979,14 @@
       ]
     },
     {
+      "id": 900571,
+      "name": "叙情、旅路の果てに",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
       "id": 900581,
       "name": "I Never Goof Up!",
       "gradeValue": 180,
@@ -40180,6 +44040,14 @@
     {
       "id": 900651,
       "name": "アゲてアゲてぷちょへんざ！",
+      "gradeValue": 180,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 900661,
+      "name": "エンジン全開！大噴射！",
       "gradeValue": 180,
       "tagId": [
         "401"
@@ -40483,7 +44351,9 @@
       "name": "Drain for rose",
       "gradeValue": 180,
       "tagId": [
-        "402"
+        "401",
+        "402",
+        "406"
       ]
     },
     {
@@ -40584,7 +44454,8 @@
       "name": "Spooky-Scary-Happy",
       "gradeValue": 180,
       "tagId": [
-        "401"
+        "401",
+        "406"
       ]
     },
     {
@@ -40725,6 +44596,2406 @@
       "tagId": [
         "203",
         "404",
+        "502"
+      ]
+    },
+    {
+      "id": 100101111,
+      "name": "はらぺこ大将",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100101211,
+      "name": "夢叶える末脚",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 100102111,
+      "name": "真夏の思い切り",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 100102211,
+      "name": "真夏の総大将",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 100103111,
+      "name": "怒涛の出陣",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 100103211,
+      "name": "日之本一のド根性",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 100201111,
+      "name": "最大集中",
+      "gradeValue": 461,
+      "tagId": [
+        "301",
+        "403",
+        "407"
+      ]
+    },
+    {
+      "id": 100201211,
+      "name": "異次元の逃亡者",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 100301111,
+      "name": "天才的技巧",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 100301211,
+      "name": "帝王ステップ",
+      "gradeValue": 461,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 100302111,
+      "name": "レースの天才",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100302211,
+      "name": "地平の彼方まで",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100401111,
+      "name": "かっ飛ばすわよ！",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 100401211,
+      "name": "紅蓮のオーバーレブ",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "401"
+      ]
+    },
+    {
+      "id": 100402111,
+      "name": "ドキッ☆じゃじゃウマ娘！",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "402"
+      ]
+    },
+    {
+      "id": 100402211,
+      "name": "お立ち台の支配者",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "301",
+        "401"
+      ]
+    },
+    {
+      "id": 100501111,
+      "name": "輝くトップスタァ",
+      "gradeValue": 394,
+      "tagId": [
+        "202",
+        "401"
+      ]
+    },
+    {
+      "id": 100501211,
+      "name": "エンターテイナー",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100502111,
+      "name": "圧巻のトリック",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 100502211,
+      "name": "煌めきのトップスタァ",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 100601111,
+      "name": "笠松の食いしん坊",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 100601211,
+      "name": "怪物的コーナリング",
+      "gradeValue": 633,
+      "tagId": [
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 100602111,
+      "name": "ドカ食い養生",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 100602211,
+      "name": "クリスマスの奇跡体験",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100701111,
+      "name": "564アイズで視界クッキリ！",
+      "gradeValue": 394,
+      "tagId": [
+        "104",
+        "402",
+        "405"
+      ]
+    },
+    {
+      "id": 100701211,
+      "name": "エクストリーム下校術",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100702111,
+      "name": "神秘体験！ゴルシワープ",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 100702211,
+      "name": "イカ揚げ、いかがですか！？",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 100801111,
+      "name": "スキットルブレイク",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100801211,
+      "name": "抜群の豪脚",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 100802111,
+      "name": "ぶっ差してやるぜ！",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 100802211,
+      "name": "最速のトップギア",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 100901111,
+      "name": "パーフェクトチューン",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100901211,
+      "name": "アタシが勝つんだから！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 100902111,
+      "name": "おてんば女王",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "402"
+      ]
+    },
+    {
+      "id": 100902211,
+      "name": "開かれる夢の扉",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101001111,
+      "name": "狙い撃ちデス！",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 101001211,
+      "name": "Frontier Spirit",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "301",
+        "401"
+      ]
+    },
+    {
+      "id": 101002111,
+      "name": "アドベンチャーの先導者",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "301",
+        "401"
+      ]
+    },
+    {
+      "id": 101002211,
+      "name": "真剣勝負デス！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 101101111,
+      "name": "大和撫子",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101101211,
+      "name": "不退転の意思",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 101102111,
+      "name": "キュアリーヒール",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101102211,
+      "name": "勇気の魔法",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101201111,
+      "name": "勝利への咆哮",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 101201211,
+      "name": "怒濤のポロロッカ",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101301111,
+      "name": "メジロの心得",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 101301211,
+      "name": "名優の余裕",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101302111,
+      "name": "アクティブレスト",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101302211,
+      "name": "空の果てまで",
+      "gradeValue": 633,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 101303111,
+      "name": "夏の名優",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 101303211,
+      "name": "一意専心にリフレッシュ！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "204",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 101401111,
+      "name": "鷹ノ目",
+      "gradeValue": 394,
+      "tagId": [
+        "203",
+        "301",
+        "401",
+        "405"
+      ]
+    },
+    {
+      "id": 101401211,
+      "name": "余裕のパフォーマンス",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101402111,
+      "name": "豪勇無双",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 101402211,
+      "name": "昇りコンドル",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101501111,
+      "name": "降臨！世紀末覇王！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101501211,
+      "name": "歌劇王の行進",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 101502111,
+      "name": "円舞曲のマエストロ",
+      "gradeValue": 633,
+      "tagId": [
+        "402"
+      ]
+    },
+    {
+      "id": 101502211,
+      "name": "ボクは遅れずにやってくる！",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 101601111,
+      "name": "一刀両断",
+      "gradeValue": 633,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 101601211,
+      "name": "餓狼牙",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101602111,
+      "name": "BLAZING WOLF",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "103",
+        "401"
+      ]
+    },
+    {
+      "id": 101602211,
+      "name": "渇望する怪物",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "204",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 101701111,
+      "name": "皇帝の眼差し",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 101701211,
+      "name": "鎧袖一触",
+      "gradeValue": 633,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 101702111,
+      "name": "神色自若",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "402"
+      ]
+    },
+    {
+      "id": 101702211,
+      "name": "風霜高潔",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "403",
+        "603"
+      ]
+    },
+    {
+      "id": 101801111,
+      "name": "女帝の権謀",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 101801211,
+      "name": "水月鏡花",
+      "gradeValue": 394,
+      "tagId": [
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 101802111,
+      "name": "女帝の矜持",
+      "gradeValue": 394,
+      "tagId": [
+        "202",
+        "401"
+      ]
+    },
+    {
+      "id": 101802211,
+      "name": "上弦のソムリエール",
+      "gradeValue": 633,
+      "tagId": [
+        "403"
+      ]
+    },
+    {
+      "id": 101901111,
+      "name": "限界ウママニア",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101901211,
+      "name": "最前列は譲れない！",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "403",
+        "502"
+      ]
+    },
+    {
+      "id": 101902111,
+      "name": "超特急入稿！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 101902211,
+      "name": "尊みを求めてふっかーーつ！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402",
+        "502"
+      ]
+    },
+    {
+      "id": 102001111,
+      "name": "ファストリトリーブ",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102001211,
+      "name": "脱出大作戦",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102002111,
+      "name": "逃げろ～♪",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102002211,
+      "name": "レコードランナー",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "301",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102101111,
+      "name": "雷騰雲奔",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102101211,
+      "name": "尻尾の有頂天",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102102111,
+      "name": "先達に献ぐ祈りの頌",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102102211,
+      "name": "さあ、ウチとやろうや！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102201111,
+      "name": "ロイヤルスター",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102201211,
+      "name": "天空落とし",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "403"
+      ]
+    },
+    {
+      "id": 102202111,
+      "name": "思い出を力に変えて",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102202211,
+      "name": "モリガンの矛戟",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 102301111,
+      "name": "想定通り、余裕十分",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "402"
+      ]
+    },
+    {
+      "id": 102301211,
+      "name": "計画的クールダウン",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 102302111,
+      "name": "VIPな後ろ姿",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "402"
+      ]
+    },
+    {
+      "id": 102302211,
+      "name": "全力サンタクロース",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 102401111,
+      "name": "You copy?",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 102401211,
+      "name": "I copy!",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 102402111,
+      "name": "純白のささやき",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 102402211,
+      "name": "バレルロール",
+      "gradeValue": 633,
+      "tagId": [
+        "402"
+      ]
+    },
+    {
+      "id": 102501111,
+      "name": "コーヒーブレイク",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102501211,
+      "name": "オイテイカナイデ",
+      "gradeValue": 508,
+      "tagId": [
+        "204",
+        "302",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 102601111,
+      "name": "クロックアップ",
+      "gradeValue": 394,
+      "tagId": [
+        "101",
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 102601211,
+      "name": "困難を乗り越える者",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102602111,
+      "name": "完璧なエラー対処術",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102602211,
+      "name": "パーフェクトブート",
+      "gradeValue": 461,
+      "tagId": [
+        "301",
+        "401",
+        "402",
+        "403",
+        "404",
+        "405",
+        "407"
+      ]
+    },
+    {
+      "id": 102701111,
+      "name": "マッスルアンセム",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 102701211,
+      "name": "ライジングバルクアップ",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 102702111,
+      "name": "夢叶える決意を授けましょう",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "403"
+      ]
+    },
+    {
+      "id": 102702211,
+      "name": "至高の勝利を召し上がれ",
+      "gradeValue": 633,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 102801111,
+      "name": "下ごしらえ万全！",
+      "gradeValue": 461,
+      "tagId": [
+        "201",
+        "302",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 102801211,
+      "name": "ボーノな健啖家",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 102901111,
+      "name": "憧れのシチーガール",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 102901211,
+      "name": "雪国仕込みの直滑降",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "403"
+      ]
+    },
+    {
+      "id": 103001111,
+      "name": "決意のヒーロー",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "403"
+      ]
+    },
+    {
+      "id": 103001211,
+      "name": "黒の刺客",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103002111,
+      "name": "がんばるぞー…おー！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103002211,
+      "name": "トリック&トリート",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 103101111,
+      "name": "じゃじゃウマお姉ちゃん",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103101211,
+      "name": "荒ぶる風神",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 103102111,
+      "name": "オーダーはバッチリ！",
+      "gradeValue": 461,
+      "tagId": [
+        "301",
+        "401",
+        "402",
+        "403",
+        "404",
+        "405",
+        "407"
+      ]
+    },
+    {
+      "id": 103102211,
+      "name": "華麗なサーブ",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 103201111,
+      "name": "可能性の徒",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 103201211,
+      "name": "効率的休息法",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103301111,
+      "name": "静かな誓い",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103301211,
+      "name": "己身焦がすほうき星",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 103401111,
+      "name": "火消の梯子登り",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 103401211,
+      "name": "熟練の砂塵使い",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402",
+        "502"
+      ]
+    },
+    {
+      "id": 103402111,
+      "name": "扇ノ舞",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 103402211,
+      "name": "大見得切り",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 103501111,
+      "name": "たゆまぬ努力",
+      "gradeValue": 394,
+      "tagId": [
+        "103",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 103501211,
+      "name": "ウイニングロード",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103502111,
+      "name": "千万バリキ！！！",
+      "gradeValue": 394,
+      "tagId": [
+        "103",
+        "401"
+      ]
+    },
+    {
+      "id": 103502211,
+      "name": "きっと飛べる！",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 103601111,
+      "name": "アップリフティング",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 103601211,
+      "name": "Lose Myself",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 103701111,
+      "name": "閃光のマギア",
+      "gradeValue": 394,
+      "tagId": [
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 103701211,
+      "name": "誇りを懸けて",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 103702111,
+      "name": "勝利のレシピ",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 103702211,
+      "name": "黒い閃光",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "401"
+      ]
+    },
+    {
+      "id": 103801111,
+      "name": "#カワイイかく乱♪",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "303",
+        "403",
+        "406"
+      ]
+    },
+    {
+      "id": 103801211,
+      "name": "#夢中になっちゃえ♪",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "301",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 103802111,
+      "name": "#カレンに染まってみる？",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "301",
+        "401",
+        "406"
+      ]
+    },
+    {
+      "id": 103802211,
+      "name": "#ビューティースプリント",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 103901111,
+      "name": "ノンストッププリンセス",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 103901211,
+      "name": "暴れ龍",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 104001111,
+      "name": "先見の明",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "301",
+        "401",
+        "402",
+        "406"
+      ]
+    },
+    {
+      "id": 104001211,
+      "name": "ランウェイの主役",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 104002111,
+      "name": "鮮やかな布陣",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "301",
+        "402",
+        "406"
+      ]
+    },
+    {
+      "id": 104002211,
+      "name": "虎視眈々",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 104101111,
+      "name": "バクシン的スプリント！",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 104101211,
+      "name": "バクシン的リード！",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 104201111,
+      "name": "世界を貫く至高の輝き",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "202",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 104201211,
+      "name": "パール流ダンスバトル",
+      "gradeValue": 394,
+      "tagId": [
+        "201",
+        "202",
+        "401"
+      ]
+    },
+    {
+      "id": 104301111,
+      "name": "全速前進なのだ！",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "401",
+        "502"
+      ]
+    },
+    {
+      "id": 104301211,
+      "name": "いたずらマイスター",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "403",
+        "502",
+        "601",
+        "610"
+      ]
+    },
+    {
+      "id": 104401111,
+      "name": "放課後魔法少女",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 104401211,
+      "name": "チャームマジック",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "403",
+        "406"
+      ]
+    },
+    {
+      "id": 104501111,
+      "name": "あま～い幻惑",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 104501211,
+      "name": "癒しのマエストロ",
+      "gradeValue": 633,
+      "tagId": [
+        "402"
+      ]
+    },
+    {
+      "id": 104502111,
+      "name": "お世話のプロフェッショナル",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 104502211,
+      "name": "魅惑のマミーウィスパー",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "302",
+        "402",
+        "406"
+      ]
+    },
+    {
+      "id": 104601111,
+      "name": "大注目のウマドル参上★",
+      "gradeValue": 394,
+      "tagId": [
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 104601211,
+      "name": "ウマドルパワー急上昇↑↑",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402",
+        "502"
+      ]
+    },
+    {
+      "id": 104602111,
+      "name": "夢に向かって急上昇！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402",
+        "502"
+      ]
+    },
+    {
+      "id": 104602211,
+      "name": "絶対的センター！",
+      "gradeValue": 633,
+      "tagId": [
+        "303",
+        "403",
+        "502"
+      ]
+    },
+    {
+      "id": 104701111,
+      "name": "英雄への道標",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 104701211,
+      "name": "光輝く剣",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "204",
+        "401"
+      ]
+    },
+    {
+      "id": 104801111,
+      "name": "ノってこ！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "103",
+        "303",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 104801211,
+      "name": "トレンドプランナー",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "103",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 104901111,
+      "name": "乾坤一擲の大博打",
+      "gradeValue": 394,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 104901211,
+      "name": "鉄火のギャンブラー",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "403",
+        "404",
+        "611"
+      ]
+    },
+    {
+      "id": 105001111,
+      "name": "鬼気森然",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 105001211,
+      "name": "駆り立てる想い",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 105002111,
+      "name": "見せつけてやる！",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "302",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105002211,
+      "name": "起死回生の出力",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 105101111,
+      "name": "風花疾走",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 105101211,
+      "name": "大輪の決意",
+      "gradeValue": 394,
+      "tagId": [
+        "102",
+        "403"
+      ]
+    },
+    {
+      "id": 105201111,
+      "name": "まだまだだよ！",
+      "gradeValue": 633,
+      "tagId": [
+        "301",
+        "302",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 105201211,
+      "name": "まけないからね！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 105202111,
+      "name": "見てて見てて！",
+      "gradeValue": 394,
+      "tagId": [
+        "301",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105202211,
+      "name": "がんばるもん！",
+      "gradeValue": 394,
+      "tagId": [
+        "103",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105301111,
+      "name": "風紀の登龍門",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105301211,
+      "name": "押忍ッ！気合十分ッス！",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105601111,
+      "name": "吉兆です！",
+      "gradeValue": 394,
+      "tagId": [
+        "204",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 105601211,
+      "name": "七福即生",
+      "gradeValue": 394,
+      "tagId": [
+        "401",
+        "402",
+        "403",
+        "609"
+      ]
+    },
+    {
+      "id": 105602111,
+      "name": "怒涛の超幸運パワー！",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105602211,
+      "name": "ばっちり開運体験！",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 105701111,
+      "name": "天翔る足取り",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "204",
+        "403"
+      ]
+    },
+    {
+      "id": 105701211,
+      "name": "弾む大地",
+      "gradeValue": 633,
+      "tagId": [
+        "104",
+        "303",
+        "403",
+        "405"
+      ]
+    },
+    {
+      "id": 105801111,
+      "name": "怒涛のスピード",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 105801211,
+      "name": "諦めない、ですぅ～！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 105802111,
+      "name": "ライバルがいるから！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 105802211,
+      "name": "魂の導き手",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 105901111,
+      "name": "クールな視線",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "403",
+        "406"
+      ]
+    },
+    {
+      "id": 105901211,
+      "name": "淀の女王",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "402",
+        "405",
+        "604"
+      ]
+    },
+    {
+      "id": 105902111,
+      "name": "もっと冒険してみたい！",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 105902211,
+      "name": "起死回生の一歩",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 106001111,
+      "name": "魅惑のシニカルガール",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 106001211,
+      "name": "目指せ！主人公！",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 106002111,
+      "name": "頑張るしかないよね",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 106002211,
+      "name": "ノンストップエール",
+      "gradeValue": 461,
+      "tagId": [
+        "303",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 106101111,
+      "name": "電撃の撫で切り",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 106101211,
+      "name": "王の大局観",
+      "gradeValue": 394,
+      "tagId": [
+        "103",
+        "302",
+        "401",
+        "405"
+      ]
+    },
+    {
+      "id": 106102111,
+      "name": "竜の雲を得る如し",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 106102211,
+      "name": "春風吹きて、桜舞う",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "403",
+        "603"
+      ]
+    },
+    {
+      "id": 106201111,
+      "name": "ゴーイングマイウェイ",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 106201211,
+      "name": "えい！えい！むん！",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "303",
+        "401",
+        "402",
+        "403"
+      ]
+    },
+    {
+      "id": 106401111,
+      "name": "パないっしょ？",
+      "gradeValue": 633,
+      "tagId": [
+        "401"
+      ]
+    },
+    {
+      "id": 106401211,
+      "name": "神逃げの心得",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 106501111,
+      "name": "マジ爆上げっしょ！",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 106501211,
+      "name": "とりまやったれ～！",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 106601111,
+      "name": "出力1000万%！！",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 106601211,
+      "name": "ターボについてこーい！",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 106701111,
+      "name": "金剛不壊",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 106701211,
+      "name": "右回りの輪舞曲",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "403",
+        "608"
+      ]
+    },
+    {
+      "id": 106702111,
+      "name": "無我の境地",
+      "gradeValue": 633,
+      "tagId": [
+        "103",
+        "204",
+        "303",
+        "403"
+      ]
+    },
+    {
+      "id": 106702211,
+      "name": "明けぬ夜はない！",
+      "gradeValue": 508,
+      "tagId": [
+        "204",
+        "302",
+        "401",
+        "402",
+        "406"
+      ]
+    },
+    {
+      "id": 106801111,
+      "name": "祭りだワッショイ！",
+      "gradeValue": 394,
+      "tagId": [
+        "101",
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 106801211,
+      "name": "爆風一閃！",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "401"
+      ]
+    },
+    {
+      "id": 106802111,
+      "name": "未来へ飛び立ちましょう！",
+      "gradeValue": 633,
+      "tagId": [
+        "101",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 106802211,
+      "name": "必勝の前口上！",
+      "gradeValue": 394,
+      "tagId": [
+        "101",
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 106901111,
+      "name": "お花見当たり年！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 106901211,
+      "name": "けふ九重に満開です",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "403",
+        "603"
+      ]
+    },
+    {
+      "id": 107101111,
+      "name": "永遠の輝き",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 107101211,
+      "name": "刹那への覚悟",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401"
+      ]
+    },
+    {
+      "id": 107201111,
+      "name": "昂る焔",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 107201211,
+      "name": "八重の向こう意気",
+      "gradeValue": 633,
+      "tagId": [
+        "203",
+        "303",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 107401111,
+      "name": "不屈のお嬢様",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 107401211,
+      "name": "動かざること羊蹄山の若し",
+      "gradeValue": 633,
+      "tagId": [
+        "204",
+        "302",
+        "402"
+      ]
+    },
+    {
+      "id": 107801111,
+      "name": "ウインドシアー",
+      "gradeValue": 633,
+      "tagId": [
+        "202",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 107801211,
+      "name": "神渡し",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "302",
+        "401"
+      ]
+    },
+    {
+      "id": 108701111,
+      "name": "必勝のピッチアップ",
+      "gradeValue": 394,
+      "tagId": [
+        "101",
+        "301",
+        "403"
+      ]
+    },
+    {
+      "id": 108701211,
+      "name": "記憶に刻む足取り",
+      "gradeValue": 633,
+      "tagId": [
+        "201",
+        "302",
+        "401",
+        "403"
+      ]
+    },
+    {
+      "id": 109801111,
+      "name": "コパッと開運！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "502"
+      ]
+    },
+    {
+      "id": 109801211,
+      "name": "龍脈の波濤",
+      "gradeValue": 508,
+      "tagId": [
+        "401",
+        "502",
+        "610",
+        "614"
+      ]
+    },
+    {
+      "id": 109901111,
+      "name": "苫小牧グルメで舌鼓！",
+      "gradeValue": 633,
+      "tagId": [
+        "102",
+        "301",
+        "401",
+        "402"
+      ]
+    },
+    {
+      "id": 109901211,
+      "name": "観光大使の面目躍如！",
+      "gradeValue": 633,
+      "tagId": [
+        "302",
+        "401",
+        "502"
+      ]
+    },
+    {
+      "id": 110001111,
+      "name": "闘魂注入",
+      "gradeValue": 394,
+      "tagId": [
+        "202",
+        "401"
+      ]
+    },
+    {
+      "id": 110001211,
+      "name": "女神の砂浴び",
+      "gradeValue": 633,
+      "tagId": [
+        "401",
         "502"
       ]
     }
@@ -41129,6 +47400,10 @@
       "name": "[吉兆・初あらし]"
     },
     {
+      "id": 105701,
+      "name": "[Clear Bliss]"
+    },
+    {
       "id": 105801,
       "name": "[ブルー/レイジング]"
     },
@@ -41171,6 +47446,10 @@
     {
       "id": 106501,
       "name": "[Fun☆Fun☆ぱりない]"
+    },
+    {
+      "id": 106601,
+      "name": "[爆走！ターボエンジン]"
     },
     {
       "id": 106701,
@@ -43085,6 +49364,298 @@
     {
       "id": 400004601,
       "name": "夢の先へ"
+    },
+    {
+      "id": 400005000,
+      "name": "チュートリアル"
+    },
+    {
+      "id": 400005001,
+      "name": "壮大な歴史よりいづるもの"
+    },
+    {
+      "id": 400005002,
+      "name": "三女神のいる世界"
+    },
+    {
+      "id": 400005003,
+      "name": "それぞれのスタート"
+    },
+    {
+      "id": 400005004,
+      "name": "強き心・バイアリーターク"
+    },
+    {
+      "id": 400005005,
+      "name": "愛深き心・ゴドルフィンバルブ"
+    },
+    {
+      "id": 400005006,
+      "name": "自由なる心・ダーレーアラビアン"
+    },
+    {
+      "id": 400005007,
+      "name": "グロウアップレース開催！"
+    },
+    {
+      "id": 400005008,
+      "name": "グロウアップレースの後に・勝利"
+    },
+    {
+      "id": 400005009,
+      "name": "グロウアップレースの後に・敗北"
+    },
+    {
+      "id": 400005010,
+      "name": "三女神の福音"
+    },
+    {
+      "id": 400005011,
+      "name": "それぞれの輝き"
+    },
+    {
+      "id": 400005012,
+      "name": "激励ッ！夏合宿の差し入れ"
+    },
+    {
+      "id": 400005013,
+      "name": "夏の実り"
+    },
+    {
+      "id": 400005014,
+      "name": "WBCへの招待状"
+    },
+    {
+      "id": 400005015,
+      "name": "WBCにむけて"
+    },
+    {
+      "id": 400005016,
+      "name": "WBCの後に・勝利"
+    },
+    {
+      "id": 400005017,
+      "name": "WBCの後に・敗北"
+    },
+    {
+      "id": 400005018,
+      "name": "知識が示す確率"
+    },
+    {
+      "id": 400005019,
+      "name": "変わりやすい天気"
+    },
+    {
+      "id": 400005020,
+      "name": "ウマ娘を見守るもの"
+    },
+    {
+      "id": 400005021,
+      "name": "信じる者"
+    },
+    {
+      "id": 400005022,
+      "name": "SWBCへの招待状"
+    },
+    {
+      "id": 400005023,
+      "name": "SWBCにむけて"
+    },
+    {
+      "id": 400005024,
+      "name": "SWBCの後に・勝利"
+    },
+    {
+      "id": 400005025,
+      "name": "SWBCの後に・敗北"
+    },
+    {
+      "id": 400005026,
+      "name": "開催！グランドマスターズ"
+    },
+    {
+      "id": 400005027,
+      "name": "決戦！グランドマスターズ"
+    },
+    {
+      "id": 400005028,
+      "name": "グランドマスターズ・勝利"
+    },
+    {
+      "id": 400005029,
+      "name": "これからを駆ける者たちへ"
+    },
+    {
+      "id": 400005030,
+      "name": "ウマ娘とトレーナーの蹄跡"
+    },
+    {
+      "id": 400005100,
+      "name": "トレーニングLvアップ"
+    },
+    {
+      "id": 400005101,
+      "name": "太陽から注ぐ知識"
+    },
+    {
+      "id": 400005102,
+      "name": "知識の海に抱かれて"
+    },
+    {
+      "id": 400005103,
+      "name": "大地に刻むほどの知識"
+    },
+    {
+      "id": 400005104,
+      "name": "積み重ねられた知識の結晶"
+    },
+    {
+      "id": 400005105,
+      "name": "今を駆ける者たちの祖"
+    },
+    {
+      "id": 400005106,
+      "name": "成長のヒント"
+    },
+    {
+      "id": 400005300,
+      "name": "今を走るウマ娘たちの日常"
+    },
+    {
+      "id": 400005301,
+      "name": "継がれゆくもの～皇帝の心得～"
+    },
+    {
+      "id": 400005302,
+      "name": "継がれゆくもの～憧れの中にあるもの～"
+    },
+    {
+      "id": 400005303,
+      "name": "継がれゆくもの～見せ続けた末に～"
+    },
+    {
+      "id": 400005400,
+      "name": "壮大な歴史よりいづるもの"
+    },
+    {
+      "id": 400005401,
+      "name": "三女神のいる世界"
+    },
+    {
+      "id": 400005402,
+      "name": "それぞれのスタート"
+    },
+    {
+      "id": 400005403,
+      "name": "強き心・バイアリーターク"
+    },
+    {
+      "id": 400005404,
+      "name": "愛深き心・ゴドルフィンバルブ"
+    },
+    {
+      "id": 400005405,
+      "name": "自由なる心・ダーレーアラビアン"
+    },
+    {
+      "id": 400005406,
+      "name": "グロウアップレース開催！"
+    },
+    {
+      "id": 400005407,
+      "name": "グロウアップレースの後に・勝利"
+    },
+    {
+      "id": 400005408,
+      "name": "グロウアップレースの後に・敗北"
+    },
+    {
+      "id": 400005409,
+      "name": "三女神の福音"
+    },
+    {
+      "id": 400005410,
+      "name": "それぞれの輝き"
+    },
+    {
+      "id": 400005411,
+      "name": "夏の実り"
+    },
+    {
+      "id": 400005412,
+      "name": "WBCへの招待状"
+    },
+    {
+      "id": 400005413,
+      "name": "WBCにむけて"
+    },
+    {
+      "id": 400005414,
+      "name": "WBCの後に・勝利"
+    },
+    {
+      "id": 400005415,
+      "name": "WBCの後に・敗北"
+    },
+    {
+      "id": 400005416,
+      "name": "知識が示す確率"
+    },
+    {
+      "id": 400005417,
+      "name": "変わりやすい天気"
+    },
+    {
+      "id": 400005418,
+      "name": "ウマ娘を見守るもの"
+    },
+    {
+      "id": 400005419,
+      "name": "信じる者"
+    },
+    {
+      "id": 400005420,
+      "name": "SWBCへの招待状"
+    },
+    {
+      "id": 400005421,
+      "name": "SWBCにむけて"
+    },
+    {
+      "id": 400005422,
+      "name": "SWBCの後に・勝利"
+    },
+    {
+      "id": 400005423,
+      "name": "SWBCの後に・敗北"
+    },
+    {
+      "id": 400005424,
+      "name": "開催！グランドマスターズ"
+    },
+    {
+      "id": 400005425,
+      "name": "決戦！グランドマスターズ"
+    },
+    {
+      "id": 400005426,
+      "name": "グランドマスターズ・勝利"
+    },
+    {
+      "id": 400005427,
+      "name": "これからを駆ける者たちへ"
+    },
+    {
+      "id": 400005428,
+      "name": "ウマ娘とトレーナーの蹄跡"
+    },
+    {
+      "id": 400005429,
+      "name": "積み重ねられた知識の結晶"
+    },
+    {
+      "id": 400005430,
+      "name": "今を駆ける者たちの祖"
     },
     {
       "id": 501001100,
@@ -71343,6 +77914,578 @@
       "name": "グランドライブ、スタート！"
     },
     {
+      "id": 501057100,
+      "name": "ミスターシービー登場！"
+    },
+    {
+      "id": 501057101,
+      "name": "新年の抱負"
+    },
+    {
+      "id": 501057102,
+      "name": "初詣"
+    },
+    {
+      "id": 501057103,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501057104,
+      "name": "夏合宿（2年目）にて"
+    },
+    {
+      "id": 501057105,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501057107,
+      "name": "バレンタイン"
+    },
+    {
+      "id": 501057108,
+      "name": "ファン感謝祭"
+    },
+    {
+      "id": 501057109,
+      "name": "クリスマス"
+    },
+    {
+      "id": 501057110,
+      "name": "エンディング（ノーマル）"
+    },
+    {
+      "id": 501057111,
+      "name": "歩んできた道は"
+    },
+    {
+      "id": 501057112,
+      "name": "温泉旅行"
+    },
+    {
+      "id": 501057113,
+      "name": "アタシの好きな世界"
+    },
+    {
+      "id": 501057114,
+      "name": "約束"
+    },
+    {
+      "id": 501057115,
+      "name": "新しい時代"
+    },
+    {
+      "id": 501057116,
+      "name": "最後の一滴"
+    },
+    {
+      "id": 501057117,
+      "name": "キミたちの夢"
+    },
+    {
+      "id": 501057118,
+      "name": "期待を超えて"
+    },
+    {
+      "id": 501057200,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501057201,
+      "name": "共同通信杯にむけて"
+    },
+    {
+      "id": 501057202,
+      "name": "皐月賞にむけて"
+    },
+    {
+      "id": 501057203,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501057204,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501057205,
+      "name": "菊花賞にむけて"
+    },
+    {
+      "id": 501057206,
+      "name": "宝塚記念にむけて"
+    },
+    {
+      "id": 501057207,
+      "name": "天皇賞（秋）にむけて"
+    },
+    {
+      "id": 501057208,
+      "name": "ジャパンCにむけて"
+    },
+    {
+      "id": 501057209,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501057300,
+      "name": "夏合宿（2年目）終了"
+    },
+    {
+      "id": 501057301,
+      "name": "夏合宿（3年目）終了"
+    },
+    {
+      "id": 501057302,
+      "name": "福引チャンス！"
+    },
+    {
+      "id": 501057303,
+      "name": "デビュー戦の後に・幕開け"
+    },
+    {
+      "id": 501057304,
+      "name": "共同通信杯の後に・『あたしと戦え』"
+    },
+    {
+      "id": 501057305,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057306,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057307,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057308,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057309,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057310,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057311,
+      "name": "菊花賞の後に・三冠ウマ娘"
+    },
+    {
+      "id": 501057312,
+      "name": "菊花賞の後に・次の夢へと"
+    },
+    {
+      "id": 501057313,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057314,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057315,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057316,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057317,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057318,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057319,
+      "name": "ジャパンCの後に・日本初の覇者は"
+    },
+    {
+      "id": 501057320,
+      "name": "ジャパンCの後に・日本初の覇者は"
+    },
+    {
+      "id": 501057321,
+      "name": "ジャパンCの後に・次の大舞台へ"
+    },
+    {
+      "id": 501057322,
+      "name": "有馬記念の後に・誰より自由に"
+    },
+    {
+      "id": 501057400,
+      "name": "ミスターシービー登場！"
+    },
+    {
+      "id": 501057401,
+      "name": "アタシの好きな世界"
+    },
+    {
+      "id": 501057402,
+      "name": "約束"
+    },
+    {
+      "id": 501057403,
+      "name": "新しい時代"
+    },
+    {
+      "id": 501057404,
+      "name": "最後の一滴"
+    },
+    {
+      "id": 501057405,
+      "name": "キミたちの夢"
+    },
+    {
+      "id": 501057406,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501057407,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501057408,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501057409,
+      "name": "共同通信杯にむけて"
+    },
+    {
+      "id": 501057410,
+      "name": "皐月賞にむけて"
+    },
+    {
+      "id": 501057411,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501057412,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501057413,
+      "name": "菊花賞にむけて"
+    },
+    {
+      "id": 501057414,
+      "name": "宝塚記念にむけて"
+    },
+    {
+      "id": 501057415,
+      "name": "天皇賞（秋）にむけて"
+    },
+    {
+      "id": 501057416,
+      "name": "ジャパンCにむけて"
+    },
+    {
+      "id": 501057417,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501057418,
+      "name": "デビュー戦の後に・幕開け"
+    },
+    {
+      "id": 501057419,
+      "name": "共同通信杯の後に・『あたしと戦え』"
+    },
+    {
+      "id": 501057420,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057421,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057422,
+      "name": "皐月賞の後に・土砂降りの熱"
+    },
+    {
+      "id": 501057423,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057424,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057425,
+      "name": "日本ダービーの後に・彼女こそが"
+    },
+    {
+      "id": 501057426,
+      "name": "菊花賞の後に・三冠ウマ娘"
+    },
+    {
+      "id": 501057427,
+      "name": "菊花賞の後に・次の夢へと"
+    },
+    {
+      "id": 501057428,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057429,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057430,
+      "name": "宝塚記念の後に・覚醒"
+    },
+    {
+      "id": 501057431,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057432,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057433,
+      "name": "天皇賞（秋）の後に・噂話"
+    },
+    {
+      "id": 501057434,
+      "name": "ジャパンCの後に・日本初の覇者は"
+    },
+    {
+      "id": 501057435,
+      "name": "ジャパンCの後に・日本初の覇者は"
+    },
+    {
+      "id": 501057436,
+      "name": "ジャパンCの後に・日本初の覇者は"
+    },
+    {
+      "id": 501057437,
+      "name": "有馬記念の後に・誰より自由に"
+    },
+    {
+      "id": 501057500,
+      "name": "名指導"
+    },
+    {
+      "id": 501057506,
+      "name": "ダンスレッスン"
+    },
+    {
+      "id": 501057507,
+      "name": "ファンレター"
+    },
+    {
+      "id": 501057508,
+      "name": "レース疲れ"
+    },
+    {
+      "id": 501057509,
+      "name": "連続出走で……"
+    },
+    {
+      "id": 501057510,
+      "name": "朝ラーを求めて"
+    },
+    {
+      "id": 501057511,
+      "name": "波長の合う2人"
+    },
+    {
+      "id": 501057513,
+      "name": "勝負服と走る、ということ"
+    },
+    {
+      "id": 501057514,
+      "name": "『幸運のシンガー』を追って"
+    },
+    {
+      "id": 501057515,
+      "name": "ブッシュクラフトをキミと"
+    },
+    {
+      "id": 501057516,
+      "name": "山のような恩返し"
+    },
+    {
+      "id": 501057517,
+      "name": "思わぬ不自由"
+    },
+    {
+      "id": 501057518,
+      "name": "目当ての品が……"
+    },
+    {
+      "id": 501057519,
+      "name": "通してくれ……"
+    },
+    {
+      "id": 501057520,
+      "name": "シービーがいっぱい"
+    },
+    {
+      "id": 501057521,
+      "name": "夜ふかし気味で……"
+    },
+    {
+      "id": 501057522,
+      "name": "お肌の調子が……"
+    },
+    {
+      "id": 501057523,
+      "name": "おんぶにだっこトレーニング！"
+    },
+    {
+      "id": 501057524,
+      "name": "小さな恋の物語"
+    },
+    {
+      "id": 501057525,
+      "name": "世界の涯てまで連いてきて"
+    },
+    {
+      "id": 501057600,
+      "name": "武者震い"
+    },
+    {
+      "id": 501057601,
+      "name": "今度こそ！"
+    },
+    {
+      "id": 501057700,
+      "name": "寝不足で……"
+    },
+    {
+      "id": 501057701,
+      "name": "休息はバッチリ！"
+    },
+    {
+      "id": 501057702,
+      "name": "『贈り物』に必要なこと"
+    },
+    {
+      "id": 501057703,
+      "name": "『自由』に必要なこと"
+    },
+    {
+      "id": 501057704,
+      "name": "『幸せ』に必要なこと"
+    },
+    {
+      "id": 501057705,
+      "name": "その戦いは伝説と呼ばれ"
+    },
+    {
+      "id": 501057706,
+      "name": "料理は如何なるものであるべきか"
+    },
+    {
+      "id": 501057707,
+      "name": "神社でお祈り！"
+    },
+    {
+      "id": 501057708,
+      "name": "レース勝利！"
+    },
+    {
+      "id": 501057709,
+      "name": "レース入着"
+    },
+    {
+      "id": 501057710,
+      "name": "レース敗北"
+    },
+    {
+      "id": 501057711,
+      "name": "今度こそ負けない！"
+    },
+    {
+      "id": 501057712,
+      "name": "不在の理由は……"
+    },
+    {
+      "id": 501057713,
+      "name": "お大事に！"
+    },
+    {
+      "id": 501057714,
+      "name": "無茶は厳禁！"
+    },
+    {
+      "id": 501057715,
+      "name": "追加の自主トレ"
+    },
+    {
+      "id": 501057716,
+      "name": "ダイエット成功！"
+    },
+    {
+      "id": 501057717,
+      "name": "保健室にて"
+    },
+    {
+      "id": 501057718,
+      "name": "リフレッシュ完了"
+    },
+    {
+      "id": 501057719,
+      "name": "喜ぶ顔が見たいから"
+    },
+    {
+      "id": 501057720,
+      "name": "あんし～ん笹針師、参☆上"
+    },
+    {
+      "id": 501057722,
+      "name": "頭痛で憂鬱"
+    },
+    {
+      "id": 501057726,
+      "name": "クレーンゲームに挑戦！"
+    },
+    {
+      "id": 501057727,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501057728,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501057729,
+      "name": "クレーンゲーム失敗……"
+    },
+    {
+      "id": 501057730,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501057731,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501057732,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501057733,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501057900,
+      "name": "自己紹介"
+    },
+    {
+      "id": 501057901,
+      "name": "グランドライブ、スタート！"
+    },
+    {
       "id": 501058100,
       "name": "メイショウドトウ登場！"
     },
@@ -75168,6 +82311,566 @@
     },
     {
       "id": 501065901,
+      "name": "グランドライブ、スタート！"
+    },
+    {
+      "id": 501066100,
+      "name": "ツインターボ登場！"
+    },
+    {
+      "id": 501066101,
+      "name": "新年の抱負"
+    },
+    {
+      "id": 501066102,
+      "name": "初詣"
+    },
+    {
+      "id": 501066103,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501066104,
+      "name": "夏合宿（2年目）にて"
+    },
+    {
+      "id": 501066105,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501066107,
+      "name": "バレンタイン"
+    },
+    {
+      "id": 501066108,
+      "name": "ファン感謝祭"
+    },
+    {
+      "id": 501066109,
+      "name": "クリスマス"
+    },
+    {
+      "id": 501066110,
+      "name": "エンディング（ノーマル）"
+    },
+    {
+      "id": 501066111,
+      "name": "○○のツインターボ"
+    },
+    {
+      "id": 501066112,
+      "name": "温泉旅行"
+    },
+    {
+      "id": 501066113,
+      "name": "『ゲート嫌い』をやっつけろ！"
+    },
+    {
+      "id": 501066114,
+      "name": "ライバルには負けないぞっ"
+    },
+    {
+      "id": 501066115,
+      "name": "ぶっこわせ！逃げの壁"
+    },
+    {
+      "id": 501066116,
+      "name": "信じてるぞ、テイオー！"
+    },
+    {
+      "id": 501066117,
+      "name": "『オールカマー』だいさくせん！"
+    },
+    {
+      "id": 501066118,
+      "name": "福島の星だぞっ☆"
+    },
+    {
+      "id": 501066200,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501066201,
+      "name": "皐月賞にむけて"
+    },
+    {
+      "id": 501066202,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501066203,
+      "name": "ラジオNIKKEI賞にむけて"
+    },
+    {
+      "id": 501066204,
+      "name": "セントライト記念にむけて"
+    },
+    {
+      "id": 501066205,
+      "name": "菊花賞にむけて"
+    },
+    {
+      "id": 501066206,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501066207,
+      "name": "七夕賞にむけて"
+    },
+    {
+      "id": 501066208,
+      "name": "オールカマーにむけて"
+    },
+    {
+      "id": 501066209,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501066300,
+      "name": "夏合宿（2年目）終了"
+    },
+    {
+      "id": 501066301,
+      "name": "夏合宿（3年目）終了"
+    },
+    {
+      "id": 501066302,
+      "name": "福引チャンス！"
+    },
+    {
+      "id": 501066303,
+      "name": "デビュー戦の後に・臆病をぶっとばせ"
+    },
+    {
+      "id": 501066304,
+      "name": "目標達成の後に・東と西にお別れだぞ"
+    },
+    {
+      "id": 501066305,
+      "name": "皐月賞の後に・よかったなテイオー！"
+    },
+    {
+      "id": 501066306,
+      "name": "皐月賞の後に・火の玉バク勝！！！"
+    },
+    {
+      "id": 501066307,
+      "name": "皐月賞の後に・ごちゃごちゃな展開"
+    },
+    {
+      "id": 501066308,
+      "name": "日本ダービーの後に・王者のつまずき"
+    },
+    {
+      "id": 501066309,
+      "name": "日本ダービーの後に・今年もみらくる！"
+    },
+    {
+      "id": 501066310,
+      "name": "日本ダービーの後に・だめだめ同士"
+    },
+    {
+      "id": 501066311,
+      "name": "ダービーウマ娘のピンチ"
+    },
+    {
+      "id": 501066312,
+      "name": "ラジオNIKKEI賞の後に・ひと呼吸！"
+    },
+    {
+      "id": 501066313,
+      "name": "セントライト記念の後に・獅子より速く"
+    },
+    {
+      "id": 501066314,
+      "name": "菊花賞の後に・ドラマすら燃やして"
+    },
+    {
+      "id": 501066315,
+      "name": "有馬記念の後に・ビックリな一発芸"
+    },
+    {
+      "id": 501066316,
+      "name": "これはびっくり、新ライバル？"
+    },
+    {
+      "id": 501066317,
+      "name": "目標達成の後に・遠ざかるあこがれ"
+    },
+    {
+      "id": 501066318,
+      "name": "七夕賞の後に・吠えろターボエンジン！"
+    },
+    {
+      "id": 501066319,
+      "name": "オールカマーの後に・奇跡のうら側"
+    },
+    {
+      "id": 501066320,
+      "name": "有馬記念の後に・もうひとつの奇跡"
+    },
+    {
+      "id": 501066321,
+      "name": "有馬記念の後に・さいこーの名脇役"
+    },
+    {
+      "id": 501066400,
+      "name": "ツインターボ登場！"
+    },
+    {
+      "id": 501066401,
+      "name": "『ゲート嫌い』をやっつけろ！"
+    },
+    {
+      "id": 501066402,
+      "name": "ライバルには負けないぞっ"
+    },
+    {
+      "id": 501066403,
+      "name": "ぶっこわせ！逃げの壁"
+    },
+    {
+      "id": 501066404,
+      "name": "信じてるぞ、テイオー！"
+    },
+    {
+      "id": 501066405,
+      "name": "『オールカマー』だいさくせん！"
+    },
+    {
+      "id": 501066406,
+      "name": "夏合宿（2年目）スタート！"
+    },
+    {
+      "id": 501066407,
+      "name": "夏合宿（3年目）スタート！"
+    },
+    {
+      "id": 501066408,
+      "name": "デビュー戦にむけて"
+    },
+    {
+      "id": 501066409,
+      "name": "皐月賞にむけて"
+    },
+    {
+      "id": 501066410,
+      "name": "日本ダービーにむけて"
+    },
+    {
+      "id": 501066411,
+      "name": "ラジオNIKKEI賞にむけて"
+    },
+    {
+      "id": 501066412,
+      "name": "セントライト記念にむけて"
+    },
+    {
+      "id": 501066413,
+      "name": "菊花賞にむけて"
+    },
+    {
+      "id": 501066414,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501066415,
+      "name": "七夕賞にむけて"
+    },
+    {
+      "id": 501066416,
+      "name": "オールカマーにむけて"
+    },
+    {
+      "id": 501066417,
+      "name": "有馬記念にむけて"
+    },
+    {
+      "id": 501066418,
+      "name": "デビュー戦の後に・臆病をぶっとばせ"
+    },
+    {
+      "id": 501066419,
+      "name": "目標達成の後に・東と西にお別れだぞ"
+    },
+    {
+      "id": 501066420,
+      "name": "皐月賞の後に・よかったなテイオー！"
+    },
+    {
+      "id": 501066421,
+      "name": "皐月賞の後に・火の玉バク勝！！！"
+    },
+    {
+      "id": 501066422,
+      "name": "皐月賞の後に・ごちゃごちゃな展開"
+    },
+    {
+      "id": 501066423,
+      "name": "日本ダービーの後に・王者のつまずき"
+    },
+    {
+      "id": 501066424,
+      "name": "日本ダービーの後に・今年もみらくる！"
+    },
+    {
+      "id": 501066425,
+      "name": "日本ダービーの後に・だめだめ同士"
+    },
+    {
+      "id": 501066426,
+      "name": "ダービーウマ娘のピンチ"
+    },
+    {
+      "id": 501066427,
+      "name": "ラジオNIKKEI賞の後に・ひと呼吸！"
+    },
+    {
+      "id": 501066428,
+      "name": "セントライト記念の後に・獅子より速く"
+    },
+    {
+      "id": 501066429,
+      "name": "菊花賞の後に・ドラマすら燃やして"
+    },
+    {
+      "id": 501066430,
+      "name": "有馬記念の後に・ビックリな一発芸"
+    },
+    {
+      "id": 501066431,
+      "name": "これはびっくり、新ライバル？"
+    },
+    {
+      "id": 501066432,
+      "name": "目標達成の後に・遠ざかるあこがれ"
+    },
+    {
+      "id": 501066433,
+      "name": "七夕賞の後に・吠えろターボエンジン！"
+    },
+    {
+      "id": 501066434,
+      "name": "オールカマーの後に・奇跡のうら側"
+    },
+    {
+      "id": 501066435,
+      "name": "有馬記念の後に・もうひとつの奇跡"
+    },
+    {
+      "id": 501066436,
+      "name": "有馬記念の後に・さいこーの名脇役"
+    },
+    {
+      "id": 501066500,
+      "name": "名指導"
+    },
+    {
+      "id": 501066506,
+      "name": "ダンスレッスン"
+    },
+    {
+      "id": 501066507,
+      "name": "ファンレター"
+    },
+    {
+      "id": 501066508,
+      "name": "レース疲れ"
+    },
+    {
+      "id": 501066509,
+      "name": "連続出走で……"
+    },
+    {
+      "id": 501066510,
+      "name": "『楽しい』が1番！！"
+    },
+    {
+      "id": 501066511,
+      "name": "主人公はターボ！！"
+    },
+    {
+      "id": 501066513,
+      "name": "最終兵器トリプルターボ！"
+    },
+    {
+      "id": 501066514,
+      "name": "いつでもどこでも全力！"
+    },
+    {
+      "id": 501066515,
+      "name": "絶対、あきらめない！"
+    },
+    {
+      "id": 501066516,
+      "name": "ターボだって大食いできるもん！"
+    },
+    {
+      "id": 501066517,
+      "name": "勢いバッシャーンッ！！"
+    },
+    {
+      "id": 501066518,
+      "name": "お説教はきらい！"
+    },
+    {
+      "id": 501066519,
+      "name": "カチカチコチン"
+    },
+    {
+      "id": 501066520,
+      "name": "先頭を狙え！にんじんハンバーグ！"
+    },
+    {
+      "id": 501066521,
+      "name": "夜ふかし気味で……"
+    },
+    {
+      "id": 501066522,
+      "name": "お肌の調子が……"
+    },
+    {
+      "id": 501066523,
+      "name": "ムーンウォークの日！"
+    },
+    {
+      "id": 501066524,
+      "name": "ターボエンジン限界突破！！"
+    },
+    {
+      "id": 501066600,
+      "name": "武者震い"
+    },
+    {
+      "id": 501066601,
+      "name": "今度こそ！"
+    },
+    {
+      "id": 501066700,
+      "name": "寝不足で……"
+    },
+    {
+      "id": 501066701,
+      "name": "休息はバッチリ！"
+    },
+    {
+      "id": 501066702,
+      "name": "お題『夕焼け』"
+    },
+    {
+      "id": 501066703,
+      "name": "お題『花』"
+    },
+    {
+      "id": 501066704,
+      "name": "お題『海』"
+    },
+    {
+      "id": 501066705,
+      "name": "ねむねむダダっ子"
+    },
+    {
+      "id": 501066706,
+      "name": "逃げ組ライブ開催☆"
+    },
+    {
+      "id": 501066707,
+      "name": "神社でお祈り！"
+    },
+    {
+      "id": 501066708,
+      "name": "レース勝利！"
+    },
+    {
+      "id": 501066709,
+      "name": "レース入着"
+    },
+    {
+      "id": 501066710,
+      "name": "レース敗北"
+    },
+    {
+      "id": 501066711,
+      "name": "今度こそ負けない！"
+    },
+    {
+      "id": 501066712,
+      "name": "不在の理由は……"
+    },
+    {
+      "id": 501066713,
+      "name": "お大事に！"
+    },
+    {
+      "id": 501066714,
+      "name": "無茶は厳禁！"
+    },
+    {
+      "id": 501066715,
+      "name": "追加の自主トレ"
+    },
+    {
+      "id": 501066716,
+      "name": "ダイエット成功！"
+    },
+    {
+      "id": 501066717,
+      "name": "保健室にて"
+    },
+    {
+      "id": 501066718,
+      "name": "リフレッシュ完了"
+    },
+    {
+      "id": 501066719,
+      "name": "お絵描きターボ"
+    },
+    {
+      "id": 501066720,
+      "name": "あんし～ん笹針師、参☆上"
+    },
+    {
+      "id": 501066722,
+      "name": "頭痛で憂鬱"
+    },
+    {
+      "id": 501066726,
+      "name": "クレーンゲームに挑戦！"
+    },
+    {
+      "id": 501066727,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501066728,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501066729,
+      "name": "クレーンゲーム失敗……"
+    },
+    {
+      "id": 501066730,
+      "name": "クレーンゲーム大成功！"
+    },
+    {
+      "id": 501066731,
+      "name": "クレーンゲーム成功！"
+    },
+    {
+      "id": 501066732,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501066733,
+      "name": "想いの継承"
+    },
+    {
+      "id": 501066900,
+      "name": "自己紹介"
+    },
+    {
+      "id": 501066901,
       "name": "グランドライブ、スタート！"
     },
     {
@@ -81743,6 +89446,14 @@
       "name": "華麗なる旋律"
     },
     {
+      "id": 801086001,
+      "name": "一瞥にて"
+    },
+    {
+      "id": 801086002,
+      "name": "傅いて"
+    },
+    {
       "id": 801087001,
       "name": "いつもそばから見つめてる"
     },
@@ -81757,6 +89468,22 @@
     {
       "id": 801093002,
       "name": "ぬれてもへいき"
+    },
+    {
+      "id": 801094001,
+      "name": "“闘叫”（トーキョー）の鬼"
+    },
+    {
+      "id": 801094002,
+      "name": "“魔術”（マジック）みてぇに"
+    },
+    {
+      "id": 801104001,
+      "name": "エースVSスピーチ！"
+    },
+    {
+      "id": 801104002,
+      "name": "エースVSクレーマー！"
     },
     {
       "id": 809001001,
@@ -82405,6 +90132,38 @@
     {
       "id": 820055002,
       "name": "あがくのです、新天地まで"
+    },
+    {
+      "id": 820056001,
+      "name": "“幻”（ゴースト）と“踊”（はし）れ"
+    },
+    {
+      "id": 820056002,
+      "name": "“追いつ追われつ”（チェイス）は上等"
+    },
+    {
+      "id": 820057001,
+      "name": "頼れる先輩"
+    },
+    {
+      "id": 820057002,
+      "name": "ドーベルといっしょ"
+    },
+    {
+      "id": 820058001,
+      "name": "流行りを極めし者たち"
+    },
+    {
+      "id": 820058002,
+      "name": "“皇帝”の小さなお友だち"
+    },
+    {
+      "id": 820059001,
+      "name": "考察・科学者はお世話を望むのか"
+    },
+    {
+      "id": 820059002,
+      "name": "結論・タキオン、甘味を語る"
     },
     {
       "id": 830001001,
@@ -83999,6 +91758,42 @@
       "name": "あなたのそばに、ボノ食堂"
     },
     {
+      "id": 830134001,
+      "name": "灰簾石の瞳"
+    },
+    {
+      "id": 830134002,
+      "name": "水晶越しに覗く"
+    },
+    {
+      "id": 830134003,
+      "name": "金剛石を履き潰して"
+    },
+    {
+      "id": 830135001,
+      "name": "By the People"
+    },
+    {
+      "id": 830135002,
+      "name": "No Way Home"
+    },
+    {
+      "id": 830135003,
+      "name": "Through Telepathy"
+    },
+    {
+      "id": 830136001,
+      "name": "トレセン学園の奇妙な日常"
+    },
+    {
+      "id": 830136002,
+      "name": "トレセン学園の非日常"
+    },
+    {
+      "id": 830136003,
+      "name": "ようこそトレセン学園へ"
+    },
+    {
       "id": 830145001,
       "name": "偉大なる芸術家の如く……"
     },
@@ -84460,6 +92255,21 @@
       "charaId": 1087
     },
     {
+      "id": 10088,
+      "name": "[トレセン学園]メジロラモーヌ",
+      "charaId": 1086
+    },
+    {
+      "id": 10089,
+      "name": "[トレセン学園]ジャングルポケット",
+      "charaId": 1094
+    },
+    {
+      "id": 10091,
+      "name": "[トレセン学園]カツラギエース",
+      "charaId": 1104
+    },
+    {
       "id": 20001,
       "name": "[やれやれ、お帰り]フジキセキ",
       "charaId": 1005
@@ -84728,6 +92538,26 @@
       "id": 20055,
       "name": "[添付ファイル、温めますか？]アストンマーチャン",
       "charaId": 1087
+    },
+    {
+      "id": 20056,
+      "name": "[デッド・エンド【通せん坊】]ジャングルポケット",
+      "charaId": 1094
+    },
+    {
+      "id": 20057,
+      "name": "[ふわり、さらり]メジロドーベル",
+      "charaId": 1059
+    },
+    {
+      "id": 20058,
+      "name": "[放課後、君が笑った]シンボリルドルフ",
+      "charaId": 1017
+    },
+    {
+      "id": 20059,
+      "name": "[嗚呼素晴らしき甘味哉]アグネスタキオン",
+      "charaId": 1032
     },
     {
       "id": 30001,
@@ -85368,6 +93198,21 @@
       "id": 30133,
       "name": "[フォンデンテで笑って]ヒシアケボノ",
       "charaId": 1028
+    },
+    {
+      "id": 30134,
+      "name": "[燦爛]メジロラモーヌ",
+      "charaId": 1086
+    },
+    {
+      "id": 30135,
+      "name": "[掲げよ、燃え盛る灯を]カツラギエース",
+      "charaId": 1104
+    },
+    {
+      "id": 30136,
+      "name": "[Unyielding resolve]シンボリクリスエス",
+      "charaId": 1083
     },
     {
       "id": 30145,
