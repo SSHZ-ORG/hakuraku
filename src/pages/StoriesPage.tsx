@@ -1,7 +1,7 @@
 import React from "react";
 import BootstrapTable, {ColumnDescription} from "react-bootstrap-table-next";
 import filterFactory, {textFilter} from "react-bootstrap-table2-filter";
-import UMDatabaseUtils, {Story} from "../data/UMDatabaseUtils";
+import {charaNameWithIdAndCast, Story, supportCardNameWithId} from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 
@@ -21,8 +21,8 @@ const columns: ColumnDescription<Story>[] = [
         isDummyField: true,
         text: 'Chara / Card',
         formatter: (cell, row) =>
-            row.chara ? UMDatabaseUtils.charaNameWithIdAndCast(row.chara) :
-                row.supportCard ? UMDatabaseUtils.supportCardNameWithId(row.supportCard) :
+            row.chara ? charaNameWithIdAndCast(row.chara) :
+                row.supportCard ? supportCardNameWithId(row.supportCard) :
                     '',
     },
 ];

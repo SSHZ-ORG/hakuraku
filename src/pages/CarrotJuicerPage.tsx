@@ -7,7 +7,7 @@ import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import FilesSelector from "../components/FilesSelector";
 import RaceDataPresenter from "../components/RaceDataPresenter";
 import {deserializeFromBase64} from "../data/RaceDataParser";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 function teamRaceHeader(race: any): string {

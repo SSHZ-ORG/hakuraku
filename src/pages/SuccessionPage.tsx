@@ -5,7 +5,7 @@ import CharaSelector from "../components/CharaSelector";
 import SuccessionRelationChip from "../components/SuccessionRelationChip";
 import WinSaddleRelationBonusCalculator from "../components/WinSaddleRelationBonusCalculator";
 import {Chara} from "../data/data_pb";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 
 type SelectedCharasState = {
     selectedChara: Chara | undefined,

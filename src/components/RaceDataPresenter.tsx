@@ -20,7 +20,7 @@ import {
     getCharaActivatedSkillIds,
 } from "../data/RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import CardNamePresenter from "./CardNamePresenter";
 import CharaProperLabels from "./CharaProperLabels";

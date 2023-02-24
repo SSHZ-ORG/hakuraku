@@ -3,7 +3,7 @@ import _ from "lodash";
 import {deserializeFromBase64} from "./RaceDataParser";
 import {getCharaActivatedSkillIds} from "./RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
-import UMDatabaseUtils from "./UMDatabaseUtils";
+import * as UMDatabaseUtils from "./UMDatabaseUtils";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 export type TeamRaceGroupData = {

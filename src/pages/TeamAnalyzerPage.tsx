@@ -10,7 +10,7 @@ import FilesSelector from "../components/FilesSelector";
 import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {CharaRaceData, parse, TeamRaceGroupData} from "../data/TeamRaceParser";
 import {TrainedCharaData} from "../data/TrainedCharaData";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type TeamAnalyzerPageState = {

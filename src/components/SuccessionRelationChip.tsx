@@ -1,7 +1,7 @@
 import React from "react";
 import {Badge, OverlayTrigger, Popover} from "react-bootstrap";
 import {SuccessionRelation} from "../data/data_pb";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type SuccessionRelationChipProps = {

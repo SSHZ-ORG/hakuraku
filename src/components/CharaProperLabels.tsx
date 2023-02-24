@@ -2,7 +2,7 @@ import _ from "lodash";
 import React, {PureComponent} from "react";
 import {Table} from "react-bootstrap";
 import {TrainedCharaData} from "../data/TrainedCharaData";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 
 type CharaProperLabelsProps = {
     chara: TrainedCharaData,

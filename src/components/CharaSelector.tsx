@@ -4,7 +4,7 @@ import React from 'react';
 import {Form} from 'react-bootstrap';
 import {Typeahead} from "react-bootstrap-typeahead";
 import {Chara} from "../data/data_pb";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type CharaSelectorProps = {

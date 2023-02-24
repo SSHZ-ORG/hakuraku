@@ -5,7 +5,7 @@ import {Typeahead} from "react-bootstrap-typeahead";
 import FoldCard from "../components/FoldCard";
 import SuccessionRelationChip from "../components/SuccessionRelationChip";
 import {Chara, SuccessionRelation} from "../data/data_pb";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 const GROUP_TYPE_TAGS: Record<string, string> = {

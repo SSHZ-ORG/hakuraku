@@ -3,7 +3,7 @@ import React from "react";
 import {Badge, Button, Form, Modal} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import {RaceInstance, SpecialCaseRace_RacePermission, WinsSaddle, WinsSaddle_WinSaddleType} from "../data/data_pb";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import FoldCard from "./FoldCard";
 

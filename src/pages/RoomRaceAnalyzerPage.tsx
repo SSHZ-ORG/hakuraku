@@ -9,7 +9,7 @@ import FilesSelector from "../components/FilesSelector";
 import {Chara, RaceInstance_GroundType} from "../data/data_pb";
 import {parse, RoomRaceCharaData, RoomRaceData} from "../data/RoomRaceParser";
 import {TrainedCharaData} from "../data/TrainedCharaData";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 
 type RoomRaceAnalyzerPageState = {
