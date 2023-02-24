@@ -648,7 +648,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}
             <hr/>
-            <JsonViewer value={this.props.raceData} defaultInspectDepth={1}/>
+            <JsonViewer value={this.props.raceData.toJson()} defaultInspectDepth={1}/>
         </div>;
     }
 }
