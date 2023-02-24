@@ -90,7 +90,7 @@ def populate_race_instance(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
 
 def populate_wins_saddle(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
     instance_id_columns = ', '.join(['s.race_instance_id_%d' % i for i in range(1, 9)])
-    cursor.execute('''SELECT s.id, t.text, s.priority, s.group_id, %s
+    cursor.execute('''SELECT s.id, t.text, s.priority, s.group_id, s.win_saddle_type, %s
                       FROM single_mode_wins_saddle AS s
                       JOIN text_data AS t
                       ON t.category=111 AND s.id = t."index";''' % instance_id_columns)
@@ -101,7 +101,8 @@ def populate_wins_saddle(pb: data_pb2.UMDatabase, cursor: sqlite3.Cursor):
         w.name = row[1]
         w.priority = row[2]
         w.group_id = row[3]
-        w.race_instance_id.extend([i for i in row[4:] if i > 0])
+        w.type = row[4]
+        w.race_instance_id.extend([i for i in row[5:] if i > 0])
         pb.wins_saddle.append(w)
 
 

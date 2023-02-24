@@ -68,6 +68,13 @@ message WinsSaddle {
     repeated int32 race_instance_id = 3;
     optional int32 priority = 4;
     optional int32 group_id = 5;
+    enum WinSaddleType {
+        SPECIAL = 0;
+        G3 = 1;
+        G2 = 2;
+        G1 = 3;
+    }
+    optional WinSaddleType type = 6;
 }
 
 message SpecialCaseRace {

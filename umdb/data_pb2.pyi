@@ -143,15 +143,23 @@ class UMDatabase(_message.Message):
     def __init__(self, version: _Optional[str] = ..., chara: _Optional[_Iterable[_Union[Chara, _Mapping]]] = ..., card: _Optional[_Iterable[_Union[Card, _Mapping]]] = ..., support_card: _Optional[_Iterable[_Union[SupportCard, _Mapping]]] = ..., succession_relation: _Optional[_Iterable[_Union[SuccessionRelation, _Mapping]]] = ..., race_instance: _Optional[_Iterable[_Union[RaceInstance, _Mapping]]] = ..., wins_saddle: _Optional[_Iterable[_Union[WinsSaddle, _Mapping]]] = ..., special_case_race: _Optional[_Iterable[_Union[SpecialCaseRace, _Mapping]]] = ..., skill: _Optional[_Iterable[_Union[Skill, _Mapping]]] = ..., team_stadium_score_bonus: _Optional[_Iterable[_Union[TeamStadiumScoreBonus, _Mapping]]] = ..., story: _Optional[_Iterable[_Union[Story, _Mapping]]] = ...) -> None: ...
 
 class WinsSaddle(_message.Message):
-    __slots__ = ["group_id", "id", "name", "priority", "race_instance_id"]
+    __slots__ = ["group_id", "id", "name", "priority", "race_instance_id", "type"]
+    class WinSaddleType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+        __slots__ = []
+    G1: WinsSaddle.WinSaddleType
+    G2: WinsSaddle.WinSaddleType
+    G3: WinsSaddle.WinSaddleType
     GROUP_ID_FIELD_NUMBER: _ClassVar[int]
     ID_FIELD_NUMBER: _ClassVar[int]
     NAME_FIELD_NUMBER: _ClassVar[int]
     PRIORITY_FIELD_NUMBER: _ClassVar[int]
     RACE_INSTANCE_ID_FIELD_NUMBER: _ClassVar[int]
+    SPECIAL: WinsSaddle.WinSaddleType
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     group_id: int
     id: int
     name: str
     priority: int
     race_instance_id: _containers.RepeatedScalarFieldContainer[int]
-    def __init__(self, id: _Optional[int] = ..., name: _Optional[str] = ..., race_instance_id: _Optional[_Iterable[int]] = ..., priority: _Optional[int] = ..., group_id: _Optional[int] = ...) -> None: ...
+    type: WinsSaddle.WinSaddleType
+    def __init__(self, id: _Optional[int] = ..., name: _Optional[str] = ..., race_instance_id: _Optional[_Iterable[int]] = ..., priority: _Optional[int] = ..., group_id: _Optional[int] = ..., type: _Optional[_Union[WinsSaddle.WinSaddleType, str]] = ...) -> None: ...

@@ -35206,7 +35206,8 @@
         101501
       ],
       "priority": 1,
-      "groupId": 1
+      "groupId": 1,
+      "type": "SPECIAL"
     },
     {
       "id": 2,
@@ -35217,7 +35218,8 @@
         102301
       ],
       "priority": 3,
-      "groupId": 3
+      "groupId": 3,
+      "type": "SPECIAL"
     },
     {
       "id": 3,
@@ -35228,7 +35230,8 @@
         101401
       ],
       "priority": 4,
-      "groupId": 4
+      "groupId": 4,
+      "type": "SPECIAL"
     },
     {
       "id": 4,
@@ -35239,7 +35242,8 @@
         101201
       ],
       "priority": 5,
-      "groupId": 5
+      "groupId": 5,
+      "type": "SPECIAL"
     },
     {
       "id": 5,
@@ -35249,7 +35253,8 @@
         101601
       ],
       "priority": 7,
-      "groupId": 7
+      "groupId": 7,
+      "type": "SPECIAL"
     },
     {
       "id": 6,
@@ -35259,7 +35264,8 @@
         102301
       ],
       "priority": 8,
-      "groupId": 8
+      "groupId": 8,
+      "type": "SPECIAL"
     },
     {
       "id": 7,
@@ -35269,7 +35275,8 @@
         101801
       ],
       "priority": 10,
-      "groupId": 10
+      "groupId": 10,
+      "type": "SPECIAL"
     },
     {
       "id": 8,
@@ -35279,7 +35286,8 @@
         100201
       ],
       "priority": 11,
-      "groupId": 11
+      "groupId": 11,
+      "type": "SPECIAL"
     },
     {
       "id": 9,
@@ -35289,7 +35297,8 @@
         102001
       ],
       "priority": 12,
-      "groupId": 12
+      "groupId": 12,
+      "type": "SPECIAL"
     },
     {
       "id": 10,
@@ -35298,7 +35307,8 @@
         102301
       ],
       "priority": 101,
-      "groupId": 37
+      "groupId": 37,
+      "type": "G1"
     },
     {
       "id": 11,
@@ -35307,7 +35317,8 @@
         101901
       ],
       "priority": 102,
-      "groupId": 33
+      "groupId": 33,
+      "type": "G1"
     },
     {
       "id": 12,
@@ -35316,7 +35327,8 @@
         101001
       ],
       "priority": 103,
-      "groupId": 22
+      "groupId": 22,
+      "type": "G1"
     },
     {
       "id": 13,
@@ -35325,7 +35337,8 @@
         100601
       ],
       "priority": 104,
-      "groupId": 18
+      "groupId": 18,
+      "type": "G1"
     },
     {
       "id": 14,
@@ -35334,7 +35347,8 @@
         101201
       ],
       "priority": 105,
-      "groupId": 24
+      "groupId": 24,
+      "type": "G1"
     },
     {
       "id": 15,
@@ -35343,7 +35357,8 @@
         101601
       ],
       "priority": 106,
-      "groupId": 30
+      "groupId": 30,
+      "type": "G1"
     },
     {
       "id": 16,
@@ -35352,7 +35367,8 @@
         101501
       ],
       "priority": 107,
-      "groupId": 28
+      "groupId": 28,
+      "type": "G1"
     },
     {
       "id": 17,
@@ -35361,7 +35377,8 @@
         100301
       ],
       "priority": 108,
-      "groupId": 15
+      "groupId": 15,
+      "type": "G1"
     },
     {
       "id": 18,
@@ -35370,7 +35387,8 @@
         100501
       ],
       "priority": 109,
-      "groupId": 17
+      "groupId": 17,
+      "type": "G1"
     },
     {
       "id": 19,
@@ -35379,7 +35397,8 @@
         100901
       ],
       "priority": 110,
-      "groupId": 21
+      "groupId": 21,
+      "type": "G1"
     },
     {
       "id": 20,
@@ -35388,7 +35407,8 @@
         100201
       ],
       "priority": 111,
-      "groupId": 14
+      "groupId": 14,
+      "type": "G1"
     },
     {
       "id": 21,
@@ -35397,7 +35417,8 @@
         101101
       ],
       "priority": 112,
-      "groupId": 23
+      "groupId": 23,
+      "type": "G1"
     },
     {
       "id": 22,
@@ -35406,7 +35427,8 @@
         101301
       ],
       "priority": 113,
-      "groupId": 26
+      "groupId": 26,
+      "type": "G1"
     },
     {
       "id": 23,
@@ -35415,7 +35437,8 @@
         101801
       ],
       "priority": 114,
-      "groupId": 32
+      "groupId": 32,
+      "type": "G1"
     },
     {
       "id": 24,
@@ -35424,7 +35447,8 @@
         100401
       ],
       "priority": 115,
-      "groupId": 16
+      "groupId": 16,
+      "type": "G1"
     },
     {
       "id": 25,
@@ -35433,7 +35457,8 @@
         100801
       ],
       "priority": 116,
-      "groupId": 20
+      "groupId": 20,
+      "type": "G1"
     },
     {
       "id": 26,
@@ -35442,7 +35467,8 @@
         101701
       ],
       "priority": 117,
-      "groupId": 31
+      "groupId": 31,
+      "type": "G1"
     },
     {
       "id": 27,
@@ -35451,7 +35477,8 @@
         100701
       ],
       "priority": 118,
-      "groupId": 19
+      "groupId": 19,
+      "type": "G1"
     },
     {
       "id": 28,
@@ -35460,7 +35487,8 @@
         101401
       ],
       "priority": 119,
-      "groupId": 27
+      "groupId": 27,
+      "type": "G1"
     },
     {
       "id": 29,
@@ -35469,7 +35497,8 @@
         102001
       ],
       "priority": 120,
-      "groupId": 34
+      "groupId": 34,
+      "type": "G1"
     },
     {
       "id": 30,
@@ -35478,7 +35507,8 @@
         100101
       ],
       "priority": 121,
-      "groupId": 13
+      "groupId": 13,
+      "type": "G1"
     },
     {
       "id": 31,
@@ -35487,7 +35517,8 @@
         110501
       ],
       "priority": 122,
-      "groupId": 43
+      "groupId": 43,
+      "type": "G1"
     },
     {
       "id": 32,
@@ -35496,7 +35527,8 @@
         110601
       ],
       "priority": 123,
-      "groupId": 44
+      "groupId": 44,
+      "type": "G1"
     },
     {
       "id": 33,
@@ -35505,7 +35537,8 @@
         102201
       ],
       "priority": 124,
-      "groupId": 36
+      "groupId": 36,
+      "type": "G1"
     },
     {
       "id": 34,
@@ -35514,7 +35547,8 @@
         102401
       ],
       "priority": 125,
-      "groupId": 38
+      "groupId": 38,
+      "type": "G1"
     },
     {
       "id": 35,
@@ -35523,7 +35557,8 @@
         102101
       ],
       "priority": 126,
-      "groupId": 35
+      "groupId": 35,
+      "type": "G1"
     },
     {
       "id": 36,
@@ -35532,7 +35567,8 @@
         110101
       ],
       "priority": 127,
-      "groupId": 39
+      "groupId": 39,
+      "type": "G1"
     },
     {
       "id": 37,
@@ -35541,7 +35577,8 @@
         110401
       ],
       "priority": 128,
-      "groupId": 42
+      "groupId": 42,
+      "type": "G1"
     },
     {
       "id": 38,
@@ -35550,7 +35587,8 @@
         110201
       ],
       "priority": 129,
-      "groupId": 40
+      "groupId": 40,
+      "type": "G1"
     },
     {
       "id": 39,
@@ -35559,7 +35597,8 @@
         110301
       ],
       "priority": 130,
-      "groupId": 41
+      "groupId": 41,
+      "type": "G1"
     },
     {
       "id": 40,
@@ -35568,7 +35607,8 @@
         200101
       ],
       "priority": 201,
-      "groupId": 45
+      "groupId": 45,
+      "type": "G2"
     },
     {
       "id": 41,
@@ -35577,7 +35617,8 @@
         200201
       ],
       "priority": 202,
-      "groupId": 46
+      "groupId": 46,
+      "type": "G2"
     },
     {
       "id": 42,
@@ -35586,7 +35627,8 @@
         200301
       ],
       "priority": 203,
-      "groupId": 47
+      "groupId": 47,
+      "type": "G2"
     },
     {
       "id": 43,
@@ -35595,7 +35637,8 @@
         200401
       ],
       "priority": 204,
-      "groupId": 48
+      "groupId": 48,
+      "type": "G2"
     },
     {
       "id": 44,
@@ -35604,7 +35647,8 @@
         200501
       ],
       "priority": 205,
-      "groupId": 49
+      "groupId": 49,
+      "type": "G2"
     },
     {
       "id": 45,
@@ -35613,7 +35657,8 @@
         200601
       ],
       "priority": 207,
-      "groupId": 50
+      "groupId": 50,
+      "type": "G2"
     },
     {
       "id": 46,
@@ -35622,7 +35667,8 @@
         200701
       ],
       "priority": 208,
-      "groupId": 51
+      "groupId": 51,
+      "type": "G2"
     },
     {
       "id": 47,
@@ -35631,7 +35677,8 @@
         200801
       ],
       "priority": 209,
-      "groupId": 52
+      "groupId": 52,
+      "type": "G2"
     },
     {
       "id": 48,
@@ -35640,7 +35687,8 @@
         200901
       ],
       "priority": 210,
-      "groupId": 53
+      "groupId": 53,
+      "type": "G2"
     },
     {
       "id": 49,
@@ -35649,7 +35697,8 @@
         201001
       ],
       "priority": 211,
-      "groupId": 54
+      "groupId": 54,
+      "type": "G2"
     },
     {
       "id": 50,
@@ -35658,7 +35707,8 @@
         201101
       ],
       "priority": 212,
-      "groupId": 56
+      "groupId": 56,
+      "type": "G2"
     },
     {
       "id": 51,
@@ -35667,7 +35717,8 @@
         201201
       ],
       "priority": 213,
-      "groupId": 57
+      "groupId": 57,
+      "type": "G2"
     },
     {
       "id": 52,
@@ -35676,7 +35727,8 @@
         201301
       ],
       "priority": 214,
-      "groupId": 58
+      "groupId": 58,
+      "type": "G2"
     },
     {
       "id": 53,
@@ -35685,7 +35737,8 @@
         201401
       ],
       "priority": 215,
-      "groupId": 59
+      "groupId": 59,
+      "type": "G2"
     },
     {
       "id": 54,
@@ -35694,7 +35747,8 @@
         201501
       ],
       "priority": 216,
-      "groupId": 60
+      "groupId": 60,
+      "type": "G2"
     },
     {
       "id": 55,
@@ -35703,7 +35757,8 @@
         201601
       ],
       "priority": 217,
-      "groupId": 61
+      "groupId": 61,
+      "type": "G2"
     },
     {
       "id": 56,
@@ -35712,7 +35767,8 @@
         201701
       ],
       "priority": 218,
-      "groupId": 62
+      "groupId": 62,
+      "type": "G2"
     },
     {
       "id": 57,
@@ -35721,7 +35777,8 @@
         201801
       ],
       "priority": 219,
-      "groupId": 63
+      "groupId": 63,
+      "type": "G2"
     },
     {
       "id": 58,
@@ -35730,7 +35787,8 @@
         201901
       ],
       "priority": 220,
-      "groupId": 64
+      "groupId": 64,
+      "type": "G2"
     },
     {
       "id": 59,
@@ -35739,7 +35797,8 @@
         202001
       ],
       "priority": 221,
-      "groupId": 65
+      "groupId": 65,
+      "type": "G2"
     },
     {
       "id": 60,
@@ -35748,7 +35807,8 @@
         202101
       ],
       "priority": 222,
-      "groupId": 66
+      "groupId": 66,
+      "type": "G2"
     },
     {
       "id": 61,
@@ -35757,7 +35817,8 @@
         202201
       ],
       "priority": 223,
-      "groupId": 67
+      "groupId": 67,
+      "type": "G2"
     },
     {
       "id": 62,
@@ -35766,7 +35827,8 @@
         202301
       ],
       "priority": 224,
-      "groupId": 68
+      "groupId": 68,
+      "type": "G2"
     },
     {
       "id": 63,
@@ -35775,7 +35837,8 @@
         202401
       ],
       "priority": 225,
-      "groupId": 69
+      "groupId": 69,
+      "type": "G2"
     },
     {
       "id": 64,
@@ -35784,7 +35847,8 @@
         202501
       ],
       "priority": 226,
-      "groupId": 70
+      "groupId": 70,
+      "type": "G2"
     },
     {
       "id": 65,
@@ -35793,7 +35857,8 @@
         202601
       ],
       "priority": 227,
-      "groupId": 71
+      "groupId": 71,
+      "type": "G2"
     },
     {
       "id": 66,
@@ -35802,7 +35867,8 @@
         202701
       ],
       "priority": 228,
-      "groupId": 72
+      "groupId": 72,
+      "type": "G2"
     },
     {
       "id": 67,
@@ -35811,7 +35877,8 @@
         202801
       ],
       "priority": 229,
-      "groupId": 73
+      "groupId": 73,
+      "type": "G2"
     },
     {
       "id": 68,
@@ -35820,7 +35887,8 @@
         202901
       ],
       "priority": 230,
-      "groupId": 74
+      "groupId": 74,
+      "type": "G2"
     },
     {
       "id": 69,
@@ -35829,7 +35897,8 @@
         203001
       ],
       "priority": 232,
-      "groupId": 75
+      "groupId": 75,
+      "type": "G2"
     },
     {
       "id": 70,
@@ -35838,7 +35907,8 @@
         203101
       ],
       "priority": 233,
-      "groupId": 76
+      "groupId": 76,
+      "type": "G2"
     },
     {
       "id": 71,
@@ -35847,7 +35917,8 @@
         203201
       ],
       "priority": 234,
-      "groupId": 77
+      "groupId": 77,
+      "type": "G2"
     },
     {
       "id": 72,
@@ -35856,7 +35927,8 @@
         203301
       ],
       "priority": 235,
-      "groupId": 78
+      "groupId": 78,
+      "type": "G2"
     },
     {
       "id": 73,
@@ -35865,7 +35937,8 @@
         203401
       ],
       "priority": 236,
-      "groupId": 79
+      "groupId": 79,
+      "type": "G2"
     },
     {
       "id": 74,
@@ -35874,7 +35947,8 @@
         300101
       ],
       "priority": 301,
-      "groupId": 80
+      "groupId": 80,
+      "type": "G3"
     },
     {
       "id": 75,
@@ -35883,7 +35957,8 @@
         300201
       ],
       "priority": 302,
-      "groupId": 81
+      "groupId": 81,
+      "type": "G3"
     },
     {
       "id": 76,
@@ -35892,7 +35967,8 @@
         300301
       ],
       "priority": 303,
-      "groupId": 82
+      "groupId": 82,
+      "type": "G3"
     },
     {
       "id": 77,
@@ -35901,7 +35977,8 @@
         300401
       ],
       "priority": 304,
-      "groupId": 83
+      "groupId": 83,
+      "type": "G3"
     },
     {
       "id": 78,
@@ -35910,7 +35987,8 @@
         300501
       ],
       "priority": 305,
-      "groupId": 84
+      "groupId": 84,
+      "type": "G3"
     },
     {
       "id": 79,
@@ -35919,7 +35997,8 @@
         300601
       ],
       "priority": 306,
-      "groupId": 85
+      "groupId": 85,
+      "type": "G3"
     },
     {
       "id": 80,
@@ -35928,7 +36007,8 @@
         300701
       ],
       "priority": 307,
-      "groupId": 86
+      "groupId": 86,
+      "type": "G3"
     },
     {
       "id": 81,
@@ -35937,7 +36017,8 @@
         300801
       ],
       "priority": 308,
-      "groupId": 87
+      "groupId": 87,
+      "type": "G3"
     },
     {
       "id": 82,
@@ -35946,7 +36027,8 @@
         300901
       ],
       "priority": 309,
-      "groupId": 88
+      "groupId": 88,
+      "type": "G3"
     },
     {
       "id": 83,
@@ -35955,7 +36037,8 @@
         301001
       ],
       "priority": 310,
-      "groupId": 89
+      "groupId": 89,
+      "type": "G3"
     },
     {
       "id": 84,
@@ -35964,7 +36047,8 @@
         301101
       ],
       "priority": 311,
-      "groupId": 90
+      "groupId": 90,
+      "type": "G3"
     },
     {
       "id": 85,
@@ -35973,7 +36057,8 @@
         301201
       ],
       "priority": 312,
-      "groupId": 91
+      "groupId": 91,
+      "type": "G3"
     },
     {
       "id": 86,
@@ -35982,7 +36067,8 @@
         301301
       ],
       "priority": 313,
-      "groupId": 92
+      "groupId": 92,
+      "type": "G3"
     },
     {
       "id": 87,
@@ -35991,7 +36077,8 @@
         301401
       ],
       "priority": 314,
-      "groupId": 93
+      "groupId": 93,
+      "type": "G3"
     },
     {
       "id": 88,
@@ -36000,7 +36087,8 @@
         301501
       ],
       "priority": 315,
-      "groupId": 94
+      "groupId": 94,
+      "type": "G3"
     },
     {
       "id": 89,
@@ -36009,7 +36097,8 @@
         301601
       ],
       "priority": 316,
-      "groupId": 95
+      "groupId": 95,
+      "type": "G3"
     },
     {
       "id": 90,
@@ -36018,7 +36107,8 @@
         301701
       ],
       "priority": 317,
-      "groupId": 96
+      "groupId": 96,
+      "type": "G3"
     },
     {
       "id": 91,
@@ -36027,7 +36117,8 @@
         301801
       ],
       "priority": 206,
-      "groupId": 97
+      "groupId": 97,
+      "type": "G2"
     },
     {
       "id": 92,
@@ -36036,7 +36127,8 @@
         301901
       ],
       "priority": 318,
-      "groupId": 98
+      "groupId": 98,
+      "type": "G3"
     },
     {
       "id": 93,
@@ -36045,7 +36137,8 @@
         302001
       ],
       "priority": 319,
-      "groupId": 99
+      "groupId": 99,
+      "type": "G3"
     },
     {
       "id": 94,
@@ -36054,7 +36147,8 @@
         302101
       ],
       "priority": 320,
-      "groupId": 100
+      "groupId": 100,
+      "type": "G3"
     },
     {
       "id": 95,
@@ -36063,7 +36157,8 @@
         302201
       ],
       "priority": 321,
-      "groupId": 101
+      "groupId": 101,
+      "type": "G3"
     },
     {
       "id": 96,
@@ -36072,7 +36167,8 @@
         302301
       ],
       "priority": 322,
-      "groupId": 102
+      "groupId": 102,
+      "type": "G3"
     },
     {
       "id": 97,
@@ -36081,7 +36177,8 @@
         302401
       ],
       "priority": 323,
-      "groupId": 103
+      "groupId": 103,
+      "type": "G3"
     },
     {
       "id": 98,
@@ -36090,7 +36187,8 @@
         302501
       ],
       "priority": 324,
-      "groupId": 104
+      "groupId": 104,
+      "type": "G3"
     },
     {
       "id": 99,
@@ -36099,7 +36197,8 @@
         302601
       ],
       "priority": 325,
-      "groupId": 105
+      "groupId": 105,
+      "type": "G3"
     },
     {
       "id": 100,
@@ -36108,7 +36207,8 @@
         302701
       ],
       "priority": 326,
-      "groupId": 106
+      "groupId": 106,
+      "type": "G3"
     },
     {
       "id": 101,
@@ -36117,7 +36217,8 @@
         302801
       ],
       "priority": 327,
-      "groupId": 107
+      "groupId": 107,
+      "type": "G3"
     },
     {
       "id": 102,
@@ -36126,7 +36227,8 @@
         302901
       ],
       "priority": 328,
-      "groupId": 108
+      "groupId": 108,
+      "type": "G3"
     },
     {
       "id": 103,
@@ -36135,7 +36237,8 @@
         303001
       ],
       "priority": 330,
-      "groupId": 110
+      "groupId": 110,
+      "type": "G3"
     },
     {
       "id": 104,
@@ -36144,7 +36247,8 @@
         303101
       ],
       "priority": 331,
-      "groupId": 111
+      "groupId": 111,
+      "type": "G3"
     },
     {
       "id": 105,
@@ -36153,7 +36257,8 @@
         303201
       ],
       "priority": 332,
-      "groupId": 112
+      "groupId": 112,
+      "type": "G3"
     },
     {
       "id": 106,
@@ -36162,7 +36267,8 @@
         303301
       ],
       "priority": 333,
-      "groupId": 113
+      "groupId": 113,
+      "type": "G3"
     },
     {
       "id": 107,
@@ -36171,7 +36277,8 @@
         303401
       ],
       "priority": 334,
-      "groupId": 114
+      "groupId": 114,
+      "type": "G3"
     },
     {
       "id": 108,
@@ -36180,7 +36287,8 @@
         303501
       ],
       "priority": 335,
-      "groupId": 115
+      "groupId": 115,
+      "type": "G3"
     },
     {
       "id": 109,
@@ -36189,7 +36297,8 @@
         303601
       ],
       "priority": 336,
-      "groupId": 116
+      "groupId": 116,
+      "type": "G3"
     },
     {
       "id": 110,
@@ -36198,7 +36307,8 @@
         303701
       ],
       "priority": 337,
-      "groupId": 117
+      "groupId": 117,
+      "type": "G3"
     },
     {
       "id": 111,
@@ -36207,7 +36317,8 @@
         303801
       ],
       "priority": 338,
-      "groupId": 118
+      "groupId": 118,
+      "type": "G3"
     },
     {
       "id": 112,
@@ -36216,7 +36327,8 @@
         303901
       ],
       "priority": 339,
-      "groupId": 119
+      "groupId": 119,
+      "type": "G3"
     },
     {
       "id": 113,
@@ -36225,7 +36337,8 @@
         304001
       ],
       "priority": 340,
-      "groupId": 120
+      "groupId": 120,
+      "type": "G3"
     },
     {
       "id": 114,
@@ -36234,7 +36347,8 @@
         304101
       ],
       "priority": 341,
-      "groupId": 121
+      "groupId": 121,
+      "type": "G3"
     },
     {
       "id": 115,
@@ -36243,7 +36357,8 @@
         304201
       ],
       "priority": 342,
-      "groupId": 122
+      "groupId": 122,
+      "type": "G3"
     },
     {
       "id": 116,
@@ -36252,7 +36367,8 @@
         304301
       ],
       "priority": 343,
-      "groupId": 123
+      "groupId": 123,
+      "type": "G3"
     },
     {
       "id": 117,
@@ -36261,7 +36377,8 @@
         304401
       ],
       "priority": 344,
-      "groupId": 124
+      "groupId": 124,
+      "type": "G3"
     },
     {
       "id": 118,
@@ -36270,7 +36387,8 @@
         304501
       ],
       "priority": 345,
-      "groupId": 125
+      "groupId": 125,
+      "type": "G3"
     },
     {
       "id": 119,
@@ -36279,7 +36397,8 @@
         304601
       ],
       "priority": 346,
-      "groupId": 126
+      "groupId": 126,
+      "type": "G3"
     },
     {
       "id": 120,
@@ -36288,7 +36407,8 @@
         304701
       ],
       "priority": 347,
-      "groupId": 127
+      "groupId": 127,
+      "type": "G3"
     },
     {
       "id": 121,
@@ -36297,7 +36417,8 @@
         304801
       ],
       "priority": 348,
-      "groupId": 128
+      "groupId": 128,
+      "type": "G3"
     },
     {
       "id": 122,
@@ -36306,7 +36427,8 @@
         304901
       ],
       "priority": 349,
-      "groupId": 129
+      "groupId": 129,
+      "type": "G3"
     },
     {
       "id": 123,
@@ -36315,7 +36437,8 @@
         305001
       ],
       "priority": 350,
-      "groupId": 130
+      "groupId": 130,
+      "type": "G3"
     },
     {
       "id": 124,
@@ -36324,7 +36447,8 @@
         305101
       ],
       "priority": 351,
-      "groupId": 131
+      "groupId": 131,
+      "type": "G3"
     },
     {
       "id": 125,
@@ -36333,7 +36457,8 @@
         305201
       ],
       "priority": 352,
-      "groupId": 132
+      "groupId": 132,
+      "type": "G3"
     },
     {
       "id": 126,
@@ -36342,7 +36467,8 @@
         305301
       ],
       "priority": 353,
-      "groupId": 133
+      "groupId": 133,
+      "type": "G3"
     },
     {
       "id": 127,
@@ -36351,7 +36477,8 @@
         305401
       ],
       "priority": 354,
-      "groupId": 134
+      "groupId": 134,
+      "type": "G3"
     },
     {
       "id": 128,
@@ -36360,7 +36487,8 @@
         305501
       ],
       "priority": 355,
-      "groupId": 135
+      "groupId": 135,
+      "type": "G3"
     },
     {
       "id": 129,
@@ -36369,7 +36497,8 @@
         305601
       ],
       "priority": 356,
-      "groupId": 136
+      "groupId": 136,
+      "type": "G3"
     },
     {
       "id": 130,
@@ -36378,7 +36507,8 @@
         305701
       ],
       "priority": 357,
-      "groupId": 137
+      "groupId": 137,
+      "type": "G3"
     },
     {
       "id": 131,
@@ -36387,7 +36517,8 @@
         305801
       ],
       "priority": 231,
-      "groupId": 138
+      "groupId": 138,
+      "type": "G2"
     },
     {
       "id": 132,
@@ -36396,7 +36527,8 @@
         305901
       ],
       "priority": 358,
-      "groupId": 139
+      "groupId": 139,
+      "type": "G3"
     },
     {
       "id": 133,
@@ -36405,7 +36537,8 @@
         306001
       ],
       "priority": 359,
-      "groupId": 140
+      "groupId": 140,
+      "type": "G3"
     },
     {
       "id": 134,
@@ -36414,7 +36547,8 @@
         306101
       ],
       "priority": 360,
-      "groupId": 141
+      "groupId": 141,
+      "type": "G3"
     },
     {
       "id": 135,
@@ -36423,7 +36557,8 @@
         306201
       ],
       "priority": 361,
-      "groupId": 142
+      "groupId": 142,
+      "type": "G3"
     },
     {
       "id": 136,
@@ -36432,7 +36567,8 @@
         306301
       ],
       "priority": 362,
-      "groupId": 143
+      "groupId": 143,
+      "type": "G3"
     },
     {
       "id": 137,
@@ -36441,7 +36577,8 @@
         306401
       ],
       "priority": 363,
-      "groupId": 144
+      "groupId": 144,
+      "type": "G3"
     },
     {
       "id": 138,
@@ -36450,7 +36587,8 @@
         306501
       ],
       "priority": 364,
-      "groupId": 145
+      "groupId": 145,
+      "type": "G3"
     },
     {
       "id": 139,
@@ -36459,7 +36597,8 @@
         306601
       ],
       "priority": 365,
-      "groupId": 146
+      "groupId": 146,
+      "type": "G3"
     },
     {
       "id": 140,
@@ -36468,7 +36607,8 @@
         306701
       ],
       "priority": 366,
-      "groupId": 147
+      "groupId": 147,
+      "type": "G3"
     },
     {
       "id": 141,
@@ -36477,7 +36617,8 @@
         306801
       ],
       "priority": 367,
-      "groupId": 148
+      "groupId": 148,
+      "type": "G3"
     },
     {
       "id": 142,
@@ -36486,7 +36627,8 @@
         306901
       ],
       "priority": 368,
-      "groupId": 149
+      "groupId": 149,
+      "type": "G3"
     },
     {
       "id": 143,
@@ -36495,7 +36637,8 @@
         307001
       ],
       "priority": 369,
-      "groupId": 150
+      "groupId": 150,
+      "type": "G3"
     },
     {
       "id": 144,
@@ -36506,7 +36649,8 @@
         102601
       ],
       "priority": 2,
-      "groupId": 1
+      "groupId": 1,
+      "type": "SPECIAL"
     },
     {
       "id": 145,
@@ -36517,7 +36661,8 @@
         102501
       ],
       "priority": 6,
-      "groupId": 5
+      "groupId": 5,
+      "type": "SPECIAL"
     },
     {
       "id": 146,
@@ -36527,7 +36672,8 @@
         102301
       ],
       "priority": 9,
-      "groupId": 8
+      "groupId": 8,
+      "type": "SPECIAL"
     },
     {
       "id": 147,
@@ -36536,7 +36682,8 @@
         102501
       ],
       "priority": 105,
-      "groupId": 24
+      "groupId": 24,
+      "type": "G1"
     },
     {
       "id": 148,
@@ -36545,7 +36692,8 @@
         102601
       ],
       "priority": 107,
-      "groupId": 28
+      "groupId": 28,
+      "type": "G1"
     },
     {
       "id": 149,
@@ -36554,7 +36702,8 @@
         203501
       ],
       "priority": 211,
-      "groupId": 54
+      "groupId": 54,
+      "type": "G2"
     },
     {
       "id": 150,
@@ -36563,7 +36712,8 @@
         405001
       ],
       "priority": 329,
-      "groupId": 109
+      "groupId": 109,
+      "type": "G3"
     },
     {
       "id": 151,
@@ -36574,7 +36724,8 @@
         101201
       ],
       "priority": 6,
-      "groupId": 5
+      "groupId": 5,
+      "type": "SPECIAL"
     },
     {
       "id": 152,
@@ -36584,7 +36735,8 @@
         101601
       ],
       "priority": 7,
-      "groupId": 7
+      "groupId": 7,
+      "type": "SPECIAL"
     },
     {
       "id": 153,
@@ -36593,7 +36745,8 @@
         102701
       ],
       "priority": 104,
-      "groupId": 18
+      "groupId": 18,
+      "type": "G1"
     },
     {
       "id": 154,
@@ -36604,7 +36757,8 @@
         101501
       ],
       "priority": 2,
-      "groupId": 1
+      "groupId": 1,
+      "type": "SPECIAL"
     },
     {
       "id": 155,
@@ -36613,7 +36767,8 @@
         102801
       ],
       "priority": 109,
-      "groupId": 17
+      "groupId": 17,
+      "type": "G1"
     },
     {
       "id": 156,
@@ -36622,7 +36777,8 @@
         111101
       ],
       "priority": 130,
-      "groupId": 41
+      "groupId": 41,
+      "type": "G1"
     },
     {
       "id": 157,
@@ -36631,7 +36787,8 @@
         111201
       ],
       "priority": 128,
-      "groupId": 42
+      "groupId": 42,
+      "type": "G1"
     },
     {
       "id": 158,
@@ -36640,7 +36797,8 @@
         111301
       ],
       "priority": 122,
-      "groupId": 43
+      "groupId": 43,
+      "type": "G1"
     },
     {
       "id": 159,
@@ -36649,7 +36807,8 @@
         111401
       ],
       "priority": 130,
-      "groupId": 41
+      "groupId": 41,
+      "type": "G1"
     },
     {
       "id": 160,
@@ -36658,7 +36817,8 @@
         111501
       ],
       "priority": 128,
-      "groupId": 42
+      "groupId": 42,
+      "type": "G1"
     },
     {
       "id": 161,
@@ -36667,7 +36827,8 @@
         111601
       ],
       "priority": 122,
-      "groupId": 43
+      "groupId": 43,
+      "type": "G1"
     },
     {
       "id": 162,
@@ -36676,7 +36837,8 @@
         111701
       ],
       "priority": 130,
-      "groupId": 41
+      "groupId": 41,
+      "type": "G1"
     },
     {
       "id": 163,
@@ -36685,7 +36847,8 @@
         111801
       ],
       "priority": 128,
-      "groupId": 42
+      "groupId": 42,
+      "type": "G1"
     },
     {
       "id": 164,
@@ -36694,7 +36857,8 @@
         111901
       ],
       "priority": 122,
-      "groupId": 43
+      "groupId": 43,
+      "type": "G1"
     },
     {
       "id": 165,
@@ -36703,7 +36867,8 @@
         110701
       ],
       "priority": 131,
-      "groupId": 151
+      "groupId": 151,
+      "type": "G1"
     },
     {
       "id": 166,
@@ -36712,7 +36877,8 @@
         110801
       ],
       "priority": 132,
-      "groupId": 152
+      "groupId": 152,
+      "type": "G1"
     },
     {
       "id": 167,
@@ -36721,7 +36887,8 @@
         110901
       ],
       "priority": 133,
-      "groupId": 153
+      "groupId": 153,
+      "type": "G1"
     },
     {
       "id": 168,
@@ -36730,7 +36897,8 @@
         111001
       ],
       "priority": 134,
-      "groupId": 154
+      "groupId": 154,
+      "type": "G1"
     },
     {
       "id": 169,
@@ -36739,7 +36907,8 @@
         203601
       ],
       "priority": 237,
-      "groupId": 155
+      "groupId": 155,
+      "type": "G2"
     },
     {
       "id": 170,
@@ -36748,7 +36917,8 @@
         203701
       ],
       "priority": 238,
-      "groupId": 156
+      "groupId": 156,
+      "type": "G2"
     },
     {
       "id": 171,
@@ -36757,7 +36927,8 @@
         203801
       ],
       "priority": 239,
-      "groupId": 157
+      "groupId": 157,
+      "type": "G2"
     },
     {
       "id": 172,
@@ -36766,7 +36937,8 @@
         203901
       ],
       "priority": 240,
-      "groupId": 158
+      "groupId": 158,
+      "type": "G2"
     },
     {
       "id": 173,
@@ -36775,7 +36947,8 @@
         204001
       ],
       "priority": 241,
-      "groupId": 159
+      "groupId": 159,
+      "type": "G2"
     },
     {
       "id": 174,
@@ -36784,7 +36957,8 @@
         204101
       ],
       "priority": 242,
-      "groupId": 160
+      "groupId": 160,
+      "type": "G2"
     },
     {
       "id": 175,
@@ -36793,7 +36967,8 @@
         307101
       ],
       "priority": 370,
-      "groupId": 161
+      "groupId": 161,
+      "type": "G3"
     },
     {
       "id": 176,
@@ -36802,7 +36977,8 @@
         307201
       ],
       "priority": 371,
-      "groupId": 162
+      "groupId": 162,
+      "type": "G3"
     },
     {
       "id": 177,
@@ -36811,7 +36987,8 @@
         307301
       ],
       "priority": 372,
-      "groupId": 163
+      "groupId": 163,
+      "type": "G3"
     },
     {
       "id": 178,
@@ -36820,7 +36997,8 @@
         307401
       ],
       "priority": 373,
-      "groupId": 164
+      "groupId": 164,
+      "type": "G3"
     },
     {
       "id": 179,
@@ -36829,7 +37007,8 @@
         307501
       ],
       "priority": 374,
-      "groupId": 165
+      "groupId": 165,
+      "type": "G3"
     },
     {
       "id": 180,
@@ -36838,7 +37017,8 @@
         307601
       ],
       "priority": 375,
-      "groupId": 166
+      "groupId": 166,
+      "type": "G3"
     },
     {
       "id": 181,
@@ -36847,7 +37027,8 @@
         307701
       ],
       "priority": 376,
-      "groupId": 167
+      "groupId": 167,
+      "type": "G3"
     }
   ],
   "specialCaseRace": [
