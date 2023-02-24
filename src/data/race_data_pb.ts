@@ -285,9 +285,9 @@ export class RaceSimulateHorseFrameData extends Message<RaceSimulateHorseFrameDa
   /**
    * sbyte
    *
-   * @generated from field: optional int32 temptation_mode = 5;
+   * @generated from field: optional hakuraku.RaceSimulateHorseFrameData.TemptationMode temptation_mode = 5;
    */
-  temptationMode?: number;
+  temptationMode?: RaceSimulateHorseFrameData_TemptationMode;
 
   /**
    * sbyte
@@ -308,7 +308,7 @@ export class RaceSimulateHorseFrameData extends Message<RaceSimulateHorseFrameDa
     { no: 2, name: "lane_position", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
     { no: 3, name: "speed", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
     { no: 4, name: "hp", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
-    { no: 5, name: "temptation_mode", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 5, name: "temptation_mode", kind: "enum", T: proto2.getEnumType(RaceSimulateHorseFrameData_TemptationMode), opt: true },
     { no: 6, name: "block_front_horse_index", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
   ]);
 
@@ -328,6 +328,44 @@ export class RaceSimulateHorseFrameData extends Message<RaceSimulateHorseFrameDa
     return proto2.util.equals(RaceSimulateHorseFrameData, a, b);
   }
 }
+
+/**
+ * @generated from enum hakuraku.RaceSimulateHorseFrameData.TemptationMode
+ */
+export enum RaceSimulateHorseFrameData_TemptationMode {
+  /**
+   * @generated from enum value: NULL = 0;
+   */
+  NULL = 0,
+
+  /**
+   * @generated from enum value: POSITION_SASHI = 1;
+   */
+  POSITION_SASHI = 1,
+
+  /**
+   * @generated from enum value: POSITION_SENKO = 2;
+   */
+  POSITION_SENKO = 2,
+
+  /**
+   * @generated from enum value: POSITION_NIGE = 3;
+   */
+  POSITION_NIGE = 3,
+
+  /**
+   * @generated from enum value: BOOST = 4;
+   */
+  BOOST = 4,
+}
+// Retrieve enum metadata with: proto2.getEnumType(RaceSimulateHorseFrameData_TemptationMode)
+proto2.util.setEnumType(RaceSimulateHorseFrameData_TemptationMode, "hakuraku.RaceSimulateHorseFrameData.TemptationMode", [
+  { no: 0, name: "NULL" },
+  { no: 1, name: "POSITION_SASHI" },
+  { no: 2, name: "POSITION_SENKO" },
+  { no: 3, name: "POSITION_NIGE" },
+  { no: 4, name: "BOOST" },
+]);
 
 /**
  * @generated from message hakuraku.RaceSimulateHorseResultData
@@ -520,6 +558,11 @@ export enum RaceSimulateEventData_SimulateEventType {
    * @generated from enum value: COMPETE_FIGHT = 5;
    */
   COMPETE_FIGHT = 5,
+
+  /**
+   * @generated from enum value: RELEASE_CONSERVE_POWER = 6;
+   */
+  RELEASE_CONSERVE_POWER = 6,
 }
 // Retrieve enum metadata with: proto2.getEnumType(RaceSimulateEventData_SimulateEventType)
 proto2.util.setEnumType(RaceSimulateEventData_SimulateEventType, "hakuraku.RaceSimulateEventData.SimulateEventType", [
@@ -529,5 +572,6 @@ proto2.util.setEnumType(RaceSimulateEventData_SimulateEventType, "hakuraku.RaceS
   { no: 3, name: "SKILL" },
   { no: 4, name: "COMPETE_TOP" },
   { no: 5, name: "COMPETE_FIGHT" },
+  { no: 6, name: "RELEASE_CONSERVE_POWER" },
 ]);
 

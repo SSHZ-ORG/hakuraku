@@ -1,7 +1,7 @@
 import {RaceSimulateData, RaceSimulateEventData, RaceSimulateEventData_SimulateEventType} from "./race_data_pb";
 
 // frameOrder should be 0-indexed.
-function filterRaceEvents(raceSimulateData: RaceSimulateData, frameOrder: number, eventType: RaceSimulateEventData_SimulateEventType): RaceSimulateEventData[] {
+export function filterRaceEvents(raceSimulateData: RaceSimulateData, frameOrder: number, eventType: RaceSimulateEventData_SimulateEventType): RaceSimulateEventData[] {
     return raceSimulateData.event.map(e => e.event!)
         .filter(event => event.type === eventType && event.param[0] === frameOrder);
 }
@@ -23,14 +23,4 @@ export function filterCharaTargetedSkills(raceSimulateData: RaceSimulateData, fr
         .filter(event => event.type === RaceSimulateEventData_SimulateEventType.SKILL &&
             event.param[0] !== frameOrder &&
             event.paramCount! >= 5 && (event.param[4] & mask));
-}
-
-// 位置取り争い, frameOrder should be 0-indexed.
-export function filterCharaCompeteTop(raceSimulateData: RaceSimulateData, frameOrder: number): RaceSimulateEventData[] {
-    return filterRaceEvents(raceSimulateData, frameOrder, RaceSimulateEventData_SimulateEventType.COMPETE_TOP);
-}
-
-// 追い比べ, frameOrder should be 0-indexed.
-export function filterCharaCompeteFight(raceSimulateData: RaceSimulateData, frameOrder: number): RaceSimulateEventData[] {
-    return filterRaceEvents(raceSimulateData, frameOrder, RaceSimulateEventData_SimulateEventType.COMPETE_FIGHT);
 }

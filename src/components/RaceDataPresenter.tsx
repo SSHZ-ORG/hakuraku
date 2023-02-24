@@ -9,13 +9,13 @@ import {Chara} from "../data/data_pb";
 import {
     RaceSimulateData,
     RaceSimulateEventData_SimulateEventType,
+    RaceSimulateHorseFrameData_TemptationMode,
     RaceSimulateHorseResultData
 } from "../data/race_data_pb";
 import {
-    filterCharaCompeteFight,
-    filterCharaCompeteTop,
     filterCharaSkills,
     filterCharaTargetedSkills,
+    filterRaceEvents,
     getCharaActivatedSkillIds
 } from "../data/RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
@@ -78,6 +78,12 @@ const runningStyleLabel = (horseResultData: RaceSimulateHorseResultData, activat
     }
     return UMDatabaseUtils.runningStyleLabels[horseResultData.runningStyle!];
 };
+
+const otherRaceEventLabels = new Map([
+    [RaceSimulateEventData_SimulateEventType.COMPETE_TOP, '位置取り争い'],
+    [RaceSimulateEventData_SimulateEventType.COMPETE_FIGHT, '追い比べ'],
+    [RaceSimulateEventData_SimulateEventType.RELEASE_CONSERVE_POWER, '脚色十分'],
+]);
 
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
     {
@@ -208,7 +214,7 @@ type RaceDataPresenterState = {
     showTargetedSkills: boolean,
     showBlocks: boolean,
     showTemptationMode: boolean,
-    showCompetes: boolean,
+    showOtherRaceEvents: boolean,
 
     diffGraphUseDistanceAsXAxis: boolean,
 };
@@ -224,7 +230,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             showTargetedSkills: true,
             showBlocks: true,
             showTemptationMode: true,
-            showCompetes: true,
+            showOtherRaceEvents: true,
 
             diffGraphUseDistanceAsXAxis: true,
         };
@@ -278,26 +284,15 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 };
             });
 
-        const competePlotLines = [
-            ...filterCharaCompeteTop(raceData, frameOrder)
-                .map(event => {
-                    return {
-                        value: event.frameTime,
-                        label: {text: "位置取り争い"},
-                        color: 'rgba(0, 255, 0, 0.6)',
-                        zIndex: 3,
-                    };
-                }),
-            ...filterCharaCompeteFight(raceData, frameOrder)
-                .map(event => {
-                    return {
-                        value: event.frameTime,
-                        label: {text: "追い比べ"},
-                        color: 'rgba(0, 255, 0, 0.6)',
-                        zIndex: 3,
-                    };
-                }),
-        ];
+        const otherEventsPlotLines = Array.from(otherRaceEventLabels).flatMap(([eventType, name]) =>
+            filterRaceEvents(raceData, frameOrder, eventType).map(event => {
+                return {
+                    value: event.frameTime,
+                    label: {text: name},
+                    color: 'rgba(0, 255, 0, 0.6)',
+                    zIndex: 3,
+                };
+            }));
 
         const lastSpurtStartDistance = raceData.horseResult[frameOrder].lastSpurtStartDistance!;
         let lastSpurtStartTime = 0;
@@ -316,15 +311,15 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             };
         }
 
-        function makeTemptationModePlotArea(from: number, to: number, mode: number): Highcharts.XAxisPlotBandsOptions {
+        function makeTemptationModePlotArea(from: number, to: number, mode: RaceSimulateHorseFrameData_TemptationMode): Highcharts.XAxisPlotBandsOptions {
             return {
                 color: 'rgba(255, 255, 0, 0.1)',
                 from: from,
                 to: to,
                 label: {
-                    text: `Temptation mode ${mode}`,
+                    text: `Temptation ${RaceSimulateHorseFrameData_TemptationMode[mode] ?? mode}`,
                     rotation: 90,
-                    verticalAlign: "bottom",
+                    verticalAlign: "middle",
                 },
                 zIndex: 1,
             };
@@ -413,7 +408,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 plotLines: [
                     ...(this.state.showSkills ? skillPlotLines : []),
                     ...(this.state.showTargetedSkills ? skillTargetedSkillPlotLines : []),
-                    ...(this.state.showCompetes ? competePlotLines : []),
+                    ...(this.state.showOtherRaceEvents ? otherEventsPlotLines : []),
                     ...plotLines,
                 ],
                 plotBands: [
@@ -482,16 +477,16 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         </div>;
     }
 
-    renderCompetesList() {
+    renderOtherRaceEventsList() {
         const groupedEvents = _.groupBy(this.props.raceData.event.map(e => e.event!)
-                .filter(e => e.type === RaceSimulateEventData_SimulateEventType.COMPETE_TOP || e.type === RaceSimulateEventData_SimulateEventType.COMPETE_FIGHT),
+                .filter(e => otherRaceEventLabels.has(e.type!)),
             e => e.frameTime!);
 
         const d: CompeteTableData[] = _.values(groupedEvents).map(events => {
             const time = events[0].frameTime!;
             return {
                 time: time,
-                type: events[0].type === RaceSimulateEventData_SimulateEventType.COMPETE_TOP ? "位置取り争い" : "追い比べ",
+                type: otherRaceEventLabels.get(events[0].type!)!,
                 charas: events.map(e => {
                     const frameOrder = e.param[0];
                     return {
@@ -501,7 +496,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             };
         })
 
-        return <FoldCard header='Competes'>
+        return <FoldCard header='Other Race Events'>
             <BootstrapTable bootstrap4 condensed hover
                             classes="responsive-bootstrap-table"
                             wrapperClasses="table-responsive"
@@ -612,7 +607,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 </Alert>}
             {this.renderCharaList()}
             {this.renderGlobalRaceDistanceDiffGraph()}
-            {this.renderCompetesList()}
+            {this.renderOtherRaceEventsList()}
             <Form>
                 <Form.Group>
                     <Form.Label>Chara</Form.Label>
@@ -645,10 +640,10 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         id="show-temptation-mode"
                         label="Show Temptation Mode"/>
                     <Form.Switch
-                        checked={this.state.showCompetes}
-                        onChange={(e) => this.setState({showCompetes: e.target.checked})}
+                        checked={this.state.showOtherRaceEvents}
+                        onChange={(e) => this.setState({showOtherRaceEvents: e.target.checked})}
                         id="show-competes"
-                        label="Show 位置取り争い & 追い比べ"/>
+                        label={`Show Other Race Events (${Array.from(otherRaceEventLabels.values()).join(', ')})`}/>
                 </Form.Group>
             </Form>
             {this.state.selectedCharaFrameOrder !== undefined && this.renderGraphs()}

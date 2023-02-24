@@ -45,7 +45,14 @@ message RaceSimulateHorseFrameData {
     optional uint32 lane_position = 2; // uint16
     optional uint32 speed = 3; // uint16
     optional uint32 hp = 4; // uint16
-    optional int32 temptation_mode = 5; // sbyte
+    enum TemptationMode {
+        NULL = 0;
+        POSITION_SASHI = 1;
+        POSITION_SENKO = 2;
+        POSITION_NIGE = 3;
+        BOOST = 4;
+    }
+    optional TemptationMode temptation_mode = 5; // sbyte
     optional int32 block_front_horse_index = 6; // sbyte
 }
 
@@ -71,6 +78,7 @@ message RaceSimulateEventData {
         SKILL = 3;
         COMPETE_TOP = 4;
         COMPETE_FIGHT = 5;
+        RELEASE_CONSERVE_POWER = 6;
     }
     optional SimulateEventType type = 2; // byte
     optional uint32 param_count = 3; // byte
