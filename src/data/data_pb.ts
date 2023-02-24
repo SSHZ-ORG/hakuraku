@@ -446,6 +446,11 @@ export class WinsSaddle extends Message<WinsSaddle> {
    */
   groupId?: number;
 
+  /**
+   * @generated from field: optional hakuraku.WinsSaddle.WinSaddleType type = 6;
+   */
+  type?: WinsSaddle_WinSaddleType;
+
   constructor(data?: PartialMessage<WinsSaddle>) {
     super();
     proto2.util.initPartial(data, this);
@@ -459,6 +464,7 @@ export class WinsSaddle extends Message<WinsSaddle> {
     { no: 3, name: "race_instance_id", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
     { no: 4, name: "priority", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
     { no: 5, name: "group_id", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 6, name: "type", kind: "enum", T: proto2.getEnumType(WinsSaddle_WinSaddleType), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WinsSaddle {
@@ -477,6 +483,38 @@ export class WinsSaddle extends Message<WinsSaddle> {
     return proto2.util.equals(WinsSaddle, a, b);
   }
 }
+
+/**
+ * @generated from enum hakuraku.WinsSaddle.WinSaddleType
+ */
+export enum WinsSaddle_WinSaddleType {
+  /**
+   * @generated from enum value: SPECIAL = 0;
+   */
+  SPECIAL = 0,
+
+  /**
+   * @generated from enum value: G3 = 1;
+   */
+  G3 = 1,
+
+  /**
+   * @generated from enum value: G2 = 2;
+   */
+  G2 = 2,
+
+  /**
+   * @generated from enum value: G1 = 3;
+   */
+  G1 = 3,
+}
+// Retrieve enum metadata with: proto2.getEnumType(WinsSaddle_WinSaddleType)
+proto2.util.setEnumType(WinsSaddle_WinSaddleType, "hakuraku.WinsSaddle.WinSaddleType", [
+  { no: 0, name: "SPECIAL" },
+  { no: 1, name: "G3" },
+  { no: 2, name: "G2" },
+  { no: 3, name: "G1" },
+]);
 
 /**
  * @generated from message hakuraku.SpecialCaseRace

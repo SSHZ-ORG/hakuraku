@@ -24,6 +24,8 @@ type SuccessionPageState = SelectedCharasState & {
     parent1WinSaddleBonus: number,
     parent2WinSaddleBonus: number,
 
+    parentsWinSaddleBonus: number,
+
     validatorMessages: string[],
 };
 
@@ -53,6 +55,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
 
             parent1WinSaddleBonus: 0,
             parent2WinSaddleBonus: 0,
+            parentsWinSaddleBonus: 0,
 
             validatorMessages: [],
         }
@@ -116,7 +119,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
 
         const relations = pairs.map(pair => UMDatabaseUtils.findSuccessionRelation(pair));
         const totalPoints = _.sumBy(relations, r => UMDatabaseUtils.calculateTotalPoint(r))
-            + this.state.parent1WinSaddleBonus + this.state.parent2WinSaddleBonus;
+            + this.state.parent1WinSaddleBonus + this.state.parent2WinSaddleBonus + this.state.parentsWinSaddleBonus;
 
         return <Card bg="primary" text="white">
             <Card.Body>
@@ -130,9 +133,9 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
         </Card>
     }
 
-    winSaddleRelationBonusInput(onChange: ChangeEventHandler<HTMLInputElement>) {
+    winSaddleRelationBonusInput(onChange: ChangeEventHandler<HTMLInputElement>, suffix: string) {
         return <Form.Group>
-            <Form.Label>WinSaddleRelationBonus</Form.Label>
+            <Form.Label>勝鞍 Bonus ({suffix})</Form.Label>
             <Form.Control type="number" placeholder="0" onChange={onChange}/>
         </Form.Group>
     }
@@ -149,6 +152,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
 
             parent1WinSaddleBonus: 0,
             parent2WinSaddleBonus: 0,
+            parentsWinSaddleBonus: 0,
         });
     }
 
@@ -172,7 +176,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
                                 selectedChara={this.state.parent1}
                                 onSelectedCharaChange={(chara) => this.setChara('parent1', chara)}
                                 constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara]] : undefined}/>
-                            {this.winSaddleRelationBonusInput((event) => this.setState({parent1WinSaddleBonus: parseInt(event.target.value) || 0}))}
+                            {this.winSaddleRelationBonusInput((event) => this.setState({parent1WinSaddleBonus: parseInt(event.target.value) || 0}), "1 x 11 + 1 x 12")}
                         </td>
                         <td>
                             <CharaSelector
@@ -198,7 +202,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
                                 selectedChara={this.state.parent2}
                                 onSelectedCharaChange={(chara) => this.setChara('parent2', chara)}
                                 constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara], [this.state.parent1]] : undefined}/>
-                            {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}))}
+                            {this.winSaddleRelationBonusInput((event) => this.setState({parent2WinSaddleBonus: parseInt(event.target.value) || 0}), "2 x 21 + 2 x 22")}
                         </td>
                         <td>
                             <CharaSelector
@@ -215,6 +219,11 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
                                 selectedChara={this.state.grandparent22}
                                 onSelectedCharaChange={(chara) => this.setChara('grandparent22', chara)}
                                 constraintGroups={this.state.suggestionEnabled ? [[this.state.selectedChara, this.state.parent2]] : undefined}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colSpan={2}>
+                            {this.winSaddleRelationBonusInput((event) => this.setState({parentsWinSaddleBonus: parseInt(event.target.value) || 0}), "1 x 2")}
                         </td>
                     </tr>
                     </tbody>

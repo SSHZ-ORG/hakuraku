@@ -1,6 +1,7 @@
 import pako from "pako";
 import {Card, Chara, RaceInstance, Skill, SupportCard, UMDatabase} from './data_pb';
 import {Story} from "./UMDatabaseUtils";
+import _ from "lodash";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
@@ -33,14 +34,8 @@ class _UMDatabaseWrapper {
 
                 this.umdb.skill.forEach((skill) => this.skills[skill.id!] = skill);
 
-                const interestingRaceInstanceIds = Array.from(this.umdb.winsSaddle.reduce(
-                    (s, ws) => {
-                        ws.raceInstanceId.forEach(raceInstanceId => s.add(raceInstanceId));
-                        return s;
-                    },
-                    new Set<number>()));
-                interestingRaceInstanceIds.sort();
-                this.interestingRaceInstances = interestingRaceInstanceIds.map(id => this.raceInstances[id]);
+                this.interestingRaceInstances = _.sortedUniq(this.umdb.winsSaddle.flatMap(ws => ws.raceInstanceId))
+                    .map(id => this.raceInstances[id]);
 
                 this.stories = this.umdb.story.map(story => {
                     const o: Story = {

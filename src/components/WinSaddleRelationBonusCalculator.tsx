@@ -1,17 +1,44 @@
 import React from "react";
-import {Badge, Button, Form, Modal, OverlayTrigger, Popover} from "react-bootstrap";
+import {Badge, Button, Form, Modal} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import memoize from "memoize-one";
-import {RaceInstance, SpecialCaseRace_RacePermission, WinsSaddle} from "../data/data_pb";
+import {RaceInstance, SpecialCaseRace_RacePermission, WinsSaddle, WinsSaddle_WinSaddleType} from "../data/data_pb";
 import FoldCard from "./FoldCard";
 
 type WinSaddleRelationBonusCalculatorState = {
-    parentRaceInstances: RaceInstance[],
-    grandparent1RaceInstances: RaceInstance[],
-    grandparent2RaceInstances: RaceInstance[],
+    chara1RaceInstances: RaceInstance[],
+    chara2RaceInstances: RaceInstance[],
     showUsage: boolean,
+    showSpecialCaseRaces: boolean,
+}
+
+const G1_RELATION_POINT = 3;
+
+const simulateGenerateWinSaddle = memoize((raceInstances: RaceInstance[]) => {
+    const raceInstanceIds = new Set(raceInstances.map(i => i.id));
+
+    const winsSaddlesByGroup: Map<number, WinsSaddle[]> = new Map();
+    UMDatabaseWrapper.umdb.winsSaddle
+        .filter(ws => ws.raceInstanceId.every(race => raceInstanceIds.has(race)))
+        .forEach(ws => {
+            if (!winsSaddlesByGroup.has(ws.groupId!)) {
+                winsSaddlesByGroup.set(ws.groupId!, []);
+            }
+            winsSaddlesByGroup.get(ws.groupId!)!.push(ws);
+        });
+
+    const finalWinsSaddles = [];
+    for (let wss of winsSaddlesByGroup.values()) {
+        wss.sort((a, b) => a.priority! - b.priority!);
+        finalWinsSaddles.push(wss[0]);
+    }
+    return finalWinsSaddles;
+});
+
+function renderWinSaddles(winsSaddles: WinsSaddle[]) {
+    return winsSaddles.map(ws => <Badge variant="secondary">{ws.id} - {ws.name}</Badge>)
 }
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddleRelationBonusCalculatorState> {
@@ -19,62 +46,27 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
         super(props);
 
         this.state = {
-            parentRaceInstances: [],
-            grandparent1RaceInstances: [],
-            grandparent2RaceInstances: [],
+            chara1RaceInstances: [],
+            chara2RaceInstances: [],
             showUsage: false,
+            showSpecialCaseRaces: false,
         };
     }
 
-    simulateGenerateWinSaddle = memoize((raceInstances: RaceInstance[]) => {
-        const raceInstanceIds = new Set(raceInstances.map(i => i.id));
-
-        const winsSaddlesByGroup: Map<number, WinsSaddle[]> = new Map();
-        UMDatabaseWrapper.umdb.winsSaddle
-            .filter(ws => ws.raceInstanceId.every(race => raceInstanceIds.has(race)))
-            .forEach(ws => {
-                if (!winsSaddlesByGroup.has(ws.groupId!)) {
-                    winsSaddlesByGroup.set(ws.groupId!, []);
-                }
-                winsSaddlesByGroup.get(ws.groupId!)!.push(ws);
-            });
-
-        const finalWinsSaddles = [];
-        for (let wss of winsSaddlesByGroup.values()) {
-            wss.sort((a, b) => a.priority! - b.priority!);
-            finalWinsSaddles.push(wss[0]);
-        }
-        return finalWinsSaddles;
-    });
-
-
-    renderWinSaddles(winsSaddles: WinsSaddle[]) {
-        return winsSaddles.map(ws => <Badge variant="secondary">{ws.id} - {ws.name}</Badge>)
-    }
-
-    renderOneResult(winsSaddles: WinsSaddle[]) {
-        return <div>
-            {winsSaddles.length} pts ({this.renderWinSaddles(winsSaddles)})
-        </div>
-    }
-
     generateResult() {
-        const parentWinsSaddles = new Set(this.simulateGenerateWinSaddle(this.state.parentRaceInstances));
-        const winsSaddlesInteraction1 = this.simulateGenerateWinSaddle(this.state.grandparent1RaceInstances)
-            .filter(ws => parentWinsSaddles.has(ws));
-        const winsSaddlesInteraction2 = this.simulateGenerateWinSaddle(this.state.grandparent2RaceInstances)
-            .filter(ws => parentWinsSaddles.has(ws));
+        const chara1G1WinsSaddles = new Set(simulateGenerateWinSaddle(this.state.chara1RaceInstances)
+            .filter(ws => ws.type === WinsSaddle_WinSaddleType.G1));
+        const intersection = simulateGenerateWinSaddle(this.state.chara2RaceInstances)
+            .filter(ws => chara1G1WinsSaddles.has(ws));
 
-        return <div>
-            Parent & Grandparent 1: {this.renderOneResult(winsSaddlesInteraction1)}
-            Parent & Grandparent 2: {this.renderOneResult(winsSaddlesInteraction2)}
-            Total: {winsSaddlesInteraction1.length + winsSaddlesInteraction2.length} pts
-        </div>
+        return <>
+            Result: {intersection.length * G1_RELATION_POINT} pts ({renderWinSaddles(intersection)})
+        </>
     }
 
     raceSelection(label: string, selectedRaces: RaceInstance[], callback: (races: RaceInstance[]) => void) {
         return <Form.Group>
-            <Form.Label>{label} {this.renderWinSaddles(this.simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
+            <Form.Label>{label} {renderWinSaddles(simulateGenerateWinSaddle(selectedRaces))}</Form.Label>
             <Typeahead labelKey={(race) => `${race.id} - ${race.name}`}
                        multiple
                        clearButton
@@ -95,7 +87,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                     <Modal.Title>Usage</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>Just fill in all races where the 3 characters won (as 一着).</p>
+                    <p>Just fill in all races where the 2 characters won (as 一着).</p>
                     <p>This is different than 因子 (because winning a race does not always generate 因子).</p>
                     <p>It is difficult to see the grand parents' won races in the UI, and you unfortunately have to find
                         them manually.</p>
@@ -113,24 +105,22 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                             automatically perform the calculation about overriding for you.
                         </li>
                     </ul>
-                    <p>
-                        If you know how to decrypt the responses, it's suggested that you just&nbsp;
-                        <code>
-                            sum(1 for i in c['succession_chara_array'][:2] for s in i['win_saddle_id_array'] if s in
-                            c['win_saddle_id_array'])
-                        </code>
-                        &nbsp;to avoid human errors.
-                    </p>
                 </Modal.Body>
             </Modal>
         </>;
     }
 
     specialCaseRacePresenter() {
-        const popover = (
-            <Popover id="special-case-races">
-                <Popover.Title as="h3">Special Case Races</Popover.Title>
-                <Popover.Content>
+        return <>
+            <Button variant="warning" size="sm" onClick={() => this.setState({showSpecialCaseRaces: true})}>
+                Special Case Races
+            </Button>
+
+            <Modal show={this.state.showSpecialCaseRaces} onHide={() => this.setState({showSpecialCaseRaces: false})}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Special Case Races</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
                     {UMDatabaseWrapper.umdb.specialCaseRace.map(specialCaseRace =>
                         <>
                             {UMDatabaseWrapper.raceInstanceNameWithId(specialCaseRace.raceInstanceId!)}
@@ -144,20 +134,15 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                         </>
                     )}
                     All other races should use the default instance.
-                </Popover.Content>
-            </Popover>
-        );
-
-        return <OverlayTrigger placement="right" overlay={popover}>
-            <Button variant="warning" size="sm">Special Case Races</Button>
-        </OverlayTrigger>
+                </Modal.Body>
+            </Modal>
+        </>;
     }
 
     clearAll() {
         this.setState({
-            parentRaceInstances: [],
-            grandparent1RaceInstances: [],
-            grandparent2RaceInstances: [],
+            chara1RaceInstances: [],
+            chara2RaceInstances: [],
         });
     }
 
@@ -165,9 +150,8 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
         return <FoldCard header='勝鞍ボーナス Calculator'>
             {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}{" "}
             <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
-            {this.raceSelection("Parent", this.state.parentRaceInstances, s => this.setState({parentRaceInstances: s}))}
-            {this.raceSelection("Grandparent 1", this.state.grandparent1RaceInstances, s => this.setState({grandparent1RaceInstances: s}))}
-            {this.raceSelection("Grandparent 2", this.state.grandparent2RaceInstances, s => this.setState({grandparent2RaceInstances: s}))}
+            {this.raceSelection("Chara 1", this.state.chara1RaceInstances, s => this.setState({chara1RaceInstances: s}))}
+            {this.raceSelection("Chara 2", this.state.chara2RaceInstances, s => this.setState({chara2RaceInstances: s}))}
             {this.generateResult()}
         </FoldCard>;
     }
