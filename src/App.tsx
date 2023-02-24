@@ -8,17 +8,17 @@ import UMDatabaseWrapper from './data/UMDatabaseWrapper';
 import CarrotJuicerPage from "./pages/CarrotJuicerPage";
 import RaceDataPage from "./pages/RaceDataPage";
 import RoomRaceAnalyzerPage from "./pages/RoomRaceAnalyzerPage";
+import StoriesPage from "./pages/StoriesPage";
 import SuccessionPage from './pages/SuccessionPage';
 import SuccessionRelationsPage from "./pages/SuccessionRelationsPage";
 import TeamAnalyzerPage from "./pages/TeamAnalyzerPage";
-import StoriesPage from "./pages/StoriesPage";
 
 class App extends React.Component<{}, { umdbLoaded: boolean }> {
     constructor(props: {}) {
         super(props);
         this.state = {
             umdbLoaded: false,
-        }
+        };
     }
 
     componentDidMount() {
@@ -27,7 +27,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
 
     render() {
         if (!this.state.umdbLoaded) {
-            return <div><Spinner animation="border"/> Loading UMDatabase...</div>
+            return <div><Spinner animation="border"/> Loading UMDatabase...</div>;
         }
 
         return (
@@ -102,7 +102,7 @@ class App extends React.Component<{}, { umdbLoaded: boolean }> {
 }
 
 function Home() {
-    return <Alert variant="primary">Nothing here yet</Alert>
+    return <Alert variant="primary">Nothing here yet</Alert>;
 }
 
 export default App;

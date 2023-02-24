@@ -58,7 +58,7 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
             parentsWinSaddleBonus: 0,
 
             validatorMessages: [],
-        }
+        };
     }
 
     charaSelectionChanged() {
@@ -130,14 +130,14 @@ export default class SuccessionPage extends React.Component<{}, SuccessionPageSt
                     Total Points: {totalPoints}
                 </Card.Text>
             </Card.Body>
-        </Card>
+        </Card>;
     }
 
     winSaddleRelationBonusInput(onChange: ChangeEventHandler<HTMLInputElement>, suffix: string) {
         return <Form.Group>
             <Form.Label>勝鞍 Bonus ({suffix})</Form.Label>
             <Form.Control type="number" placeholder="0" onChange={onChange}/>
-        </Form.Group>
+        </Form.Group>;
     }
 
     clearAll() {

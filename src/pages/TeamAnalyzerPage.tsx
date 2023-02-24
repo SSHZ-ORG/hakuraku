@@ -1,17 +1,17 @@
+import _ from "lodash";
 import React from "react";
 import {Button, Col, Form, InputGroup, Row, Table} from "react-bootstrap";
+import BootstrapTable, {ColumnDescription, ColumnFormatter, ExpandRowProps} from 'react-bootstrap-table-next';
+import {Typeahead} from "react-bootstrap-typeahead";
+import CardNamePresenter from "../components/CardNamePresenter";
+import CharaProperLabels from "../components/CharaProperLabels";
+import CopyButton from "../components/CopyButton";
 import FilesSelector from "../components/FilesSelector";
+import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
 import {CharaRaceData, parse, TeamRaceGroupData} from "../data/TeamRaceParser";
+import {TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import BootstrapTable, {ColumnDescription, ColumnFormatter, ExpandRowProps} from 'react-bootstrap-table-next';
-import _ from "lodash";
-import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
-import {Typeahead} from "react-bootstrap-typeahead";
-import {TrainedCharaData} from "../data/TrainedCharaData";
-import CopyButton from "../components/CopyButton";
-import CharaProperLabels from "../components/CharaProperLabels";
-import CardNamePresenter from "../components/CardNamePresenter";
 
 type TeamAnalyzerPageState = {
     selectedFiles: File[],
@@ -75,7 +75,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         dataField: 'trainedCharaId',
         text: 'ID',
         sort: true,
-        formatter: (cell, row) => <>{row.trainedChara.viewerId}<br/>TCID: {cell}</>
+        formatter: (cell, row) => <>{row.trainedChara.viewerId}<br/>TCID: {cell}</>,
     },
 
     {
@@ -85,7 +85,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         formatter: (cell: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels, row) => <>
             {UMDatabaseUtils.teamRaceDistanceLabels[cell]}
             <br/>{UMDatabaseUtils.runningStyleLabels[row.runningStyle]}
-        </>
+        </>,
     },
     {
         dataField: 'chara',
@@ -93,7 +93,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
         formatter: (chara: Chara | undefined, row) => chara ? <>
             {chara.id} - {chara.name}
             <br/>({chara.castName}){' '}<CardNamePresenter cardId={row.trainedChara.cardId}/>
-        </> : 'Unknown Chara'
+        </> : 'Unknown Chara',
     },
 
     {
@@ -113,7 +113,7 @@ const columns: ColumnDescription<AggregatedCharaData>[] = [
     {
         dataField: 'finishOrders',
         text: '',
-        formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}`
+        formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}`,
     },
 
     {
@@ -213,7 +213,7 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                         <td>Lv {cs.level}</td>
                         <td>{row.skillActivationCount[cs.skillId] ?? 0}</td>
                         <td>({(100 * (row.skillActivationCount[cs.skillId] ?? 0) / row.raceCount).toFixed(2)}%)</td>
-                    </tr>
+                    </tr>,
                 )}
                 </tbody>
             </Table>
@@ -328,7 +328,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
             lastGroupAceCharaKeys: new Set(),
             lastGroupCharaKeys: new Set(),
             aggregations: [],
-            loading: true
+            loading: true,
         }, () => {
             Promise.all(files.map(parse))
                 .then(_.compact)
@@ -341,7 +341,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                         lastGroupAceCharaKeys: new Set(lastGroupCharas?.filter(c => c.isAce).map(c => groupByKey(c)) ?? []),
                         lastGroupCharaKeys: new Set(lastGroupCharas?.map(c => groupByKey(c)) ?? []),
                         aggregations: aggregations,
-                        loading: false
+                        loading: false,
                     });
                 });
         });
@@ -363,7 +363,7 @@ export default class TeamAnalyzerPage extends React.Component<{}, TeamAnalyzerPa
                                    instructions={<>
                                        Select multiple team stadium race packets to analyze performance of team members.
                                        Packets that are not team stadium races will be ignored. You may find <a
-                                       href='https://gist.github.com/CNA-Bld/5b475cb46c7d407fa69a528e448972ab'>
+                                       href="https://gist.github.com/CNA-Bld/5b475cb46c7d407fa69a528e448972ab">
                                        this script</a> useful.
                                    </>}/>
                 </Col>

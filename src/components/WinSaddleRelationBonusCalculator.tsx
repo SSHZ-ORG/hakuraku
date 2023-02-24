@@ -1,10 +1,10 @@
+import memoize from "memoize-one";
 import React from "react";
 import {Badge, Button, Form, Modal} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
-import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import memoize from "memoize-one";
 import {RaceInstance, SpecialCaseRace_RacePermission, WinsSaddle, WinsSaddle_WinSaddleType} from "../data/data_pb";
+import UMDatabaseUtils from "../data/UMDatabaseUtils";
+import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
 import FoldCard from "./FoldCard";
 
 type WinSaddleRelationBonusCalculatorState = {
@@ -38,7 +38,7 @@ const simulateGenerateWinSaddle = memoize((raceInstances: RaceInstance[]) => {
 });
 
 function renderWinSaddles(winsSaddles: WinsSaddle[]) {
-    return winsSaddles.map(ws => <Badge variant="secondary">{ws.id} - {ws.name}</Badge>)
+    return winsSaddles.map(ws => <Badge variant="secondary">{ws.id} - {ws.name}</Badge>);
 }
 
 class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddleRelationBonusCalculatorState> {
@@ -61,7 +61,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
 
         return <>
             Result: {intersection.length * G1_RELATION_POINT} pts ({renderWinSaddles(intersection)})
-        </>
+        </>;
     }
 
     raceSelection(label: string, selectedRaces: RaceInstance[], callback: (races: RaceInstance[]) => void) {
@@ -131,7 +131,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
                                 {UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[i])}<br/>
                             </>)}
                             <hr/>
-                        </>
+                        </>,
                     )}
                     All other races should use the default instance.
                 </Modal.Body>
@@ -147,7 +147,7 @@ class WinSaddleRelationBonusCalculator extends React.PureComponent<{}, WinSaddle
     }
 
     render() {
-        return <FoldCard header='勝鞍ボーナス Calculator'>
+        return <FoldCard header="勝鞍ボーナス Calculator">
             {this.usagePresenter()}{" "}{this.specialCaseRacePresenter()}{" "}
             <Button variant="danger" size="sm" onClick={() => this.clearAll()}>Clear all</Button>
             {this.raceSelection("Chara 1", this.state.chara1RaceInstances, s => this.setState({chara1RaceInstances: s}))}

@@ -102,6 +102,6 @@ export function parse(file: File): Promise<RoomRaceData | undefined> {
             viewerId: deserialized['data_headers']['viewer_id'],
             raceInstance: UMDatabaseWrapper.raceInstances[raceInstanceId],
             charaDatas: outputDataList,
-        }
+        };
     });
 }

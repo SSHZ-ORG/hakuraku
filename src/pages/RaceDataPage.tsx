@@ -1,8 +1,8 @@
 import React from "react";
 import {Button, Col, Form} from "react-bootstrap";
-import {deserializeFromBase64} from "../data/RaceDataParser";
-import {RaceSimulateData} from "../data/race_data_pb";
 import RaceDataPresenter from "../components/RaceDataPresenter";
+import {RaceSimulateData} from "../data/race_data_pb";
+import {deserializeFromBase64} from "../data/RaceDataParser";
 
 type RaceDataPageState = {
     raceHorseInfoInput: string,
@@ -22,7 +22,7 @@ export default class RaceDataPage extends React.Component<{}, RaceDataPageState>
 
             parsedHorseInfo: undefined,
             parsedRaceData: undefined,
-        }
+        };
     }
 
     parse() {

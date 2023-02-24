@@ -1,5 +1,6 @@
 // @ts-ignore
 import struct from "@aksel/structjs";
+import {JsonViewer} from "@textea/json-viewer";
 import msgpack from "@ygoe/msgpack";
 import React from "react";
 import {Col, Form, ListGroup, ListGroupItem, Row} from "react-bootstrap";
@@ -8,7 +9,6 @@ import RaceDataPresenter from "../components/RaceDataPresenter";
 import {deserializeFromBase64} from "../data/RaceDataParser";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
 import UMDatabaseWrapper from "../data/UMDatabaseWrapper";
-import {JsonViewer} from "@textea/json-viewer";
 
 function teamRaceHeader(race: any): string {
     const parts = [
@@ -39,7 +39,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
             currentFile: undefined,
             currentFileContent: undefined,
             selectedTeamRace: undefined,
-        }
+        };
     }
 
     onSelectedFilesChange(files: File[]) {
@@ -81,7 +81,7 @@ export default class CarrotJuicerPage extends React.Component<{}, CarrotJuicerPa
                                 [{idx + 1}]{' '}
                                 [{UMDatabaseUtils.teamRaceDistanceLabels[distanceType] ?? 'Unknown type'}]{' '}
                                 {UMDatabaseWrapper.raceInstanceNameWithId(race['race_instance_id'])}
-                            </option>
+                            </option>;
                         })}
                     </Form.Control>
                 </Form.Group>

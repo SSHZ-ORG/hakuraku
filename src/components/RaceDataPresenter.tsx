@@ -1,3 +1,4 @@
+import {JsonViewer} from "@textea/json-viewer";
 import Highcharts, {PointOptionsObject, SeriesSplineOptions} from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
 import _ from "lodash";
@@ -10,13 +11,13 @@ import {
     RaceSimulateData,
     RaceSimulateEventData_SimulateEventType,
     RaceSimulateHorseFrameData_TemptationMode,
-    RaceSimulateHorseResultData
+    RaceSimulateHorseResultData,
 } from "../data/race_data_pb";
 import {
     filterCharaSkills,
     filterCharaTargetedSkills,
     filterRaceEvents,
-    getCharaActivatedSkillIds
+    getCharaActivatedSkillIds,
 } from "../data/RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -25,7 +26,6 @@ import CardNamePresenter from "./CardNamePresenter";
 import CharaProperLabels from "./CharaProperLabels";
 import CopyButton from "./CopyButton";
 import FoldCard from "./FoldCard";
-import {JsonViewer} from "@textea/json-viewer";
 
 const unknownCharaTag = 'Unknown Chara / Mob';
 const supportedRaceDataVersion = 100000002;
@@ -193,14 +193,14 @@ const charaTableExpandRow: ExpandRowProps<CharaTableData> = {
                     <td>{UMDatabaseWrapper.skillNameWithId(cs.skillId)}</td>
                     <td>Lv {cs.level}</td>
                     <td>{row.activatedSkills.has(cs.skillId) ? '発動' : ''}</td>
-                </tr>
+                </tr>,
             )}
             </tbody>
         </Table>
         <CharaProperLabels chara={row.trainedChara}/>
     </div>,
     showExpandColumn: true,
-}
+};
 
 type RaceDataPresenterProps = {
     raceHorseInfo: any[],
@@ -424,7 +424,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         return {
                             x: frame.time,
                             y: frame.horseFrame[frameOrder!].speed,
-                        }
+                        };
                     }),
                     type: "spline",
                 }, {
@@ -433,7 +433,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         return {
                             x: frame.time,
                             y: frame.horseFrame[frameOrder!].hp,
-                        }
+                        };
                     }),
                     type: "spline",
                 },
@@ -494,16 +494,16 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                     };
                 }),
             };
-        })
+        });
 
-        return <FoldCard header='Other Race Events'>
+        return <FoldCard header="Other Race Events">
             <BootstrapTable bootstrap4 condensed hover
                             classes="responsive-bootstrap-table"
                             wrapperClasses="table-responsive"
                             data={d}
                             columns={competeTableColumns}
                             keyField="time"/>
-        </FoldCard>
+        </FoldCard>;
     }
 
     renderCharaList() {
@@ -534,13 +534,13 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             };
         });
 
-        return <FoldCard header='出馬表'>
+        return <FoldCard header="出馬表">
             <BootstrapTable bootstrap4 condensed hover
                             classes="responsive-bootstrap-table"
                             wrapperClasses="table-responsive"
                             expandRow={charaTableExpandRow}
                             data={_.sortBy(l, d => d.finishOrder)} columns={charaTableColumns} keyField="frameOrder"/>
-        </FoldCard>
+        </FoldCard>;
     }
 
 
@@ -587,14 +587,14 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             tooltip: {shared: true},
         };
 
-        return <FoldCard header='Distance Diff Graph'>
+        return <FoldCard header="Distance Diff Graph">
             <Form.Switch
                 checked={this.state.diffGraphUseDistanceAsXAxis}
                 onChange={(e) => this.setState({diffGraphUseDistanceAsXAxis: e.target.checked})}
                 id="diff-graph-use-distance-as-x-axis"
                 label="Use Base Distance as X Axis"/>
             <HighchartsReact highcharts={Highcharts} options={options}/>
-        </FoldCard>
+        </FoldCard>;
     }
 
 
@@ -616,7 +616,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                         <option value="">-</option>
                         {Object.entries(this.displayNames(this.props.raceHorseInfo, this.props.raceData))
                             .map(([frameOrder, displayName]) => {
-                                return <option value={frameOrder}>{displayName}</option>
+                                return <option value={frameOrder}>{displayName}</option>;
                             })}
                     </Form.Control>
                     <Form.Switch

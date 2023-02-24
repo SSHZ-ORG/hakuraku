@@ -1,6 +1,6 @@
-import {Base64} from "js-base64";
 // @ts-ignore
 import struct from "@aksel/structjs";
+import {Base64} from "js-base64";
 import pako from "pako";
 import {
     RaceSimulateData,
@@ -9,7 +9,7 @@ import {
     RaceSimulateFrameData,
     RaceSimulateHeaderData,
     RaceSimulateHorseFrameData,
-    RaceSimulateHorseResultData
+    RaceSimulateHorseResultData,
 } from "./race_data_pb";
 
 const oneInt16 = struct('<h');

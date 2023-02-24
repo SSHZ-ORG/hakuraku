@@ -68,8 +68,8 @@ const expandRow: ExpandRowProps<AggregatedCharaData> = {
                             <td>{distances.length}</td>
                             <td>({(100 * distances.length / row.raceCount).toFixed(2)}%)</td>
                             <td>{distances.map(d => d.toFixed(2)).join(', ')}</td>
-                        </tr>
-                    }
+                        </tr>;
+                    },
                 )}
                 </tbody>
             </Table>
@@ -125,7 +125,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
         {
             dataField: 'finishOrders',
             text: '',
-            formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}-${cell[4] ?? 0}-${cell[5] ?? 0}`
+            formatter: cell => `${cell[0] ?? 0}-${cell[1] ?? 0}-${cell[2] ?? 0}-${cell[3] ?? 0}-${cell[4] ?? 0}-${cell[5] ?? 0}`,
         },
         {
             dataField: 'df2',
@@ -156,7 +156,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                     <br/>
                     {properGroundLabel}
                     {' '}{this.state.distanceType ? UMDatabaseUtils.charaProperLabels[row.trainedChara.properDistances[this.state.distanceType]] : '?'}
-                </>
+                </>;
             },
         },
         {
@@ -224,7 +224,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                             averageRawTime: _.meanBy(datas, d => d.finishTimeRaw),
 
                             skillsActivationDistances: _.mapValues(_.groupBy(_.flatMap(datas, d => d.skillActivationDistances), e => e.skillId), es => es.map(e => e.activationDistance)),
-                        }
+                        };
                     }
 
                     const aggregations: AggregatedCharaData[] = _.map(_.groupBy(roomRaceDatas.map(d => d.charaDatas).flat(),
@@ -238,7 +238,7 @@ export default class RoomRaceAnalyzerPage extends React.Component<{}, RoomRaceAn
                         distanceType: distanceType,
                         groundType: groundType,
                     });
-                })
+                });
         });
     }
 

@@ -1,7 +1,7 @@
+import _ from "lodash";
 import pako from "pako";
 import {Card, Chara, RaceInstance, Skill, SupportCard, UMDatabase} from './data_pb';
 import {Story} from "./UMDatabaseUtils";
-import _ from "lodash";
 
 class _UMDatabaseWrapper {
     umdb: UMDatabase = new UMDatabase();
@@ -14,9 +14,6 @@ class _UMDatabaseWrapper {
     successionRelationMemberCharaIds: Record<number, Set<number>> = {};
     stories: Story[] = [];
 
-    /**
-     * @return {!Promise}
-     */
     initialize() {
         return fetch(process.env.PUBLIC_URL + '/data/umdb.binarypb.gz', {cache: 'no-cache'})
             .then(response => response.arrayBuffer())
@@ -50,7 +47,7 @@ class _UMDatabaseWrapper {
                     }
 
                     return o;
-                })
+                });
             });
     }
 

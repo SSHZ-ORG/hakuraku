@@ -1,10 +1,10 @@
-import {deserializeFromBase64} from "./RaceDataParser";
 import msgpack from "@ygoe/msgpack";
 import _ from "lodash";
-import UMDatabaseWrapper from "./UMDatabaseWrapper";
-import UMDatabaseUtils from "./UMDatabaseUtils";
-import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
+import {deserializeFromBase64} from "./RaceDataParser";
 import {getCharaActivatedSkillIds} from "./RaceDataUtils";
+import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
+import UMDatabaseUtils from "./UMDatabaseUtils";
+import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 export type TeamRaceGroupData = {
     timestamp: number,

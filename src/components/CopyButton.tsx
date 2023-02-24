@@ -14,7 +14,7 @@ export default class CopyButton extends PureComponent<CopyButtonProps, CopyButto
         super(props);
 
         this.state = {
-            showCopiedTooltip: false
+            showCopiedTooltip: false,
         };
     }
 

@@ -80,7 +80,7 @@ function calcRankScore(raceHorseData: any, statusPoints: StatusPoints, charaSkil
 export function fromRaceHorseData(raceHorseData: any): TrainedCharaData {
     const charaSkills: CharaSkill[] = raceHorseData['skill_array'].map((skill: any) => ({
         skillId: skill['skill_id'],
-        level: skill['level']
+        level: skill['level'],
     } as CharaSkill));
 
     const statusPoints = {

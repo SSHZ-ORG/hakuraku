@@ -37,7 +37,7 @@ export default class SuccessionRelationsPage extends React.PureComponent<{}, Suc
         this.state = {
             selectedCharas: [],
             showRelationId: true,
-        }
+        };
     }
 
     renderRelationsGroups(relations: SuccessionRelation[], key: string) {

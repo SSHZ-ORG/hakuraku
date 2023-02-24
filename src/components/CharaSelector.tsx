@@ -24,7 +24,7 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
         return _.mapValues(UMDatabaseWrapper.charas,
             (chara) => constraintGroups.map(group =>
                 UMDatabaseUtils.calculateTotalPoint(UMDatabaseUtils.findSuccessionRelation(group.concat(chara)))));
-    })
+    });
 
     onSelectionChange(selectedChara: Chara) {
         this.props.onSelectedCharaChange(selectedChara);
@@ -63,6 +63,6 @@ export default class CharaSelector extends React.Component<CharaSelectorProps> {
                 onChange={(selection) => this.onSelectionChange(selection[0])}
                 filterBy={UMDatabaseUtils.charaTypeaheadMatcher}
                 isInvalid={!this.props.selectedChara}/>
-        </Form.Group>
+        </Form.Group>;
     }
 }

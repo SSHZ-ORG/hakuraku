@@ -1,8 +1,8 @@
-import {TrainedCharaData} from "../data/TrainedCharaData";
+import _ from "lodash";
 import React, {PureComponent} from "react";
 import {Table} from "react-bootstrap";
+import {TrainedCharaData} from "../data/TrainedCharaData";
 import UMDatabaseUtils from "../data/UMDatabaseUtils";
-import _ from "lodash";
 
 type CharaProperLabelsProps = {
     chara: TrainedCharaData,
@@ -31,6 +31,6 @@ export default class CharaProperLabels extends PureComponent<CharaProperLabelsPr
                 </>)}
             </tr>
             </tbody>
-        </Table>
+        </Table>;
     }
 }
