@@ -2,6 +2,7 @@ import _ from 'lodash';
 import {AllTypeaheadOwnAndInjectedProps} from "react-bootstrap-typeahead";
 import {toKatakana, toRomaji} from "wanakana";
 import {Chara, SuccessionRelation, SupportCard} from './data_pb';
+import {RaceSimulateHorseResultData_RunningStyle} from "./race_data_pb";
 import UMDatabaseWrapper from "./UMDatabaseWrapper";
 
 const normalizeRomaji = (s: string) => toRomaji(s).toLowerCase();
@@ -65,7 +66,12 @@ export const teamRaceDistanceLabels: Record<number, string> =
     {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離', 5: 'ダート'};
 
 export const distanceLabels: Record<number, string> = {1: '短距離', 2: 'マイル', 3: '中距離', 4: '長距離'};
-export const runningStyleLabels: Record<number, string> = {1: '逃げ', 2: '先行', 3: '差し', 4: '追込'};
+export const runningStyleLabels: { readonly [key in RaceSimulateHorseResultData_RunningStyle]?: string } = {
+    [RaceSimulateHorseResultData_RunningStyle.NIGE]: "逃げ",
+    [RaceSimulateHorseResultData_RunningStyle.SENKO]: "先行",
+    [RaceSimulateHorseResultData_RunningStyle.SASHI]: "差し",
+    [RaceSimulateHorseResultData_RunningStyle.OIKOMI]: "追込",
+};
 export const motivationLabels: Record<number, string> = {1: '絶不調', 2: '不調', 3: '普通', 4: '好調', 5: '絶好調'};
 
 export const seasonLabels: Record<number, string> = {1: '春', 2: '夏', 3: '秋', 4: '冬', 5: '春'};

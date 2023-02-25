@@ -330,6 +330,8 @@ export class RaceSimulateHorseFrameData extends Message<RaceSimulateHorseFrameDa
 }
 
 /**
+ * enum HorseTemptationCalculator.TemptationMode
+ *
  * @generated from enum hakuraku.RaceSimulateHorseFrameData.TemptationMode
  */
 export enum RaceSimulateHorseFrameData_TemptationMode {
@@ -413,11 +415,13 @@ export class RaceSimulateHorseResultData extends Message<RaceSimulateHorseResult
   /**
    * byte
    *
-   * @generated from field: optional uint32 running_style = 8;
+   * @generated from field: optional hakuraku.RaceSimulateHorseResultData.RunningStyle running_style = 8;
    */
-  runningStyle?: number;
+  runningStyle?: RaceSimulateHorseResultData_RunningStyle;
 
   /**
+   * enum RaceDefine.DefeatType
+   *
    * @generated from field: optional int32 defeat = 9;
    */
   defeat?: number;
@@ -442,7 +446,7 @@ export class RaceSimulateHorseResultData extends Message<RaceSimulateHorseResult
     { no: 5, name: "guts_order", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
     { no: 6, name: "wiz_order", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
     { no: 7, name: "last_spurt_start_distance", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
-    { no: 8, name: "running_style", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 8, name: "running_style", kind: "enum", T: proto2.getEnumType(RaceSimulateHorseResultData_RunningStyle), opt: true },
     { no: 9, name: "defeat", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
     { no: 10, name: "finish_time_raw", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
   ]);
@@ -463,6 +467,46 @@ export class RaceSimulateHorseResultData extends Message<RaceSimulateHorseResult
     return proto2.util.equals(RaceSimulateHorseResultData, a, b);
   }
 }
+
+/**
+ * enum RaceDefine.RunningStyle
+ *
+ * @generated from enum hakuraku.RaceSimulateHorseResultData.RunningStyle
+ */
+export enum RaceSimulateHorseResultData_RunningStyle {
+  /**
+   * @generated from enum value: NONE = 0;
+   */
+  NONE = 0,
+
+  /**
+   * @generated from enum value: NIGE = 1;
+   */
+  NIGE = 1,
+
+  /**
+   * @generated from enum value: SENKO = 2;
+   */
+  SENKO = 2,
+
+  /**
+   * @generated from enum value: SASHI = 3;
+   */
+  SASHI = 3,
+
+  /**
+   * @generated from enum value: OIKOMI = 4;
+   */
+  OIKOMI = 4,
+}
+// Retrieve enum metadata with: proto2.getEnumType(RaceSimulateHorseResultData_RunningStyle)
+proto2.util.setEnumType(RaceSimulateHorseResultData_RunningStyle, "hakuraku.RaceSimulateHorseResultData.RunningStyle", [
+  { no: 0, name: "NONE" },
+  { no: 1, name: "NIGE" },
+  { no: 2, name: "SENKO" },
+  { no: 3, name: "SASHI" },
+  { no: 4, name: "OIKOMI" },
+]);
 
 /**
  * @generated from message hakuraku.RaceSimulateEventData
@@ -524,6 +568,8 @@ export class RaceSimulateEventData extends Message<RaceSimulateEventData> {
 }
 
 /**
+ * enum SimulateEventType
+ *
  * @generated from enum hakuraku.RaceSimulateEventData.SimulateEventType
  */
 export enum RaceSimulateEventData_SimulateEventType {

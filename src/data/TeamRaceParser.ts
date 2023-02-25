@@ -1,5 +1,6 @@
 import msgpack from "@ygoe/msgpack";
 import _ from "lodash";
+import {RaceSimulateHorseResultData_RunningStyle} from "./race_data_pb";
 import {deserializeFromBase64} from "./RaceDataParser";
 import {getCharaActivatedSkillIds} from "./RaceDataUtils";
 import {fromRaceHorseData, TrainedCharaData} from "./TrainedCharaData";
@@ -17,7 +18,7 @@ export type CharaRaceData = {
     isAce: boolean,
 
     distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels,
-    runningStyle: keyof typeof UMDatabaseUtils.runningStyleLabels,
+    runningStyle: RaceSimulateHorseResultData_RunningStyle,
 
     rawScore: number,
     bonusScores: Record<number, number>,

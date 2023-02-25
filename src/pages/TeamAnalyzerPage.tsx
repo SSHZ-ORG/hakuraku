@@ -8,6 +8,7 @@ import CharaProperLabels from "../components/CharaProperLabels";
 import CopyButton from "../components/CopyButton";
 import FilesSelector from "../components/FilesSelector";
 import {Chara, TeamStadiumScoreBonus} from "../data/data_pb";
+import {RaceSimulateHorseResultData_RunningStyle} from "../data/race_data_pb";
 import {CharaRaceData, parse, TeamRaceGroupData} from "../data/TeamRaceParser";
 import {TrainedCharaData} from "../data/TrainedCharaData";
 import * as UMDatabaseUtils from "../data/UMDatabaseUtils";
@@ -30,7 +31,7 @@ type AggregatedCharaData = {
     trainedChara: TrainedCharaData,
     trainedCharaId: number,
     distanceType: keyof typeof UMDatabaseUtils.teamRaceDistanceLabels,
-    runningStyle: keyof typeof UMDatabaseUtils.runningStyleLabels,
+    runningStyle: RaceSimulateHorseResultData_RunningStyle,
     chara: Chara | undefined,
 
     raceCount: number,

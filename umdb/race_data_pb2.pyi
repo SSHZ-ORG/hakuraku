@@ -107,6 +107,8 @@ class RaceSimulateHorseFrameData(_message.Message):
 
 class RaceSimulateHorseResultData(_message.Message):
     __slots__ = ["defeat", "finish_diff_time", "finish_order", "finish_time", "finish_time_raw", "guts_order", "last_spurt_start_distance", "running_style", "start_delay_time", "wiz_order"]
+    class RunningStyle(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+        __slots__ = []
     DEFEAT_FIELD_NUMBER: _ClassVar[int]
     FINISH_DIFF_TIME_FIELD_NUMBER: _ClassVar[int]
     FINISH_ORDER_FIELD_NUMBER: _ClassVar[int]
@@ -114,7 +116,12 @@ class RaceSimulateHorseResultData(_message.Message):
     FINISH_TIME_RAW_FIELD_NUMBER: _ClassVar[int]
     GUTS_ORDER_FIELD_NUMBER: _ClassVar[int]
     LAST_SPURT_START_DISTANCE_FIELD_NUMBER: _ClassVar[int]
+    NIGE: RaceSimulateHorseResultData.RunningStyle
+    NONE: RaceSimulateHorseResultData.RunningStyle
+    OIKOMI: RaceSimulateHorseResultData.RunningStyle
     RUNNING_STYLE_FIELD_NUMBER: _ClassVar[int]
+    SASHI: RaceSimulateHorseResultData.RunningStyle
+    SENKO: RaceSimulateHorseResultData.RunningStyle
     START_DELAY_TIME_FIELD_NUMBER: _ClassVar[int]
     WIZ_ORDER_FIELD_NUMBER: _ClassVar[int]
     defeat: int
@@ -124,7 +131,7 @@ class RaceSimulateHorseResultData(_message.Message):
     finish_time_raw: float
     guts_order: int
     last_spurt_start_distance: float
-    running_style: int
+    running_style: RaceSimulateHorseResultData.RunningStyle
     start_delay_time: float
     wiz_order: int
-    def __init__(self, finish_order: _Optional[int] = ..., finish_time: _Optional[float] = ..., finish_diff_time: _Optional[float] = ..., start_delay_time: _Optional[float] = ..., guts_order: _Optional[int] = ..., wiz_order: _Optional[int] = ..., last_spurt_start_distance: _Optional[float] = ..., running_style: _Optional[int] = ..., defeat: _Optional[int] = ..., finish_time_raw: _Optional[float] = ...) -> None: ...
+    def __init__(self, finish_order: _Optional[int] = ..., finish_time: _Optional[float] = ..., finish_diff_time: _Optional[float] = ..., start_delay_time: _Optional[float] = ..., guts_order: _Optional[int] = ..., wiz_order: _Optional[int] = ..., last_spurt_start_distance: _Optional[float] = ..., running_style: _Optional[_Union[RaceSimulateHorseResultData.RunningStyle, str]] = ..., defeat: _Optional[int] = ..., finish_time_raw: _Optional[float] = ...) -> None: ...

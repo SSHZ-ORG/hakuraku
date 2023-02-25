@@ -6,7 +6,7 @@ A web tool for [ウマ娘プリティーダービー](https://umamusume.jp/).
 
 ### Update proto
 
-After editing `umdb/data.proto`, one should run `umdb/compile_proto.sh` to update the generated code.
+After editing `umdb/data.proto`, one should run `yarn run protoc` to update the generated code.
 
 The generated code should be checked in to the repository.
 

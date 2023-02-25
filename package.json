@@ -44,7 +44,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "protoc": "protoc --es_out=target=ts:src/data --proto_path=umdb/ umdb/*.proto"
+    "protoc": "protoc --es_out=target=ts:src/data --python_out=umdb/ --pyi_out=umdb/ --proto_path=umdb/ umdb/*.proto"
   },
   "eslintConfig": {
     "extends": [
