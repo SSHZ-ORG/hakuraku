@@ -128,17 +128,23 @@ class SpecialCaseRace(_message.Message):
     class RacePermission(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
         __slots__ = []
         UNKNOWN_RACE_PERMISSION: _ClassVar[SpecialCaseRace.RacePermission]
-        FIRST_YEAR: _ClassVar[SpecialCaseRace.RacePermission]
-        SECOND_YEAR: _ClassVar[SpecialCaseRace.RacePermission]
-        SECOND_OR_THIRD_YEAR: _ClassVar[SpecialCaseRace.RacePermission]
-        THIRD_YEAR: _ClassVar[SpecialCaseRace.RacePermission]
-        EX: _ClassVar[SpecialCaseRace.RacePermission]
+        JUNIOR_ONLY: _ClassVar[SpecialCaseRace.RacePermission]
+        CLASSIC_ONLY: _ClassVar[SpecialCaseRace.RacePermission]
+        CLASSIC_AFTER: _ClassVar[SpecialCaseRace.RacePermission]
+        SENIOR_AFTER: _ClassVar[SpecialCaseRace.RacePermission]
+        ORIGINAL: _ClassVar[SpecialCaseRace.RacePermission]
+        HIDE_CLASSIC_AFTER: _ClassVar[SpecialCaseRace.RacePermission]
+        CLASSIC_ONLY_SENIOR: _ClassVar[SpecialCaseRace.RacePermission]
+        SENIOR_AFTER_CLASSIC: _ClassVar[SpecialCaseRace.RacePermission]
     UNKNOWN_RACE_PERMISSION: SpecialCaseRace.RacePermission
-    FIRST_YEAR: SpecialCaseRace.RacePermission
-    SECOND_YEAR: SpecialCaseRace.RacePermission
-    SECOND_OR_THIRD_YEAR: SpecialCaseRace.RacePermission
-    THIRD_YEAR: SpecialCaseRace.RacePermission
-    EX: SpecialCaseRace.RacePermission
+    JUNIOR_ONLY: SpecialCaseRace.RacePermission
+    CLASSIC_ONLY: SpecialCaseRace.RacePermission
+    CLASSIC_AFTER: SpecialCaseRace.RacePermission
+    SENIOR_AFTER: SpecialCaseRace.RacePermission
+    ORIGINAL: SpecialCaseRace.RacePermission
+    HIDE_CLASSIC_AFTER: SpecialCaseRace.RacePermission
+    CLASSIC_ONLY_SENIOR: SpecialCaseRace.RacePermission
+    SENIOR_AFTER_CLASSIC: SpecialCaseRace.RacePermission
     RACE_INSTANCE_ID_FIELD_NUMBER: _ClassVar[int]
     PROGRAM_GROUP_FIELD_NUMBER: _ClassVar[int]
     RACE_PERMISSION_FIELD_NUMBER: _ClassVar[int]

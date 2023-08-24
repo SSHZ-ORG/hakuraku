@@ -485,6 +485,8 @@ export class WinsSaddle extends Message<WinsSaddle> {
 }
 
 /**
+ * enum SingleModeDefine.WinSaddleType
+ *
  * @generated from enum hakuraku.WinsSaddle.WinSaddleType
  */
 export enum WinsSaddle_WinSaddleType {
@@ -574,6 +576,8 @@ export class SpecialCaseRace extends Message<SpecialCaseRace> {
 }
 
 /**
+ * enum SingleModeDefine.RacePermissionType
+ *
  * @generated from enum hakuraku.SpecialCaseRace.RacePermission
  */
 export enum SpecialCaseRace_RacePermission {
@@ -583,38 +587,56 @@ export enum SpecialCaseRace_RacePermission {
   UNKNOWN_RACE_PERMISSION = 0,
 
   /**
-   * @generated from enum value: FIRST_YEAR = 1;
+   * @generated from enum value: JUNIOR_ONLY = 1;
    */
-  FIRST_YEAR = 1,
+  JUNIOR_ONLY = 1,
 
   /**
-   * @generated from enum value: SECOND_YEAR = 2;
+   * @generated from enum value: CLASSIC_ONLY = 2;
    */
-  SECOND_YEAR = 2,
+  CLASSIC_ONLY = 2,
 
   /**
-   * @generated from enum value: SECOND_OR_THIRD_YEAR = 3;
+   * @generated from enum value: CLASSIC_AFTER = 3;
    */
-  SECOND_OR_THIRD_YEAR = 3,
+  CLASSIC_AFTER = 3,
 
   /**
-   * @generated from enum value: THIRD_YEAR = 4;
+   * @generated from enum value: SENIOR_AFTER = 4;
    */
-  THIRD_YEAR = 4,
+  SENIOR_AFTER = 4,
 
   /**
-   * @generated from enum value: EX = 5;
+   * @generated from enum value: ORIGINAL = 5;
    */
-  EX = 5,
+  ORIGINAL = 5,
+
+  /**
+   * @generated from enum value: HIDE_CLASSIC_AFTER = 6;
+   */
+  HIDE_CLASSIC_AFTER = 6,
+
+  /**
+   * @generated from enum value: CLASSIC_ONLY_SENIOR = 7;
+   */
+  CLASSIC_ONLY_SENIOR = 7,
+
+  /**
+   * @generated from enum value: SENIOR_AFTER_CLASSIC = 8;
+   */
+  SENIOR_AFTER_CLASSIC = 8,
 }
 // Retrieve enum metadata with: proto2.getEnumType(SpecialCaseRace_RacePermission)
 proto2.util.setEnumType(SpecialCaseRace_RacePermission, "hakuraku.SpecialCaseRace.RacePermission", [
   { no: 0, name: "UNKNOWN_RACE_PERMISSION" },
-  { no: 1, name: "FIRST_YEAR" },
-  { no: 2, name: "SECOND_YEAR" },
-  { no: 3, name: "SECOND_OR_THIRD_YEAR" },
-  { no: 4, name: "THIRD_YEAR" },
-  { no: 5, name: "EX" },
+  { no: 1, name: "JUNIOR_ONLY" },
+  { no: 2, name: "CLASSIC_ONLY" },
+  { no: 3, name: "CLASSIC_AFTER" },
+  { no: 4, name: "SENIOR_AFTER" },
+  { no: 5, name: "ORIGINAL" },
+  { no: 6, name: "HIDE_CLASSIC_AFTER" },
+  { no: 7, name: "CLASSIC_ONLY_SENIOR" },
+  { no: 8, name: "SENIOR_AFTER_CLASSIC" },
 ]);
 
 /**

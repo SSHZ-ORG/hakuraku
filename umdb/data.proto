@@ -68,6 +68,7 @@ message WinsSaddle {
     repeated int32 race_instance_id = 3;
     optional int32 priority = 4;
     optional int32 group_id = 5;
+    // enum SingleModeDefine.WinSaddleType
     enum WinSaddleType {
         SPECIAL = 0;
         G3 = 1;
@@ -81,13 +82,17 @@ message SpecialCaseRace {
     optional int32 race_instance_id = 1;
     optional int32 program_group = 2;
 
+    // enum SingleModeDefine.RacePermissionType
     enum RacePermission {
         UNKNOWN_RACE_PERMISSION = 0;
-        FIRST_YEAR = 1;
-        SECOND_YEAR = 2;
-        SECOND_OR_THIRD_YEAR = 3;
-        THIRD_YEAR = 4;
-        EX = 5;
+        JUNIOR_ONLY = 1;
+        CLASSIC_ONLY = 2;
+        CLASSIC_AFTER = 3;
+        SENIOR_AFTER = 4;
+        ORIGINAL = 5;
+        HIDE_CLASSIC_AFTER = 6;
+        CLASSIC_ONLY_SENIOR = 7;
+        SENIOR_AFTER_CLASSIC = 8;
     }
     optional RacePermission race_permission = 3;
 
