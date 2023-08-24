@@ -444,7 +444,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             ],
             tooltip: {shared: true},
             chart: {
-                zoomType: "x",
+                zooming: {type: "x"},
                 panning: {enabled: true}, panKey: "alt",
             },
         };
@@ -452,7 +452,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         const options2: Highcharts.Options = {
             chart: {
                 height: "300px",
-                zoomType: "x",
+                zooming: {type: "x"},
                 panning: {enabled: true}, panKey: "alt",
             },
             title: {text: undefined},
@@ -574,7 +574,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
         const options: Highcharts.Options = {
             chart: {
-                zoomType: "x",
+                zooming: {type: "x"},
                 panning: {enabled: true}, panKey: "alt",
             },
             title: {text: undefined},
