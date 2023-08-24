@@ -609,6 +609,26 @@ export enum RaceSimulateEventData_SimulateEventType {
    * @generated from enum value: RELEASE_CONSERVE_POWER = 6;
    */
   RELEASE_CONSERVE_POWER = 6,
+
+  /**
+   * @generated from enum value: STAMINA_LIMIT_BREAK_BUFF = 7;
+   */
+  STAMINA_LIMIT_BREAK_BUFF = 7,
+
+  /**
+   * @generated from enum value: COMPETE_BEFORE_SPURT = 8;
+   */
+  COMPETE_BEFORE_SPURT = 8,
+
+  /**
+   * @generated from enum value: STAMINA_KEEP = 9;
+   */
+  STAMINA_KEEP = 9,
+
+  /**
+   * @generated from enum value: SECURE_LEAD = 10;
+   */
+  SECURE_LEAD = 10,
 }
 // Retrieve enum metadata with: proto2.getEnumType(RaceSimulateEventData_SimulateEventType)
 proto2.util.setEnumType(RaceSimulateEventData_SimulateEventType, "hakuraku.RaceSimulateEventData.SimulateEventType", [
@@ -619,5 +639,9 @@ proto2.util.setEnumType(RaceSimulateEventData_SimulateEventType, "hakuraku.RaceS
   { no: 4, name: "COMPETE_TOP" },
   { no: 5, name: "COMPETE_FIGHT" },
   { no: 6, name: "RELEASE_CONSERVE_POWER" },
+  { no: 7, name: "STAMINA_LIMIT_BREAK_BUFF" },
+  { no: 8, name: "COMPETE_BEFORE_SPURT" },
+  { no: 9, name: "STAMINA_KEEP" },
+  { no: 10, name: "SECURE_LEAD" },
 ]);
 

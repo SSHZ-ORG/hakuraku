@@ -83,6 +83,10 @@ const otherRaceEventLabels = new Map([
     [RaceSimulateEventData_SimulateEventType.COMPETE_TOP, '位置取り争い'],
     [RaceSimulateEventData_SimulateEventType.COMPETE_FIGHT, '追い比べ'],
     [RaceSimulateEventData_SimulateEventType.RELEASE_CONSERVE_POWER, '脚色十分'],
+    [RaceSimulateEventData_SimulateEventType.STAMINA_LIMIT_BREAK_BUFF, 'スタミナ勝負'],
+    [RaceSimulateEventData_SimulateEventType.COMPETE_BEFORE_SPURT, '位置取り調整'],
+    [RaceSimulateEventData_SimulateEventType.STAMINA_KEEP, '持久力温存'],
+    [RaceSimulateEventData_SimulateEventType.SECURE_LEAD, 'リード確保'],
 ]);
 
 const charaTableColumns: ColumnDescription<CharaTableData>[] = [
