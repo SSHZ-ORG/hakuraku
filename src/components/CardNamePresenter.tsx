@@ -6,16 +6,14 @@ type CardNamePresenterProps = {
     cardId: number,
 }
 
-export default class CardNamePresenter extends React.PureComponent<CardNamePresenterProps> {
-    render() {
-        const renderTooltip = <Tooltip id="tooltip">
-            {UMDatabaseWrapper.cards[this.props.cardId]?.name ?? 'Unknown Card'}
-        </Tooltip>;
+export default function CardNamePresenter(props: CardNamePresenterProps) {
+    const renderTooltip = <Tooltip id="tooltip">
+        {UMDatabaseWrapper.cards[props.cardId]?.name ?? 'Unknown Card'}
+    </Tooltip>;
 
-        return <OverlayTrigger overlay={renderTooltip}>
-            <Badge variant="secondary">
-                {this.props.cardId}
-            </Badge>
-        </OverlayTrigger>;
-    }
+    return <OverlayTrigger overlay={renderTooltip}>
+        <Badge variant="secondary">
+            {props.cardId}
+        </Badge>
+    </OverlayTrigger>;
 }

@@ -27,17 +27,14 @@ const columns: ColumnDescription<Story>[] = [
     },
 ];
 
-export default class StoriesPage extends React.PureComponent {
-
-    render() {
-        return <>
-            <BootstrapTable bootstrap4 condensed hover
-                            classes="responsive-bootstrap-table"
-                            wrapperClasses="table-responsive"
-                            keyField="id"
-                            data={UMDatabaseWrapper.stories}
-                            columns={columns}
-                            filter={filterFactory()}/>
-        </>;
-    }
+export default function StoriesPage() {
+    return <>
+        <BootstrapTable bootstrap4 condensed hover
+                        classes="responsive-bootstrap-table"
+                        wrapperClasses="table-responsive"
+                        keyField="id"
+                        data={UMDatabaseWrapper.stories}
+                        columns={columns}
+                        filter={filterFactory()}/>
+    </>;
 }

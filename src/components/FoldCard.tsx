@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Card} from "react-bootstrap";
 
 type FoldCardProps = {
@@ -6,28 +6,15 @@ type FoldCardProps = {
     children: React.ReactNode,
 }
 
-type FoldCardState = {
-    extended: boolean,
-}
+export default function FoldCard(props: FoldCardProps) {
+    const [extended, setExtended] = useState(false);
 
-export default class FoldCard extends React.PureComponent<FoldCardProps, FoldCardState> {
-    constructor(props: FoldCardProps) {
-        super(props);
-
-        this.state = {
-            extended: false,
-        };
-    }
-
-    render() {
-        return <Card>
-            <Card.Header className="fold-card-header" onClick={() => this.setState({extended: !this.state.extended})}>
-                {this.props.header}
-            </Card.Header>
-            {this.state.extended &&
-                <Card.Body>
-                    <>{this.props.children}</>
-                </Card.Body>}
-        </Card>;
-    }
+    return <Card>
+        <Card.Header className="fold-card-header" onClick={() => setExtended(!extended)}>
+            {props.header}
+        </Card.Header>
+        {extended && <Card.Body>
+            <>{props.children}</>
+        </Card.Body>}
+    </Card>;
 }

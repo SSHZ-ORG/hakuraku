@@ -9,21 +9,19 @@ type SuccessionRelationChipProps = {
     showId: boolean,
 }
 
-export default class SuccessionRelationChip extends React.PureComponent<SuccessionRelationChipProps> {
-    render() {
-        const renderTooltip = <Popover id="popover">
-            <Popover.Title>
-                Group {this.props.relation.relationType} - {this.props.relation.relationPoint} pts
-            </Popover.Title>
-            <Popover.Content>
-                {this.props.relation.member.map(m => <>{this.props.showId ? `[${m.id}] ` : ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.charaId!])}<br/></>)}
-            </Popover.Content>
-        </Popover>;
+export default function SuccessionRelationChip(props: SuccessionRelationChipProps) {
+    const renderTooltip = <Popover id="popover">
+        <Popover.Title>
+            Group {props.relation.relationType} - {props.relation.relationPoint} pts
+        </Popover.Title>
+        <Popover.Content>
+            {props.relation.member.map(m => <>{props.showId ? `[${m.id}] ` : ''}{UMDatabaseUtils.charaNameWithIdAndCast(UMDatabaseWrapper.charas[m.charaId!])}<br/></>)}
+        </Popover.Content>
+    </Popover>;
 
-        return <OverlayTrigger overlay={renderTooltip} placement="auto">
-            <Badge variant="secondary">
-                Grp {this.props.relation.relationType} - {this.props.relation.relationPoint} pts
-            </Badge>
-        </OverlayTrigger>;
-    }
+    return <OverlayTrigger overlay={renderTooltip} placement="auto">
+        <Badge variant="secondary">
+            Grp {props.relation.relationType} - {props.relation.relationPoint} pts
+        </Badge>
+    </OverlayTrigger>;
 }

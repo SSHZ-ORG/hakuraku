@@ -1,5 +1,5 @@
 import _ from "lodash";
-import React from "react";
+import React, {useState} from "react";
 import {Form} from "react-bootstrap";
 import {Typeahead} from "react-bootstrap-typeahead";
 import FoldCard from "../components/FoldCard";
@@ -25,53 +25,40 @@ const GROUP_TYPE_TAGS: Record<string, string> = {
     '32': '生月',
 };
 
-type SuccessionRelationsPageState = {
-    selectedCharas: Chara[],
-    showRelationId: boolean,
-}
-
-export default class SuccessionRelationsPage extends React.PureComponent<{}, SuccessionRelationsPageState> {
-    constructor(props: {}) {
-        super(props);
-
-        this.state = {
-            selectedCharas: [],
-            showRelationId: true,
-        };
-    }
-
-    renderRelationsGroups(relations: SuccessionRelation[], key: string) {
+export default function SuccessionRelationsPage() {
+    const [selectedCharas, setSelectedCharas] = useState<Chara[]>([]);
+    const [showRelationId, setShowRelationId] = useState(false);
+    
+    function renderRelationsGroups(relations: SuccessionRelation[], key: string) {
         return <FoldCard header={`Relations ${key}xx ${GROUP_TYPE_TAGS[key] ?? ''}`}>
-            {UMDatabaseUtils.findSuccessionRelation(this.state.selectedCharas, relations)
-                .map(r => <><SuccessionRelationChip relation={r} showId={this.state.showRelationId}/>{' '}</>)}
+            {UMDatabaseUtils.findSuccessionRelation(selectedCharas, relations)
+                .map(r => <><SuccessionRelationChip relation={r} showId={showRelationId}/>{' '}</>)}
         </FoldCard>;
     }
 
-    render() {
-        const relationsGroups = _.groupBy(UMDatabaseWrapper.umdb.successionRelation,
-            r => Math.floor(r.relationType! / 100));
+    const relationsGroups = _.groupBy(UMDatabaseWrapper.umdb.successionRelation,
+        r => Math.floor(r.relationType! / 100));
 
-        return <>
-            <Form.Group>
-                <Form.Label>Filter by</Form.Label>
-                <Typeahead
-                    multiple
-                    labelKey={UMDatabaseUtils.charaNameWithIdAndCast}
-                    options={UMDatabaseWrapper.umdb.chara}
-                    selected={this.state.selectedCharas}
-                    onChange={s => this.setState({selectedCharas: s})}
-                    filterBy={UMDatabaseUtils.charaTypeaheadMatcher}/>
-            </Form.Group>
+    return <>
+        <Form.Group>
+            <Form.Label>Filter by</Form.Label>
+            <Typeahead
+                multiple
+                labelKey={UMDatabaseUtils.charaNameWithIdAndCast}
+                options={UMDatabaseWrapper.umdb.chara}
+                selected={selectedCharas}
+                onChange={setSelectedCharas}
+                filterBy={UMDatabaseUtils.charaTypeaheadMatcher}/>
+        </Form.Group>
 
-            <Form.Group>
-                <Form.Switch
-                    checked={this.state.showRelationId}
-                    onChange={(e) => this.setState({showRelationId: e.target.checked})}
-                    id="show-relation-id"
-                    label="Show SuccessionRelationMember IDs"/>
-            </Form.Group>
+        <Form.Group>
+            <Form.Switch
+                checked={showRelationId}
+                onChange={(e) => setShowRelationId(e.target.checked)}
+                id="show-relation-id"
+                label="Show SuccessionRelationMember IDs"/>
+        </Form.Group>
 
-            {_.map(relationsGroups, (g, k) => this.renderRelationsGroups(g, k))}
-        </>;
-    }
+        {_.map(relationsGroups, (g, k) => renderRelationsGroups(g, k))}
+    </>;
 }
