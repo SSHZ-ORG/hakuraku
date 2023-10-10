@@ -1,5 +1,5 @@
 {
-  "version": "10010900",
+  "version": "10011000",
   "chara": [
     {
       "id": 1001,
@@ -29602,6 +29602,18 @@
       "groundType": "DIRT"
     },
     {
+      "id": 600053,
+      "name": "Unknown",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
+      "id": 600054,
+      "name": "チャンピオンズミーティング 決勝",
+      "distance": 2400,
+      "groundType": "TURF"
+    },
+    {
       "id": 610000,
       "name": "チームレース　短距離代表",
       "distance": 1200,
@@ -36175,6 +36187,18 @@
       "id": 1200902,
       "name": "スプリンターズS(HARD)",
       "distance": 1200,
+      "groundType": "TURF"
+    },
+    {
+      "id": 1201001,
+      "name": "菊花賞（HARD）",
+      "distance": 3000,
+      "groundType": "TURF"
+    },
+    {
+      "id": 1201002,
+      "name": "菊花賞（HARD）",
+      "distance": 3000,
       "groundType": "TURF"
     },
     {
