@@ -1,6 +1,25 @@
 import {JsonViewer} from "@textea/json-viewer";
-import Highcharts, {PointOptionsObject, SeriesSplineOptions} from 'highcharts';
-import HighchartsReact from "highcharts-react-official";
+import EChartsReactCore from "echarts-for-react/lib/core";
+import {LineChart, LineSeriesOption} from "echarts/charts";
+import {
+    DataZoomComponentOption,
+    DataZoomSliderComponent,
+    GridComponent,
+    GridComponentOption,
+    LegendComponent,
+    LegendComponentOption,
+    MarkAreaComponent,
+    MarkAreaComponentOption,
+    MarkLineComponent,
+    MarkLineComponentOption,
+    TooltipComponent,
+    TooltipComponentOption,
+} from "echarts/components";
+import * as echarts from "echarts/core";
+import {ComposeOption} from "echarts/core";
+import {SVGRenderer} from "echarts/renderers";
+import type {MarkArea2DDataItemOption} from "echarts/types/src/component/marker/MarkAreaModel";
+import type {MarkLine1DDataItemOption} from "echarts/types/src/component/marker/MarkLineModel";
 import _ from "lodash";
 import memoize from "memoize-one";
 import React from "react";
@@ -37,6 +56,19 @@ type CompeteTableData = {
         displayName: string,
     }[],
 };
+
+type ECOption = ComposeOption<
+    | LineSeriesOption
+    | TooltipComponentOption
+    | GridComponentOption
+    | MarkLineComponentOption
+    | MarkAreaComponentOption
+    | LegendComponentOption
+    | DataZoomComponentOption>;
+
+echarts.use([
+    LineChart, TooltipComponent, GridComponent, MarkLineComponent, MarkAreaComponent, LegendComponent, SVGRenderer, DataZoomSliderComponent,
+]);
 
 const competeTableColumns: ColumnDescription<CompeteTableData> [] = [
     {
@@ -272,68 +304,68 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
         const skillPlotLines = filterCharaSkills(raceData, frameOrder)
             .map(event => {
                 return {
-                    value: event.frameTime,
-                    label: {text: UMDatabaseWrapper.skillName(event.param[1])},
-                    zIndex: 3,
-                };
+                    xAxis: event.frameTime,
+                    name: UMDatabaseWrapper.skillName(event.param[1]),
+                    label: {show: true, position: 'insideStartBottom'},
+                    lineStyle: {color: '#666'},
+                } as MarkLine1DDataItemOption;
             });
 
         const skillTargetedSkillPlotLines = filterCharaTargetedSkills(raceData, frameOrder)
             .map(event => {
                 return {
-                    value: event.frameTime,
-                    label: {text: `${UMDatabaseWrapper.skillName(event.param[1])} by ${displayNames[event.param[0]]}`},
-                    color: 'rgba(255, 0, 0, 0.6)',
-                    zIndex: 3,
-                };
+                    xAxis: event.frameTime,
+                    name: `${UMDatabaseWrapper.skillName(event.param[1])} by ${displayNames[event.param[0]]}`,
+                    label: {show: true, position: 'insideStartBottom'},
+                    lineStyle: {color: 'rgba(255, 0, 0, 0.6)'},
+                } as MarkLine1DDataItemOption;
             });
 
         const otherEventsPlotLines = Array.from(otherRaceEventLabels).flatMap(([eventType, name]) =>
             filterRaceEvents(raceData, frameOrder, eventType).map(event => {
                 return {
-                    value: event.frameTime,
-                    label: {text: name},
-                    color: 'rgba(0, 255, 0, 0.6)',
-                    zIndex: 3,
-                };
+                    xAxis: event.frameTime,
+                    name: name,
+                    label: {show: true, position: 'insideStartBottom'},
+                    lineStyle: {color: 'rgba(0, 255, 0, 0.6)'},
+                } as MarkLine1DDataItemOption;
             }));
 
         const lastSpurtStartDistance = raceData.horseResult[frameOrder].lastSpurtStartDistance!;
         let lastSpurtStartTime = 0;
 
-        function makeBlockedPlotArea(from: number, to: number, blockedByIndex: number): Highcharts.XAxisPlotBandsOptions {
-            return {
-                color: 'rgba(255, 0, 0, 0.1)',
-                from: from,
-                to: to,
-                label: {
-                    text: `Blocked by ${displayNames[blockedByIndex]}`,
-                    rotation: 90,
-                    verticalAlign: "middle",
+        function makeBlockedPlotArea(from: number, to: number, blockedByIndex: number): MarkArea2DDataItemOption {
+            return [
+                {
+                    name: `Blocked by ${displayNames[blockedByIndex]}`,
+                    xAxis: from,
+                    itemStyle: {color: 'rgba(255, 0, 0, 0.1)'},
                 },
-                zIndex: 2,
-            };
+                {
+                    xAxis: to,
+                },
+            ];
         }
 
-        function makeTemptationModePlotArea(from: number, to: number, mode: RaceSimulateHorseFrameData_TemptationMode): Highcharts.XAxisPlotBandsOptions {
-            return {
-                color: 'rgba(255, 255, 0, 0.1)',
-                from: from,
-                to: to,
-                label: {
-                    text: `Temptation ${RaceSimulateHorseFrameData_TemptationMode[mode] ?? mode}`,
-                    rotation: 90,
-                    verticalAlign: "middle",
+        function makeTemptationModePlotArea(from: number, to: number, mode: RaceSimulateHorseFrameData_TemptationMode): MarkArea2DDataItemOption {
+            return [
+                {
+                    name: `Temptation ${RaceSimulateHorseFrameData_TemptationMode[mode] ?? mode}`,
+                    xAxis: from,
+                    itemStyle: {color: 'rgba(255, 255, 0, 0.1)'},
                 },
-                zIndex: 1,
-            };
+                {
+                    xAxis: to,
+                },
+            ];
         }
 
-        const blockFrontPlotAreas: Highcharts.XAxisPlotBandsOptions[] = [];
-        const temptationModePlotAreas: Highcharts.XAxisPlotBandsOptions[] = [];
 
-        const deltaSpeed = [];
-        const deltaHp = [];
+        const blockFrontPlotAreas: MarkArea2DDataItemOption[] = [];
+        const temptationModePlotAreas: MarkArea2DDataItemOption[] = [];
+
+        const deltaSpeed: [number, number][] = [];
+        const deltaHp: [number, number][] = [];
 
         let lastBlockFrontHorseIndexChangedTime = 0;
         let lastBlockFrontHorseIndex = -1;
@@ -374,11 +406,11 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             }
 
             if (i === 0) {
-                deltaSpeed.push({x: 0, y: 0});
-                deltaHp.push({x: 0, y: 0});
+                deltaSpeed.push([0, 0]);
+                deltaHp.push([0, 0]);
             } else {
-                deltaSpeed.push({x: time, y: horseFrame.speed! - previousHorseFrame.speed!});
-                deltaHp.push({x: time, y: horseFrame.hp! - previousHorseFrame.hp!});
+                deltaSpeed.push([time, horseFrame.speed! - previousHorseFrame.speed!]);
+                deltaHp.push([time, horseFrame.hp! - previousHorseFrame.hp!]);
             }
         }
         const lastFrameTime = _.last(raceData.frame)!.time!;
@@ -389,95 +421,138 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             temptationModePlotAreas.push(makeTemptationModePlotArea(lastTemptationModeChangedTime, lastFrameTime, lastTemptationMode));
         }
 
-        const plotLines = [{
-            value: raceData.horseResult[frameOrder!].finishTimeRaw,
-            dashStyle: 'LongDashDot',
-            label: {text: 'Goal in'},
-            zIndex: 20,
+        const plotLines: MarkLine1DDataItemOption[] = [{
+            xAxis: raceData.horseResult[frameOrder!].finishTimeRaw,
+            name: 'Goal in',
+            lineStyle: {
+                color: '#666',
+                type: [8, 3, 1, 3],
+            },
         }];
         if (lastSpurtStartDistance > 0) {
             plotLines.push({
-                value: lastSpurtStartTime,
-                dashStyle: 'LongDash',
-                label: {text: `Last Spurt`},
-                zIndex: 0,
+                xAxis: lastSpurtStartTime,
+                name: 'Last Spurt',
+                lineStyle: {
+                    color: '#666',
+                    type: [8, 3],
+                },
             });
         }
 
-        const options1: Highcharts.Options = {
-            title: {text: undefined},
-            credits: {enabled: false},
-            xAxis: {
-                title: {text: "Time"},
-                plotLines: [
-                    ...(this.state.showSkills ? skillPlotLines : []),
-                    ...(this.state.showTargetedSkills ? skillTargetedSkillPlotLines : []),
-                    ...(this.state.showOtherRaceEvents ? otherEventsPlotLines : []),
-                    ...plotLines,
-                ],
-                plotBands: [
-                    ...(this.state.showBlocks ? blockFrontPlotAreas : []),
-                    ...(this.state.showTemptationMode ? temptationModePlotAreas : []),
+        const options: ECOption = {
+            grid: [
+                {
+                    height: '45%',
+                },
+                {
+                    top: '60%',
+                    height: '30%',
+                },
+            ],
+            axisPointer: {
+                link: [
+                    {
+                        xAxisIndex: 'all',
+                    },
                 ],
             },
-            yAxis: {title: {text: undefined}},
+            xAxis: [
+                {
+                    name: "Time",
+                    nameLocation: "middle",
+                    type: "value",
+                    min: "dataMin",
+                    max: "dataMax",
+                },
+                {
+                    gridIndex: 1,
+                    type: "value",
+                    position: "top",
+                    min: "dataMin",
+                    max: "dataMax",
+                },
+            ],
+            yAxis: [
+                {type: "value"},
+                {gridIndex: 1, type: "value"},
+            ],
+            legend: {show: true},
             series: [
                 {
                     name: "Speed",
-                    data: raceData.frame.map(frame => {
-                        return {
-                            x: frame.time,
-                            y: frame.horseFrame[frameOrder!].speed,
-                        };
-                    }),
-                    type: "spline",
+                    data: raceData.frame.map(frame => [
+                        frame.time,
+                        frame.horseFrame[frameOrder!].speed,
+                    ]),
+                    type: "line",
+                    smooth: true,
+                    markLine: {
+                        symbol: 'none',
+                        label: {
+                            position: "end",
+                            formatter: "{b}",
+                        },
+                        lineStyle: {type: "solid"},
+                        data: [
+                            ...(this.state.showSkills ? skillPlotLines : []),
+                            ...(this.state.showTargetedSkills ? skillTargetedSkillPlotLines : []),
+                            ...(this.state.showOtherRaceEvents ? otherEventsPlotLines : []),
+                            ...plotLines,
+                        ],
+                    },
+                    markArea: {
+                        label: {
+                            position: "inside",
+                            rotate: 90,
+                        },
+                        emphasis: {
+                            label: {
+                                position: "inside",
+                                rotate: 90,
+                            },
+                        },
+                        data: [
+                            ...(this.state.showBlocks ? blockFrontPlotAreas : []),
+                            ...(this.state.showTemptationMode ? temptationModePlotAreas : []),
+                        ],
+                    },
                 }, {
                     name: "HP",
-                    data: raceData.frame.map(frame => {
-                        return {
-                            x: frame.time,
-                            y: frame.horseFrame[frameOrder!].hp,
-                        };
-                    }),
-                    type: "spline",
+                    data: raceData.frame.map(frame => [
+                        frame.time,
+                        frame.horseFrame[frameOrder!].hp,
+                    ]),
+                    type: "line",
+                    smooth: true,
                 },
-            ],
-            tooltip: {shared: true},
-            chart: {
-                zooming: {type: "x"},
-                panning: {enabled: true}, panKey: "alt",
-            },
-        };
-
-        const options2: Highcharts.Options = {
-            chart: {
-                height: "300px",
-                zooming: {type: "x"},
-                panning: {enabled: true}, panKey: "alt",
-            },
-            title: {text: undefined},
-            credits: {enabled: false},
-            xAxis: {
-                title: {text: "Time"},
-            },
-            yAxis: {title: {text: undefined}},
-            series: [
                 {
+                    xAxisIndex: 1,
+                    yAxisIndex: 1,
                     name: "ΔSpeed",
                     data: deltaSpeed,
-                    type: "spline",
+                    type: "line",
+                    smooth: true,
                 }, {
+                    xAxisIndex: 1,
+                    yAxisIndex: 1,
                     name: "ΔHP",
                     data: deltaHp,
-                    type: "spline",
+                    type: "line",
+                    smooth: true,
                 },
             ],
-            tooltip: {shared: true},
+            tooltip: {
+                trigger: 'axis',
+            },
+            dataZoom: {
+                type: 'slider',
+                xAxisIndex: [0, 1],
+            },
         };
 
         return <div>
-            <HighchartsReact highcharts={Highcharts} options={options1}/>
-            <HighchartsReact highcharts={Highcharts} options={options2}/>
+            <EChartsReactCore echarts={echarts} option={options} style={{height: '700px'}}/>
         </div>;
     }
 
@@ -549,12 +624,13 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
 
 
     renderGlobalRaceDistanceDiffGraph() {
-        const series: Record<number, SeriesSplineOptions> = _.mapValues(this.displayNames(this.props.raceHorseInfo, this.props.raceData), name => {
+        const series: Record<number, LineSeriesOption> = _.mapValues(this.displayNames(this.props.raceHorseInfo, this.props.raceData), name => {
             return {
                 name: name,
-                data: [] as PointOptionsObject[],
-                type: 'spline',
-            } as SeriesSplineOptions;
+                data: [],
+                type: 'line',
+                smooth: true,
+            } as LineSeriesOption;
         });
 
         this.props.raceData.frame.forEach(frame => {
@@ -565,30 +641,30 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
             const baseDistance = (minDistance + maxDistance) / 2;
 
             frame.horseFrame.forEach((horseFrame, frameOrder) => {
-                series[frameOrder].data!.push({
-                    x: this.state.diffGraphUseDistanceAsXAxis ? baseDistance : time,
-                    y: (horseFrame.distance! - baseDistance),
-                });
+                series[frameOrder].data!.push([
+                    this.state.diffGraphUseDistanceAsXAxis ? baseDistance : time,
+                    horseFrame.distance! - baseDistance,
+                ]);
             });
         });
 
-        const options: Highcharts.Options = {
-            chart: {
-                zooming: {type: "x"},
-                panning: {enabled: true}, panKey: "alt",
-            },
-            title: {text: undefined},
-            credits: {enabled: false},
+        const options: ECOption = {
             xAxis: {
-                title: {text: this.state.diffGraphUseDistanceAsXAxis ? "Base Distance" : "Time"},
+                name: this.state.diffGraphUseDistanceAsXAxis ? "Base Distance" : "Time",
+                nameLocation: "middle",
+                type: "value",
+                min: "dataMin",
+                max: "dataMax",
             },
-            yAxis: {
-                title: {text: undefined},
-                startOnTick: false,
-                endOnTick: false,
-            },
+            yAxis: {type: "value"},
+            legend: {show: true, type: "scroll"},
             series: _.values(series),
-            tooltip: {shared: true},
+            tooltip: {
+                trigger: 'axis',
+            },
+            dataZoom: {
+                type: 'slider',
+            },
         };
 
         return <FoldCard header="Distance Diff Graph">
@@ -597,7 +673,7 @@ class RaceDataPresenter extends React.PureComponent<RaceDataPresenterProps, Race
                 onChange={(e) => this.setState({diffGraphUseDistanceAsXAxis: e.target.checked})}
                 id="diff-graph-use-distance-as-x-axis"
                 label="Use Base Distance as X Axis"/>
-            <HighchartsReact highcharts={Highcharts} options={options}/>
+            <EChartsReactCore echarts={echarts} option={options} style={{height: '400px'}}/>
         </FoldCard>;
     }
 
